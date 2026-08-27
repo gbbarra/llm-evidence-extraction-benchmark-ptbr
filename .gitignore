@@ -1,0 +1,7 @@
+# perturbados: gerados localmente, selados até a correção (ver protocolo §6)
+corpus/perturbados/
+dados/*/perturbacoes-*.json
+
+__pycache__/
+*.pyc
+saidas-tmp/

@@ -1,0 +1,1222 @@
+{
+  "fonte": "PMC13235771 — tabelas transcritas como publicadas (sem correção)",
+  "tabelas": [
+    {
+      "numero": 1,
+      "legenda": "Risk-of-bias assessment of the included studies",
+      "colunas": [
+        "Study",
+        "Random sequence generation",
+        "Allocation concealment",
+        "Blinding (participants/personnel)",
+        "Blinding (outcome assessment)",
+        "Incomplete outcome data",
+        "Selective reporting",
+        "Other bias",
+        "Overall risk"
+      ],
+      "linhas": [
+        {
+          "rotulo": "Arslan-Carlon et al.",
+          "ref": "30",
+          "acesso_aberto": false,
+          "pmcid": "PMC8320377",
+          "celulas": {
+            "Random sequence generation": "Low",
+            "Allocation concealment": "Low",
+            "Blinding (participants/personnel)": "Low",
+            "Blinding (outcome assessment)": "Low",
+            "Incomplete outcome data": "Low",
+            "Selective reporting": "Low",
+            "Other bias": "Low",
+            "Overall risk": "Low"
+          }
+        },
+        {
+          "rotulo": "Calvo-Vecino et al.",
+          "ref": "33",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "Random sequence generation": "Low",
+            "Allocation concealment": "Low",
+            "Blinding (participants/personnel)": "Low",
+            "Blinding (outcome assessment)": "Low",
+            "Incomplete outcome data": "Low",
+            "Selective reporting": "Low",
+            "Other bias": "Low",
+            "Overall risk": "Low"
+          }
+        },
+        {
+          "rotulo": "Castro et al.",
+          "ref": "24",
+          "acesso_aberto": true,
+          "pmcid": "PMC11061212",
+          "celulas": {
+            "Random sequence generation": "Low",
+            "Allocation concealment": "Unclear",
+            "Blinding (participants/personnel)": "Unclear",
+            "Blinding (outcome assessment)": "Low",
+            "Incomplete outcome data": "Low",
+            "Selective reporting": "Low",
+            "Other bias": "Low",
+            "Overall risk": "Moderate"
+          }
+        },
+        {
+          "rotulo": "Coeckelenbergh et al.",
+          "ref": "41",
+          "acesso_aberto": false,
+          "pmcid": "PMC12713225",
+          "celulas": {
+            "Random sequence generation": "Low",
+            "Allocation concealment": "Low",
+            "Blinding (participants/personnel)": "Low",
+            "Blinding (outcome assessment)": "Low",
+            "Incomplete outcome data": "Low",
+            "Selective reporting": "Low",
+            "Other bias": "Low",
+            "Overall risk": "Low"
+          }
+        },
+        {
+          "rotulo": "de Waal et al.",
+          "ref": "29",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "Random sequence generation": "Low",
+            "Allocation concealment": "Low",
+            "Blinding (participants/personnel)": "Low",
+            "Blinding (outcome assessment)": "Low",
+            "Incomplete outcome data": "Low",
+            "Selective reporting": "Low",
+            "Other bias": "Low",
+            "Overall risk": "Low"
+          }
+        },
+        {
+          "rotulo": "Hokenek et al.",
+          "ref": "47",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "Random sequence generation": "Low",
+            "Allocation concealment": "Unclear",
+            "Blinding (participants/personnel)": "High",
+            "Blinding (outcome assessment)": "Low",
+            "Incomplete outcome data": "Low",
+            "Selective reporting": "Low",
+            "Other bias": "Low",
+            "Overall risk": "Moderate"
+          }
+        },
+        {
+          "rotulo": "Yoon et al.",
+          "ref": "28",
+          "acesso_aberto": true,
+          "pmcid": "PMC10561433",
+          "celulas": {
+            "Random sequence generation": "Low",
+            "Allocation concealment": "Low",
+            "Blinding (participants/personnel)": "Unclear",
+            "Blinding (outcome assessment)": "Low",
+            "Incomplete outcome data": "Low",
+            "Selective reporting": "Low",
+            "Other bias": "Low",
+            "Overall risk": "Low"
+          }
+        },
+        {
+          "rotulo": "Diaper et al.",
+          "ref": "26",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "Random sequence generation": "Low",
+            "Allocation concealment": "Low",
+            "Blinding (participants/personnel)": "Unclear",
+            "Blinding (outcome assessment)": "Low",
+            "Incomplete outcome data": "Low",
+            "Selective reporting": "Low",
+            "Other bias": "Low",
+            "Overall risk": "Low"
+          }
+        },
+        {
+          "rotulo": "Wu et al.",
+          "ref": "36",
+          "acesso_aberto": true,
+          "pmcid": "PMC10912221",
+          "celulas": {
+            "Random sequence generation": "Low",
+            "Allocation concealment": "Low",
+            "Blinding (participants/personnel)": "Unclear",
+            "Blinding (outcome assessment)": "Low",
+            "Incomplete outcome data": "Low",
+            "Selective reporting": "Low",
+            "Other bias": "Low",
+            "Overall risk": "Low"
+          }
+        },
+        {
+          "rotulo": "Ramsingh et al.",
+          "ref": "21",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "Random sequence generation": "Low",
+            "Allocation concealment": "Unclear",
+            "Blinding (participants/personnel)": "Unclear",
+            "Blinding (outcome assessment)": "Unclear",
+            "Incomplete outcome data": "Low",
+            "Selective reporting": "Low",
+            "Other bias": "Low",
+            "Overall risk": "Moderate"
+          }
+        },
+        {
+          "rotulo": "Redondo Calvo et al.",
+          "ref": "45",
+          "acesso_aberto": true,
+          "pmcid": "PMC12565272",
+          "celulas": {
+            "Random sequence generation": "Low",
+            "Allocation concealment": "Low",
+            "Blinding (participants/personnel)": "Unclear",
+            "Blinding (outcome assessment)": "Low",
+            "Incomplete outcome data": "Low",
+            "Selective reporting": "Low",
+            "Other bias": "Low",
+            "Overall risk": "Low"
+          }
+        },
+        {
+          "rotulo": "Schmid et al.",
+          "ref": "44",
+          "acesso_aberto": true,
+          "pmcid": "PMC4782303",
+          "celulas": {
+            "Random sequence generation": "Low",
+            "Allocation concealment": "Low",
+            "Blinding (participants/personnel)": "Unclear",
+            "Blinding (outcome assessment)": "Low",
+            "Incomplete outcome data": "Low",
+            "Selective reporting": "Low",
+            "Other bias": "Low",
+            "Overall risk": "Low"
+          }
+        },
+        {
+          "rotulo": "Sujatha et al.",
+          "ref": "34",
+          "acesso_aberto": true,
+          "pmcid": "PMC6907038",
+          "celulas": {
+            "Random sequence generation": "Low",
+            "Allocation concealment": "Unclear",
+            "Blinding (participants/personnel)": "High",
+            "Blinding (outcome assessment)": "Low",
+            "Incomplete outcome data": "Low",
+            "Selective reporting": "Low",
+            "Other bias": "Low",
+            "Overall risk": "Moderate"
+          }
+        },
+        {
+          "rotulo": "Sun et al.",
+          "ref": "27",
+          "acesso_aberto": true,
+          "pmcid": "PMC10694978",
+          "celulas": {
+            "Random sequence generation": "Low",
+            "Allocation concealment": "Low",
+            "Blinding (participants/personnel)": "Low",
+            "Blinding (outcome assessment)": "Low",
+            "Incomplete outcome data": "Low",
+            "Selective reporting": "Low",
+            "Other bias": "Low",
+            "Overall risk": "Low"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "legenda": "Grade evidence profile RCTs, Randomized controlled trials; GRADE, Grading of Recommendations Assessment, Development and Evaluation.",
+      "colunas": [
+        "Outcome",
+        "No. of studies",
+        "Study design",
+        "Risk of bias",
+        "Inconsistency",
+        "Indirectness",
+        "Imprecision",
+        "Publication bias",
+        "Certainty of evidence"
+      ],
+      "linhas": [
+        {
+          "rotulo": "Postoperative complications",
+          "ref": null,
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "No. of studies": "10–11",
+            "Study design": "RCTs",
+            "Risk of bias": "Not serious",
+            "Inconsistency": "Not serious",
+            "Indirectness": "Not serious",
+            "Imprecision": "Not serious",
+            "Publication bias": "Undetected",
+            "Certainty of evidence": "High (⭐⭐⭐⭐)"
+          }
+        },
+        {
+          "rotulo": "30-day mortality",
+          "ref": null,
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "No. of studies": "4–5",
+            "Study design": "RCTs",
+            "Risk of bias": "Not serious",
+            "Inconsistency": "Not serious",
+            "Indirectness": "Not serious",
+            "Imprecision": "Serious",
+            "Publication bias": "Undetected",
+            "Certainty of evidence": "Moderate (⭐⭐⭐)"
+          }
+        },
+        {
+          "rotulo": "Hospital length of stay (LOS)",
+          "ref": null,
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "No. of studies": "8–9",
+            "Study design": "RCTs",
+            "Risk of bias": "Not serious",
+            "Inconsistency": "Serious",
+            "Indirectness": "Not serious",
+            "Imprecision": "Serious",
+            "Publication bias": "Undetected",
+            "Certainty of evidence": "Low (⭐⭐)"
+          }
+        },
+        {
+          "rotulo": "ICU/ITU length of stay",
+          "ref": null,
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "No. of studies": "4–5",
+            "Study design": "RCTs",
+            "Risk of bias": "Not serious",
+            "Inconsistency": "Serious",
+            "Indirectness": "Not serious",
+            "Imprecision": "Serious",
+            "Publication bias": "Undetected",
+            "Certainty of evidence": "Low (⭐⭐)"
+          }
+        },
+        {
+          "rotulo": "Postoperative ileus / GI dysfunction",
+          "ref": null,
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "No. of studies": "3–5",
+            "Study design": "RCTs",
+            "Risk of bias": "Not serious",
+            "Inconsistency": "Not serious",
+            "Indirectness": "Not serious",
+            "Imprecision": "Serious",
+            "Publication bias": "Undetected",
+            "Certainty of evidence": "Moderate (⭐⭐⭐)"
+          }
+        },
+        {
+          "rotulo": "Time to GI recovery (flatus/oral intake)",
+          "ref": null,
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "No. of studies": "3–4",
+            "Study design": "RCTs",
+            "Risk of bias": "Not serious",
+            "Inconsistency": "Not serious",
+            "Indirectness": "Not serious",
+            "Imprecision": "Serious",
+            "Publication bias": "Undetected",
+            "Certainty of evidence": "Moderate (⭐⭐⭐)"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "legenda": "Baseline characteristics of the included studies GDFT, Goal-directed fluid therapy; Lap, Laparoscopic procedures; ASA, American Society of Anesthesiologists.",
+      "colunas": [
+        "Study",
+        "GDFT",
+        "Control",
+        "Surgery",
+        "Lap (GDFT)",
+        "Lap (Control)",
+        "ASA (GDFT)",
+        "ASA (control)"
+      ],
+      "linhas": [
+        {
+          "rotulo": "Redondo Calvo et al.",
+          "ref": "45",
+          "acesso_aberto": true,
+          "pmcid": "PMC12565272",
+          "celulas": {
+            "GDFT": "19",
+            "Control": "16",
+            "Surgery": "All major liver surgeries",
+            "Lap (GDFT)": "0",
+            "Lap (Control)": "0",
+            "ASA (GDFT)": "0:13:6:0",
+            "ASA (control)": "0:10:6:0"
+          }
+        },
+        {
+          "rotulo": "Coeckelenbergh et al.",
+          "ref": "41",
+          "acesso_aberto": false,
+          "pmcid": "PMC12713225",
+          "celulas": {
+            "GDFT": "45",
+            "Control": "45",
+            "Surgery": "All major liver surgeries",
+            "Lap (GDFT)": "0",
+            "Lap (Control)": "0",
+            "ASA (GDFT)": "Not stated",
+            "ASA (control)": "Not stated"
+          }
+        },
+        {
+          "rotulo": "Wu et al.",
+          "ref": "36",
+          "acesso_aberto": true,
+          "pmcid": "PMC10912221",
+          "celulas": {
+            "GDFT": "58",
+            "Control": "56",
+            "Surgery": "Laparoscopic radical resection of colon cancer",
+            "Lap (GDFT)": "58",
+            "Lap (Control)": "56",
+            "ASA (GDFT)": "0:25:33:0",
+            "ASA (control)": "0:22:34:0"
+          }
+        },
+        {
+          "rotulo": "Castro et al.",
+          "ref": "24",
+          "acesso_aberto": true,
+          "pmcid": "PMC11061212",
+          "celulas": {
+            "GDFT": "43",
+            "Control": "42",
+            "Surgery": "All major bowel surgeries",
+            "Lap (GDFT)": "0",
+            "Lap (Control)": "0",
+            "ASA (GDFT)": "7:31:5:0",
+            "ASA (control)": "11:26:5:0"
+          }
+        },
+        {
+          "rotulo": "Sun et al.",
+          "ref": "27",
+          "acesso_aberto": true,
+          "pmcid": "PMC10694978",
+          "celulas": {
+            "GDFT": "50",
+            "Control": "50",
+            "Surgery": "Seven gastrectomies, two liver surgeries, four Whipple procedures, 17 hemicholectomies, 12 rectum resections, one radicle cystectomy, three radical resections for gynecological cancer, three other oncological resection procedures, nine stomas",
+            "Lap (GDFT)": "38",
+            "Lap (Control)": "31",
+            "ASA (GDFT)": "6:36:8:0",
+            "ASA (control)": "8:33:9:0"
+          }
+        },
+        {
+          "rotulo": "Yoon et al.",
+          "ref": "28",
+          "acesso_aberto": true,
+          "pmcid": "PMC10561433",
+          "celulas": {
+            "GDFT": "36",
+            "Control": "39",
+            "Surgery": "Eight open radical cystectomies with ileal conduit, 31 open radical cystectomies with neobladder",
+            "Lap (GDFT)": "0",
+            "Lap (Control)": "0",
+            "ASA (GDFT)": "4:29:6:0",
+            "ASA (control)": "2:27:7:0"
+          }
+        },
+        {
+          "rotulo": "Hokenek et al.",
+          "ref": "47",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "GDFT": "39",
+            "Control": "39",
+            "Surgery": "Total abdominal hysterectomy with bilateral salpingo-oophorectomy",
+            "Lap (GDFT)": "0",
+            "Lap (Control)": "0",
+            "ASA (GDFT)": "Not stated",
+            "ASA (control)": "Not stated"
+          }
+        },
+        {
+          "rotulo": "de Waal et al.",
+          "ref": "29",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "GDFT": "274",
+            "Control": "259",
+            "Surgery": "38 oesophageal resection, 97 Whipple, 35 AAA repair, 11 resection of large soft tissue mass, 12 total gastrectomy, 27 colorectal surgery, 14 other abdominal surgery",
+            "Lap (GDFT)": "0",
+            "Lap (Control)": "0",
+            "ASA (GDFT)": "24:123:86:1",
+            "ASA (control)": "17:132:95:4"
+          }
+        },
+        {
+          "rotulo": "Diaper et al.",
+          "ref": "26",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "GDFT": "200",
+            "Control": "201",
+            "Surgery": "100 visceral, 43 urologic, 53 vascular",
+            "Lap (GDFT)": "0",
+            "Lap (Control)": "0",
+            "ASA (GDFT)": "Not stated",
+            "ASA (control)": "Not stated"
+          }
+        },
+        {
+          "rotulo": "Arslan-Carlon et al.",
+          "ref": "30",
+          "acesso_aberto": false,
+          "pmcid": "PMC8320377",
+          "celulas": {
+            "GDFT": "142",
+            "Control": "141",
+            "Surgery": "All open radical cystectomy",
+            "Lap (GDFT)": "0",
+            "Lap (Control)": "0",
+            "ASA (GDFT)": "Not stated",
+            "ASA (control)": "Not stated"
+          }
+        },
+        {
+          "rotulo": "Sujatha et al.",
+          "ref": "34",
+          "acesso_aberto": true,
+          "pmcid": "PMC6907038",
+          "celulas": {
+            "GDFT": "200",
+            "Control": "101",
+            "Surgery": "49 Whipple's procedure, 49 abdominoperineal resection, 55 hemicolectomy, 40 total distal gastrectomy, two GIST excision and intestinal anastomosis, 23 GJ+JJ",
+            "Lap (GDFT)": "0",
+            "Lap (Control)": "0",
+            "ASA (GDFT)": "95:105",
+            "ASA (control)": "2 days, 11:42:00"
+          }
+        },
+        {
+          "rotulo": "Calvo-Vecino et al.",
+          "ref": "33",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "GDFT": "209",
+            "Control": "211",
+            "Surgery": "150 gastrointestinal, 48 urological, 11 gynecological",
+            "Lap (GDFT)": "105",
+            "Lap (Control)": "109",
+            "ASA (GDFT)": "14:122:73:0",
+            "ASA (control)": "35:136:40:0"
+          }
+        },
+        {
+          "rotulo": "Weinberg et al.",
+          "ref": "39",
+          "acesso_aberto": true,
+          "pmcid": "PMC5589093",
+          "celulas": {
+            "GDFT": "26",
+            "Control": "26",
+            "Surgery": "All pancreaticoduodenal surgeries",
+            "Lap (GDFT)": "0",
+            "Lap (Control)": "0",
+            "ASA (GDFT)": "Not stated",
+            "ASA (control)": "Not stated"
+          }
+        },
+        {
+          "rotulo": "Schmid et al.",
+          "ref": "44",
+          "acesso_aberto": true,
+          "pmcid": "PMC4782303",
+          "celulas": {
+            "GDFT": "92",
+            "Control": "88",
+            "Surgery": "16 Whipple, 71 oesophageal, three pancreatectomies, two others",
+            "Lap (GDFT)": "0",
+            "Lap (Control)": "0",
+            "ASA (GDFT)": "Not stated",
+            "ASA (control)": "Not stated"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "legenda": "Intraoperative fluid therapy, blood loss, and inotrope use across the included studies Values are presented as mean ± standard deviation or median (interquartile range), as reported in the original studies. Inotrope use is reported as a relative difference between groups where quantitative data were unavailable. Some studies reported infusion rates (mL/kg/h), which were not directly comparable and are therefore not included. NR, Not reported; GDFT, Goal-directed fluid therapy.",
+      "colunas": [
+        "Study",
+        "Total fluid (mL) GDFT",
+        "Total fluid (mL) Control",
+        "Crystalloid (mL) GDFT",
+        "Crystalloid (mL) Control",
+        "Colloid (mL) GDFT",
+        "Colloid (mL) Control",
+        "Blood loss (mL) GDFT",
+        "Blood loss (mL) Control",
+        "Inotrope use"
+      ],
+      "linhas": [
+        {
+          "rotulo": "Arslan-Carlon et al.",
+          "ref": "30",
+          "acesso_aberto": false,
+          "pmcid": "PMC8320377",
+          "celulas": {
+            "Total fluid (mL) GDFT": "NR",
+            "Total fluid (mL) Control": "NR",
+            "Crystalloid (mL) GDFT": "NR",
+            "Crystalloid (mL) Control": "NR",
+            "Colloid (mL) GDFT": "NR",
+            "Colloid (mL) Control": "NR",
+            "Blood loss (mL) GDFT": "NR",
+            "Blood loss (mL) Control": "NR",
+            "Inotrope use": "No difference"
+          }
+        },
+        {
+          "rotulo": "Koo et al.",
+          "ref": "37",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "Total fluid (mL) GDFT": "NR",
+            "Total fluid (mL) Control": "NR",
+            "Crystalloid (mL) GDFT": "NR",
+            "Crystalloid (mL) Control": "NR",
+            "Colloid (mL) GDFT": "NR",
+            "Colloid (mL) Control": "NR",
+            "Blood loss (mL) GDFT": "NR",
+            "Blood loss (mL) Control": "NR",
+            "Inotrope use": "Lower in GDFT"
+          }
+        },
+        {
+          "rotulo": "Calvo-Vecino et al.",
+          "ref": "33",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "Total fluid (mL) GDFT": "NR",
+            "Total fluid (mL) Control": "NR",
+            "Crystalloid (mL) GDFT": "NR",
+            "Crystalloid (mL) Control": "NR",
+            "Colloid (mL) GDFT": "NR",
+            "Colloid (mL) Control": "NR",
+            "Blood loss (mL) GDFT": "NR",
+            "Blood loss (mL) Control": "NR",
+            "Inotrope use": "Lower in GDFT"
+          }
+        },
+        {
+          "rotulo": "Castro et al.",
+          "ref": "24",
+          "acesso_aberto": true,
+          "pmcid": "PMC11061212",
+          "celulas": {
+            "Total fluid (mL) GDFT": "3810.4 ± 2126.9",
+            "Total fluid (mL) Control": "4879.9 ± 2147.3",
+            "Crystalloid (mL) GDFT": "2982.9 ± 1524.0",
+            "Crystalloid (mL) Control": "3901.2 ± 1475.1",
+            "Colloid (mL) GDFT": "779.7 ± 565.1",
+            "Colloid (mL) Control": "737.8 ± 383.2",
+            "Blood loss (mL) GDFT": "1100.1 ± 851.1",
+            "Blood loss (mL) Control": "1283.2 ± 959.7",
+            "Inotrope use": "NR"
+          }
+        },
+        {
+          "rotulo": "Coeckelenbergh et al.",
+          "ref": "41",
+          "acesso_aberto": false,
+          "pmcid": "PMC12713225",
+          "celulas": {
+            "Total fluid (mL) GDFT": "3500 (2800–4500)",
+            "Total fluid (mL) Control": "3250 (2500–4000)",
+            "Crystalloid (mL) GDFT": "NR",
+            "Crystalloid (mL) Control": "NR",
+            "Colloid (mL) GDFT": "NR",
+            "Colloid (mL) Control": "NR",
+            "Blood loss (mL) GDFT": "500 (300–800)",
+            "Blood loss (mL) Control": "450 (300–600)",
+            "Inotrope use": "Lower in GDFT"
+          }
+        },
+        {
+          "rotulo": "de Waal et al.",
+          "ref": "29",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "Total fluid (mL) GDFT": "NR",
+            "Total fluid (mL) Control": "NR",
+            "Crystalloid (mL) GDFT": "NR",
+            "Crystalloid (mL) Control": "NR",
+            "Colloid (mL) GDFT": "NR",
+            "Colloid (mL) Control": "NR",
+            "Blood loss (mL) GDFT": "NR",
+            "Blood loss (mL) Control": "NR",
+            "Inotrope use": "Higher in GDFT"
+          }
+        },
+        {
+          "rotulo": "Hokenek et al.",
+          "ref": "47",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "Total fluid (mL) GDFT": "NR",
+            "Total fluid (mL) Control": "NR",
+            "Crystalloid (mL) GDFT": "NR",
+            "Crystalloid (mL) Control": "NR",
+            "Colloid (mL) GDFT": "NR",
+            "Colloid (mL) Control": "NR",
+            "Blood loss (mL) GDFT": "NR",
+            "Blood loss (mL) Control": "NR",
+            "Inotrope use": "No difference"
+          }
+        },
+        {
+          "rotulo": "Yoon et al.",
+          "ref": "28",
+          "acesso_aberto": true,
+          "pmcid": "PMC10561433",
+          "celulas": {
+            "Total fluid (mL) GDFT": "2700 (2175–3250)",
+            "Total fluid (mL) Control": "2900 (1950–3700)",
+            "Crystalloid (mL) GDFT": "NR",
+            "Crystalloid (mL) Control": "NR",
+            "Colloid (mL) GDFT": "NR",
+            "Colloid (mL) Control": "NR",
+            "Blood loss (mL) GDFT": "NR",
+            "Blood loss (mL) Control": "NR",
+            "Inotrope use": "No difference"
+          }
+        },
+        {
+          "rotulo": "Diaper et al.",
+          "ref": "26",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "Total fluid (mL) GDFT": "NR",
+            "Total fluid (mL) Control": "NR",
+            "Crystalloid (mL) GDFT": "NR",
+            "Crystalloid (mL) Control": "NR",
+            "Colloid (mL) GDFT": "NR",
+            "Colloid (mL) Control": "NR",
+            "Blood loss (mL) GDFT": "NR",
+            "Blood loss (mL) Control": "NR",
+            "Inotrope use": "NR"
+          }
+        },
+        {
+          "rotulo": "Peltoniemi et al.",
+          "ref": "38",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "Total fluid (mL) GDFT": "NR",
+            "Total fluid (mL) Control": "NR",
+            "Crystalloid (mL) GDFT": "NR",
+            "Crystalloid (mL) Control": "NR",
+            "Colloid (mL) GDFT": "NR",
+            "Colloid (mL) Control": "NR",
+            "Blood loss (mL) GDFT": "NR",
+            "Blood loss (mL) Control": "NR",
+            "Inotrope use": "NR"
+          }
+        },
+        {
+          "rotulo": "Wu et al.",
+          "ref": "36",
+          "acesso_aberto": true,
+          "pmcid": "PMC10912221",
+          "celulas": {
+            "Total fluid (mL) GDFT": "NR",
+            "Total fluid (mL) Control": "NR",
+            "Crystalloid (mL) GDFT": "NR",
+            "Crystalloid (mL) Control": "NR",
+            "Colloid (mL) GDFT": "NR",
+            "Colloid (mL) Control": "NR",
+            "Blood loss (mL) GDFT": "NR",
+            "Blood loss (mL) Control": "NR",
+            "Inotrope use": "Lower in GDFT"
+          }
+        },
+        {
+          "rotulo": "Redondo Calvo et al.",
+          "ref": "45",
+          "acesso_aberto": true,
+          "pmcid": "PMC12565272",
+          "celulas": {
+            "Total fluid (mL) GDFT": "1125.8 ± 751.2",
+            "Total fluid (mL) Control": "2853.1 ± 1432.2",
+            "Crystalloid (mL) GDFT": "NR",
+            "Crystalloid (mL) Control": "NR",
+            "Colloid (mL) GDFT": "NR",
+            "Colloid (mL) Control": "NR",
+            "Blood loss (mL) GDFT": "292.6 ± 274.1",
+            "Blood loss (mL) Control": "728.1 ± 618.6",
+            "Inotrope use": "NR"
+          }
+        },
+        {
+          "rotulo": "Sujatha et al.",
+          "ref": "34",
+          "acesso_aberto": true,
+          "pmcid": "PMC6907038",
+          "celulas": {
+            "Total fluid (mL) GDFT": "NR",
+            "Total fluid (mL) Control": "NR",
+            "Crystalloid (mL) GDFT": "NR",
+            "Crystalloid (mL) Control": "NR",
+            "Colloid (mL) GDFT": "NR",
+            "Colloid (mL) Control": "NR",
+            "Blood loss (mL) GDFT": "NR",
+            "Blood loss (mL) Control": "NR",
+            "Inotrope use": "NR"
+          }
+        },
+        {
+          "rotulo": "Sun et al.",
+          "ref": "27",
+          "acesso_aberto": true,
+          "pmcid": "PMC10694978",
+          "celulas": {
+            "Total fluid (mL) GDFT": "1975 (1575-2600)",
+            "Total fluid (mL) Control": "2750 (2250-3300)",
+            "Crystalloid (mL) GDFT": "1600 (837-2100)",
+            "Crystalloid (mL) Control": "2200 (2025-2513)",
+            "Colloid (mL) GDFT": "500 (500-1000)",
+            "Colloid (mL) Control": "500 (0-1000)",
+            "Blood loss (mL) GDFT": "100 (50-225)",
+            "Blood loss (mL) Control": "100 (0-350)",
+            "Inotrope use": "Lower in GDFT"
+          }
+        },
+        {
+          "rotulo": "Weinberg et al.",
+          "ref": "39",
+          "acesso_aberto": true,
+          "pmcid": "PMC5589093",
+          "celulas": {
+            "Total fluid (mL) GDFT": "2050 (1313-2700)",
+            "Total fluid (mL) Control": "4088 (3400-4525)",
+            "Crystalloid (mL) GDFT": "NR",
+            "Crystalloid (mL) Control": "NR",
+            "Colloid (mL) GDFT": "NR",
+            "Colloid (mL) Control": "NR",
+            "Blood loss (mL) GDFT": "NR",
+            "Blood loss (mL) Control": "NR",
+            "Inotrope use": "Higher in GDFT"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "legenda": "Comparison of overall morbidity rates for patients receiving GDFT versus control A Mantel-Haenszel random-effects model was used to conduct the meta-analysis, and risk ratios are quoted including 95% confidence intervals. Events, number of participants experiencing the outcome of interest; CI, Confidence Interval; GDFT, Goal-directed fluid therapy.",
+      "colunas": [
+        "Study",
+        "GDFT events n (%)",
+        "GDFT total",
+        "Control events n (%)",
+        "Control total",
+        "Risk ratio",
+        "95% CI"
+      ],
+      "linhas": [
+        {
+          "rotulo": "Calvo-Vecino et al.",
+          "ref": "33",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "GDFT events n (%)": "18 (8.6%)",
+            "GDFT total": "209",
+            "Control events n (%)": "35 (16.6%)",
+            "Control total": "211",
+            "Risk ratio": "0.519",
+            "95% CI": "0.304-0.887"
+          }
+        },
+        {
+          "rotulo": "Yun et al.",
+          "ref": "28",
+          "acesso_aberto": true,
+          "pmcid": "PMC10561433",
+          "celulas": {
+            "GDFT events n (%)": "28 (71.8%)",
+            "GDFT total": "39",
+            "Control events n (%)": "30 (83.3%)",
+            "Control total": "36",
+            "Risk ratio": "0.862",
+            "95% CI": "0.674-1.101"
+          }
+        },
+        {
+          "rotulo": "Diaper et al.",
+          "ref": "26",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "GDFT events n (%)": "113 (57.7%)",
+            "GDFT total": "196",
+            "Control events n (%)": "105 (53.0%)",
+            "Control total": "198",
+            "Risk ratio": "1.087",
+            "95% CI": "0.910-1.299"
+          }
+        },
+        {
+          "rotulo": "Wu et al.",
+          "ref": "36",
+          "acesso_aberto": true,
+          "pmcid": "PMC10912221",
+          "celulas": {
+            "GDFT events n (%)": "19 (32.8%)",
+            "GDFT total": "58",
+            "Control events n (%)": "32 (57.1%)",
+            "Control total": "56",
+            "Risk ratio": "0.573",
+            "95% CI": "0.372-0.884"
+          }
+        },
+        {
+          "rotulo": "Pooled analysis",
+          "ref": null,
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "GDFT events n (%)": "178 (35.5%)",
+            "GDFT total": "502",
+            "Control events n (%)": "202 (40.3%)",
+            "Control total": "501",
+            "Risk ratio": "0.778",
+            "95% CI": "0.567-1.068"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "legenda": "Comparison of in-hospital or 30-day mortality rate for patients receiving GDFT versus control or traditional principles A Mantel-Haenszel random-effects model was used to conduct the meta-analysis, and risk ratios are quoted including 95% confidence intervals. GDFT, Goal-directed fluid therapy.",
+      "colunas": [
+        "Study",
+        "GDFT deaths n (%)",
+        "GDFT total",
+        "Control deaths n (%)",
+        "Control total",
+        "Risk ratio",
+        "95% CI"
+      ],
+      "linhas": [
+        {
+          "rotulo": "de Waal et al.",
+          "ref": "29",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "GDFT deaths n (%)": "10 (4.0%)",
+            "GDFT total": "248",
+            "Control deaths n (%)": "10 (4.3%)",
+            "Control total": "234",
+            "Risk ratio": "0.944",
+            "95% CI": "0.400-2.226"
+          }
+        },
+        {
+          "rotulo": "Sun et al.",
+          "ref": "27",
+          "acesso_aberto": true,
+          "pmcid": "PMC10694978",
+          "celulas": {
+            "GDFT deaths n (%)": "1 (2.0%)",
+            "GDFT total": "50",
+            "Control deaths n (%)": "0 (0%)",
+            "Control total": "50",
+            "Risk ratio": "3.000",
+            "95% CI": "0.125-71.927"
+          }
+        },
+        {
+          "rotulo": "Pooled analysis",
+          "ref": null,
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "GDFT deaths n (%)": "11 (3.7%)",
+            "GDFT total": "298",
+            "Control deaths n (%)": "10 (3.5%)",
+            "Control total": "284",
+            "Risk ratio": "1.021",
+            "95% CI": "0.446-2.337"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "legenda": "Comparison of overall hospital LOS (top) for patients receiving GDFT versus control An inverse-variance random-effects model was used to conduct the meta-analysis, and mean differences are quoted, including 95% confidence intervals. LOS, Length of stay; GDFT, Goal-directed fluid therapy.",
+      "colunas": [
+        "Study",
+        "Mean difference (days)",
+        "95% CI"
+      ],
+      "linhas": [
+        {
+          "rotulo": "Wu et al.",
+          "ref": "36",
+          "acesso_aberto": true,
+          "pmcid": "PMC10912221",
+          "celulas": {
+            "Mean difference (days)": "-2.0",
+            "95% CI": "-3.5 to -0.5"
+          }
+        },
+        {
+          "rotulo": "Sun et al.",
+          "ref": "27",
+          "acesso_aberto": true,
+          "pmcid": "PMC10694978",
+          "celulas": {
+            "Mean difference (days)": "-3.0",
+            "95% CI": "-5.0 to -1.0"
+          }
+        },
+        {
+          "rotulo": "Peltoniemi et al.",
+          "ref": "38",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "Mean difference (days)": "-2.5",
+            "95% CI": "-4.0 to -1.0"
+          }
+        },
+        {
+          "rotulo": "Pooled analysis",
+          "ref": null,
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "Mean difference (days)": "-2.5",
+            "95% CI": "-4.5 to -0.5"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "legenda": "Comparison of time to the first flatus for patients receiving GDFT versus the control group GDFT, Goal-directed fluid therapy.",
+      "colunas": [
+        "Study",
+        "GDFT (mean ± SD)",
+        "n",
+        "Control (mean ± SD)",
+        "Weight (%)",
+        "MD (95% CI)"
+      ],
+      "linhas": [
+        {
+          "rotulo": "Sun et al.",
+          "ref": "27",
+          "acesso_aberto": true,
+          "pmcid": "PMC10694978",
+          "celulas": {
+            "GDFT (mean ± SD)": "48 ± 12",
+            "n": "50",
+            "Control (mean ± SD)": "59 ± 14",
+            "Weight (%)": "32.1",
+            "MD (95% CI)": "-11.0 [-16.2, -5.8]"
+          }
+        },
+        {
+          "rotulo": "Coeckelenbergh et al.",
+          "ref": "41",
+          "acesso_aberto": false,
+          "pmcid": "PMC12713225",
+          "celulas": {
+            "GDFT (mean ± SD)": "52 ± 15",
+            "n": "40",
+            "Control (mean ± SD)": "60 ± 18",
+            "Weight (%)": "27.4",
+            "MD (95% CI)": "-8.0 [-15.1, -0.9]"
+          }
+        },
+        {
+          "rotulo": "Diaper et al.",
+          "ref": "26",
+          "acesso_aberto": false,
+          "pmcid": null,
+          "celulas": {
+            "GDFT (mean ± SD)": "55 ± 14",
+            "n": "200",
+            "Control (mean ± SD)": "58 ± 16",
+            "Weight (%)": "40.5",
+            "MD (95% CI)": "-3.0 [-6.8, 0.8]"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "legenda": "Comparison of time to oral intake for patients receiving GDFT versus the control group GDFT, Goal-directed fluid therapy.",
+      "colunas": [
+        "Study",
+        "GDFT",
+        "n",
+        "Control",
+        "n",
+        "Weight",
+        "MD (95% CI)"
+      ],
+      "linhas": [
+        {
+          "rotulo": "Sun et al.",
+          "ref": "27",
+          "acesso_aberto": true,
+          "pmcid": "PMC10694978",
+          "celulas": {
+            "GDFT": "72 ± 24",
+            "n": "50",
+            "Control": "96 ± 30",
+            "Weight": "55.2",
+            "MD (95% CI)": "-24 [-34.5, -13.5]"
+          }
+        },
+        {
+          "rotulo": "Sujatha et al.",
+          "ref": "34",
+          "acesso_aberto": true,
+          "pmcid": "PMC6907038",
+          "celulas": {
+            "GDFT": "80 ± 20",
+            "n": "100",
+            "Control": "85 ± 25",
+            "Weight": "44.8",
+            "MD (95% CI)": "-5 [-12.1, 2.1]"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "legenda": "Comparison of time to first bowel movement for patients receiving GDFT versus the control group GDFT, Goal-directed fluid therapy.",
+      "colunas": [
+        "Study",
+        "GDFT",
+        "n",
+        "Control",
+        "n",
+        "Weight",
+        "MD (95% CI)"
+      ],
+      "linhas": [
+        {
+          "rotulo": "Sujatha et al.",
+          "ref": "34",
+          "acesso_aberto": true,
+          "pmcid": "PMC6907038",
+          "celulas": {
+            "GDFT": "72 ± 18",
+            "n": "100",
+            "Control": "78 ± 20",
+            "Weight": "100",
+            "MD (95% CI)": "-6 [-12.4, 0.4]"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 11,
+      "legenda": "Comparison of the incidence of postoperative paralytic Ileus for patients receiving GDFT versus the control group GDFT, Goal-directed fluid therapy.",
+      "colunas": [
+        "Study",
+        "GDFT n (%)",
+        "Control n (%)",
+        "Weight (%)",
+        "RR (95% CI)"
+      ],
+      "linhas": [
+        {
+          "rotulo": "Arslan-Carlon et al.",
+          "ref": "30",
+          "acesso_aberto": false,
+          "pmcid": "PMC8320377",
+          "celulas": {
+            "GDFT n (%)": "36 (25.4%)",
+            "Control n (%)": "30 (21.3%)",
+            "Weight (%)": "38.5",
+            "RR (95% CI)": "1.19 (0.77, 1.83)"
+          }
+        },
+        {
+          "rotulo": "Sun et al.",
+          "ref": "27",
+          "acesso_aberto": true,
+          "pmcid": "PMC10694978",
+          "celulas": {
+            "GDFT n (%)": "2 (4.0%)",
+            "Control n (%)": "16 (32.0%)",
+            "Weight (%)": "21.3",
+            "RR (95% CI)": "0.13 (0.03, 0.53)"
+          }
+        },
+        {
+          "rotulo": "Castro et al.",
+          "ref": "24",
+          "acesso_aberto": true,
+          "pmcid": "PMC11061212",
+          "celulas": {
+            "GDFT n (%)": "6 (14.0%)",
+            "Control n (%)": "19 (45.2%)",
+            "Weight (%)": "40.2",
+            "RR (95% CI)": "0.31 (0.14, 0.68)"
+          }
+        }
+      ]
+    }
+  ]
+}

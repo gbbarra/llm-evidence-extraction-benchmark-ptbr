@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?><article xml:lang="en" article-type="research-article"><front><journal-meta><journal-id journal-id-type="pmc-domain-id">365</journal-id><journal-id journal-id-type="pmc-domain">springeropen</journal-id><journal-title-group><journal-title>International Journal of Colorectal Disease</journal-title><abbrev-journal-title>Int J Colorectal Dis</abbrev-journal-title></journal-title-group></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC10912221</article-id><article-id pub-id-type="pmcaid">10912221</article-id><article-id pub-id-type="pmcaiid">10912221</article-id><article-id pub-id-type="pmid">38436757</article-id><article-id pub-id-type="doi">10.1007/s00384-024-04606-x</article-id><title-group><article-title>Pulse pressure variation guided goal-direct
+fluid therapy decreases postoperative complications in elderly patients undergoing
+laparoscopic radical resection of colorectal cancer: a randomized controlled
+trial</article-title></title-group><contrib-group content-type="author"><contrib><name name-style="western"><surname>Wu</surname><given-names initials="QR">Qiu-Rong</given-names></name><xref ref-type="aff" rid="Aff1">1</xref></contrib><contrib><name name-style="western"><surname>Zhao</surname><given-names initials="ZZ">Zi-Zuo</given-names></name><xref ref-type="aff" rid="Aff1">1</xref></contrib><contrib><name name-style="western"><surname>Fan</surname><given-names initials="KM">Ke-Ming</given-names></name><xref ref-type="aff" rid="Aff2">2</xref></contrib><contrib><name name-style="western"><surname>Cheng</surname><given-names initials="HT">Hui-Ting</given-names></name><xref ref-type="aff" rid="Aff1">1</xref></contrib><contrib><name name-style="western"><surname>Wang</surname><given-names initials="B">Bin</given-names></name><xref ref-type="aff" rid="Aff1">1</xref><xref ref-type="author-notes" rid="_fncrsp93pmc__">✉</xref></contrib></contrib-group><aff id="Aff1"><label>1</label>Department of Anesthesiology, the First Affiliated Hospital of Chongqing Medical University, Chongqing, 400016 China </aff><aff id="Aff2"><label>2</label>Department of Anesthesiology, Yongchuan District People’s Hospital of Chongqing, Chongqing, 400016 China </aff><author-notes><fn id="_fncrsp93pmc__"><label>✉</label><p>Corresponding author.</p></fn></author-notes><pub-date><day>4</day><month>3</month><year>2024</year></pub-date><volume>39</volume><issue>1</issue><fpage>33</fpage><page-range>33</page-range><pub-history><event event-type="pmc-release"><date><day>6</day><month>3</month><year>2024</year></date></event></pub-history><permissions><copyright-statement>© The Author(s) 2024</copyright-statement><license><license-p><bold>Open Access</bold> This article is licensed
+under a Creative Commons Attribution 4.0 International License, which permits
+use, sharing, adaptation, distribution and reproduction in any medium or format,
+as long as you give appropriate credit to the original author(s) and the source,
+provide a link to the Creative Commons licence, and indicate if changes were
+made. The images or other third party material in this article are included in
+the article's Creative Commons licence, unless indicated otherwise in a credit
+line to the material. If material is not included in the article's Creative
+Commons licence and your intended use is not permitted by statutory regulation
+or exceeds the permitted use, you will need to obtain permission directly from
+the copyright holder. To view a copy of this licence, visit <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://creativecommons.org/licenses/by/4.0/" ext-link-type="uri">http://creativecommons.org/licenses/by/4.0/</ext-link>.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="384_2024_Article_4606.pdf" content-type="pmc-pdf"><?cloudpmc-path 9bbf/10912221/a785a06bc40f/384_2024_Article_4606.pdf?><?cloudpmc-bucket app?><?size 2179950?></self-uri><abstract id="Abs1"><title>Abstract</title><sec id="sec1" disp-level="2"><title>Objective</title><p id="Par1">The use of goal-directed fluid therapy (GDFT) has been shown to
+reduce complications and improve prognosis in high-risk abdominal surgery
+patients. However, the utilization of pulse pressure variation (PPV) guided GDFT
+in laparoscopic surgery remains a subject of debate. We hypothesized that
+utilizing PPV guidance for GDFT would optimize short-term prognosis in elderly
+patients undergoing laparoscopic radical resection for colorectal cancer
+compared to conventional fluid therapy.</p></sec><sec id="sec2" disp-level="2"><title>Methods</title><p id="Par2">Elderly patients undergoing laparoscopic radical resection of
+colorectal cancer were randomized to receive either PPV guided GDFT or
+conventional fluid therapy and explore whether PPV guided GDFT can optimize the
+short-term prognosis of elderly patients undergoing laparoscopic radical
+resection of colorectal cancer compared with conventional fluid therapy.</p></sec><sec id="sec3" disp-level="2"><title>Results</title><p id="Par3">The incidence of complications was significantly lower in the PPV
+group compared to the control group (32.8% vs. 57.1%, <italic>P</italic> = .009). Additionally, the PPV group had a lower occurrence of
+gastrointestinal dysfunction (19.0% vs. 39.3%, <italic>P</italic> = .017) and postoperative pneumonia (8.6% vs. 23.2%, <italic>P</italic> = .033) than the control group.</p></sec><sec id="sec4" disp-level="2"><title>Conclusion</title><p id="Par4">Utilizing PPV as a monitoring index for GDFT can improve short-term
+prognosis in elderly patients undergoing laparoscopic radical resection of
+colorectal cancer.</p></sec><sec id="sec5" disp-level="2"><title>Registration number</title><p id="Par5">ChiCTR2300067361; date of registration: January 5, 2023.</p></sec><sec id="sec6" disp-level="2"><title>Supplementary Information</title><p>The online version contains supplementary material available at 10.1007/s00384-024-04606-x.</p></sec><sec id="kwd-group1" xml:lang="en" sec-type="kwd-group" disp-level="2"><p><bold>Keywords:</bold> PPV, Goal-directed fluid therapy, Laparoscopic, Elderly, Radical resection of colorectal cancer, Complications</p></sec></abstract><custom-meta-group><custom-meta><meta-name>status</meta-name><meta-value>released</meta-value></custom-meta><custom-meta><meta-name>display-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>is-in-collection-domain</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>is-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-journal-matter</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-scanned</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-retracted</meta-name><meta-value>no</meta-value></custom-meta></custom-meta-group></article-meta><notes notes-type="article-notes"><sec id="historyarticle-meta1" sec-type="history" disp-level="2"><p>Accepted 2024 Feb 20; Issue date 2024.</p></sec></notes></front><body><sec id="Sec1" disp-level="1"><title>Introduction</title><p id="Par6">By optimizing intraoperative hemodynamic parameters, goal-directed fluid
+therapy (GDFT) can maximize oxygen delivery to tissues and organs in patients
+undergoing abdominal surgery while preventing insufficient or excessive fluid
+infusion [<xref rid="CR1" ref-type="bibr">1</xref>–<xref rid="CR3" ref-type="bibr">3</xref>]. Multiple
+studies have demonstrated that GDFT provides the greatest benefit for high-risk
+abdominal surgery patients [<xref rid="CR4" ref-type="bibr">4</xref>–<xref rid="CR6" ref-type="bibr">6</xref>]. Therefore, for elderly patients with underlying diseases and
+organ dysfunction, GDFT can improve patient outcomes, reduce hospital stay duration,
+and decrease perioperative complications and readmission rates [<xref rid="CR7" ref-type="bibr">7</xref>].</p><p id="Par7">Traditional monitoring methods of GDFT mainly rely on transesophageal
+Doppler ultrasound and pulmonary artery catheterization, which accurately reflect
+cardiac output (CO) but are limited by their invasiveness and high cost
+[<xref rid="CR1" ref-type="bibr">1</xref>, <xref rid="CR8" ref-type="bibr">8</xref>]. Currently, pulse pressure variation (PPV), a minimally
+invasive and accurate dynamic indicator for evaluating fluid responsiveness, is
+recognized by clinicians. Several studies have shown that PPV can guide GDFT
+effectively and enhance patient prognosis [<xref rid="CR1" ref-type="bibr">1</xref>, <xref rid="CR3" ref-type="bibr">3</xref>, <xref rid="CR9" ref-type="bibr">9</xref>, <xref rid="CR10" ref-type="bibr">10</xref>].</p><p id="Par8">Currently, laparoscopic radical resection of colorectal cancer is the
+preferred surgical approach for achieving enhanced recovery after surgery (ERAS)
+[<xref rid="CR11" ref-type="bibr">11</xref>]. However, there is conflicting
+evidence regarding the application of PPV in laparoscopic surgery. The traditional
+belief suggests that pneumoperitoneum establishment may influence changes in stroke
+volume (SV) during respiration, affecting PPV measurement accuracy [<xref rid="CR12" ref-type="bibr">12</xref>]. Nevertheless, it has been demonstrated that
+PPV can reliably assess fluid responsiveness during laparoscopic surgery when
+appropriate pneumoperitoneum pressures are maintained [<xref rid="CR13" ref-type="bibr">13</xref>, <xref rid="CR14" ref-type="bibr">14</xref>]. To date, no relevant studies have investigated whether
+implementing PPV in laparoscopic radical resection of colorectal cancer can enhance
+rapid recovery after surgery. In this pragmatic study, we hypothesize that GDFT
+guided by PPV could optimize intraoperative hemodynamic management and reduce
+postoperative complications among elderly patients undergoing laparoscopic radical
+resection of colorectal cancer.</p></sec><sec id="Sec2" disp-level="1"><title>Materials and methods</title><sec id="Sec3" disp-level="2"><title>Study design and population</title><p id="Par9">This prospective randomized controlled trial (RCT) was conducted at
+the First Affiliated Hospital of Chongqing Medical University, China, as a
+single-center study. The Ethical approval for this study (2022-231) was provided
+by the Ethical Committee of the First Affiliated Hospital of Chongqing Medical
+University (Qing Yan) on 12 September 2022 and was registered in the Chinese
+Clinical Trial Registry (ChiCTR2300067361). Written informed consent was
+obtained from all eligible participants or their legal representatives.</p><p id="Par10">Inclusion criteria: (1) age between 60 and 90 years; (2) American
+Society of Anesthesiologists (ASA) physical status score II-III; (3) patients
+undergoing elective laparoscopic radical resection of colorectal cancer.
+Exclusion criteria: (1) emergency surgical cases; (2) unplanned reoperations;
+(3) contraindications for arterial catheterization; (4) pre-existing arrhythmia;
+(5) congestive heart failure; (6) hepatic and renal insufficiency (creatinine,
+liver enzymes &gt; 50% of normal value).</p></sec><sec id="Sec4" disp-level="2"><title>Randomization and blinding</title><p id="Par11">Participants were assigned randomly, in a 1:1 ratio, to either PPV
+guided GDFT or conventional fluid therapy using a random number generated by
+Microsoft Excel. Randomization was performed by an assistant who had no
+involvement in the study and the assignment was stored in sealed envelopes with
+serial numbers. The anesthesiologist was responsible for preoperative and
+intraoperative management as well as administering the fluid protocol. Only the
+performing anesthesiologist was aware of each patient’s assignment, while the
+postoperative follow-up team remained unaware of both randomization and overall
+intraoperative management. Data collected by both groups of personnel were
+recorded on specific data collection forms and subsequently transferred to two
+separate databases — one containing preoperative and intraoperative data, and
+another containing postoperative data. The combination of these two databases
+only occurred at the end of the study period. Independent statisticians
+conducted data assessment and analysis.</p></sec><sec id="Sec5" disp-level="2"><title>Intervention and intraoperative management</title><p id="Par12">The anesthesia management was standardized by the protocols of our
+department, and the entire procedure was performed by a single anesthesiologist.
+Blood pressure (BP), electrocardiogram (ECG), oxygen saturation (SpO2), and
+bispectral index (BIS) were routinely monitored upon patients’ arrival in the
+operating room. Radial artery puncture and catheterization were conducted before
+anesthesia administration, followed by monitoring of arterial blood pressure
+(ABP) and PPV. Anesthesia induction included midazolam at a dose of 0.05 mg/kg,
+propofol at 2 mg/kg, sufentanil at 0.5 µg/kg, and vecuronium at 0.15 mg/kg.
+Maintenance of anesthesia involved propofol infusion along with remifentanil
+administration, while sevoflurane inhalation maintained the minimum alveolar
+concentration (MAC) between 0.7 and 1. BIS values were maintained within the
+range of 40–50 throughout the procedure. Ventilator settings comprised tidal
+volume set at 8–10 ml/kg PBW, inspiratory-to-expiratory ratio (I/E) set as 1:2,
+respiratory rate (RR) adjusted to maintain end-tidal carbon dioxide partial
+pressure between 35 and 40 mmHg, while nasopharyngeal temperature was kept above
+36 °C using heated liquid and warm fan devices. Additionally, intraoperative
+pneumoperitoneum pressure was adjusted between 10 and 12 mmHg based on surgical
+requirements and patient condition.</p><sec id="Sec6" disp-level="3"><title>Fluid management</title><sec id="FPar1" disp-level="4"><title>Control group</title><p id="Par13">Solid food was allowed up to 8 h before surgery, while
+clear fluids were permitted up to 4 h prior. Rehydration was
+administered after admission based on physiological requirements,
+compensating for missed fasting volume, anesthesia volume expansion, and
+blood loss. The physiological requirements and missed fasting volume
+were determined using the 4-2-1 rehydration principle [<xref rid="CR7" ref-type="bibr">7</xref>]. The fluid infusion volume in the
+first hour was calculated as follows: fasting loss /2 + physiological
+requirement + anesthesia expansion volume. The fluid infusion volumes in
+the second and third hours were determined by fasting loss /4 +
+physiological requirement + additional loss. The blood volume loss
+caused by bleeding was adjusted based on the actual amount of blood
+lost. The physiological requirements, the deficit in fasting, and the
+expansion of anesthesia volume were supplemented with compound
+electrolytes, and the bleeding amount was supplemented with hydroxyethyl
+starch.</p></sec><sec id="FPar2" disp-level="4"><title>PPV group</title><p id="Par14">Solid food was allowed up to 8 h before surgery, while
+clear fluids were permitted up to 4 h prior. a baseline fluid infusion
+volume of 5 ml/kg/h was administered upon entering the operating room.
+Fluid infusion was guided by PPV measurements with evaluations conducted
+every 15 min. No treatment was given when measured PPV ≤ 13%. If PPV
+&gt; 13%, a rapid infusion of 250 ml hydroxyethyl starch took place
+within 10 min. After infusion, a reevaluation of PPV occurred. If there
+was a significant change in PPV (a decrease greater than 2% from
+baseline), the infusion continued until achieving the aforementioned
+goals. If there was not a significant change in PPV (a decrease of less
+than 2% from baseline), intravenous norepinephrine at a dosage range of
+0.5 to 5.0 µg/kg/min would be considered until reaching this goal (Fig.
+<xref rid="Fig1" ref-type="fig">1</xref>).</p><fig id="Fig1" position="float"><?disp-level 5?><label>Fig. 1</label><caption><p>The administration of intraoperative fluids in
+the PPV group</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="MO1" xlink:href="384_2024_4606_Fig1_HTML.jpg"><?cloudpmc-path blobs/9bbf/10912221/2ce495d0df71/384_2024_4606_Fig1_HTML.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 1478?><?original-width 1498?><?scaled-height 739?><?scaled-width 749?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="384_2024_4606_Fig1_HTML.gif"><?cloudpmc-path blobs/9bbf/10912221/f678a0a0a7d8/384_2024_4606_Fig1_HTML.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig></sec></sec><sec id="Sec7" disp-level="3"><title>Vital signs management</title><p id="Par15">The dosage of vasoactive drugs was adjusted based on the
+patient’s hemodynamics, with norepinephrine, phenylephrine, and ephedrine
+selected according to the patient’s condition. The mean arterial pressure
+(MAP) was maintained at 20% of the baseline blood pressure, heart rate (HR)
+between 55 and 100 beats per minute, and urine output greater than 0.5
+ml/kg*h. Red blood cells were transfused when hemoglobin (HB) levels dropped
+below 70 g/L in both groups.</p></sec></sec><sec id="Sec8" disp-level="2"><title>Outcome measures</title><p id="Par16">The primary outcome measure was the occurrence of postoperative
+complications (including pneumonia, intra-abdominal infection, urinary tract
+infection, incisional infection, arrhythmia, heart failure, acute myocardial
+infarction, atelectasis, pulmonary embolism, mechanical ventilation support
+exceeding 24 h, urinary retention, acute renal failure, intestinal obstruction,
+anastomotic bleeding, and leakage as well as gastrointestinal dysfunction)
+within 30 days following laparoscopic radical resection for colorectal cancer in
+elderly patients. The diagnosis of postoperative complications was established
+based on a combination of strong clinical suspicion along with supporting
+evidence from X-ray or ultrasound imaging or laboratory tests (Table
+<xref rid="Tab1" ref-type="table">1</xref>). </p><table-wrap id="Tab1" position="float"><?disp-level 3?><label>Table 1</label><caption><p>Definitions of postoperative complications</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" colspan="1" rowspan="1">Complication</th><th align="left" colspan="1" rowspan="1">Diagnostic criteria</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1">Infection</td><td align="left" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1"> Pneumonia</td><td align="left" colspan="1" rowspan="1">Patients were treated with antibiotics for
+suspected pneumonia and had at least one of the
+following criteria: confirmed diagnosis via sputum
+culture, chest imaging examination confirmation, body
+temperature over 38 °C, or white blood cell count
+exceeding
+12 × 10<sup>9</sup>/L.</td></tr><tr><td align="left" colspan="1" rowspan="1"> Abdominal infection</td><td align="left" colspan="1" rowspan="1">The abdominal pain and pathogenic examination of
+the drainage fluid yielded positive
+results.</td></tr><tr><td align="left" colspan="1" rowspan="1"> Urinary tract infections</td><td align="left" colspan="1" rowspan="1">Dysuria and positive urine pathogen tests were
+also noted.</td></tr><tr><td align="left" colspan="1" rowspan="1"> Incision infection</td><td align="left" colspan="1" rowspan="1">The incision exhibited erythema, edema,
+increased temperature, and tenderness with purulent
+discharge, and the pathogen of pus was
+positive.</td></tr><tr><td align="left" colspan="1" rowspan="1"> Sepsis</td><td align="left" colspan="1" rowspan="1">Positive blood cultures and at least two of the
+following signs: abnormal body temperature, rapid heart
+rate, fast breathing, or abnormal white blood cell
+count.</td></tr><tr><td align="left" colspan="1" rowspan="1">Cardiovascular complications</td><td align="left" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1"> Arrhythmology</td><td align="left" colspan="1" rowspan="1">ECG diagnosis of new arrhythmia requiring at
+least a pharmacologic intervention.</td></tr><tr><td align="left" colspan="1" rowspan="1"> Heart failure</td><td align="left" colspan="1" rowspan="1">The symptoms and signs of heart failure
+(shortness of breath, rales, jugular vein distention,
+and edema, the third heart sound, imaging, and
+ultrasound signs: cardiomegaly, interstitial or alveolar
+edema), brain natriuretic peptide (BNP) value ≥ 35
+pg/ml.</td></tr><tr><td align="left" colspan="1" rowspan="1"> Acute myocardial infarction</td><td align="left" colspan="1" rowspan="1">The presence of new Q wave changes or persistent
+ST-T segment changes accompanied by abnormal troponin
+values was observed.</td></tr><tr><td align="left" colspan="1" rowspan="1">Respiratory complications</td><td align="left" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1"> Atelectasis of lung</td><td align="left" colspan="1" rowspan="1">Diagnosis by imaging examination</td></tr><tr><td align="left" colspan="1" rowspan="1"> Pulmonary embolism</td><td align="left" colspan="1" rowspan="1">Diagnosis by imaging examination</td></tr><tr><td align="left" colspan="1" rowspan="1"> Ventilator support &gt; 24 h or ventilator
+weaning failure</td><td align="left" colspan="1" rowspan="1">Diagnosis by the clinical
+manifestations.</td></tr><tr><td align="left" colspan="1" rowspan="1">Kidney-related complications</td><td align="left" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1"> Urinary retention</td><td align="left" colspan="1" rowspan="1">The bladder is filled with urine, leading to an
+abnormal retention of over 100 ml.</td></tr><tr><td align="left" colspan="1" rowspan="1"> Acute kidney injury</td><td align="left" colspan="1" rowspan="1">Any two increases in serum creatinine &gt; 26.5
+umoL/L within 48 h after surgery, or an increase in
+serum creatinine &gt; 1.5 times the baseline value
+within 7 days after surgery (baseline value was the
+lowest creatinine within 30 days before
+surgery)</td></tr><tr><td align="left" colspan="1" rowspan="1">Gastrointestinal complications</td><td align="left" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1"> Intestinal obstruction</td><td align="left" colspan="1" rowspan="1">Abdominal pain, abdominal distension, vomiting,
+cessation of exhaust and defecation, and imaging
+examination were confirmed</td></tr><tr><td align="left" colspan="1" rowspan="1"> Anastomotic bleeding</td><td align="left" colspan="1" rowspan="1">After the operation, the patient had recurrent
+bloody stool or was confirmed by endoscopy or
+surgery</td></tr><tr><td align="left" colspan="1" rowspan="1"> Anastomotic leak</td><td align="left" colspan="1" rowspan="1">The presence of abdominal pain, abdominal
+distention, purulent secretions drainage, and confirmed
+imaging findings was observed.</td></tr><tr><td align="left" colspan="1" rowspan="1"> Gastrointestinal dysfunction</td><td align="left" colspan="1" rowspan="1">The diagnosis was made according to the I-FEED
+scoring criteria</td></tr></tbody></table></table-wrap><p id="Par17">Other outcome measures included the Clavien-Dindo complication
+score at 30 days post-surgery [<xref rid="CR15" ref-type="bibr">15</xref>,
+<xref rid="CR16" ref-type="bibr">16</xref>] and the I-FEED score for
+gastrointestinal dysfunction at 30 days post-surgery [<xref rid="CR11" ref-type="bibr">11</xref>, <xref rid="CR17" ref-type="bibr">17</xref>]. Additionally, various physiological parameters such as
+HR, MAP, potential of hydrogen (PH), and lactic (Lac) values were assessed at
+significant intraoperative time points. Intraoperative, postoperative, and
+perioperative total opioid consumption was measured in morphine equivalents
+[morphine (iv)1 mg = remifentanil (iv)10 µg = sufentanil (iv)1 µg = tramadol
+(iv)10 mg] [<xref rid="CR18" ref-type="bibr">18</xref>]. Postoperative
+recovery markers evaluated were extubation time, initiation of oral intake,
+first exhaust time, first defecation time, initial mobilization after surgery,
+and length of hospital stay (LOS). (Discharge decisions were guided by
+standardized criteria: patients should be considered ready for hospital
+discharge when there is tolerance of oral intake, recovery of lower
+gastrointestinal function, adequate pain control with oral analgesia, ability to
+mobilize and self-care, and no evidence of complications or untreated medical
+problems [<xref rid="CR19" ref-type="bibr">19</xref>]).</p></sec><sec id="Sec9" disp-level="2"><title>Sample size and statistical analysis</title><p id="Par18">The study was designed as an RCT. The PPV group received GDFT
+guided by PPV, while the control group received conventional fluid therapy. The
+primary outcome measure assessed in this study was the rate of complications
+within 30 days. Based on a previous study by Mayer et al., which examined
+high-risk patients undergoing elective major abdominal surgery, the complication
+rate was 0.2 in the experimental group and 0.5 in the control group
+[<xref rid="CR20" ref-type="bibr">20</xref>]. With a two-sided
+<italic>α</italic> = 0.05, a power of 1-β set at 0.9, and
+a sample size ratio of 1:1 between the PPV and control groups, we calculated
+that each group would require 48 participants using R language analysis
+software. Considering 20% of cases of loss to follow-up or refusal to
+participate, we aimed for a final minimum sample size of 60 participants in both
+groups, resulting in a total sample size of 120 cases.</p><p id="Par19">An independent statistician utilized SPSS for Windows software
+(version 26.0; SPSS, Chicago, Illinois, USA) to conduct the statistical
+analysis. The primary outcome measures were evaluated using either the
+chi-square test or Fisher’s exact test. The normal distribution of the secondary
+outcome data was assessed using the Kolmogorov–Smirnov test. For normally
+distributed data, an independent sample <italic>t</italic>-test was employed for analysis, and variables were expressed as
+mean ± standard deviation (SD). Non-normally distributed data were compared
+using the Mann–Whitney <italic>U</italic> test and presented
+as the median and interquartile range (IQR). Count data were analyzed using
+either the chi-square test or Fisher’s exact test, with further pairwise
+comparisons conducted utilizing the Bonferroni method where appropriate.
+Two-factor repeated measures analysis of variance was used to compare HR, MAP,
+PH, and Lac.</p></sec></sec><sec id="Sec10" disp-level="1"><title>Results</title><sec id="Sec11" disp-level="2"><title>Study population</title><p id="Par20">From January 2023 to November 2023, a total of 165 patients were
+assessed for eligibility, out of which 122 subjects were randomly assigned.
+Specifically, 61 patients were allocated to the PPV group and another 61
+patients to the control group. In the control group, five patients did not
+receive the assigned intervention due to three cases of consent withdrawal
+before the procedure initiation and two cases of canceled procedures. Similarly,
+in the PPV group, three patients did not receive their assigned intervention due
+to one case of consent withdrawal before surgery and two cases of canceled
+surgeries. Consequently, a modified intention-to-treat analysis was conducted on
+the remaining cohort consisting of 114 patients (58 in the PPV group and 56 in
+the control group) (Fig. <xref rid="Fig2" ref-type="fig">2</xref>). Notably,
+both groups exhibited balanced demographic and perioperative characteristics
+without any significant differences observed in median operative time,
+laparoscopic time, or duration of anesthesia as presented in Table <xref rid="Tab2" ref-type="table">2</xref>.</p><fig id="Fig2" position="float"><?disp-level 3?><label>Fig. 2</label><caption><p>Enrollment, randomization, and follow-up</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="MO2" xlink:href="384_2024_4606_Fig2_HTML.jpg"><?cloudpmc-path blobs/9bbf/10912221/9080bf7962f6/384_2024_4606_Fig2_HTML.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 1235?><?original-width 1499?><?scaled-height 617?><?scaled-width 749?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="384_2024_4606_Fig2_HTML.gif"><?cloudpmc-path blobs/9bbf/10912221/3a2c39964527/384_2024_4606_Fig2_HTML.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><table-wrap id="Tab2" position="float"><?disp-level 3?><label>Table 2</label><caption><p>Basic characteristics of the study subjects</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" colspan="1" rowspan="1"/><th align="left" colspan="1" rowspan="1">PPV group (<italic>n</italic> = 58)</th><th align="left" colspan="1" rowspan="1">Control group (<italic>n</italic> = 56)</th><th align="left" colspan="1" rowspan="1"><italic>P</italic>-value</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1">Age (years)</td><td align="left" colspan="1" rowspan="1">70.2 ± 7.0</td><td align="left" colspan="1" rowspan="1">70.0 ± 7.5</td><td align="left" colspan="1" rowspan="1">0.778</td></tr><tr><td align="left" colspan="1" rowspan="1">BMI(kg/m2)</td><td align="left" colspan="1" rowspan="1">22.7 ± 3.1</td><td align="left" colspan="1" rowspan="1">23.0 ± 2.7</td><td align="left" colspan="1" rowspan="1">0.677</td></tr><tr><td align="left" colspan="1" rowspan="1">Sex</td><td align="left" colspan="1" rowspan="1"/><td align="left" colspan="1" rowspan="1"/><td align="left" colspan="1" rowspan="1">0.373</td></tr><tr><td align="left" colspan="1" rowspan="1"> Male</td><td align="left" colspan="1" rowspan="1">38 (65.5)</td><td align="left" colspan="1" rowspan="1">41 (73.2)</td><td align="left" rowspan="2" colspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1"> Female</td><td align="left" colspan="1" rowspan="1">20 (34.5)</td><td align="left" colspan="1" rowspan="1">15 (26.8)</td></tr><tr><td align="left" colspan="1" rowspan="1">ASA physical status score</td><td align="left" colspan="1" rowspan="1"/><td align="left" colspan="1" rowspan="1"/><td align="left" colspan="1" rowspan="1">0.679</td></tr><tr><td align="left" colspan="1" rowspan="1"> II</td><td align="left" colspan="1" rowspan="1">25 (43.1)</td><td align="left" colspan="1" rowspan="1">22 (39.3)</td><td align="left" rowspan="2" colspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1"> III</td><td align="left" colspan="1" rowspan="1">33 (56.9)</td><td align="left" colspan="1" rowspan="1">34 (60.7)</td></tr><tr><td align="left" colspan="1" rowspan="1">Coexisting medical condition</td><td align="left" colspan="1" rowspan="1"/><td align="left" colspan="1" rowspan="1"/><td align="left" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1"> Hypertension</td><td align="left" colspan="1" rowspan="1">18 (31.0)</td><td align="left" colspan="1" rowspan="1">18 (32.1)</td><td align="left" colspan="1" rowspan="1">0.899</td></tr><tr><td align="left" colspan="1" rowspan="1"> Diabetes</td><td align="left" colspan="1" rowspan="1">12 (20.7)</td><td align="left" colspan="1" rowspan="1">12 (21.4)</td><td align="left" colspan="1" rowspan="1">0.923</td></tr><tr><td align="left" colspan="1" rowspan="1"> Chronic heart disease</td><td align="left" colspan="1" rowspan="1">8 (13.8)</td><td align="left" colspan="1" rowspan="1">5 (8.9)</td><td align="left" colspan="1" rowspan="1">0.414</td></tr><tr><td align="left" colspan="1" rowspan="1"> Chronic lung disease</td><td align="left" colspan="1" rowspan="1">5 (8.6)</td><td align="left" colspan="1" rowspan="1">8 (14.3)</td><td align="left" colspan="1" rowspan="1">0.341</td></tr><tr><td align="left" colspan="1" rowspan="1"> Cerebrovascular diseases</td><td align="left" colspan="1" rowspan="1">3 (5.2)</td><td align="left" colspan="1" rowspan="1">6 (10.7)</td><td align="left" colspan="1" rowspan="1">0.453</td></tr><tr><td align="left" colspan="1" rowspan="1">Site of surgery</td><td align="left" colspan="1" rowspan="1"/><td align="left" colspan="1" rowspan="1"/><td align="left" colspan="1" rowspan="1">0.854</td></tr><tr><td align="left" colspan="1" rowspan="1"> Colon</td><td align="left" colspan="1" rowspan="1">30 (51.7)</td><td align="left" colspan="1" rowspan="1">28 (48.3)</td><td align="left" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1"> Rectum</td><td align="left" colspan="1" rowspan="1">28 (50.0)</td><td align="left" colspan="1" rowspan="1">28 (50.0)</td><td align="left" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1">Duration of laparoscopy (min)</td><td align="left" colspan="1" rowspan="1">129.8 ± 45.1</td><td align="left" colspan="1" rowspan="1">127.2 ± 43.4</td><td align="left" colspan="1" rowspan="1">0.761</td></tr><tr><td align="left" colspan="1" rowspan="1">Duration of surgery (min)</td><td align="left" colspan="1" rowspan="1">188.0 ± 54.0</td><td align="left" colspan="1" rowspan="1">189.6 ± 54.1</td><td align="left" colspan="1" rowspan="1">0.873</td></tr><tr><td align="left" colspan="1" rowspan="1">Duration of anesthesia (min)</td><td align="left" colspan="1" rowspan="1">229.3 ± 56.3</td><td align="left" colspan="1" rowspan="1">227.8 ± 57.0</td><td align="left" colspan="1" rowspan="1">0.891</td></tr></tbody></table><table-wrap-foot><fn id="_fn_p26"><p>Data are presented as mean ± SD</p><p><italic>BMI</italic> body mass index,
+<italic>ASA</italic> American Society of
+Anesthesiologists</p></fn></table-wrap-foot></table-wrap></sec><sec id="Sec12" disp-level="2"><title>Perioperative management</title><p id="Par21">The crystalloid, colloid, and total fluid intake in the PPV group
+were significantly lower compared to the control group (<italic>P</italic> &lt; 0.05). Moreover, a significantly lower number of patients
+in the PPV group required phenylephrine administration compared to the control
+group (<italic>P</italic> &lt; 0.001). Additionally, although
+not reaching statistical significance (<italic>P</italic> = 0.056), there was a trend towards fewer cases requiring
+norepinephrine in the PPV group. No statistically significant differences were
+observed between the two groups regarding blood loss, urine output, number of
+blood transfusions, and use of ephedrine (Table <xref rid="Tab3" ref-type="table">3</xref>). </p><table-wrap id="Tab3" position="float"><?disp-level 3?><label>Table 3</label><caption><p>Intraoperative volume management and vasoactive drug
+use</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" colspan="1" rowspan="1"/><th align="left" colspan="1" rowspan="1">PPV group (<italic>n</italic> = 58)</th><th align="left" colspan="1" rowspan="1">Control group (<italic>n</italic> = 56)</th><th align="left" colspan="1" rowspan="1"><italic>P</italic>-value</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1">Crystalloid infusion volume (ml)</td><td align="left" colspan="1" rowspan="1">1100 (937,1300)</td><td align="left" colspan="1" rowspan="1">1600 (1225,1700)</td><td align="center" colspan="1" rowspan="1">&lt; 0.001</td></tr><tr><td align="left" colspan="1" rowspan="1">Colloid infusion volume (ml)</td><td align="left" colspan="1" rowspan="1">500 (250,500)</td><td align="left" colspan="1" rowspan="1">500 (500,500)</td><td align="center" colspan="1" rowspan="1">&lt; 0.001</td></tr><tr><td align="left" colspan="1" rowspan="1">Total infusion volume (ml)</td><td align="left" colspan="1" rowspan="1">1450 (1237,1700)</td><td align="left" colspan="1" rowspan="1">2100 (1800,2375)</td><td align="center" colspan="1" rowspan="1">&lt; 0.001</td></tr><tr><td align="left" colspan="1" rowspan="1">Blood loss (ml)</td><td align="left" colspan="1" rowspan="1">50 (20,100)</td><td align="left" colspan="1" rowspan="1">50 (50,100)</td><td align="center" colspan="1" rowspan="1">0.287</td></tr><tr><td align="left" colspan="1" rowspan="1">Urine volume (ml)</td><td align="left" colspan="1" rowspan="1">300 (150,562)</td><td align="left" colspan="1" rowspan="1">400 (162,600)</td><td align="center" colspan="1" rowspan="1">0.393</td></tr><tr><td align="left" colspan="1" rowspan="1">Number of blood transfusions</td><td align="left" colspan="1" rowspan="1">3 (5.2)</td><td align="left" colspan="1" rowspan="1">4 (7.1)</td><td align="center" colspan="1" rowspan="1">0.962</td></tr><tr><td align="left" colspan="1" rowspan="1">Number of patients using
+norepinephrine</td><td align="left" colspan="1" rowspan="1">15 (25.9)</td><td align="left" colspan="1" rowspan="1">24 (42.9)</td><td align="center" colspan="1" rowspan="1">0.056</td></tr><tr><td align="left" colspan="1" rowspan="1">Number of patients using
+phenylephrine</td><td align="left" colspan="1" rowspan="1">12 (20.7)</td><td align="left" colspan="1" rowspan="1">24 (42.9)</td><td align="center" colspan="1" rowspan="1">0.011</td></tr><tr><td align="left" colspan="1" rowspan="1">Number of patients using ephedrine</td><td align="left" colspan="1" rowspan="1">12 (24.0)</td><td align="left" colspan="1" rowspan="1">19 (35.2)</td><td align="center" colspan="1" rowspan="1">0.112</td></tr></tbody></table><table-wrap-foot><fn id="_fn_p30"><p>Data are presented as number (percentage) or median
+(interquartile range)</p></fn></table-wrap-foot></table-wrap><p id="Par22">The HR and MAP at T2-T4 in both groups exhibited a significant
+decrease compared to T1 (<italic>P</italic> &lt; 0.01). There
+was no statistically significant difference in HR and MAP between the two groups
+at T1-T4. The changes in HR and MAP are illustrated in Fig. <xref rid="Fig3" ref-type="fig">3</xref>, with precise values provided in Appendix
+<xref rid="MOESM1" ref-type="supplementary-material">1</xref>.</p><fig id="Fig3" position="float"><?disp-level 3?><label>Fig. 3</label><caption><p>The intraoperative heart rate (HR) and mean arterial
+pressure (MAP). T1, before the administration of anesthesia; T2,
+at the initiation of surgery; T3, 30 min after the initiation of
+surgery; T4, at the end of surgery</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="MO3" xlink:href="384_2024_4606_Fig3_HTML.jpg"><?cloudpmc-path blobs/9bbf/10912221/40d0841da2bd/384_2024_4606_Fig3_HTML.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 489?><?original-width 1116?><?scaled-height 326?><?scaled-width 744?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="384_2024_4606_Fig3_HTML.gif"><?cloudpmc-path blobs/9bbf/10912221/9f0c2a8cc043/384_2024_4606_Fig3_HTML.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p id="Par23">At T1 and T3, there was no statistically significant difference in
+Lac levels between the PPV group and the control group. However, at T4, the Lac
+level in the PPV group was significantly lower than that in the control group
+(0.59 ± 0.20 mmol/L vs. 0.72 ± 0.30 mmol/L, <italic>P</italic> = 0.009). Similarly, there was no significant difference in pH
+between the PPV group and the control group at T1; however, at T3 and T4, the pH
+value in the PPV group was significantly higher than that in the control group
+(7.37 ± 0.04 vs. 7.35 ± 0.05, <italic>P</italic> = 0.012;
+7.37 ± 0 0.05 vs 0.7 0.34 ± 0.06, <italic>P</italic> = 0.004).
+Lac and PH changes are shown in Fig. <xref rid="Fig4" ref-type="fig">4</xref>,
+with the exact values given in the Supplementary file, Appendix <xref rid="MOESM1" ref-type="supplementary-material">1</xref>.</p><fig id="Fig4" position="float"><?disp-level 3?><label>Fig. 4</label><caption><p>The intraoperative Lac and pH values. T1, before the
+administration of anesthesia; T3, 30 min after the initiation of
+surgery; T4, at the end of surgery. Note: *The difference
+between the control and PPV groups was statistically significant
+(<italic>P</italic> &lt; 0.05). **The
+difference between the control group the and PPV group was
+highly statistically significant (<italic>P</italic> &lt; 0.01)</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="MO4" xlink:href="384_2024_4606_Fig4_HTML.jpg"><?cloudpmc-path blobs/9bbf/10912221/eb06a0b1c18f/384_2024_4606_Fig4_HTML.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 489?><?original-width 1116?><?scaled-height 326?><?scaled-width 744?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="384_2024_4606_Fig4_HTML.gif"><?cloudpmc-path blobs/9bbf/10912221/ac1cca79919a/384_2024_4606_Fig4_HTML.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p id="Par24">The opioid consumption (expressed as morphine equivalents) of the
+two groups is presented in Table <xref rid="Tab4" ref-type="table">4</xref>.
+There were no statistically significant differences observed in terms of
+intraoperative morphine equivalents, postoperative morphine equivalents, and
+perioperative total morphine equivalents between the two groups. </p><table-wrap id="Tab4" position="float"><?disp-level 3?><label>Table 4</label><caption><p>Intraoperative, postoperative, and perioperative total
+opioid consumption (expressed as morphine
+equivalents)</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" colspan="1" rowspan="1"/><th align="left" colspan="1" rowspan="1">PPV group (<italic>n</italic> = 58)</th><th align="left" colspan="1" rowspan="1">Control group (<italic>n</italic> = 56)</th><th align="left" colspan="1" rowspan="1"><italic>P</italic>-value</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1">Intraoperative morphine equivalents
+(mg)</td><td align="center" colspan="1" rowspan="1">180.1 ± 36.1</td><td align="center" colspan="1" rowspan="1">189.6 ± 29.2</td><td align="center" colspan="1" rowspan="1">0.125</td></tr><tr><td align="left" colspan="1" rowspan="1">Postoperative morphine equivalents
+(mg)</td><td align="center" colspan="1" rowspan="1">40.4 ± 19.2</td><td align="center" colspan="1" rowspan="1">41.8 ± 19.8</td><td align="center" colspan="1" rowspan="1">0.697</td></tr><tr><td align="left" colspan="1" rowspan="1">Total morphine equivalents (mg)</td><td align="center" colspan="1" rowspan="1">220.5 ± 41.4</td><td align="center" colspan="1" rowspan="1">231.5 ± 34.4</td><td align="center" colspan="1" rowspan="1">0.129</td></tr></tbody></table><table-wrap-foot><fn id="_fn_p37"><p>Data are presented as mean ± SD</p></fn></table-wrap-foot></table-wrap></sec><sec id="Sec13" disp-level="2"><title>Primary and secondary outcomes</title><sec id="Sec14" disp-level="3"><title>Primary outcomes</title><p id="Par25">Complications occurred in 19 out of 58 patients (32.8%) in the
+PPV group compared to 32 out of 56 patients (57.1%) in the Control group
+(<italic>P</italic> = 0.009). The incidence of
+gastrointestinal dysfunction was significantly lower in the PPV group
+compared to the control group (11 vs. 22 cases, <italic>P</italic> = .017), as well as pneumonia (5 vs. 13 cases, <italic>P</italic> = 0.033) (Table <xref rid="Tab5" ref-type="table">5</xref>). </p><table-wrap id="Tab5" position="float"><?disp-level 4?><label>Table 5</label><caption><p>The occurrence of complications within 30
+days</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" colspan="1" rowspan="1">Complications</th><th align="left" colspan="1" rowspan="1">PPV group (<italic>n</italic> = 58)</th><th align="left" colspan="1" rowspan="1">Control group (<italic>n</italic> = 56)</th><th align="left" colspan="1" rowspan="1"><italic>P</italic>-value</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1">Any complications occurred within 30
+days</td><td align="left" colspan="1" rowspan="1">19 (32.8)</td><td align="left" colspan="1" rowspan="1">32 (57.1)</td><td align="center" colspan="1" rowspan="1">0.009</td></tr><tr><td align="left" colspan="1" rowspan="1">Infection</td><td align="left" colspan="1" rowspan="1"/><td align="left" colspan="1" rowspan="1"/><td align="center" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1"> Pneumonia</td><td align="left" colspan="1" rowspan="1">5 (8.6)</td><td align="left" colspan="1" rowspan="1">13 (23.2)</td><td align="center" colspan="1" rowspan="1">0.033</td></tr><tr><td align="left" colspan="1" rowspan="1"> Abdominal infection</td><td align="left" colspan="1" rowspan="1">5 (8.6)</td><td align="left" colspan="1" rowspan="1">4 (7.1)</td><td align="center" colspan="1" rowspan="1">1.000</td></tr><tr><td align="left" colspan="1" rowspan="1"> Urinary tract infections</td><td align="left" colspan="1" rowspan="1">1 (1.7)</td><td align="left" colspan="1" rowspan="1">2 (3.6)</td><td align="center" colspan="1" rowspan="1">0.975</td></tr><tr><td align="left" colspan="1" rowspan="1"> Incision infection</td><td align="left" colspan="1" rowspan="1">3 (5.2)</td><td align="left" colspan="1" rowspan="1">3 (5.4)</td><td align="center" colspan="1" rowspan="1">1.000</td></tr><tr><td align="left" colspan="1" rowspan="1"> Sepsis</td><td align="left" colspan="1" rowspan="1">1 (1.7)</td><td align="left" colspan="1" rowspan="1">3 (5.4)</td><td align="center" colspan="1" rowspan="1">0.586</td></tr><tr><td align="left" colspan="1" rowspan="1">Cardiovascular complications</td><td align="left" colspan="1" rowspan="1"/><td align="left" colspan="1" rowspan="1"/><td align="center" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1"> Arrhythmology</td><td align="left" colspan="1" rowspan="1">1 (1.7)</td><td align="left" colspan="1" rowspan="1">3 (5.4)</td><td align="center" colspan="1" rowspan="1">0.586</td></tr><tr><td align="left" colspan="1" rowspan="1"> Heart failure</td><td align="left" colspan="1" rowspan="1">3 (5.2)</td><td align="left" colspan="1" rowspan="1">5 (8.9)</td><td align="center" colspan="1" rowspan="1">0.433</td></tr><tr><td align="left" colspan="1" rowspan="1"> Acute myocardial infarction</td><td align="left" colspan="1" rowspan="1">0</td><td align="left" colspan="1" rowspan="1">0</td><td align="center" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1">Respiratory complications</td><td align="left" colspan="1" rowspan="1"/><td align="left" colspan="1" rowspan="1"/><td align="center" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1"> Atelectasis of lung</td><td align="left" colspan="1" rowspan="1">2 (3.4)</td><td align="left" colspan="1" rowspan="1">7 (12.5)</td><td align="center" colspan="1" rowspan="1">0.149</td></tr><tr><td align="left" colspan="1" rowspan="1"> Pulmonary embolism</td><td align="left" colspan="1" rowspan="1">0</td><td align="left" colspan="1" rowspan="1">0</td><td align="center" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1"> Ventilator support &gt; 24 h or ventilator
+weaning failure</td><td align="left" colspan="1" rowspan="1">0</td><td align="left" colspan="1" rowspan="1">0</td><td align="center" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1"> Kidney-related complications</td><td align="left" colspan="1" rowspan="1"/><td align="left" colspan="1" rowspan="1"/><td align="center" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1"> Urinary retention</td><td align="left" colspan="1" rowspan="1">1 (1.7)</td><td align="left" colspan="1" rowspan="1">2 (3.6)</td><td align="center" colspan="1" rowspan="1">0.975</td></tr><tr><td align="left" colspan="1" rowspan="1"> Acute kidney injury</td><td align="left" colspan="1" rowspan="1">0</td><td align="left" colspan="1" rowspan="1">0</td><td align="center" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1">Gastrointestinal complications</td><td align="left" colspan="1" rowspan="1"/><td align="left" colspan="1" rowspan="1"/><td align="center" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1"> Intestinal obstruction</td><td align="left" colspan="1" rowspan="1">2 (3.4)</td><td align="left" colspan="1" rowspan="1">3 (5.4)</td><td align="center" colspan="1" rowspan="1">0.968</td></tr><tr><td align="left" colspan="1" rowspan="1"> Anastomotic bleeding</td><td align="left" colspan="1" rowspan="1">1 (1.7)</td><td align="left" colspan="1" rowspan="1">0 (0.0)</td><td align="center" colspan="1" rowspan="1">1.000</td></tr><tr><td align="left" colspan="1" rowspan="1"> Anastomotic leak</td><td align="left" colspan="1" rowspan="1">2 (3.4)</td><td align="left" colspan="1" rowspan="1">4 (7.1)</td><td align="center" colspan="1" rowspan="1">0.643</td></tr><tr><td align="left" colspan="1" rowspan="1"> Gastrointestinal dysfunction</td><td align="left" colspan="1" rowspan="1">11 (19.0)</td><td align="left" colspan="1" rowspan="1">22 (39.3)</td><td align="center" colspan="1" rowspan="1">0.017</td></tr><tr><td align="left" colspan="1" rowspan="1">Unplanned admission to the ICU</td><td align="left" colspan="1" rowspan="1">1 (1.7)</td><td align="left" colspan="1" rowspan="1">2 (3.6)</td><td align="center" colspan="1" rowspan="1">0.975</td></tr><tr><td align="left" colspan="1" rowspan="1">Unplanned secondary surgery</td><td align="left" colspan="1" rowspan="1">0 (0.0)</td><td align="left" colspan="1" rowspan="1">2 (3.6)</td><td align="center" colspan="1" rowspan="1">0.239</td></tr></tbody></table><table-wrap-foot><fn id="_fn_p40"><p>Data are presented as numbers (percentages)</p></fn></table-wrap-foot></table-wrap></sec><sec id="Sec15" disp-level="3"><title>Other secondary outcome measures</title><p id="Par26">The distribution of Clavien-Dindo complication scores 30 days
+after surgery showed a significant difference between the PPV group and the
+control group (<italic>p</italic> = 0.032). Furthermore,
+based on Bonferroni analysis, there were significant differences observed in
+the distribution of Clavien-Dindo complication scores within the normal
+function subgroup (PPV group: 40 cases vs. Control group: 25 cases) and
+grade I (PPV group: 5 cases vs. Control group: 13 cases), while no
+significant difference was found in the distribution of grade II to V (Fig.
+<xref rid="Fig5" ref-type="fig">5</xref>).</p><fig id="Fig5" position="float"><?disp-level 4?><label>Fig. 5</label><caption><p>The Clavien-Dindo complication score at 30 days
+after surgery. Note: *The difference between the control and
+PPV groups was statistically significant (<italic>P</italic> &lt; 0.05)</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="MO5" xlink:href="384_2024_4606_Fig5_HTML.jpg"><?cloudpmc-path blobs/9bbf/10912221/35e62d0c2c87/384_2024_4606_Fig5_HTML.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 389?><?original-width 484?><?scaled-height 389?><?scaled-width 484?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="384_2024_4606_Fig5_HTML.gif"><?cloudpmc-path blobs/9bbf/10912221/7650cd9a6346/384_2024_4606_Fig5_HTML.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p id="Par27">The distribution of I-FEED scores for gastrointestinal
+dysfunction 30 days after surgery showed a significant difference between
+the PPV group and the control group (<italic>P</italic> = 0.001). Furthermore, applying the Bonferroni method revealed
+significant differences between the two groups in terms of normal function
+(PPV group: 38 cases vs. Control group: 17 cases) and postoperative
+intestinal dysfunction (POGD) (PPV group: 11 cases vs. control group: 22
+cases), while no significant difference was observed in postoperative
+gastrointestinal intolerance (POGI) (Fig. <xref rid="Fig6" ref-type="fig">6</xref>).</p><fig id="Fig6" position="float"><?disp-level 4?><label>Fig. 6</label><caption><p>The I-FEED score for gastrointestinal dysfunction at
+30 days after surgery. POGD, postoperative intestinal
+dysfunction; POGI, postoperative gastrointestinal
+intolerance Note: *The difference between the control group
+and the PPV group was statistically significant (<italic>P</italic> &lt; 0.05)</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="MO6" xlink:href="384_2024_4606_Fig6_HTML.jpg"><?cloudpmc-path blobs/9bbf/10912221/458acc875035/384_2024_4606_Fig6_HTML.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 752?><?original-width 708?><?scaled-height 752?><?scaled-width 708?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="384_2024_4606_Fig6_HTML.gif"><?cloudpmc-path blobs/9bbf/10912221/476301a63f51/384_2024_4606_Fig6_HTML.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p id="Par28">The time to the first postoperative defecation was
+significantly shorter in the PPV group compared to the control group [58.5
+(36.3, 79.0) h vs. 73.5 (41.8, 113.3) h, <italic>P</italic> = 0.040]. In the PPV group, there was a trend towards
+shorter durations for extubation, first food intake, and first flatus;
+however, statistical significance was not reached for these variables. No
+significant difference was observed between the two groups regarding the
+time to first ambulation after surgery. Furthermore, LOS in the PPV group
+was significantly shorter than that in the control group [11.0 (9.0, 14.0)
+days vs. 13.0 (11.0, 16.0) days, <italic>P</italic> = 0.007] (Table <xref rid="Tab6" ref-type="table">6</xref>).
+</p><table-wrap id="Tab6" position="float"><?disp-level 4?><label>Table 6</label><caption><p>Postoperative recovery and length of hospital stay
+(LOS) of patients</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" colspan="1" rowspan="1"/><th align="left" colspan="1" rowspan="1">PPV group (<italic>n</italic> = 58)</th><th align="left" colspan="1" rowspan="1">Control group (<italic>n</italic> = 56)</th><th align="left" colspan="1" rowspan="1"><italic>P</italic>-value</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1">Postoperative extubation time
+(min)</td><td align="left" colspan="1" rowspan="1">20 (15, 40)</td><td align="left" colspan="1" rowspan="1">25 (20, 35)</td><td align="center" colspan="1" rowspan="1">0.541</td></tr><tr><td align="left" colspan="1" rowspan="1">The first postoperative feeding time
+(h)</td><td align="left" colspan="1" rowspan="1">47.5 (21.8, 71.3)</td><td align="left" colspan="1" rowspan="1">65.0 (20.5, 87.5)</td><td align="center" colspan="1" rowspan="1">0.548</td></tr><tr><td align="left" colspan="1" rowspan="1">The first postoperative exhaust time
+(h)</td><td align="left" colspan="1" rowspan="1">36.0 (20.0, 54.3)</td><td align="left" colspan="1" rowspan="1">39.0 (20.0, 68.0)</td><td align="center" colspan="1" rowspan="1">0.470</td></tr><tr><td align="left" colspan="1" rowspan="1">The first postoperative defecation time
+(h)</td><td align="left" colspan="1" rowspan="1">58.5 (36.3, 79.0)</td><td align="left" colspan="1" rowspan="1">73.5 (41.8, 113.3)</td><td align="center" colspan="1" rowspan="1">0.040</td></tr><tr><td align="left" colspan="1" rowspan="1">The first postoperative ambulation time
+(h)</td><td align="left" colspan="1" rowspan="1">48.0 (25.5, 69.0)</td><td align="left" colspan="1" rowspan="1">46.5 (23.0, 70.3)</td><td align="center" colspan="1" rowspan="1">0.858</td></tr><tr><td align="left" colspan="1" rowspan="1">LOS (D)</td><td align="left" colspan="1" rowspan="1">11.0 (9.0, 14.0)</td><td align="left" colspan="1" rowspan="1">13.0 (11.0, 16.0)</td><td align="center" colspan="1" rowspan="1">0.007</td></tr></tbody></table><table-wrap-foot><fn id="_fn_p47"><p>Data are presented as median (interquartile
+range)</p><p><italic>LOS</italic> length of
+hospital stay</p></fn></table-wrap-foot></table-wrap></sec></sec></sec><sec id="Sec16" disp-level="1"><title>Discussion</title><p id="Par29">The key findings of this prospective randomized controlled trial (RCT)
+demonstrated the efficacy of PPV in GDFT, even during laparoscopic surgery. PPV
+guided GDFT significantly reduced the incidence of complications and shortened both
+gastrointestinal recovery time and LOS in patients undergoing laparoscopic radical
+resection for colorectal cancer.</p><p id="Par30">Due to the impact of pneumoperitoneum on respiratory function, the
+current application of PPV in laparoscopic surgery remains a subject of controversy
+[<xref rid="CR12" ref-type="bibr">12</xref>]. Recent studies have
+demonstrated that PPV can effectively assess volume responsiveness under appropriate
+pneumoperitoneum conditions [<xref rid="CR13" ref-type="bibr">13</xref>]. It
+has been established that GDFT can optimize early CO, enhance organ oxygen delivery,
+and contribute to reducing postoperative complications. Its significance is
+particularly pronounced in high-risk populations such as elderly patients compared
+to the general population [<xref rid="CR5" ref-type="bibr">5</xref>,
+<xref rid="CR6" ref-type="bibr">6</xref>]. Therefore, this study selected
+elderly patients who did not receive perioperative ERAS protocol to investigate
+whether PPV guided GDFT could improve the prognosis of laparoscopic surgery.</p><p id="Par31">Previous studies have demonstrated that excessive fluid administration
+can lead to an increase in postoperative complications [<xref rid="CR21" ref-type="bibr">21</xref>, <xref rid="CR22" ref-type="bibr">22</xref>]. Our study revealed that compared with conventional fluid
+therapy, the PPV group received significantly less fluid volume without a
+significant difference in urine output when compared with the control group.
+Furthermore, at the end of surgery, Lac levels were lower and pH values were higher
+in the PPV group than in the control group, indicating that fluid infusion volume in
+the PPV group adequately met tissue perfusion needs while excessive fluid
+administration in the control group may result in volume overload and hinder tissue
+oxygenation.</p><p id="Par32">Tissue edema resulting from fluid overload can impair the functions of
+vital organs such as the heart, lungs, and gastrointestinal tract [<xref rid="CR7" ref-type="bibr">7</xref>, <xref rid="CR23" ref-type="bibr">23</xref>–<xref rid="CR27" ref-type="bibr">27</xref>]. Previous studies have demonstrated that
+intestinal edema caused by excessive fluid administration may hinder
+gastrointestinal transit and reduce intestinal contractile activity, leading to
+gastrointestinal dysfunction[<xref rid="CR28" ref-type="bibr">28</xref>,
+<xref rid="CR29" ref-type="bibr">29</xref>]. Our study assessed the
+incidence of postoperative gastrointestinal dysfunction using the I-FEED score and
+found a significant reduction in its occurrence in the PPV group. Further evaluation
+of postoperative gastrointestinal function distribution revealed a significantly
+higher number of patients with completely normal gastrointestinal function in the
+PPV group than in the control group, which was consistent with the previous study
+[<xref rid="CR17" ref-type="bibr">17</xref>, <xref rid="CR30" ref-type="bibr">30</xref>]. Additionally, we noted a shorter first postoperative
+defecation time and trends towards shorter times for extubation, food intake,
+exhaust time, and defecation time among patients receiving GDFT. The study also
+observed a decrease in the occurrence of postoperative pneumonia, potentially
+attributed to the capacity of GDFT to enhance systemic oxygenation, prevent
+ischemia-reperfusion injury, and mitigate pulmonary edema [<xref rid="CR31" ref-type="bibr">31</xref>].</p><p id="Par33">Inadequate fluid perfusion can have negative effects on tissue
+perfusion and tissue oxygenation [<xref rid="CR32" ref-type="bibr">32</xref>,
+<xref rid="CR33" ref-type="bibr">33</xref>]. Studies conducted by Benes et
+al. [<xref rid="CR4" ref-type="bibr">4</xref>] and Chytra et al. [<xref rid="CR34" ref-type="bibr">34</xref>] have demonstrated that GDFT can decrease Lac
+levels in surgical patients. However, both of them administered more fluids to the
+experimental groups compared to the control group, whereas our study found that the
+PPV group received less fluid due to protocol requirements. Our findings indicate
+that PPV guided GDFT effectively optimizes perfusion even with reduced fluid
+administration, thereby preventing compromised tissue oxygenation caused by
+inadequate or excessive fluids. Additionally, it has been reported that the change
+in Lac is slow and lacks specificity. Therefore, in future studies, SvO2/ScvO2, PCO2
+gap, and PCO2 gap over the arteriovenous difference in oxygen content, an estimate
+of the respiratory quotient and gastric mucosal pH value could be additionally
+incorporated for a more comprehensive assessment [<xref rid="CR35" ref-type="bibr">35</xref>–<xref rid="CR37" ref-type="bibr">37</xref>].</p><p id="Par34">In terms of intraoperative management, both groups exhibited a decrease
+in MAP and HR following induction, which can be attributed to the vasodilatory
+effects and myocardial depression induced by anesthetic drugs. Our study
+demonstrated that GDFT based on PPV could effectively reduce the utilization of
+vasoactive drugs, aligning with the findings reported by Benes et al. [<xref rid="CR38" ref-type="bibr">38</xref>] and Goepfert et al. [<xref rid="CR39" ref-type="bibr">39</xref>]. This may be attributed to PPV’s ability to
+promptly identify inadequate intravascular volume and guide appropriate fluid
+administration to enhance CO thereby minimizing reliance on excessive vasoactive
+drug usage. Furthermore, our study revealed that the PPV group required fewer
+vasoactive drugs compared to the control group, consequently reducing their impact
+on tissue and organ perfusion. This observation suggests that decreased reliance on
+vasoactive drugs might serve as a potential factor contributing to reduced
+complications within the PPV group.</p><p id="Par35">This study has certain limitations. Firstly, the PPV group in this
+study solely relied on PPV for guiding volume therapy without monitoring cardiac
+index (CI) and other indicators, which limited the accurate application of positive
+inotropic drugs in conjunction with volume therapy. However, recent studies by Benes
+et al. [<xref rid="CR38" ref-type="bibr">38</xref>], Cannesson et al.
+[<xref rid="CR5" ref-type="bibr">5</xref>], and others have demonstrated
+that even without CO and SV monitoring, PPV guided GDFT can still yield positive
+outcomes. The utilization of PPV alone for guiding volume therapy circumvents the
+need for expensive instruments, reduces monitoring costs, and facilitates the
+implementation of volume monitoring programs. Secondly, the control group in our
+study was assigned to a liberal fluid regimen, thus, we did not compare the GDFT
+with the restrictive fluid regimen. Previous studies have demonstrated that
+restrictive fluid regimens can mitigate complications associated with fluid overload
+but may result in renal injury and tissue hypoperfusion [<xref rid="CR25" ref-type="bibr">25</xref>]. In future investigations, a comparative
+analysis of the effects of these three regimens on intraoperative management and
+patient prognosis could be conducted. Additionally, our findings cannot be directly
+extrapolated to all patients undergoing abdominal surgery due to the limited scope
+of our study population consisting solely of elderly individuals undergoing
+laparoscopic radical resection of colorectal cancer while maintaining an
+intraoperative pneumoperitoneum pressure between 10 and 12 mmHg. Finally, this study
+had a small sample size, restricted observation time, and lacked long-term survival
+follow-up; hence, further research is warranted to validate the enduring benefits of
+PPV guided GDFT in these patients.</p></sec><sec id="Sec17" disp-level="1"><title>Conclusion</title><p id="Par36">This study provides evidence supporting the utilization of PPV as a
+monitoring indicator for GDFT to facilitate precise fluid management in elderly
+patients undergoing laparoscopic radical resection of colorectal cancer, thereby
+optimizing intraoperative hemodynamic control, minimizing complications, and
+enhancing short-term outcomes.</p></sec><sec id="Sec18" disp-level="1"><title>Supplementary Information</title><p>Below is the link to the electronic supplementary
+material.</p><supplementary-material id="MOESM1" position="float"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="384_2024_4606_MOESM1_ESM.docx" mimetype="application" mime-subtype="vnd.openxmlformats-officedocument.wordprocessingml.document"><?cloudpmc-path 9bbf/10912221/6cc8c55f1d46/384_2024_4606_MOESM1_ESM.docx?><?cloudpmc-bucket app?><?size 17723?><caption><p>Supplementary file1 (DOCX 17 KB)</p></caption></media></supplementary-material></sec><sec id="ack1" sec-type="ack" disp-level="1"><title>Acknowledgements</title><p>The authors would like to express their gratitude to colleagues and
+statisticians at the First Affiliated Hospital of Chongqing Medical University for
+their invaluable assistance in patient follow-up, data collection, and data
+analysis.</p></sec><sec id="notes1" disp-level="1"><title>Author contributions</title><p>Qiu-Rong WU served as the lead author and made contributions to the study
+design, data collection during both preoperative and intraoperative stages, as well
+as manuscript writing. Ke-Ming Fan and Hui-Ting Cheng were responsible for
+postoperative data collection. Zi-Zuo Zhao conducted the statistical analysis, while
+Bin Wang assisted in study design and manuscript review. All authors have thoroughly
+reviewed and approved the final version of the manuscript.</p></sec><sec id="notes2" disp-level="1"><title>Funding</title><p>No funding was obtained for this study.</p></sec><sec id="notes3" disp-level="1"><title>Data availability</title><p>Data can be requested by the corresponding author.</p></sec><sec id="notes4" disp-level="1"><title>Declarations</title><sec id="FPar3" disp-level="2"><title>Ethics approval and consent to participate</title><p id="Par37">The ethical approval for this study (2022-231) was provided by the
+Ethical Committee of the First Affiliated Hospital of Chongqing Medical
+University (Qing Yan) on 12 September 2022 and was registered in the Chinese
+Clinical Trial Registry (ChiCTR2300067361). Written informed consent was
+obtained from all eligible participants or their legal representatives.</p></sec><sec id="FPar4" disp-level="2"><title>Conflict of interest</title><p id="Par38">The authors declare no competing interests.</p></sec></sec><sec id="fn-group1" sec-type="fn-group" disp-level="1"><title>Footnotes</title><fn-group><fn id="fn1"><p><bold>Publisher's Note</bold></p><p>Springer Nature remains neutral with regard to jurisdictional claims in
+published maps and institutional affiliations.</p></fn></fn-group></sec><sec id="Bib1" sec-type="ref-list" disp-level="1"><title>References</title><sec id="Bib1_sec2" disp-level="2"><ref-list><ref id="CR1"><label>1.</label><mixed-citation id="mc-CR1"><named-content content-type="citation-string">Salzwedel C, Puig J, Carstens A, Bein B, Molnar Z, Kiss K, Hussain
+A, Belda J, Kirov MY, Sakka SG, Reuter DA (2013) Perioperative goal-directed
+hemodynamic therapy based on radial arterial pulse pressure variation and
+continuous cardiac index trending reduces postoperative complications after
+major abdominal surgery: A multicenter, prospective, randomized study. Crit Care
+(London, England) 17(5):R191. 10.1186/cc12885</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1186/cc12885"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC4057030"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="24010849"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Salzwedel C, Puig J, Carstens A, Bein B, Molnar Z, Kiss K, Hussain A, Belda J, Kirov MY, Sakka SG, Reuter DA (2013) Perioperative goal-directed hemodynamic therapy based on radial arterial pulse pressure variation and continuous cardiac index trending reduces postoperative complications after major abdominal surgery: A multicenter, prospective, randomized study. Crit Care (London, England) 17(5):R191. 10.1186/cc12885"/></mixed-citation></ref><ref id="CR2"><label>2.</label><mixed-citation id="mc-CR2"><named-content content-type="citation-string">Stens J, Hering JP, van der Hoeven CWP, Boom A, Traast HS, Garmers
+LE, Loer SA, Boer C (2017) The added value of cardiac index and pulse pressure
+variation monitoring to mean arterial pressure-guided volume therapy in
+moderate-risk abdominal surgery (COGUIDE): A pragmatic multicentre randomised
+controlled trial. Anaesthesia 72(9):1078–1087. 10.1111/anae.13834
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1111/anae.13834"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="28543041"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Stens J, Hering JP, van der Hoeven CWP, Boom A, Traast HS, Garmers LE, Loer SA, Boer C (2017) The added value of cardiac index and pulse pressure variation monitoring to mean arterial pressure-guided volume therapy in moderate-risk abdominal surgery (COGUIDE): A pragmatic multicentre randomised controlled trial. Anaesthesia 72(9):1078–1087. 10.1111/anae.13834"/></mixed-citation></ref><ref id="CR3"><label>3.</label><mixed-citation id="mc-CR3"><named-content content-type="citation-string">Kan CFK, Skaggs JD (2023) Current commonly used dynamic parameters
+and monitoring systems for perioperative goal-directed fluid therapy: A review.
+Yale J Biol Med 96(1):107–123. 10.59249/JOAP6662
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.59249/JOAP6662"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC10052600"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="37009197"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Kan CFK, Skaggs JD (2023) Current commonly used dynamic parameters and monitoring systems for perioperative goal-directed fluid therapy: A review. Yale J Biol Med 96(1):107–123. 10.59249/JOAP6662"/></mixed-citation></ref><ref id="CR4"><label>4.</label><mixed-citation id="mc-CR4"><named-content content-type="citation-string">Benes J, Chytra I, Altmann P, Hluchy M, Kasal E, Svitak R, Pradl R,
+Stepan M (2010) Intraoperative fluid optimization using stroke volume variation
+in high risk surgical patients: Results of prospective randomized study. Crit
+Care (London, England) 14(3):R118. 10.1186/cc9070</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1186/cc9070"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2911766"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="20553586"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Benes J, Chytra I, Altmann P, Hluchy M, Kasal E, Svitak R, Pradl R, Stepan M (2010) Intraoperative fluid optimization using stroke volume variation in high risk surgical patients: Results of prospective randomized study. Crit Care (London, England) 14(3):R118. 10.1186/cc9070"/></mixed-citation></ref><ref id="CR5"><label>5.</label><mixed-citation id="mc-CR5"><named-content content-type="citation-string">Cannesson M, Ramsingh D, Rinehart J, Demirjian A, Vu T, Vakharia S,
+Imagawa D, Yu Z, Greenfield S, Kain Z (2015) Perioperative goal-directed therapy
+and postoperative outcomes in patients undergoing high-risk abdominal surgery: A
+historical-prospective, comparative effectiveness study. Crit Care (London,
+England) 19(1):261. 10.1186/s13054-015-0945-2</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1186/s13054-015-0945-2"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC4512146"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="26088649"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Cannesson M, Ramsingh D, Rinehart J, Demirjian A, Vu T, Vakharia S, Imagawa D, Yu Z, Greenfield S, Kain Z (2015) Perioperative goal-directed therapy and postoperative outcomes in patients undergoing high-risk abdominal surgery: A historical-prospective, comparative effectiveness study. Crit Care (London, England) 19(1):261. 10.1186/s13054-015-0945-2"/></mixed-citation></ref><ref id="CR6"><label>6.</label><mixed-citation id="mc-CR6"><named-content content-type="citation-string">Cecconi M, Corredor C, Arulkumaran N, Abuella G, Ball J, Grounds
+RM, Hamilton M, Rhodes A (2013) Clinical review: Goal-directed therapy-what is
+the evidence in surgical patients? The effect on different risk groups. Critical
+Care (London, England) 17(2):209. 10.1186/cc11823
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1186/cc11823"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3679445"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="23672779"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Cecconi M, Corredor C, Arulkumaran N, Abuella G, Ball J, Grounds RM, Hamilton M, Rhodes A (2013) Clinical review: Goal-directed therapy-what is the evidence in surgical patients? The effect on different risk groups. Critical Care (London, England) 17(2):209. 10.1186/cc11823"/></mixed-citation></ref><ref id="CR7"><label>7.</label><mixed-citation id="mc-CR7"><named-content content-type="citation-string">Feng A, Lu P, Yang Y, Liu Y, Ma L, Lv J (2023) Effect of
+goal-directed fluid therapy based on plasma colloid osmotic pressure on the
+postoperative pulmonary complications of older patients undergoing major
+abdominal surgery. World J Surg Oncol 21(1):67. 10.1186/s12957-023-02955-5
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1186/s12957-023-02955-5"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC9970856"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="36849953"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Feng A, Lu P, Yang Y, Liu Y, Ma L, Lv J (2023) Effect of goal-directed fluid therapy based on plasma colloid osmotic pressure on the postoperative pulmonary complications of older patients undergoing major abdominal surgery. World J Surg Oncol 21(1):67. 10.1186/s12957-023-02955-5"/></mixed-citation></ref><ref id="CR8"><label>8.</label><mixed-citation id="mc-CR8"><named-content content-type="citation-string">Teboul JL, Monnet X, Chemla D, Michard F (2019) Arterial pulse
+pressure variation with mechanical ventilation. Am J Respir Crit Care Med
+199(1):22–31. 10.1164/rccm.201801-0088CI
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1164/rccm.201801-0088CI"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="30138573"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Teboul JL, Monnet X, Chemla D, Michard F (2019) Arterial pulse pressure variation with mechanical ventilation. Am J Respir Crit Care Med 199(1):22–31. 10.1164/rccm.201801-0088CI"/></mixed-citation></ref><ref id="CR9"><label>9.</label><mixed-citation id="mc-CR9"><named-content content-type="citation-string">Malbouisson LMS, Silva JM Jr, Carmona MJC, Lopes MR, Assunção MS,
+Valiatti JLDS, Simões CM, Auler JOC Jr (2017) A pragmatic multi-center trial of
+goal-directed fluid management based on pulse pressure variation monitoring
+during high-risk surgery. BMC Anesthesiol 17(1):70. 10.1186/s12871-017-0356-9
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1186/s12871-017-0356-9"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC5450107"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="28558654"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Malbouisson LMS, Silva JM Jr, Carmona MJC, Lopes MR, Assunção MS, Valiatti JLDS, Simões CM, Auler JOC Jr (2017) A pragmatic multi-center trial of goal-directed fluid management based on pulse pressure variation monitoring during high-risk surgery. BMC Anesthesiol 17(1):70. 10.1186/s12871-017-0356-9"/></mixed-citation></ref><ref id="CR10"><label>10.</label><mixed-citation id="mc-CR10"><named-content content-type="citation-string">Lopes MR, Oliveira MA, Pereira VO, Lemos IP, Auler JO Jr, Michard F
+(2007) Goal-directed fluid management based on pulse pressure variation
+monitoring during high-risk surgery: A pilot randomized controlled trial. Crit
+Care (London, England) 11(5):R100. 10.1186/cc6117</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1186/cc6117"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2556743"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="17822565"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Lopes MR, Oliveira MA, Pereira VO, Lemos IP, Auler JO Jr, Michard F (2007) Goal-directed fluid management based on pulse pressure variation monitoring during high-risk surgery: A pilot randomized controlled trial. Crit Care (London, England) 11(5):R100. 10.1186/cc6117"/></mixed-citation></ref><ref id="CR11"><label>11.</label><mixed-citation><named-content content-type="citation-string">Hedrick TL, McEvoy MD, Mythen MMG, Bergamaschi R, Gupta R, Holubar
+SD, Senagore AJ, Gan TJ, Shaw AD, Thacker JKM, Miller TE, Wischmeyer PE, Carli
+F, Evans DC, Guilbert S, Kozar R, Pryor A, Thiele RH, Everett S, Grocott M,
+Perioperative Quality Initiative (POQI) 2 Workgroup (2018) American society for
+enhanced recovery and perioperative quality initiative joint consensus statement
+on postoperative gastrointestinal dysfunction within an enhanced recovery
+pathway for elective colorectal surgery. Anesth Analg 126(6):1896–1907. 10.1213/ANE.0000000000002742</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1213/ANE.0000000000002742"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="29293183"/></mixed-citation></ref><ref id="CR12"><label>12.</label><mixed-citation id="mc-CR12"><named-content content-type="citation-string">Myatra SN, Monnet X, Teboul JL (2017) Use of ʽtidal volume
+challengeʼ to improve the reliability of pulse pressure variation. Crit Care
+(London, England) 21(1):60. 10.1186/s13054-017-1637-x</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1186/s13054-017-1637-x"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC5359814"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="28320434"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Myatra SN, Monnet X, Teboul JL (2017) Use of ʽtidal volume challengeʼ to improve the reliability of pulse pressure variation. Crit Care (London, England) 21(1):60. 10.1186/s13054-017-1637-x"/></mixed-citation></ref><ref id="CR13"><label>13.</label><mixed-citation id="mc-CR13"><named-content content-type="citation-string">Ghoundiwal D, Delaporte A, Bidgoli J, Forget P, Fils JF, Van der
+Linden P (2020) Effect of pneumoperitoneum on dynamic variables of fluid
+responsiveness (Delta PP and PVI) during Trendelenburg position. Saudi J Anaesth
+14(3):323–328. 10.4103/sja.SJA_737_19
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.4103/sja.SJA_737_19"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC7458000"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="32934624"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Ghoundiwal D, Delaporte A, Bidgoli J, Forget P, Fils JF, Van der Linden P (2020) Effect of pneumoperitoneum on dynamic variables of fluid responsiveness (Delta PP and PVI) during Trendelenburg position. Saudi J Anaesth 14(3):323–328. 10.4103/sja.SJA_737_19"/></mixed-citation></ref><ref id="CR14"><label>14.</label><mixed-citation id="mc-CR14"><named-content content-type="citation-string">Chen J, Zhao S, Zhu Q (2023) Reliability of stroke volume or pulse
+pressure variation as dynamic predictors of fluid responsiveness in laparoscopic
+surgery: a systematic review. J Clin Monit Comput 37(2):379–387. 10.1007/s10877-022-00939-6
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1007/s10877-022-00939-6"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="36399217"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Chen J, Zhao S, Zhu Q (2023) Reliability of stroke volume or pulse pressure variation as dynamic predictors of fluid responsiveness in laparoscopic surgery: a systematic review. J Clin Monit Comput 37(2):379–387. 10.1007/s10877-022-00939-6"/></mixed-citation></ref><ref id="CR15"><label>15.</label><mixed-citation id="mc-CR15"><named-content content-type="citation-string">Gulin J, Ipavic E, Mastnak DM, Brecelj E, Edhemovic I, Kozjek NR
+(2023) Phase angle as a prognostic indicator of surgical outcomes in patients
+with gastrointestinal cancer. Radiol Oncol 57(4):524–529. 10.2478/raon-2023-0060
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.2478/raon-2023-0060"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC10690749"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="38038415"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Gulin J, Ipavic E, Mastnak DM, Brecelj E, Edhemovic I, Kozjek NR (2023) Phase angle as a prognostic indicator of surgical outcomes in patients with gastrointestinal cancer. Radiol Oncol 57(4):524–529. 10.2478/raon-2023-0060"/></mixed-citation></ref><ref id="CR16"><label>16.</label><mixed-citation id="mc-CR16"><named-content content-type="citation-string">Dindo D, Demartines N, Clavien PA (2004) Classification of surgical
+complications: A new proposal with evaluation in a cohort of 6336 patients and
+results of a survey. Ann Surg 240(2):205–213. 10.1097/01.sla.0000133083.54934.ae
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1097/01.sla.0000133083.54934.ae"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC1360123"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="15273542"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Dindo D, Demartines N, Clavien PA (2004) Classification of surgical complications: A new proposal with evaluation in a cohort of 6336 patients and results of a survey. Ann Surg 240(2):205–213. 10.1097/01.sla.0000133083.54934.ae"/></mixed-citation></ref><ref id="CR17"><label>17.</label><mixed-citation id="mc-CR17"><named-content content-type="citation-string">Sun Y, Liang X, Chai F, Shi D, Wang Y (2023) Goal-directed fluid
+therapy using stroke volume variation on length of stay and postoperative
+gastrointestinal function after major abdominal surgery-a randomized controlled
+trial. BMC Anesthesiol 23(1):397. 10.1186/s12871-023-02360-1
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1186/s12871-023-02360-1"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC10694978"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="38049713"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Sun Y, Liang X, Chai F, Shi D, Wang Y (2023) Goal-directed fluid therapy using stroke volume variation on length of stay and postoperative gastrointestinal function after major abdominal surgery-a randomized controlled trial. BMC Anesthesiol 23(1):397. 10.1186/s12871-023-02360-1"/></mixed-citation></ref><ref id="CR18"><label>18.</label><mixed-citation><named-content content-type="citation-string">Li YW, Li HJ, Li HJ, Zhao BJ, Guo XY, Feng Y, Zuo MZ, Yu YP, Kong
+H, Zhao Y, Huang D, Deng CM, Hu XY, Liu PF, Li Y, An HY, Zhang HY, Wang MR, Wu
+YF, Wang DX, … Peking University Clinical Research Program Study Group (2021)
+Delirium in older patients after combined epidural-general anesthesia or general
+anesthesia for major surgery: A randomized trial. Anesthesiology 135(2):218–232. 10.1097/ALN.0000000000003834</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1097/ALN.0000000000003834"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="34195765"/></mixed-citation></ref><ref id="CR19"><label>19.</label><mixed-citation id="mc-CR19"><named-content content-type="citation-string">Fiore JF Jr, Bialocerkowski A, Browning L, Faragher IG, Denehy L
+(2012) Criteria to determine readiness for hospital discharge following
+colorectal surgery: An international consensus using the Delphi technique. Dis
+Colon Rectum 55(4):416–423. 10.1097/DCR.0b013e318244a8f2
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1097/DCR.0b013e318244a8f2"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="22426265"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Fiore JF Jr, Bialocerkowski A, Browning L, Faragher IG, Denehy L (2012) Criteria to determine readiness for hospital discharge following colorectal surgery: An international consensus using the Delphi technique. Dis Colon Rectum 55(4):416–423. 10.1097/DCR.0b013e318244a8f2"/></mixed-citation></ref><ref id="CR20"><label>20.</label><mixed-citation id="mc-CR20"><named-content content-type="citation-string">Mayer J, Boldt J, Mengistu AM, Röhm KD, Suttner S (2010)
+Goal-directed intraoperative therapy based on autocalibrated arterial pressure
+waveform analysis reduces hospital stay in high-risk surgical patients: A
+randomized, controlled trial. Crit Care (London, England) 14(1):R18. 10.1186/cc8875</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1186/cc8875"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2875533"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="20156348"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Mayer J, Boldt J, Mengistu AM, Röhm KD, Suttner S (2010) Goal-directed intraoperative therapy based on autocalibrated arterial pressure waveform analysis reduces hospital stay in high-risk surgical patients: A randomized, controlled trial. Crit Care (London, England) 14(1):R18. 10.1186/cc8875"/></mixed-citation></ref><ref id="CR21"><label>21.</label><mixed-citation id="mc-CR21"><named-content content-type="citation-string">Nisanevich V, Felsenstein I, Almogy G, Weissman C, Einav S, Matot I
+(2005) Effect of intraoperative fluid management on outcome after intraabdominal
+surgery. Anesthesiology 103(1):25–32. 10.1097/00000542-200507000-00008
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1097/00000542-200507000-00008"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="15983453"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Nisanevich V, Felsenstein I, Almogy G, Weissman C, Einav S, Matot I (2005) Effect of intraoperative fluid management on outcome after intraabdominal surgery. Anesthesiology 103(1):25–32. 10.1097/00000542-200507000-00008"/></mixed-citation></ref><ref id="CR22"><label>22.</label><mixed-citation id="mc-CR22"><named-content content-type="citation-string">Brandstrup, B., Tønnesen, H., Beier-Holgersen, R., Hjortsø, E.,
+Ørding, H., Lindorff-Larsen, K., Rasmussen, M. S., Lanng, C., Wallin, L.,
+Iversen, L. H., Gramkow, C. S., Okholm, M., Blemmer, T., Svendsen, P. E.,
+Rottensten, H. H., Thage, B., Riis, J., Jeppesen, I. S., Teilum, D.,
+Christensen, A. M., … Danish Study Group on Perioperative Fluid Therapy (2003)
+Effects of intravenous fluid restriction on postoperative complications:
+comparison of two perioperative fluid regimens: A randomized assessor-blinded
+multicenter trial. Ann Surg 238(5):641–648. 10.1097/01.sla.0000094387.50865.23
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1097/01.sla.0000094387.50865.23"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC1356139"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="14578723"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Brandstrup, B., Tønnesen, H., Beier-Holgersen, R., Hjortsø, E., Ørding, H., Lindorff-Larsen, K., Rasmussen, M. S., Lanng, C., Wallin, L., Iversen, L. H., Gramkow, C. S., Okholm, M., Blemmer, T., Svendsen, P. E., Rottensten, H. H., Thage, B., Riis, J., Jeppesen, I. S., Teilum, D., Christensen, A. M., … Danish Study Group on Perioperative Fluid Therapy (2003) Effects of intravenous fluid restriction on postoperative complications: comparison of two perioperative fluid regimens: A randomized assessor-blinded multicenter trial. Ann Surg 238(5):641–648. 10.1097/01.sla.0000094387.50865.23"/></mixed-citation></ref><ref id="CR23"><label>23.</label><mixed-citation id="mc-CR23"><named-content content-type="citation-string">Holte K, Sharrock NE, Kehlet H (2002) Pathophysiology and clinical
+implications of perioperative fluid excess. Br J Anaesth 89(4):622–632. 10.1093/bja/aef220
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1093/bja/aef220"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="12393365"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Holte K, Sharrock NE, Kehlet H (2002) Pathophysiology and clinical implications of perioperative fluid excess. Br J Anaesth 89(4):622–632. 10.1093/bja/aef220"/></mixed-citation></ref><ref id="CR24"><label>24.</label><mixed-citation id="mc-CR24"><named-content content-type="citation-string">Chappell D, Jacob M, Hofmann-Kiefer K, Conzen P, Rehm M (2008) A
+rational approach to perioperative fluid management. Anesthesiology
+109(4):723–740. 10.1097/ALN.0b013e3181863117
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1097/ALN.0b013e3181863117"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="18813052"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Chappell D, Jacob M, Hofmann-Kiefer K, Conzen P, Rehm M (2008) A rational approach to perioperative fluid management. Anesthesiology 109(4):723–740. 10.1097/ALN.0b013e3181863117"/></mixed-citation></ref><ref id="CR25"><label>25.</label><mixed-citation id="mc-CR25"><named-content content-type="citation-string">Wuethrich PY, Burkhard FC, Thalmann GN, Stueber F, Studer UE (2014)
+Restrictive deferred hydration combined with preemptive norepinephrine infusion
+during radical cystectomy reduces postoperative complications and
+hospitalization time: A randomized clinical trial. Anesthesiology
+120(2):365–377. 10.1097/ALN.0b013e3182a44440
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1097/ALN.0b013e3182a44440"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="23887199"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Wuethrich PY, Burkhard FC, Thalmann GN, Stueber F, Studer UE (2014) Restrictive deferred hydration combined with preemptive norepinephrine infusion during radical cystectomy reduces postoperative complications and hospitalization time: A randomized clinical trial. Anesthesiology 120(2):365–377. 10.1097/ALN.0b013e3182a44440"/></mixed-citation></ref><ref id="CR26"><label>26.</label><mixed-citation id="mc-CR26"><named-content content-type="citation-string">Kang D, Yoo KY (2019) Fluid management in perioperative and
+critically ill patients. Acute Crit Care 34(4):235–245. 10.4266/acc.2019.00717
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.4266/acc.2019.00717"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC6895467"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="31795621"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Kang D, Yoo KY (2019) Fluid management in perioperative and critically ill patients. Acute Crit Care 34(4):235–245. 10.4266/acc.2019.00717"/></mixed-citation></ref><ref id="CR27"><label>27.</label><mixed-citation id="mc-CR27"><named-content content-type="citation-string">Bundgaard-Nielsen M, Secher NH, Kehlet H (2009) Liberal vs
+restrictive perioperative fluid therapy–a critical assessment of the evidence.
+Acta Anaesthesiol Scand 53(7):843–851. 10.1111/j.1399-6576.2009.02029.x
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1111/j.1399-6576.2009.02029.x"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="19519723"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Bundgaard-Nielsen M, Secher NH, Kehlet H (2009) Liberal vs restrictive perioperative fluid therapy–a critical assessment of the evidence. Acta Anaesthesiol Scand 53(7):843–851. 10.1111/j.1399-6576.2009.02029.x"/></mixed-citation></ref><ref id="CR28"><label>28.</label><mixed-citation id="mc-CR28"><named-content content-type="citation-string">Uray KS, Laine GA, Xue H, Allen SJ, Cox CS Jr (2006) Intestinal
+edema decreases intestinal contractile activity via decreased myosin light chain
+phosphorylation. Crit Care Med 34(10):2630–2637. 10.1097/01.CCM.0000239195.06781.8C
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1097/01.CCM.0000239195.06781.8C"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="16915113"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Uray KS, Laine GA, Xue H, Allen SJ, Cox CS Jr (2006) Intestinal edema decreases intestinal contractile activity via decreased myosin light chain phosphorylation. Crit Care Med 34(10):2630–2637. 10.1097/01.CCM.0000239195.06781.8C"/></mixed-citation></ref><ref id="CR29"><label>29.</label><mixed-citation id="mc-CR29"><named-content content-type="citation-string">Uray KS, Laine GA, Xue H, Allen SJ, Cox CS Jr (2007) Edema-induced
+intestinal dysfunction is mediated by STAT3 activation. Shock 28(2):239–244. 10.1097/shk.0b013e318033eaae
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1097/shk.0b013e318033eaae"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="17515852"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Uray KS, Laine GA, Xue H, Allen SJ, Cox CS Jr (2007) Edema-induced intestinal dysfunction is mediated by STAT3 activation. Shock 28(2):239–244. 10.1097/shk.0b013e318033eaae"/></mixed-citation></ref><ref id="CR30"><label>30.</label><mixed-citation id="mc-CR30"><named-content content-type="citation-string">Lee KY, Yoo YC, Cho JS, Lee W, Kim JY, Kim MH (2021) The effect of
+intraoperative fluid management according to stroke volume variation on
+postoperative bowel function recovery in colorectal cancer surgery. J Clin Med
+10(9):1857. 10.3390/jcm10091857
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.3390/jcm10091857"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC8123187"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="33922880"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Lee KY, Yoo YC, Cho JS, Lee W, Kim JY, Kim MH (2021) The effect of intraoperative fluid management according to stroke volume variation on postoperative bowel function recovery in colorectal cancer surgery. J Clin Med 10(9):1857. 10.3390/jcm10091857"/></mixed-citation></ref><ref id="CR31"><label>31.</label><mixed-citation id="mc-CR31"><named-content content-type="citation-string">Dalfino L, Giglio MT, Puntillo F, Marucci M, Brienza N (2011)
+Haemodynamic goal-directed therapy and postoperative infections: earlier is
+better. A systematic review and meta-analysis. Crit Care (London, England)
+15(3):R154. 10.1186/cc10284</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1186/cc10284"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3219028"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="21702945"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Dalfino L, Giglio MT, Puntillo F, Marucci M, Brienza N (2011) Haemodynamic goal-directed therapy and postoperative infections: earlier is better. A systematic review and meta-analysis. Crit Care (London, England) 15(3):R154. 10.1186/cc10284"/></mixed-citation></ref><ref id="CR32"><label>32.</label><mixed-citation id="mc-CR32"><named-content content-type="citation-string">Weinberg L, Ianno D, Churilov L, Chao I, Scurrah N, Rachbuch C,
+Banting J, Muralidharan V, Story D, Bellomo R, Christophi C, Nikfarjam M (2017)
+Restrictive intraoperative fluid optimisation algorithm improves outcomes in
+patients undergoing pancreaticoduodenectomy: A prospective multicentre
+randomized controlled trial. PLoS ONE 12(9):e0183313. 10.1371/journal.pone.0183313'
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1371/journal.pone.0183313"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC5589093"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="28880931"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Weinberg L, Ianno D, Churilov L, Chao I, Scurrah N, Rachbuch C, Banting J, Muralidharan V, Story D, Bellomo R, Christophi C, Nikfarjam M (2017) Restrictive intraoperative fluid optimisation algorithm improves outcomes in patients undergoing pancreaticoduodenectomy: A prospective multicentre randomized controlled trial. PLoS ONE 12(9):e0183313. 10.1371/journal.pone.0183313'"/></mixed-citation></ref><ref id="CR33"><label>33.</label><mixed-citation><named-content content-type="citation-string">Pearse RM, Harrison DA, MacDonald N, Gillies MA, Blunt M, Ackland
+G, Grocott MP, Ahern A, Griggs K, Scott R, Hinds C, Rowan K, OPTIMISE Study
+Group (2014) Effect of a perioperative, cardiac output-guided hemodynamic
+therapy algorithm on outcomes following major gastrointestinal surgery: A
+randomized clinical trial and systematic review. JAMA 311(21):2181–2190. 10.1001/jama.2014.5305</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1001/jama.2014.5305"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="24842135"/></mixed-citation></ref><ref id="CR34"><label>34.</label><mixed-citation id="mc-CR34"><named-content content-type="citation-string">Chytra I, Pradl R, Bosman R, Pelnár P, Kasal E, Zidková A (2007)
+Esophageal Doppler-guided fluid management decreases blood lactate levels in
+multiple-trauma patients: A randomized controlled trial. Crit Care (London,
+England) 11(1):R24. 10.1186/cc5703</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1186/cc5703"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2151901"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="17313691"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Chytra I, Pradl R, Bosman R, Pelnár P, Kasal E, Zidková A (2007) Esophageal Doppler-guided fluid management decreases blood lactate levels in multiple-trauma patients: A randomized controlled trial. Crit Care (London, England) 11(1):R24. 10.1186/cc5703"/></mixed-citation></ref><ref id="CR35"><label>35.</label><mixed-citation id="mc-CR35"><named-content content-type="citation-string">Monnet X, Teboul JL (2018) My patient has received fluid. How to
+assess its efficacy and side effects? Ann Intensive Care 8(1):54. 10.1186/s13613-018-0400-z
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1186/s13613-018-0400-z"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC5915982"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="29691755"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Monnet X, Teboul JL (2018) My patient has received fluid. How to assess its efficacy and side effects? Ann Intensive Care 8(1):54. 10.1186/s13613-018-0400-z"/></mixed-citation></ref><ref id="CR36"><label>36.</label><mixed-citation id="mc-CR36"><named-content content-type="citation-string">James JH, Luchette FA, McCarter FD, Fischer JE (1999) Lactate is an
+unreliable indicator of tissue hypoxia in injury or sepsis. Lancet (London,
+England) 354(9177):505–508. 10.1016/S0140-6736(98)91132-1
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/S0140-6736(98)91132-1"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="10465191"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="James JH, Luchette FA, McCarter FD, Fischer JE (1999) Lactate is an unreliable indicator of tissue hypoxia in injury or sepsis. Lancet (London, England) 354(9177):505–508. 10.1016/S0140-6736(98)91132-1"/></mixed-citation></ref><ref id="CR37"><label>37.</label><mixed-citation id="mc-CR37"><named-content content-type="citation-string">Kushimoto S, Akaishi S, Sato T, Nomura R, Fujita M, Kudo D, Kawazoe
+Y, Yoshida Y, Miyagawa N (2016) Lactate, a useful marker for disease mortality
+and severity but an unreliable marker of tissue hypoxia/hypoperfusion in
+critically ill patients. Acute Med Surg 3(4):293–297. 10.1002/ams2.207
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1002/ams2.207"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC5667335"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="29123802"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Kushimoto S, Akaishi S, Sato T, Nomura R, Fujita M, Kudo D, Kawazoe Y, Yoshida Y, Miyagawa N (2016) Lactate, a useful marker for disease mortality and severity but an unreliable marker of tissue hypoxia/hypoperfusion in critically ill patients. Acute Med Surg 3(4):293–297. 10.1002/ams2.207"/></mixed-citation></ref><ref id="CR38"><label>38.</label><mixed-citation id="mc-CR38"><named-content content-type="citation-string">Benes J, Haidingerova L, Pouska J, Stepanik J, Stenglova A,
+Zatloukal J, Pradl R, Chytra I, Kasal E (2015) Fluid management guided by a
+continuous non-invasive arterial pressure device is associated with decreased
+postoperative morbidity after total knee and hip replacement. BMC Anesthesiol
+15:148. 10.1186/s12871-015-0131-8
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1186/s12871-015-0131-8"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC4608292"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="26471495"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Benes J, Haidingerova L, Pouska J, Stepanik J, Stenglova A, Zatloukal J, Pradl R, Chytra I, Kasal E (2015) Fluid management guided by a continuous non-invasive arterial pressure device is associated with decreased postoperative morbidity after total knee and hip replacement. BMC Anesthesiol 15:148. 10.1186/s12871-015-0131-8"/></mixed-citation></ref><ref id="CR39"><label>39.</label><mixed-citation id="mc-CR39"><named-content content-type="citation-string">Goepfert MS, Richter HP, Zu Eulenburg C, Gruetzmacher J,
+Rafflenbeul E, Roeher K, von Sandersleben A, Diedrichs S, Reichenspurner H,
+Goetz AE, Reuter DA (2013) Individually optimized hemodynamic therapy reduces
+complications and length of stay in the intensive care unit: A prospective,
+randomized controlled trial. Anesthesiology 119(4):824–836. 10.1097/ALN.0b013e31829bd770
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1097/ALN.0b013e31829bd770"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="23732173"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="Goepfert MS, Richter HP, Zu Eulenburg C, Gruetzmacher J, Rafflenbeul E, Roeher K, von Sandersleben A, Diedrichs S, Reichenspurner H, Goetz AE, Reuter DA (2013) Individually optimized hemodynamic therapy reduces complications and length of stay in the intensive care unit: A prospective, randomized controlled trial. Anesthesiology 119(4):824–836. 10.1097/ALN.0b013e31829bd770"/></mixed-citation></ref></ref-list></sec></sec><sec id="_ad93_" xml:lang="en" sec-type="associated-data" disp-level="1"><title>Associated Data</title><sec id="_adsm93_" xml:lang="en" sec-type="supplementary-materials" disp-level="2"><title>Supplementary Materials</title><supplementary-material id="db_ds_supplementary-material1_reqid_" position="float"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="384_2024_4606_MOESM1_ESM.docx" mimetype="application" mime-subtype="vnd.openxmlformats-officedocument.wordprocessingml.document"><?cloudpmc-path 9bbf/10912221/6cc8c55f1d46/384_2024_4606_MOESM1_ESM.docx?><?cloudpmc-bucket app?><?size 17723?><caption><p>Supplementary file1 (DOCX 17 KB)</p></caption></media></supplementary-material></sec><sec id="_adda93_" xml:lang="en" sec-type="data-availability-statement" disp-level="2"><title>Data Availability Statement</title><p>Data can be requested by the corresponding author.</p></sec></sec></body></article>
