@@ -1,0 +1,54 @@
+ARTIGO CIENTÍFICO (fonte única e exclusiva desta tarefa):
+
+{ARTIGO}
+
+---
+
+TAREFA — EXTRAÇÃO DE EVIDÊNCIA PARA METANÁLISE
+
+Você é um revisor de revisão sistemática. Extraia do artigo acima os dados do formulário abaixo, comparando o braço de fluidoterapia guiada por metas (GDFT) com o braço controle (fluidoterapia convencional).
+
+Regras obrigatórias:
+1. Use APENAS o artigo acima. Não use nenhum conhecimento prévio sobre este ensaio.
+2. Transcreva os valores COMO REPORTADOS no artigo: mantenha média ± DP, mediana (intervalo interquartil), unidades e casas decimais originais.
+3. Se o dado NÃO estiver reportado no artigo, escreva exatamente "NR" no campo valor.
+4. Se o ensaio tiver mais de um braço de intervenção guiada por metas, reporte todos no campo _gdft, separados por " | ", nomeando cada braço (ex.: "braço X: 1234 ml | braço Y: 4321 ml").
+5. Responda SOMENTE com um objeto JSON válido, sem texto antes ou depois, sem cercas de código.
+6. Cada campo é um objeto {"valor": "...", "onde": "..."} — "onde" indica a seção ou tabela do artigo de onde o dado foi tirado (ex.: "Results", "Table 2", "Abstract").
+
+Formulário (use exatamente estas chaves):
+
+{
+  "n_randomizados_gdft": {"valor": "", "onde": ""},
+  "n_randomizados_controle": {"valor": "", "onde": ""},
+  "tipo_cirurgia": {"valor": "", "onde": ""},
+  "laparoscopia_gdft": {"valor": "", "onde": ""},
+  "laparoscopia_controle": {"valor": "", "onde": ""},
+  "asa_gdft": {"valor": "", "onde": ""},
+  "asa_controle": {"valor": "", "onde": ""},
+  "fluido_total_gdft": {"valor": "", "onde": ""},
+  "fluido_total_controle": {"valor": "", "onde": ""},
+  "cristaloide_gdft": {"valor": "", "onde": ""},
+  "cristaloide_controle": {"valor": "", "onde": ""},
+  "coloide_gdft": {"valor": "", "onde": ""},
+  "coloide_controle": {"valor": "", "onde": ""},
+  "perda_sanguinea_gdft": {"valor": "", "onde": ""},
+  "perda_sanguinea_controle": {"valor": "", "onde": ""},
+  "uso_inotropico": {"valor": "", "onde": ""},
+  "morbidade_eventos_gdft": {"valor": "", "onde": ""},
+  "morbidade_eventos_controle": {"valor": "", "onde": ""},
+  "mortalidade_gdft": {"valor": "", "onde": ""},
+  "mortalidade_controle": {"valor": "", "onde": ""},
+  "los_hospitalar_gdft": {"valor": "", "onde": ""},
+  "los_hospitalar_controle": {"valor": "", "onde": ""},
+  "tempo_flatus_gdft": {"valor": "", "onde": ""},
+  "tempo_flatus_controle": {"valor": "", "onde": ""},
+  "tempo_ingesta_oral_gdft": {"valor": "", "onde": ""},
+  "tempo_ingesta_oral_controle": {"valor": "", "onde": ""},
+  "tempo_evacuacao_gdft": {"valor": "", "onde": ""},
+  "tempo_evacuacao_controle": {"valor": "", "onde": ""},
+  "ileo_pos_op_gdft": {"valor": "", "onde": ""},
+  "ileo_pos_op_controle": {"valor": "", "onde": ""}
+}
+
+Notas de definição: "n_randomizados" = pacientes randomizados por braço; "laparoscopia" = quantos procedimentos foram laparoscópicos (contagem ou %); "asa" = distribuição do estado físico ASA (razão I:II:III:IV se disponível); "morbidade_eventos" = número de pacientes com ao menos uma complicação pós-operatória; "mortalidade" = óbitos intra-hospitalares ou em 30 dias; "los_hospitalar" = tempo de internação hospitalar; "ileo_pos_op" = casos de íleo paralítico pós-operatório.

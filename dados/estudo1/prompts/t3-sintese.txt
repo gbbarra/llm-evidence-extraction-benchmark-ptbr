@@ -1,0 +1,15 @@
+Você extraiu dados de 8 ensaios clínicos randomizados que compararam fluidoterapia guiada por metas (GDFT) com fluidoterapia convencional em cirurgia abdominal de grande porte. Abaixo estão AS SUAS PRÓPRIAS extrações, uma por ensaio:
+
+{EXTRACOES}
+
+---
+
+TAREFA — SÍNTESE DO CORPO DE EVIDÊNCIA
+
+Escreva, em português, uma síntese narrativa de 250 a 400 palavras do corpo de evidência acima, cobrindo o efeito da GDFT sobre: (a) morbidade pós-operatória, (b) mortalidade, (c) tempo de internação hospitalar e (d) função intestinal (íleo, tempo até flatus/ingesta oral/evacuação).
+
+Regras obrigatórias:
+1. Use SOMENTE os dados das extrações acima. Não use conhecimento prévio nem invente números ausentes.
+2. Para cada desfecho, indique a direção do efeito (favorece GDFT, favorece controle, sem diferença), a magnitude qualitativa e a incerteza (quantos ensaios reportam o desfecho, consistência entre eles).
+3. Onde as extrações dizem "NR", trate o dado como não reportado — não o estime.
+4. Responda somente com o texto da síntese, sem títulos, listas ou comentários sobre a tarefa.

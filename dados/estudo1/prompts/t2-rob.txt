@@ -1,0 +1,28 @@
+ARTIGO CIENTÍFICO (fonte única e exclusiva desta tarefa):
+
+{ARTIGO}
+
+---
+
+TAREFA — AVALIAÇÃO DE RISCO DE VIÉS (Cochrane RoB)
+
+Você é um revisor de revisão sistemática. Avalie o risco de viés do ensaio clínico acima nos 7 domínios da ferramenta Cochrane, mais o julgamento global.
+
+Regras obrigatórias:
+1. Use APENAS o que o artigo reporta (ou deixa de reportar). Não use conhecimento prévio sobre este ensaio.
+2. Julgamento por domínio: exatamente "Low", "High" ou "Unclear".
+3. Justificativa: UMA frase por domínio, citando o que o artigo diz (ou a ausência de informação).
+4. Responda SOMENTE com um objeto JSON válido, sem texto antes ou depois, sem cercas de código.
+
+Formato (use exatamente estas chaves):
+
+{
+  "geracao_sequencia_aleatoria": {"julgamento": "", "justificativa": ""},
+  "ocultacao_alocacao": {"julgamento": "", "justificativa": ""},
+  "cegamento_participantes_equipe": {"julgamento": "", "justificativa": ""},
+  "cegamento_avaliadores_desfecho": {"julgamento": "", "justificativa": ""},
+  "dados_desfecho_incompletos": {"julgamento": "", "justificativa": ""},
+  "relato_seletivo": {"julgamento": "", "justificativa": ""},
+  "outros_vieses": {"julgamento": "", "justificativa": ""},
+  "risco_global": {"julgamento": "", "justificativa": ""}
+}
