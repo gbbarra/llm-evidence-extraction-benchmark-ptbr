@@ -41,6 +41,7 @@ Detectadas na montagem do corpus e congeladas aqui para que a correção não te
 2. **Intraoperatória (tabela 4)** lista "Koo et al. [37]" e "Peltoniemi et al. [38]" (também fora das características; ambos CC BY) e **omite** Schmid et al. [44].
 3. **Morbidade (tabela 5)** traz "**Yun** et al." com totais 39 (GDFT) / 36 (controle), enquanto a tabela de características dá **Yoon** et al. como 36 (GDFT) / 39 (controle) — grafia divergente e braços possivelmente trocados.
 4. O título do Redondo Calvo et al. aparece no registro da revista com o typo "Person**alizezed**" (preservado nas citações).
+5. **A linha do Sujatha et al. na tabela de características está corrompida**: a célula ASA do controle diz "2 days, 11:42:00" — um artefato clássico de formatação de hora do Excel no lugar de uma razão ASA; o n do GDFT (200) corresponde à fusão dos braços FloTrac+PVI (100+100) do ensaio de três braços, e o n do controle (101) não aparece literalmente no texto do primário.
 
 Linhas dos estudos-fantasma (refs 21, 37, 38) não pontuam em nenhuma tarefa. Cada inconsistência será adjudicada contra as fontes primárias durante a correção e, se confirmada, entra no arquivo de erratas da âncora.
 
@@ -162,4 +163,13 @@ Maior primário ≈ 10 mil tokens; com formulário (~1,2 mil) e saída T1 (~1,5 
 
 ---
 
-*Emendas: (nenhuma)*
+## Emendas
+
+### Emenda 1 — regras operacionais da perturbação (2026-08-27, antes de qualquer corrida)
+
+Registrada durante a construção das cópias perturbadas, antes de qualquer modelo ler qualquer texto:
+
+1. **Seleção automática com âncoras semânticas.** Um número do gabarito só é elegível se todas (números redondos ou de 2 dígitos) ou ao menos uma (números com ≥3 dígitos significativos) de suas ocorrências no texto estiverem a ≤120 caracteres de uma palavra-âncora do campo (ex.: fluido→"fluid/volume/infused", morbidade→"complications"). Motivo: a primeira rodada automática mostrou que números curtos ("19", "72", "200") colidem com fatos alheios — porcentagens de outras variáveis, horários de medição, bolus de protocolo e até faixas de páginas de referências. Cada célula do gabarito pode ser perturbada no máximo uma vez; listas de referências são removidas do texto antes de tudo.
+2. **Curadoria manual documentada.** Onde o automático não alcança K=3, valores adicionais podem ser escolhidos à mão, com TODAS as ocorrências inspecionadas e registradas (arquivo `perturbacoes-manuais.json`, selado junto com a tabela principal). A inspeção manual substitui a âncora automática.
+3. **Primários sem valor literal do gabarito.** Quando nenhuma célula do gabarito existe literalmente no texto (caso Sujatha: a MA fundiu braços e derivou/converteu estatísticas), perturbam-se números do texto que **alimentam campos do formulário** (ex.: cristaloides por braço). Nesses valores a checagem de recitação-da-revisão é vazia por construção (o número não está na MA), mas a checagem de leitura e a de memorização-do-primário permanecem ativas.
+4. **K é alvo, não garantia.** Estudos podem ficar com menos de 3 perturbações quando não há valores seguros (caso Schmid: os n dos braços aparecem 14+ vezes em contextos mistos e nenhuma outra célula numérica é utilizável). O número final por estudo fica registrado no selo.

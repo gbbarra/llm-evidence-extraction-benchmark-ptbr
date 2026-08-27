@@ -5,3 +5,6 @@ dados/*/perturbacoes-*.json
 __pycache__/
 *.pyc
 saidas-tmp/
+
+# texto plano dos primarios: derivado localmente dos XML (ND do Castro; gerar com perturbar.py)
+corpus/primarios-texto/
