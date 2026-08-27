@@ -52,6 +52,16 @@ Herdada do FIEL e adaptada: em cada primário, K números que aparecem no gabari
 
 Como a metanálise-âncora é posterior ao corte de treino, recitação da revisão é improvável — mas a perturbação transforma essa suposição em coisa **medida**.
 
+## Transparência de autoria
+
+Todo relatório, avaliação e artigo do EXTRAI separa explicitamente três vozes, sempre nomeadas:
+
+1. **O modelo local** — o objeto medido. Suas saídas são citadas verbatim e marcadas como tal ("o gemma4:12b devolveu…"), junto com o mecanismo: qual prompt recebeu, o que devolveu, em quanto tempo.
+2. **O corretor mecânico** — script determinístico (público no repositório) que compara célula a célula. Toda métrica numérica vem dele.
+3. **O adjudicador** (LLM juiz + autor humano) — entra apenas nas discordâncias e na síntese, sempre com a citação da fonte que decidiu.
+
+Nenhuma análise do harness ou do juiz é apresentada como se fosse saída do modelo, e vice-versa.
+
 ## Rito de adjudicação
 
 Toda discordância entre modelo e gabarito passa pelo rito antes de virar dedução: **verificar na fonte primária antes de deduzir**. O adjudicador (LLM juiz + autor humano) localiza o trecho da fonte que decide a célula e registra a citação literal no arquivo de avaliação. O gabarito humano não tem imunidade: as erratas da metanálise-âncora encontradas no caminho são documentadas em arquivo próprio, nunca editadas em silêncio — a régua não se dobra para ninguém, nem para os revisores publicados.
