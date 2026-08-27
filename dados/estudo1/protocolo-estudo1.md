@@ -143,6 +143,23 @@ Rótulos e valores conforme o `METHOD.md`. Tolerâncias pré-registradas para "e
 
 Prompts em inglês (os primários são em inglês; as instruções, em português — o cenário do pesquisador brasileiro), outras quantizações, modelos fora da tabela FIEL, e extração de figuras/forest plots (só texto e tabelas). Cada um é candidato a estudo futuro.
 
+## 13. F0 — sondagem de tamanhos (2026-08-27, antes de qualquer corrida)
+
+Texto útil (abstract + corpo) dos 8 primários, medido do XML congelado:
+
+| PMCID | Palavras | ~Tokens |
+|---|---|---|
+| PMC10561433 (Yoon) | 6.122 | ~8.9 mil |
+| PMC10694978 (Sun) | 5.040 | ~7.3 mil |
+| PMC10912221 (Wu) | 6.744 | ~9.8 mil |
+| PMC11061212 (Castro) | 5.092 | ~7.4 mil |
+| PMC12565272 (Redondo Calvo) | 5.799 | ~8.4 mil |
+| PMC4782303 (Schmid) | 6.888 | ~10.0 mil |
+| PMC5589093 (Weinberg) | 5.593 | ~8.1 mil |
+| PMC6907038 (Sujatha) | 3.873 | ~5.6 mil |
+
+Maior primário ≈ 10 mil tokens; com formulário (~1,2 mil) e saída T1 (~1,5 mil), o pior caso fica em ~12,7 mil — **dentro do contexto congelado de 16.384 para todos os modelos**. A cláusula de subida para 32.768 (seção 8) não será acionada.
+
 ---
 
 *Emendas: (nenhuma)*
