@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "REF26",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-28 09:18:35",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo utilizou uma lista gerada por computador com blocos de 4 para a randomização.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A alocação foi ocultada em envelopes numerados sequencialmente, selados e grampeados, abertos apenas no dia da cirurgia.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Pacientes, profissionais de cuidados intensivos, unidades de cuidados intermediários e pós-anestésicos foram cegados quanto à alocação do tratamento.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os avaliadores que registraram os dados durante o período pós-operatório estavam cegados quanto à alocação do tratamento.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O artigo apresenta a análise de 198 e 196 pacientes em seus respectivos grupos, seguindo o fluxo de recrutamento e randomização detalhado.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo reportou todos os desfechos primários e secundários planejados, incluindo mortalidade, complicações e duração da internação.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo foi registrado no ClinicalTrials.gov (NCT02625701) e os investigadores que coletaram dados intraoperatórios sabiam a designação do grupo, mas o design era de superioridade.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O ensaio clínico apresenta baixo risco de viés, com processos adequados de randomização, ocultação de alocação e cegamento de avaliadores e cuidadores.\"\n  }\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 529,
+  "dt": 55.4161269,
+  "prompt_tokens": 10191
+}

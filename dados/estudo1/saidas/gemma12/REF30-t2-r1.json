@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma12",
+  "ollama": "gemma4:12b",
+  "pmcid": "REF30",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-28 07:46:14",
+  "content": "```json\n{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A randomização foi realizada via Memorial Sloan Kettering Clinical Research Database usando blocos permutados de tamanhos aleatórios.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A alocação foi ocultada pelo sistema de banco de dados durante o processo de randomização.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O ensaio foi descrito como duplo-cego e a equipe de anestesia no braço de terapia padrão foi cegada em relação à leitura do Flotrac.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os avaliadores do desfecho primário foram cegados em relação ao braço de tratamento até após a coleta de todos os dados.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Nenhum paciente foi perdido durante o acompanhamento de 30 dias e todos os pacientes elegíveis foram incluídos na análise de intenção de tratar.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo seguiu um protocolo pré-especificado e os resultados foram relatados com base nos desfechos primários e secundários definidos anteriormente.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O uso de um caminho de recuperação aprimorada (enhanced recovery pathway) padronizado para ambos os braços minimiza variações de cuidado pós-operatório.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo é um ensaio clínico randomizado, duplo-cego, com métodos robustos de ocultação e seguimento completo.\"\n  }\n}\n```",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 506,
+  "dt": 140.3566658,
+  "prompt_tokens": 6860
+}

@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "REF30",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-28 09:36:21",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"A randomização foi realizada via Memorial Sloan Kettering Clinical Research Database utilizando blocos permutados de tamanhos aleatórios.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"A alocação foi ocultada pelo sistema de banco de dados do centro de pesquisa.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo foi descrito como um ensaio clínico duplo-cego, embora o texto mencione que a equipe de anestesia estava cega aos valores do Flotrac no braço de terapia padrão.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo afirma explicitamente que os avaliadores do desfecho primário foram cegados quanto ao braço do estudo.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo utilizou uma população de intenção de tratar modificada e relatou que nenhum paciente foi perdido durante o acompanhamento de 30 dias.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo reportou tanto o desfecho primário quanto múltiplos desfechos secundários pré-especificados, incluindo complicações e uso de vasopressores.\"},\n  \"outros_vieses\": {\"julgamento\": \"Low\", \"justificativa\": \"O protocolo foi aprovado por um Comitê de Revisão Institucional e os pesquisadores adotaram medidas para evitar variabilidade na execução do algoritmo.\"},\n  \"risco_global\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo apresenta um desenho de ensaio clínico randomizado robusto com cegamento, randomização controlada e baixo índice de perdas de seguimento.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 444,
+  "dt": 37.9674567,
+  "prompt_tokens": 6860
+}

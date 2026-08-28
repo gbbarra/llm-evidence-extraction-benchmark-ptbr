@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "REF47",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-28 09:07:47",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"A randomização foi realizada com o método de envelope fechado.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não menciona se a alocação foi ocultada dos participantes e da equipe.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Não há menção se os participantes e a equipe foram cegos ao tratamento.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Não há menção se os avaliadores dos desfechos foram cegos ao tratamento.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Não há menção se houve perda de seguimento ou como foram tratados os desfechos incompletos.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo relata todos os desfechos previamente definidos.\"},\n  \"outros_vieses\": {\"julgamento\": \"Low\", \"justificativa\": \"Não há menção a outros viéses que poderiam influenciar os resultados.\"},\n  \"risco_global\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Há informações insuficientes sobre cegamento, alocação oculta e tratamento de desfechos incompletos, o que limita o julgamento global do risco de viés.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 375,
+  "dt": 52.9396987,
+  "prompt_tokens": 8251
+}

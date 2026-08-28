@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen38",
+  "ollama": "qwen3.8:27b-texto",
+  "pmcid": "REF47",
+  "tarefa": "t1",
+  "replica": 1,
+  "inicio": "2026-08-28 12:43:57",
+  "content": "{\n  \"n_randomizados_gdft\": {\"valor\": \"40\", \"onde\": \"Methodology\"},\n  \"n_randomizados_controle\": {\"valor\": \"40\", \"onde\": \"Methodology\"},\n  \"tipo_cirurgia\": {\"valor\": \"Total abdominal hysterectomy and bilateral salpingo-oophorectomy (TAH+BSO)\", \"onde\": \"Abstract\"},\n  \"laparoscopia_gdft\": {\"valor\": \"0\", \"onde\": \"Abstract\"},\n  \"laparoscopia_controle\": {\"valor\": \"0\", \"onde\": \"Abstract\"},\n  \"asa_gdft\": {\"valor\": \"ASA I-III\", \"onde\": \"Methodology\"},\n  \"asa_controle\": {\"valor\": \"ASA I-III\", \"onde\": \"Methodology\"},\n  \"fluido_total_gdft\": {\"valor\": \"NR\", \"onde\": \"Table II\"},\n  \"fluido_total_controle\": {\"valor\": \"NR\", \"onde\": \"Table II\"},\n  \"cristaloide_gdft\": {\"valor\": \"654.87 ± 146.91 ml\", \"onde\": \"Table II\"},\n  \"cristaloide_controle\": {\"valor\": \"1508.97 ± 371.14 ml\", \"onde\": \"Table II\"},\n  \"coloide_gdft\": {\"valor\": \"417.95 ± 244.54 ml\", \"onde\": \"Table II\"},\n  \"coloide_controle\": {\"valor\": \"12.82 ± 80.06 ml\", \"onde\": \"Table II\"},\n  \"perda_sanguinea_gdft\": {\"valor\": \"193.97 ± 132.09 ml\", \"onde\": \"Table II\"},\n  \"perda_sanguinea_controle\": {\"valor\": \"272.69 ± 274.92 ml\", \"onde\": \"Table II\"},\n  \"uso_inotropico\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"morbidade_eventos_gdft\": {\"valor\": \"4\", \"onde\": \"Table II\"},\n  \"morbidade_eventos_controle\": {\"valor\": \"1\", \"onde\": \"Table II\"},\n  \"mortalidade_gdft\": {\"valor\": \"0\", \"onde\": \"Results\"},\n  \"mortalidade_controle\": {\"valor\": \"0\", \"onde\": \"Results\"},\n  \"los_hospitalar_gdft\": {\"valor\": \"2.03 ± 0.78 days\", \"onde\": \"Table II\"},\n  \"los_hospitalar_controle\": {\"valor\": \"2 ± 0.46 days\", \"onde\": \"Table II\"},\n  \"tempo_flatus_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_flatus_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 809,
+  "dt": 646.9309914,
+  "prompt_tokens": 8854
+}

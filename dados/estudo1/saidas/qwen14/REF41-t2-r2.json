@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "REF41",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-28 09:00:03",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"A randomização foi realizada por meio de computador pela unidade de pesquisa local.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"As alocações foram colocadas em envelopes opacos lacrados e armazenados no escritório de pesquisa do departamento.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"High\", \"justificativa\": \"Os participantes e os avaliadores dos desfechos estavam cegos, mas os clínicos que realizavam o tratamento não estavam, devido à natureza do protocolo de fluidos.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"Os avaliadores dos desfechos estavam cegos à alocação dos grupos.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Não há menção explícita sobre como foram tratados os desfechos incompletos ou se houve perda de seguimento.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo relata todos os desfechos primários e secundários conforme planejado.\"},\n  \"outros_vieses\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Não há informação sobre como foram geridos possíveis vieses relacionados à aplicação do software de apoio à decisão durante o procedimento.\"},\n  \"risco_global\": {\"julgamento\": \"High\", \"justificativa\": \"O risco global é alto devido ao não cegamento dos clínicos que realizavam o tratamento e à possibilidade de vieses relacionados à aplicação do software durante o procedimento cirúrgico.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 434,
+  "dt": 61.6736222,
+  "prompt_tokens": 8421
+}

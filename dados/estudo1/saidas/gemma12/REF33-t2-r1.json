@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma12",
+  "ollama": "gemma4:12b",
+  "pmcid": "REF33",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-28 07:56:26",
+  "content": "```json\n{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A randomização foi realizada por um sistema centralizado baseado em web e os participantes foram alocados em uma proporção de 1:1.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os detalhes da alocação foram ocultados em envelopes opacos, selados e grampeados, abertos apenas no dia da cirurgia.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O artigo declara explicitamente que foi impossível ocultar a alocação dos pesquisadores que realizavam o monitoramento hemodinâmico.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os dados foram coletados por pesquisadores cegados à alocação e os dados pós-operatórios foram obtidos de registros clínicos preenchidos por médicos cegos.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo reporta que não houve pacientes perdidos durante o acompanhamento e todos os 428 pacientes analisados foram acompanhados até 180 dias.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os desfechos primários e secundários foram pré-definidos e os dados apresentados correspondem aos objetivos descritos no protocolo.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo seguiu as diretrizes CONSORT e os procedimentos de análise estatística foram detalhados e aplicados de forma consistente.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O risco é considerado alto devido à impossibilidade de cegar a equipe que realizou o monitoramento intraoperatório, o que pode influenciar o manejo clínico.\"\n  }\n}\n```",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 524,
+  "dt": 186.5881671,
+  "prompt_tokens": 9762
+}

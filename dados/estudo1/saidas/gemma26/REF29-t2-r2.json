@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "REF29",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-28 09:29:05",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo utilizou uma sequência de randomização por blocos gerada por computador, com blocos de 2 e 4 pacientes selecionados aleatoriamente.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O artigo descreve o uso de um processo de randomização por blocos para alocação 1:1, sem mencionar falhas na ocultação do processo de alocação.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O cegamento de participantes e equipe era impossível devido à natureza da intervenção (administração de fluidos e uso de inotrópicos baseada em algoritmos).\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Unclear\",\n    \"justificativa\": \"O artigo não informa se os avaliadores dos desfechos (como as complicações pós-operatórias) foram cegados em relação ao grupo de tratamento.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo utilizou o princípio de intenção de tratar e descreveu detalhadamente as perdas de seguimento e exclusões no fluxograma CONSORT.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo reportou tanto o desfecho primário quanto uma ampla gama de desfechos secundários, incluindo complicações maiores, menores, tempo de permanência e uso de medicações.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo foi registrado no Netherlands Trial Registry e os autores discutiram potenciais vieses como o efeito Hawthorne e a falta de monitoramento de CI no grupo controle.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O risco global é alto devido à impossibilidade de cegar participantes e equipe na aplicação de protocolos terapêuticos ativos.\"\n  }\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 543,
+  "dt": 58.3415382,
+  "prompt_tokens": 10630
+}

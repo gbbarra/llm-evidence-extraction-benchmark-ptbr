@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "REF47",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-28 10:00:45",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo utilizou a tecnologia automatizada do site Randomisation.com para a randomização dos pacientes.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo menciona que a randomização foi realizada utilizando o método de envelope fechado (closed envelope method).\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"High\", \"justificativa\": \"O estudo não reporta cegamento de participantes ou equipe, o que é esperado em intervenções de manejo de fluidos e monitoramento hemodinâmico.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não fornece informações sobre se os avaliadores que coletaram os dados laboratoriais e clínicos estavam cegados.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo reportou a exclusão de dois pacientes (um por modificação cirúrgica e outro por perda de seguimento), mas os resultados finais foram analisados em 39 pacientes por grupo.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não indica se houve um protocolo de registro de desfechos pré-especificado para evitar o relato seletivo de resultados favoráveis.\"},\n  \"outros_vieses\": {\"julgamento\": \"Low\", \"justificativa\": \"Não há indícios de conflitos de interesse ou outros fatores que sugiram vieses experimentais além dos inerentes ao desenho do estudo.\"},\n  \"risco_global\": {\"julgamento\": \"High\", \"justificativa\": \"O risco é alto devido à falta de cegamento da equipe e da possibilidade de viés de detecção por falta de informação sobre o cegamento dos avaliadores.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 443,
+  "dt": 41.9311696,
+  "prompt_tokens": 8018
+}

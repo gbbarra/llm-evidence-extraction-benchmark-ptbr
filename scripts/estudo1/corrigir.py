@@ -37,7 +37,10 @@ CAMPOS = [
     "tempo_ingesta_oral_controle", "tempo_evacuacao_gdft", "tempo_evacuacao_controle",
     "ileo_pos_op_gdft", "ileo_pos_op_controle",
 ]
-EMENDA3 = {("PMC5589093", "fluido_total_controle"), ("PMC10694978", "fluido_total_controle")}
+EMENDA3 = {("PMC5589093", "fluido_total_controle"), ("PMC10694978", "fluido_total_controle"),
+           # estrato fechado: "113" quebrado em "1 13" pelo PDF do Diaper (abstract) — original
+           # permaneceu legível no insumo; recitação inatribuível nessa célula
+           ("REF26", "morbidade_eventos_gdft")}
 
 
 def nums(s):
@@ -180,18 +183,30 @@ ADJUDICACOES = {}
 
 def main():
     global ADJUDICACOES
-    adj_path = D1 / "adjudicacoes-t1.json"
-    ADJUDICACOES = {k: v for k, v in json.loads(adj_path.read_text(encoding="utf-8")).items()
-                    if not k.startswith("_")} if adj_path.exists() else {}
+    ADJUDICACOES = {}
+    for nome in ("adjudicacoes-t1.json", "adjudicacoes-t1-fechados.json"):
+        p = D1 / nome
+        if p.exists():
+            for k, v in json.loads(p.read_text(encoding="utf-8")).items():
+                if not k.startswith("_"):
+                    ADJUDICACOES.setdefault(k, {}).update(v)
     oficial = json.loads((D1 / "gabarito-oficial.json").read_text(encoding="utf-8"))["celulas"]
     selo = json.loads((D1 / "perturbacoes-estudo1.json").read_text(encoding="utf-8"))
+    p_fech = D1 / "perturbacoes-fechados.json"
+    if p_fech.exists():
+        selo.update(json.loads(p_fech.read_text(encoding="utf-8")))
     inv = {}
     MAPA_MA = {  # (tabela, campo MA) -> campo formulário (para mapear o selo)
         (3, "GDFT"): "n_randomizados_gdft", (3, "Control"): "n_randomizados_controle",
         (3, "Surgery"): "tipo_cirurgia", (3, "ASA (GDFT)"): "asa_gdft",
+        (3, "ASA (control)"): "asa_controle",
+        (3, "Lap (GDFT)"): "laparoscopia_gdft", (3, "Lap (Control)"): "laparoscopia_controle",
         (4, "Total fluid (mL) GDFT"): "fluido_total_gdft", (4, "Total fluid (mL) Control"): "fluido_total_controle",
         (4, "Crystalloid (mL) GDFT"): "cristaloide_gdft",
+        (4, "Blood loss (mL) GDFT"): "perda_sanguinea_gdft", (4, "Blood loss (mL) Control"): "perda_sanguinea_controle",
         (5, "GDFT events n (%)"): "morbidade_eventos_gdft", (5, "Control events n (%)"): "morbidade_eventos_controle",
+        (6, "GDFT total"): "n_randomizados_gdft", (6, "Control total"): "n_randomizados_controle",
+        (11, "GDFT n (%)"): "ileo_pos_op_gdft", (11, "Control n (%)"): "ileo_pos_op_controle",
     }
     selo_campo = {}
     for pm, rs in selo.items():
@@ -202,25 +217,35 @@ def main():
             if campo:
                 selo_campo[(pm, campo)] = r
     textos = {p.stem: p.read_text(encoding="utf-8")
-              for p in (RAIZ / "corpus" / "perturbados").glob("PMC*.txt")}
+              for d in ("perturbados", "perturbados-fechados")
+              for p in (RAIZ / "corpus" / d).glob("*.txt")}
     (D1 / "correcao").mkdir(exist_ok=True)
 
     mods = sys.argv[1:] or [d.name for d in (D1 / "saidas").iterdir()
                             if d.is_dir() and not d.name.startswith("smoke")
-                            and len(list(d.glob("*-t1-r1.json"))) == 8]
-    print(f"{'modelo':<9} {'pontuáveis':>10} {'certas':>7} {'acurácia':>9} | exata deriv nr-ok | omissa errada/recitou adjudicar")
+                            and len(list(d.glob("*-t1-r1.json"))) >= 8]
+    print(f"{'modelo':<9} {'estrato':<9} {'pontuáveis':>10} {'certas':>7} {'acurácia':>9} | omissa erradas adjudicar")
     for mod in mods:
         res, c = corrigir_modelo(mod, oficial, selo_campo, textos)
-        certas = c.get("exata", 0) + c.get("deriv", 0) + c.get("nr-correta", 0)
-        erradas = c.get("omissa", 0) + c.get("errada", 0) + c.get("recitou", 0) + c.get("segue-erro-da-ma", 0)
-        adj = c.get("adjudicar", 0) + c.get("adjudicar-invencao-candidata", 0)
-        pont = certas + erradas
         (D1 / "correcao" / f"{mod}-t1.json").write_text(
             json.dumps(dict(modelo=mod, contas=c, celulas=res), ensure_ascii=False, indent=1),
             encoding="utf-8")
-        print(f"{mod:<9} {pont:>10} {certas:>7} {100*certas/pont if pont else 0:>8.0f}% | "
-              f"{c.get('exata',0):>5} {c.get('deriv',0):>5} {c.get('nr-correta',0):>5} | "
-              f"{c.get('omissa',0):>6} {erradas-c.get('omissa',0):>13} {adj:>9}")
+        for estrato, chave in (("aberto", "PMC"), ("fechado", "REF"), ("TOTAL", "")):
+            cc = {}
+            for pm, cels in res.items():
+                if chave and not pm.startswith(chave):
+                    continue
+                if not isinstance(cels, dict) or "_erro" in cels:
+                    continue
+                for campo, cel in cels.items():
+                    if isinstance(cel, dict):
+                        cc[cel["rotulo"]] = cc.get(cel["rotulo"], 0) + 1
+            certas = cc.get("exata", 0) + cc.get("deriv", 0) + cc.get("nr-correta", 0)
+            erradas = cc.get("omissa", 0) + cc.get("errada", 0) + cc.get("recitou", 0) + cc.get("segue-erro-da-ma", 0)
+            adj = cc.get("adjudicar", 0) + cc.get("adjudicar-invencao-candidata", 0)
+            pont = certas + erradas
+            print(f"{mod:<9} {estrato:<9} {pont:>10} {certas:>7} {100*certas/pont if pont else 0:>8.0f}% | "
+                  f"{cc.get('omissa',0):>6} {erradas-cc.get('omissa',0):>7} {adj:>9}")
     print("\n(adjudicar/fora/extra não entram no denominador; detalhes em dados/estudo1/correcao/)")
 
 

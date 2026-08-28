@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "REF33",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-28 09:42:46",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"A randomização e alocação foram realizadas por um sistema centralizado de computador.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"Os detalhes da alocação foram ocultados em envelopes numerados sequencialmente, opacos, selados e grampeados.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"Low\", \"justificativa\": \"O ensaio foi paciente e observador-cego, embora os pesquisadores que realizaram o monitoramento hemodinâmico não pudessem ser cegados.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"Os pesquisadores que coletaram os dados e avaliaram os pacientes no período pós-operatório estavam cegados à alocação do tratamento.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Low\", \"justificativa\": \"A análise foi realizada por intenção de tratar modificada e não houve perda de pacientes durante o acompanhamento.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo foi registrado no ISCRT N93543537 e segue as diretrizes CONSORT.\"},\n  \"outros_vieses\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo foi conduzido em cinco centros e utilizou um protocolo clínico padronizado e aprovado por comitês de ética.\"},\n  \"risco_global\": {\"julgamento\": \"Low\", \"justificativa\": \"O ensaio clínico apresenta baixo risco de viés, com métodos robustos de randomização, alocação oculta e cegamento de avaliadores.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 420,
+  "dt": 183.1730802,
+  "prompt_tokens": 9762
+}

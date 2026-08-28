@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "REF29",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-28 09:25:47",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo utilizou uma sequência de randomização por blocos gerada por computador dentro de cada estrato.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O artigo menciona o uso de uma sequência de randomização por blocos, mas não detalha explicitamente o método de ocultação da alocação (como envelopes selados ou centralização).\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O cegamento de participantes e equipe é impossível devido à natureza da intervenção (administração de fluidos e medicamentos vasoativos).\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Unclear\",\n    \"justificativa\": \"O artigo não informa se os avaliadores que analisaram as complicações pós-operatórias estavam cegados em relação ao grupo atribuído.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A análise foi realizada seguindo o princípio de intenção de tratar (intention-to-treat) e as perdas de acompanhamento foram relatadas no diagrama CONSORT.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo reportou tanto os desfechos primários quanto os secundários planejados, incluindo complicações maiores e menores e tempo de internação.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo foi um ensaio clínico randomizado multicêntrico com registro no Netherlands Trial Registry, visando minimizar vieses estruturais.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O risco global é alto devido à impossibilidade de cegar a intervenção e à ausência de informação sobre o cegamento dos avaliadores dos desfechos.\"\n  }\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 517,
+  "dt": 198.5124621,
+  "prompt_tokens": 10630
+}

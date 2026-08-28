@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma12",
+  "ollama": "gemma4:12b",
+  "pmcid": "REF26",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-28 07:24:59",
+  "content": "```json\n{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os pacientes foram alocados aleatoriamente em uma proporção de 1:1 utilizando uma lista gerada por computador com blocos de 4.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os detalhes da alocação foram ocultados em envelopes numerados sequencialmente, selados e grampeados, sendo abertos apenas no dia da cirurgia.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"Os investigadores que coletaram os dados intraoperacionais tinham conhecimento da atribuição do grupo.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os avaliadores que registraram os dados durante o período pós-operatório foram cegados para a alocação do tratamento.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O fluxograma do estudo (Fig 2) mostra que os dados foram analisados para a grande maioria dos pacientes alocados, com perdas mínimas e não relacionadas a vieses.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo reporta múltiplos desfechos primários e secundários, incluindo análises de sensibilidade para diversos subgrupos e variáveis de segurança.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O desfecho primário é um índice de morbidade composto e os desfechos secundários são objetivos, embora o tempo de internação dependa de critérios não pré-definidos.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Apesar do não-cegamento da equipe de coleta intraoperatória, o desfecho primário e a maioria dos desfechos secundários são baseados em eventos clínicos objetivos e avaliadores cegos.\"\n  }\n}\n```",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 541,
+  "dt": 195.5955334,
+  "prompt_tokens": 10191
+}

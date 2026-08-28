@@ -1,0 +1,106 @@
+
+=== gemma12 (gemma4:12b) — 07:18 ===
+  gemma12 REF26-t1-r1.json: 259s, 10841+863 tok, fim=stop
+  gemma12 REF26-t1-r2.json: 113s, 10841+850 tok, fim=stop
+  gemma12 REF26-t2-r1.json: 196s, 10191+541 tok, fim=stop
+  gemma12 REF26-t2-r2.json: 60s, 10191+456 tok, fim=stop
+  gemma12 REF29-t1-r1.json: 267s, 11280+927 tok, fim=stop
+  gemma12 REF29-t1-r2.json: 130s, 11280+974 tok, fim=stop
+  gemma12 REF29-t2-r1.json: 199s, 10630+514 tok, fim=stop
+  gemma12 REF29-t2-r2.json: 74s, 10630+561 tok, fim=stop
+  gemma12 REF30-t1-r1.json: 203s, 7510+912 tok, fim=stop
+  gemma12 REF30-t1-r2.json: 146s, 7510+1134 tok, fim=stop
+  gemma12 REF30-t2-r1.json: 140s, 6860+506 tok, fim=stop
+  gemma12 REF30-t2-r2.json: 64s, 6860+499 tok, fim=stop
+  gemma12 REF33-t1-r1.json: 283s, 10412+1169 tok, fim=stop
+  gemma12 REF33-t1-r2.json: 124s, 10412+942 tok, fim=stop
+  gemma12 REF33-t2-r1.json: 187s, 9762+524 tok, fim=stop
+  gemma12 REF33-t2-r2.json: 64s, 9762+490 tok, fim=stop
+  gemma12 REF41-t1-r1.json: 204s, 8708+777 tok, fim=stop
+  gemma12 REF41-t1-r2.json: 102s, 8708+784 tok, fim=stop
+  gemma12 REF41-t2-r1.json: 161s, 8058+533 tok, fim=stop
+  gemma12 REF41-t2-r2.json: 66s, 8058+516 tok, fim=stop
+  gemma12 REF47-t1-r1.json: 241s, 8668+1065 tok, fim=stop
+  gemma12 REF47-t1-r2.json: 138s, 8668+1065 tok, fim=stop
+  gemma12 REF47-t2-r1.json: 157s, 8018+501 tok, fim=stop
+  gemma12 REF47-t2-r2.json: 61s, 8018+470 tok, fim=stop
+
+=== qwen14 (qwen3:14b) — 08:19 ===
+  qwen14 REF26-t1-r1.json: 281s, 11129+730 tok, fim=stop
+  qwen14 REF26-t1-r2.json: 111s, 11129+738 tok, fim=stop
+  qwen14 REF26-t2-r1.json: 76s, 10508+456 tok, fim=stop
+  qwen14 REF26-t2-r2.json: 59s, 10508+401 tok, fim=stop
+  qwen14 REF29-t1-r1.json: 323s, 11477+954 tok, fim=stop
+  qwen14 REF29-t1-r2.json: 103s, 11477+680 tok, fim=stop
+  qwen14 REF29-t2-r1.json: 70s, 10856+412 tok, fim=stop
+  qwen14 REF29-t2-r2.json: 60s, 10856+403 tok, fim=stop
+  qwen14 REF30-t1-r1.json: 201s, 7615+752 tok, fim=stop
+  qwen14 REF30-t1-r2.json: 105s, 7615+752 tok, fim=stop
+  qwen14 REF30-t2-r1.json: 52s, 6994+333 tok, fim=stop
+  qwen14 REF30-t2-r2.json: 47s, 6994+345 tok, fim=stop
+  qwen14 REF33-t1-r1.json: 283s, 10606+846 tok, fim=stop
+  qwen14 REF33-t1-r2.json: 136s, 10606+914 tok, fim=stop
+  qwen14 REF33-t2-r1.json: 80s, 9985+490 tok, fim=stop
+  qwen14 REF33-t2-r2.json: 73s, 9985+500 tok, fim=stop
+  qwen14 REF41-t1-r1.json: 220s, 9042+671 tok, fim=stop
+  qwen14 REF41-t1-r2.json: 97s, 9042+671 tok, fim=stop
+  qwen14 REF41-t2-r1.json: 57s, 8421+352 tok, fim=stop
+  qwen14 REF41-t2-r2.json: 62s, 8421+434 tok, fim=stop
+  qwen14 REF47-t1-r1.json: 233s, 8872+781 tok, fim=stop
+  qwen14 REF47-t1-r2.json: 108s, 8872+753 tok, fim=stop
+  qwen14 REF47-t2-r1.json: 61s, 8251+384 tok, fim=stop
+  qwen14 REF47-t2-r2.json: 53s, 8251+375 tok, fim=stop
+
+=== gemma26 (gemma4:26b) — 09:08 ===
+  gemma26 REF26-t1-r1.json: 303s, 10841+881 tok, fim=stop
+  gemma26 REF26-t1-r2.json: 105s, 10841+942 tok, fim=stop
+  gemma26 REF26-t2-r1.json: 187s, 10191+549 tok, fim=stop
+  gemma26 REF26-t2-r2.json: 55s, 10191+529 tok, fim=stop
+  gemma26 REF29-t1-r1.json: 263s, 11280+995 tok, fim=stop
+  gemma26 REF29-t1-r2.json: 113s, 11280+995 tok, fim=stop
+  gemma26 REF29-t2-r1.json: 199s, 10630+517 tok, fim=stop
+  gemma26 REF29-t2-r2.json: 58s, 10630+543 tok, fim=stop
+  gemma26 REF30-t1-r1.json: 168s, 7510+873 tok, fim=stop
+  gemma26 REF30-t1-r2.json: 77s, 7510+870 tok, fim=stop
+  gemma26 REF30-t2-r1.json: 133s, 6860+504 tok, fim=stop
+  gemma26 REF30-t2-r2.json: 38s, 6860+444 tok, fim=stop
+  gemma26 REF33-t1-r1.json: 237s, 10412+937 tok, fim=stop
+  gemma26 REF33-t1-r2.json: 109s, 10412+959 tok, fim=stop
+  gemma26 REF33-t2-r1.json: 183s, 9762+420 tok, fim=stop
+  gemma26 REF33-t2-r2.json: 49s, 9762+442 tok, fim=stop
+  gemma26 REF41-t1-r1.json: 183s, 8708+720 tok, fim=stop
+  gemma26 REF41-t1-r2.json: 69s, 8708+710 tok, fim=stop
+  gemma26 REF41-t2-r1.json: 141s, 8058+515 tok, fim=stop
+  gemma26 REF41-t2-r2.json: 48s, 8058+521 tok, fim=stop
+  gemma26 REF47-t1-r1.json: 188s, 8668+859 tok, fim=stop
+  gemma26 REF47-t1-r2.json: 83s, 8668+851 tok, fim=stop
+  gemma26 REF47-t2-r1.json: 135s, 8018+446 tok, fim=stop
+  gemma26 REF47-t2-r2.json: 42s, 8018+443 tok, fim=stop
+
+=== qwen38 (qwen3.8:27b-texto) — 10:01 ===
+  qwen38 REF26-t1-r1.json: 942s, 11109+1075 tok, fim=stop
+  qwen38 REF26-t1-r2.json: 211s, 11109+841 tok, fim=stop
+  qwen38 REF26-t2-r1.json: 742s, 10461+529 tok, fim=stop
+  qwen38 REF26-t2-r2.json: 212s, 10461+574 tok, fim=stop
+  qwen38 REF29-t1-r1.json: 907s, 11463+1102 tok, fim=stop
+  qwen38 REF29-t1-r2.json: 305s, 11463+1187 tok, fim=stop
+  qwen38 REF29-t2-r1.json: 787s, 10815+564 tok, fim=stop
+  qwen38 REF29-t2-r2.json: 242s, 10815+657 tok, fim=stop
+  qwen38 REF30-t1-r1.json: 764s, 7622+1822 tok, fim=stop
+  qwen38 REF30-t1-r2.json: 167s, 7622+822 tok, fim=stop
+  qwen38 REF30-t2-r1.json: 530s, 6974+622 tok, fim=stop
+  qwen38 REF30-t2-r2.json: 175s, 6974+584 tok, fim=stop
+  qwen38 REF33-t1-r1.json: 845s, 10533+1201 tok, fim=stop
+  qwen38 REF33-t1-r2.json: 243s, 10533+985 tok, fim=stop
+  qwen38 REF33-t2-r1.json: 721s, 9885+601 tok, fim=stop
+  qwen38 REF33-t2-r2.json: 218s, 9885+610 tok, fim=stop
+  qwen38 REF41-t1-r1.json: 687s, 8990+954 tok, fim=stop
+  qwen38 REF41-t1-r2.json: 266s, 8990+1150 tok, fim=stop
+  qwen38 REF41-t2-r1.json: 597s, 8342+589 tok, fim=stop
+  qwen38 REF41-t2-r2.json: 187s, 8342+607 tok, fim=stop
+  qwen38 REF47-t1-r1.json: 647s, 8854+809 tok, fim=stop
+  qwen38 REF47-t1-r2.json: 175s, 8854+801 tok, fim=stop
+  qwen38 REF47-t2-r1.json: 686s, 8206+701 tok, fim=stop
+  qwen38 REF47-t2-r2.json: 159s, 8206+511 tok, fim=stop
+
+FILA CONCLUÍDA em 5.9 h.

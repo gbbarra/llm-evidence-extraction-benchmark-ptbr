@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma12",
+  "ollama": "gemma4:12b",
+  "pmcid": "REF29",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-28 07:35:52",
+  "content": "```json\n{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo utilizou uma sequência de randomização em blocos gerada por computador e estratificada por centro e tipo de cirurgia.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A randomização foi realizada por computador e o artigo não descreve qualquer método que permitisse aos pesquisadores prever a alocação.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O tratamento com PGDT envolve intervenções clínicas ativas baseadas em monitorização em tempo real, impossibilitando o cegamento da equipe de saúde.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O artigo não menciona o uso de avaliadores cegos para os desfechos e sugere que a equipe assistencial estava ciente da intervenção.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A análise seguiu o princípio de intenção de tratar e o desvio de pacientes foi documentado e detalhado no diagrama de fluxo CONSORT.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os desfechos primários e secundários foram detalhados e os resultados foram apresentados para ambos os grupos sem indicação de omissão.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo foi um ensaio multicêntrico com larga amostra e controle de qualidade, embora tenha mencionado o possível efeito Hawthorne.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"A falta de cegamento da equipe e dos avaliadores em um estudo com intervenção ativa e monitoramento contínuo eleva o risco de viés.\"\n  }\n}\n```",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 514,
+  "dt": 199.2297289,
+  "prompt_tokens": 10630
+}

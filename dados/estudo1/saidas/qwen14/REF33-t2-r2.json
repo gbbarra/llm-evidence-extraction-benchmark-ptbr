@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "REF33",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-28 08:52:36",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"A randomizaçăo foi realizada por um sistema central de computador.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"A alocaçăo foi ocultada em envelopes sequencialmente numerados, opacos, lacrados e pregados.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo menciona que năo era possivel cegar os pesquisadores que realizaram a monitoraçăo hemodinâmica, mas năo informa se os participantes e a equipe foram cegos.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"Os sujeitos e os mĂ©dicos que coletaram os dados e avaliaram os pacientes durante o perıodo pós-operatĂłrio foram cegos quanto à alocaçăo do tratamento.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo năo informa se houve perda de participantes durante o estudo ou como foram tratados os dados de desfecho incompletos.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo relata todos os desfechos primários e secundários definidos no protocolo.\"},\n  \"outros_vieses\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo năo informa se houve diferenças entre os grupos em termos de cuidados pós-operatĂłrios ou de outros fatores que poderiam influenciar os desfechos.\"},\n  \"risco_global\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo apresenta caracteristicas de baixo risco de viés em todos os domınios avaliados, com exceçăo de alguns domınios onde a informaçăo foi insuficiente para um julgamento definitivo.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 500,
+  "dt": 73.3887647,
+  "prompt_tokens": 9985
+}

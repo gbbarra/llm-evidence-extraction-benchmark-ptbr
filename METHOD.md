@@ -91,16 +91,19 @@ Requisitos: Python 3.12 (stdlib apenas para o corpus), Ollama para os modelos lo
 
 ## Tabela vigente
 
-Estudo 1 (estrato aberto: 8 primários, 99 células/modelo, corrigido 2026-08-28):
+Estudo 1 completo (14/14 primários — estratos aberto + fechado; 156 células
+pontuáveis/modelo; corrigido 2026-08-28):
 
 | Métrica | gemma4:12b | gemma4:26b | qwen3.8:27b | qwen3:14b |
 |---|---|---|---|---|
-| Extração (acurácia vs fonte) | **100%** | **100%** | 98% | 90% |
-| — células erradas/inventadas/recitadas | 0 | 0 | 0 | 0 |
-| RoB (concordância, 7 domínios) | **78%** | 77% | 57% | 57% |
-| Síntese (direção + zero órfãos) | ✓ | ✓ | ✓ | ✓ |
-| Tempo do bloco (33 corridas) | 84 min | 76 min | 267 min | 65 min |
+| Extração (acurácia vs fonte) | **100%** | **99%** | 97% | 92% |
+| — células erradas / inventadas / recitadas | 0 / 0 / 0 | 0 / 0 / 0 | 1 / 0 / 0 | 0 / 0 / 0 |
+| RoB (concordância, 7 domínios × 13 estudos) | **80%** | 79% | 62% | 59% |
+| Síntese (direção compatível + zero números órfãos) | ✓ | ✓ | ✓ | ✓ |
+| Tempo total (57 corridas) | ~2,2 h | ~2,0 h | ~7,1 h | ~1,7 h |
 
 Vereditos: H1.1 refutada (a disciplina gemma venceu a extração também) · H1.2, H1.3,
-H1.5, H1.6 confirmadas · H1.4 parcial. Três erratas da metanálise-âncora confirmadas
-pela fonte; duas erratas do próprio adjudicador registradas em público.
+H1.5, H1.6 confirmadas · H1.4 parcial. **Em 624 células decididas: 1 errada, 0
+inventadas, 0 recitações atribuíveis** — enquanto a metanálise publicada acumulou 14
+itens de errata/divergência confirmados pela fonte, e o adjudicador, 3 erratas próprias
+registradas em público. A régua não se dobra para ninguém.

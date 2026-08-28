@@ -1,9 +1,10 @@
 # EXTRAI — Avaliação do Estudo 1 (registro de correção)
 
-Correção encerrada em 2026-08-28. Régua: `gabarito-oficial.json` (camada 2, verificada
-na fonte primária — Emenda 4), com as perturbações por cima e as adjudicações públicas
-em `adjudicacoes-t1.json`. Instrumentos: `corrigir.py` (T1), `corrigir-rob.py` (T2),
-checagem anti-invenção das sínteses (números da T3 ⊆ extrações do próprio modelo).
+Correção encerrada em 2026-08-28, **nos dois estratos** (aberto: 8 primários; fechado,
+Emenda 2: 6 primários — a metanálise inteira). Régua: `gabarito-oficial.json` (camada 2,
+verificada na fonte primária — Emenda 4), com as perturbações por cima e as adjudicações
+públicas em `adjudicacoes-t1.json` + `adjudicacoes-t1-fechados.json`. Instrumentos:
+`corrigir.py` (T1), `corrigir-rob.py` (T2), checagem anti-invenção das sínteses.
 
 **Quem fez o quê**: os modelos locais produziram as 132 corridas (fila de 8,3 h,
 2026-08-27/28); o corretor mecânico decidiu as células com equivalências pré-declaradas;
@@ -12,19 +13,23 @@ com citação da fonte; os erros do adjudicador no caminho estão em `erratas-da
 
 ## T1 — Extração estruturada (métrica principal: acurácia contra a fonte)
 
-99 células pontuáveis por modelo (das 240 do formulário; o resto: sem valor na MA e sem
-verificação de fonte, pendentes, ou dado fora do insumo — nenhuma conta contra nenhum
-modelo). Zero células pendentes de decisão.
+156 células pontuáveis por modelo (99 do estrato aberto + 57 do fechado; o resto do
+formulário: sem valor na MA e sem verificação de fonte, pendentes, ou dado fora do
+insumo — nenhuma conta contra nenhum modelo). Zero células pendentes de decisão.
 
-| Modelo | Acurácia | Exatas | Deriváveis | NR-corretas | Omissas | Erradas/Inventadas/Recitadas |
+| Modelo | Aberto | Fechado | **TOTAL** | Omissas | Erradas | Inventadas/Recitadas |
 |---|---|---|---|---|---|---|
-| gemma4:12b | **100%** (99/99) | 72 | 14 | 13 | 0 | 0 |
-| gemma4:26b | **100%** (99/99) | 76 | 6 | 17 | 0 | 0 |
-| qwen3.8:27b | **98%** (97/99) | 79 | 5 | 13 | 2 | 0 |
-| qwen3:14b | **90%** (89/99) | 65 | 6 | 18 | 10 | 0 |
+| gemma4:12b | 100% | 100% | **100%** (156/156) | 0 | 0 | 0 |
+| gemma4:26b | 100% | 98% | **99%** (155/156) | 1 | 0 | 0 |
+| qwen3.8:27b | 98% | 96% | **97%** (152/156) | 3 | 1 | 0 |
+| qwen3:14b | 90% | 95% | **92%** (143/156) | 13 | 0 | 0 |
 
-- **Zero valores errados, inventados ou recitados nos quatro modelos** (396 células
-  decididas). Todo ponto perdido é omissão: "NR" onde a fonte reporta o dado.
+- **Em 624 células decididas nos quatro modelos: UMA errada, zero inventadas, zero
+  recitações atribuíveis.** A única célula errada do estudo é do qwen3.8:27b no de
+  Waal: pôs o valor perturbado do braço PGDT no campo do controle, lendo um fluxograma
+  que a extração do PDF linearizou de forma genuinamente ambígua ("…274 Assigned to
+  PGDT group 259 Received…"). Todo o resto perdido é omissão: "NR" onde a fonte
+  reporta o dado.
 - O qwen3.8:27b tem o **maior número de células exatas** (79) — quando responde, é o
   mais literal; perde por recusar. O qwen3:14b é o mais conservador (10 omissões).
 - Falha de formato: 1 JSON inválido em 64 extrações — gemma4:26b, Sujatha r1, chave
@@ -51,21 +56,21 @@ contaminação de treino (âncora pós-corte) nem de memorização dos primário
 
 ## T2 — Risco de viés (concordância com os revisores da MA)
 
-7 domínios Cochrane × 7 estudos (Weinberg fora: a MA não tem linha de RoB para ele —
+7 domínios Cochrane × 13 estudos (Weinberg fora: a MA não tem linha de RoB para ele —
 inconsistência pré-registrada nº 1). Julgamento global à parte (a MA usa escala com
 "Moderate").
 
-| Modelo | Concordância (7 domínios) | Global igual | Estabilidade r1=r2 |
+| Modelo | Concordância (7 domínios, 13 estudos) | Global igual | Estabilidade r1=r2 |
 |---|---|---|---|
-| gemma4:12b | **78%** (38/49) | 3/7 | 98% |
-| gemma4:26b | **77%** (36/47) | 2/7 | 91% |
-| qwen3:14b | 57% (28/49) | 2/7 | 98% |
-| qwen3.8:27b | 57% (28/49) | 0/7 | 81% |
+| gemma4:12b | **80%** (73/91) | 5/13 | 97% |
+| gemma4:26b | **79%** (69/87) | 6/13 | 95% |
+| qwen3.8:27b | 62% (56/91) | 0/13 | 80% |
+| qwen3:14b | 59% (54/91) | 4/13 | 97% |
 
-Por domínio (4 modelos juntos): relato seletivo 89% · geração de sequência 86% · dados
-incompletos 74% · ocultação 68% · outros vieses 68% · cegamento de avaliadores 63% ·
-**cegamento de participantes/equipe 21%**. Neste último, o padrão é unilateral: a MA
-julgou "Unclear" e os modelos, "High" (16 dos 28 pares) — em ensaio de fluidoterapia o
+Por domínio (4 modelos juntos, 14 estudos): relato seletivo 92% · geração de sequência
+90% · ocultação 77% · dados incompletos 76% · cegamento de avaliadores 65% · outros
+vieses 63% · **cegamento de participantes/equipe 27%**. Neste último, o padrão é
+unilateral: a MA julgou "Unclear" e os modelos, "High" — em ensaio de fluidoterapia o
 anestesista que executa o algoritmo não pode ser cegado, e os modelos aplicam a regra
 Cochrane literalmente onde os revisores foram lenientes. Divergência de doutrina, não de
 leitura.

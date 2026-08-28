@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma12",
+  "ollama": "gemma4:12b",
+  "pmcid": "REF33",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-28 07:59:32",
+  "content": "```json\n{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A randomização foi realizada por um sistema centralizado via web e os envelopes foram selados e numerados.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A alocação foi ocultada por um sistema computadorizado e envelopes opacos e selados foram abertos apenas no dia da cirurgia.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O texto afirma explicitamente que era impossível ocultar o tratamento dos pesquisadores que realizavam o monitoramento hemodinâmico.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os dados pós-operatórios foram coletados de registros preenchidos por cirurgiões e anestesistas que foram cegados quanto à alocação.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O texto afirma que não houve pacientes perdidos durante o acompanhamento de 180 dias.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os resultados apresentados incluem desfechos primários e secundários pré-definidos, com análise de dados baseada em intenção de tratar.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo seguiu as diretrizes CONSORT e utilizou análises estatísticas adequadas para ajustar possíveis fatores de confusão.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O risco é elevado devido ao fato de que os pesquisadores responsáveis pelo monitoramento não puderam ser cegados para o tratamento.\"\n  }\n}\n```",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 490,
+  "dt": 64.072801,
+  "prompt_tokens": 9762
+}

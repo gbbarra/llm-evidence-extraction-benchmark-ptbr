@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "REF26",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-28 08:25:59",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"A randomização foi feita com uma lista gerada por computador, em blocos de 4.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"A alocação foi ocultada em envelopes sequencialmente numerados, lacrados e grampeados.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo menciona que os investigadores que coletaram dados intraoperatórios tinham conhecimento da atribuição do grupo, mas não especifica se os participantes e a equipe de anestesia foram cegos.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"Os avaliadores que registraram dados durante o período pós-operatório estavam cegos à alocação do tratamento.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não menciona se houve perda de seguimento ou como foram tratados os desfechos incompletos.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo relata todos os desfechos primários e secundários previamente especificados.\"},\n  \"outros_vieses\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não menciona se houve outros vieses, como desvios no protocolo ou influências externas durante o estudo.\"},\n  \"risco_global\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo apresenta métodos adequados de randomização, ocultação de alocação e cegamento dos avaliadores, embora haja algumas lacunas em relação ao cegamento dos participantes e equipe, e à reportagem de desfechos incompletos.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 456,
+  "dt": 75.699385,
+  "prompt_tokens": 10508
+}

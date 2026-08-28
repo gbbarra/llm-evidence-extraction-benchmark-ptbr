@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "REF26",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-28 09:15:28",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A sequência de randomização foi desenvolvida antes do início do ensaio clínico utilizando uma lista gerada por computador com blocos de 4.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A alocação foi ocultada em envelopes numerados sequencialmente, selados e grampeados, que foram abertos pelo investigador apenas no dia da cirurgia.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Pacientes, profissionais de saúde na UTI, cuidados intermediários e PACU, bem como os avaliadores, estavam cegos à alocação do tratamento.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os avaliadores que registraram os dados durante o período pós-operatório estavam cegos quanto à alocação do tratamento.\"\n  },\n  \"dados_deslocamento_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo utilizou análises interinas planejadas e analisou os dados de 198 pacientes no grupo GDHT e 196 no grupo RNT, conforme o fluxograma CONSORT apresentado.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O artigo reporta tanto o desfecho primário composto quanto diversos desfechos secundtos específicos, incluindo mortalidade, complicações pulmonares, cardiovasculares e cirúrgicas.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os investigadores que coletaram dados intraoperatórios tinham conhecimento da atribuição do grupo, mas os desfechos clínicos foram avaliados por avaliadores cegos.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo apresenta um desenho de ensaio clínico randomizado robusto com métodos adequados de randomização, ocultação de alocação e cegamento de avaliadores.\"\n  }\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 549,
+  "dt": 187.0612426,
+  "prompt_tokens": 10191
+}

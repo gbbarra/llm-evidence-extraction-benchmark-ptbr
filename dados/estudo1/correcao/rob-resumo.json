@@ -1,42 +1,42 @@
 {
  "por_dominio": {
   "geracao_sequencia_aleatoria": {
-   "conc": 24,
-   "tot": 28
+   "conc": 47,
+   "tot": 52
   },
   "ocultacao_alocacao": {
-   "conc": 19,
-   "tot": 28
+   "conc": 40,
+   "tot": 52
   },
   "cegamento_participantes_equipe": {
-   "conc": 6,
-   "tot": 28
+   "conc": 14,
+   "tot": 52
   },
   "cegamento_avaliadores_desfecho": {
-   "conc": 17,
-   "tot": 27
+   "conc": 33,
+   "tot": 51
   },
   "dados_desfecho_incompletos": {
-   "conc": 20,
-   "tot": 27
+   "conc": 37,
+   "tot": 49
   },
   "relato_seletivo": {
-   "conc": 25,
-   "tot": 28
+   "conc": 48,
+   "tot": 52
   },
   "outros_vieses": {
-   "conc": 19,
-   "tot": 28
+   "conc": 33,
+   "tot": 52
   }
  },
  "modelos": {
   "gemma12": {
-   "dominios_conc": 38,
-   "dominios_tot": 49,
-   "global_conc": 3,
-   "global_tot": 7,
-   "estab_ig": 62,
-   "estab_tot": 63,
+   "dominios_conc": 73,
+   "dominios_tot": 91,
+   "global_conc": 5,
+   "global_tot": 13,
+   "estab_ig": 108,
+   "estab_tot": 111,
    "detalhe": {
     "PMC10561433": {
      "geracao_sequencia_aleatoria": {
@@ -277,6 +277,210 @@
      }
     },
     "PMC6907038": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "unclear"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "high",
+      "ma": "high"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "high",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "high",
+      "ma": "moderate"
+     }
+    },
+    "REF26": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "high",
+      "ma": "unclear"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "low",
+      "ma": "low"
+     }
+    },
+    "REF29": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "high",
+      "ma": "low"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "high",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "high",
+      "ma": "low"
+     }
+    },
+    "REF30": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "low",
+      "ma": "low"
+     }
+    },
+    "REF33": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "high",
+      "ma": "low"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "high",
+      "ma": "low"
+     }
+    },
+    "REF41": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "high",
+      "ma": "low"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "high",
+      "ma": "low"
+     }
+    },
+    "REF47": {
      "geracao_sequencia_aleatoria": {
       "modelo": "low",
       "ma": "low"
@@ -313,12 +517,12 @@
    }
   },
   "gemma26": {
-   "dominios_conc": 36,
-   "dominios_tot": 47,
-   "global_conc": 2,
-   "global_tot": 7,
-   "estab_ig": 41,
-   "estab_tot": 45,
+   "dominios_conc": 69,
+   "dominios_tot": 87,
+   "global_conc": 6,
+   "global_tot": 13,
+   "estab_ig": 86,
+   "estab_tot": 91,
    "detalhe": {
     "PMC10561433": {
      "geracao_sequencia_aleatoria": {
@@ -581,6 +785,210 @@
      },
      "relato_seletivo": {
       "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "high",
+      "ma": "moderate"
+     }
+    },
+    "REF26": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "low",
+      "ma": "unclear"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "low",
+      "ma": "low"
+     }
+    },
+    "REF29": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "high",
+      "ma": "low"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "high",
+      "ma": "low"
+     }
+    },
+    "REF30": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "low",
+      "ma": "low"
+     }
+    },
+    "REF33": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "low",
+      "ma": "low"
+     }
+    },
+    "REF41": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "high",
+      "ma": "low"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "low",
+      "ma": "low"
+     }
+    },
+    "REF47": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "unclear"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "high",
+      "ma": "high"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "unclear",
       "ma": "low"
      },
      "outros_vieses": {
@@ -595,12 +1003,12 @@
    }
   },
   "qwen14": {
-   "dominios_conc": 28,
-   "dominios_tot": 49,
-   "global_conc": 2,
-   "global_tot": 7,
-   "estab_ig": 63,
-   "estab_tot": 64,
+   "dominios_conc": 54,
+   "dominios_tot": 91,
+   "global_conc": 4,
+   "global_tot": 13,
+   "estab_ig": 109,
+   "estab_tot": 112,
    "detalhe": {
     "PMC10561433": {
      "geracao_sequencia_aleatoria": {
@@ -871,18 +1279,222 @@
      },
      "risco_global": {
       "modelo": "low",
+      "ma": "moderate"
+     }
+    },
+    "REF26": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "unclear",
+      "ma": "unclear"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "low",
+      "ma": "low"
+     }
+    },
+    "REF29": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "unclear",
+      "ma": "low"
+     }
+    },
+    "REF30": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "low",
+      "ma": "low"
+     }
+    },
+    "REF33": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "high",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "high",
+      "ma": "low"
+     }
+    },
+    "REF41": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "high",
+      "ma": "low"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "high",
+      "ma": "low"
+     }
+    },
+    "REF47": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "unclear",
+      "ma": "unclear"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "unclear",
+      "ma": "high"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "unclear",
       "ma": "moderate"
      }
     }
    }
   },
   "qwen38": {
-   "dominios_conc": 28,
-   "dominios_tot": 49,
+   "dominios_conc": 56,
+   "dominios_tot": 91,
    "global_conc": 0,
-   "global_tot": 7,
-   "estab_ig": 52,
-   "estab_tot": 64,
+   "global_tot": 13,
+   "estab_ig": 90,
+   "estab_tot": 112,
    "detalhe": {
     "PMC10561433": {
      "geracao_sequencia_aleatoria": {
@@ -1153,6 +1765,210 @@
      },
      "risco_global": {
       "modelo": "unclear",
+      "ma": "moderate"
+     }
+    },
+    "REF26": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "high",
+      "ma": "unclear"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "unclear",
+      "ma": "low"
+     }
+    },
+    "REF29": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "high",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "high",
+      "ma": "low"
+     }
+    },
+    "REF30": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "unclear",
+      "ma": "low"
+     }
+    },
+    "REF33": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "high",
+      "ma": "low"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "high",
+      "ma": "low"
+     }
+    },
+    "REF41": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "high",
+      "ma": "low"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "high",
+      "ma": "low"
+     }
+    },
+    "REF47": {
+     "geracao_sequencia_aleatoria": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "ocultacao_alocacao": {
+      "modelo": "unclear",
+      "ma": "unclear"
+     },
+     "cegamento_participantes_equipe": {
+      "modelo": "high",
+      "ma": "high"
+     },
+     "cegamento_avaliadores_desfecho": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "dados_desfecho_incompletos": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "relato_seletivo": {
+      "modelo": "low",
+      "ma": "low"
+     },
+     "outros_vieses": {
+      "modelo": "unclear",
+      "ma": "low"
+     },
+     "risco_global": {
+      "modelo": "high",
       "ma": "moderate"
      }
     }

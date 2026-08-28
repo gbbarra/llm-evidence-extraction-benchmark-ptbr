@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "REF30",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-28 08:43:29",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"Randomization was performed via the Memorial Sloan Kettering Clinical Research Database using randomly-sized permuted blocks.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"Allocation was concealed by the database system.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"Low\", \"justificativa\": \"Patients and assessors of the primary outcome were blinded as to the study arm.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"Patients and assessors of the primary outcome were blinded as to the study arm.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Low\", \"justificativa\": \"All evaluable patients were followed for 30 days postoperatively and none were lost to follow-up.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"The study reported all outcomes as defined in the protocol, including primary and secondary outcomes.\"},\n  \"outros_vieses\": {\"julgamento\": \"Unclear\", \"justificativa\": \"The article does not explicitly report on other potential biases such as deviations from the intended interventions or contamination between groups.\"},\n  \"risco_global\": {\"julgamento\": \"Low\", \"justificativa\": \"The study had a low risk of bias across most domains, with appropriate randomization, allocation concealment, blinding, and complete outcome data reporting.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 345,
+  "dt": 47.398581,
+  "prompt_tokens": 6994
+}

@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "REF29",
+  "tarefa": "t1",
+  "replica": 1,
+  "inicio": "2026-08-28 08:28:15",
+  "content": "{\n  \"n_randomizados_gdft\": {\"valor\": \"248\", \"onde\": \"Results\"},\n  \"n_randomizados_controle\": {\"valor\": \"234\", \"onde\": \"Results\"},\n  \"tipo_cirurgia\": {\"valor\": \"cirurgia abdominal de alto risco (esofagectomia, pancreatectomia duodenopancreatectomia, reparo de aneurisma aórtico abdominal, ressecção de massa de tecido mole, gastrectomia, ressecção colo-retal, outras cirurgias extensas de abdômen superior e inferior)\", \"onde\": \"Materials and methods\"},\n  \"laparoscopia_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"laparoscopia_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"asa_gdft\": {\"valor\": \"ASA I: 6.9% | ASA II: 53.2% | ASA III: 38.3% | ASA IV: 1.6%\", \"onde\": \"Table 1\"},\n  \"asa_controle\": {\"valor\": \"ASA I: 10.3% | ASA II: 52.6% | ASA III: 36.7% | ASA IV: 0.4%\", \"onde\": \"Table 1\"},\n  \"fluido_total_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"fluido_total_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"cristaloide_gdft\": {\"valor\": \"4000 (900–17,500) ml\", \"onde\": \"Table 3\"},\n  \"cristaloide_controle\": {\"valor\": \"3500 (360–13,000) ml\", \"onde\": \"Table 3\"},\n  \"coloide_gdft\": {\"valor\": \"500 (0–5000) ml\", \"onde\": \"Table 3\"},\n  \"coloide_controle\": {\"valor\": \"500 (0–2500) ml\", \"onde\": \"Table 3\"},\n  \"perda_sanguinea_gdft\": {\"valor\": \"733 (0–9000) ml\", \"onde\": \"Table 3\"},\n  \"perda_sanguinea_controle\": {\"valor\": \"600 (0–6000) ml\", \"onde\": \"Table 3\"},\n  \"uso_inotropico\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"morbidade_eventos_gdft\": {\"valor\": \"111 (44.8%)\", \"onde\": \"Results\"},\n  \"morbidade_eventos_controle\": {\"valor\": \"94 (40.2%)\", \"onde\": \"Results\"},\n  \"mortalidade_gdft\": {\"valor\": \"10 (4.0%)\", \"onde\": \"Table 2\"},\n  \"mortalidade_controle\": {\"valor\": \"10 (4.3%)\", \"onde\": \"Table 2\"},\n  \"los_hospitalar_gdft\": {\"valor\": \"12 (9–18) horas\", \"onde\": \"Table 2\"},\n  \"los_hospitalar_controle\": {\"valor\": \"12 (9–16) horas\", \"onde\": \"Table 2\"},\n  \"tempo_flatus_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"tempo_flatus_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"tempo_ingesta_oral_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"tempo_ingesta_oral_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"tempo_evacuacao_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"tempo_evacuacao_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"ileo_pos_op_gdft\": {\"valor\": \"12 (4.8%)\", \"onde\": \"Table 2\"},\n  \"ileo_pos_op_controle\": {\"valor\": \"20 (8.5%)\", \"onde\": \"Table 2\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 954,
+  "dt": 322.7349539,
+  "prompt_tokens": 11477
+}

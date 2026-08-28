@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma12",
+  "ollama": "gemma4:12b",
+  "pmcid": "REF41",
+  "tarefa": "t1",
+  "replica": 1,
+  "inicio": "2026-08-28 08:00:37",
+  "content": "```json\n{\n  \"n_randomizados_gdft\": {\"valor\": \"49\", \"onde\": \"Results\"},\n  \"n_randomizados_controle\": {\"valor\": \"49\", \"onde\": \"Results\"},\n  \"tipo_cirurgia\": {\"valor\": \"major hepatic resection\", \"onde\": \"Abstract\"},\n  \"laparoscopia_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"laparoscopia_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"asa_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"asa_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"fluido_total_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"fluido_total_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"cristaloide_gdft\": {\"valor\": \"250-ml boluses\", \"onde\": \"Fluid and Hemodynamic Management\"},\n  \"cristaloide_controle\": {\"valor\": \"250-ml boluses\", \"onde\": \"Fluid and Hemodynamic Management\"},\n  \"coloide_gdft\": {\"valor\": \"Albumin 5% solutions could also be used at any time\", \"onde\": \"Fluid and Hemodynamic Management\"},\n  \"coloide_controle\": {\"valor\": \"Albumin 5% solutions could also be used at any time\", \"onde\": \"Fluid and Hemodynamic Management\"},\n  \"perda_sanguinea_gdft\": {\"valor\": \"475 [300 to 600] ml\", \"onde\": \"Results\"},\n  \"perda_sanguinea_controle\": {\"valor\": \"500 [300 to 884] ml\", \"onde\": \"Results\"},\n  \"uso_inotropico\": {\"valor\": \"noradrenaline\", \"onde\": \"Fluid and Hemodynamic Management\"},\n  \"morbidade_eventos_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"morbidade_eventos_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"mortalidade_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"mortalidade_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"los_hospitalar_gdft\": {\"valor\": \"slightly shorter\", \"onde\": \"Exploratory Post Hoc Analysis\"},\n  \"los_hospitalar_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_flatus_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_flatus_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"}\n}\n```",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 777,
+  "dt": 204.0956863,
+  "prompt_tokens": 8708
+}

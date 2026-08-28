@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "REF47",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-28 09:58:30",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo utilizou a tecnologia automatizada do Randomisation.com para a distribuição dos pacientes.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo menciona que a randomização foi realizada utilizando o método de envelope fechado (closed envelope method).\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"High\", \"justificativa\": \"Não há menção de cegamento dos participantes ou da equipe anestésica, o que é esperado dado que a intervenção envolve monitoramento e administração de fluidos visíveis.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não especifica se os avaliadores dos desfechos laboratoriais e clínicos foram cegados durante a coleta de dados.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo reporta a exclusão de dois pacientes (um por modificação cirúrgica e outro por perda de seguimento), o que foi devidamente documentado.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo apresenta os resultados de diversas variáveis pré e pós-operatórias, mas não há informações sobre se todos os desfechos planejados originalmente foram reportados.\"},\n  \"outros_vieses\": {\"julgamento\": \"Low\", \"justificativa\": \"Não foram identificadas fontes de conflito de interesse ou outros fatores que possam introduzir vieses sistemáticos além dos inerentes ao desenho do estudo.\"},\n  \"risco_global\": {\"julgamento\": \"High\", \"justificativa\": \"O risco é alto devido à ausência de cegamento da equipe e dos participantes, o que pode influenciar o manejo clínico e a coleta de desfechos.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 446,
+  "dt": 134.9303767,
+  "prompt_tokens": 8018
+}

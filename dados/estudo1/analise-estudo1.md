@@ -1,13 +1,15 @@
 # EXTRAI — Análise do Estudo 1 (vereditos e achados)
 
-Encerrado em 2026-08-28. Números completos na [avaliação](avaliacao-estudo1.md); erros
-da âncora e do adjudicador em [erratas-da-ancora.md](erratas-da-ancora.md).
+Encerrado em 2026-08-28, com os **dois estratos** (aberto + fechado da Emenda 2 =
+**os 14 primários da metanálise inteira**, 228 corridas). Números completos na
+[avaliação](avaliacao-estudo1.md); erros da âncora e do adjudicador em
+[erratas-da-ancora.md](erratas-da-ancora.md).
 
 ## Vereditos das hipóteses pré-registradas
 
 | Hipótese | Predição | Veredito |
 |---|---|---|
-| **H1.1** — inversão de ordem (27B ≥ 26b > 12b ≥ 14b na extração) | os grandes fiéis vencem | **REFUTADA.** Ordem real: 12b = 26b (100%) > 27B (98%) > 14b (90%). A disciplina gemma venceu a extração também. Nuance real a favor dos grandes: o 27B tem o recorde de células exatas (79) — ele perde por *recusar*, não por errar. |
+| **H1.1** — inversão de ordem (27B ≥ 26b > 12b ≥ 14b na extração) | os grandes fiéis vencem | **REFUTADA.** Ordem final 14/14: 12b (100%) > 26b (99%) > 27B (97%) > 14b (92%). A disciplina gemma venceu a extração também. Nuance a favor dos grandes: o 27B mantém o recorde de células exatas — ele perde por *recusar* (e por uma única troca de braço num fluxograma mutilado), não por inventar. |
 | **H1.2** — zero recitações | leitura, não memória | **CONFIRMADA.** 0 recitações atribuíveis em 132 corridas (124 células perturbadas devolvidas como lidas; 2 células neutralizadas por vazamento do harness, Emenda 3). |
 | **H1.3** — invenção < 5%; omissão > invenção | inventar é raro | **CONFIRMADA COM FOLGA.** Invenção = 0% nos quatro. Omissões: 0–10 por modelo. |
 | **H1.4** — concordância RoB entre 60% e 90% | faixa inter-revisor humana | **PARCIAL.** gemmas dentro (78%/77%); qwens abaixo (57%/57%). O desvio concentra-se num único domínio doutrinário (cegamento de participantes: MA "Unclear" × modelos "High"). |
@@ -17,11 +19,15 @@ da âncora e do adjudicador em [erratas-da-ancora.md](erratas-da-ancora.md).
 ## Os seis achados do Estudo 1
 
 1. **Modelos locais extraem evidência no nível de revisor — e acima dele em fidelidade.**
-   396 células decididas, zero valores errados, inventados ou recitados. As 12 perdas
-   totais dos quatro modelos são todas omissões ("NR" onde a fonte reporta). No mesmo
-   corpus, os revisores humanos da metanálise publicada cometeram os erros do arquivo de
-   erratas: braços trocados, dado declarado inexistente que existe, conversão que
-   contradiz a própria fonte, célula corrompida por Excel.
+   624 células decididas nos 14 primários: **uma** errada (troca de braço num fluxograma
+   que o PDF linearizou de forma ambígua), zero inventadas, zero recitadas. As 17 omissões
+   restantes são "NR" onde a fonte reporta. No mesmo corpus, os revisores humanos da
+   metanálise publicada cometeram os erros do arquivo de erratas: braços trocados (Yoon),
+   colunas ASA trocadas (de Waal), dados declarados inexistentes que existem (Weinberg,
+   Diaper), conversão que contradiz a própria fonte (Sun), células de flatus sem origem
+   localizável (Diaper, Coeckelenbergh), célula corrompida por Excel (Sujatha) e um
+   padrão sistemático de usar "analisados" na coluna de randomizados sem declarar
+   (seis estudos).
 
 2. **A previsão "os grandes são os extratores" caiu.** A tarefa de extração não inverteu
    o ranking do FIEL: os gemma disciplinados empataram no topo (100%), o 27B fiel ficou a

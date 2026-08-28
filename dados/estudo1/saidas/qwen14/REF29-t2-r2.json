@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "REF29",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-28 08:36:30",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo menciona que uma sequência aleatória bloqueada foi gerada por computador.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo afirma que a alocação foi feita com base em uma sequência aleatória bloqueada.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não menciona se os participantes e a equipe foram cegos ao grupo de alocação.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não menciona se os avaliadores dos desfechos foram cegos ao grupo de alocação.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não descreve como foram lidos os desfechos incompletos ou se houve perda de seguimento.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo relata todos os desfechos previamente definidos, incluindo complicações maiores e menores.\"},\n  \"outros_vieses\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não menciona se houve outros vieses, como influência de conhecimento do tratamento por parte dos avaliadores.\"},\n  \"risco_global\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Vários domínios apresentam informações insuficientes para determinar o risco global de viés com certeza.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 403,
+  "dt": 59.9989204,
+  "prompt_tokens": 10856
+}

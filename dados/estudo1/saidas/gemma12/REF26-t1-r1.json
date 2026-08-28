@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma12",
+  "ollama": "gemma4:12b",
+  "pmcid": "REF26",
+  "tarefa": "t1",
+  "replica": 1,
+  "inicio": "2026-08-28 07:18:48",
+  "content": "```json\n{\n  \"n_randomizados_gdft\": {\"valor\": \"198\", \"onde\": \"Results\"},\n  \"n_randomizados_controle\": {\"valor\": \"198\", \"onde\": \"Results\"},\n  \"tipo_cirurgia\": {\"valor\": \"major abdominal, urological, or vascular surgery via open laparotomy\", \"onde\": \"Study population\"},\n  \"laparoscopia_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"laparoscopia_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"asa_gdft\": {\"valor\": \"ASA-PS classes III & IV: 98 (50.0%)\", \"onde\": \"Table I\"},\n  \"asa_controle\": {\"valor\": \"ASA-PS classes III & IV: 85 (42.9%)\", \"onde\": \"Table I\"},\n  \"fluido_total_gdft\": {\"valor\": \"10.8 (4.0) mL/kg/h\", \"onde\": \"Results\"},\n  \"fluido_total_controle\": {\"valor\": \"7.2 (2.0) mL/kg/h\", \"onde\": \"Results\"},\n  \"cristaloide_gdft\": {\"valor\": \"4,478 (2157) mL\", \"onde\": \"Table II\"},\n  \"cristaloide_controle\": {\"valor\": \"3,081 (1,427) mL\", \"onde\": \"Table II\"},\n  \"coloide_gdft\": {\"valor\": \"1,046 (623) mL\", \"onde\": \"Table II\"},\n  \"coloide_controle\": {\"valor\": \"650 (475) mL\", \"onde\": \"Table II\"},\n  \"perda_sanguinea_gdft\": {\"valor\": \"NR\", \"onde\": \"Table II\"},\n  \"perda_sanguinea_controle\": {\"valor\": \"NR\", \"onde\": \"Table II\"},\n  \"uso_inotropico\": {\"valor\": \"ephedrine, phenylephrine, and norepinephrine\", \"onde\": \"Table II\"},\n  \"morbidade_eventos_gdft\": {\"valor\": \"113 (57.7%)\", \"onde\": \"Table III\"},\n  \"morbidade_eventos_controle\": {\"valor\": \"117 (53.0%)\", \"onde\": \"Table III\"},\n  \"mortalidade_gdft\": {\"valor\": \"2 (1.0%)\", \"onde\": \"Table III\"},\n  \"mortalidade_controle\": {\"valor\": \"1 (0.5%)\", \"onde\": \"Table III\"},\n  \"los_hospitalar_gdft\": {\"valor\": \"12 (8 - 20)\", \"onde\": \"Table III\"},\n  \"los_hospitalar_controle\": {\"valor\": \"13 (8 - 19)\", \"onde\": \"Table III\"},\n  \"tempo_flatus_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_flatus_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"}\n}\n```",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 863,
+  "dt": 258.912171,
+  "prompt_tokens": 10841
+}

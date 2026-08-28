@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "REF33",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-28 08:51:16",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"A randomização foi realizada por um sistema central de computador.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"A alocação foi ocultada em envelopes sequencialmente numerados, opacos, lacrados e grampeados.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo menciona que os participantes e os profissionais que coletaram dados e avaliaram pacientes durante o período pós-operatório estavam cegos ao tratamento, mas não menciona o cegamento dos participantes e da equipe cirúrgica.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"Os participantes e os profissionais que coletaram dados e avaliaram pacientes durante o período pós-operatório estavam cegos ao tratamento.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo menciona que 420 sujeitos tiveram seus dados analisados, mas não explica como foram lidados os dados dos 30 pacientes que não completaram o estudo.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo relata todos os desfechos planejados e não há indícios de relato seletivo.\"},\n  \"outros_vieses\": {\"julgamento\": \"High\", \"justificativa\": \"O artigo menciona que os pesquisadores que realizaram o monitoramento hemodinâmico não estavam cegos, o que pode introduzir viés de performance.\"},\n  \"risco_global\": {\"julgamento\": \"High\", \"justificativa\": \"O risco global de viés é alto devido à ausência de cegamento completo e ao possível viés de performance devido à falta de cegamento dos pesquisadores que realizaram o monitoramento hemodinâmico.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 490,
+  "dt": 80.0120316,
+  "prompt_tokens": 9985
+}

@@ -95,7 +95,9 @@ def main():
 
     saida = {}
     resumo = dict(literal=0, equivalencia=0, nao_achada=0, sem_valor=0)
-    for txt in sorted((RAIZ / "corpus" / "primarios-texto").glob("PMC*.txt")):
+    fontes = sorted((RAIZ / "corpus" / "primarios-texto").glob("PMC*.txt")) + \
+        sorted((RAIZ / "corpus" / "fechados-texto").glob("REF*.txt"))
+    for txt in fontes:
         pm = txt.stem
         texto = txt.read_text(encoding="utf-8")
         celulas = {}

@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen38",
+  "ollama": "qwen3.8:27b-texto",
+  "pmcid": "REF26",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-28 10:20:40",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo relata que a alocação foi realizada usando uma lista gerada por computador com blocos de 4.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"As sequências de aleatorização foram ocultadas em envelopes numerados, selados e grampeados, abertos apenas no dia da cirurgia.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"High\", \"justificativa\": \"Como a intervenção envolve estratégias hemodinâmicas distintas e o uso de monitores cardíacos, o cegamento dos participantes e da equipe de anestesia era impossibilitado, e o artigo confirma que os investigadores tinham conhecimento da designação do grupo.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"O texto especifica que os avaliadores que registraram os dados durante o período pós-operatório estavam cegos à alocação do tratamento.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Low\", \"justificativa\": \"A figura de fluxo do CONSORT e os resultados apresentam o número de pacientes analisados (198 e 196), indicando que a análise foi por intenção de tratar sem menção a perdas significativas de dados.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O ensaio foi registrado no ClinicalTrials.gov antes do início, e os resultados reportam todos os desfechos primários e secundários predefinidos, incluindo aqueles sem diferença estatística.\"},\n  \"outros_vieses\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não detalha se houve desvios do protocolo predefinido durante a condução do estudo ou se houve ajustes estatísticos não planejados além das análises de sensibilidade post hoc.\"},\n  \"risco_global\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Apesar da boa aleatorização, ocultação e cegamento dos avaliadores, a falta de cegamento da equipe clínica (inherente ao design) e a incerteza sobre desvios de protocolo levam a um risco de viés global incerto, embora provável baixo.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 529,
+  "dt": 741.9827937,
+  "prompt_tokens": 10461
+}

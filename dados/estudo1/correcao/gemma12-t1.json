@@ -1,11 +1,11 @@
 {
  "modelo": "gemma12",
  "contas": {
-  "exata": 72,
-  "nr-correta": 13,
-  "extra": 73,
-  "fora": 68,
-  "deriv": 14
+  "exata": 104,
+  "nr-correta": 29,
+  "extra": 133,
+  "fora": 131,
+  "deriv": 23
  },
  "celulas": {
   "PMC10561433": {
@@ -1041,6 +1041,776 @@
     "valor": "comparable",
     "rotulo": "deriv",
     "regra": "adjudicada: idem"
+   },
+   "ileo_pos_op_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "ileo_pos_op_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   }
+  },
+  "REF26": {
+   "n_randomizados_gdft": {
+    "valor": "198",
+    "rotulo": "exata",
+    "regra": "adjudicada: primário contraditório: prosa '200 allocated to GDHT… data from 198 and 196' vs "
+   },
+   "n_randomizados_controle": {
+    "valor": "198",
+    "rotulo": "exata",
+    "regra": "adjudicada: idem; aceitar 201/198/196"
+   },
+   "tipo_cirurgia": {
+    "valor": "major abdominal, urological, or vascular surgery via open laparotomy",
+    "rotulo": "exata",
+    "regra": "adjudicada: rótulo fiel ('major abdominal, urological, or vascular surgery, open')"
+   },
+   "laparoscopia_gdft": {
+    "valor": "NR",
+    "rotulo": "nr-correta",
+    "regra": "fonte não enumera"
+   },
+   "laparoscopia_controle": {
+    "valor": "NR",
+    "rotulo": "nr-correta",
+    "regra": "fonte não enumera"
+   },
+   "asa_gdft": {
+    "valor": "ASA-PS classes III & IV: 98 (50.0%)",
+    "rotulo": "exata"
+   },
+   "asa_controle": {
+    "valor": "ASA-PS classes III & IV: 85 (42.9%)",
+    "rotulo": "exata"
+   },
+   "fluido_total_gdft": {
+    "valor": "10.8 (4.0) mL/kg/h",
+    "rotulo": "extra"
+   },
+   "fluido_total_controle": {
+    "valor": "7.2 (2.0) mL/kg/h",
+    "rotulo": "extra"
+   },
+   "cristaloide_gdft": {
+    "valor": "4,478 (2157) mL",
+    "rotulo": "extra"
+   },
+   "cristaloide_controle": {
+    "valor": "3,081 (1,427) mL",
+    "rotulo": "extra"
+   },
+   "coloide_gdft": {
+    "valor": "1,046 (623) mL",
+    "rotulo": "extra"
+   },
+   "coloide_controle": {
+    "valor": "650 (475) mL",
+    "rotulo": "extra"
+   },
+   "perda_sanguinea_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "perda_sanguinea_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "uso_inotropico": {
+    "valor": "ephedrine, phenylephrine, and norepinephrine",
+    "rotulo": "extra"
+   },
+   "morbidade_eventos_gdft": {
+    "valor": "113 (57.7%)",
+    "rotulo": "exata",
+    "regra": "Emenda 3: insumo inconsistente"
+   },
+   "morbidade_eventos_controle": {
+    "valor": "117 (53.0%)",
+    "rotulo": "exata",
+    "regra": "prova: leu"
+   },
+   "mortalidade_gdft": {
+    "valor": "2 (1.0%)",
+    "rotulo": "extra"
+   },
+   "mortalidade_controle": {
+    "valor": "1 (0.5%)",
+    "rotulo": "extra"
+   },
+   "los_hospitalar_gdft": {
+    "valor": "12 (8 - 20)",
+    "rotulo": "extra"
+   },
+   "los_hospitalar_controle": {
+    "valor": "13 (8 - 19)",
+    "rotulo": "extra"
+   },
+   "tempo_flatus_gdft": {
+    "valor": "NR",
+    "rotulo": "nr-correta"
+   },
+   "tempo_flatus_controle": {
+    "valor": "NR",
+    "rotulo": "nr-correta"
+   },
+   "tempo_ingesta_oral_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_ingesta_oral_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_evacuacao_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_evacuacao_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "ileo_pos_op_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "ileo_pos_op_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   }
+  },
+  "REF29": {
+   "n_randomizados_gdft": {
+    "valor": "259",
+    "rotulo": "deriv",
+    "regra": "adjudicada: camadas da fonte: 274 alocados (MA) / 259 receberam / 248 analisados — todas ace"
+   },
+   "n_randomizados_controle": {
+    "valor": "244",
+    "rotulo": "deriv",
+    "regra": "adjudicada: 259 alocados / 244 receberam / 234 analisados; 305 é o valor perturbado do braço"
+   },
+   "tipo_cirurgia": {
+    "valor": "high-risk abdominal surgery",
+    "rotulo": "exata",
+    "regra": "adjudicada: rótulo fiel ('high-risk abdominal surgery')"
+   },
+   "laparoscopia_gdft": {
+    "valor": "NR",
+    "rotulo": "nr-correta",
+    "regra": "fonte não enumera"
+   },
+   "laparoscopia_controle": {
+    "valor": "NR",
+    "rotulo": "nr-correta",
+    "regra": "fonte não enumera"
+   },
+   "asa_gdft": {
+    "valor": "I 17; II 144; III 95; IV 4",
+    "rotulo": "exata",
+    "regra": "adjudicada: coluna PGDT da fonte (17/132→144 pert./95/4; percentuais idem); a MA trocou as c"
+   },
+   "asa_controle": {
+    "valor": "I 24; II 105; III 86; IV 1",
+    "rotulo": "exata",
+    "regra": "adjudicada: coluna Control da fonte (24/123→105 pert./86/1)"
+   },
+   "fluido_total_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "fluido_total_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "cristaloide_gdft": {
+    "valor": "4000 (900–17,500)",
+    "rotulo": "extra"
+   },
+   "cristaloide_controle": {
+    "valor": "3500 (360–13,000)",
+    "rotulo": "extra"
+   },
+   "coloide_gdft": {
+    "valor": "500 (0–5000)",
+    "rotulo": "extra"
+   },
+   "coloide_controle": {
+    "valor": "500 (0–2500)",
+    "rotulo": "extra"
+   },
+   "perda_sanguinea_gdft": {
+    "valor": "733 (0–9000)",
+    "rotulo": "extra"
+   },
+   "perda_sanguinea_controle": {
+    "valor": "600 (0–6000)",
+    "rotulo": "extra"
+   },
+   "uso_inotropico": {
+    "valor": "Dobutamine: 0–939 mg (intra-); 0–810 mg (post-); Phenylephrine: 0–142 mg (intra-); 0–4 mg (post-)",
+    "rotulo": "fora"
+   },
+   "morbidade_eventos_gdft": {
+    "valor": "111 patients (44.8%)",
+    "rotulo": "extra"
+   },
+   "morbidade_eventos_controle": {
+    "valor": "94 patients (40.2%)",
+    "rotulo": "extra"
+   },
+   "mortalidade_gdft": {
+    "valor": "10 (4.0%)",
+    "rotulo": "exata"
+   },
+   "mortalidade_controle": {
+    "valor": "10 (4.3%)",
+    "rotulo": "exata"
+   },
+   "los_hospitalar_gdft": {
+    "valor": "12 (9–18)",
+    "rotulo": "extra"
+   },
+   "los_hospitalar_controle": {
+    "valor": "12 (9–16)",
+    "rotulo": "extra"
+   },
+   "tempo_flatus_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_flatus_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_ingesta_oral_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_ingesta_oral_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_evacuacao_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_evacuacao_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "ileo_pos_op_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "ileo_pos_op_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   }
+  },
+  "REF30": {
+   "n_randomizados_gdft": {
+    "valor": "142",
+    "rotulo": "exata"
+   },
+   "n_randomizados_controle": {
+    "valor": "141",
+    "rotulo": "exata"
+   },
+   "tipo_cirurgia": {
+    "valor": "open radical cystectomy",
+    "rotulo": "exata"
+   },
+   "laparoscopia_gdft": {
+    "valor": "NR",
+    "rotulo": "nr-correta",
+    "regra": "fonte não enumera"
+   },
+   "laparoscopia_controle": {
+    "valor": "NR",
+    "rotulo": "nr-correta",
+    "regra": "fonte não enumera"
+   },
+   "asa_gdft": {
+    "valor": "70% of our population having an American Society of Anesthesiologists (ASA) score of 3–4",
+    "rotulo": "deriv",
+    "regra": "adjudicada: citação real da descrição da população ('70%… ASA score of 3-4'); distribuição p"
+   },
+   "asa_controle": {
+    "valor": "70% of our population having an American Society of Anesthesiologists (ASA) score of 3–4",
+    "rotulo": "deriv",
+    "regra": "adjudicada: idem"
+   },
+   "fluido_total_gdft": {
+    "valor": "13380 mL [10405–19093]",
+    "rotulo": "extra"
+   },
+   "fluido_total_controle": {
+    "valor": "15445 mL [11920–21015]",
+    "rotulo": "extra"
+   },
+   "cristaloide_gdft": {
+    "valor": "2892 mL [2340–3450]",
+    "rotulo": "extra"
+   },
+   "cristaloide_controle": {
+    "valor": "5580 mL [4650–6730]",
+    "rotulo": "extra"
+   },
+   "coloide_gdft": {
+    "valor": "1000 mL [750–1250]",
+    "rotulo": "extra"
+   },
+   "coloide_controle": {
+    "valor": "750 mL [500–1000]",
+    "rotulo": "extra"
+   },
+   "perda_sanguinea_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "perda_sanguinea_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "uso_inotropico": {
+    "valor": "comparable between arms",
+    "rotulo": "exata",
+    "regra": "adjudicada: literal: 'Total dose of intraoperative vasopressors … was comparable between arm"
+   },
+   "morbidade_eventos_gdft": {
+    "valor": "136/142 (96%)",
+    "rotulo": "extra"
+   },
+   "morbidade_eventos_controle": {
+    "valor": "125/141 (89%)",
+    "rotulo": "extra"
+   },
+   "mortalidade_gdft": {
+    "valor": "0.7% (2/283)",
+    "rotulo": "extra"
+   },
+   "mortalidade_controle": {
+    "valor": "0.7% (2/283)",
+    "rotulo": "extra"
+   },
+   "los_hospitalar_gdft": {
+    "valor": "median (interquartile range), 7 (6–9) days",
+    "rotulo": "extra"
+   },
+   "los_hospitalar_controle": {
+    "valor": "median (interquartile range), 7 (6–10) days",
+    "rotulo": "extra"
+   },
+   "tempo_flatus_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_flatus_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_ingesta_oral_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_ingesta_oral_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_evacuacao_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_evacuacao_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "ileo_pos_op_gdft": {
+    "valor": "25% (31/142)",
+    "rotulo": "exata",
+    "regra": "prova: leu"
+   },
+   "ileo_pos_op_controle": {
+    "valor": "21% (30/141)",
+    "rotulo": "deriv",
+    "regra": "arredondamento"
+   }
+  },
+  "REF33": {
+   "n_randomizados_gdft": {
+    "valor": "224",
+    "rotulo": "exata",
+    "regra": "adjudicada: 224 alocados (literal; MA usou 209 analisados); primário também contraditório (4"
+   },
+   "n_randomizados_controle": {
+    "valor": "226",
+    "rotulo": "exata",
+    "regra": "adjudicada: 226 alocados (MA: 211 analisados)"
+   },
+   "tipo_cirurgia": {
+    "valor": "major abdominal, urological, gynaecological, or orthopaedic surgery",
+    "rotulo": "exata",
+    "regra": "adjudicada: rótulo fiel (abdominal/urológica/ginecológica/ortopédica)"
+   },
+   "laparoscopia_gdft": {
+    "valor": "105 (50.2%)",
+    "rotulo": "exata"
+   },
+   "laparoscopia_controle": {
+    "valor": "99 (51.7%)",
+    "rotulo": "exata",
+    "regra": "prova: leu"
+   },
+   "asa_gdft": {
+    "valor": "I: 14 (6.7%), II: 134 (58.4%), III: 73 (34.9%)",
+    "rotulo": "exata",
+    "regra": "prova: leu"
+   },
+   "asa_controle": {
+    "valor": "I: 35 (16.6%), II: 116 (64.4%), III: 40 (19.0%)",
+    "rotulo": "exata",
+    "regra": "adjudicada: 35/136→116 pert./40 da fonte devolvidos (116 = perturbado)"
+   },
+   "fluido_total_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "fluido_total_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "cristaloide_gdft": {
+    "valor": "1480 (1000-2000 ml)",
+    "rotulo": "extra"
+   },
+   "cristaloide_controle": {
+    "valor": "1440 (900-2000 ml)",
+    "rotulo": "extra"
+   },
+   "coloide_gdft": {
+    "valor": "500 (0-800 ml)",
+    "rotulo": "extra"
+   },
+   "coloide_controle": {
+    "valor": "500 (0-950 ml)",
+    "rotulo": "extra"
+   },
+   "perda_sanguinea_gdft": {
+    "valor": "200 (72-300 ml)",
+    "rotulo": "extra"
+   },
+   "perda_sanguinea_controle": {
+    "valor": "300 (196-500 ml)",
+    "rotulo": "extra"
+   },
+   "uso_inotropico": {
+    "valor": "2 (0.9%)",
+    "rotulo": "fora"
+   },
+   "morbidade_eventos_gdft": {
+    "valor": "8.6%",
+    "rotulo": "deriv",
+    "regra": "contagem<->%"
+   },
+   "morbidade_eventos_controle": {
+    "valor": "16.6%",
+    "rotulo": "deriv",
+    "regra": "contagem<->%"
+   },
+   "mortalidade_gdft": {
+    "valor": "10% (4.8%)",
+    "rotulo": "extra"
+   },
+   "mortalidade_controle": {
+    "valor": "9% (4.5%)",
+    "rotulo": "extra"
+   },
+   "los_hospitalar_gdft": {
+    "valor": "5 (4-10)",
+    "rotulo": "extra"
+   },
+   "los_hospitalar_controle": {
+    "valor": "7 (5-12)",
+    "rotulo": "extra"
+   },
+   "tempo_flatus_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_flatus_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_ingesta_oral_gdft": {
+    "valor": "1 (1-3)",
+    "rotulo": "extra"
+   },
+   "tempo_ingesta_oral_controle": {
+    "valor": "2 (1-4)",
+    "rotulo": "extra"
+   },
+   "tempo_evacuacao_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_evacuacao_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "ileo_pos_op_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "ileo_pos_op_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   }
+  },
+  "REF41": {
+   "n_randomizados_gdft": {
+    "valor": "49",
+    "rotulo": "exata",
+    "regra": "prova: leu"
+   },
+   "n_randomizados_controle": {
+    "valor": "49",
+    "rotulo": "exata",
+    "regra": "adjudicada: prova de leitura: '45 patients per group' perturbado para 49 cobre os dois braço"
+   },
+   "tipo_cirurgia": {
+    "valor": "major hepatic resection",
+    "rotulo": "exata",
+    "regra": "adjudicada: rótulo fiel ('major hepatic resection')"
+   },
+   "laparoscopia_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "laparoscopia_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "asa_gdft": {
+    "valor": "NR",
+    "rotulo": "nr-correta"
+   },
+   "asa_controle": {
+    "valor": "NR",
+    "rotulo": "nr-correta"
+   },
+   "fluido_total_gdft": {
+    "valor": "NR",
+    "rotulo": "nr-correta"
+   },
+   "fluido_total_controle": {
+    "valor": "NR",
+    "rotulo": "nr-correta"
+   },
+   "cristaloide_gdft": {
+    "valor": "250-ml boluses",
+    "rotulo": "extra"
+   },
+   "cristaloide_controle": {
+    "valor": "250-ml boluses",
+    "rotulo": "extra"
+   },
+   "coloide_gdft": {
+    "valor": "Albumin 5% solutions could also be used at any time",
+    "rotulo": "extra"
+   },
+   "coloide_controle": {
+    "valor": "Albumin 5% solutions could also be used at any time",
+    "rotulo": "extra"
+   },
+   "perda_sanguinea_gdft": {
+    "valor": "475 [300 to 600] ml",
+    "rotulo": "exata",
+    "regra": "adjudicada: prova de leitura: 475 (450→475) devolvido"
+   },
+   "perda_sanguinea_controle": {
+    "valor": "500 [300 to 884] ml",
+    "rotulo": "exata",
+    "regra": "adjudicada: prova de leitura: 884 (800→884) devolvido no IQR"
+   },
+   "uso_inotropico": {
+    "valor": "noradrenaline",
+    "rotulo": "fora"
+   },
+   "morbidade_eventos_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "morbidade_eventos_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "mortalidade_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "mortalidade_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "los_hospitalar_gdft": {
+    "valor": "slightly shorter",
+    "rotulo": "extra"
+   },
+   "los_hospitalar_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_flatus_gdft": {
+    "valor": "NR",
+    "rotulo": "nr-correta"
+   },
+   "tempo_flatus_controle": {
+    "valor": "NR",
+    "rotulo": "nr-correta"
+   },
+   "tempo_ingesta_oral_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_ingesta_oral_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_evacuacao_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_evacuacao_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "ileo_pos_op_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "ileo_pos_op_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   }
+  },
+  "REF47": {
+   "n_randomizados_gdft": {
+    "valor": "39",
+    "rotulo": "exata"
+   },
+   "n_randomizados_controle": {
+    "valor": "39",
+    "rotulo": "exata"
+   },
+   "tipo_cirurgia": {
+    "valor": "elective total abdominal hysterectomy and bilateral salpingo-oophorectomy (TAH+BSO)",
+    "rotulo": "exata"
+   },
+   "laparoscopia_gdft": {
+    "valor": "NR",
+    "rotulo": "nr-correta",
+    "regra": "fonte não enumera"
+   },
+   "laparoscopia_controle": {
+    "valor": "NR",
+    "rotulo": "nr-correta",
+    "regra": "fonte não enumera"
+   },
+   "asa_gdft": {
+    "valor": "ASA I-III",
+    "rotulo": "deriv",
+    "regra": "adjudicada: elegibilidade real (ASA I-III); distribuição inexistente (precedente Sujatha/Sch"
+   },
+   "asa_controle": {
+    "valor": "ASA I-III",
+    "rotulo": "deriv",
+    "regra": "adjudicada: idem"
+   },
+   "fluido_total_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "fluido_total_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "cristaloide_gdft": {
+    "valor": "654.87 ± 146.91",
+    "rotulo": "extra"
+   },
+   "cristaloide_controle": {
+    "valor": "1508.97 ± 371.14",
+    "rotulo": "extra"
+   },
+   "coloide_gdft": {
+    "valor": "417.95 ± 244.54",
+    "rotulo": "extra"
+   },
+   "coloide_controle": {
+    "valor": "12.82 ± 80.06",
+    "rotulo": "extra"
+   },
+   "perda_sanguinea_gdft": {
+    "valor": "193.97 ± 132.09",
+    "rotulo": "extra"
+   },
+   "perda_sanguinea_controle": {
+    "valor": "272.69 ± 274.92",
+    "rotulo": "extra"
+   },
+   "uso_inotropico": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "morbidade_eventos_gdft": {
+    "valor": "4 (10.3%)",
+    "rotulo": "extra"
+   },
+   "morbidade_eventos_controle": {
+    "valor": "1 (2.6%)",
+    "rotulo": "extra"
+   },
+   "mortalidade_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "mortalidade_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "los_hospitalar_gdft": {
+    "valor": "2.03 ± 0.78",
+    "rotulo": "extra"
+   },
+   "los_hospitalar_controle": {
+    "valor": "2 ± 0.46",
+    "rotulo": "extra"
+   },
+   "tempo_flatus_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_flatus_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_ingesta_oral_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_ingesta_oral_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_evacuacao_gdft": {
+    "valor": "NR",
+    "rotulo": "fora"
+   },
+   "tempo_evacuacao_controle": {
+    "valor": "NR",
+    "rotulo": "fora"
    },
    "ileo_pos_op_gdft": {
     "valor": "NR",

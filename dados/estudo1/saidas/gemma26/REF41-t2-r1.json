@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "REF41",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-28 09:50:50",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo utilizou randomização baseada em computador realizada pela unidade de pesquisa afiliada da Universidade Paris-Saclay.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A alocação dos grupos foi colocada em envelopes opacos selados e armazenados no escritório de pesquisa do departamento.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"Os clínicos que tratavam os pacientes não foram cegados porque o cegamento dos anestesiologistas quanto ao protocolo de fluidos não era viável nem seguro.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os pacientes e os avaliadores de desfechos foram cegados em relação à alocação do grupo.\"\n  },\n  \"dados_deslocamento_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"As análises foram conduzidas utilizando uma abordagem de intenção de tratar e o estudo reportou a perda de pacientes e o processo de acompanhamento.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O protocolo completo do estudo foi disponibilizado e o registro foi realizado no clinicaltrials.gov antes do recrutamento.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo reconhece a possibilidade de efeito Hawthorne, pois os clínicos sabiam que participavam de um estudo, mas os autores argumentam que as diferenças encontradas ainda seriam válidas.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Embora o cegamento da equipe de tratamento não tenha sido possível, o estudo apresentou métodos rigorosos de randomização, alocação oculta, cegamento de avaliadores e registro prévio de protocolo.\"\n  }\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 515,
+  "dt": 141.1364481,
+  "prompt_tokens": 8058
+}

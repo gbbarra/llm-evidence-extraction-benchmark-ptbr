@@ -72,12 +72,41 @@ célula a célula do adjudicador. A supervisão é do autor humano do benchmark.
    allocated to the PPV group and another 61…"*. Como no Sujatha, a MA usou analisados
    sem declarar; a correção aceita as duas leituras.
 
+## Estrato fechado (Emenda 2, adjudicação de 2026-08-28)
+
+10. **de Waal et al. — colunas ASA trocadas.** A MA publica ASA(GDFT) 24:123:86:1 e
+    ASA(controle) 17:132:95:4. A tabela da fonte ("Control (n = 234) PGDT (n = 248)")
+    dá o inverso, e a aritmética prova: 123 = 52,6% × 234 (controle); 132 = 53,2% × 248
+    (PGDT). Os quatro modelos seguiram a fonte, unânimes.
+
+11. **Diaper et al. — ASA "Not stated" que o artigo reporta.** *"ASA-PS classes III &
+    IV 98 (50.0) 85 (42.9)"* — mesmo padrão do Weinberg (nº 3).
+
+12. **Diaper e Coeckelenbergh — células de flatus não sustentadas.** A MA publica
+    tempos de flatus (55±14/58±16 h e 52±15/60±18 h) para dois artigos cujo texto
+    integral **não contém a palavra "flatus"**. O fluido total do Coeckelenbergh
+    (3500/3250 ml) tampouco aparece. Possível origem em suplementos/figuras — fora do
+    alcance do corpus textual; células fora de pontuação.
+
+13. **Padrão sistemático: "n" da MA = analisados, sem declarar.** Confirmado em SEIS
+    estudos (Wu 61→58/56; Sujatha 102→100/101; de Waal 274/259→248/234; FEDORA
+    224/226→209/211; Hokenek 40/40→39/39; Diaper 200/201→196/198). A coluna de
+    características da MA mistura camadas de randomização sem nota de método.
+
+14. **Primários internamente contraditórios (além do Redondo):** Diaper (prosa "data
+    from 198 and 196" vs tabela "GDHT n=196 / RNT n=198") e FEDORA (abstract "450
+    randomized" vs métodos "428 were randomised"; 224+226=450≠428).
+
 ## Pendentes de adjudicação final (fora de pontuação)
 
 - Yoon — uso de inotrópicos ("No difference"): comparativo não localizado no texto.
 - Sun — íleo 2 (4,0%) / 16 (32,0%): possivelmente derivado do escore I-FEED.
 - Castro — íleo 6 (14,0%) / 19 (45,2%): termo "ileus" ausente do texto.
 - Redondo — perda sanguínea GDFT 292,6 ± 274,1: valor literal não conferido.
+- de Waal — inotrópico "Higher in GDFT": algoritmo usa norepinefrina/dobutamina; comparativo não localizado.
+- Calvo-Vecino — inotrópico "Lower in GDFT": menções só nos métodos.
+- Coeckelenbergh — inotrópico "Lower in GDFT": desfecho listado, valor não localizado; laparoscopia (MA=0) com provisão laparoscópica no protocolo, contagem não localizada.
+- Hokenek — inotrópico "No difference": só menção conceitual.
 
 *Nota de método: a verificação usa o texto integral (abstract + corpo, incluindo
 tabelas); valores presentes apenas em figuras ou suplementos não são alcançados —

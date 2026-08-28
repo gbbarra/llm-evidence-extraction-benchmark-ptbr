@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma12",
+  "ollama": "gemma4:12b",
+  "pmcid": "REF30",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-28 07:48:35",
+  "content": "```json\n{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A randomização foi realizada via Memorial Sloan Kettering Clinical Research Database usando blocos permutados de tamanhos aleatórios.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A alocação foi mascarada pelo sistema do banco de dados de pesquisa clínica antes da atribuição aos braços do estudo.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O cegamento dos participantes e da equipe de anestesia é impossível de manter durante o tratamento de fluidos intraoperatório.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os avaliadores do desfecho primário foram cegados em relação ao braço do estudo até o fechamento do ensaio e coleta de dados.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Todos os pacientes avaliáveis foram acompanhados por 30 dias e nenhum foi perdido durante o seguimento.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os resultados foram baseados em uma população de intenção de tratar (ITT) com análise de todos os desfechos pré-especificados.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo utilizou uma população homogênea e critérios de exclusão claros, reduzindo a variabilidade na execução do algoritmo.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Apesar da impossibilidade de cegamento do tratamento, o desenho robusto, a randomização e a análise por intenção de tratar minimizam o risco de viés.\"\n  }\n}\n```",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 499,
+  "dt": 64.3122018,
+  "prompt_tokens": 6860
+}

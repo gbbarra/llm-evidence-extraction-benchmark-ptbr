@@ -1,0 +1,213 @@
+{
+  "_metodo": "Adjudicação do estrato fechado (Emenda 2), mesmas regras do arquivo aberto. Fontes citadas no gabarito-oficial e nas notas abaixo. Registrada em 2026-08-28.",
+  "REF26": {
+    "n_randomizados_gdft": {
+      "regra": "primário contraditório: prosa '200 allocated to GDHT… data from 198 and 196' vs tabela 'GDHT (n=196) RNT (n=198)'; aceitar 200/198/196",
+      "vereditos": {
+        "gemma12": "exata",
+        "gemma26": "exata"
+      }
+    },
+    "n_randomizados_controle": {
+      "regra": "idem; aceitar 201/198/196",
+      "vereditos": {
+        "gemma12": "exata",
+        "gemma26": "exata"
+      }
+    },
+    "tipo_cirurgia": {
+      "regra": "rótulo fiel ('major abdominal, urological, or vascular surgery, open')",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    }
+  },
+  "REF29": {
+    "asa_gdft": {
+      "regra": "coluna PGDT da fonte (17/132→144 pert./95/4; percentuais idem); a MA trocou as colunas ASA (ver erratas)",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "asa_controle": {
+      "regra": "coluna Control da fonte (24/123→105 pert./86/1)",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "n_randomizados_gdft": {
+      "regra": "camadas da fonte: 274 alocados (MA) / 259 receberam / 248 analisados — todas aceitas",
+      "vereditos": {
+        "gemma12": "deriv",
+        "qwen14": "deriv",
+        "qwen38": "deriv"
+      }
+    },
+    "n_randomizados_controle": {
+      "regra": "259 alocados / 244 receberam / 234 analisados; 305 é o valor perturbado do braço PGDT no campo errado",
+      "vereditos": {
+        "gemma12": "deriv",
+        "qwen14": "deriv",
+        "qwen38": "errada"
+      }
+    },
+    "tipo_cirurgia": {
+      "regra": "rótulo fiel ('high-risk abdominal surgery')",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    }
+  },
+  "REF30": {
+    "asa_gdft": {
+      "regra": "citação real da descrição da população ('70%… ASA score of 3-4'); distribuição por braço inexistente",
+      "vereditos": {
+        "gemma12": "deriv",
+        "gemma26": "deriv"
+      }
+    },
+    "asa_controle": {
+      "regra": "idem",
+      "vereditos": {
+        "gemma12": "deriv",
+        "gemma26": "deriv"
+      }
+    },
+    "uso_inotropico": {
+      "regra": "literal: 'Total dose of intraoperative vasopressors … was comparable between arms'",
+      "vereditos": {
+        "gemma12": "exata",
+        "gemma26": "exata"
+      }
+    },
+    "ileo_pos_op_gdft": {
+      "regra": "prova de leitura: 31 (36→31 perturbado) devolvido",
+      "vereditos": {
+        "qwen14": "exata",
+        "qwen38": "exata"
+      }
+    }
+  },
+  "REF33": {
+    "asa_controle": {
+      "regra": "35/136→116 pert./40 da fonte devolvidos (116 = perturbado)",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "n_randomizados_gdft": {
+      "regra": "224 alocados (literal; MA usou 209 analisados); primário também contraditório (450 vs 428 randomizados)",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "n_randomizados_controle": {
+      "regra": "226 alocados (MA: 211 analisados)",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "tipo_cirurgia": {
+      "regra": "rótulo fiel (abdominal/urológica/ginecológica/ortopédica)",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    }
+  },
+  "REF41": {
+    "n_randomizados_controle": {
+      "regra": "prova de leitura: '45 patients per group' perturbado para 49 cobre os dois braços; 49 devolvido = leu",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "perda_sanguinea_gdft": {
+      "regra": "prova de leitura: 475 (450→475) devolvido",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "perda_sanguinea_controle": {
+      "regra": "prova de leitura: 884 (800→884) devolvido no IQR",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "tipo_cirurgia": {
+      "regra": "rótulo fiel ('major hepatic resection')",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    }
+  },
+  "REF47": {
+    "asa_gdft": {
+      "regra": "elegibilidade real (ASA I-III); distribuição inexistente (precedente Sujatha/Schmid)",
+      "vereditos": {
+        "gemma12": "deriv",
+        "qwen14": "deriv",
+        "gemma26": "deriv",
+        "qwen38": "deriv"
+      }
+    },
+    "asa_controle": {
+      "regra": "idem",
+      "vereditos": {
+        "gemma12": "deriv",
+        "qwen14": "deriv",
+        "gemma26": "deriv",
+        "qwen38": "deriv"
+      }
+    },
+    "n_randomizados_gdft": {
+      "regra": "fonte literal: 'randomised into two groups (control group: 40, PVI group: 40)'; 39 = analisados (MA)",
+      "vereditos": {
+        "qwen14": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "n_randomizados_controle": {
+      "regra": "idem",
+      "vereditos": {
+        "qwen14": "exata",
+        "qwen38": "exata"
+      }
+    }
+  }
+}

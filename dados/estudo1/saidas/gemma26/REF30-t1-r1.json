@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "REF30",
+  "tarefa": "t1",
+  "replica": 1,
+  "inicio": "2026-08-28 09:30:04",
+  "content": "{\n  \"n_randomizados_gdft\": {\"valor\": \"142\", \"onde\": \"Results\"},\n  \"n_randomizados_controle\": {\"valor\": \"141\", \"onde\": \"Results\"},\n  \"tipo_cirurgia\": {\"valor\": \"open radical cystectomy\", \"onde\": \"Methods\"},\n  \"laparoscopia_gdft\": {\"valor\": \"0\", \"onde\": \"Methods\"},\n  \"laparoscopia_controle\": {\"valor\": \"0\", \"onde\": \"Methods\"},\n  \"asa_gdft\": {\"valor\": \"70% of our population having an American Society of Anesthesiologists (ASA) score of 3–4\", \"onde\": \"Discussion\"},\n  \"asa_controle\": {\"valor\": \"70% of our population having an American Society of Anestaliogens (ASA) score of 3–4\", \"onde\": \"Discussion\"},\n  \"fluido_total_gdft\": {\"valor\": \"13380 mL [10405–19093]\", \"onde\": \"Results\"},\n  \"fluido_total_controle\": {\"valor\": \"15445 mL [11920–21015]\", \"onde\": \"Results\"},\n  \"cristaloide_gdft\": {\"valor\": \"2892 mL [2340–3450]\", \"onde\": \"Results\"},\n  \"cristaloide_controle\": {\"valor\": \"5580 mL [4650–6730]\", \"onde\": \"Results\"},\n  \"coloide_gdft\": {\"valor\": \"1000 mL [750–1250]\", \"onde\": \"Results\"},\n  \"coloide_controle\": {\"valor\": \"750 mL [500–1000]\", \"onde\": \"Results\"},\n  \"perda_sanguinea_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"perda_sanguinea_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"uso_inotropico\": {\"valor\": \"comparable between arms\", \"onde\": \"Results\"},\n  \"morbidade_eventos_gdft\": {\"valor\": \"136/142 (96%)\", \"onde\": \"Results\"},\n  \"morbidade_eventos_controle\": {\"valor\": \"125/141 (89%)\", \"onde\": \"Results\"},\n  \"mortalidade_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"mortalidade_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"los_hospitalar_gdft\": {\"valor\": \"7 (6–9) days\", \"onde\": \"Results\"},\n  \"los_hospitalar_controle\": {\"valor\": \"7 (6–10) days\", \"onde\": \"Results\"},\n  \"tempo_flatus_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_flatus_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_gdft\": {\"valor\": \"25% (31/142)\", \"onde\": \"Results\"},\n  \"ileo_pos_op_controle\": {\"valor\": \"21% (30/141)\", \"onde\": \"Results\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 873,
+  "dt": 167.707146,
+  "prompt_tokens": 7510
+}

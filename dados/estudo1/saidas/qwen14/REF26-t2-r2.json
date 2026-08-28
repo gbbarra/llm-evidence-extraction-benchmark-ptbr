@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "REF26",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-28 08:27:15",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"A lista de alocação foi gerada por computador, com blocos de 4.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"A alocação foi ocultada em envelopes numerados, selados e grampeados.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não especifica se os participantes e a equipe foram cegos ao tratamento.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"Os avaliadores que registraram os dados durante o período pós-operatório foram cegos ao tratamento.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não menciona se houve perda de seguimento ou se os desfechos foram completos.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo relata todos os desfechos primários e secundários definidos no estudo.\"},\n  \"outros_vieses\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Não há menção à possibilidade de desvios nos protocolos de cuidados pós-operatórios ou de outros fatores externos que poderiam influenciar os desfechos.\"},\n  \"risco_global\": {\"julgamento\": \"Low\", \"justificativa\": \"A maioria dos domínios foi avaliada como Low, e os domínios Unclear não comprometem significativamente o risco global de viés.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 401,
+  "dt": 59.4656504,
+  "prompt_tokens": 10508
+}

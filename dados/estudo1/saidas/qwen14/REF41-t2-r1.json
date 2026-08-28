@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "REF41",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-28 08:59:06",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"Computer-based randomization was carried out by the local affiliated research unit.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"Group allocations were disclosed on the morning of the operation using sealed opaque envelopes.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"High\", \"justificativa\": \"Treating clinicians were not blinded to group allocation because blinding anesthesiologists to a fluid therapy protocol during high-risk surgery is neither feasible nor safe.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"Patients and outcome assessors were blinded to group allocation.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Unclear\", \"justificativa\": \"The article does not report whether all participants were followed up or whether there were missing outcome data.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"The study reports all outcomes that were planned in the protocol, including primary and secondary outcomes.\"},\n  \"outros_vieses\": {\"julgamento\": \"Unclear\", \"justificativa\": \"The article does not report whether there were any other sources of bias, such as contamination between groups or deviations from the intended interventions.\"},\n  \"risco_global\": {\"julgamento\": \"High\", \"justificativa\": \"Due to lack of blinding of treating clinicians and uncertainty regarding missing outcome data, the overall risk of bias is high.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 352,
+  "dt": 57.1518336,
+  "prompt_tokens": 8421
+}
