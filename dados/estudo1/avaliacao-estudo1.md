@@ -94,6 +94,26 @@ agregado meta-analítico (nenhum RR/IC fabricado); as divergências com a MA (mo
 descrita como favorável) refletem contagem de estudos individuais sem ferramenta de
 agregação — exatamente a lacuna que o Estudo 2 ("as contas") vai medir.
 
+### T3b — síntese sobre os 14 estudos (Emenda 2)
+
+Registro de execução: o prompt com as 14 extrações (~16,3 mil tokens) estoura o contexto
+congelado de 16.384 — a primeira rodada truncou gemma12 e qwen38 e foi descartada; a
+rodada válida usou `num_ctx=24576` para os quatro (cláusula da seção 8 aplicada por
+analogia, registrada no script `rodar-t3b.py`).
+
+| Modelo | Palavras | Números órfãos | Morbidade descrita como |
+|---|---|---|---|
+| gemma4:12b | 345 ✓ | 0 | "resultados são inconsistentes" |
+| qwen3:14b | 316 ✓ | 0 | "efeito benéfico… embora com inconsistências" |
+| gemma4:26b | 330 ✓ | 0 | "evidência é inconsistente" |
+| qwen3.8:27b | 338 ✓ | 0 | "inconsistente e contraditória" |
+
+**Achado da T3b**: com 14 estudos em vez de 8, três dos quatro modelos moveram a
+morbidade de "favorável à GDFT" para "inconsistente" — **aproximando-se do veredito
+agregado da MA (não significativo)** sem nenhuma ferramenta estatística, só por ver
+mais evidência contraditória. Mais contexto calibrou a conclusão; a agregação formal
+continua sendo a lacuna (Estudo 2).
+
 ## Tempos de máquina
 
 | Bloco | Duração | Mediana/corrida |

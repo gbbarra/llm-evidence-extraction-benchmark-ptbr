@@ -15,6 +15,7 @@ RAIZ = Path(__file__).resolve().parents[2]
 spec = importlib.util.spec_from_file_location("h", RAIZ / "scripts" / "estudo1" / "e1-harness.py")
 h = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(h)
+h.CTX = 24576  # registro: prompt T3b ~16.3k tokens estoura o 16384; clausula do protocolo (§8) aplicada aos 4 modelos
 
 ROT = {"PMC10561433": "Yoon 2023", "PMC10694978": "Sun 2023", "PMC10912221": "Wu 2024",
        "PMC11061212": "Castro 2024", "PMC12565272": "Redondo Calvo 2025", "PMC4782303": "Schmid 2016",
