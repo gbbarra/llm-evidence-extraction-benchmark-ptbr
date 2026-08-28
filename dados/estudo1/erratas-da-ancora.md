@@ -50,7 +50,7 @@ célula a célula do adjudicador. A supervisão é do autor humano do benchmark.
 
 ## Confirmadas pela fonte (adição da adjudicação, 2026-08-28)
 
-8. **Sun et al. — conversão do tempo até dieta oral inconsistente.** A MA publica
+9. **Sun et al. — conversão do tempo até dieta oral inconsistente.** A MA publica
    72±24 h (GDFT) vs 96±30 h (controle) — diferença de 1 dia. O próprio texto-fonte diz:
    *"GDFT significantly also shorten … time to first tolerate oral diet **by 2 days**
    (P < 0.001)"*, com medianas 4,0 d (2,7–6,0) vs 6,0 d (5,0–9,3). Os quatro modelos
