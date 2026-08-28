@@ -118,7 +118,11 @@ def corrigir_modelo(mod, oficial, selo_campo, textos):
             ver = reg.get("veredito", "sem-registro")
             pert = selo_campo.get((pm, campo))
             rotulo, regra = None, None
-            if pert:
+            adj = ADJUDICACOES.get(pm, {}).get(campo, {})
+            if adj.get("vereditos", {}).get(mod):
+                rotulo = adj["vereditos"][mod]
+                regra = "adjudicada: " + adj.get("regra", "")[:80]
+            elif pert:
                 if contem_valor(v, pert["perturbado"]):
                     rotulo = "exata"; regra = "prova: leu"
                 elif (pm, campo) in EMENDA3 and contem_valor(v, pert["original"]):
@@ -131,6 +135,12 @@ def corrigir_modelo(mod, oficial, selo_campo, textos):
                     rotulo = "adjudicar"; regra = "célula perturbada, valor não casou"
             elif ver in ("pendente-adjudicacao",):
                 rotulo = "fora"
+            elif ver == "confirmada-nr":
+                rotulo = "nr-correta" if eh_nr(v) else "adjudicar"
+            elif ver == "dado-fora-do-insumo":
+                rotulo = "nr-correta" if eh_nr(v) else "adjudicar"
+                if rotulo == "nr-correta":
+                    regra = "dado ausente do insumo textual"
             elif ver in ("sem-valor-na-ma", "sem-registro"):
                 rotulo = "fora" if eh_nr(v) else "extra"
             elif ver == "ma-inferiu":
@@ -165,7 +175,14 @@ def corrigir_modelo(mod, oficial, selo_campo, textos):
     return resultado, contas
 
 
+ADJUDICACOES = {}
+
+
 def main():
+    global ADJUDICACOES
+    adj_path = D1 / "adjudicacoes-t1.json"
+    ADJUDICACOES = {k: v for k, v in json.loads(adj_path.read_text(encoding="utf-8")).items()
+                    if not k.startswith("_")} if adj_path.exists() else {}
     oficial = json.loads((D1 / "gabarito-oficial.json").read_text(encoding="utf-8"))["celulas"]
     selo = json.loads((D1 / "perturbacoes-estudo1.json").read_text(encoding="utf-8"))
     inv = {}

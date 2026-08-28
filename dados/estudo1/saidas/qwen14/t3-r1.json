@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": null,
+  "tarefa": "t3",
+  "replica": 1,
+  "inicio": "2026-08-27 22:04:34",
+  "content": "A GDFT parece ter um efeito benéfico na redução da morbidade pós-operatória em comparação com a fluidoterapia convencional, com cinco dos oito ensaios reportando menores taxas de eventos adversos no grupo GDFT. Por exemplo, em um estudo com cirurgia oncológica abdominal, a GDFT associou-se a 6 eventos adversos versus 13 no controle, enquanto em outro com ressecção colorretal, foram 19 eventos versus 32. No entanto, em outros ensaios, como o que envolveu ressecção de cistite radical, não houve diferença significativa entre os grupos. A heterogeneidade dos resultados sugere que o efeito da GDFT sobre a morbidade pode variar conforme o tipo de cirurgia e outros fatores, indicando certa incerteza.\n\nQuanto à mortalidade, apenas dois ensaios reportaram dados, e ambos mostraram taxas semelhantes entre os grupos (4/92 no GDFT e 4/88 no controle em um estudo com cirurgia abdominal maior; 1/50 no GDFT e 0/50 no controle em outro). Não há evidências claras de benefício ou risco da GDFT em relação à mortalidade.\n\nO tempo de internação hospitalar foi favorecido pela GDFT em quatro dos oito estudos. Por exemplo, em um ensaio com cirurgia oncológica abdominal, o tempo médio foi de 9 dias no GDFT versus 12 no controle. Em outro com ressecção colorretal, foi de 11 dias versus 13. No entanto, em alguns estudos, como o que envolveu cirurgia hepática, o tempo foi menor no GDFT, mas os números eram pequenos, o que limita a confiabilidade do efeito observado.\n\nEm relação à função intestinal, a GDFT associou-se a um menor tempo até o flatus em dois estudos, como em um com cirurgia oncológica abdominal (28,2 horas versus 39,4) e outro com ressecção colorretal (36 horas versus 39). Além disso, em um ensaio, o tempo até a ingestão oral foi menor no GDFT (4 dias versus 6). O ileo pós-operatório foi menos frequente no grupo GDFT em um estudo (2 casos versus 16), embora em outros não houvesse diferença. Dados sobre evacuação intestinal foram reportados apenas em um estudo, onde a GDFT também se associou a um tempo menor. Assim, embora alguns dados sugiram benefícios da GDFT na recuperação intestinal, a consistência dos resultados é variável.",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 615,
+  "dt": 159.9379589,
+  "prompt_tokens": 7135
+}

@@ -1,0 +1,330 @@
+{
+  "_metodo": "Adjudicação das células que o corretor mecânico não decide (formatos textuais). Uma entrada por estudo×campo: 'regra' documenta o fundamento (com a fonte já citada no gabarito-oficial); 'vereditos' dá o rótulo final por modelo. Adjudicador: Claude (Fable), sob supervisão do autor; rito: verificar na fonte antes de deduzir. Erros do adjudicador nesta rodada estão em erratas-da-ancora.md.",
+  "PMC10561433": {
+    "asa_gdft": {
+      "regra": "razão 4:29:6:0 ≡ listagem por classe com %; classe IV=0 implícita",
+      "vereditos": {
+        "gemma12": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "asa_controle": {
+      "regra": "idem (2:27:7:0)",
+      "vereditos": {
+        "gemma12": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "tipo_cirurgia": {
+      "regra": "descrição fiel; MA detalha contagens por procedimento (granularidade, não divergência)",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    }
+  },
+  "PMC10694978": {
+    "asa_gdft": {
+      "regra": "percentuais×n(50)=contagens do gabarito (12/72/16% = 6/36/8)",
+      "vereditos": {
+        "gemma12": "deriv",
+        "qwen14": "exata",
+        "gemma26": "exata"
+      }
+    },
+    "asa_controle": {
+      "regra": "idem (16/66/18% = 8/33/9)",
+      "vereditos": {
+        "gemma12": "deriv",
+        "qwen14": "exata",
+        "gemma26": "exata"
+      }
+    },
+    "tipo_cirurgia": {
+      "regra": "rótulo fiel ('major abdominal oncologic surgery'); MA lista procedimentos",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "tempo_ingesta_oral_gdft": {
+      "regra": "fonte: mediana 4.0 d — errata da MA (ver gabarito)",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "tempo_ingesta_oral_controle": {
+      "regra": "fonte: mediana 6.0 d — errata da MA",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "uso_inotropico": {
+      "regra": "fonte: 18 (36%) vs 27 (54%); valor de um braço sem rótulo = deriv; sub-linha real (dobutamina) = deriv",
+      "vereditos": {
+        "gemma12": "deriv",
+        "gemma26": "deriv"
+      }
+    }
+  },
+  "PMC10912221": {
+    "asa_gdft": {
+      "regra": "II 25 (43.1%) III 33 (56.9%) ≡ 0:25:33:0",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "asa_controle": {
+      "regra": "II 22 III 34 ≡ 0:22:34:0",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "n_randomizados_gdft": {
+      "regra": "fonte literal: '61 patients were allocated to the PPV group'; 58/56 (analisados, valor da MA) também aceito",
+      "vereditos": {
+        "gemma12": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata",
+        "qwen14": "exata"
+      }
+    },
+    "n_randomizados_controle": {
+      "regra": "fonte literal: 'another 61'; 56 (analisados) também aceito",
+      "vereditos": {
+        "gemma12": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata",
+        "qwen14": "exata"
+      }
+    },
+    "morbidade_eventos_gdft": {
+      "regra": "contagem 19 = gabarito 19 (32.8%); % omitido não deduz",
+      "vereditos": {
+        "qwen14": "exata"
+      }
+    },
+    "morbidade_eventos_controle": {
+      "regra": "contagem 32 = gabarito 32 (57.1%)",
+      "vereditos": {
+        "qwen14": "exata"
+      }
+    },
+    "laparoscopia_gdft": {
+      "regra": "'todos laparoscópicos' ≡ n do braço (58)",
+      "vereditos": {
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "laparoscopia_controle": {
+      "regra": "idem (56)",
+      "vereditos": {
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "uso_inotropico": {
+      "regra": "linhas literais da Tabela 3 (norepinefrina/fenilefrina/efedrina)",
+      "vereditos": {
+        "gemma12": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    }
+  },
+  "PMC11061212": {
+    "asa_controle": {
+      "regra": "I 11 (26%) II 26 (62%) III 5 (12%) ≡ 11:26:5:0",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "tipo_cirurgia": {
+      "regra": "descrição fiel e mais completa que a MA (que escreveu 'bowel', estreito)",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    }
+  },
+  "PMC12565272": {
+    "asa_gdft": {
+      "regra": "13/6 = II/III do gabarito 0:13:6:0 (o primário imprime 'X ± Y' como notação de tabela)",
+      "vereditos": {
+        "gemma12": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "asa_controle": {
+      "regra": "10/6 = 0:10:6:0",
+      "vereditos": {
+        "gemma12": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "tipo_cirurgia": {
+      "regra": "rótulo fiel ('open large liver resection'/'major hepatic resection')",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    }
+  },
+  "PMC4782303": {
+    "asa_gdft": {
+      "regra": "gabarito NR confirmado; modelos reportaram elegibilidade (ASA 1–3), informação verdadeira da fonte",
+      "vereditos": {
+        "gemma12": "deriv",
+        "gemma26": "deriv",
+        "qwen38": "deriv"
+      }
+    },
+    "asa_controle": {
+      "regra": "idem",
+      "vereditos": {
+        "gemma12": "deriv",
+        "gemma26": "deriv",
+        "qwen38": "deriv"
+      }
+    },
+    "tipo_cirurgia": {
+      "regra": "'major abdominal/non-cardiac surgery (Whipple, oesophageal…)' fiel; MA lista contagens",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    }
+  },
+  "PMC5589093": {
+    "tipo_cirurgia": {
+      "regra": "'pancreaticoduodenectomy' fiel",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "uso_inotropico": {
+      "regra": "detalhe literal da tabela (noradrenalina 24 (92%)/dopamina-dobutamina 12 (46%)); qualitativo da MA confirmado",
+      "vereditos": {
+        "gemma12": "exata",
+        "gemma26": "exata"
+      }
+    }
+  },
+  "PMC6907038": {
+    "asa_gdft": {
+      "regra": "elegibilidade ASA I–II reportada (verdadeira); distribuição inexistente na fonte",
+      "vereditos": {
+        "gemma12": "deriv",
+        "qwen14": "deriv",
+        "gemma26": "deriv",
+        "qwen38": "deriv"
+      }
+    },
+    "asa_controle": {
+      "regra": "idem",
+      "vereditos": {
+        "gemma12": "deriv",
+        "qwen14": "deriv",
+        "gemma26": "deriv",
+        "qwen38": "deriv"
+      }
+    },
+    "tipo_cirurgia": {
+      "regra": "'open major bowel surgery' fiel (frase literal da fonte)",
+      "vereditos": {
+        "gemma12": "exata",
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "n_randomizados_gdft": {
+      "regra": "aceitos: 204, 200 (analisados/MA) ou 102+102 por braço",
+      "vereditos": {
+        "qwen14": "exata",
+        "gemma26": "exata",
+        "qwen38": "exata"
+      }
+    },
+    "laparoscopia_gdft": {
+      "regra": "'excluded' = critério de exclusão lido corretamente (lap excluída)",
+      "vereditos": {
+        "gemma12": "exata"
+      }
+    },
+    "laparoscopia_controle": {
+      "regra": "idem",
+      "vereditos": {
+        "gemma12": "exata"
+      }
+    },
+    "fluido_total_gdft": {
+      "regra": "fonte não reporta total por braço; cristaloides/balanço citados = deriv; NR = correto",
+      "vereditos": {
+        "gemma12": "deriv",
+        "qwen14": "deriv",
+        "gemma26": "nr-correta"
+      }
+    },
+    "tempo_ingesta_oral_gdft": {
+      "regra": "dado fora do insumo (Tabela 4); qualitativo fiel (p=0.046) = deriv",
+      "vereditos": {
+        "gemma12": "deriv",
+        "gemma26": "nr-correta"
+      }
+    },
+    "tempo_evacuacao_gdft": {
+      "regra": "dado fora do insumo; 'comparable' = qualitativo fiel",
+      "vereditos": {
+        "gemma12": "deriv",
+        "gemma26": "nr-correta"
+      }
+    },
+    "tempo_evacuacao_controle": {
+      "regra": "idem",
+      "vereditos": {
+        "gemma12": "deriv"
+      }
+    },
+    "fluido_total_controle": {
+      "regra": "3200 ml = mediana de cristaloides do controle; fonte não reporta total por braço (mesma regra do campo gdft)",
+      "vereditos": {
+        "gemma12": "deriv",
+        "qwen14": "deriv"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "PMC5589093",
+  "tarefa": "t1",
+  "replica": 1,
+  "inicio": "2026-08-27 23:04:28",
+  "content": "{\n  \"n_randomizados_gdft\": {\"valor\": \"26\", \"onde\": \"Results\"},\n  \"n_randomizados_controle\": {\"valor\": \"26\", \"onde\": \"Results\"},\n  \"tipo_cirurgia\": {\"valor\": \"pancreaticoduodenectomy\", \"onde\": \"Introduction\"},\n  \"laparoscopia_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"laparoscopia_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"asa_gdft\": {\"valor\": \"ASA Class I-II: 7 (27%); ASA Class ≥ III: 19 (73%)\", \"onde\": \"Table 1\"},\n  \"asa_controle\": {\"valor\": \"ASA Class I-II: 7 (27%); ASA Class ≥ III: 19 (73%)\", \"onde\": \"Table 1\"},\n  \"fluido_total_gdft\": {\"valor\": \"2050mL (1199:2700)\", \"onde\": \"Abstract\"},\n  \"fluido_total_controle\": {\"valor\": \"4088mL (3400:4525)\", \"onde\": \"Abstract\"},\n  \"cristaloide_gdft\": {\"valor\": \"1750 (1000:2100) mL\", \"onde\": \"Table 2\"},\n  \"cristaloide_controle\": {\"valor\": \"4000 (2313:4206) mL\", \"mente\": \"Table 2\"},\n  \"coloide_gdft\": {\"valor\": \"200 (0:500) mL\", \"onde\": \"Table 2\"},\n  \"coloide_controle\": {\"valor\": \"200 (0:500) mL\", \"onde\": \"Table 2\"},\n  \"perda_sanguinea_gdft\": {\"valor\": \"200 (138:363) mL\", \"onde\": \"Table 2\"},\n  \"perda_sanguinea_controle\": {\"valor\": \"400 (200:550) mL\", \"onde\": \"Table 2\"},\n  \"uso_inotropico\": {\"valor\": \"braço GDT: 12 patients (46%) received dopamine and/or dobutamine | braço usual care: 1 patient (4%) received dopamine and/or dobutamine\", \"onde\": \"Table 2\"},\n  \"morbidade_eventos_gdft\": {\"valor\": \"19 (73%)\", \"onde\": \"Table 4\"},\n  \"morbidade_eventos_controle\": {\"valor\": \"21 (81%)\", \"onde\": \"Table 4\"},\n  \"mortalidade_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"mortalidade_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"los_hospitalar_gdft\": {\"valor\": \"9.5 days (IQR: 7.0, 14.3)\", \"onde\": \"Abstract\"},\n  \"los_hospitalar_controle\": {\"valor\": \"12.5 days (IQR: 9.0, 22.3)\", \"onde\": \"Abstract\"},\n  \"tempo_flatus_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_flatus_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 938,
+  "dt": 236.8312988,
+  "prompt_tokens": 11381
+}

@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "PMC6907038",
+  "tarefa": "t1",
+  "replica": 1,
+  "inicio": "2026-08-27 21:58:10",
+  "content": "{\n  \"n_randomizados_gdft\": {\"valor\": \"204\", \"onde\": \"Results\"},\n  \"n_randomizados_controle\": {\"valor\": \"102\", \"onde\": \"Results\"},\n  \"tipo_cirurgia\": {\"valor\": \"abdominal aberta major (ex.: reseção colônica, resseção intestinal, anastomose, gastrectomia)\", \"onde\": \"Materials and Methods\"},\n  \"laparoscopia_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"laparoscopia_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"asa_gdft\": {\"valor\": \"I e II\", \"onde\": \"Materials and Methods\"},\n  \"asa_controle\": {\"valor\": \"I e II\", \"onde\": \"Materials and Methods\"},\n  \"fluido_total_gdft\": {\"valor\": \"1842 ml (1600–2437) | 1715 ml (1500–2300)\", \"onde\": \"Results\"},\n  \"fluido_total_controle\": {\"valor\": \"3200 ml\", \"onde\": \"Results\"},\n  \"cristaloide_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"cristaloide_controle\": {\"valor\": \"3200 ml\", \"onde\": \"Results\"},\n  \"coloide_gdft\": {\"valor\": \"400–700 ml | 200–500 ml\", \"onde\": \"Results\"},\n  \"coloide_controle\": {\"valor\": \"0–500 ml\", \"onde\": \"Results\"},\n  \"perda_sanguinea_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"perda_sanguinea_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"uso_inotropico\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"morbidade_eventos_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"morbidade_eventos_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"mortalidade_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"mortalidade_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"los_hospitalar_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"los_hospitalar_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"tempo_flatus_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"tempo_flatus_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"tempo_ingesta_oral_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"tempo_ingesta_oral_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"tempo_evacuacao_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"tempo_evacuacao_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"ileo_pos_op_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"ileo_pos_op_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 743,
+  "dt": 169.017368,
+  "prompt_tokens": 6615
+}

@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen38",
+  "ollama": "qwen3.8:27b-texto",
+  "pmcid": "PMC5589093",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-28 03:12:15",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo relata que um estatístico independente gerou uma sequência computacionalizada de códigos de alocação para os 52 participantes.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"Os códigos de alocação foram selados em envelopes opacos numerados sequencialmente e a randomização foi realizada por uma unidade central imediatamente antes da indução da anestesia.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"High\", \"justificativa\": \"A intervenção envolve a administração de fluidos e fármacos por parte da equipe anestésica, tornando o cegamento dos participantes e da equipe de tratamento impossível.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O texto afirma que as estatísticas foram realizadas por um estatístico cego à alocação, mas não especifica se os clínicos que classificaram as complicações ou mediram os desfechos primários estavam cegos.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo reporta explicitamente que não houve violações das protocolos do estudo ou do ERAS e não há menção a exclusões após a randomização ou dados ausentes significativos para os desfechos principais.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo foi registrado retrospectivamente no registro de ensaios clínicos e os resultados são relatados de forma transparente com todos os desfechos prévios, incluindo aqueles não significativos.\"},\n  \"outros_vieses\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O grupo de cuidado usual não recebeu nenhum bloqueio de fluidos além da proibição do pré-carregamento, o que é consistente com práticas padrão, porém a ausência de detalhes sobre como o monitoramento foi 'oculto' pode sugerir vieses de performance ou detecção.\"},\n  \"risco_global\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Embora a geração de sequência e ocultação da alocação sejam adequadas, a incapacidade de cegar os participantes/equipe e a incerteza sobre o cegamento dos avaliadores de desfecho mantêm o risco de viés como desconhecido.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 549,
+  "dt": 208.1854495,
+  "prompt_tokens": 10993
+}

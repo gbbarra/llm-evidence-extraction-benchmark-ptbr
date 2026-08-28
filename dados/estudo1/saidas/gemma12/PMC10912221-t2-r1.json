@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma12",
+  "ollama": "gemma4:12b",
+  "pmcid": "PMC10912221",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-27 20:01:27",
+  "content": "```json\n{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A randomização foi realizada por um assistente não envolvido no estudo utilizando números aleatórios gerados pelo Microsoft Excel.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A atribuição foi armazenada em envelopes selados com números de série e o anestesista responsável não conhecia a alocação até o início do procedimento.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O anestesista que realizou o procedimento estava ciente da alocação do paciente, impedindo o cegamento da equipe de intervenção.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A equipe de acompanhamento pós-operatório permaneceu desconhecida tanto da randomização quanto do gerenciamento intraoperatório.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A análise foi baseada em uma abordagem 'intention-to-treat' modificada, com perdas de seguimento reportadas e justificadas.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os resultados apresentados cobrem os desfechos primários (complicações) e os desfechos secundários detalhados nas tabelas de resultados.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo é um ensaio controlado randomizado prospectivo com critérios de inclusão/exclusão claros e medidas de desfecho padronizadas.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Apesar do não cegamento da equipe de intervenção, o design prospectivo, a randomização robusta e o cegamento dos avaliadores de desfecho minimizam o risco de viés.\"\n  }\n}\n```",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 527,
+  "dt": 169.0991758,
+  "prompt_tokens": 9510
+}

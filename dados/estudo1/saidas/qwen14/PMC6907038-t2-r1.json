@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "PMC6907038",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-27 22:02:49",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"Os pacientes foram randomizados usando números aleatórios gerados por computador.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"A alocação foi feita usando envelopes lacrados.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não menciona se os participantes e a equipe foram cegos ao grupo de intervenção.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não menciona se os avaliadores dos desfechos foram cegos ao grupo de intervenção.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não descreve como foram tratados os pacientes que desistiram ou foram excluídos do estudo.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo relata todos os desfechos planejados e não há indicação de relato seletivo.\"},\n  \"outros_vieses\": {\"julgamento\": \"Low\", \"justificativa\": \"Não há indicação de outros vieses que poderiam influenciar os resultados.\"},\n  \"risco_global\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo apresenta baixo risco de viés em geral, com métodos adequados de randomização e alocação oculta, embora haja incertezas sobre cegamento e tratamento de dados incompletos.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 390,
+  "dt": 56.7939853,
+  "prompt_tokens": 5994
+}

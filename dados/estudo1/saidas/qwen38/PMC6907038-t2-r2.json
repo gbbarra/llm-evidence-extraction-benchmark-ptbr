@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen38",
+  "ollama": "qwen3.8:27b-texto",
+  "pmcid": "PMC6907038",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-28 03:35:21",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O artigo relata explicitamente que os pacientes foram randomizados usando 'números aleatórios gerados por computador'.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O método de ocultação da alocação foi realizado através da 'técnica de envelopes lacrados' (sealed envelope technique).\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"Unclear\",\n    \"justificativa\": \"O artigo não descreve se os cirurgiões ou anestesistas estavam cegos à intervenção, sendo improvável em cirurgia aberta, mas a ausência de relato específico impede uma avaliação conclusiva de alto risco por falha de implementação.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Unclear\",\n    \"justificativa\": \"Não há menção se os avaliadores dos desfechos clínicos (como complicações e infecções) eram cegos ao grupo de tratamento atribuído.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O fluxo dos pacientes foi descrito com exclusões justificadas (casos inoperáveis) e os resultados foram apresentados para a população analisada sem menção a perdas de seguimento não reportadas.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo está registrado no CTRI (registro CTRI/2018/04/013016) e relata uma variedade de desfechos primários e secundários pré-especificados (como mortalidade, tempo de internação e complicações).\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Unclear\",\n    \"justificativa\": \"O artigo não fornece detalhes sobre potenciais conflitos de interesse dos autores ou financiamento que possa ter influenciado os resultados.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"Unclear\",\n    \"justificativa\": \"Embora a randomização e ocultação de alocação sejam bem definidas, a falta de clareza sobre o cegamento de avaliadores e outros viéses impede a classificação do risco global como baixo.\"\n  }\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 569,
+  "dt": 152.6255046,
+  "prompt_tokens": 5972
+}

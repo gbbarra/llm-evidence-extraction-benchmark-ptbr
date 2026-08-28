@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "PMC5589093",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-27 23:13:05",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo utilizou um estatístico independente para gerar uma sequência computadorizada de 52 códigos de alocação.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Uma enfermeira de pesquisa independente selou os códigos de alocação em envelopes opacos numerados sequencialmente.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O cegamento de participantes e equipe era impossível devido à natureza da intervenção (uso de algoritmo de fluido e medicamentos vasoativos).\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"As complicações foram registradas por dois clínicos independentes, e o estatístico realizou a análise cego à alocação.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O artigo não relata perdas de seguimento ou exclusões pós-randomização, além de mencionar que não houve violações dos protocolos.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo foi prospectivamente registrado (ACTRN: 12616000538448) e seguiu as diretrizes CONSORT para o relato de ensaios randomizados.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo foi realizado em centros de alto volume e utilizou análise multivariada para ajustar o tempo cirúrgico como um possível fator de confusão.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O ensaio apresenta baixo risco global, apesar da impossibilidade de cegamento da equipe, devido ao rigor na randomização, alocação e análise.\"\n  }\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 510,
+  "dt": 55.2935863,
+  "prompt_tokens": 10731
+}

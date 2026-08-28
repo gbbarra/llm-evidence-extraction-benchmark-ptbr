@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "PMC10561433",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-27 21:06:26",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo utilizou uma lista aleatória gerada por computador com blocos de tamanho 4 e 6 para a alocação dos participantes.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"As alocações foram seladas em envelopes opacos por um investigador não envolvido no estudo.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"High\", \"justificativa\": \"Não foi possível cegar os anestesiologistas responsáveis pela cirurgia, pois eles gerenciaram os pacientes com base na alocação do grupo.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"Os investigadores que avaliaram os desfeitos e os cirurgiões estavam cegos à alocação do grupo.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não descreve claramente como foram lidos os dados dos desfeitos incompletos ou se houve perda de seguimento.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo relatou todos os desfeitos previamente definidos, incluindo os primários e secundários.\"},\n  \"outros_vieses\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não menciona se houve outras fontes de viés, como influência de outras práticas clínicas durante o período do estudo.\"},\n  \"risco_global\": {\"julgamento\": \"High\", \"justificativa\": \"O risco global é alto devido ao baixo grau de cegamento dos anestesiologistas e à possibilidade de viés devido a outros fatores não descritos no artigo.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 450,
+  "dt": 73.2226613,
+  "prompt_tokens": 10108
+}

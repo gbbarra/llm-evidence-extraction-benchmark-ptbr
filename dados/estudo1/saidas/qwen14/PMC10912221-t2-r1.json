@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "PMC10912221",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-27 21:24:19",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"A randomização foi realizada usando números aleatórios gerados no Microsoft Excel.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"A alocação foi feita em envelopes selados com números sequenciais por um assistente que não estava envolvido no estudo.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não menciona se os participantes e a equipe de cuidados foram cegos ao grupo de intervenção.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"A equipe de seguimento pós-operatório não estava cega quanto à randomização e à gestão intraoperatória.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não descreve se houve perda de seguimento ou como os desfechos foram tratados em casos incompletos.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo relata todos os desfechos previamente definidos, sem evidências de omissão seletiva.\"},\n  \"outros_vieses\": {\"julgamento\": \"Low\", \"justificativa\": \"Não há indicação de outros viéses, como influência de pesquisadores ou distorções no processo de randomização.\"},\n  \"risco_global\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo demonstra baixo risco de viés em todos os domínios avaliados, com métodos adequados de randomização e alocação oculta.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 410,
+  "dt": 65.435388,
+  "prompt_tokens": 9671
+}

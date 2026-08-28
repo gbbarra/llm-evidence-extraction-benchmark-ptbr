@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen38",
+  "ollama": "qwen3.8:27b-texto",
+  "pmcid": "PMC10561433",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-27 23:41:26",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo relata que a randomização foi baseada em uma lista gerada por computador com tamanhos de bloco de quatro e seis.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"As alocações foram seladas em envelopes opacos por um investigador que não estava envolvido no estudo.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"High\", \"justificativa\": \"Os anestesiologistas responsáveis pelo cuidado eram cientes da alocação do grupo, tornando o cegamento impossível nesse domínio.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"Os investigadores que avaliaram os desfechos pós-operatórios e os cirurgiões estavam cegos em relação à alocação do grupo.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo descreve claramente as exclusões (7 pacientes) e indica que os dados intraoperatórios e pós-operatórios foram coletados prospectivamente.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo foi registrado antes do início (ClinicalTrials.gov) e os resultados reportados alinham-se com os desfechos primário e secundários predefinidos.\"},\n  \"outros_vieses\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Não há informações suficientes sobre potenciais fontes de viés adicionais ou conflitos de interesse além da declaração padrão de ausência de conflitos.\"},\n  \"risco_global\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O risco de viés é considerado 'Unclear' globalmente devido ao alto risco de viés por falta de cegamento da equipe de tratamento e à incerteza em outros vieses.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 444,
+  "dt": 672.9017511,
+  "prompt_tokens": 10077
+}

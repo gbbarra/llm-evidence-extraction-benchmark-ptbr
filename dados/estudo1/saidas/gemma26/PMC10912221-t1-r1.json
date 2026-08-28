@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "PMC10912221",
+  "tarefa": "t1",
+  "replica": 1,
+  "inicio": "2026-08-27 22:28:57",
+  "content": "{\n  \"n_randomizados_gdft\": {\"valor\": \"61\", \"onde\": \"Results\"},\n  \"n_randomizados_controle\": {\"valor\": \"61\", \"onde\": \"Results\"},\n  \"tipo_cirurgia\": {\"valor\": \"laparoscopic radical resection of colorectal cancer\", \"onde\": \"Abstract\"},\n  \"laparoscopia_gdft\": {\"valor\": \"58\", \"onde\": \"Results\"},\n  \"laparoscopia_controle\": {\"valor\": \"56\", \"onde\": \"Results\"},\n  \"asa_gdft\": {\"valor\": \"II: 25 (43.1); III: 33 (56.9)\", \"onde\": \"Table 2\"},\n  \"asa_controle\": {\"valor\": \"II: 22 (39.3); III: 34 (60.7)\", \"onde\": \"Table 2\"},\n  \"fluido_total_gdft\": {\"valor\": \"1450 (1237,1700) ml\", \"onde\": \"Table 3\"},\n  \"fluido_total_controle\": {\"valor\": \"2100 (1800,2375) ml\", \"onde\": \"Table 3\"},\n  \"cristaloide_gdft\": {\"valor\": \"1100 (937,1300) ml\", \"onde\": \"Table 3\"},\n  \"cristaloide_controle\": {\"valor\": \"1600 (1225,1700) ml\", \"onde\": \"Table 3\"},\n  \"coloide_gdft\": {\"valor\": \"500 (250,500) ml\", \"onde\": \"Table 3\"},\n  \"coloide_controle\": {\"valor\": \"500 (500,500) ml\", \"onde\": \"Table 3\"},\n  \"perda_sanguinea_gdft\": {\"valor\": \"50 (20,100) ml\", \"onde\": \"Table 3\"},\n  \"perda_sanguinea_controle\": {\"valor\": \"50 (50,100) ml\", \"onde\": \"Table 3\"},\n  \"uso_inotropico\": {\"valor\": \"GDFT: 15 (25.9%) using norepinephrine | Control: 24 (42.9%) using norepinephrine\", \"onde\": \"Table 3\"},\n  \"morbidade_eventos_gdft\": {\"valor\": \"19 (30.7%)\", \"onde\": \"Table 5\"},\n  \"morbidade_eventos_controle\": {\"valor\": \"32 (64.9%)\", \"onde\": \"Table 5\"},\n  \"mortalidade_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"mortalidade_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"los_hospitalar_gdft\": {\"valor\": \"11.0 (9.0, 14.0) days\", \"onde\": \"Table 6\"},\n  \"los_hospitalar_controle\": {\"valor\": \"13.0 (11.0, 16.0) days\", \"onde\": \"Table 6\"},\n  \"tempo_flatus_gdft\": {\"valor\": \"36.0 (20.0, 54.3) h\", \"onde\": \"Table 6\"},\n  \"tempo_flatus_controle\": {\"valor\": \"39.0 (20.0, 68.0) h\", \"onde\": \"Table 6\"},\n  \"tempo_ingesta_oral_gdft\": {\"valor\": \"47.5 (21.8, 71.3) h\", \"onde\": \"Table 6\"},\n  \"tempo_ingesta_oral_controle\": {\"valor\": \"65.0 (20.5, 87.5) h\", \"onde\": \"Table 6\"},\n  \"tempo_evacuacao_gdft\": {\"valor\": \"58.5 (36.3, 79.0) h\", \"onde\": \"Table 6\"},\n  \"tempo_evacuacao_controle\": {\"valor\": \"73.5 (41.8, 113.3) h\", \"onde\": \"Table 6\"},\n  \"ileo_pos_op_gdft\": {\"valor\": \"11 (19.0%)\", \"onde\": \"Table 5\"},\n  \"ileo_pos_op_controle\": {\"valor\": \"22 (39.3%)\", \"onde\": \"Table 5\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 1062,
+  "dt": 259.2737011,
+  "prompt_tokens": 10160
+}

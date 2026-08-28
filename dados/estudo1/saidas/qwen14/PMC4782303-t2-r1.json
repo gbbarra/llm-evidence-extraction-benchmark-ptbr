@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "PMC4782303",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-27 21:47:25",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"Os pacientes foram aleatorizados usando uma lista gerada por computador.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não menciona se a alocação foi ocultada dos pesquisadores e profissionais de saúde envolvidos.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"High\", \"justificativa\": \"Não houve cegamento dos participantes e da equipe, pois o grupo GDT recebeu um algoritmo de terapia hemodinâmica específica.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não menciona se os avaliadores dos desfechos foram cegos aos grupos de tratamento.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não especifica se houve perda de seguimento ou como foram tratados os dados faltantes.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo relata todos os desfechos pré-especificados, incluindo os primários e secundários.\"},\n  \"outros_vieses\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Não há menção a outros viéses potenciais, como influência de pesquisadores no tratamento ou desvios protocolares.\"},\n  \"risco_global\": {\"julgamento\": \"High\", \"justificativa\": \"O risco global é alto devido à ausência de cegamento dos participantes e da equipe e à falta de informações sobre ocultação da alocação e tratamento de dados incompletos.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 422,
+  "dt": 69.1929327,
+  "prompt_tokens": 11020
+}

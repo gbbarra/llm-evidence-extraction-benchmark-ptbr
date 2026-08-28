@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma12",
+  "ollama": "gemma4:12b",
+  "pmcid": "PMC5589093",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-27 20:43:39",
+  "content": "```json\n{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo utilizou uma sequência de códigos de alocação gerada por computador e selada em envelopes opacos antes da randomização.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A randomização foi realizada por uma unidade central imediatamente antes da indução da anestesia, com os códigos selados em envelopes.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"A equipe de anestesia e cirurgia não poderia estar cega à intervenção, pois a gestão de fluidos e fármacos vasoativos era baseada em um algoritmo de tratamento ativo.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"As complicações foram registradas por dois clínicos independentes, e o estatístico que realizou as análises estava cego à alocação.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O texto não relata perdas significativas ou desfechos faltantes após a randomização, com 26 participantes em cada grupo final.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os desfechos primários e secundários (tempo de internação, fluidos, medicamentos e complicações) foram reportados de forma completa conforme o protocolo.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo foi multicêntrico, randomizado e controlado, com critérios de inclusão claros e análise ajustada por complexidade cirúrgica.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Apesar do não-cegamento da equipe de tratamento, o desenho robusto, a randomização centralizada e a avaliação independente de desfechos minimizam o risco de viés.\"\n  }\n}\n```",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 529,
+  "dt": 185.4189655,
+  "prompt_tokens": 10731
+}

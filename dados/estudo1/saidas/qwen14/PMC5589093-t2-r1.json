@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "PMC5589093",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-27 21:56:17",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"An independent statistician generated a computerised sequence of 52 allocation codes, 26 for each group.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"Allocation codes were sealed into sequentially numbered opaque envelopes by an independent research nurse.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"Unclear\", \"justificativa\": \"The article does not explicitly state whether participants and the surgical team were blinded to the intervention.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"Statistics were done by a statistician blinded to allocation and the code was broken after analysis was completed.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Unclear\", \"justificativa\": \"The article does not explicitly mention whether all outcomes were reported or if there were missing data.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"The study was reported in accordance with the CONSORT Guidelines for reporting randomised trials.\"},\n  \"outros_vieses\": {\"julgamento\": \"Unclear\", \"justificativa\": \"The article does not provide information on whether there were any other biases or deviations from the intended interventions.\"},\n  \"risco_global\": {\"julgamento\": \"Low\", \"justificativa\": \"The study appears to have low risk of bias overall due to the use of randomisation, allocation concealment, and blinding of outcome assessors.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 356,
+  "dt": 59.4003736,
+  "prompt_tokens": 11045
+}

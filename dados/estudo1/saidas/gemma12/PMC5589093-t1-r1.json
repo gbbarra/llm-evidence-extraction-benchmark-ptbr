@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma12",
+  "ollama": "gemma4:12b",
+  "pmcid": "PMC5589093",
+  "tarefa": "t1",
+  "replica": 1,
+  "inicio": "2026-08-27 20:36:59",
+  "content": "```json\n{\n  \"n_randomizados_gdft\": {\"valor\": \"26\", \"onde\": \"Results\"},\n  \"n_randomizados_controle\": {\"valor\": \"26\", \"onde\": \"Results\"},\n  \"tipo_cirurgia\": {\"valor\": \"pancreaticoduodenectomy (PD)\", \"onde\": \"Introduction\"},\n  \"laparoscopia_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"laparoscopia_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"asa_gdft\": {\"valor\": \"Class I-II 7 (27%); Class \\u2265 III 19 (73%)\", \"onde\": \"Table 1\"},\n  \"asa_controle\": {\"valor\": \"Class I-II 7 (27%); Class \\u2265 III 19 (73%)\", \"onde\": \"Table 1\"},\n  \"fluido_total_gdft\": {\"valor\": \"2050mL (1199:2700)\", \"onde\": \"Table 2\"},\n  \"fluido_total_controle\": {\"valor\": \"4620 (3400:4525)\", \"onde\": \"Table 2\"},\n  \"cristaloide_gdft\": {\"valor\": \"1750 (1000:2100)\", \"onde\": \"Table 2\"},\n  \"cristaloide_controle\": {\"valor\": \"4000 (2313:4206)\", \"onde\": \"Table 2\"},\n  \"coloide_gdft\": {\"valor\": \"200 (0:500)\", \"onde\": \"Table 2\"},\n  \"coloide_controle\": {\"valor\": \"200 (0:500)\", \"onde\": \"Table 2\"},\n  \"perda_sanguinea_gdft\": {\"valor\": \"200 (138:363)\", \"onde\": \"Table 2\"},\n  \"perda_sanguinea_controle\": {\"valor\": \"400 (200:550)\", \"onde\": \"Table 2\"},\n  \"uso_inotropico\": {\"valor\": \"Noradrenaline: 24 (92%); Dopamine/Dobutamine: 12 (46%)\", \"onde\": \"Table 2\"},\n  \"morbidade_eventos_gdft\": {\"valor\": \"19 (73%)\", \"onde\": \"Table 4\"},\n  \"morbidade_eventos_controle\": {\"valor\": \"21 (81%)\", \"onde\": \"Table 4\"},\n  \"mortalidade_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"mortalidade_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"los_hospitalar_gdft\": {\"valor\": \"9.5 days (IQR: 7.0, 14.3)\", \"onde\": \"Results\"},\n  \"los_hospitalar_controle\": {\"valor\": \"12.5 days (IQR: 9.0, 22.3)\", \"onde\": \"Results\"},\n  \"tempo_flatus_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_flatus_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"}\n}\n```",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 921,
+  "dt": 247.478419,
+  "prompt_tokens": 11381
+}

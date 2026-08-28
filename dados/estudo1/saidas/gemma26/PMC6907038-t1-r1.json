@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "PMC6907038",
+  "tarefa": "t1",
+  "replica": 1,
+  "inicio": "2026-08-27 23:14:01",
+  "content": "{\n  \"n_randomizados_gdft\": {\"valor\": \"204\", \"onde\": \"Results\"},\n  \"n_randomizados_controle\": {\"valor\": \"102\", \"onde\": \"Results\"},\n  \"tipo_cirurgia\": {\"valor\": \"open major bowel surgery\", \"onde\": \"Introduction\"},\n  \"laparoscopia_gdft\": {\"valor\": \"0\", \"onde\": \"Methodology\"},\n  \"lapancoscopia_controle\": {\"valor\": \"0\", \"onde\": \"Methodology\"},\n  \"asa_gdft\": {\"valor\": \"ASA I and II\", \"onde\": \"Methodology\"},\n  \"asa_controle\": {\"valor\": \"ASA I and II\", \"onde\": \"Methodology\"},\n  \"fluido_total_gdft\": {\"valor\": \"braço FloTrac: 1842 ml | braço PVI: 1715 ml\", \"onde\": \"Results\"},\n  \"fluido_total_controle\": {\"valor\": \"3200 ml\", \"onde\": \"Results\"},\n  \"cristaloide_gdft\": {\"valor\": \"braço FloTrac: 1842 ml | braço PVI: 1715 ml\", \"onde\": \"Results\"},\n  \"cristaloide_controle\": {\"valor\": \"3200 ml\", \"onde\": \"Results\"},\n  \"coloide_gdft\": {\"valor\": \"braço FloTrac: 400–700 ml | braço PVI: 200–500 ml\", \"onde\": \"Results\"},\n  \"coloide_controle\": {\"valor\": \"0–500 ml\", \"onde\": \"Results\"},\n  \"perda_sanguinea_gdft\": {\"valor\": \"braço FloTrac: NR | braço PVI: NR\", \"onde\": \"Results\"},\n  \"perda_sanguinea_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"uso_inotropico\": {\"valor\": \"only after euvolaemia was ensured\", \"onde\": \"Methods\"},\n  \"morbidade_eventos_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"morbidade_eventos_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"mortalidade_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"mortalidade_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"los_hospitalar_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"los_hospitalar_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"tempo_flatus_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"tempo_flatus_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"tempo_ingesta_oral_gdft\": {\"valor\": \"NR\", \"ao_control: statistically significant difference for days to oral intake between the control group and the PVI group (p=0.046)\", \"onde\": \"Results\"},\n  \"tempo_ingesta_oral_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"tempo_evacuacao_gdft\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"tempo_evacuacao_controle\": {\"valor\": \"NR\", \"onde\": \"Results\"},\n  \"ileo_pos_op_gdft\": {\"valor\": \"NR\", \"onde\": \"Discussion\"},\n  \"ileo_pos_op_controle\": {\"valor\": \"NR\", \"onde\": \"Discussion\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 831,
+  "dt": 142.5738961,
+  "prompt_tokens": 6512
+}

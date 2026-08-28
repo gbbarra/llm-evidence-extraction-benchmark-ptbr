@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "PMC11061212",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-27 22:44:42",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Unclear\", \"justupicativa\": \"O estudo afirma que os pacientes foram randomizados usando código de computador, mas não descreve o método específico utilizado para gerar a sequência aleatória.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"A alocação foi ocultada em envelopes opacos selados que foram abertos imediatamente após o monitoramento do paciente e antes da indução anestésica.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"Low\", \"justificativa\": \"O protocolo de GDFT envolve infusão de bolus, o que é inerentemente difícil de ocultar dos participantes, mas o artigo não menciona cegamento para a equipe que administrou a intervenção.\"},\n  \"ceblamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"Os pacientes foram avaliados no pós-operatório por um anestesiologista que estava cego quanto à alocação do grupo.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo reporta que nenhum paciente foi excluído devido a perda de seguimento, desvio de protocolo ou qualquer outro motivo.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não fornece uma lista completa de todos os desfechos pré-especificados para verificar se todos foram reportados no manuscrito.\"},\n  \"outros_vieses\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo foi realizado em um único centro e descreve o uso de protocolos padrão para monitoramento e anestesia, sem evidências de outros vieses de execução.\"},\n  \"risco_global\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O risco global é incerto devido à falta de detalhes sobre o método de geração da sequência aleatória e sobre a completitude do registro de desfechos pré-especificados.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 468,
+  "dt": 138.4011525,
+  "prompt_tokens": 7372
+}

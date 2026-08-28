@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "PMC4782303",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-27 23:00:45",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo utilizou uma lista gerada por computador para a alocação aleatória em uma proporção de 1:1.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"Um membro da equipe de pesquisa avaliou a elegibilidade dos pacientes e conferiu a lista de randomização antes da indução anestésica.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"High\", \"justificativa\": \"O cegamento de participantes e equipe era impossível, pois a intervenção envolvia administração de fluidos e monitoramento hemodinâmamente distinto entre os grupos.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"O monitor PiCCO® no grupo controle estava coberto e os resultados de termodiluição eram processados por uma pessoa diferente do cuidadente assistencial.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo analisou 180 pacientes e explicou que os 13 excluídos foram retirados por interrupção da cirurgia por achados inesperados, mantendo a análise conforme o protocolo original.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo reportou todos os desfechos primários e secundários pré-especificados, incluindo complicações e mortalidade de um ano.\"},\n  \"outros_vieses\": {\"julgamento\": \"Low\", \"justificativa\": \"Não foram identificadas fontes de viés adicionais além da impossibilidade de cegamento da equipe de tratamento.\"},\n  \"risco_global\": {\"julgamento\": \"High\", \"justificativa\": \"O risco global é alto devido à impossibilidade de cegar a equipe que administra a intervenção e os pacientes.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 447,
+  "dt": 173.8350417,
+  "prompt_tokens": 10916
+}

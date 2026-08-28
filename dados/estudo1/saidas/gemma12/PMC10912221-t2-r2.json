@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma12",
+  "ollama": "gemma4:12b",
+  "pmcid": "PMC10912221",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-27 20:04:16",
+  "content": "```json\n{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os participantes foram alocados aleatoriamente em uma proporção de 1:1 usando números aleatórios gerados pelo Microsoft Excel.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A randomização foi realizada por um assistente sem envolvimento no estudo e os resultados foram armazenados em envelopes selados com números de série.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O anestesista responsável pelo manejo intraoperatório estava ciente da atribuição de cada paciente, impossibilitando o cegamento da equipe de intervenção.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A equipe de acompanhamento pós-operatório permaneceu sem conhecimento sobre a randomização e o manejo intraoperatório, e estatísticos independentes analisaram os dados.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo utilizou uma análise modificada de intenção de tratar para os dados restantes após desistências ou cancelamentos, com uma taxa de retenção alta.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os resultados primários e secundários foram reportados conforme o protocolo, incluindo tabelas detalhadas de complicações e métricas de recuperação.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo seguiu um protocolo de manejo de fluidos padronizado e as variáveis de confusão como tempo de cirurgia e anestesia foram equilibradas entre os grupos.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Apesar do não cegamento da equipe de intervenção, o desenho robusto de randomização, ocultação de alocação e avaliação cega de desfecho mitiga os riscos principais.\"\n  }\n}\n```",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 536,
+  "dt": 69.7076848,
+  "prompt_tokens": 9510
+}

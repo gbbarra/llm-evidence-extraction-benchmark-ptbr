@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "PMC12565272",
+  "tarefa": "t1",
+  "replica": 2,
+  "inicio": "2026-08-27 21:37:37",
+  "content": "{\n  \"n_randomizados_gdft\": {\"valor\": \"19\", \"onde\": \"Abstract\"},\n  \"n_randomizados_controle\": {\"valor\": \"16\", \"onde\": \"Abstract\"},\n  \"tipo_cirurgia\": {\"valor\": \"Major hepatic resection\", \"onde\": \"Abstract\"},\n  \"laparoscopia_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"laparoscopia_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"asa_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"asa_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"fluido_total_gdft\": {\"valor\": \"1035.42 ± 751.2\", \"onde\": \"Results\"},\n  \"fluido_total_controle\": {\"valor\": \"3120.11 ± 1432.18\", \"onde\": \"Results\"},\n  \"cristaloide_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"cristaloide_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"coloide_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"coloide_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"perda_sanguinea_gdft\": {\"valor\": \"292.63 ± 274.06\", \"onde\": \"Results\"},\n  \"perda_sanguinea_controle\": {\"valor\": \"728.13 ± 618.59\", \"onde\": \"Results\"},\n  \"uso_inotropico\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"morbidade_eventos_gdft\": {\"valor\": \"7 ± 18\", \"onde\": \"Results\"},\n  \"morbidade_eventos_controle\": {\"valor\": \"8 ± 16\", \"onde\": \"Results\"},\n  \"mortalidade_gdft\": {\"valor\": \"0 ± 19\", \"onde\": \"Results\"},\n  \"mortalidade_controle\": {\"valor\": \"2 ± 16\", \"onde\": \"Results\"},\n  \"los_hospitalar_gdft\": {\"valor\": \"3.42 ± 1.9\", \"onde\": \"Results\"},\n  \"los_hospitalar_controle\": {\"valor\": \"4.19 ± 4.07\", \"onde\": \"Results\"},\n  \"tempo_flatus_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_flatus_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 732,
+  "dt": 106.5521651,
+  "prompt_tokens": 9892
+}

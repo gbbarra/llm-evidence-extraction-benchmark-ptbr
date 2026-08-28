@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen38",
+  "ollama": "qwen3.8:27b-texto",
+  "pmcid": "PMC4782303",
+  "tarefa": "t1",
+  "replica": 1,
+  "inicio": "2026-08-28 02:03:56",
+  "content": "{\n  \"n_randomizados_gdft\": {\"valor\": \"92\", \"onde\": \"Results\"},\n  \"n_randomizados_controle\": {\"valor\": \"88\", \"onde\": \"Results\"},\n  \"tipo_cirurgia\": {\"valor\": \"Major abdominal surgery (Whipple, Oesophageal, Pancreatectomy, Other)\", \"onde\": \"Abstract, Methods, Table 1\"},\n  \"laparoscopia_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"laparoscopia_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"asa_gdft\": {\"valor\": \"ASA physical status classification 1–3\", \"onde\": \"Methods\"},\n  \"asa_controle\": {\"valor\": \"ASA physical status classification 1–3\", \"onde\": \"Methods\"},\n  \"fluido_total_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"fluido_total_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"cristaloide_gdft\": {\"valor\": \"OP: 2529 ± 2169 ml | ICU: 8597 ± 3147 ml\", \"onde\": \"Table 2\"},\n  \"cristaloide_controle\": {\"valor\": \"OP: 2316 ± 1800 ml | ICU: 8052 ± 3277 ml\", \"onde\": \"Table 2\"},\n  \"coloide_gdft\": {\"valor\": \"OP: 801 ± 1080 ml | ICU: 514 ± 1083 ml\", \"onde\": \"Table 2\"},\n  \"coloide_controle\": {\"valor\": \"OP: 847 ± 1045 ml | ICU: 701 ± 1188 ml\", \"onde\": \"Table 2\"},\n  \"perda_sanguinea_gdft\": {\"valor\": \"0.5 red packed cells units (transfusion rate)\", \"onde\": \"Results\"},\n  \"perda_sanguinea_controle\": {\"valor\": \"0.5 red packed cells units (transfusion rate)\", \"onde\": \"Results\"},\n  \"uso_inotropico\": {\"valor\": \"GDT: OP 0.74 ± 2.61 μg/kg/min, ICU 0.39 ± 1.56 μg/kg/min | Control: OP 0.00 ± 0.03 μg/kg/min, ICU 0.13 ± 0.96 μg/kg/min\", \"onde\": \"Table 2\"},\n  \"morbidade_eventos_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"morbidade_eventos_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"mortalidade_gdft\": {\"valor\": \"In-hospital: 4/92 (4%) | One-year: 22/77 (29%)\", \"onde\": \"Table 3\"},\n  \"mortalidade_controle\": {\"valor\": \"In-hospital: 4/88 (5%) | One-year: 16/77 (21%)\", \"onde\": \"Table 3\"},\n  \"los_hospitalar_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"los_hospitalar_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_flatus_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_flatus_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 968,
+  "dt": 890.0531034,
+  "prompt_tokens": 11558
+}

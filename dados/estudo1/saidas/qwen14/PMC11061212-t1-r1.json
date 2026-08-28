@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "PMC11061212",
+  "tarefa": "t1",
+  "replica": 1,
+  "inicio": "2026-08-27 21:26:25",
+  "content": "{\n  \"n_randomizados_gdft\": {\"valor\": \"43\", \"onde\": \"Results\"},\n  \"n_randomizados_controle\": {\"valor\": \"42\", \"onde\": \"Results\"},\n  \"tipo_cirurgia\": {\"valor\": \"elective medium or major open abdominal surgeries (sigmoidectomy, colectomy, hemicolectomy, splenectomy, recto-sigmoidectomy, pancreatectomy, intestinal transit reconstruction, abdominoperineal amputation, biliary bypass, gastrectomy, exploratory laparotomy, partial hepatectomy, and gastro-pancreatoduodenectomy)\", \"onde\": \"Methods\"},\n  \"laparoscopia_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"laparoscopia_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"asa_gdft\": {\"valor\": \"I: 7 (16%) | II: 28 (72%) | III: 5 (12%)\", \"onde\": \"Table 1\"},\n  \"asa_controle\": {\"valor\": \"I: 11 (26%) | II: 26 (62%) | III: 5 (12%)\", \"onde\": \"Table 1\"},\n  \"fluido_total_gdft\": {\"valor\": \"3585.6 ± 2126.9 mL\", \"onde\": \"Table 2\"},\n  \"fluido_total_controle\": {\"valor\": \"5601.1 ± 2147.3 mL\", \"onde\": \"Table 2\"},\n  \"cristaloide_gdft\": {\"valor\": \"2982.9 ± 1524.0 mL\", \"onde\": \"Table 2\"},\n  \"cristaloide_controle\": {\"valor\": \"3901.2 ± 1475.1 mL\", \"onde\": \"Table 2\"},\n  \"coloide_gdft\": {\"valor\": \"779.7 ± 565.1 mL\", \"onde\": \"Table 2\"},\n  \"coloide_controle\": {\"valor\": \"737.8 ± 383.2 mL\", \"onde\": \"Table 2\"},\n  \"perda_sanguinea_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"perda_sanguinea_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"uso_inotropico\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"morbidade_eventos_gdft\": {\"valor\": \"6 (14%)\", \"onde\": \"Results\"},\n  \"morbidade_eventos_controle\": {\"valor\": \"19 (45%)\", \"onde\": \"Results\"},\n  \"mortalidade_gdft\": {\"valor\": \"2 (5%)\", \"onde\": \"Results\"},\n  \"mortalidade_controle\": {\"valor\": \"4 (10%)\", \"onde\": \"Results\"},\n  \"los_hospitalar_gdft\": {\"valor\": \"9 days\", \"onde\": \"Results\"},\n  \"los_hospitalar_controle\": {\"valor\": \"14.5 days\", \"onde\": \"Results\"},\n  \"tempo_flatus_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_flatus_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 886,
+  "dt": 215.1647933,
+  "prompt_tokens": 8189
+}

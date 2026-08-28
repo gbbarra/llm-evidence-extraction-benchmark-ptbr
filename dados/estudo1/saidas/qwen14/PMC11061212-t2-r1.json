@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "PMC11061212",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-27 21:32:02",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"A randomização foi realizada por geração de código computacional.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"A alocação foi ocultada em envelopes opacos, abertos após a monitorização do paciente.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não menciona se os participantes e a equipe foram cegos ao grupo de alocação.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"A avaliação pós-operatória foi realizada por um anestesiologista cego à alocação do grupo.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não descreve se houve perda de seguimento ou como foram tratados os desfechos incompletos.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo relata todos os desfechos previstos no estudo, incluindo complicações, mortalidade e LOHS.\"},\n  \"outros_vieses\": {\"julgamento\": \"Low\", \"justificativa\": \"Não há menção a outros vieses como influência de terceiros ou desvios do protocolo.\"},\n  \"risco_global\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo apresenta baixo risco de viés em relação aos critérios avaliados pela ferramenta Cochrane.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 388,
+  "dt": 58.8428665,
+  "prompt_tokens": 7568
+}

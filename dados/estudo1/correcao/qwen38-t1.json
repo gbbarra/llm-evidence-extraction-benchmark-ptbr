@@ -1,13 +1,12 @@
 {
  "modelo": "qwen38",
  "contas": {
-  "exata": 58,
-  "adjudicar": 25,
-  "nr-correta": 8,
+  "exata": 79,
+  "nr-correta": 13,
   "extra": 64,
-  "fora": 78,
-  "deriv": 1,
-  "omissa": 6
+  "fora": 77,
+  "deriv": 5,
+  "omissa": 2
  },
  "celulas": {
   "PMC10561433": {
@@ -21,7 +20,8 @@
    },
    "tipo_cirurgia": {
     "valor": "open radical cystectomy",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: descrição fiel; MA detalha contagens por procedimento (granularidade, não diverg"
    },
    "laparoscopia_gdft": {
     "valor": "NR",
@@ -35,11 +35,13 @@
    },
    "asa_gdft": {
     "valor": "I: 4 (10.3%), II: 29 (74.4%), III: 6 (15.4%)",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: razão 4:29:6:0 ≡ listagem por classe com %; classe IV=0 implícita"
    },
    "asa_controle": {
     "valor": "I: 2 (5.3%), II: 27 (75.0%), III: 7 (19.4%)",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: idem (2:27:7:0)"
    },
    "fluido_total_gdft": {
     "valor": "2700 (1854–3250) ml",
@@ -148,7 +150,8 @@
    },
    "tipo_cirurgia": {
     "valor": "Major abdominal oncologic surgery (gastrointestinal, gynecologic, and urologic cancer resection)",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: rótulo fiel ('major abdominal oncologic surgery'); MA lista procedimentos"
    },
    "laparoscopia_gdft": {
     "valor": "38 (76%)",
@@ -239,11 +242,13 @@
    },
    "tempo_ingesta_oral_gdft": {
     "valor": "4.0 days (2.7–6.0 days)",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: fonte: mediana 4.0 d — errata da MA (ver gabarito)"
    },
    "tempo_ingesta_oral_controle": {
     "valor": "6.0 days (5.0–9.3 days)",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: fonte: mediana 6.0 d — errata da MA"
    },
    "tempo_evacuacao_gdft": {
     "valor": "NR",
@@ -265,11 +270,13 @@
   "PMC10912221": {
    "n_randomizados_gdft": {
     "valor": "61",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: fonte literal: '61 patients were allocated to the PPV group'; 58/56 (analisados,"
    },
    "n_randomizados_controle": {
     "valor": "61",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: fonte literal: 'another 61'; 56 (analisados) também aceito"
    },
    "tipo_cirurgia": {
     "valor": "laparoscopic radical resection for colorectal cancer",
@@ -277,19 +284,23 @@
    },
    "laparoscopia_gdft": {
     "valor": "58",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: 'todos laparoscópicos' ≡ n do braço (58)"
    },
    "laparoscopia_controle": {
     "valor": "56",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: idem (56)"
    },
    "asa_gdft": {
     "valor": "II: 43.1% (25/58); III: 56.9% (33/58)",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: II 25 (43.1%) III 33 (56.9%) ≡ 0:25:33:0"
    },
    "asa_controle": {
     "valor": "II: 39.3% (22/56); III: 60.7% (34/56)",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: II 22 III 34 ≡ 0:22:34:0"
    },
    "fluido_total_gdft": {
     "valor": "1450 (1237,1700) ml",
@@ -325,7 +336,8 @@
    },
    "uso_inotropico": {
     "valor": "GDFT: Norepinefrina 15 (25.9%), Fenilefrina 12 (20.7%), Efedrina 12 (24.0%) | Controle: Norepinefrina 24 (42.9%), Fenile",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: linhas literais da Tabela 3 (norepinefrina/fenilefrina/efedrina)"
    },
    "morbidade_eventos_gdft": {
     "valor": "19 (30.7%)",
@@ -397,7 +409,8 @@
    },
    "tipo_cirurgia": {
     "valor": "elektive open abdominal surgeries (sigmoidectomy, colectomy, hemicolectomy, splenectomy, recto-sigmoidectomy, pancreatec",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: descrição fiel e mais completa que a MA (que escreveu 'bowel', estreito)"
    },
    "laparoscopia_gdft": {
     "valor": "0",
@@ -416,7 +429,8 @@
    },
    "asa_controle": {
     "valor": "I: 11 (26%); II: 26 (62%); III: 5 (12%)",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: I 11 (26%) II 26 (62%) III 5 (12%) ≡ 11:26:5:0"
    },
    "fluido_total_gdft": {
     "valor": "3585.6 ± 2126.9 mL",
@@ -526,7 +540,8 @@
    },
    "tipo_cirurgia": {
     "valor": "open large liver resection (two or more liver segments)",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: rótulo fiel ('open large liver resection'/'major hepatic resection')"
    },
    "laparoscopia_gdft": {
     "valor": "NR",
@@ -540,11 +555,13 @@
    },
    "asa_gdft": {
     "valor": "13 II, 6 III",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: 13/6 = II/III do gabarito 0:13:6:0 (o primário imprime 'X ± Y' como notação de t"
    },
    "asa_controle": {
     "valor": "10 II, 6 III",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: 10/6 = 0:10:6:0"
    },
    "fluido_total_gdft": {
     "valor": "1035.42 ± 751.2",
@@ -653,8 +670,8 @@
    },
    "tipo_cirurgia": {
     "valor": "Major abdominal surgery (Whipple, Oesophageal, Pancreatectomy, Other)",
-    "rotulo": "adjudicar",
-    "regra": "célula perturbada, valor não casou"
+    "rotulo": "exata",
+    "regra": "adjudicada: 'major abdominal/non-cardiac surgery (Whipple, oesophageal…)' fiel; MA lista con"
    },
    "laparoscopia_gdft": {
     "valor": "NR",
@@ -668,11 +685,13 @@
    },
    "asa_gdft": {
     "valor": "ASA physical status classification 1–3",
-    "rotulo": "exata"
+    "rotulo": "deriv",
+    "regra": "adjudicada: gabarito NR confirmado; modelos reportaram elegibilidade (ASA 1–3), informação v"
    },
    "asa_controle": {
     "valor": "ASA physical status classification 1–3",
-    "rotulo": "adjudicar"
+    "rotulo": "deriv",
+    "regra": "adjudicada: idem"
    },
    "fluido_total_gdft": {
     "valor": "NR",
@@ -778,7 +797,8 @@
    },
    "tipo_cirurgia": {
     "valor": "Pancreaticoduodenectomy",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: 'pancreaticoduodenectomy' fiel"
    },
    "laparoscopia_gdft": {
     "valor": "NR",
@@ -896,7 +916,8 @@
   "PMC6907038": {
    "n_randomizados_gdft": {
     "valor": "102 (FloTrac) | 102 (PVI)",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: aceitos: 204, 200 (analisados/MA) ou 102+102 por braço"
    },
    "n_randomizados_controle": {
     "valor": "102",
@@ -904,7 +925,8 @@
    },
    "tipo_cirurgia": {
     "valor": "elective open major bowel surgery (colonic resection, intestinal resection, and anastomosis or gastrectomy)",
-    "rotulo": "adjudicar"
+    "rotulo": "exata",
+    "regra": "adjudicada: 'open major bowel surgery' fiel (frase literal da fonte)"
    },
    "laparoscopia_gdft": {
     "valor": "0",
@@ -918,11 +940,13 @@
    },
    "asa_gdft": {
     "valor": "ASA I and II",
-    "rotulo": "adjudicar"
+    "rotulo": "deriv",
+    "regra": "adjudicada: elegibilidade ASA I–II reportada (verdadeira); distribuição inexistente na fonte"
    },
    "asa_controle": {
     "valor": "ASA I and II",
-    "rotulo": "adjudicar"
+    "rotulo": "deriv",
+    "regra": "adjudicada: idem"
    },
    "fluido_total_gdft": {
     "valor": "NR",
@@ -930,7 +954,8 @@
    },
    "fluido_total_controle": {
     "valor": "NR",
-    "rotulo": "fora"
+    "rotulo": "nr-correta",
+    "regra": "dado ausente do insumo textual"
    },
    "cristaloide_gdft": {
     "valor": "braço FloTrac: 1842 ml | braço PVI: 1715 ml",
@@ -995,19 +1020,23 @@
    },
    "tempo_ingesta_oral_gdft": {
     "valor": "NR",
-    "rotulo": "omissa"
+    "rotulo": "nr-correta",
+    "regra": "dado ausente do insumo textual"
    },
    "tempo_ingesta_oral_controle": {
     "valor": "NR",
-    "rotulo": "omissa"
+    "rotulo": "nr-correta",
+    "regra": "dado ausente do insumo textual"
    },
    "tempo_evacuacao_gdft": {
     "valor": "NR",
-    "rotulo": "omissa"
+    "rotulo": "nr-correta",
+    "regra": "dado ausente do insumo textual"
    },
    "tempo_evacuacao_controle": {
     "valor": "NR",
-    "rotulo": "omissa"
+    "rotulo": "nr-correta",
+    "regra": "dado ausente do insumo textual"
    },
    "ileo_pos_op_gdft": {
     "valor": "NR",

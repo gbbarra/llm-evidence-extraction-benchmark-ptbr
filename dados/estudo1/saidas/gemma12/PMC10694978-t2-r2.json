@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma12",
+  "ollama": "gemma4:12b",
+  "pmcid": "PMC10694978",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-27 19:52:40",
+  "content": "```json\n{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os pacientes foram randomizados em uma base de um para um utilizando um sistema de envelope fechado, o que indica uma sequência de randomização robusta.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O uso de um sistema de envelope fechado por pessoal de pesquisa não envolvido no tratamento garante a ocultação da alocação até o momento da intervenção.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"Os autores admitem explicitamente que a equipe de anestesia e os investigadores no centro cirúrgico não puderam ser cegados devido à presença do monitor de tendência hemodinâmica.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O texto afirma que os avaliadores pós-operatórios foram cegados em relação à alocação dos pacientes.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo seguiu um fluxo CONSORT onde 100 de 110 pacientes completaram o protocolo, e nenhum paciente foi perdido no acompanhamento de 30 dias.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os resultados primários (tempo de flatos, dieta e duração da internação) e secundários foram reportados de forma clara e completa conforme o desenho do estudo.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo utilizou protocolos padronizados de manejo de fluidos e critérios de alta padronizados, minimizando variações aleatórias no tratamento.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"Embora o desenho seja robusto, o não cegamento da equipe de intervenção (anestesistas) no ambiente cirúrgico introduz risco de viés de performance.\"\n  }\n}\n```",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 542,
+  "dt": 70.6615586,
+  "prompt_tokens": 9094
+}

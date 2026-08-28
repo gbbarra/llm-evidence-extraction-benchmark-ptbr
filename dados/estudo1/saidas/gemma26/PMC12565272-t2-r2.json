@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "PMC12565272",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-27 22:54:49",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo afirma que a randomização foi realizada no dia anterior à cirurgia usando envelopes opacos selados armazenados em recipientes não transparentes.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A ocultação da alocação foi garantida pelo uso de envelopes opacos selados e não transparentes para o processo de randomização.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O artigo declara que o cegamento dos provedores de cuidados e investigadores não era viável devido ao uso de dispositivos de monitoramento do índice cardíaco, e os pacientes sabiam sua alocação.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Unclear\",\n    \"justificativa\": \"O artigo não fornece informações sobre se os avaliadores dos desfechos (como análise de prontuários e visitas à enfermaria) foram cegados.\"\n  },\n  \"dados_desforcho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo reportou que nenhum paciente foi excluído ou retirado do estudo após a randomização (N=35), indicando a análise de todos os participantes.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo detalha tanto os desfechos primários quanto os secundários e descreve o protocolo de análise estatística utilizado.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Não foram identificados fatores de confusão ou problemas metodológicos adicionais além da impossibilidade de cegamento da equipe devido à intervenção tecnológica.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O risco é alto devido à impossibilidade de realizar o cegamento dos participantes e da equipe de cuidados, o que pode introduzir viés de performance.\"\n  }\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 525,
+  "dt": 50.0717148,
+  "prompt_tokens": 9089
+}

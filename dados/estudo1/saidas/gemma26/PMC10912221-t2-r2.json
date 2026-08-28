@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "PMC10912221",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-27 22:38:25",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo utilizou um número aleatório gerado pelo Microsoft Excel para a atribuição dos participantes.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A alocação foi armazenada em envelopes lacrados com números de série e realizada por um assistente não envolvido no estudo.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"Unclear\",\n    \"justificativa\": \"O artigo menciona que o anestesiologista responsável pela gestão estava ciente da atribuição, mas não especifica se os pacientes foram cegados.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A equipe de acompanhamento pós-operatório permaneceu ignorante tanto da randomização quanto da gestão intraoperativa.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Foi realizada uma análise de intenção de tratar modificada, considerando os 114 pacientes que completaram o protocolo após as perdas por retirada de consentimento ou cancelamento de cirurgia.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo reportou todos os desfechos primários e secundários planejados, incluindo complicações, parâmetros fisiológicos e consumo de opioides.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo foi registrado no Chinese Clinical Trial Registry, o que auxilia na transparência do desenho experimental.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O ensaio apresenta baixo risco de viés, com métodos robustos de randomização, alocação e avaliação de desfechos por equipe cega, apesar da impossibilidade de cegar a intervenção clínica.\"\n  }\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 509,
+  "dt": 59.5703799,
+  "prompt_tokens": 9510
+}

@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "PMC6907038",
+  "tarefa": "t1",
+  "replica": 2,
+  "inicio": "2026-08-27 22:00:59",
+  "content": "{\n  \"n_randomizados_gdft\": {\"valor\": \"204\", \"onde\": \"Results\"},\n  \"n_randomizados_controle\": {\"valor\": \"102\", \"onde\": \"Results\"},\n  \"tipo_cirurgia\": {\"valor\": \"open major bowel surgery (e.g., colonic resection, intestinal resection, anastomosis or gastrectomy)\", \"onde\": \"Materials and Methods\"},\n  \"laparoscopia_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"laparoscopia_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"asa_gdft\": {\"valor\": \"ASA I and II\", \"onde\": \"Materials and Methods\"},\n  \"asa_controle\": {\"valor\": \"ASA I and II\", \"onde\": \"Materials and Methods\"},\n  \"fluido_total_gdft\": {\"valor\": \"FloTrac group: 1842 ml | PVI group: 1715 ml\", \"onde\": \"Results\"},\n  \"fluido_total_controle\": {\"valor\": \"3200 ml\", \"onde\": \"Results\"},\n  \"cristaloide_gdft\": {\"valor\": \"FloTrac group: 1842 ml | PVI group: 1715 ml\", \"onde\": \"Results\"},\n  \"cristaloide_controle\": {\"valor\": \"3200 ml\", \"onde\": \"Results\"},\n  \"coloide_gdft\": {\"valor\": \"FloTrac group: 400–700 ml | PVI group: 200–500 ml\", \"onde\": \"Results\"},\n  \"coloide_controle\": {\"valor\": \"0–500 ml\", \"onde\": \"Results\"},\n  \"perda_sanguinea_gdft\": {\"valor\": \"FloTrac group: higher than PVI group\", \"onde\": \"Results\"},\n  \"perda_sanguinea_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"uso_inotropico\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"morbidade_eventos_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"morbidade_eventos_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"mortalidade_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"mortalidade_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"los_hospitalar_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"los_hospitalar_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_flatus_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_flatus_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_ingesta_oral_controle\": {\"valor\": \"statistically significant but clinically insignificant difference between control and PVI groups (p = 0.046)\", \"onde\": \"Results\"},\n  \"tempo_evacuacao_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 809,
+  "dt": 109.5011277,
+  "prompt_tokens": 6615
+}

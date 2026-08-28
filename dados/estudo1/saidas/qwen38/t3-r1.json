@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen38",
+  "ollama": "qwen3.8:27b-texto",
+  "pmcid": null,
+  "tarefa": "t3",
+  "replica": 1,
+  "inicio": "2026-08-28 03:37:53",
+  "content": "Oito ensaios clínicos randomizados avaliaram a fluidoterapia guiada por metas (GDFT) em cirurgia abdominal de grande porte, com populações variando de 19 a 102 participantes por braço, incluindo procedimentos oncológicos e hepáticos, abertos ou laparoscópicos. A GDFT reduziu consistentemente o volume total de fluidos administrados em todos os ensaios que reportaram esse dado, o que possivelmente contribuiu para os desfechos clínicos observados.\n\nQuanto à morbidade pós-operatória, seis dos oito ensaios demonstraram uma redução significativa no número de eventos na coorte GDFT. As magnitudes variaram de uma redução modesta (de 73,0% para 67,4%) a reduções acentuadas (de 64,9% para 30,7% e de 26% para 12%). Um estudo não reportou morbidade específica, e outro apresentou dados insuficientes para comparação direta. A direção do efeito foi majoritariamente favorável à GDFT, embora a heterogeneidade na definição e frequência das complicações limite a comparação precisa entre estudos.\n\nEm relação à mortalidade, apenas quatro ensaios forneceram dados, com resultados heterogêneos. Dois estudos indicaram tendência favorável à GDFT (mortalidade de 0% contra 2%, e 0% contra 5%), um não demonstrou diferença (4% contra 5%), e outro reportou uma única óbito na GDFT sem óbito no controle. A baixa incidência de mortalidade nos grupos torna os dados imprecisos, e a consistência entre os estudos é baixa, sem evidência robusta de benefício ou dano.\n\nO tempo de internação hospitalar foi reportado em cinco ensaios. Três estudos mostraram redução favorável à GDFT, com variações de 1 a 3 dias de menor permanência. Dois estudos, porém, não demonstraram diferenças clinicamente significativas ou até um ligeiro aumento na GDFT. A evidência sugere um possível benefício, mas com heterogeneidade considerável nos resultados.\n\nSobre a função intestinal, quatro ensaios detalharam a recuperação gastrointestinal. Três demonstraram tempo significativamente mais curto para retorno de flatus, ingesta oral e evacuação na GDFT, com reduções de horas a dias. Um estudo não reportou esses dados específicos. A direção do efeito é consistentemente favorável à GDFT na aceleração da recuperação intestinal, com magnitude qualitativa moderada a substancial.",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 542,
+  "dt": 697.6317926,
+  "prompt_tokens": 9196
+}

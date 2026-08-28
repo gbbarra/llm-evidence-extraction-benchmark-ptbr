@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "PMC6907038",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-27 23:17:41",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo utilizou números aleatórios gerados por computador e a técnica de envelope selado para a randomização.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"O processo de randomização foi realizado pelo segundo investigador utilizando a técnica de envelope selado.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"High\", \"justificativa\": \"Não há menção ao cegamento dos participantes ou da equipe de anestesia, o que é esperado dado que as intervenções envolvem monitoramento e infusão de fluidos visíveis.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não especifica se os avaliadores que coletaram os dados de desfecho (como complicações e tempo de internação) estavam cegados.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo descreve a exclusão de 5 pacientes por serem inoperáveis e detalha o acompanhamento pós-operatório de todos os demais participantes.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo reporta tanto os resultados primários (morbidade) quanto os secundários (lactato, tempo de UTI, mortalidade, etc.) de forma abrangente.\"},\n  \"outros_vieses\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo foi prospectivo e randomizado, seguindo um protocolo de acompanhamento padronizado para todos os grupos.\"},\n  \"risco_global\": {\"julgamento\": \"High\", \"justificativa\": \"O risco global é alto devido à provável falta de cegamento da equipe e dos participantes durante a intervenção clínica.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 438,
+  "dt": 111.0066868,
+  "prompt_tokens": 5862
+}

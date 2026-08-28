@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "PMC4782303",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-27 21:48:34",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"A randomização foi feita usando uma lista gerada por computador.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Não há menção explícita sobre a ocultação da alocação dos participantes.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"High\", \"justificativa\": \"O estudo não menciona cegamento dos participantes ou da equipe de cuidados.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Não há menção sobre o cegamento dos avaliadores dos desfechos.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Há menção de que alguns dados não estão disponíveis devido a falhas no sistema de registro, mas não se sabe se isso afetou os desfechos.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"Não há indicação de seleção seletiva no relato dos resultados.\"},\n  \"outros_vieses\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Não há menção de outros vieses potenciais, como influência de financiadores ou conflitos de interesse.\"},\n  \"risco_global\": {\"julgamento\": \"High\", \"justificativa\": \"O risco global de viés é alto devido à ausência de cegamento e possíveis vieses de alocação e avaliação.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 374,
+  "dt": 55.0171315,
+  "prompt_tokens": 11020
+}

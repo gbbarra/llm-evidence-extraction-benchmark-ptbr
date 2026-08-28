@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma12",
+  "ollama": "gemma4:12b",
+  "pmcid": "PMC4782303",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-27 20:35:48",
+  "content": "```json\n{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os pacientes foram alocados aleatoriamente em uma proporção de 1:1 usando uma lista gerada por computador.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A lista de randomização foi avaliada por um membro da equipe de pesquisa antes da indução da anestesia.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"A equipe de anestesia e a equipe de pesquisa sabiam a qual grupo o paciente pertencia, e o monitor PiCCO não foi ocultado do clínico no grupo GDT.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O tratamento foi baseado em algoritmos de monitoramento em tempo real conhecidos pela equipe médica e os desfechos foram avaliados clinicamente.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Embora 13 pacientes tenham sido excluídos por motivos cirúrgicos e 17 não foram contatados para acompanhamento de 1 ano, os dados de desfecho primário não foram afetados por desequilíbrio de alocação.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os resultados foram comparados conforme os desfechos primários e secundários pré-especificados, incluindo análises de desfechos exploratórios.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo seguiu um protocolo de randomização prospectiva e as variáveis de confusão foram avaliadas em uma análise de regressão multivariada.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O risco de viés é alto devido à falta de cegamento de participantes, equipe e avaliadores de desfecho em um cenário de intervenção clínica ativa.\"\n  }\n}\n```",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 540,
+  "dt": 71.1348386,
+  "prompt_tokens": 10916
+}

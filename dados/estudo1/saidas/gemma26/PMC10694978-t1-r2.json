@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "PMC10694978",
+  "tarefa": "t1",
+  "replica": 2,
+  "inicio": "2026-08-27 22:22:53",
+  "content": "{\n  \"n_randomizados_gdft\": {\"valor\": \"50\", \"onde\": \"Results\"},\n  \"n_randomizados_controle\": {\"valor\": \"50\", \"onde\": \"Results\"},\n  \"tipo_cirurgia\": {\"valor\": \"major abdominal oncologic surgery\", \"onde\": \"Background and objective\"},\n  \"laparoscopia_gdft\": {\"valor\": \"38 (76%)\", \"onde\": \"Table 2\"},\n  \"laparmoscopia_controle\": {\"valor\": \"31 (62%)\", \"onde\": \"Table 2\"},\n  \"asa_gdft\": {\"valor\": \"6 (12%) ASA 1; 36 (72%) ASA 2; 8 (16%) ASA 3\", \"onde\": \"Table 2\"},\n  \"asa_controle\": {\"valor\": \"8 (16%) ASA 1; 33 (66%) ASA 2; 9 (18%) ASA 3\", \"onde\": \"Table 2\"},\n  \"fluido_total_gdft\": {\"valor\": \"1975 ml (1474-2600 ml)\", \"onde\": \"Table 3\"},\n  \"fluido_total_controle\": {\"valor\": \"2906 ml (2250-3300 ml)\", \"onde\": \"Table 3\"},\n  \"cristaloide_gdft\": {\"valor\": \"1600 ml (913 ml-2100 ml)\", \"onde\": \"Table 3\"},\n  \"cristaloide_controle\": {\"valor\": \"2200 ml (2025-2513 ml)\", \"onde\": \"Table 3\"},\n  \"coloide_gdft\": {\"valor\": \"500 ml (500-1000 ml)\", \"onde\": \"Table 3\"},\n  \"coloide_controle\": {\"valor\": \"500 ml (0-1000 ml)\", \"onde\": \"Table 3\"},\n  \"perda_sanguinea_gdft\": {\"valor\": \"100 ml (50–225)\", \"onde\": \"Table 3\"},\n  \"perda_sanguinea_controle\": {\"valor\": \"100 ml (0-350)\", \"onde\": \"Table 3\"},\n  \"uso_inotropico\": {\"valor\": \"braço G: 6 (30%) | braço C: 2 (10%)\", \"onde\": \"Table 3 (derived from Dobutamine/Ephedrine/etc counts)\"},\n  \"morbidade_eventos_gdft\": {\"valor\": \"6 (12%)\", \"onde\": \"Table 5\"},\n  \"morbidade_eventos_controle\": {\"valor\": \"13 (26%)\", \"onde\": \"Table 5\"},\n  \"mortalidade_gdft\": {\"valor\": \"1 (2%)\", \"onde\": \"Table 5\"},\n  \"mortalidade_controle\": {\"valor\": \"0 (0%)\", \"onde\": \"Table 5\"},\n  \"los_hospitalar_gdft\": {\"valor\": \"9.0 ± 5.8 days\", \"onde\": \"Results\"},\n  \"los_hospitalar_controle\": {\"valor\": \"12.0 ± 4.6 days\", \"onde\": \"Results\"},\n  \"tempo_flatus_gdft\": {\"valor\": \"28.2 h (9.2–48.0 h)\", \"onde\": \"Table 4\"},\n  \"tempo_flatus_controle\": {\"valor\": \"39.4 h (24.9–67.5 h)\", \"onde\": \"Table 4\"},\n  \"tempo_ingesta_oral_gdft\": {\"valor\": \"4.0 days (2.7–6.0 days)\", \"onde\": \"Table 4\"},\n  \"tempo_ingesta_oral_controle\": {\"valor\": \"6.0 days (5.0–9.3 days)\", \"onde\": \"Table 4\"},\n  \"tempo_evacuacao_gdft\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"tempo_evacuacao_controle\": {\"valor\": \"NR\", \"onde\": \"NR\"},\n  \"ileo_pos_op_gdft\": {\"valor\": \"2 (4%)\", \"onde\": \"Results\"},\n  \"ileo_pos_op_controle\": {\"valor\": \"16 (32%)\", \"onde\": \"Results\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 1025,
+  "dt": 115.800937,
+  "prompt_tokens": 9744
+}

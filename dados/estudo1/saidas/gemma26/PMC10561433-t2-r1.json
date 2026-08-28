@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "PMC10561433",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-27 22:14:23",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo utilizou uma lista gerada por computador com blocos de quatro e seis para a alocação aleatória.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"As alocações dos grupos foram seladas em envelopes opacos por um investigador não envolvido no estudo.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O cegamento dos anestesiologistas foi impossível, pois eles gerenciaram os pacientes de acordo com a alocação do grupo.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os investigadores que avaliaram os desfechos pós-operatórios e os cirurgiões estavam cegados quanto à alocação dos grupos.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo realizou análise por protocolo e análise de intenção de tratar como análise de sensibilidade, abordando perdas como a exclusão de sete pacientes por violações de protocolo ou dados ausentes.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O artigo reporta todos os desfechos primários e secundários planejados, incluindo complicações, tempo de internação e resultados laboratoriais.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo foi registrado no ClinicalTrials.gov, o que auxilia na transparência do protocolo e dos resultados.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O risco global é alto devido à impossibilidade de cegar a equipe de intervenção (anestesiologistas), o que pode influenciar o manejo clínico.\"\n  }\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 504,
+  "dt": 199.3185837,
+  "prompt_tokens": 10025
+}

@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma12",
+  "ollama": "gemma4:12b",
+  "pmcid": null,
+  "tarefa": "t3",
+  "replica": 1,
+  "inicio": "2026-08-27 20:56:48",
+  "content": "A síntese do corpo de evidência sobre o impacto da fluidoterapia guiada por metas (GDFT) em comparação com a fluidoterapia convencional em cirurgia abdominal de grande porte revela dados variados quanto aos desfechos clínicos. Em relação à morbidade pós-operatória, os ensaios apresentam resultados inconsistentes. Enquanto o estudo de Sun et al. (2023) sugere um benefício da GDFT (12% vs. 26% de eventos), o estudo de Yoon et al. (2023) e o de Redondo et al. (2025) mostram taxas de morbidade semelhantes entre os grupos. Em outros casos, como em Castro et al. (2024) e Sujatha et al. (2019), os dados sobre morbidade são ambíguos ou comparáveis, dificultando a identificação de uma tendência clara.\n\nQuanto à mortalidade, a evidência é limitada. O estudo de Castro et al. (2024) aponta uma taxa menor no grupo GDFT (5% vs. 10%), enquanto o estudo de Redondo et al. (2025) reporta valores comparáveis em termos de sobrevivência global. No ensaio de Sujatha et al. (2019), a mortalidade foi descrita como comparável entre os grupos. Em outros três estudos, o dado não foi reportado (NR), resultando em uma incerteza elevada para este desfecho.\n\nO tempo de internação hospitalar (LOS) mostra uma tendência favorável à GDFT em três ensaios (Sun et al., 2023; Redondo et al., 2025; Weinberg et al., 2017), onde a média de dias foi menor no grupo GDFT. No entanto, no estudo de Sujatha et al. (2019), a permanência hospitalar foi considerada comparável. Nos demais ensaios, o dado não foi reportado.\n\nNo que diz respeito à função intestinal, os dados são escassos e inconsistentes. O estudo de Sun et al. (2023) mostra uma redução significativa no tempo de flatus e na ingesta oral no grupo GDFT, além de uma taxa de íleo pós-operatório substancialmente menor (4% vs. 32%). Por outro lado, o estudo de Wu et al. (2024) indica que os tempos de flatus e ingesta oral são menores no grupo GDFT, embora o íleo não tenha sido reportado. O estudo de Sujatha et al. (2019) aponta resultados comparáveis para flatus e evacuação, com uma diferença estatística, mas clinicamente insignificante, na ingesta oral para o grupo PVI. Nos demais ensaios, os parâmetros de função intestinal não foram reportados.",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 614,
+  "dt": 188.3944253,
+  "prompt_tokens": 9993
+}

@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "PMC11061212",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-27 21:33:01",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo utilizou geração de código por computador para randomização.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"A alocação foi ocultada em envelopes opacos, abertos após monitoramento do paciente.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Não há menção explícita sobre o cegamento dos participantes e da equipe de intervenção.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"O avaliador dos desfechos foi cego em relação à alocação dos grupos.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Não há menção sobre como foram tratados os dados de desfecho incompletos ou perda de seguimento.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo relata todos os desfechos previamente definidos, incluindo PPC, LOHS e mortalidade.\"},\n  \"outros_vieses\": {\"julgamento\": \"Low\", \"justificativa\": \"Não há indicação de outros vieses, como influência do investigador sobre o desfecho.\"},\n  \"risco_global\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo apresenta baixo risco de viés em todos os domínios avaliados, com randomização adequada, alocação oculta e avaliação cega dos desfechos principais.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 388,
+  "dt": 53.4081419,
+  "prompt_tokens": 7568
+}

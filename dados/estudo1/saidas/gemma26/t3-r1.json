@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": null,
+  "tarefa": "t3",
+  "replica": 1,
+  "inicio": "2026-08-27 23:20:12",
+  "content": "A análise dos oito ensaios clínicos randomizados permite observar padrões distintos nos desfechos clínicos da fluidoterapia guiada por metas (GDFT) em cirurgias abdominais de grande porte. No que diz respeito à morbidade pós-operatória, os dados sugerem uma tendência de benefício para a GDFT, embora com heterogeneidade. Em três ensaios que reportaram dados comparáveis (Sun et al., 2023; Wu et al., 2024; Castro et al., 2024), observou-se uma redução expressiva nas taxas de eventos de morbidade no braço GDFT em comparação ao controle (ex: 12% vs 26% em Sun et al.; 30,7% vs 64,9% em Wu et al.; e 14% vs 45% em Castro et al.). Entretanto, outros estudos não reportaram valores para este desfecho ou apresentaram resultados sem diferença clara, como visto em Weinberg et al. (2017), onde as taxas foram de 73% vs 81%.\n\nQuanto à mortalidade, os dados são escassos e inconclusivos devido ao baixo número de relatos. Em ensaios que forneceram números, não houve uma diferença consistente que favorecesse um grupo sobre o outro; os resultados variaram de uma leve redução em Redondo et al. (2025) (0% vs 2%) a taxas similares em Schmid et al. (2016) (4% vs 5%) e Castro et al. (2024) (5% vs 10%).\n\nEm relação ao tempo de internação hospitalar (LOS), a evidência é inconsistente. Alguns estudos sugerem uma redução do tempo de permanência com a GDFT (Sun et al., 2023: 9 vs 12 dias; Weinberg et al., 2017: 9,5 vs 12,5 dias), enquanto outros indicam ausência de diferença significativa (Castro et al., 2024: 11,5 vs 11,1 dias; Redondo et al., 2025: 3,42 vs 4,19 dias).\n\nNo desfecho de função intestinal, os dados são fragmentados. O íleo pós-operatório foi reportado em três estudos, mostrando uma tendência de favorabilidade à GDFT, especialmente em Sun et al. (2023), que apresentou uma redução drástica de 32% no grupo controle para 4% no grupo GDFT. Para os desfechos de tempo até flatus, ingesta oral e evacuação, as evidências são insuficientes para uma conclusão definitiva, pois muitos estudos não reportaram esses dados (NR), e nos que o fizeram, os resultados variaram entre reduções de tempo (Sun et al., 2023; Wu et al., 2024) e ausência de dados comparáveis.",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 641,
+  "dt": 163.9967518,
+  "prompt_tokens": 7852
+}

@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "PMC10694978",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-27 21:15:09",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"Os pacientes foram aleatorizados usando um sistema de envelope fechado, o que sugere geração adequada de sequência aleatória.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"A alocação foi ocultada por meio de envelopes opacos numerados consecutivamente, preparados por uma pessoa não envolvida no estudo.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não menciona se os participantes e a equipe foram cegos ao grupo de alocação, embora mencione que os cuidadores e investigadores no quarto cirúrgico não puderam ser cegos devido ao monitor de CI.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Low\", \"justificativa\": \"Os avaliadores pós-operatórios foram cegos à alocação dos grupos, conforme relatado no artigo.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo relata que 100 pacientes completaram o protocolo e que nenhum foi perdido no acompanhamento de 30 dias, indicando que os dados dos desfechos foram completos.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo relata os resultados primários e secundários de forma completa, sem evidência de relato seletivo.\"},\n  \"outros_vieses\": {\"julgamento\": \"Unclear\", \"justificativa\": \"Não há menção explícita sobre outros vieses potenciais, como influências externas ou manipulação dos dados, o que torna o julgamento incerto.\"},\n  \"risco_global\": {\"julgamento\": \"Low\", \"justificativa\": \"O estudo apresenta uma metodologia robusta, com aleatorização, ocultação de alocação e cegamento dos avaliadores, resultando em baixo risco de viés global.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 491,
+  "dt": 75.9111764,
+  "prompt_tokens": 9145
+}

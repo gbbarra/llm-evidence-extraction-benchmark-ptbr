@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma12",
+  "ollama": "gemma4:12b",
+  "pmcid": "PMC11061212",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-27 20:13:56",
+  "content": "```json\n{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo foi randomizado e utilizou geração de código por computador para a alocação dos pacientes.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A alocação dos pacientes foi selada em envelopes opacos que foram abertos apenas após o monitoramento inicial e antes da indução anestésica.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O estudo foi realizado em ambiente de bloco cirúrgico onde o anestesista não poderia permanecer cego à intervenção de fluidoterapia durante a execução do protocolo.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os pacientes foram avaliados por um anestesista que estava cegado quanto à alocação do grupo em relação à incidência de PPC.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O texto afirma que nenhum paciente foi excluído do estudo devido a perda de seguimento ou desvio de protocolo.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os resultados reportados incluem tanto os desfechos primários quanto os secundários (mortalidade e tempo de internação) para ambos os grupos.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo utilizou critérios de inclusão claros e uma amostra calculada para garantir poder estatístico para o desfecho primário.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Apesar do impossível cegamento da equipe executora, o desenho de randomização, ocultação de alocação e cegamento do avaliador do desfecho minimizam o risco de viés.\"\n  }\n}\n```",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 517,
+  "dt": 64.6666634,
+  "prompt_tokens": 7372
+}

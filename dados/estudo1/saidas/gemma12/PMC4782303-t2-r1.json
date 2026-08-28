@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma12",
+  "ollama": "gemma4:12b",
+  "pmcid": "PMC4782303",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-27 20:32:45",
+  "content": "```json\n{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os pacientes foram alocados aleatoriamente em uma proporção de 1:1 utilizando uma lista gerada por computador.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Um membro da equipe de pesquisa avaliou a lista de randomização antes da indução da anestesia.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O estudo foi realizado em um ambiente de terapia intensiva e centro cirúrgico onde a equipe assistencial não poderia ser cegada ao regime de tratamento.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"A equipe de saúde não pôde ser cegada para a intervenção devido à natureza da gestão hemodinâmica durante a cirurgia e na UTI.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Embora 13 pacientes tenham sido excluídos por razões clínicas e alguns dados de seguimento de 1 ano tenham faltado, os desfechos primários e secundários foram analisados adequadamente para os grupos.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os resultados reportados incluem os desfechos primários, secundários e análises exploratórias conforme planejado no protocolo.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O uso de um monitor PiCCO oculto no grupo controle minimizou o impacto da consciência do monitor na tomada de decisão clínica.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"A falta de cegamento da equipe e dos avaliadores de desfecho devido à natureza da intervenção clínica introduz risco de viés, embora a randomização e ocultação de alocação sejam robustas.\"\n  }\n}\n```",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 528,
+  "dt": 182.9385528,
+  "prompt_tokens": 10916
+}

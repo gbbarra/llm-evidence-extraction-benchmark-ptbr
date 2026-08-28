@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": "PMC12565272",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-27 21:39:24",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo menciona que a randomização foi realizada por envelopes selados, garantindo uma geração aleatória adequada.\"},\n  \"ocultacao_alocacao\": {\"julgamento\": \"Low\", \"justificativa\": \"A alocação foi feita por envelopes selados e opacos, o que sugere ocultação adequada da alocação.\"},\n  \"cegamento_participantes_equipe\": {\"julgamento\": \"High\", \"justificativa\": \"O artigo afirma que não foi possível cegar os cuidadores e investigadores devido ao uso de dispositivos de monitoramento cardíaco, indicando falta de cegamento.\"},\n  \"cegamento_avaliadores_desfecho\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não menciona se os avaliadores dos desfechos foram cegos ou não.\"},\n  \"dados_desfecho_incompletos\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não descreve se houve perda de seguimento ou se todos os desfechos foram reportados.\"},\n  \"relato_seletivo\": {\"julgamento\": \"Low\", \"justificativa\": \"O artigo relata todos os desfechos previamente definidos, sem indicação de relato seletivo.\"},\n  \"outros_vieses\": {\"julgamento\": \"Unclear\", \"justificativa\": \"O artigo não menciona se houve outros vieses, como influência de cuidadores ou desvios do protocolo.\"},\n  \"risco_global\": {\"julgamento\": \"High\", \"justificativa\": \"Devido à falta de cegamento dos cuidadores e investigadores, e à possibilidade de outros vieses não reportados, o risco global é alto.\"}\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 427,
+  "dt": 67.1512997,
+  "prompt_tokens": 9271
+}

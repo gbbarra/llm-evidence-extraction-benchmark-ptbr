@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "PMC10694978",
+  "tarefa": "t2",
+  "replica": 2,
+  "inicio": "2026-08-27 22:27:59",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Unclear\",\n    \"justificativa\": \"O artigo afirma que os pacientes foram divididos aleatoriamente usando um sistema de envelopes fechados, mas não descreve o método utilizado para gerar a sequência aleatória.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A alocação foi ocultada através de um sistema de envelopes opacos, numerados consecutivamente e selados por um pessoal de pesquisa não envolvido no estudo.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Os pacientes foram cegados quanto à alocação do grupo, embora os profissionais de cuidados e investigadores no centro cirúrgico não pudessem ser cegados devido ao uso do monitor de tendência de índice cardíaco.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O artigo declara que os avaliadores pós-operatórios foram cegados quanto à alocação dos grupos.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A análise foi realizada seguindo o princípio de intenção de tratar modificada e o estudo reportou a exclusão de 10 pacientes após a randomização por critérios pré-definidos.\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo reportou tanto os desfechos primários quanto os secundários, incluindo complicações e mortalidade, seguindo as diretrizes CONSORT.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo descreve protocolos de manejo intraoperatório e pós-operatório padronizados para ambos os grupos, minimizando vieses adicionais.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo apresenta baixo risco de viés, com boa ocultação de alocação, cegamento de avaliadores e seguimento completo, apesar da impossibilidade de cegar a equipe de execução da intervenção.\"\n  }\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 552,
+  "dt": 57.971942,
+  "prompt_tokens": 9094
+}

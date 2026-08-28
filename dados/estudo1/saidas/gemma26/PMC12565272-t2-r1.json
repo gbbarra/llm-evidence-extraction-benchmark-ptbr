@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": "PMC12565272",
+  "tarefa": "t2",
+  "replica": 1,
+  "inicio": "2026-08-27 22:52:21",
+  "content": "{\n  \"geracao_sequencia_aleatoria\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo afirma que os pacientes foram randomizados em partes iguais utilizando envelopes opacos selados contendo a alocação.\"\n  },\n  \"ocultacao_alocacao\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"A alocação foi feita no dia anterior à cirurgia através de envelopes opacos selados armazenados em recipientes não transparentes.\"\n  },\n  \"cegamento_participantes_equipe\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O artigo declara que o cegamento dos prestadores de cuidados e investigadores não era viável devido ao uso de dispositivos de monitoramento do índice cardíaco.\"\n  },\n  \"cegamento_avaliadores_desfecho\": {\n    \"julgamento\": \"Unclear\",\n    \"justificativa\": \"O artigo não fornece informações sobre se os avaliadores que analisaram os desfechos laboratoriais e clínicos foram cegados.\"\n  },\n  \"dados_desfecho_incompletos\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo reporta que nenhum paciente foi excluído ou retirado após a randomização (N = 35).\"\n  },\n  \"relato_seletivo\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"O estudo detalha todos os desfechos primários e secundpos previstos no protocolo, incluindo parâmetros laboratoriais, uso de fluidos e complicações.\"\n  },\n  \"outros_vieses\": {\n    \"julgamento\": \"Low\",\n    \"justificativa\": \"Não foram identificados fatores de confusão adicionais ou problemas metodológicos além do risco de cegamento já mencionado.\"\n  },\n  \"risco_global\": {\n    \"julgamento\": \"High\",\n    \"justificativa\": \"O risco global é elevado devido à impossibilidade de cegar a equipe de intervenção e os participantes devido à natureza do protocolo de monitoramento hemodinâmico.\"\n  }\n}",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 495,
+  "dt": 148.0108612,
+  "prompt_tokens": 9089
+}
