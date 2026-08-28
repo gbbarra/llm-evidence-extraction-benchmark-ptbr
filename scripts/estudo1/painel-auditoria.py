@@ -82,6 +82,9 @@ def main():
     gab = json.loads((D1 / "gabarito-ma.json").read_text(encoding="utf-8"))
     prim = json.loads((RAIZ / "corpus" / "primarios" / "primarios.json").read_text(encoding="utf-8"))
     selo = json.loads((D1 / "perturbacoes-estudo1.json").read_text(encoding="utf-8"))
+    p_fech = D1 / "perturbacoes-fechados.json"
+    if p_fech.exists():
+        selo.update(json.loads(p_fech.read_text(encoding="utf-8")))
 
     rot = {}
     for p in prim:
@@ -89,6 +92,16 @@ def main():
             sob = (p.get("autores") or "?").split()[0].rstrip(",")
             rot[p["pmcid"]] = dict(rotulo=f"{sob} et al., {p.get('ano','?')}",
                                    titulo=p.get("titulo", ""), ref=p["ref"])
+    # estrato fechado (Emenda 2): rótulos vêm das linhas do gabarito
+    ANO_REF = {"REF26": "2021", "REF29": "2021", "REF30": "2020",
+               "REF33": "2018", "REF41": "2024", "REF47": "2022"}
+    for t in gab["tabelas"]:
+        for l in t["linhas"]:
+            pid = l.get("pmcid") or ""
+            if pid.startswith("REF") and pid not in rot:
+                rot[pid] = dict(rotulo=f"{l['rotulo']}, {ANO_REF.get(pid, '?')} 🔒",
+                                titulo="(estrato fechado — texto obtido legalmente, fora do repositório)",
+                                ref=l.get("ref"))
 
     # células da MA por (pmcid, tabela)
     ma = {}
@@ -127,8 +140,9 @@ def main():
     for mod in modelos:
         for f in sorted((D1 / "saidas" / mod).glob("*.json")):
             d = json.loads(f.read_text(encoding="utf-8"))
-            if d["tarefa"] == "t3":
-                sinteses[mod] = dict(texto=d["content"], dt=d["dt"], tokens=d["tokens"])
+            if d["tarefa"] in ("t3", "t3b"):
+                rot_t3 = mod if d["tarefa"] == "t3" else f"{mod} · T3b (14 estudos)"
+                sinteses[rot_t3] = dict(texto=d["content"], dt=d["dt"], tokens=d["tokens"])
                 continue
             j, ok = parse_json_modelo(d["content"])
             dados.setdefault(d["pmcid"], {}).setdefault(mod, {})[f"{d['tarefa']}-r{d['replica']}"] = dict(
