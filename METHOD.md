@@ -87,8 +87,20 @@ Requisitos: Python 3.12 (stdlib apenas para o corpus), Ollama para os modelos lo
 
 | Estudo | Pergunta | Status |
 |---|---|---|
-| [Estudo 1](dados/estudo1/protocolo-estudo1.md) | Os quatro veteranos do FIEL extraem evidência como os revisores da metanálise-âncora (GDFT)? | protocolo pré-registrado |
+| [Estudo 1](dados/estudo1/protocolo-estudo1.md) | Os quatro veteranos do FIEL extraem evidência como os revisores da metanálise-âncora (GDFT)? | **concluído** ([avaliação](dados/estudo1/avaliacao-estudo1.md) · [análise](dados/estudo1/analise-estudo1.md) · [erratas da âncora](dados/estudo1/erratas-da-ancora.md)) |
 
 ## Tabela vigente
 
-*(vazia — nenhuma medida corrigida ainda)*
+Estudo 1 (estrato aberto: 8 primários, 99 células/modelo, corrigido 2026-08-28):
+
+| Métrica | gemma4:12b | gemma4:26b | qwen3.8:27b | qwen3:14b |
+|---|---|---|---|---|
+| Extração (acurácia vs fonte) | **100%** | **100%** | 98% | 90% |
+| — células erradas/inventadas/recitadas | 0 | 0 | 0 | 0 |
+| RoB (concordância, 7 domínios) | **78%** | 77% | 57% | 57% |
+| Síntese (direção + zero órfãos) | ✓ | ✓ | ✓ | ✓ |
+| Tempo do bloco (33 corridas) | 84 min | 76 min | 267 min | 65 min |
+
+Vereditos: H1.1 refutada (a disciplina gemma venceu a extração também) · H1.2, H1.3,
+H1.5, H1.6 confirmadas · H1.4 parcial. Três erratas da metanálise-âncora confirmadas
+pela fonte; duas erratas do próprio adjudicador registradas em público.
