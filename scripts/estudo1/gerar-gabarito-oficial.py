@@ -30,10 +30,17 @@ OVERLAY = {
                                         nota="MA publicou 36 — braços trocados na tabela de características"),
     (YOON, "n_randomizados_controle"): dict(veredito="errata-ma", valor_fonte="36", cit=CIT_YOON_N,
                                             nota="MA publicou 39 — braços trocados"),
-    (REDONDO, "n_randomizados_gdft"): dict(veredito="errata-ma", valor_fonte="16", cit=CIT_RED_N,
-                                           nota="MA publicou 19 — braços trocados"),
-    (REDONDO, "n_randomizados_controle"): dict(veredito="errata-ma", valor_fonte="19", cit=CIT_RED_N,
-                                               nota="MA publicou 16 — braços trocados"),
+    # ERRATA DO ADJUDICADOR (2026-08-28): a 1ª versão declarou braços trocados na MA com base
+    # só no abstract ("GDHT (n = 16) and control group (n = 19)"). O corpo do artigo diz o
+    # OPOSTO em 4 lugares (fluxograma "16 in the control group and 19 in the GDHT" + 3 tabelas
+    # "Control N = 16 GDHT N = 19"). Preponderância: GDFT 19 / controle 16 — a MA está certa;
+    # o primário é que se contradiz. Aceitar também 16/19 se o modelo citar o abstract.
+    (REDONDO, "n_randomizados_gdft"): dict(veredito="primario-contraditorio", valor_fonte="19",
+                                           cit="There were 16 patients in the control group and 19 patients in the GDHT group (Figure 2); tabelas: Control N = 16, GDHT N = 19; abstract diz o inverso",
+                                           nota="aceitar 19 (preponderância) ou 16 com 'onde'=abstract"),
+    (REDONDO, "n_randomizados_controle"): dict(veredito="primario-contraditorio", valor_fonte="16",
+                                               cit="There were 16 patients in the control group and 19 patients in the GDHT group (Figure 2)",
+                                               nota="aceitar 16 (preponderância) ou 19 com 'onde'=abstract"),
     (WEINBERG, "asa_gdft"): dict(veredito="errata-ma", valor_fonte="I-II: 7 (27%); >=III: 19 (73%)",
                                  cit=CIT_WEIN_ASA, nota="MA publicou 'Not stated'; a tabela do artigo reporta"),
     (WEINBERG, "asa_controle"): dict(veredito="errata-ma", valor_fonte="I-II: 7 (27%); >=III: 19 (73%)",

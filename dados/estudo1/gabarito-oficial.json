@@ -606,17 +606,17 @@
   "PMC12565272": {
    "n_randomizados_gdft": {
     "ma": "19",
-    "veredito": "errata-ma",
-    "valor_fonte": "16",
-    "cit": "randomized to the GDHT (n = 16) and control group (n = 19)",
-    "nota": "MA publicou 19 — braços trocados"
+    "veredito": "primario-contraditorio",
+    "valor_fonte": "19",
+    "cit": "There were 16 patients in the control group and 19 patients in the GDHT group (Figure 2); tabelas: Control N = 16, GDHT N = 19; abstract diz o inverso",
+    "nota": "aceitar 19 (preponderância) ou 16 com 'onde'=abstract"
    },
    "n_randomizados_controle": {
     "ma": "16",
-    "veredito": "errata-ma",
-    "valor_fonte": "19",
-    "cit": "randomized to the GDHT (n = 16) and control group (n = 19)",
-    "nota": "MA publicou 16 — braços trocados"
+    "veredito": "primario-contraditorio",
+    "valor_fonte": "16",
+    "cit": "There were 16 patients in the control group and 19 patients in the GDHT group (Figure 2)",
+    "nota": "aceitar 16 (preponderância) ou 19 com 'onde'=abstract"
    },
    "tipo_cirurgia": {
     "ma": "All major liver surgeries",

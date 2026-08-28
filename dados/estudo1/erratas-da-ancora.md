@@ -17,9 +17,16 @@ célula a célula do adjudicador. A supervisão é do autor humano do benchmark.
    Correto: **GDFT 39 / controle 36**. (Resolve também a inconsistência interna
    pré-registrada nº 3: a linha "Yun" da tabela de morbidade, com 39/36, estava certa.)
 
-2. **Redondo Calvo et al. — braços trocados.** A MA publica GDFT 19 / controle 16. A
-   fonte: *"randomized to the GDHT (n = 16) and control group (n = 19)"*. Correto:
-   **GDFT 16 / controle 19**.
+2. ~~**Redondo Calvo et al. — braços trocados.**~~ **RETIRADA — errata do adjudicador
+   (2026-08-28).** A primeira versão desta lista declarou braços trocados com base apenas
+   no abstract (*"randomized to the GDHT (n = 16) and control group (n = 19)"*). O corpo
+   do artigo diz o oposto em quatro lugares — fluxograma (*"There were 16 patients in the
+   control group and 19 patients in the GDHT group"*) e as três tabelas (*"Control N = 16
+   GDHT N = 19"*). Pela preponderância, **a MA está certa (GDFT 19 / controle 16)**; o
+   achado real é que **o primário Redondo se contradiz internamente** (abstract vs corpo).
+   A correção aceita as duas leituras conforme o "onde" citado pelo modelo. Fica o
+   registro público: o adjudicador (Claude) errou por verificar contra um único trecho —
+   o mesmo pecado que este benchmark existe para caçar.
 
 3. **Weinberg et al. — ASA "Not stated".** A MA declara a distribuição ASA como não
    reportada. A tabela do artigo reporta, para os dois braços: *"ASA Class I-II 7 (27%)
