@@ -67,6 +67,11 @@ célula a célula do adjudicador. A supervisão é do autor humano do benchmark.
    fonte: *"elective open abdominal surgeries"*, incluindo hepatectomia, gastrectomia e
    duodenopancreatectomia.
 
+8. **Wu et al. — n por braço.** A MA registra 58/56 (analisados). A fonte diz
+   literalmente: *"122 subjects were randomly assigned… Specifically, 61 patients were
+   allocated to the PPV group and another 61…"*. Como no Sujatha, a MA usou analisados
+   sem declarar; a correção aceita as duas leituras.
+
 ## Pendentes de adjudicação final (fora de pontuação)
 
 - Yoon — uso de inotrópicos ("No difference"): comparativo não localizado no texto.
@@ -77,4 +82,3 @@ célula a célula do adjudicador. A supervisão é do autor humano do benchmark.
 *Nota de método: a verificação usa o texto integral (abstract + corpo, incluindo
 tabelas); valores presentes apenas em figuras ou suplementos não são alcançados —
 células assim marcadas não pontuam contra nenhum modelo.*
-9. **Wu et al. — n por braco.** A MA registra 58/56 (analisados). A fonte diz literalmente: *"122 subjects were randomly assigned... Specifically, 61 patients were allocated to the PPV group and another 61..."*. Como no Sujatha, a MA usou analisados sem declarar; a correcao aceita as duas leituras.
