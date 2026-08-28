@@ -1,0 +1,1631 @@
+{
+ "PMC10561433": {
+  "n_randomizados_gdft": {
+   "ma": "36",
+   "status": "literal",
+   "achados": {
+    "36": [
+     "ardiac index-based hemodynamic management using advanced hemodynamic monitoring, while the control group (n = 36) received the standard care under the discretion of attending anesthesiologists during surgery. The primary o"
+    ]
+   },
+   "equivalencias": []
+  },
+  "n_randomizados_controle": {
+   "ma": "39",
+   "status": "literal",
+   "achados": {
+    "39": [
+     " patients scheduled for open radical cystectomy between September 2018 and November 2021. The GDHT group (n = 39) received the stroke volume index- and cardiac index-based hemodynamic management using advanced hemodynamic "
+    ]
+   },
+   "equivalencias": []
+  },
+  "tipo_cirurgia": {
+   "ma": "Eight open radical cystectomies with ileal conduit, 31 open radical cystectomies with neobladder",
+   "status": "literal",
+   "achados": {
+    "31": [
+     "CI) P -value Type of diversion, n (%) 0.999 Ileal conduit 8 (20.5) 7 (19.4) 0.01 (-0.17 to 0.19) Neobladder 31 (79.5) 29 (80.6) -0.01 (-0.19 to 0.17) Duration of surgery (min) 225.0 (195.0–250.0) 227.5 (202.5–260.0) -2.5"
+    ]
+   },
+   "equivalencias": []
+  },
+  "laparoscopia_gdft": {
+   "ma": "0",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "laparoscopia_controle": {
+   "ma": "0",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "asa_gdft": {
+   "ma": "4:29:6:0",
+   "status": "equivalencia",
+   "achados": {
+    "4": [
+     "(%) 0.195 0.565 Male 27 (69.2) 28 (77.8) Female 12 (30.8) 8 (22.2) ASA classification, n (%) 0.176 0.706 1 4 (10.3) 2 (5.3) 2 29 (74.4) 27 (75.0) 3 6 (15.4) 7 (19.4) Comorbidities, n (%) Hypertension 22 (56.4) 20 (5",
+     " Supplementary Material 1 Supplementary Material 2 Supplementary Material 3 Supplementary Material 4 Supplementary Material 5 Acknowledgements None. Abbreviations GDHT Goal-directed hemodynamic therapy ASA"
+    ],
+    "29": [
+     "e 27 (69.2) 28 (77.8) Female 12 (30.8) 8 (22.2) ASA classification, n (%) 0.176 0.706 1 4 (10.3) 2 (5.3) 2 29 (74.4) 27 (75.0) 3 6 (15.4) 7 (19.4) Comorbidities, n (%) Hypertension 22 (56.4) 20 (55.6) 0.017 0.999 Dia"
+    ],
+    "6": [
+     "Female 12 (30.8) 8 (22.2) ASA classification, n (%) 0.176 0.706 1 4 (10.3) 2 (5.3) 2 29 (74.4) 27 (75.0) 3 6 (15.4) 7 (19.4) Comorbidities, n (%) Hypertension 22 (56.4) 20 (55.6) 0.017 0.999 Diabetes mellitus 7 (17.9"
+    ]
+   },
+   "equivalencias": []
+  },
+  "asa_controle": {
+   "ma": "2:27:7:0",
+   "status": "equivalencia",
+   "achados": {
+    "2": [
+     " 0.565 Male 27 (69.2) 28 (77.8) Female 12 (30.8) 8 (22.2) ASA classification, n (%) 0.176 0.706 1 4 (10.3) 2 (5.3) 2 29 (74.4) 27 (75.0) 3 6 (15.4) 7 (19.4) Comorbidities, n (%) Hypertension 22 (56.4) 20 (55.6) 0.01",
+     "ale 27 (69.2) 28 (77.8) Female 12 (30.8) 8 (22.2) ASA classification, n (%) 0.176 0.706 1 4 (10.3) 2 (5.3) 2 29 (74.4) 27 (75.0) 3 6 (15.4) 7 (19.4) Comorbidities, n (%) Hypertension 22 (56.4) 20 (55.6) 0.017 0.999 "
+    ],
+    "27": [
+     "andardized Mean Difference P-value Age (years) 66.4 ± 8.5 69.3 ± 7.5 0.361 0.124 Sex, n (%) 0.195 0.565 Male 27 (69.2) 28 (77.8) Female 12 (30.8) 8 (22.2) ASA classification, n (%) 0.176 0.706 1 4 (10.3) 2 (5.3) 2 29 (",
+     ") 28 (77.8) Female 12 (30.8) 8 (22.2) ASA classification, n (%) 0.176 0.706 1 4 (10.3) 2 (5.3) 2 29 (74.4) 27 (75.0) 3 6 (15.4) 7 (19.4) Comorbidities, n (%) Hypertension 22 (56.4) 20 (55.6) 0.017 0.999 Diabetes mell"
+    ],
+    "7": [
+     " (30.8) 8 (22.2) ASA classification, n (%) 0.176 0.706 1 4 (10.3) 2 (5.3) 2 29 (74.4) 27 (75.0) 3 6 (15.4) 7 (19.4) Comorbidities, n (%) Hypertension 22 (56.4) 20 (55.6) 0.017 0.999 Diabetes mellitus 7 (17.9) 10 (27."
+    ]
+   },
+   "equivalencias": []
+  },
+  "fluido_total_gdft": {
+   "ma": "2700 (2175–3250)",
+   "status": "literal",
+   "achados": {
+    "2700": [
+     " 0.359) between the groups. The amounts of intraoperative fluid administered were similar between the groups (2700 [2175–3250] vs. 2900 [1950–3700] ml, median difference [95% CI] -200 [-875 to 825], P = 0.714). The secondar",
+     "aracteristics of the patients: the total infused volume of crystalloid was comparable between the two groups (2700 [2175–3250] vs. 2900 [1950–3700] ml, median difference [95% CI], -200 [-875 to 825], P = 0.714). Regarding i"
+    ],
+    "2175": [
+     ") between the groups. The amounts of intraoperative fluid administered were similar between the groups (2700 [2175–3250] vs. 2900 [1950–3700] ml, median difference [95% CI] -200 [-875 to 825], P = 0.714). The secondary outc",
+     "ristics of the patients: the total infused volume of crystalloid was comparable between the two groups (2700 [2175–3250] vs. 2900 [1950–3700] ml, median difference [95% CI], -200 [-875 to 825], P = 0.714). Regarding intraop"
+    ],
+    "3250": [
+     "ween the groups. The amounts of intraoperative fluid administered were similar between the groups (2700 [2175–3250] vs. 2900 [1950–3700] ml, median difference [95% CI] -200 [-875 to 825], P = 0.714). The secondary outcomes,",
+     "cs of the patients: the total infused volume of crystalloid was comparable between the two groups (2700 [2175–3250] vs. 2900 [1950–3700] ml, median difference [95% CI], -200 [-875 to 825], P = 0.714). Regarding intraoperati"
+    ]
+   },
+   "equivalencias": []
+  },
+  "fluido_total_controle": {
+   "ma": "2900 (1950–3700)",
+   "status": "literal",
+   "achados": {
+    "2900": [
+     "roups. The amounts of intraoperative fluid administered were similar between the groups (2700 [2175–3250] vs. 2900 [1950–3700] ml, median difference [95% CI] -200 [-875 to 825], P = 0.714). The secondary outcomes, including",
+     "patients: the total infused volume of crystalloid was comparable between the two groups (2700 [2175–3250] vs. 2900 [1950–3700] ml, median difference [95% CI], -200 [-875 to 825], P = 0.714). Regarding intraoperative hypoten"
+    ],
+    "1950": [
+     " The amounts of intraoperative fluid administered were similar between the groups (2700 [2175–3250] vs. 2900 [1950–3700] ml, median difference [95% CI] -200 [-875 to 825], P = 0.714). The secondary outcomes, including the i",
+     "ts: the total infused volume of crystalloid was comparable between the two groups (2700 [2175–3250] vs. 2900 [1950–3700] ml, median difference [95% CI], -200 [-875 to 825], P = 0.714). Regarding intraoperative hypotension, "
+    ],
+    "3700": [
+     "amounts of intraoperative fluid administered were similar between the groups (2700 [2175–3250] vs. 2900 [1950–3700] ml, median difference [95% CI] -200 [-875 to 825], P = 0.714). The secondary outcomes, including the incide",
+     "he total infused volume of crystalloid was comparable between the two groups (2700 [2175–3250] vs. 2900 [1950–3700] ml, median difference [95% CI], -200 [-875 to 825], P = 0.714). Regarding intraoperative hypotension, the a"
+    ]
+   },
+   "equivalencias": []
+  },
+  "cristaloide_gdft": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "cristaloide_controle": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "coloide_gdft": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "coloide_controle": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "perda_sanguinea_gdft": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "perda_sanguinea_controle": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "uso_inotropico": {
+   "ma": "No difference",
+   "status": "texto-sem-numero",
+   "achados": {},
+   "equivalencias": []
+  },
+  "morbidade_eventos_gdft": {
+   "ma": "28 (71.8%)",
+   "status": "literal",
+   "achados": {
+    "28": [
+     "al analysis. There was no significant difference in the incidence of in-hospital postoperative complications (28/39 [71.8%] vs. 30/36 [83.3%], risk difference [95% CI], -0.12 [-0.30 to 0.07], P = 0.359) between the groups",
+     "ere was no significant difference in the incidence of a composite of in-hospital postoperative complications (28/39 [71.8%] vs. 30/36 [83.3%], risk difference [95% CI], -0.12 [-0.30 to 0.07], P = 0.359, Table 4 ). In addi"
+    ],
+    "71.8": [
+     "ysis. There was no significant difference in the incidence of in-hospital postoperative complications (28/39 [71.8%] vs. 30/36 [83.3%], risk difference [95% CI], -0.12 [-0.30 to 0.07], P = 0.359) between the groups. The amo",
+     " no significant difference in the incidence of a composite of in-hospital postoperative complications (28/39 [71.8%] vs. 30/36 [83.3%], risk difference [95% CI], -0.12 [-0.30 to 0.07], P = 0.359, Table 4 ). In addition, the"
+    ]
+   },
+   "equivalencias": []
+  },
+  "morbidade_eventos_controle": {
+   "ma": "30 (83.3%)",
+   "status": "literal",
+   "achados": {
+    "30": [
+     " was no significant difference in the incidence of in-hospital postoperative complications (28/39 [71.8%] vs. 30/36 [83.3%], risk difference [95% CI], -0.12 [-0.30 to 0.07], P = 0.359) between the groups. The amounts of i",
+     "cant difference in the incidence of a composite of in-hospital postoperative complications (28/39 [71.8%] vs. 30/36 [83.3%], risk difference [95% CI], -0.12 [-0.30 to 0.07], P = 0.359, Table 4 ). In addition, the incidenc"
+    ],
+    "83.3": [
+     " significant difference in the incidence of in-hospital postoperative complications (28/39 [71.8%] vs. 30/36 [83.3%], risk difference [95% CI], -0.12 [-0.30 to 0.07], P = 0.359) between the groups. The amounts of intraopera",
+     "fference in the incidence of a composite of in-hospital postoperative complications (28/39 [71.8%] vs. 30/36 [83.3%], risk difference [95% CI], -0.12 [-0.30 to 0.07], P = 0.359, Table 4 ). In addition, the incidence of each"
+    ]
+   },
+   "equivalencias": []
+  },
+  "mortalidade_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "mortalidade_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_flatus_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_flatus_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_ingesta_oral_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_ingesta_oral_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_evacuacao_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_evacuacao_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "ileo_pos_op_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "ileo_pos_op_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  }
+ },
+ "PMC10694978": {
+  "n_randomizados_gdft": {
+   "ma": "50",
+   "status": "literal",
+   "achados": {
+    "50": [
+     "ays versus 12.0 ± 4.6 days, P = 0.001]. Postoperative gastrointestinal dysfunction (POGD) occurred in two of 50 patients (4%) in group G and 16 of 50 patients (32%) in the control group ( P < 0.001). GDFT significantly a",
+     "]. Postoperative gastrointestinal dysfunction (POGD) occurred in two of 50 patients (4%) in group G and 16 of 50 patients (32%) in the control group ( P < 0.001). GDFT significantly also shorten time to first flatus by 11"
+    ]
+   },
+   "equivalencias": []
+  },
+  "n_randomizados_controle": {
+   "ma": "50",
+   "status": "literal",
+   "achados": {
+    "50": [
+     "ays versus 12.0 ± 4.6 days, P = 0.001]. Postoperative gastrointestinal dysfunction (POGD) occurred in two of 50 patients (4%) in group G and 16 of 50 patients (32%) in the control group ( P < 0.001). GDFT significantly a",
+     "]. Postoperative gastrointestinal dysfunction (POGD) occurred in two of 50 patients (4%) in group G and 16 of 50 patients (32%) in the control group ( P < 0.001). GDFT significantly also shorten time to first flatus by 11"
+    ]
+   },
+   "equivalencias": []
+  },
+  "tipo_cirurgia": {
+   "ma": "Seven gastrectomies, two liver surgeries, four Whipple procedures, 17 hemicholectomies, 12 rectum resections, one radicle cystectomy, three radical resections for gynecological cancer, three other oncological resection procedures, nine stomas",
+   "status": "literal",
+   "achados": {
+    "17": [
+     ") 9 (18%) Type of procedure, n (%) Gastrectomy 8 7 0.551 Liver resection 3 2 Whipple 6 4 Hemicolectomy 20 17 Rectum resection 5 12 Radical cystectomy or prostatectomy 3 1 Radical resection for gynecologic cancer 1 3"
+    ],
+    "12": [
+     "ary disease 3 (6%) 2 (4%) Hypertension 16 (32%) 17 (34%) Diabetes 12 (24%) 8 (16%) Neurological disease 6 (12%) 8 (16%) Coronary artery disease 7 (14%) 9 (18%) Type of procedure, n (%) Gastrectomy 8 7 0.551 Liver res",
+     "dure, n (%) Gastrectomy 8 7 0.551 Liver resection 3 2 Whipple 6 4 Hemicolectomy 20 17 Rectum resection 5 12 Radical cystectomy or prostatectomy 3 1 Radical resection for gynecologic cancer 1 3 Other oncologic resec"
+    ]
+   },
+   "equivalencias": []
+  },
+  "laparoscopia_gdft": {
+   "ma": "38",
+   "status": "literal",
+   "achados": {
+    "38": [
+     "esection procedure 3 3 Stoma n (%) 7 (14%) 9 (18%) 0.667 Surgical technique, n (%) 0.134 Laparoscopy 31 (62) 38 (76) Laparotomy 19 (38) 12 (24) Data are presented as mean ± SD (standard deviation) or absolute numbers (% ",
+     "toma n (%) 7 (14%) 9 (18%) 0.667 Surgical technique, n (%) 0.134 Laparoscopy 31 (62) 38 (76) Laparotomy 19 (38) 12 (24) Data are presented as mean ± SD (standard deviation) or absolute numbers (% percentage) Data were co"
+    ]
+   },
+   "equivalencias": []
+  },
+  "laparoscopia_controle": {
+   "ma": "31",
+   "status": "literal",
+   "achados": {
+    "31": [
+     "ologic resection procedure 3 3 Stoma n (%) 7 (14%) 9 (18%) 0.667 Surgical technique, n (%) 0.134 Laparoscopy 31 (62) 38 (76) Laparotomy 19 (38) 12 (24) Data are presented as mean ± SD (standard deviation) or absolute num"
+    ]
+   },
+   "equivalencias": []
+  },
+  "asa_gdft": {
+   "ma": "6:36:8:0",
+   "status": "equivalencia",
+   "achados": {
+    "6": [
+     " Female 16 (32) 18 (36) BMI, mean ± SD 23.8 ± 3.2 23.0 ± 3.4 0.208 ASA physical status, n (%) 0.791 1 8 (16) 6 (12) 2 33 (66) 36 (72) 3 9 (18) 8 (16) Duration of anesthesia, [min, mean ± SD] 250.8 ± 91.0 225.5 ± 87.2 0"
+    ],
+    "36": [
+     "r., mean ± SD] 59.2 ± 13.1 64.0 ± 14.0 0.068 Sex ratio, n (%) 0.671 Male 34 (68) 32 (64) Female 16 (32) 18 (36) BMI, mean ± SD 23.8 ± 3.2 23.0 ± 3.4 0.208 ASA physical status, n (%) 0.791 1 8 (16) 6 (12) 2 33 (66) 36 (",
+     " (36) BMI, mean ± SD 23.8 ± 3.2 23.0 ± 3.4 0.208 ASA physical status, n (%) 0.791 1 8 (16) 6 (12) 2 33 (66) 36 (72) 3 9 (18) 8 (16) Duration of anesthesia, [min, mean ± SD] 250.8 ± 91.0 225.5 ± 87.2 0.195 Duration of su"
+    ],
+    "8": [
+     "2 (64) Female 16 (32) 18 (36) BMI, mean ± SD 23.8 ± 3.2 23.0 ± 3.4 0.208 ASA physical status, n (%) 0.791 1 8 (16) 6 (12) 2 33 (66) 36 (72) 3 9 (18) 8 (16) Duration of anesthesia, [min, mean ± SD] 250.8 ± 91.0 225.5 ±",
+     "SD 23.8 ± 3.2 23.0 ± 3.4 0.208 ASA physical status, n (%) 0.791 1 8 (16) 6 (12) 2 33 (66) 36 (72) 3 9 (18) 8 (16) Duration of anesthesia, [min, mean ± SD] 250.8 ± 91.0 225.5 ± 87.2 0.195 Duration of surgery, [min, mean"
+    ]
+   },
+   "equivalencias": []
+  },
+  "asa_controle": {
+   "ma": "8:33:9:0",
+   "status": "equivalencia",
+   "achados": {
+    "8": [
+     "2 (64) Female 16 (32) 18 (36) BMI, mean ± SD 23.8 ± 3.2 23.0 ± 3.4 0.208 ASA physical status, n (%) 0.791 1 8 (16) 6 (12) 2 33 (66) 36 (72) 3 9 (18) 8 (16) Duration of anesthesia, [min, mean ± SD] 250.8 ± 91.0 225.5 ±",
+     "SD 23.8 ± 3.2 23.0 ± 3.4 0.208 ASA physical status, n (%) 0.791 1 8 (16) 6 (12) 2 33 (66) 36 (72) 3 9 (18) 8 (16) Duration of anesthesia, [min, mean ± SD] 250.8 ± 91.0 225.5 ± 87.2 0.195 Duration of surgery, [min, mean"
+    ],
+    "33": [
+     " (32) 18 (36) BMI, mean ± SD 23.8 ± 3.2 23.0 ± 3.4 0.208 ASA physical status, n (%) 0.791 1 8 (16) 6 (12) 2 33 (66) 36 (72) 3 9 (18) 8 (16) Duration of anesthesia, [min, mean ± SD] 250.8 ± 91.0 225.5 ± 87.2 0.195 Durati"
+    ],
+    "9": [
+     "mean ± SD 23.8 ± 3.2 23.0 ± 3.4 0.208 ASA physical status, n (%) 0.791 1 8 (16) 6 (12) 2 33 (66) 36 (72) 3 9 (18) 8 (16) Duration of anesthesia, [min, mean ± SD] 250.8 ± 91.0 225.5 ± 87.2 0.195 Duration of surgery, [mi"
+    ]
+   },
+   "equivalencias": []
+  },
+  "fluido_total_gdft": {
+   "ma": "1975 (1575-2600)",
+   "status": "literal",
+   "achados": {
+    "1975": [
+     " application of the study algorithm could be observed. The net amount of fluid administered intraoperatively [1975 ml (1575-2600 ml) in group G versus 2750 ml (2250-3300 ml) in group C, P < 0.001] and the amount of crystall",
+     " drugs of both group Control group GDFT group P value Net amount infused, [ml, median (IQR)] 2750 (2250–3300) 1975 (1575–2600) < 0.001 * Crystalloid, [ml, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * Colloid, [ml"
+    ],
+    "1575": [
+     "ion of the study algorithm could be observed. The net amount of fluid administered intraoperatively [1975 ml (1575-2600 ml) in group G versus 2750 ml (2250-3300 ml) in group C, P < 0.001] and the amount of crystalloid volum",
+     " of both group Control group GDFT group P value Net amount infused, [ml, median (IQR)] 2750 (2250–3300) 1975 (1575–2600) < 0.001 * Crystalloid, [ml, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * Colloid, [ml, medi"
+    ],
+    "2600": [
+     "f the study algorithm could be observed. The net amount of fluid administered intraoperatively [1975 ml (1575-2600 ml) in group G versus 2750 ml (2250-3300 ml) in group C, P < 0.001] and the amount of crystalloid volume rep",
+     "oth group Control group GDFT group P value Net amount infused, [ml, median (IQR)] 2750 (2250–3300) 1975 (1575–2600) < 0.001 * Crystalloid, [ml, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * Colloid, [ml, median (I"
+    ]
+   },
+   "equivalencias": []
+  },
+  "fluido_total_controle": {
+   "ma": "2750 (2250-3300)",
+   "status": "literal",
+   "achados": {
+    "2750": [
+     " be observed. The net amount of fluid administered intraoperatively [1975 ml (1575-2600 ml) in group G versus 2750 ml (2250-3300 ml) in group C, P < 0.001] and the amount of crystalloid volume replacement were significantly",
+     "in group C, P = 0.041]. The intraoperative fluid balance was also significant lower in group G [1199 ml (800-2750 ml) in group G versus 2116 ml (1100-3100 ml), p < 0.001]. No difference was found with regard to administrat"
+    ],
+    "2250": [
+     "ved. The net amount of fluid administered intraoperatively [1975 ml (1575-2600 ml) in group G versus 2750 ml (2250-3300 ml) in group C, P < 0.001] and the amount of crystalloid volume replacement were significantly lower in",
+     " vasoactive drugs of both group Control group GDFT group P value Net amount infused, [ml, median (IQR)] 2750 (2250–3300) 1975 (1575–2600) < 0.001 * Crystalloid, [ml, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * C"
+    ],
+    "3300": [
+     "The net amount of fluid administered intraoperatively [1975 ml (1575-2600 ml) in group G versus 2750 ml (2250-3300 ml) in group C, P < 0.001] and the amount of crystalloid volume replacement were significantly lower in grou",
+     "active drugs of both group Control group GDFT group P value Net amount infused, [ml, median (IQR)] 2750 (2250–3300) 1975 (1575–2600) < 0.001 * Crystalloid, [ml, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * Colloi"
+    ]
+   },
+   "equivalencias": []
+  },
+  "cristaloide_gdft": {
+   "ma": "1600 (837-2100)",
+   "status": "literal",
+   "achados": {
+    "1600": [
+     "in group C, P < 0.001] and the amount of crystalloid volume replacement were significantly lower in group G [1600 ml (837 ml-2100 ml) in group G versus 2200 ml (2025-2513 ml) in group C, P < 0.001] and more urine output wa",
+     "l, median (IQR)] 2750 (2250–3300) 1975 (1575–2600) < 0.001 * Crystalloid, [ml, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * Colloid, [ml, median (IQR)] 500 (0–1000) 500 (500–1000) 0.981 Urine output, [ml, median "
+    ],
+    "837": [
+     "C, P < 0.001] and the amount of crystalloid volume replacement were significantly lower in group G [1600 ml (837 ml-2100 ml) in group G versus 2200 ml (2025-2513 ml) in group C, P < 0.001] and more urine output was found ",
+     "ian (IQR)] 2750 (2250–3300) 1975 (1575–2600) < 0.001 * Crystalloid, [ml, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * Colloid, [ml, median (IQR)] 500 (0–1000) 500 (500–1000) 0.981 Urine output, [ml, median (IQR)"
+    ],
+    "2100": [
+     " 0.001] and the amount of crystalloid volume replacement were significantly lower in group G [1600 ml (837 ml-2100 ml) in group G versus 2200 ml (2025-2513 ml) in group C, P < 0.001] and more urine output was found in group",
+     "(IQR)] 2750 (2250–3300) 1975 (1575–2600) < 0.001 * Crystalloid, [ml, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * Colloid, [ml, median (IQR)] 500 (0–1000) 500 (500–1000) 0.981 Urine output, [ml, median (IQR)] 350"
+    ]
+   },
+   "equivalencias": []
+  },
+  "cristaloide_controle": {
+   "ma": "2200 (2025-2513)",
+   "status": "literal",
+   "achados": {
+    "2200": [
+     "mount infused, [ml, median (IQR)] 2750 (2250–3300) 1975 (1575–2600) < 0.001 * Crystalloid, [ml, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * Colloid, [ml, median (IQR)] 500 (0–1000) 500 (500–1000) 0.981 Urine out"
+    ],
+    "2025": [
+     "infused, [ml, median (IQR)] 2750 (2250–3300) 1975 (1575–2600) < 0.001 * Crystalloid, [ml, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * Colloid, [ml, median (IQR)] 500 (0–1000) 500 (500–1000) 0.981 Urine output, ["
+    ],
+    "2513": [
+     "ed, [ml, median (IQR)] 2750 (2250–3300) 1975 (1575–2600) < 0.001 * Crystalloid, [ml, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * Colloid, [ml, median (IQR)] 500 (0–1000) 500 (500–1000) 0.981 Urine output, [ml, m"
+    ]
+   },
+   "equivalencias": []
+  },
+  "coloide_gdft": {
+   "ma": "500 (500-1000)",
+   "status": "equivalencia",
+   "achados": {
+    "500": [
+     " the control group; CVP: central venous pressure; MAP: mean arterial pressure. * The goal did not reach after 500 ml colloid administration, consider inotropes or vasopressors Normothermia was achieved during surgery with a",
+     ".001 * Crystalloid, [ml, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * Colloid, [ml, median (IQR)] 500 (0–1000) 500 (500–1000) 0.981 Urine output, [ml, median (IQR)] 350 (200–800) 600 (300–800) 0.041 * Blood loss"
+    ],
+    "1000": [
+     "Crystalloid, [ml, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * Colloid, [ml, median (IQR)] 500 (0–1000) 500 (500–1000) 0.981 Urine output, [ml, median (IQR)] 350 (200–800) 600 (300–800) 0.041 * Blood loss, [ml, m",
+     "l, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * Colloid, [ml, median (IQR)] 500 (0–1000) 500 (500–1000) 0.981 Urine output, [ml, median (IQR)] 350 (200–800) 600 (300–800) 0.041 * Blood loss, [ml, median (IQR)] 10"
+    ]
+   },
+   "equivalencias": []
+  },
+  "coloide_controle": {
+   "ma": "500 (0-1000)",
+   "status": "literal",
+   "achados": {
+    "500": [
+     " the control group; CVP: central venous pressure; MAP: mean arterial pressure. * The goal did not reach after 500 ml colloid administration, consider inotropes or vasopressors Normothermia was achieved during surgery with a",
+     ".001 * Crystalloid, [ml, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * Colloid, [ml, median (IQR)] 500 (0–1000) 500 (500–1000) 0.981 Urine output, [ml, median (IQR)] 350 (200–800) 600 (300–800) 0.041 * Blood loss"
+    ],
+    "0": [
+     "* Crystalloid, [ml, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * Colloid, [ml, median (IQR)] 500 (0–1000) 500 (500–1000) 0.981 Urine output, [ml, median (IQR)] 350 (200–800) 600 (300–800) 0.041 * Blood loss, ["
+    ],
+    "1000": [
+     "Crystalloid, [ml, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * Colloid, [ml, median (IQR)] 500 (0–1000) 500 (500–1000) 0.981 Urine output, [ml, median (IQR)] 350 (200–800) 600 (300–800) 0.041 * Blood loss, [ml, m",
+     "l, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * Colloid, [ml, median (IQR)] 500 (0–1000) 500 (500–1000) 0.981 Urine output, [ml, median (IQR)] 350 (200–800) 600 (300–800) 0.041 * Blood loss, [ml, median (IQR)] 10"
+    ]
+   },
+   "equivalencias": []
+  },
+  "perda_sanguinea_gdft": {
+   "ma": "100 (50-225)",
+   "status": "literal",
+   "achados": {
+    "100": [
+     "00) 0.981 Urine output, [ml, median (IQR)] 350 (200–800) 600 (300–800) 0.041 * Blood loss, [ml, median (IQR)] 100 (0–350) 100 (50–225) 0.970 Vasopressor or inotrope, n (%) 18 (36) 27 (54) 0.072 Norepinephrine, n [mg, media",
+     "ine output, [ml, median (IQR)] 350 (200–800) 600 (300–800) 0.041 * Blood loss, [ml, median (IQR)] 100 (0–350) 100 (50–225) 0.970 Vasopressor or inotrope, n (%) 18 (36) 27 (54) 0.072 Norepinephrine, n [mg, median (IQR)] 10 "
+    ],
+    "50": [
+     "utput, [ml, median (IQR)] 350 (200–800) 600 (300–800) 0.041 * Blood loss, [ml, median (IQR)] 100 (0–350) 100 (50–225) 0.970 Vasopressor or inotrope, n (%) 18 (36) 27 (54) 0.072 Norepinephrine, n [mg, median (IQR)] 10 [0.0"
+    ],
+    "225": [
+     "ut, [ml, median (IQR)] 350 (200–800) 600 (300–800) 0.041 * Blood loss, [ml, median (IQR)] 100 (0–350) 100 (50–225) 0.970 Vasopressor or inotrope, n (%) 18 (36) 27 (54) 0.072 Norepinephrine, n [mg, median (IQR)] 10 [0.04(0."
+    ]
+   },
+   "equivalencias": []
+  },
+  "perda_sanguinea_controle": {
+   "ma": "100 (0-350)",
+   "status": "literal",
+   "achados": {
+    "100": [
+     "00) 0.981 Urine output, [ml, median (IQR)] 350 (200–800) 600 (300–800) 0.041 * Blood loss, [ml, median (IQR)] 100 (0–350) 100 (50–225) 0.970 Vasopressor or inotrope, n (%) 18 (36) 27 (54) 0.072 Norepinephrine, n [mg, media",
+     "ine output, [ml, median (IQR)] 350 (200–800) 600 (300–800) 0.041 * Blood loss, [ml, median (IQR)] 100 (0–350) 100 (50–225) 0.970 Vasopressor or inotrope, n (%) 18 (36) 27 (54) 0.072 Norepinephrine, n [mg, median (IQR)] 10 "
+    ],
+    "0": [
+     "* Crystalloid, [ml, median (IQR)] 2200 (2025–2513) 1600 (837–2100) < 0.001 * Colloid, [ml, median (IQR)] 500 (0–1000) 500 (500–1000) 0.981 Urine output, [ml, median (IQR)] 350 (200–800) 600 (300–800) 0.041 * Blood loss, [",
+     ".981 Urine output, [ml, median (IQR)] 350 (200–800) 600 (300–800) 0.041 * Blood loss, [ml, median (IQR)] 100 (0–350) 100 (50–225) 0.970 Vasopressor or inotrope, n (%) 18 (36) 27 (54) 0.072 Norepinephrine, n [mg, median ("
+    ],
+    "350": [
+     "100) < 0.001 * Colloid, [ml, median (IQR)] 500 (0–1000) 500 (500–1000) 0.981 Urine output, [ml, median (IQR)] 350 (200–800) 600 (300–800) 0.041 * Blood loss, [ml, median (IQR)] 100 (0–350) 100 (50–225) 0.970 Vasopressor or ",
+     "81 Urine output, [ml, median (IQR)] 350 (200–800) 600 (300–800) 0.041 * Blood loss, [ml, median (IQR)] 100 (0–350) 100 (50–225) 0.970 Vasopressor or inotrope, n (%) 18 (36) 27 (54) 0.072 Norepinephrine, n [mg, median (IQR)"
+    ]
+   },
+   "equivalencias": []
+  },
+  "uso_inotropico": {
+   "ma": "Lower in GDFT",
+   "status": "texto-sem-numero",
+   "achados": {},
+   "equivalencias": []
+  },
+  "morbidade_eventos_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "morbidade_eventos_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "mortalidade_gdft": {
+   "ma": "1 (2.0%)",
+   "status": "equivalencia",
+   "achados": {
+    "1": [
+     "ical resources and higher costs, but it also predicts greater risk for readmission and short-term mortality [ 1 ]. Postoperative gastrointestinal (GI) dysfunction (POGD) is a leading cause of prolonged hospital stay after",
+     "(12) 1 (2) 0.054 Wound infection 5 (10) 2 (4) 0.242 Anastomotic fistula 0 (0) 0 (0) 1.000 Hemorrhage 0 (0) 1 (2) 1.000 30 days mortality, n (%) 0 (0) 1 (2) 1.000 Data are presented as median (IQR, interquartile range),"
+    ]
+   },
+   "equivalencias": [
+    {
+     "ma": "2.0",
+     "fonte": "4",
+     "regra": "%=2.0/50",
+     "trecho": "0 Pneumonia 6 (12) 0 (0) 0.010 * Lower limb venous thrombosis 6 (12) 1 (2) 0.054 Wound infection 5 (10) 2 (4) 0.242 Anastomotic fistula 0 (0) 0 (0) 1.000 Hemorrhage 0 (0) 1 (2) 1.000 30 days mortality, n (%) 0 (0) 1 "
+    }
+   ]
+  },
+  "mortalidade_controle": {
+   "ma": "0 (0%)",
+   "status": "equivalencia",
+   "achados": {
+    "0": [
+     "0 * Lower limb venous thrombosis 6 (12) 1 (2) 0.054 Wound infection 5 (10) 2 (4) 0.242 Anastomotic fistula 0 (0) 0 (0) 1.000 Hemorrhage 0 (0) 1 (2) 1.000 30 days mortality, n (%) 0 (0) 1 (2) 1.000 Data are presented a",
+     " Lower limb venous thrombosis 6 (12) 1 (2) 0.054 Wound infection 5 (10) 2 (4) 0.242 Anastomotic fistula 0 (0) 0 (0) 1.000 Hemorrhage 0 (0) 1 (2) 1.000 30 days mortality, n (%) 0 (0) 1 (2) 1.000 Data are presented as m"
+    ]
+   },
+   "equivalencias": []
+  },
+  "tempo_flatus_gdft": {
+   "ma": "48 ± 12",
+   "status": "equivalencia",
+   "achados": {},
+   "equivalencias": [
+    {
+     "ma": "48",
+     "fonte": "2",
+     "regra": "48h em dias",
+     "trecho": "significantly also shorten time to first flatus by 11 h ( P = 0.009) and time to first tolerate oral diet by 2 days ( P < 0.001). Conclusions Guided by SVV and CI, the application of GDFT has the potential to expedite p"
+    }
+   ]
+  },
+  "tempo_flatus_controle": {
+   "ma": "59 ± 14",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "tempo_ingesta_oral_gdft": {
+   "ma": "72 ± 24",
+   "status": "literal",
+   "achados": {
+    "72": [
+     "ical Exam, and Duration of symptoms (I-FEED) scoring system (Table 1 ) [ 20 ]. I-FEED score was calculated at 72 h after surgery. The incidence of POGD (defined as I-FEED score ≥ 6), and the incidence of postoperative gast",
+     "o treatment (2) ≥ episode of high volume (> 100 ml) and bilious (2) Significant distention with tympany (2) > 72 h (2) I-FEED, Intake, Feeling Nauseated, Emesis, Exam, and Duration of symptoms. The scoring system attribute"
+    ],
+    "24": [
+     "ood was allowed up to 6 h before surgery, and clear fluids up to 2 h before surgery. A liquid diet during the 24 h preceding surgery was prescribed if patients received mechanical bowel preparation. Intraoperative manageme",
+     "eated Emesis Exam Duration of symptoms Scoring Tolerating oral diet (0) None (0) None (0) No distention (0) 0–24 h (0) Limited Tolerance (1) Responsive to treatment (1) ≥ episode of low volume (< 100 ml) and non-bilious (1"
+    ]
+   },
+   "equivalencias": []
+  },
+  "tempo_ingesta_oral_controle": {
+   "ma": "96 ± 30",
+   "status": "equivalencia",
+   "achados": {
+    "30": [
+     "ents were encouraged to early mobilization and early oral nutrition. All patients were follow-up for at least 30 days after surgery by blinded research team members. Outcomes Primary outcomes: GI function and length of hos"
+    ]
+   },
+   "equivalencias": [
+    {
+     "ma": "96",
+     "fonte": "4",
+     "regra": "96h em dias",
+     "trecho": " U-test or Student’s t-test as appropriate * Statistical significance ( P < 0.05) compared with control Fig. 4 Comparison of gastrointestinal (GI) function using I-FEED score (Intake, Feeling nauseated, Emesis, physical "
+    }
+   ]
+  },
+  "tempo_evacuacao_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_evacuacao_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "ileo_pos_op_gdft": {
+   "ma": "2 (4.0%)",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "ileo_pos_op_controle": {
+   "ma": "16 (32.0%)",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  }
+ },
+ "PMC10912221": {
+  "n_randomizados_gdft": {
+   "ma": "58",
+   "status": "literal",
+   "achados": {
+    "58": [
+     "tly, a modified intention-to-treat analysis was conducted on the remaining cohort consisting of 114 patients (58 in the PPV group and 56 in the control group) (Fig. 2 ). Notably, both groups exhibited balanced demographic ",
+     "Enrollment, randomization, and follow-up Table 2 Basic characteristics of the study subjects PPV group ( n = 58) Control group ( n = 56) P -value Age (years) 70.2 ± 7.0 70.0 ± 7.5 0.778 BMI(kg/m2) 22.7 ± 3.1 23.0 ± 2.7 0"
+    ]
+   },
+   "equivalencias": []
+  },
+  "n_randomizados_controle": {
+   "ma": "56",
+   "status": "literal",
+   "achados": {
+    "56": [
+     "n-to-treat analysis was conducted on the remaining cohort consisting of 114 patients (58 in the PPV group and 56 in the control group) (Fig. 2 ). Notably, both groups exhibited balanced demographic and perioperative charac",
+     ", and follow-up Table 2 Basic characteristics of the study subjects PPV group ( n = 58) Control group ( n = 56) P -value Age (years) 70.2 ± 7.0 70.0 ± 7.5 0.778 BMI(kg/m2) 22.7 ± 3.1 23.0 ± 2.7 0.677 Sex 0.373 Male 38 (6"
+    ]
+   },
+   "equivalencias": []
+  },
+  "tipo_cirurgia": {
+   "ma": "Laparoscopic radical resection of colon cancer",
+   "status": "texto-sem-numero",
+   "achados": {},
+   "equivalencias": []
+  },
+  "laparoscopia_gdft": {
+   "ma": "58",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "laparoscopia_controle": {
+   "ma": "56",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "asa_gdft": {
+   "ma": "0:25:33:0",
+   "status": "equivalencia",
+   "achados": {
+    "25": [
+     " ± 2.7 0.677 Sex 0.373 Male 38 (65.5) 41 (73.2) Female 20 (34.5) 15 (26.8) ASA physical status score 0.679 II 25 (43.1) 22 (39.3) III 33 (56.9) 34 (60.7) Coexisting medical condition Hypertension 18 (31.0) 18 (32.1) 0.899 "
+    ],
+    "33": [
+     "ale 38 (65.5) 41 (73.2) Female 20 (34.5) 15 (26.8) ASA physical status score 0.679 II 25 (43.1) 22 (39.3) III 33 (56.9) 34 (60.7) Coexisting medical condition Hypertension 18 (31.0) 18 (32.1) 0.899 Diabetes 12 (20.7) 12 (2"
+    ]
+   },
+   "equivalencias": []
+  },
+  "asa_controle": {
+   "ma": "0:22:34:0",
+   "status": "equivalencia",
+   "achados": {
+    "22": [
+     "77 Sex 0.373 Male 38 (65.5) 41 (73.2) Female 20 (34.5) 15 (26.8) ASA physical status score 0.679 II 25 (43.1) 22 (39.3) III 33 (56.9) 34 (60.7) Coexisting medical condition Hypertension 18 (31.0) 18 (32.1) 0.899 Diabetes 1"
+    ],
+    "34": [
+     ".5) 41 (73.2) Female 20 (34.5) 15 (26.8) ASA physical status score 0.679 II 25 (43.1) 22 (39.3) III 33 (56.9) 34 (60.7) Coexisting medical condition Hypertension 18 (31.0) 18 (32.1) 0.899 Diabetes 12 (20.7) 12 (21.4) 0.923"
+    ]
+   },
+   "equivalencias": []
+  },
+  "fluido_total_gdft": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "fluido_total_controle": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "cristaloide_gdft": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "cristaloide_controle": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "coloide_gdft": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "coloide_controle": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "perda_sanguinea_gdft": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "perda_sanguinea_controle": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "uso_inotropico": {
+   "ma": "Lower in GDFT",
+   "status": "texto-sem-numero",
+   "achados": {},
+   "equivalencias": []
+  },
+  "morbidade_eventos_gdft": {
+   "ma": "19 (32.8%)",
+   "status": "literal",
+   "achados": {
+    "19": [
+     "nalgesia, ability to mobilize and self-care, and no evidence of complications or untreated medical problems [ 19 ]). Sample size and statistical analysis The study was designed as an RCT. The PPV group received GDFT guided",
+     "129 Data are presented as mean ± SD Primary and secondary outcomes Primary outcomes Complications occurred in 19 out of 58 patients (32.8%) in the PPV group compared to 32 out of 56 patients (57.1%) in the Control group ( "
+    ],
+    "32.8": [
+     "esults The incidence of complications was significantly lower in the PPV group compared to the control group (32.8% vs. 57.1%, P = .009). Additionally, the PPV group had a lower occurrence of gastrointestinal dysfunction (1",
+     "as mean ± SD Primary and secondary outcomes Primary outcomes Complications occurred in 19 out of 58 patients (32.8%) in the PPV group compared to 32 out of 56 patients (57.1%) in the Control group ( P = 0.009). The incidence"
+    ]
+   },
+   "equivalencias": []
+  },
+  "morbidade_eventos_controle": {
+   "ma": "32 (57.1%)",
+   "status": "literal",
+   "achados": {
+    "32": [
+     "utcomes Primary outcomes Complications occurred in 19 out of 58 patients (32.8%) in the PPV group compared to 32 out of 56 patients (57.1%) in the Control group ( P = 0.009). The incidence of gastrointestinal dysfunction w",
+     "ns PPV group ( n = 58) Control group ( n = 56) P -value Any complications occurred within 30 days 19 (32.8) 32 (57.1) 0.009 Infection Pneumonia 5 (8.6) 13 (23.2) 0.033 Abdominal infection 5 (8.6) 4 (7.1) 1.000 Urinary tr"
+    ],
+    "57.1": [
+     " incidence of complications was significantly lower in the PPV group compared to the control group (32.8% vs. 57.1%, P = .009). Additionally, the PPV group had a lower occurrence of gastrointestinal dysfunction (19.0% vs. 3",
+     "s Complications occurred in 19 out of 58 patients (32.8%) in the PPV group compared to 32 out of 56 patients (57.1%) in the Control group ( P = 0.009). The incidence of gastrointestinal dysfunction was significantly lower in"
+    ]
+   },
+   "equivalencias": []
+  },
+  "mortalidade_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "mortalidade_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_flatus_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_flatus_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_ingesta_oral_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_ingesta_oral_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_evacuacao_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_evacuacao_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "ileo_pos_op_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "ileo_pos_op_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  }
+ },
+ "PMC11061212": {
+  "n_randomizados_gdft": {
+   "ma": "43",
+   "status": "literal",
+   "achados": {
+    "43": [
+     "PPC incidence, mortality, and Length of Hospital Stay (LOHS). Results Forty-two patients in the SOC group and 43 in the GDFT group. Nineteen patients (45%) in the SOC and 6 in the GDFT (14%) had at least one PPC ( p = 0.00",
+     "significance level set at 0.05 for all tests. Results The study analyzed 85 patients, 42 in the SOC group and 43 in the GDFT group. No patients were excluded from the study due to loss of follow-up, protocol deviation, or "
+    ]
+   },
+   "equivalencias": []
+  },
+  "n_randomizados_controle": {
+   "ma": "42",
+   "status": "literal",
+   "achados": {
+    "42": [
+     "9.3 for Windows, with a significance level set at 0.05 for all tests. Results The study analyzed 85 patients, 42 in the SOC group and 43 in the GDFT group. No patients were excluded from the study due to loss of follow-up,",
+     "ed according to the number of patients who had the complication. Table 4 Postoperative complications SOC (n = 42) (%) GDFT (n = 43) (%) p -value Pneumonia 4 (10%) 0 0.12 Non-predicted postoperative OTI 14 (33%) 1 (2%) 0.00"
+    ]
+   },
+   "equivalencias": []
+  },
+  "tipo_cirurgia": {
+   "ma": "All major bowel surgeries",
+   "status": "texto-sem-numero",
+   "achados": {},
+   "equivalencias": []
+  },
+  "laparoscopia_gdft": {
+   "ma": "0",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "laparoscopia_controle": {
+   "ma": "0",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "asa_gdft": {
+   "ma": "7:31:5:0",
+   "status": "equivalencia",
+   "achados": {
+    "7": [
+     "270.2 ± 114.5 250.7 ± 92.2 0.39 Variable n (%) n (%) p -value Sex b Male 22 (52) 21 (49) 0.91 ASA I b 11 (26) 7 (16) 0.39 II b 26 (62) 31 (72) 0.44 III c 5 (12) 5 (12) 1.00 Morbidities n (%) n (%) p- value Diabetes Mellit"
+    ],
+    "31": [
+     "2 0.39 Variable n (%) n (%) p -value Sex b Male 22 (52) 21 (49) 0.91 ASA I b 11 (26) 7 (16) 0.39 II b 26 (62) 31 (72) 0.44 III c 5 (12) 5 (12) 1.00 Morbidities n (%) n (%) p- value Diabetes Mellitus b 5 (12%) 6 (14%) 0.97 "
+    ],
+    "5": [
+     "%) n (%) p -value Sex b Male 22 (52) 21 (49) 0.91 ASA I b 11 (26) 7 (16) 0.39 II b 26 (62) 31 (72) 0.44 III c 5 (12) 5 (12) 1.00 Morbidities n (%) n (%) p- value Diabetes Mellitus b 5 (12%) 6 (14%) 0.97 Systemic Arterial ",
+     ") p -value Sex b Male 22 (52) 21 (49) 0.91 ASA I b 11 (26) 7 (16) 0.39 II b 26 (62) 31 (72) 0.44 III c 5 (12) 5 (12) 1.00 Morbidities n (%) n (%) p- value Diabetes Mellitus b 5 (12%) 6 (14%) 0.97 Systemic Arterial Hyperte"
+    ]
+   },
+   "equivalencias": []
+  },
+  "asa_controle": {
+   "ma": "11:26:5:0",
+   "status": "equivalencia",
+   "achados": {
+    "11": [
+     "(min) a 270.2 ± 114.5 250.7 ± 92.2 0.39 Variable n (%) n (%) p -value Sex b Male 22 (52) 21 (49) 0.91 ASA I b 11 (26) 7 (16) 0.39 II b 26 (62) 31 (72) 0.44 III c 5 (12) 5 (12) 1.00 Morbidities n (%) n (%) p- value Diabetes"
+    ],
+    "26": [
+     ") a 270.2 ± 114.5 250.7 ± 92.2 0.39 Variable n (%) n (%) p -value Sex b Male 22 (52) 21 (49) 0.91 ASA I b 11 (26) 7 (16) 0.39 II b 26 (62) 31 (72) 0.44 III c 5 (12) 5 (12) 1.00 Morbidities n (%) n (%) p- value Diabetes Mel",
+     ".7 ± 92.2 0.39 Variable n (%) n (%) p -value Sex b Male 22 (52) 21 (49) 0.91 ASA I b 11 (26) 7 (16) 0.39 II b 26 (62) 31 (72) 0.44 III c 5 (12) 5 (12) 1.00 Morbidities n (%) n (%) p- value Diabetes Mellitus b 5 (12%) 6 (14"
+    ],
+    "5": [
+     "%) n (%) p -value Sex b Male 22 (52) 21 (49) 0.91 ASA I b 11 (26) 7 (16) 0.39 II b 26 (62) 31 (72) 0.44 III c 5 (12) 5 (12) 1.00 Morbidities n (%) n (%) p- value Diabetes Mellitus b 5 (12%) 6 (14%) 0.97 Systemic Arterial ",
+     ") p -value Sex b Male 22 (52) 21 (49) 0.91 ASA I b 11 (26) 7 (16) 0.39 II b 26 (62) 31 (72) 0.44 III c 5 (12) 5 (12) 1.00 Morbidities n (%) n (%) p- value Diabetes Mellitus b 5 (12%) 6 (14%) 0.97 Systemic Arterial Hyperte"
+    ]
+   },
+   "equivalencias": []
+  },
+  "fluido_total_gdft": {
+   "ma": "3810.4 ± 2126.9",
+   "status": "literal",
+   "achados": {
+    "3810.4": [
+     " SOC (n = 42) GDFT (n = 43) Variable Mean ± SD Mean ± SD p -value Total volume infused (mL) a 4879.9 ± 2147.3 3810.4 ± 2126.9* 0.02 Ringer's lactate solution (mL) a 3901.2 ± 1475.1 2982.9 ± 1524.0* 0.006 Voluven® 6% (mL) 1 a 7"
+    ],
+    "2126.9": [
+     " 42) GDFT (n = 43) Variable Mean ± SD Mean ± SD p -value Total volume infused (mL) a 4879.9 ± 2147.3 3810.4 ± 2126.9* 0.02 Ringer's lactate solution (mL) a 3901.2 ± 1475.1 2982.9 ± 1524.0* 0.006 Voluven® 6% (mL) 1 a 737.8 ± 38"
+    ]
+   },
+   "equivalencias": []
+  },
+  "fluido_total_controle": {
+   "ma": "4879.9 ± 2147.3",
+   "status": "literal",
+   "achados": {
+    "4879.9": [
+     ". Table 2 Groups SOC (n = 42) GDFT (n = 43) Variable Mean ± SD Mean ± SD p -value Total volume infused (mL) a 4879.9 ± 2147.3 3810.4 ± 2126.9* 0.02 Ringer's lactate solution (mL) a 3901.2 ± 1475.1 2982.9 ± 1524.0* 0.006 Voluve"
+    ],
+    "2147.3": [
+     " Groups SOC (n = 42) GDFT (n = 43) Variable Mean ± SD Mean ± SD p -value Total volume infused (mL) a 4879.9 ± 2147.3 3810.4 ± 2126.9* 0.02 Ringer's lactate solution (mL) a 3901.2 ± 1475.1 2982.9 ± 1524.0* 0.006 Voluven® 6% (mL"
+    ]
+   },
+   "equivalencias": []
+  },
+  "cristaloide_gdft": {
+   "ma": "2982.9 ± 1524.0",
+   "status": "literal",
+   "achados": {
+    "2982.9": [
+     " volume infused (mL) a 4879.9 ± 2147.3 3810.4 ± 2126.9* 0.02 Ringer's lactate solution (mL) a 3901.2 ± 1475.1 2982.9 ± 1524.0* 0.006 Voluven® 6% (mL) 1 a 737.8 ± 383.2 779.7 ± 565.1 0.71 Voluven® 6% (mL.kg −1 ) a 10.7 ± 5.9 10"
+    ],
+    "1524.0": [
+     "nfused (mL) a 4879.9 ± 2147.3 3810.4 ± 2126.9* 0.02 Ringer's lactate solution (mL) a 3901.2 ± 1475.1 2982.9 ± 1524.0* 0.006 Voluven® 6% (mL) 1 a 737.8 ± 383.2 779.7 ± 565.1 0.71 Voluven® 6% (mL.kg −1 ) a 10.7 ± 5.9 10.8 ± 6.6 "
+    ]
+   },
+   "equivalencias": []
+  },
+  "cristaloide_controle": {
+   "ma": "3901.2 ± 1475.1",
+   "status": "literal",
+   "achados": {
+    "3901.2": [
+     "D p -value Total volume infused (mL) a 4879.9 ± 2147.3 3810.4 ± 2126.9* 0.02 Ringer's lactate solution (mL) a 3901.2 ± 1475.1 2982.9 ± 1524.0* 0.006 Voluven® 6% (mL) 1 a 737.8 ± 383.2 779.7 ± 565.1 0.71 Voluven® 6% (mL.kg −1 )"
+    ],
+    "1475.1": [
+     "e Total volume infused (mL) a 4879.9 ± 2147.3 3810.4 ± 2126.9* 0.02 Ringer's lactate solution (mL) a 3901.2 ± 1475.1 2982.9 ± 1524.0* 0.006 Voluven® 6% (mL) 1 a 737.8 ± 383.2 779.7 ± 565.1 0.71 Voluven® 6% (mL.kg −1 ) a 10.7 ±"
+    ]
+   },
+   "equivalencias": []
+  },
+  "coloide_gdft": {
+   "ma": "779.7 ± 565.1",
+   "status": "literal",
+   "achados": {
+    "779.7": [
+     "02 Ringer's lactate solution (mL) a 3901.2 ± 1475.1 2982.9 ± 1524.0* 0.006 Voluven® 6% (mL) 1 a 737.8 ± 383.2 779.7 ± 565.1 0.71 Voluven® 6% (mL.kg −1 ) a 10.7 ± 5.9 10.8 ± 6.6 0.94 Red blood cells (mL) b 484.4 ± 298.3 348.6 "
+    ],
+    "565.1": [
+     "r's lactate solution (mL) a 3901.2 ± 1475.1 2982.9 ± 1524.0* 0.006 Voluven® 6% (mL) 1 a 737.8 ± 383.2 779.7 ± 565.1 0.71 Voluven® 6% (mL.kg −1 ) a 10.7 ± 5.9 10.8 ± 6.6 0.94 Red blood cells (mL) b 484.4 ± 298.3 348.6 ± 146.0 "
+    ]
+   },
+   "equivalencias": []
+  },
+  "coloide_controle": {
+   "ma": "737.8 ± 383.2",
+   "status": "literal",
+   "achados": {
+    "737.8": [
+     "4 ± 2126.9* 0.02 Ringer's lactate solution (mL) a 3901.2 ± 1475.1 2982.9 ± 1524.0* 0.006 Voluven® 6% (mL) 1 a 737.8 ± 383.2 779.7 ± 565.1 0.71 Voluven® 6% (mL.kg −1 ) a 10.7 ± 5.9 10.8 ± 6.6 0.94 Red blood cells (mL) b 484.4 "
+    ],
+    "383.2": [
+     ".9* 0.02 Ringer's lactate solution (mL) a 3901.2 ± 1475.1 2982.9 ± 1524.0* 0.006 Voluven® 6% (mL) 1 a 737.8 ± 383.2 779.7 ± 565.1 0.71 Voluven® 6% (mL.kg −1 ) a 10.7 ± 5.9 10.8 ± 6.6 0.94 Red blood cells (mL) b 484.4 ± 298.3 "
+    ]
+   },
+   "equivalencias": []
+  },
+  "perda_sanguinea_gdft": {
+   "ma": "1100.1 ± 851.1",
+   "status": "literal",
+   "achados": {
+    "1100.1": [
+     " 0.29 Fluid balance (mL) a 1566.8 ± 1546.9 1025.6 ± 1443.1 0.10 Intraoperative bleeding (mL) b 1283.2 ± 959.7 1100.1 ± 851.1 0.34 SOC, Standard of Care; GDFT, Goal-Directed Fluid Therapy; SD, Standard Deviation. a Student t -t"
+    ],
+    "851.1": [
+     "id balance (mL) a 1566.8 ± 1546.9 1025.6 ± 1443.1 0.10 Intraoperative bleeding (mL) b 1283.2 ± 959.7 1100.1 ± 851.1 0.34 SOC, Standard of Care; GDFT, Goal-Directed Fluid Therapy; SD, Standard Deviation. a Student t -test for "
+    ]
+   },
+   "equivalencias": []
+  },
+  "perda_sanguinea_controle": {
+   "ma": "1283.2 ± 959.7",
+   "status": "literal",
+   "achados": {
+    "1283.2": [
+     "4364.5 ± 2920.6 0.29 Fluid balance (mL) a 1566.8 ± 1546.9 1025.6 ± 1443.1 0.10 Intraoperative bleeding (mL) b 1283.2 ± 959.7 1100.1 ± 851.1 0.34 SOC, Standard of Care; GDFT, Goal-Directed Fluid Therapy; SD, Standard Deviation."
+    ],
+    "959.7": [
+     "2920.6 0.29 Fluid balance (mL) a 1566.8 ± 1546.9 1025.6 ± 1443.1 0.10 Intraoperative bleeding (mL) b 1283.2 ± 959.7 1100.1 ± 851.1 0.34 SOC, Standard of Care; GDFT, Goal-Directed Fluid Therapy; SD, Standard Deviation. a Stude"
+    ]
+   },
+   "equivalencias": []
+  },
+  "uso_inotropico": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "morbidade_eventos_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "morbidade_eventos_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "mortalidade_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "mortalidade_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_flatus_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_flatus_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_ingesta_oral_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_ingesta_oral_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_evacuacao_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_evacuacao_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "ileo_pos_op_gdft": {
+   "ma": "6 (14.0%)",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "ileo_pos_op_controle": {
+   "ma": "19 (45.2%)",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  }
+ },
+ "PMC12565272": {
+  "n_randomizados_gdft": {
+   "ma": "19",
+   "status": "literal",
+   "achados": {
+    "19": [
+     "ery pulse contour analysis. Results : 45 patients were randomized to the GDHT (n = 16) and control group (n = 19). Blood loss was significantly higher in the control group than in GDHT group (728.13 ± 618.59 versus 292.63 ",
+     " patients receiving intraoperative transfusion was significantly higher in the first group (6 ± 16 versus 0 ± 19, p = 0.005). Total volume infused was significantly higher in control group (CG) than in GDHT group (GG) (285"
+    ]
+   },
+   "equivalencias": []
+  },
+  "n_randomizados_controle": {
+   "ma": "16",
+   "status": "literal",
+   "achados": {
+    "16": [
+     "herapy guided by radial artery pulse contour analysis. Results : 45 patients were randomized to the GDHT (n = 16) and control group (n = 19). Blood loss was significantly higher in the control group than in GDHT group (728",
+     " The number of patients receiving intraoperative transfusion was significantly higher in the first group (6 ± 16 versus 0 ± 19, p = 0.005). Total volume infused was significantly higher in control group (CG) than in GDHT g"
+    ]
+   },
+   "equivalencias": []
+  },
+  "tipo_cirurgia": {
+   "ma": "All major liver surgeries",
+   "status": "texto-sem-numero",
+   "achados": {},
+   "equivalencias": []
+  },
+  "laparoscopia_gdft": {
+   "ma": "0",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "laparoscopia_controle": {
+   "ma": "0",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "asa_gdft": {
+   "ma": "0:13:6:0",
+   "status": "equivalencia",
+   "achados": {
+    "13": [
+     "528 Age (years) 68.38 ± 8.9 62.37 ± 12.3 0.116 Weight (kg) 76.44 ± 14.4 76.47 ± 15.1 0.99 ASA (II/III) 10 ± 6 13 ± 6 0.495 Cardiovascular disease 5 ± 16 2 ± 19 0.135 Respiratory disese 2 ± 16 3 ± 19 0.598 Preoperative Hemo"
+    ],
+    "6": [
+     "hic Characteristics and Baseline Laboratory Parameters Control N = 16 GDHT N = 19 p -Value Gender (male) 10 ± 6 11 ± 8 0.528 Age (years) 68.38 ± 8.9 62.37 ± 12.3 0.116 Weight (kg) 76.44 ± 14.4 76.47 ± 15.1 0.99 ASA (II/II",
+     "0.528 Age (years) 68.38 ± 8.9 62.37 ± 12.3 0.116 Weight (kg) 76.44 ± 14.4 76.47 ± 15.1 0.99 ASA (II/III) 10 ± 6 13 ± 6 0.495 Cardiovascular disease 5 ± 16 2 ± 19 0.135 Respiratory disese 2 ± 16 3 ± 19 0.598 Preoperative H"
+    ]
+   },
+   "equivalencias": []
+  },
+  "asa_controle": {
+   "ma": "0:10:6:0",
+   "status": "equivalencia",
+   "achados": {
+    "10": [
+     "ographic Characteristics and Baseline Laboratory Parameters Control N = 16 GDHT N = 19 p -Value Gender (male) 10 ± 6 11 ± 8 0.528 Age (years) 68.38 ± 8.9 62.37 ± 12.3 0.116 Weight (kg) 76.44 ± 14.4 76.47 ± 15.1 0.99 ASA (I",
+     " ± 8 0.528 Age (years) 68.38 ± 8.9 62.37 ± 12.3 0.116 Weight (kg) 76.44 ± 14.4 76.47 ± 15.1 0.99 ASA (II/III) 10 ± 6 13 ± 6 0.495 Cardiovascular disease 5 ± 16 2 ± 19 0.135 Respiratory disese 2 ± 16 3 ± 19 0.598 Preoperati"
+    ],
+    "6": [
+     "hic Characteristics and Baseline Laboratory Parameters Control N = 16 GDHT N = 19 p -Value Gender (male) 10 ± 6 11 ± 8 0.528 Age (years) 68.38 ± 8.9 62.37 ± 12.3 0.116 Weight (kg) 76.44 ± 14.4 76.47 ± 15.1 0.99 ASA (II/II",
+     "0.528 Age (years) 68.38 ± 8.9 62.37 ± 12.3 0.116 Weight (kg) 76.44 ± 14.4 76.47 ± 15.1 0.99 ASA (II/III) 10 ± 6 13 ± 6 0.495 Cardiovascular disease 5 ± 16 2 ± 19 0.135 Respiratory disese 2 ± 16 3 ± 19 0.598 Preoperative H"
+    ]
+   },
+   "equivalencias": []
+  },
+  "fluido_total_gdft": {
+   "ma": "1125.8 ± 751.2",
+   "status": "equivalencia",
+   "achados": {
+    "751.2": [
+     "ed was significantly higher in control group (CG) than in GDHT group (GG) (2853.13 ± 1432.18 versus 1125.79 ± 751.2, p = 0.001). Conclusions : Personalized goal-directed therapy optimizes intraoperative fluid administration d",
+     "lumen infused (mL) 1450 ± 815.06 849.47 ± 669.74 0.023 Total volumen infused (mL) 2853.13 ± 1432.18 1125.79 ± 751.2 0.001 Urinary output (mL) 430.63 ± 310.26 206.84 ± 133.2 0.007 Others outomes Duration of resection (min) 82."
+    ]
+   },
+   "equivalencias": []
+  },
+  "fluido_total_controle": {
+   "ma": "2853.1 ± 1432.2",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "cristaloide_gdft": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "cristaloide_controle": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "coloide_gdft": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "coloide_controle": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "perda_sanguinea_gdft": {
+   "ma": "292.6 ± 274.1",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "perda_sanguinea_controle": {
+   "ma": "728.1 ± 618.6",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "uso_inotropico": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "morbidade_eventos_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "morbidade_eventos_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "mortalidade_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "mortalidade_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_flatus_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_flatus_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_ingesta_oral_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_ingesta_oral_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_evacuacao_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_evacuacao_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "ileo_pos_op_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "ileo_pos_op_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  }
+ },
+ "PMC4782303": {
+  "n_randomizados_gdft": {
+   "ma": "92",
+   "status": "literal",
+   "achados": {
+    "92": [
+     "ncidence of acute kidney injury according to RIFLE (first line: all patients with RIFLE ≥ 1) 45/88 (51 %) 54/92 (59 %) 0.73 (0.41 to 1.33) 0.31 R: 29/88 R: 30/92 I: 14/88 I: 22/92 F: 2/88 F: 2/92 Incidence of acute kidne",
+     " (first line: all patients with RIFLE ≥ 1) 45/88 (51 %) 54/92 (59 %) 0.73 (0.41 to 1.33) 0.31 R: 29/88 R: 30/92 I: 14/88 I: 22/92 F: 2/88 F: 2/92 Incidence of acute kidney injury according to KDIGO (first line: all pati"
+    ]
+   },
+   "equivalencias": []
+  },
+  "n_randomizados_controle": {
+   "ma": "88",
+   "status": "literal",
+   "achados": {
+    "88": [
+     "astases, peritoneal carcinosis). Ninety-two patients in the GDT group received the allocated intervention and 88 in the control group. Although in nine patients (five GDT, four control) protocol violations were observed, w",
+     "ital stay) Incidence of acute kidney injury according to RIFLE (first line: all patients with RIFLE ≥ 1) 45/88 (51 %) 54/92 (59 %) 0.73 (0.41 to 1.33) 0.31 R: 29/88 R: 30/92 I: 14/88 I: 22/92 F: 2/88 F: 2/92 Incidence o"
+    ]
+   },
+   "equivalencias": []
+  },
+  "tipo_cirurgia": {
+   "ma": "16 Whipple, 71 oesophageal, three pancreatectomies, two others",
+   "status": "literal",
+   "achados": {
+    "16": [
+     "or-tipped catheter in the femoral artery. Before surgical incision, an epidural bolus of 10 μg sufentanil and 16 mg ropivacaine was applied. For pain therapy, a continuous epidural infusion of 3 μg sufentanil and 4.8 mg ro",
+     "μmol/l) 79 ± 23 81 ± 22 Creatinine clearance (ml/min/1.73 m 2 ) 87 ± 26 83 ± 25 Type of surgery Whipple 14 (16 %) 16 (18 %) Oesophageal 65 (74 %) 71 (77 %) Pancreatectomy 5 (6 %) 3 (3 %) Other 4 (4 %) 2 (2 %) Pre-medi"
+    ],
+    "71": [
+     "arance (ml/min/1.73 m 2 ) 87 ± 26 83 ± 25 Type of surgery Whipple 14 (16 %) 16 (18 %) Oesophageal 65 (74 %) 71 (77 %) Pancreatectomy 5 (6 %) 3 (3 %) Other 4 (4 %) 2 (2 %) Pre-medical condition Diabetes 15 (17 %) 21 (2"
+    ]
+   },
+   "equivalencias": []
+  },
+  "laparoscopia_gdft": {
+   "ma": "0",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "laparoscopia_controle": {
+   "ma": "0",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "asa_gdft": {
+   "ma": "Not stated",
+   "status": "texto-sem-numero",
+   "achados": {},
+   "equivalencias": []
+  },
+  "asa_controle": {
+   "ma": "Not stated",
+   "status": "texto-sem-numero",
+   "achados": {},
+   "equivalencias": []
+  },
+  "fluido_total_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "fluido_total_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "cristaloide_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "cristaloide_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "coloide_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "coloide_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "perda_sanguinea_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "perda_sanguinea_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "uso_inotropico": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "morbidade_eventos_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "morbidade_eventos_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "mortalidade_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "mortalidade_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_flatus_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_flatus_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_ingesta_oral_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_ingesta_oral_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_evacuacao_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_evacuacao_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "ileo_pos_op_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "ileo_pos_op_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  }
+ },
+ "PMC5589093": {
+  "n_randomizados_gdft": {
+   "ma": "26",
+   "status": "literal",
+   "achados": {
+    "26": [
+     " to observe a large treatment effect (Cohen’s d = 0.8). In order to observe such effect 52 patients in total (26 per group) would provide a power of 0.8, assuming the type 1 error threshold of 0.05. Based on previous pilot",
+     " goal directed therapy. Data presented as median (interquartile range) or number (proportion). GDT group (n = 26) Usual care group (n = 26) Characteristics Age (years) 61 (53:72) 68 (54:75) Male:Female 15:11 14:12 BMI (kg/"
+    ]
+   },
+   "equivalencias": []
+  },
+  "n_randomizados_controle": {
+   "ma": "26",
+   "status": "literal",
+   "achados": {
+    "26": [
+     " to observe a large treatment effect (Cohen’s d = 0.8). In order to observe such effect 52 patients in total (26 per group) would provide a power of 0.8, assuming the type 1 error threshold of 0.05. Based on previous pilot",
+     " goal directed therapy. Data presented as median (interquartile range) or number (proportion). GDT group (n = 26) Usual care group (n = 26) Characteristics Age (years) 61 (53:72) 68 (54:75) Male:Female 15:11 14:12 BMI (kg/"
+    ]
+   },
+   "equivalencias": []
+  },
+  "tipo_cirurgia": {
+   "ma": "All pancreaticoduodenal surgeries",
+   "status": "texto-sem-numero",
+   "achados": {},
+   "equivalencias": []
+  },
+  "laparoscopia_gdft": {
+   "ma": "0",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "laparoscopia_controle": {
+   "ma": "0",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "asa_gdft": {
+   "ma": "Not stated",
+   "status": "texto-sem-numero",
+   "achados": {},
+   "equivalencias": []
+  },
+  "asa_controle": {
+   "ma": "Not stated",
+   "status": "texto-sem-numero",
+   "achados": {},
+   "equivalencias": []
+  },
+  "fluido_total_gdft": {
+   "ma": "2050 (1313-2700)",
+   "status": "literal",
+   "achados": {
+    "2050": [
+     "l care group (p<0.0001). Total volume of fluid administered intraoperatively was also lower in the GDT group: 2050mL (1313:2700) vs. 4088mL (3400:4525), p<0.0001 and vasoactive medications were used more frequently. There we",
+     "00 (0:500) 200 (0:500) -94 (-369:182) a 0.499 Blood products 0 1 (4%) Not estimable b >0.999 Total fluid (mL) 2050 (1313:2700) 4088 (3400:4525) -1881 (-2490:-1271) a <0.0001 Total fluid (mL/kg/hr) 3.2 (2.2:3.9) 6.8 (5.4:8.6)"
+    ],
+    "1313": [
+     "roup (p<0.0001). Total volume of fluid administered intraoperatively was also lower in the GDT group: 2050mL (1313:2700) vs. 4088mL (3400:4525), p<0.0001 and vasoactive medications were used more frequently. There were no si",
+     "500) 200 (0:500) -94 (-369:182) a 0.499 Blood products 0 1 (4%) Not estimable b >0.999 Total fluid (mL) 2050 (1313:2700) 4088 (3400:4525) -1881 (-2490:-1271) a <0.0001 Total fluid (mL/kg/hr) 3.2 (2.2:3.9) 6.8 (5.4:8.6) -3.40"
+    ],
+    "2700": [
+     "(p<0.0001). Total volume of fluid administered intraoperatively was also lower in the GDT group: 2050mL (1313:2700) vs. 4088mL (3400:4525), p<0.0001 and vasoactive medications were used more frequently. There were no signifi",
+     "200 (0:500) -94 (-369:182) a 0.499 Blood products 0 1 (4%) Not estimable b >0.999 Total fluid (mL) 2050 (1313:2700) 4088 (3400:4525) -1881 (-2490:-1271) a <0.0001 Total fluid (mL/kg/hr) 3.2 (2.2:3.9) 6.8 (5.4:8.6) -3.40 (-4."
+    ]
+   },
+   "equivalencias": []
+  },
+  "fluido_total_controle": {
+   "ma": "4088 (3400-4525)",
+   "status": "literal",
+   "achados": {
+    "4088": [
+     ". Total volume of fluid administered intraoperatively was also lower in the GDT group: 2050mL (1313:2700) vs. 4088mL (3400:4525), p<0.0001 and vasoactive medications were used more frequently. There were no significant diffe",
+     ":500) -94 (-369:182) a 0.499 Blood products 0 1 (4%) Not estimable b >0.999 Total fluid (mL) 2050 (1313:2700) 4088 (3400:4525) -1881 (-2490:-1271) a <0.0001 Total fluid (mL/kg/hr) 3.2 (2.2:3.9) 6.8 (5.4:8.6) -3.40 (-4.37:-2."
+    ],
+    "3400": [
+     "volume of fluid administered intraoperatively was also lower in the GDT group: 2050mL (1313:2700) vs. 4088mL (3400:4525), p<0.0001 and vasoactive medications were used more frequently. There were no significant differences i",
+     "-94 (-369:182) a 0.499 Blood products 0 1 (4%) Not estimable b >0.999 Total fluid (mL) 2050 (1313:2700) 4088 (3400:4525) -1881 (-2490:-1271) a <0.0001 Total fluid (mL/kg/hr) 3.2 (2.2:3.9) 6.8 (5.4:8.6) -3.40 (-4.37:-2.44) a "
+    ],
+    "4525": [
+     "e of fluid administered intraoperatively was also lower in the GDT group: 2050mL (1313:2700) vs. 4088mL (3400:4525), p<0.0001 and vasoactive medications were used more frequently. There were no significant differences in pro",
+     "-369:182) a 0.499 Blood products 0 1 (4%) Not estimable b >0.999 Total fluid (mL) 2050 (1313:2700) 4088 (3400:4525) -1881 (-2490:-1271) a <0.0001 Total fluid (mL/kg/hr) 3.2 (2.2:3.9) 6.8 (5.4:8.6) -3.40 (-4.37:-2.44) a <0.00"
+    ]
+   },
+   "equivalencias": []
+  },
+  "cristaloide_gdft": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "cristaloide_controle": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "coloide_gdft": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "coloide_controle": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "perda_sanguinea_gdft": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "perda_sanguinea_controle": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "uso_inotropico": {
+   "ma": "Higher in GDFT",
+   "status": "texto-sem-numero",
+   "achados": {},
+   "equivalencias": []
+  },
+  "morbidade_eventos_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "morbidade_eventos_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "mortalidade_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "mortalidade_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_flatus_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_flatus_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_ingesta_oral_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_ingesta_oral_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_evacuacao_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_evacuacao_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "ileo_pos_op_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "ileo_pos_op_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  }
+ },
+ "PMC6907038": {
+  "n_randomizados_gdft": {
+   "ma": "200",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "n_randomizados_controle": {
+   "ma": "101",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "tipo_cirurgia": {
+   "ma": "49 Whipple's procedure, 49 abdominoperineal resection, 55 hemicolectomy, 40 total distal gastrectomy, two GIST excision and intestinal anastomosis, 23 GJ+JJ",
+   "status": "equivalencia",
+   "achados": {},
+   "equivalencias": [
+    {
+     "ma": "40",
+     "fonte": "20",
+     "regra": "%=40/200",
+     "trecho": " fluid therapy in general surgical patients undergoing open major bowel surgery. Methodology Patients between 20 and 70 years of age, either gender, ASA I and II, and scheduled for elective open major bowel surgery were in"
+    }
+   ]
+  },
+  "laparoscopia_gdft": {
+   "ma": "0",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "laparoscopia_controle": {
+   "ma": "0",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "asa_gdft": {
+   "ma": "95:105",
+   "status": "nao-achada",
+   "achados": {},
+   "equivalencias": []
+  },
+  "asa_controle": {
+   "ma": "2 days, 11:42:00",
+   "status": "equivalencia",
+   "achados": {
+    "2": [
+     "were noted. Results 306 patients, with 102 in each group, were enrolled. Five patients (control (1), FloTrac (2), and PVI (2)) were inoperable and were excluded. Demographic data, ASA PS, anaesthetic technique, duration o",
+     "esults 306 patients, with 102 in each group, were enrolled. Five patients (control (1), FloTrac (2), and PVI (2)) were inoperable and were excluded. Demographic data, ASA PS, anaesthetic technique, duration of surgery, an"
+    ]
+   },
+   "equivalencias": []
+  },
+  "fluido_total_gdft": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "fluido_total_controle": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "cristaloide_gdft": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "cristaloide_controle": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "coloide_gdft": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "coloide_controle": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "perda_sanguinea_gdft": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "perda_sanguinea_controle": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "uso_inotropico": {
+   "ma": "NR",
+   "status": "sem-valor-na-ma"
+  },
+  "morbidade_eventos_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "morbidade_eventos_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "mortalidade_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "mortalidade_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_flatus_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_flatus_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "tempo_ingesta_oral_gdft": {
+   "ma": "80 ± 20",
+   "status": "equivalencia",
+   "achados": {
+    "20": [
+     "for day of return of bowel movement, toleration of diet, serious complication, and mortality rate. A total of 20 (6.67%) patients in this study developed postoperative renal dysfunction (first 48 hours) (control group: 10,"
+    ]
+   },
+   "equivalencias": []
+  },
+  "tempo_ingesta_oral_controle": {
+   "ma": "85 ± 25",
+   "status": "equivalencia",
+   "achados": {
+    "25": [
+     "ength of hospital stay, ICU stay, days to oral intake, day of return of bowel movement, and mortality) [ 22 – 25 , 29 ]. There was no difference between the three groups with respect to development of MODS or survival. In "
+    ]
+   },
+   "equivalencias": []
+  },
+  "tempo_evacuacao_gdft": {
+   "ma": "72 ± 18",
+   "status": "equivalencia",
+   "achados": {
+    "18": [
+     "vel, length of hospital day, ICU stay, days to oral intake, day of return of bowel movement, and mortality) [ 18 , 21 ]. Ramsingh et al. [ 30 ] and Salzwedal et al. [ 31 ] observed that the total number of complications wa"
+    ]
+   },
+   "equivalencias": []
+  },
+  "tempo_evacuacao_controle": {
+   "ma": "78 ± 20",
+   "status": "equivalencia",
+   "achados": {
+    "20": [
+     " fluid therapy in general surgical patients undergoing open major bowel surgery. Methodology Patients between 20 and 70 years of age, either gender, ASA I and II, and scheduled for elective open major bowel surgery were in",
+     "for day of return of bowel movement, toleration of diet, serious complication, and mortality rate. A total of 20 (6.67%) patients in this study developed postoperative renal dysfunction (first 48 hours) (control group: 10,"
+    ]
+   },
+   "equivalencias": []
+  },
+  "ileo_pos_op_gdft": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  },
+  "ileo_pos_op_controle": {
+   "ma": null,
+   "status": "sem-valor-na-ma"
+  }
+ }
+}
