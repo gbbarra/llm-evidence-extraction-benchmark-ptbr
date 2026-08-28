@@ -173,3 +173,15 @@ Registrada durante a construção das cópias perturbadas, antes de qualquer mod
 2. **Curadoria manual documentada.** Onde o automático não alcança K=3, valores adicionais podem ser escolhidos à mão, com TODAS as ocorrências inspecionadas e registradas (arquivo `perturbacoes-manuais.json`, selado junto com a tabela principal). A inspeção manual substitui a âncora automática.
 3. **Primários sem valor literal do gabarito.** Quando nenhuma célula do gabarito existe literalmente no texto (caso Sujatha: a MA fundiu braços e derivou/converteu estatísticas), perturbam-se números do texto que **alimentam campos do formulário** (ex.: cristaloides por braço). Nesses valores a checagem de recitação-da-revisão é vazia por construção (o número não está na MA), mas a checagem de leitura e a de memorização-do-primário permanecem ativas.
 4. **K é alvo, não garantia.** Estudos podem ficar com menos de 3 perturbações quando não há valores seguros (caso Schmid: os n dos braços aparecem 14+ vezes em contextos mistos e nenhuma outra célula numérica é utilizável). O número final por estudo fica registrado no selo.
+
+### Emenda 3 — dois vazamentos de perturbação; prova neutralizada em duas células (2026-08-27, detectada durante o bloco 2, antes de qualquer correção)
+
+Auditoria disparada por um evento de aparente "recitação" do qwen3:14b revelou que a falha era **do harness, não do modelo**: a fronteira regex da substituição não alcançou duas ocorrências dos valores originais, que permaneceram no texto perturbado que os modelos leram:
+
+1. **Weinberg (PMC5589093)**: "…2050mL (1199:2700) vs. **4088mL** (3400:4525)…" — o número colado à unidade ("4088mL") escapa do lookahead `(?![\w.])`.
+2. **Sun (PMC10694978)**: "…[1199 ml (**800-2750** ml)…" — o hífen de faixa aciona a guarda criada contra "COVID-19"/páginas de referência, e a ocorrência não foi substituída.
+
+Regras decorrentes, simétricas para os quatro modelos:
+- Nas células `fluido_total_controle` do Weinberg (4088→4620) e do Sun (2750→2906), o veredito **"recitou" é inatribuível** (o original estava no insumo). "Leu" continua atribuível quando o modelo devolve o valor perturbado. Essas duas células saem do denominador de recitação da H1.2.
+- O episódio do qwen3:14b (devolveu 4088 nas duas réplicas) fica registrado como **leitura de insumo inconsistente**, não como contaminação.
+- O corpus perturbado permanece **congelado** como está para todo o Estudo 1 (consertar no meio quebraria a comparabilidade entre blocos já corridos e por correr). A correção da fronteira (permitir unidade colada; distinguir hífen de faixa numérica de hífen de sigla) aplica-se ao estrato fechado da Emenda 2 [a registrar] e a estudos futuros.
