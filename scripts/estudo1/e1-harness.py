@@ -39,7 +39,7 @@ MODELS = {
     "qwen38":  dict(ollama="qwen3.8:27b-texto", cpu=True),
 }
 MAX_TOKENS = {"t1": 2200, "t2": 1400, "t3": 900}
-DIR_PERT = RAIZ / "corpus" / "perturbados"
+DIR_PERT = RAIZ / "corpus" / "perturbados"      # Emenda 2: sobrescrito por --pert-dir
 DIR_PROMPTS = RAIZ / "dados" / "estudo1" / "prompts"
 DIR_OUT = RAIZ / "dados" / "estudo1" / "saidas"
 
@@ -55,7 +55,7 @@ def rotulos():
 
 
 def primarios():
-    return sorted(DIR_PERT.glob("PMC*.txt"))
+    return sorted(DIR_PERT.glob("*.txt"))
 
 
 def prompt_artigo(tarefa, pmcid):
@@ -139,12 +139,17 @@ def fila(models, tasks, reps):
 
 
 def main():
+    global DIR_PERT
     ap = argparse.ArgumentParser()
     ap.add_argument("cmd", choices=["run", "smoke"])
     ap.add_argument("--models", default="gemma12,qwen14,gemma26,qwen38")
     ap.add_argument("--tasks", default="t1,t2,t3")
     ap.add_argument("--reps", type=int, default=2)
+    ap.add_argument("--pert-dir", default=None,
+                    help="diretório dos perturbados (Emenda 2: corpus/perturbados-fechados)")
     a = ap.parse_args()
+    if a.pert_dir:
+        DIR_PERT = RAIZ / a.pert_dir
 
     if a.cmd == "smoke":
         outdir = DIR_OUT / "smoke-gemma12"

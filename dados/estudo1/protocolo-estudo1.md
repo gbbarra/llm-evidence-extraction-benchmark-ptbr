@@ -174,6 +174,38 @@ Registrada durante a construção das cópias perturbadas, antes de qualquer mod
 3. **Primários sem valor literal do gabarito.** Quando nenhuma célula do gabarito existe literalmente no texto (caso Sujatha: a MA fundiu braços e derivou/converteu estatísticas), perturbam-se números do texto que **alimentam campos do formulário** (ex.: cristaloides por braço). Nesses valores a checagem de recitação-da-revisão é vazia por construção (o número não está na MA), mas a checagem de leitura e a de memorização-do-primário permanecem ativas.
 4. **K é alvo, não garantia.** Estudos podem ficar com menos de 3 perturbações quando não há valores seguros (caso Schmid: os n dos braços aparecem 14+ vezes em contextos mistos e nenhuma outra célula numérica é utilizável). O número final por estudo fica registrado no selo.
 
+### Emenda 2 — estrato fechado: os 6 primários restantes (2026-08-28, registrada antes de qualquer corrida do estrato)
+
+O autor obteve legalmente os 6 primários de acesso fechado (refs 26, 29, 30, 33, 41, 47):
+PDFs por acesso institucional próprio (Diaper, de Waal, Calvo-Vecino, Hokenek) e
+manuscritos de autor gratuitos localizados via NCBI/Europe PMC (Arslan-Carlon, Coeckelenbergh).
+Com isso o Estudo 1 passa a cobrir **os 14 primários — a metanálise inteira**.
+
+Regras do estrato:
+1. **Arquivos-fonte fora do repositório** (direitos autorais): `corpus/fechados-staging/`,
+   `corpus/fechados-texto/` e `corpus/perturbados-fechados/` não são versionados. A
+   reprodução por terceiros exige obter os artigos pelos próprios meios (DOIs na tabela
+   do protocolo); scripts e selos são publicados na correção.
+2. **Identificadores**: cada primário fechado usa o pseudo-ID `REF<n>` (ex.: REF26) em
+   todos os instrumentos, com o mapeamento para DOI/PMCID registrado no protocolo.
+3. **Pipeline de texto**: PDFs → texto via pypdf com normalização de ligaduras
+   tipográficas (ﬁ/ﬂ→fi/fl), des-hifenização de quebras e colapso de espaços; o
+   manuscrito XML (Arslan-Carlon) segue o fluxo dos abertos. F0 do estrato: medir
+   tamanhos e confirmar contexto 16.384.
+4. **Perturbação com a fronteira corrigida da Emenda 3**: número colado a unidade
+   ("4088mL") é alcançado; hífen de faixa numérica (800-2750) é alcançado; hífen
+   precedido de letra (COVID-19) continua bloqueado. Demais regras idênticas (âncoras,
+   distintividade, curadoria manual documentada, selo fechado até a correção:
+   `perturbacoes-fechados.json`).
+5. **Fila simétrica**: os mesmos 4 modelos, mesmas configurações congeladas, T1 e T2 ×2
+   réplicas por primário (96 corridas), na mesma ordem de blocos da fila principal.
+6. **T3b — síntese de 14**: ao fim, cada modelo escreve uma segunda síntese sobre as
+   suas extrações dos 14 primários (4 corridas), comparável à T3 de 8 — mede se mais
+   evidência muda a conclusão.
+7. **Correção**: mesma esteira da Emenda 4 (verificação célula a célula na fonte,
+   gabarito oficial estendido, adjudicação pública); acurácias reportadas por estrato
+   (aberto/fechado) e agregadas.
+
 ### Emenda 3 — dois vazamentos de perturbação; prova neutralizada em duas células (2026-08-27, detectada durante o bloco 2, antes de qualquer correção)
 
 Auditoria disparada por um evento de aparente "recitação" do qwen3:14b revelou que a falha era **do harness, não do modelo**: a fronteira regex da substituição não alcançou duas ocorrências dos valores originais, que permaneceram no texto perturbado que os modelos leram:

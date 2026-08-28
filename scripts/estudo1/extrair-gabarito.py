@@ -48,11 +48,15 @@ def main():
             # colchete de abertura pode se perder no XML ("Hokenek et al. 47]")
             m = re.search(r"\[?\s*(\d{1,3})\s*\]", rotulo)
             ref = m.group(1) if m else None
+            aberto = bool(ref and oa.get(ref))
+            # Emenda 2: primários fechados ganham pseudo-ID REF<n> (estrato fechado)
+            FECHADOS = {"26", "29", "30", "33", "41", "47"}
+            pid = pmcid.get(ref) if aberto else (f"REF{ref}" if ref in FECHADOS else None)
             linhas.append(dict(
                 rotulo=re.sub(r"\[?\s*\d{1,3}\s*\]\s*", "", rotulo).strip(),
                 ref=ref,
-                acesso_aberto=bool(ref and oa.get(ref)),
-                pmcid=pmcid.get(ref),
+                acesso_aberto=aberto,
+                pmcid=pid,
                 celulas=dict(zip(cab[1:], cel[1:len(cab)])),
             ))
         tabelas.append(dict(numero=i, legenda=cap, colunas=cab, linhas=linhas))
