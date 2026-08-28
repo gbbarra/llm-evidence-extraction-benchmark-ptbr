@@ -9,3 +9,9 @@ saidas-tmp/
 # texto plano dos primarios: derivado localmente dos XML (ND do Castro; gerar com perturbar.py)
 corpus/primarios-texto/
 dados/estudo1/painel-*.html
+
+# estrato fechado: obtidos legalmente (acesso institucional/manuscritos de autor); NUNCA versionar
+corpus/fechados-staging/
+corpus/fechados-texto/
+corpus/perturbados-fechados/
+dados/*/perturbacoes-fechados*.json
