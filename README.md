@@ -8,7 +8,7 @@
 - **[Study 1 protocol](dados/estudo1/protocolo-estudo1.md)** — pre-registered 2026-08-27: a goal-directed fluid therapy meta-analysis as anchor (Cureus, June 2026, CC BY), all 14 primary RCTs (8 open access + 6 legally obtained), 4 FIEL-veteran models, 6 hypotheses, 4 dated amendments.
 - **[Study 2 protocol](dados/estudo2/protocolo-estudo2.md)** — pre-registered 2026-08-28: the meta-analytic arithmetic, by head (arm A) vs through a text-protocol calculator (arm B), plus an exploratory thinking arm.
 - **Results**: Study 1 [evaluation](dados/estudo1/avaliacao-estudo1.md) · [analysis](dados/estudo1/analise-estudo1.md) · [anchor errata](dados/estudo1/erratas-da-ancora.md) — Study 2 [evaluation](dados/estudo2/avaliacao-estudo2.md) · [analysis](dados/estudo2/analise-estudo2.md).
-- **Articles**: part 1 [en](ARTICLE1.md)/[pt](ARTIGO1.md) ([published on LinkedIn](https://www.linkedin.com/pulse/extrai-part-1-i-made-four-local-models-redo-data-extraction-barra-dvfsf/)) · part 2 [en](ARTICLE2.md)/[pt](ARTIGO2.md).
+- **Articles**: part 1 [en](ARTICLE1.md)/[pt](ARTIGO1.md) ([published](https://www.linkedin.com/pulse/extrai-part-1-i-made-four-local-models-redo-data-extraction-barra-dvfsf/)) · part 2 [en](ARTICLE2.md)/[pt](ARTIGO2.md) ([published](https://www.linkedin.com/pulse/extrai-part-2-model-got-single-confidence-interval-right-barra-oqixf/)) · part 3 [en](ARTICLE3.md)/[pt](ARTIGO3.md).
 
 ## Headline results
 
