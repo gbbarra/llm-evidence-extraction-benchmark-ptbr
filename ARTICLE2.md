@@ -10,7 +10,7 @@ In part 1, four local models redid the data extraction of the 14 trials of a pub
 
 ## What exactly was done
 
-Two arms per model, two replicates, three task families (per-study RRs; mean differences; pooling) — 51 runs in 71 minutes. In arm A, by head, with the instruction that "NOT-COMPUTABLE" is a dignified answer, never a guess. In arm B, the tool protocol is one line of text — the model writes the call, the harness executes it in Python and returns the result into context, up to twenty calls:
+Two arms per model, two replicates, three task families (per-study RRs; mean differences; pooling) — 51 runs in 71 minutes. In arm A, by head, with the instruction that "NOT-COMPUTABLE" is a dignified answer, never a guess. In arm B, the tool protocol is one line of text — the model writes the call, the harness (the program that orchestrates the benchmark) executes it in Python and returns the result into context, up to twenty calls:
 
 ```
 CALC: rr(28, 39, 30, 36)
@@ -91,7 +91,7 @@ The form belongs to the gemmas; the arithmetic to the qwens — and neither rank
 | Exact 95% CIs | 0/8 | **0/7** |
 | Cost per run | ~1 min | 5–17 min (10–17×) |
 
-At a 5,600-token budget: silent collapse — reasoning consumes everything and the answer comes out empty (the exact echo of what FIEL's Series 1 saw in writing). At 12,000 it converges and nearly reaches tool grade on simple arithmetic. But on pooling, after 17 minutes of reasoning, came the scene — the final JSON, verbatim:
+At a 5,600-token budget (tokens are the text units a model reads and writes — roughly ¾ of a word each): silent collapse — reasoning consumes everything and the answer comes out empty (the exact echo of what FIEL's Series 1 saw in writing). At 12,000 it converges and nearly reaches tool grade on simple arithmetic. But on pooling, after 17 minutes of reasoning, came the scene — the final JSON, verbatim:
 
 ```json
 {"morbidity":  {"fixed_effect": {"rr": 0.768}, "random_effects": {"rr": 0.741}},

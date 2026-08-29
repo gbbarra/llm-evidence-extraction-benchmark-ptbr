@@ -10,7 +10,7 @@ Na parte 1, os quatro modelos refizeram a extração de dados dos 14 ensaios de 
 
 ## O que exatamente foi feito
 
-Dois braços por modelo, duas réplicas, três famílias de tarefa (RRs por estudo; diferenças de médias; agrupamentos) — 51 corridas em 71 minutos. No braço A, de cabeça, com a instrução de que "NAO-CALCULAVEL" é resposta digna, nunca chute. No braço B, o protocolo de ferramenta é uma linha de texto — o modelo escreve a chamada, o harness executa em Python e devolve o resultado no contexto, até vinte chamadas:
+Dois braços por modelo, duas réplicas, três famílias de tarefa (RRs por estudo; diferenças de médias; agrupamentos) — 51 corridas em 71 minutos. No braço A, de cabeça, com a instrução de que "NAO-CALCULAVEL" é resposta digna, nunca chute. No braço B, o protocolo de ferramenta é uma linha de texto — o modelo escreve a chamada, o harness (o programa que orquestra o benchmark) a executa em Python e devolve o resultado no contexto, até vinte chamadas:
 
 ```
 CALC: rr(28, 39, 30, 36)
@@ -70,7 +70,7 @@ CALC: rr(19, 61, 32, 61)
 CALC: ic95_rr(19, 61, 32, 61)
 ```
 
-**O que ignora a ferramenta**: no agrupamento, qwen14 e qwen38 responderam de cabeça com a calculadora à disposição (0 chamadas) — e o insumo que o qwen14 declarou ter "agrupado" mostra o erro na veia: `"estudos_usados": [[8.6, 224, 16.6, 226], …]` — **percentuais no lugar de contagens de eventos**. **O que confunde chamada com dado**: o 26b escreveu `"call": "CALC: pool_rr_mh([[…]])"` *dentro* do JSON, como texto — entendeu o quê, não o como. Resultado agregado: **nenhum modelo orquestrou uma metanálise completa via ferramenta**. Para o deployment, isso pede um harness que force o fechamento — não um modelo maior.
+**O que ignora a ferramenta**: no agrupamento, qwen14 e qwen38 responderam de cabeça com a calculadora à disposição (0 chamadas) — e o insumo que o qwen14 declarou ter "agrupado" mostra o erro na veia: `"estudos_usados": [[8.6, 224, 16.6, 226], …]` — **percentuais no lugar de contagens de eventos**. **O que confunde chamada com dado**: o 26b escreveu `"call": "CALC: pool_rr_mh([[…]])"` *dentro* do JSON, como texto — entendeu o quê, não o como. Resultado agregado: **nenhum modelo orquestrou uma metanálise completa via ferramenta**. Para o uso em produção, isso pede um harness que force o fechamento — não um modelo maior.
 
 ### 4. O ranking inverteu — cada família tem o seu músculo
 
@@ -91,7 +91,7 @@ O formulário é dos gemma; a aritmética, dos qwens — e nenhum ranking prevê
 | IC95 exatos | 0/8 | **0/7** |
 | Custo por corrida | ~1 min | 5–17 min (10–17×) |
 
-Com 5.600 tokens de orçamento, colapso mudo — o raciocínio consome tudo e a resposta sai vazia (o eco exato do que a Série 1 do FIEL viu na escrita). Com 12.000, converge e quase alcança a ferramenta na aritmética simples. Mas no agrupamento, após 17 minutos pensando, veio a cena — o JSON final, literal:
+Com 5.600 tokens de orçamento (tokens são as unidades de texto que o modelo lê e escreve — cerca de ¾ de uma palavra cada), colapso mudo — o raciocínio consome tudo e a resposta sai vazia (o eco exato do que a Série 1 do FIEL viu na escrita). Com 12.000, converge e quase alcança a ferramenta na aritmética simples. Mas no agrupamento, após 17 minutos pensando, veio a cena — o JSON final, literal:
 
 ```json
 {"morbidity":  {"fixed_effect": {"rr": 0.768}, "random_effects": {"rr": 0.741}},
