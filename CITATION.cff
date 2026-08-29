@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite it as below."
+title: "EXTRAI: an evidence-extraction benchmark for local LLMs (Brazilian Portuguese)"
+type: software
+authors:
+  - family-names: "Barra"
+    given-names: "Gustavo"
+version: "1.0.0"
+date-released: "2026-08-29"
+repository-code: "https://github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr"
+keywords:
+  - large language models
+  - local LLMs
+  - evidence extraction
+  - systematic review
+  - meta-analysis
+  - benchmark
+  - risk of bias
+  - Ollama
+license: MIT
+abstract: >-
+  EXTRAI tests whether local LLMs (gemma4:12b/26b, qwen3:14b, qwen3.8:27b via
+  Ollama, on consumer hardware) can redo the work of a published meta-analysis:
+  cell-by-cell evidence extraction from all 14 of its randomized trials against
+  a source-verified answer key (Study 1), and the meta-analytic arithmetic --
+  risk ratios, confidence intervals, pooling -- by head versus through a
+  text-protocol calculator (Study 2). Includes pre-registered protocols with
+  dated amendments, a dual reading-proof by number perturbation, fully
+  mechanical grading with public adjudication records, and errata files for
+  the anchor meta-analysis and for the adjudicator himself. Sibling of the
+  FIEL summarization benchmark.
