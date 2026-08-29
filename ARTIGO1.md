@@ -1,49 +1,105 @@
 # EXTRAI, parte 1: pus quatro modelos locais para refazer a extração de uma metanálise — eles acharam mais erros nela do que ela neles
 
-*Depois de catorze partes do benchmark FIEL medindo se modelos locais escrevem resumos fiéis, resolvi duvidar do meu próprio veredito. As partes 13 e 14 diziam que os modelos grandes seriam "extratores e auditores, não escritores" — uma frase bonita que nunca tinha sido testada na tarefa real. Então nasceu o EXTRAI, um segundo benchmark: os mesmos quatro modelos, rodando num mini-PC, refazendo célula a célula o trabalho de extração de uma metanálise publicada e revisada por pares — os 14 ensaios clínicos dela, inteiros. O placar final: em 624 células corrigidas, os modelos erraram exatamente uma. No caminho, encontraram braços trocados, colunas invertidas e dados fantasma na metanálise publicada — e me corrigiram três vezes.*
+*Depois de catorze partes do benchmark FIEL medindo se modelos locais escrevem resumos fiéis, resolvi duvidar do meu próprio veredito. As partes 13 e 14 diziam que os modelos grandes seriam "extratores e auditores, não escritores" — uma frase que nunca tinha sido testada na tarefa real. Então nasceu o EXTRAI: os mesmos quatro modelos, num mini-PC, refazendo célula a célula a extração de uma metanálise publicada e revisada por pares — os 14 ensaios clínicos dela, inteiros. O placar: em 624 células corrigidas, os modelos erraram exatamente uma. A metanálise publicada acumulou 15 itens de errata. E o juiz — eu — foi corrigido três vezes pelos próprios modelos.*
 
-> 📄 O EXTRAI é irmão do [FIEL](https://github.com/gbbarra/llm-summarization-benchmark-ptbr) (14 partes sobre sumarização fiel). Método, protocolo pré-registrado, gabarito verificado na fonte, erratas e todos os dados: [github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr](https://github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr) · DOI: [10.5281/zenodo.22159050](https://doi.org/10.5281/zenodo.22159050)
+> 📄 Série EXTRAI: parte 1 (esta) · [parte 2](ARTIGO2.md) · Dados, protocolos pré-registrados e erratas: [github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr](https://github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr) · DOI: [10.5281/zenodo.22159050](https://doi.org/10.5281/zenodo.22159050) · Benchmark irmão: [FIEL](https://github.com/gbbarra/llm-summarization-benchmark-ptbr)
 
-## O desenho, em um parágrafo
+## O contexto, para quem chega agora
 
-Uma metanálise-âncora de fluidoterapia guiada por metas (Cureus, junho de 2026 — publicada *depois* do corte de treino dos modelos) fornece a tarefa e o gabarito: as tabelas que dois revisores humanos extraíram de 14 ensaios clínicos randomizados. Cada modelo recebe o texto integral de cada ensaio e um formulário de 30 campos (pacientes por braço, fluidos, complicações, mortalidade, função intestinal…), depois julga o risco de viés nos 7 domínios Cochrane, e por fim escreve uma síntese usando apenas as próprias extrações. Três truques de rigor: os artigos que os modelos leem são **perturbados** (números discretamente alterados — quem devolve o valor publicado está recitando, não lendo); a correção principal é **mecânica** (um script compara célula a célula; o juiz de linguagem só arbitra empates, com citação obrigatória da fonte); e o gabarito humano **também está em julgamento** — quando modelo e revisores discordam, o artigo original decide.
+O EXTRAI é o segundo benchmark de uma linha que roda inteira em hardware de consumidor (Ryzen 7, GPU integrada, 32 GB de RAM). O primeiro, FIEL, media escrita fiel; este mede **leitura de revisor**: dado o texto integral de um ensaio clínico, o modelo preenche a mesma ficha de extração que os revisores humanos de uma metanálise publicada preencheram — números certos, das seções certas, admitindo o que o artigo não reporta. Três escolhas de método atacam as fraquezas conhecidas do FIEL: (1) a correção principal é **mecânica** — um script compara célula a célula, e o juiz de linguagem só arbitra empates, com citação obrigatória da fonte; (2) o gabarito humano **também está em julgamento** — cada célula da metanálise foi verificada contra o artigo original, e quando modelo e revisores discordam, a fonte decide; (3) os artigos que os modelos leem são **perturbados** — números discretamente alterados, de modo que devolver o valor publicado denuncia recitação, não leitura.
 
-## O que exatamente foi medido
+## O que exatamente foi feito
 
-Quatro veteranos do FIEL — gemma4:12b e qwen3:14b na GPU integrada, gemma4:26b (MoE) e qwen3.8:27b na CPU — sobre os 14 ensaios da metanálise: 8 de acesso aberto e, graças ao acesso institucional do autor, os 6 fechados também. 228 corridas, duas réplicas por tarefa, 8,3 horas de fila no estrato aberto e 5,9 no fechado, tudo num Ryzen 7 com 32 GB de RAM. Nenhuma célula ficou sem veredito: 156 células pontuáveis por modelo, cada decisão pública com o trecho da fonte que a sustenta.
+A âncora: uma metanálise de fluidoterapia guiada por metas (Cureus, junho/2026 — publicada *depois* do corte de treino dos modelos), com 14 ensaios randomizados. Os 8 de acesso aberto vieram do Europe PMC; os 6 fechados, do meu acesso institucional e de manuscritos de autor legais — **a metanálise inteira**. Cada modelo leu cada ensaio e cumpriu três tarefas: a ficha de 30 campos (T1), o risco de viés nos 7 domínios Cochrane (T2) e uma síntese usando só as próprias extrações (T3). Duas réplicas por tarefa, 232 corridas corrigidas:
 
-## Os seis achados
+| Bloco | Execução | Corridas | Tempo |
+|---|---|---|---|
+| gemma4:12b | iGPU (Vulkan) | 57 | ~2,2 h |
+| qwen3:14b | iGPU (Vulkan) | 57 | ~1,7 h |
+| gemma4:26b (MoE) | CPU | 57 | ~2,0 h |
+| qwen3.8:27b | CPU | 57 | ~7,1 h |
 
-### 1. Extração de evidência está praticamente resolvida em hardware de consumidor
+## O que encontramos
 
-O placar: **gemma4:12b 100%, gemma4:26b 99%, qwen3.8:27b 97%, qwen3:14b 92%**. Nas 624 células decididas dos quatro modelos somados, houve **uma** célula errada (uma troca de braço ao ler um fluxograma que o PDF havia embaralhado), **zero valores inventados** e **zero recitações**: nas 124 células com números perturbados que os modelos citaram, eles devolveram o valor do texto que leram, nunca o valor publicado que poderiam ter decorado.
+### 1. O placar: extração de evidência está praticamente resolvida neste hardware
+
+156 células pontuáveis por modelo (as demais: sem valor verificável, pendentes ou dado ausente do insumo — não contam contra ninguém):
+
+| Modelo | Estrato aberto | Estrato fechado | **Total** | Omissas | Erradas | Inventadas | Recitadas |
+|---|---|---|---|---|---|---|---|
+| gemma4:12b | 100% | 100% | **100%** (156/156) | 0 | 0 | 0 | 0 |
+| gemma4:26b | 100% | 98% | **99%** (155/156) | 1 | 0 | 0 | 0 |
+| qwen3.8:27b | 98% | 96% | **97%** (152/156) | 3 | 1 | 0 | 0 |
+| qwen3:14b | 90% | 95% | **92%** (143/156) | 13 | 0 | 0 | 0 |
+
+E a prova de leitura (as células com números perturbados):
+
+| Modelo | Leu (devolveu o perturbado) | Recitou | Ausente |
+|---|---|---|---|
+| gemma4:12b | 54 | 0 | 8 |
+| gemma4:26b | 53 | 0 | 7 |
+| qwen3.8:27b | 50 | 0 | 13 |
+| qwen3:14b | 47 | 0 | 14 |
+
+**Zero recitações atribuíveis em 228 corridas.** Exemplo do que isso significa na prática: o texto perturbado do Castro dizia ASA II = 28 (o real, publicado, é 31); os três modelos que responderam escreveram "II: 28 (72%)" — o valor que só existe no texto que leram. A única célula errada de todo o estudo foi do 27B: pôs o valor de um braço no campo do outro ao ler um fluxograma que a extração do PDF havia embaralhado ("…274 Assigned to PGDT group 259 Received…").
 
 ### 2. A hipótese central caiu — e o modo de falha é a recusa
 
-O pré-registro apostava que os modelos grandes e fiéis venceriam a extração. Errado: a disciplina da família gemma venceu de novo, e o pequeno 12b — que faz o serviço na GPU integrada em uma fração do tempo — empatou no topo com nota perfeita. O 27B mantém o recorde de células *exatas* e perde por outro motivo: ele **recusa**. Toda a diferença entre 100% e 92% é feita de "não reportado" escrito onde a fonte reporta. Nenhum modelo mente; alguns se calam.
+O pré-registro (H1.1) apostava nos grandes fiéis: 27B ≥ 26b > 12b ≥ 14b. A ordem real ficou **12b > 26b > 27B > 14b** — a disciplina gemma venceu a extração também. E a anatomia das perdas prova o resto: das 17 células perdidas pelos quatro modelos somados, **16 são omissões** — "NR" escrito onde a fonte reporta. Exemplo: a perda sanguínea do Castro está literal na fonte ("1100.1 ± 851.1"); o qwen3:14b respondeu "NR". Nenhum modelo mentiu; alguns se calaram.
 
-### 3. Os modelos auditaram a metanálise publicada — e acharam 14 problemas
+### 3. Os modelos auditaram a metanálise publicada — 15 itens de errata, todos com citação
 
-O arquivo de erratas do benchmark lista, com citações: os braços do ensaio de Yoon **trocados** na tabela de características (três modelos flagraram independentemente; a fonte diz "GDHT group (n = 39)"); as colunas de ASA do de Waal **invertidas** (a aritmética prova: 123 = 52,6% × 234 — do controle); dois estudos com ASA declarado "Not stated" cuja tabela **reporta** o ASA; tempos de flatus publicados para dois artigos que **não contêm a palavra flatus**; uma conversão de horas que contradiz o próprio texto-fonte ("by 2 days"); uma célula corrompida por formatação de hora do Excel ("2 days, 11:42:00" no lugar de uma razão ASA); e um padrão sistemático — em **seis** dos 14 estudos, a coluna "n" da metanálise usa pacientes *analisados* como se fossem *randomizados*, sem nota de método.
+O [arquivo de erratas](dados/estudo1/erratas-da-ancora.md) registra cada item com o trecho da fonte que o decide. Os principais:
+
+| # | Estudo | O que a MA publicou | O que a fonte diz |
+|---|---|---|---|
+| 1 | Yoon | braços GDFT 36 / controle 39 | *"The GDHT group (n = 39)… the control group (n = 36)"* — *trocados* |
+| 2 | de Waal | ASA(GDFT) 24:123:86:1 | a aritmética prova a inversão: 123 = 52,6% × 234 (o braço *controle*) |
+| 3 | Weinberg | ASA "Not stated" | *"ASA Class I-II 7 (27%)… ≥ III 19 (73%)"* — está na tabela do artigo |
+| 4 | Diaper | ASA "Not stated" | *"ASA-PS classes III & IV 98 (50.0) 85 (42.9)"* — idem |
+| 5 | Diaper e Coeckelenbergh | tempos de flatus (55±14 h etc.) | a palavra "flatus" **não existe** nos dois textos |
+| 6 | Sun | dieta oral 72±24 vs 96±30 h (diferença de 1 dia) | o próprio texto: *"shorten… by 2 days"* — 4 modelos extraíram 4,0/6,0 dias, unânimes |
+| 7 | Sujatha | ASA "95:105" e célula *"2 days, 11:42:00"* | corrompida por formatação de hora do Excel |
+| 8 | 6 estudos | coluna "n" | usa *analisados* como se fossem *randomizados*, sem nota (Wu 61→58/56; Hokenek 40→39…) |
+
+O item 1 foi levantado **pelos modelos**: três deles extraíram 39/36 independentemente, contra a tabela publicada — e a fonte confirmou.
 
 ### 4. Os modelos corrigiram o juiz — três vezes
 
-O rito do benchmark ("verificar na fonte antes de deduzir") vale para todos, inclusive para mim, o adjudicador. Três vezes declarei erro de modelo e três vezes a fonte me desmentiu: no Redondo, adjudiquei pelo abstract sem ver que o corpo do artigo diz o contrário quatro vezes; no Wu, minhas janelas de busca rígidas esconderam uma tabela de vasoativos que os modelos extraíram literalmente; no Hokenek, os "40/40" que eu ia deduzir estavam escritos letra por letra na fonte. As três erratas do adjudicador estão registradas em público, ao lado das da metanálise.
+O rito do benchmark ("verificar na fonte antes de deduzir") vale para o adjudicador também. Três vezes declarei erro de modelo, três vezes a fonte me desmentiu: no **Redondo**, adjudiquei pelo abstract ("GDHT (n = 16)") sem ver que fluxograma e três tabelas dizem o oposto — o primário se contradiz, e a MA estava certa; no **Wu**, minhas janelas de busca rígidas esconderam a linha *"Number of patients using norepinephrine 15 (25.9) 24 (42.9)"* que os modelos haviam extraído literalmente — cheguei a acusá-los de fabricação; no **Hokenek**, o "40/40" que eu ia deduzir está letra por letra na fonte: *"randomised into two groups (control group: 40, PVI group: 40)"*. As três erratas do adjudicador estão públicas, ao lado das da metanálise.
 
 ### 5. No risco de viés, os modelos são mais duros que os revisores
 
-Concordância com os julgamentos Cochrane dos revisores: gemma4:12b 80%, gemma4:26b 79%, qwens ~60%. Quase toda a divergência mora num único domínio: cegamento de participantes e equipe, onde a concordância cai a 27% — a metanálise julgou "Unclear", e os modelos, "High", porque o anestesista que executa o algoritmo de fluidos não pode ser cegado. É a regra Cochrane aplicada ao pé da letra contra a leniência dos revisores: divergência de doutrina, não de leitura.
+Concordância com os julgamentos Cochrane publicados (7 domínios × 13 estudos — o Weinberg não tem linha de RoB na MA, outra inconsistência):
 
-### 6. A síntese sem calculadora é honesta, mas míope
+| Modelo | Concordância | Julgamento global igual | Estabilidade r1=r2 |
+|---|---|---|---|
+| gemma4:12b | **80%** (73/91) | 5/13 | 97% |
+| gemma4:26b | **79%** (69/87) | 6/13 | 95% |
+| qwen3.8:27b | 62% (56/91) | 0/13 | 80% |
+| qwen3:14b | 59% (54/91) | 4/13 | 97% |
 
-As sínteses finais respeitaram o limite de palavras e — checagem mecânica — **não contêm um único número que não exista nas extrações do próprio modelo**. Nenhum risk ratio fabricado, nenhum intervalo de confiança inventado. Mas sem ferramenta de agregação, todos os modelos descrevem a morbidade como "favorável à GDFT" contando estudos, enquanto a metanálise agregada diz "sem diferença significativa" (RR 0,78, IC cruzando 1). Essa lacuna exata — saber extrair sem saber somar — é a pergunta do Estudo 2.
+Por domínio, a discordância mora quase toda num lugar: **cegamento de participantes/equipe, 27%** (contra 92% em relato seletivo e 90% em geração de sequência). O padrão é unilateral — a MA julgou "Unclear" e os modelos, "High" — porque o anestesista que executa o algoritmo de fluidos não pode ser cegado. Regra Cochrane ao pé da letra contra a leniência dos revisores: divergência de doutrina, não de leitura.
+
+### 6. A síntese é honesta, mas míope — e mais evidência a calibra
+
+As sínteses passaram na checagem mecânica anti-invenção: **zero números órfãos** (todo número citado existe nas extrações do próprio modelo). Mas sem ferramenta de agregação, a conclusão vem da contagem de estudos — e muda quando o corpo de evidência cresce:
+
+| Modelo | Morbidade na síntese de 8 estudos | Na síntese de 14 estudos |
+|---|---|---|
+| gemma4:12b | "resultados inconsistentes" | "resultados são inconsistentes" |
+| qwen3:14b | "efeito benéfico… cinco dos oito ensaios" | "efeito benéfico… embora com inconsistências" |
+| gemma4:26b | "tendência de benefício" | "evidência é inconsistente" |
+| qwen3.8:27b | "seis dos oito com redução" | "inconsistente e contraditória" |
+
+Com 14 estudos, três dos quatro migraram para "inconsistente" — **aproximando-se do veredito agregado da própria metanálise (RR 0,78, IC cruzando 1: não significativo) sem nenhuma estatística**, só por verem mais contradição. O que falta — a conta formal — é o assunto da parte 2.
 
 ## O que isso significa
 
-Para o fluxo de trabalho de quem faz revisão sistemática: a extração estruturada, a parte mais tediosa e propensa a erro humano do processo, roda hoje num mini-PC sem GPU dedicada, com fidelidade que neste corpus superou a dos revisores publicados — e com uma vantagem estrutural: o modelo cita *onde* achou cada dado, e a máquina confere. Para a linha FIEL: o veredito "grandes = extratores" morreu; o que sobrevive é "disciplinados = tudo, por enquanto". E para a leitura de metanálises em geral: os erros que este benchmark achou numa revisão revisada por pares — braços trocados, colunas invertidas, n's mal rotulados — são exatamente os que ninguém confere depois de publicados.
+Para quem faz revisão sistemática: a extração estruturada, a etapa mais tediosa e propensa a erro do processo, roda num mini-PC sem GPU dedicada com fidelidade que neste corpus **superou a dos revisores publicados** — e com uma vantagem estrutural: o modelo cita *onde* achou cada dado, e a máquina confere. Para a linha FIEL: "grandes = extratores" morreu; o que sobrevive é "disciplinados = tudo, por enquanto". E para quem lê metanálises: os erros que este benchmark achou numa revisão revisada por pares — braços trocados, colunas invertidas, n's mal rotulados — são exatamente os que ninguém confere depois de publicados.
 
 ## Limitações
 
-Uma única metanálise, de uma única revista; os erros dela não generalizam para a literatura. O adjudicador é o mesmo assistente que construiu o harness — mitigado por citação literal obrigatória em cada decisão e pelas três erratas próprias registradas. O corpus é só texto: valores que morem exclusivamente em figuras ou suplementos ficaram fora de pontuação (é possível que os "flatus fantasma" vivam lá). E réplicas de duas corridas medem estabilidade, não significância.
+Uma única metanálise, de uma única revista; os erros dela não generalizam para a literatura. O adjudicador é o mesmo assistente que construiu o harness — mitigado por citação literal obrigatória em cada decisão e pelas três erratas próprias em registro público. O corpus é só texto: valores que morem exclusivamente em figuras ou suplementos ficaram fora de pontuação (é possível que os "flatus fantasma" vivam lá). Réplicas de duas corridas medem estabilidade, não significância.
 
-*Na parte 2: dou aos modelos as fórmulas da metanálise — risk ratio, intervalo de confiança, agrupamento — primeiro de cabeça, depois como ferramentas que eles podem chamar. Se a extração está resolvida, será que as contas também estão?*
+*Na parte 2: dou aos modelos as fórmulas da metanálise — risk ratio, intervalo de confiança, agrupamento — primeiro de cabeça, depois como ferramenta que eles chamam. Spoiler: de cabeça, nenhum dos quatro acertou um único intervalo de confiança.*
