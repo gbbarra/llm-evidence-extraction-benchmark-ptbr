@@ -1,55 +1,31 @@
 # EXTRAI — roadmap
 
-Registro de estudos futuros discutidos com o autor. Nada aqui é protocolo: cada estudo
-ganha pré-registro próprio (hipóteses, regras, corpus) antes de qualquer corrida.
+Record of future studies discussed with the author. Nothing here is a protocol: each study gets its own pre-registration (hypotheses, rules, corpus) before any run.
 
-## Estudo 1 — extração, risco de viés e síntese (EM ANDAMENTO)
+## Study 1 — extraction, risk of bias and synthesis (COMPLETE)
 
-Protocolo: [`dados/estudo1/protocolo-estudo1.md`](dados/estudo1/protocolo-estudo1.md).
-Fila oficial dos 8 primários abertos rodando desde 2026-08-27.
+Protocol: [`dados/estudo1/protocolo-estudo1.md`](dados/estudo1/protocolo-estudo1.md). Both strata run and graded (2026-08-27/28): all 14 primaries, 232 graded runs, final scoreboard in [`METHOD.md`](METHOD.md).
 
-**Extensão já garantida (Emenda 2, a registrar ao fim da fila):** o autor obteve
-legalmente os 6 primários fechados (acesso institucional + manuscritos de autor
-gratuitos localizados via Europe PMC/NCBI) — o corpus salta para **14/14, a
-metanálise inteira**. Estrato fechado roda simetricamente para os 4 modelos após a
-fila principal; os PDFs/XMLs fechados nunca entram no repositório (direitos
-autorais; ficam em `corpus/fechados-staging/`, fora do versionamento). Pipeline
-extra: extração de texto de PDF (pypdf) com normalização de ligaduras (ﬂ→fl) e
-hifenização.
+## Study 2 — "the arithmetic": redoing the meta-analysis's statistics (COMPLETE)
 
-## Estudo 2 — "as contas": refazer a estatística da metanálise (DESENHADO, não registrado)
+Protocol: [`dados/estudo2/protocolo-estudo2.md`](dados/estudo2/protocolo-estudo2.md). Two arms over the models' own Study-1 extractions — arm A by head (with "NOT-COMPUTABLE" as a dignified answer), arm B through the uniform text-protocol calculator (`CALC: rr(19, 58, 32, 56)` → `RESULTADO: 0.573`), plus an exploratory thinking arm. Graded 2026-08-29; results in the [evaluation](dados/estudo2/avaliacao-estudo2.md) and [analysis](dados/estudo2/analise-estudo2.md). The A→B delta was the gold measure: it separated "doesn't know meta-analysis" from "just lacks a calculator" — the answer is the latter, with workflow (closing the loop, using the tool on pooling) as the residual failure.
 
-Pergunta: os modelos conseguem transformar as extrações em metanálise de verdade —
-RR/MD por estudo, IC95%, agrupamento (Mantel-Haenszel / variância inversa /
-DerSimonian-Laird)?
+## Study 3 — the end-to-end pipeline (SKETCHED, not registered)
 
-Desenho em dois braços, mesmo corpus e mesmas extrações T1 do Estudo 1:
+The question both studies leave loaded: starting from raw PDFs of a **new** anchor meta-analysis (second clinical domain, post-cutoff, open-access primaries), can the local models produce a complete, auditable **mini meta-analysis** — text to forest plot — in one mini-PC night? And where does error propagate when the stages chain?
 
-- **Braço A — de cabeça**: o modelo calcula sem ajuda. Mede aritmética bruta e,
-  mais importante, se o modelo *admite* não conseguir calcular ou confabula um
-  IC95% com cara de estatística (a invenção mais perigosa numa revisão).
-- **Braço B — com calculadora (a proposta do autor)**: o harness oferece funções
-  (`rr`, `ic95_rr`, `md`, `pool_mh`, `pool_dl`); o modelo chama, o Python computa,
-  o resultado volta ao contexto. Protocolo de TEXTO uniforme como braço principal
-  (`CALC: rr(19, 58, 32, 56)` → `RESULTADO: 0.573`) — mesmo mecanismo para as 4
-  famílias, sem depender de template de tool-calling. Tool calling nativo do
-  Ollama (`/api/chat` + `tools`) como braço exploratório.
-- **Delta A→B é a medida de ouro**: separa "não sabe metanálise" de "só não tem
-  calculadora". Se B ≈ teto, a conclusão é deployável: modelo local + biblioteca
-  de funções = assistente de revisão sistemática em hardware de consumidor.
+The pipeline, each stage cast by its measured winner ("hire like people"):
 
-Gabarito duplo: os valores publicados na âncora (tabelas 5–11) + os valores
-verdadeiros recomputados em Python (o que também audita a estatística da própria
-metanálise). Candidato natural para reativar o braço *thinking* do qwen3 (inútil
-para escrever nas Séries 1–2 do FIEL; nunca testado para calcular).
+1. **Extraction** — gemma4:12b on the integrated GPU (100% in Study 1);
+2. **Cross-audit** — qwen3.8:27b checks the 12b's cells and flags disagreements (the "model audits model" idea from FIEL E11/E17), with **seeded known errors** to measure the auditor's sensitivity — the reading proof, audit edition;
+3. **Arithmetic** — the CALC protocol with the harness **forcing closure** (the workflow fix Study 2 demands: a final mandatory "now only the JSON" round);
+4. **Synthesis with numbers** — T3 redone with the pooled results in context: does the morbidity myopia heal when the model sees the pool?
+5. **Deliverable** — a script draws the forest plot from the model's numbers; out comes a mini meta-analysis with characteristics table, RoB, forest and conclusion, every cell traceable to its source.
 
-Predições a formalizar no pré-registro: direção quase sempre certa; RR por estudo
-~metade no braço A e perto do teto no B; IC95% e agrupamento ≈ zero no A;
-agrupamento ainda difícil no B (orquestrar várias chamadas é planejamento
-multi-etapa); ranking real = quem sabe que não sabe.
+New measurements: cross-stage error propagation (every stage logged), the cross-auditor's catch rate, end-to-end fidelity against a source-verified key, and true total cost (the headline to chase: *"an auditable meta-analysis for zero cloud dollars"*). Author decisions before pre-registration: (a) hunt the second anchor (2–3 candidates from another domain); (b) whether to include a screening stage (PICO → which papers enter); (c) the seeded-errors arm for the auditor (recommended).
 
-## Ideias em fila (sem desenho)
+## Queued ideas (no design)
 
-- Estudo de línguas (instruções em inglês vs português).
-- gemma4:31b denso como quinto extrator (sondado no FIEL E14: 2,7 tok/s, viável-marginal).
-- Juiz-extrator cruzado: um modelo local audita as extrações de outro (herança do E11/FIEL).
+- Language study (English vs Portuguese instructions).
+- gemma4:31b (dense) as a fifth extractor (probed in FIEL E14: 2.7 tok/s, viable-marginal).
+- Cross model-audits-model as a standing verification layer (E11/FIEL heritage).

@@ -1,91 +1,53 @@
-# EXTRAI — Protocolo pré-registrado do Estudo 2: "as contas"
+# EXTRAI — Pre-registered protocol, Study 2: "the arithmetic"
 
-**Registrado em 2026-08-28, antes de qualquer corrida.** Emendas só por seção datada.
-Método geral: [`METHOD.md`](../../METHOD.md). Desenho esboçado no [roadmap](../../roadmap.md)
-e proposto pelo autor ("e se fornecermos as fórmulas para os modelos no formato de
-plugin ou código para eles chamarem?").
+**Registered 2026-08-28, before any run.** Amendments only as dated sections. General method: [`METHOD.md`](../../METHOD.md). Design sketched in the [roadmap](../../roadmap.md) and proposed by the author ("what if we hand the models the formulas as a plugin, or code they can call?").
 
-## 1. Pergunta
+> *English translation of the pre-registered protocol (originally written in Brazilian Portuguese; original wording preserved in git history).*
 
-O Estudo 1 mostrou que os quatro modelos extraem evidência quase sem erro (624 células,
-1 errada), mas sintetizam "no olho" — descrevem morbidade favorável onde a metanálise
-agregada diz não-significativa. O Estudo 2 pergunta: **eles conseguem transformar as
-próprias extrações em metanálise de verdade — risk ratio, intervalo de confiança e
-agrupamento?** E: quanto do fracasso é conceitual (não saber o que calcular) versus
-aritmético (não ter calculadora)?
+## 1. Question
 
-## 2. Desenho: dois braços por modelo
+Study 1 showed the four models extract evidence almost without error (624 cells, 1 wrong) but synthesize "by eye" — describing morbidity as favorable where the pooled meta-analysis says not significant. Study 2 asks: **can they turn their own extractions into an actual meta-analysis — risk ratio, confidence interval, pooling?** And: how much of the failure is conceptual (not knowing what to compute) versus arithmetic (not having a calculator)?
 
-- **Braço A — de cabeça.** O modelo recebe as tabelas 2×2/estatísticas por estudo
-  (extraídas por ELE mesmo no E1, réplica 1) e calcula sem ajuda. Instrução explícita:
-  *"se não conseguir calcular com confiança, escreva NAO-CALCULAVEL"* — medir a
-  honestidade aritmética é objetivo primário, não acessório.
-- **Braço B — com calculadora (protocolo de texto uniforme).** Mesmo insumo, mas o
-  modelo pode escrever linhas `CALC: <funcao>(<args>)`; o harness intercepta, computa em
-  Python e devolve `RESULTADO: <valor>` no contexto, em até 20 chamadas por corrida.
-  Funções expostas (assinaturas no prompt): `rr(ev_gdft, n_gdft, ev_ctrl, n_ctrl)`,
-  `ic95_rr(ev_gdft, n_gdft, ev_ctrl, n_ctrl)`, `md(m1, dp1, n1, m2, dp2, n2)`,
-  `ic95_md(...)`, `pool_rr_mh(lista de [ev1,n1,ev2,n2])`, `pool_md_iv(lista)`,
-  `pool_dl(lista)` (efeitos aleatórios DerSimonian-Laird).
-- O protocolo de texto (e não tool-calling nativo) é o braço principal porque é o mesmo
-  mecanismo para as quatro famílias; tool-calling nativo do Ollama fica como braço
-  exploratório opcional, registrado à parte se rodar.
+## 2. Design: two arms per model
 
-## 3. Materiais e desfechos
+- **Arm A — by head.** The model receives the per-study 2×2 tables/statistics (extracted by ITSELF in Study 1, replicate 1) and computes unaided. Explicit instruction: *"if you cannot compute with confidence, write NAO-CALCULAVEL"* ("NOT-COMPUTABLE") — measuring arithmetic honesty is a primary objective, not an accessory.
+- **Arm B — with a calculator (uniform text protocol).** Same input, but the model may write lines `CALC: <function>(<args>)`; the harness intercepts, computes in Python and returns `RESULTADO: <value>` into the context, up to 20 calls per run. Exposed functions (signatures in the prompt): `rr(ev_gdft, n_gdft, ev_ctrl, n_ctrl)`, `ic95_rr(...)`, `md(m1, sd1, n1, m2, sd2, n2)`, `ic95_md(...)`, `pool_rr_mh(list of [ev1,n1,ev2,n2])`, `pool_md_iv(list)`, `pool_dl(list)` (DerSimonian-Laird random effects).
+- The text protocol (rather than native tool calling) is the main arm because it is the same mechanism for all four families; Ollama's native tool calling remains an optional exploratory arm, reported separately if run.
 
-Insumo por modelo: as SUAS extrações T1-r1 do E1 (14 estudos), reduzidas pelo harness às
-células relevantes por desfecho (sem os textos dos artigos). Desfechos calculados:
+## 3. Materials and outcomes
 
-| Desfecho | Tipo | Estudos com dados na âncora |
+Input per model: ITS OWN Study-1 T1-r1 extractions (14 studies), reduced by the harness to the relevant cells per outcome (no article texts). Outcomes computed:
+
+| Outcome | Type | Studies with data in the anchor |
 |---|---|---|
-| Morbidade geral | RR por estudo + agrupado | 5 (tabela 5 da MA) |
-| Mortalidade | RR por estudo + agrupado | 3 (tabela 6) |
-| Íleo pós-operatório | RR por estudo + agrupado | 3 (tabela 11) |
-| Tempo até flatus / dieta oral | MD por estudo | tabelas 8–9 |
+| Overall morbidity | per-study RR + pooled | 5 (MA table 5) |
+| Mortality | per-study RR + pooled | 3 (table 6) |
+| Postoperative ileus | per-study RR + pooled | 3 (table 11) |
+| Time to flatus / oral diet | per-study MD | tables 8–9 |
 
-**Gabarito triplo**, todo mecânico: (a) a verdade aritmética (recomputada em Python a
-partir das células do gabarito-oficial); (b) os valores publicados pela âncora
-(RR/IC/pesos das tabelas 5–11) — o que também audita a estatística da própria
-metanálise, de novo; (c) para o braço B, o registro literal das chamadas CALC e seus
-retornos (o modelo usou a ferramenta certa com os números certos?).
+**Triple answer key**, fully mechanical: (a) the arithmetic truth (recomputed in Python from the official answer key's cells); (b) the anchor's published values (RR/CI/weights of tables 5–11) — which also audits the meta-analysis's own statistics, again; (c) for arm B, the literal log of CALC calls and their returns (did the model use the right tool with the right numbers?).
 
-## 4. Modelos, réplicas e fila
+## 4. Models, replicates and queue
 
-Os 4 veteranos nas configurações congeladas do E1. Por modelo: braço A ×2 réplicas +
-braço B ×2 réplicas, uma corrida por desfecho-família (RRs; MDs; agrupamentos) —
-fila estimada em ~64 corridas curtas (insumo pequeno, sem artigo). Braço exploratório:
-qwen3:14b com thinking ligado no braço A (a "vocação para calcular" que a Série 1 do
-FIEL nunca testou), 1 réplica, reportado à parte.
+The 4 veterans under Study 1's frozen configurations. Per model: arm A ×2 replicates + arm B ×2 replicates, one run per task family (per-study RRs; MDs; pooling) — an estimated ~64 short runs (small input, no article). Exploratory arm: qwen3:14b with thinking enabled in arm A (the "mathematical vocation" FIEL's Series 1 never tested), 1 replicate, reported separately.
 
-## 5. Pontuação (mecânica, sem juiz de linguagem)
+## 5. Scoring (mechanical, no language judge)
 
-Por quantidade calculada: **exata** (|Δ| ≤ 0,01 em RR/IC com 2 casas; ≤ 0,1 em MD) ·
-**direção-certa** (RR do lado certo de 1 / MD do lado certo de 0) · **errada** ·
-**NAO-CALCULAVEL declarado** (não pontua contra no braço A; conta como recusa no B) ·
-**fabricada** (número com formato de estatística que não bate com nenhuma conta válida
-dos insumos — a pior categoria, contada à parte). No braço B, adicionalmente:
-chamadas corretas / chamadas com argumentos errados / resultados ignorados.
+Per computed quantity: **exact** (|Δ| ≤ 0.01 for RR/CI at 2 decimals; ≤ 0.1 for MD) · **right-direction** (RR on the correct side of 1 / MD on the correct side of 0) · **wrong** · **NOT-COMPUTABLE declared** (does not count against in arm A; counts as refusal in B) · **fabricated** (a statistic-shaped number matching no valid computation over the inputs — the worst category, counted separately). In arm B, additionally: correct calls / wrong-argument calls / ignored results.
 
-## 6. Hipóteses pré-registradas
+## 6. Pre-registered hypotheses
 
-- **H2.1 (a calculadora paga):** acurácia exata no braço B ≥ 2× a do braço A, nos 4 modelos.
-- **H2.2 (anatomia do braço A):** direção ≥ 80%; RR simples ≈ metade; IC95% ≈ zero.
-- **H2.3 (o agrupamento é outro músculo):** mesmo no braço B, o agrupamento fica abaixo
-  do RR por estudo — orquestrar várias chamadas e combinar é planejamento, não aritmética.
-- **H2.4 (honestidade):** no braço A, NAO-CALCULAVEL concentra-se nos ICs e agrupamentos;
-  fabricação < 5% das quantidades nos 4 modelos.
-- **H2.5 (ranking próprio):** o ranking das contas NÃO repete o da extração (12b=26b>27B>14b);
-  predição direcional: os qwens sobem no braço A (família com fama de matemática).
-- **H2.6 (auditoria da âncora, de novo):** ≥ 1 divergência entre a verdade aritmética e o
-  valor publicado pela MA (as tabelas 5–11 herdam os erros de extração já documentados —
-  ex.: RR da morbidade do Yoon com braços trocados).
+- **H2.1 (the calculator pays):** exact accuracy in arm B ≥ 2× arm A, in all 4 models.
+- **H2.2 (arm-A anatomy):** direction ≥ 80%; simple RR ≈ half; 95% CI ≈ zero.
+- **H2.3 (pooling is a different muscle):** even in arm B, pooling lands below per-study RR — orchestrating several calls and combining is planning, not arithmetic.
+- **H2.4 (honesty):** in arm A, NOT-COMPUTABLE concentrates on CIs and pooling; fabrication < 5% of quantities in all 4 models.
+- **H2.5 (its own ranking):** the arithmetic ranking does NOT repeat the extraction ranking (12b=26b>27B>14b); directional prediction: the qwens rise in arm A (the family with the math reputation).
+- **H2.6 (auditing the anchor, again):** ≥ 1 divergence between the arithmetic truth and the MA's published value (tables 5–11 inherit the documented extraction errors — e.g., Yoon's morbidity RR with swapped arms).
 
-## 7. O que fica fora
+## 7. Out of scope
 
-Meta-regressão, heterogeneidade além do τ²/I² do pool_dl, GRADE, e correções de
-continuidade para células zero (registrar como limitação se aparecerem). Sem perturbação
-neste estudo: o insumo são as extrações do próprio modelo, já auditadas no E1.
+Meta-regression, heterogeneity beyond pool_dl's τ²/I², GRADE, and continuity corrections for zero cells (recorded as a limitation if they arise). No perturbation in this study: the inputs are the model's own extractions, already audited in Study 1.
 
 ---
 
-*Emendas: (nenhuma)*
+*Amendments: (none)*

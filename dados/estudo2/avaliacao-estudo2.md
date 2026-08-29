@@ -1,69 +1,45 @@
-# EXTRAI — Avaliação do Estudo 2 "as contas" (registro de correção)
+# EXTRAI — Study 2 evaluation (grading record): "the arithmetic"
 
-Fila de 51 corridas concluída em 71 min (2026-08-28); correção 100% mecânica
-(`corrigir-e2.py`): a verdade de cada quantidade é a recomputação — pelas funções do
-harness, validadas contra os valores publicados da âncora (RR 0,573; IC 0,372–0,884 no
-caso-teste) — sobre o insumo que o próprio modelo recebeu (as suas extrações do E1,
-interpretadas por regras fixas documentadas no corretor).
+Queue of 51 runs completed in 71 min (2026-08-28); grading 100% mechanical (`corrigir-e2.py`): each quantity's truth is the recomputation — by the harness's functions, validated against the anchor's published values (the test case reproduces them exactly: RR 0.573; CI 0.372–0.884) — over the input the model itself received (its Study-1 extractions, parsed under fixed rules documented in the grader).
 
-**Quem fez o quê**: os modelos calcularam (braço A) ou orquestraram chamadas (braço B);
-o harness executou as funções e devolveu resultados; o corretor rotulou cada quantidade
-sem intervenção de juiz de linguagem.
+**Who did what**: the models computed (arm A) or orchestrated calls (arm B); the harness executed the functions and returned results; the grader labeled every quantity with no language-judge involvement.
 
-## Registro de execução
+## Execution record
 
-- Bug corrigido antes da análise: o braço exploratório *thinking* saiu vazio na primeira
-  rodada (o orçamento de raciocínio consumia todo o `num_predict`); re-rodado com
-  `4000 + 1600` tokens.
-- gemma26 no braço B (família rr) atingiu o teto de 20 chamadas sem emitir o JSON final
-  em 5 rodadas — pontuado como falha de fechamento (json-inválido), não de aritmética.
-- No braço B da família *pool*, qwen14 e qwen38 **não chamaram a calculadora** (0 CALC)
-  e responderam direto; gemma26 escreveu as chamadas **dentro** do JSON como texto
-  (entendeu o quê, não o como). Só o registro de comportamento já é resultado.
+- Bug fixed before analysis: the exploratory *thinking* arm came out empty in its first round (the reasoning budget consumed all of `num_predict`); re-run with `12000 + 1600` tokens after a 5,600-token attempt also collapsed silently.
+- gemma26 in arm B (rr family) hit the 20-call cap without emitting the final JSON within 5 rounds — scored as a closure failure (invalid JSON), not an arithmetic one.
+- In arm B's *pool* family, qwen14 and qwen38 **did not call the calculator** (0 CALC) and answered directly; gemma26 wrote the calls **inside** the JSON as text (understood the what, not the how). The behavioral record is itself a result.
 
-## Placar (réplica 1; ponto = RR ou MD por estudo)
+## Scoreboard (replicate 1; a point = one per-study RR or MD)
 
-| Modelo | Braço | Quantidades | Exatas | Direção certa | Erradas | NC-recusa | IC95 exatos |
+| Model | Arm | Quantities | Exact | Right direction | Wrong | NC-refusal | Exact 95% CIs |
 |---|---|---|---|---|---|---|---|
 | gemma4:12b | A | 7 | 1 | 5 | 1 | 1 | **0/7** |
 | gemma4:12b | **B** | 8 | **6** | 2 | 0 | 0 | **6/8** |
 | qwen3:14b | A | 8 | 2 | 4 | 2 | 0 | **0/8** |
 | qwen3:14b | **B** | 8 | **7** | 1 | 0 | 0 | **7/8** |
 | gemma4:26b | A | 8 | 1 | 5 | 2 | 0 | **0/8** |
-| gemma4:26b | **B** | — | falha de fechamento (rr); md honesto (NC×5) | | | | |
+| gemma4:26b | **B** | — | closure failure (rr); honest md (NC×5) | | | | |
 | qwen3.8:27b | A | 7 | 3 | 2 | 2 | 1 | **0/7** |
 | qwen3.8:27b | **B** | 8 | **8** | 0 | 0 | 0 | **8/8** |
 
-Agrupamentos (MH/DL/IV): braço A — 2 exatos em 24 tentativas (gemma26 acertou 2 pools
-de cabeça; o resto errado ou NC); braço B — qwen14/qwen38 ignoraram a ferramenta no
-pool (valores de cabeça, errados), gemma26 não fechou; **nenhum modelo orquestrou o
-agrupamento com a calculadora**.
+Pooling (MH/DL/IV): arm A — 2 exact of 24 attempts (gemma26 landed 2 pools by head; the rest wrong or NC); arm B — qwen14/qwen38 ignored the tool on pooling (by-head values, wrong), gemma26 did not close; **no model orchestrated the pooling through the calculator**.
 
-## Braço exploratório (qwen3:14b + thinking, braço A, 1 réplica)
+## Exploratory arm (qwen3:14b + thinking, arm A, 1 replicate)
 
-Registro de execução: com orçamentos de 5.600 tokens o thinking consumiu tudo e não
-emitiu resposta (o eco do colapso metacognitivo da Série 1 do FIEL); convergiu com
-**12.000 tokens** (323–1.019 s por corrida — 10–17× o custo sem thinking).
+Execution record: at 5,600 thinking tokens the reasoning consumed everything and no answer was emitted (the echo of FIEL Series 1's metacognitive collapse); it converged at **12,000 tokens** (323–1,019 s per run — 10–17× the non-thinking cost).
 
-| Família | Resultado com thinking | Sem thinking (mesmo modelo) |
+| Family | Result with thinking | Without thinking (same model) |
 |---|---|---|
-| RR + MD por estudo | **6 exatas / 7 pontos** + 1 NC honesto | 2 exatas / 8 |
-| IC95 | **0/7** — a fronteira continua | 0/8 |
-| Agrupamento | **colapso por perseveração**: os mesmos dois números (0,768/0,741) clonados em quatro desfechos, dois deles ("recurrence", "symptoms") inexistentes no insumo — a única *fabricação* de todo o Estudo 2 | errado/NC |
+| Per-study RR + MD | **6 exact / 7 points** + 1 honest NC | 2 exact / 8 |
+| 95% CI | **0/7** — the boundary holds | 0/8 |
+| Pooling | **perseveration collapse**: the same two numbers (0.768/0.741) cloned across four outcomes, two of them ("recurrence", "symptoms") nonexistent in the input — the only *fabrication* in all of Study 2 | wrong/NC |
 
-Leitura: o thinking é a única via "de cabeça" que se aproxima da calculadora na
-aritmética simples — e o "random effects 0,741" da morbidade ficou a 0,03 do DL
-verdadeiro antes de ser clonado nos desfechos fantasmas. Mas o IC segue impossível, o
-agrupamento derrete em perseveração, e o custo é uma ordem de grandeza. A calculadora
-domina o thinking em tudo: mais exata, mais barata e sem fantasmas.
+Reading: thinking is the only "by-head" route that approaches the calculator on simple arithmetic — and its morbidity "random effects 0.741" landed 0.03 from the true DL before being cloned into phantom outcomes. But the CI stays impossible, pooling melts into perseveration, and the cost is an order of magnitude. The calculator beats thinking on precision, cost and sanity.
 
-## Auditoria aritmética da âncora (H2.6)
+## Arithmetic audit of the anchor (H2.6)
 
-Recomputação mecânica das tabelas 5/6/11 da MA a partir das células publicadas:
+Mechanical recomputation of the MA's tables 5/6/11 from the published cells:
 
-- **RRs por estudo: todos corretos** (11/11 dentro de ±0,015).
-- **Agregado da morbidade: o número publicado (0,778; IC 0,57–1,07) reproduz exatamente
-  sob DerSimonian-Laird (recomputado: 0,774; 0,566–1,059) — mas a legenda da tabela 5
-  o descreve como Mantel-Haenszel** (o MH recomputado dá 0,863). Errata de rótulo de
-  método: número certo, nome errado. Agregado da mortalidade: divergência de 0,027
-  (nível de arredondamento/definição de n; não adjudicável como erro).
+- **Per-study RRs: all correct** (11/11 within ±0.015).
+- **Pooled morbidity: the published number (0.778; CI 0.57–1.07) reproduces exactly under DerSimonian-Laird (recomputed: 0.774; 0.566–1.059) — but table 5's caption describes it as Mantel-Haenszel** (the recomputed MH gives 0.863). A method-label erratum: right number, wrong name (anchor erratum 15). Pooled mortality: a 0.027 divergence (rounding/n-definition level; not adjudicable as error).
