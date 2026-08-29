@@ -1,0 +1,17 @@
+{
+ "modelo": "qwen38",
+ "familia": "md",
+ "braco": "B",
+ "replica": 1,
+ "think": false,
+ "chamadas": 0,
+ "dt": 110.5,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\n  \"tempo_flatus_h\": {\n    \"Sun 2023\": {\n      \"md\": -11.2,\n      \"ic95\": [\n        -13.28,\n        -9.12\n      ],\n      \"nota\": \"Dados mediana (limite inferior, limite superior). Assumindo limites como percentis 25 e 75, estimativa da amplitude (P75-P25) e DP aproximada (P75-P25)/1.35. Conversão para dias: GDFT 28.2h=1.175d, 9.2h=0.383d, 48.0h=2.0d; Cont 39.4h=1.642d, 24.9h=1.037d, 67.5h=2.8125d.\"\n    },\n    \"Coeckelenbergh 2024\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Valores NR\"\n    },\n    \"Diaper 2021\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Valores NR\"\n    }\n  },\n  \"tempo_dieta_oral\": {\n    \"Sun 2023\": {\n      \"md\": -2.0,\n      \"ic95\": [\n        -2.57,\n        -1.43\n      ],\n      \"nota\": \"Dados mediana (limite inferior, limite superior). Assumindo limites como percentis 25 e 75, estimativa da amplitude (P75-P25) e DP aproximada (P75-P25)/1.35.\"\n    },\n    \"Sujatha 2019\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Valores NR\"\n    }\n  }\n}",
+   "dt": 110.5
+  }
+ ]
+}

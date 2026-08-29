@@ -1,0 +1,22 @@
+{
+ "modelo": "gemma26",
+ "familia": "rr",
+ "braco": "B",
+ "replica": 2,
+ "think": false,
+ "chamadas": 20,
+ "dt": 72.3,
+ "rodadas": 2,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "CALC: rr(0.086*224, 224, 0.166*226, 226)\nCALC: ic95_rr(0.086*224, 224, 0.166*226, 226)\nCALC: rr(28, 39, 30, 36)\nCALC: ic95_rr(28, 39, 30, 36)\nCALC: rr(113, 198, 117, 196)\nCALC: ic95_rr(113, 198, 117, 196)\nCALC: rr(19, 61, 32, 61)\nCALC: ic95_rr(19, 61, 32, 6)\nCALC: rr(0.04*305, 305, 0.043*259, 259)\nCALC: ic95_rr(0.04*305, 305, 0.043*259, 259)\nCALC: rr(1, 50, 0, 50)\nCALC: ic95_rr(1, 50, 0, 50)\nCALC: rr(31, 142, 30, 141)\nCALC: ic95_rr(31, 142, 30, 141)\nCALC: rr(2, 50, 16, 50)\nCALC: ic95_rr(2, 50, 16, 50)",
+   "dt": 39.8
+  },
+  {
+   "rodada": 2,
+   "saida": "CALC: rr(19, 61, 32, 61)\nCALC: ic95_rr(19, 61, 32, 61)\nCALC: rr(12, 305, 11, 259)\nCALC: ic95_rr(12, 305, 11, 259)",
+   "dt": 32.6
+  }
+ ]
+}

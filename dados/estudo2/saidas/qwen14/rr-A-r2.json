@@ -1,0 +1,17 @@
+{
+ "modelo": "qwen14",
+ "familia": "rr",
+ "braco": "A",
+ "replica": 2,
+ "think": false,
+ "chamadas": 0,
+ "dt": 43.4,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\"morbidade\": {\"Calvo-Vecino 2018\": {\"rr\": 0.518, \"ic95\": [0.318, 0.842]}, \"Yoon 2023\": {\"rr\": 0.923, \"ic95\": [0.527, 1.613]}, \"Diaper 2021\": {\"rr\": 1.087, \"ic95\": [0.830, 1.422]}, \"Wu 2024\": {\"rr\": 0.591, \"ic95\": [0.313, 1.118]}}, \"mortalidade\": {\"de Waal 2021\": {\"rr\": 0.930, \"ic95\": [0.463, 1.869]}, \"Sun 2023\": {\"rr\": 0.063, \"ic95\": [0.008, 0.473]}}, \"ileo\": {\"Arslan 2020\": {\"rr\": 1.028, \"ic95\": [0.731, 1.439]}, \"Sun 2023\": {\"rr\": 0.125, \"ic95\": [0.016, 0.964]}, \"Castro 2024\": {\"rr\": \"NAO-CALCULAVEL\", \"ic95\": [\"NAO-CALCULAVEL\", \"NAO-CALCULAVEL\"]}}}",
+   "dt": 43.4
+  }
+ ]
+}

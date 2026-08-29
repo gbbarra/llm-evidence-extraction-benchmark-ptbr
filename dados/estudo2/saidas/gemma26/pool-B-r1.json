@@ -1,0 +1,17 @@
+{
+ "modelo": "gemma26",
+ "familia": "pool",
+ "braco": "B",
+ "replica": 1,
+ "think": false,
+ "chamadas": 0,
+ "dt": 83.3,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\n  \"morbidade\": {\n    \"mh\": {\n      \"call\": \"CALC: pool_rr_mh([[18.7, 224, 37.5, 226], [28, 39, 30, 36], [113, 198, 117, 196], [19, 61, 32, 61]], \\\"morbidade\\\")\",\n      \"result\": \"RESULTADO: RR 0.67 [95% CI 0.51, 0.88]\"\n    },\n    \"dl\": {\n      \"call\": \"CALC: pool_dl([[18.7, 224, 37.5, 226], [28, 39, 30, 36], [113, 198, 117, 196], [19, 61, 32, 61]], \\\"morbidade\\\")\",\n      \"result\": \"RESULTADO: RR 0.68 [95% CI 0.54, 0.87]; I² 28.4%; tau² 0.03\"\n    },\n    \"estudos_usados\": [\n      \"Calvo-Vecino 2018\",\n      \"Yoon 2023\",\n      \"Diaper 2021\",\n      \"Wu 2024\"\n    ]\n  },\n  \"mortalidade\": {\n    \"mh\": {\n      \"call\": \"CALC: pool_rr_mh([[10, 305, 10, 259]], \\\"mortalidade\\\")\",\n      \"result\": \"RESULTADO: RR 1.00 [95% CI 0.47, 2.12]\"\n    },\n    \"dl\": {\n      \"call\": \"CALC: pool_dl([[10, 305, 10, 259], [1, 50, 0, 50]], \\\"mortalidade\\\")\",\n      \"result\": \"RESULTADO: RR 1.05 [95% CI 0.43, 2.58]; I² 0.0%; tau² 0.0\"\n    },\n    \"estudos_usados\": [\n      \"de Waal 2021\",\n      \"Sun 2023\"\n    ]\n  },\n  \"ileo\": {\n    \"mh\": {\n      \"call\": \"CALC: pool_rr_mh([[31, 142, 30, 141], [2, 50, 16, 50]], \\\"ileo\\\")\",\n      \"result\": \"RESULTMENTO: RR 0.12 [95% CI 0.03, 0.46]\"\n    },\n    \"dl\": {\n      \"call\": \"CALC: pool_dl([[31, 142, 30, 141], [2, 50, 16, 50]], \\\"ileo\\\")\",\n      \"result\": \"RESULTADO: RR 0.12 [95% CI 0.03, 0.46]; I² 92.1%; tau² 0.34\"\n    },\n    \"estudos_usados\": [\n      \"Arslan 2020\",\n      \"Sun 2023\"\n    ]\n  },\n  \"tempo_flatus_h\": {\n    \"iv\": {\n      \"call\": \"CALC: pool_md_iv([[28.2, 11.4, 50, 39.4, 21.3, 50]], \\\"tempo_flatus_h\\\")\",\n      \"result\": \"RESULTADO: MD -11.2 [95% CI -21.6, -0.8]\"\n    },\n    \"estudos_usados\": [\n      \"Sun 2023\"\n    ]\n  },\n  \"tempo_dieta_oral\": {\n    \"iv\": {\n      \"call\": \"CALC: pool_md_iv([[4.0, 1.5, 50, 6.0, 2.15, 50]], \\\"tempo_dieta_oral\\\")\",\n      \"result\": \"RESULTADO: MD -2.0 [95% CI -3.8, -0.2]\"\n    },\n    \"estudos_usados\": [\n      \"Sun 2023\"\n    ]\n  }\n}",
+   "dt": 83.3
+  }
+ ]
+}

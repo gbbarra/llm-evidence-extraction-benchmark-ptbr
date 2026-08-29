@@ -1,0 +1,61 @@
+
+=== gemma12 — 22:35 ===
+  gemma12 rr-A-r1: 1 rodada(s), 0 CALC, 70s
+  gemma12 rr-A-r2: 1 rodada(s), 0 CALC, 55s
+  gemma12 rr-B-r1: 2 rodada(s), 16 CALC, 122s
+  gemma12 rr-B-r2: 2 rodada(s), 16 CALC, 122s
+  gemma12 md-A-r1: 1 rodada(s), 0 CALC, 51s
+  gemma12 md-A-r2: 1 rodada(s), 0 CALC, 45s
+  gemma12 md-B-r1: 2 rodada(s), 4 CALC, 111s
+  gemma12 md-B-r2: 1 rodada(s), 0 CALC, 61s
+  gemma12 pool-A-r1: 1 rodada(s), 0 CALC, 54s
+  gemma12 pool-A-r2: 1 rodada(s), 0 CALC, 45s
+  gemma12 pool-B-r1: 1 rodada(s), 0 CALC, 79s
+  gemma12 pool-B-r2: 1 rodada(s), 0 CALC, 72s
+
+=== qwen14 — 22:49 ===
+  qwen14 rr-A-r1: 1 rodada(s), 0 CALC, 59s
+  qwen14 rr-A-r2: 1 rodada(s), 0 CALC, 43s
+  qwen14 rr-B-r1: 2 rodada(s), 18 CALC, 105s
+  qwen14 rr-B-r2: 2 rodada(s), 18 CALC, 102s
+  qwen14 md-A-r1: 1 rodada(s), 0 CALC, 31s
+  qwen14 md-A-r2: 1 rodada(s), 0 CALC, 27s
+  qwen14 md-B-r1: 1 rodada(s), 0 CALC, 40s
+  qwen14 md-B-r2: 1 rodada(s), 0 CALC, 37s
+  qwen14 pool-A-r1: 1 rodada(s), 0 CALC, 39s
+  qwen14 pool-A-r2: 1 rodada(s), 0 CALC, 33s
+  qwen14 pool-B-r1: 1 rodada(s), 0 CALC, 66s
+  qwen14 pool-B-r2: 1 rodada(s), 0 CALC, 116s
+  qwen14 rr-A-think-r1: 1 rodada(s), 0 CALC, 194s
+  qwen14 md-A-think-r1: 1 rodada(s), 0 CALC, 192s
+  qwen14 pool-A-think-r1: 1 rodada(s), 0 CALC, 196s
+
+=== gemma26 — 23:11 ===
+  gemma26 rr-A-r1: 1 rodada(s), 0 CALC, 76s
+  gemma26 rr-A-r2: 1 rodada(s), 0 CALC, 29s
+  gemma26 rr-B-r1: 2 rodada(s), 20 CALC, 72s
+  gemma26 rr-B-r2: 2 rodada(s), 20 CALC, 72s
+  gemma26 md-A-r1: 1 rodada(s), 0 CALC, 30s
+  gemma26 md-A-r2: 1 rodada(s), 0 CALC, 20s
+  gemma26 md-B-r1: 1 rodada(s), 0 CALC, 34s
+  gemma26 md-B-r2: 1 rodada(s), 0 CALC, 22s
+  gemma26 pool-A-r1: 1 rodada(s), 0 CALC, 42s
+  gemma26 pool-A-r2: 1 rodada(s), 0 CALC, 29s
+  gemma26 pool-B-r1: 1 rodada(s), 0 CALC, 83s
+  gemma26 pool-B-r2: 1 rodada(s), 0 CALC, 49s
+
+=== qwen38 — 23:20 ===
+  qwen38 rr-A-r1: 1 rodada(s), 0 CALC, 165s
+  qwen38 rr-A-r2: 1 rodada(s), 0 CALC, 72s
+  qwen38 rr-B-r1: 2 rodada(s), 16 CALC, 230s
+  qwen38 rr-B-r2: 2 rodada(s), 16 CALC, 235s
+  qwen38 md-A-r1: 1 rodada(s), 0 CALC, 82s
+  qwen38 md-A-r2: 1 rodada(s), 0 CALC, 158s
+  qwen38 md-B-r1: 1 rodada(s), 0 CALC, 111s
+  qwen38 md-B-r2: 1 rodada(s), 0 CALC, 89s
+  qwen38 pool-A-r1: 1 rodada(s), 0 CALC, 113s
+  qwen38 pool-A-r2: 1 rodada(s), 0 CALC, 63s
+  qwen38 pool-B-r1: 1 rodada(s), 0 CALC, 129s
+  qwen38 pool-B-r2: 1 rodada(s), 0 CALC, 68s
+
+FILA E2 CONCLUÍDA em 71 min.

@@ -1,0 +1,17 @@
+{
+ "modelo": "gemma26",
+ "familia": "pool",
+ "braco": "B",
+ "replica": 2,
+ "think": false,
+ "chamadas": 0,
+ "dt": 49.1,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\n  \"morbidade\": {\n    \"mh\": \"CALC: pool_rr_mh([[18.7, 224, 37.5, 226], [28, 39, 30, 36], [113, 198, 117, 196], [19, 61, 32, 61]])\",\n    \"dl\": \"CALC: pool_dl([[18.7, 224, 37.5, 226], [28, 39, 30, 36], [113, 198, 117, 196], [19, 61, 32, 61]])\",\n    \"estudos_usados\": [\n      \"Calvo-Vecino 2018\",\n      \"Yoon 2023\",\n      \"Diaper 2021\",\n      \"Wu 2024\"\n    ]\n  },\n  \"mortalidade\": {\n    \"mh\": \"CALC: pool_rr_mh([[10, 305, 10, 259], [1, 50, 0, 50]])\",\n    \"dl\": \"CALL: pool_dl([[10, 305, 10, 259], [1, 50, 0, 50]])\",\n    \"estudos_usados\": [\n      \"de Waal 2021\",\n      \"Sun 2023\"\n    ]\n  },\n  \"ileo\": {\n    \"mh\": \"CALC: pool_rr_mh([[31, 142, 30, 141], [2, 50, 16, 50], [\\\"NAO-CALCULAVEL\\\", 43, \\\"NAO-CALCULAVEL\\\", 42]])\",\n    \"dl\": \"CALC: pool_dl([[31, 142, 30, 141], [2, 50, 16, 50]])\",\n    \"estudos_usados\": [\n      \"Arslan 2020\",\n      \"Sun 2023\",\n      \"Castro 2024\"\n    ]\n  },\n  \"tempo_flatus_h\": {\n    \"iv\": \"CALC: pool_md_iv([[28.2, 9.4, 50, 39.4, 21.3, 50]])\",\n    \"estudos_usados\": [\n      \"Sun 2023\",\n      \"Coeckelenbergh 2024\",\n      \"Diaper 2021\"\n    ]\n  },\n  \"tempo_dieta_oral\": {\n    \"iv\": \"CALC: pool_md_iv([[4.0, 1.5, 50, 6.0, 2.15, 50]])\",\n    \"estudos_usados\": [\n      \"Sun 2023\",\n      \"Sujatha 2019\"\n    ]\n  }\n}",
+   "dt": 49.1
+  }
+ ]
+}

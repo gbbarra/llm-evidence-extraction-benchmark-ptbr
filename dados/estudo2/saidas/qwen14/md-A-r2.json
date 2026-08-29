@@ -1,0 +1,17 @@
+{
+ "modelo": "qwen14",
+ "familia": "md",
+ "braco": "A",
+ "replica": 2,
+ "think": false,
+ "chamadas": 0,
+ "dt": 26.5,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\"tempo_flatus_h\": {\"Sun 2023\": {\"md\": -11.20, \"ic95\": [-17.91, -4.49], \"nota\": \"\"}, \"Coeckelenbergh 2024\": {\"md\": \"NAO-CALCULAVEL\", \"ic95\": \"NAO-CALCULAVEL\", \"nota\": \"\"}, \"Diaper 2021\": {\"md\": \"NAO-CALCULAVEL\", \"ic95\": \"NAO-CALCULAVEL\", \"nota\": \"\"}}, \"tempo_dieta_oral\": {\"Sun 2023\": {\"md\": -2.00, \"ic95\": [-3.32, -0.68], \"nota\": \"\"}, \"Sujatha 2019\": {\"md\": \"NAO-CALCULAVEL\", \"ic95\": \"NAO-CALCULAVEL\", \"nota\": \"\"}}}",
+   "dt": 26.5
+  }
+ ]
+}

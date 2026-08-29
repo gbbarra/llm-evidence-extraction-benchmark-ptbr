@@ -1,0 +1,17 @@
+{
+ "modelo": "gemma12",
+ "familia": "pool",
+ "braco": "A",
+ "replica": 2,
+ "think": false,
+ "chamadas": 0,
+ "dt": 45.0,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\n  \"morbidade\": {\n    \"mh\": {\n      \"rr\": 0.538,\n      \"ic95\": [0.241, 1.183]\n    },\n    \"dl\": {\n      \"rr\": 0.538,\n      \"ic95\": [0.256, 1.155]\n    }\n  },\n  \"mortalidade\": {\n    \"mh\": {\n      \"rr\": 1.000,\n      \"ic95\": [0.500, 2.000]\n    },\n    \"dl\": {\n      \"rr\": 1.000,\n      \"ic95\": [0.500, 2.000]\n    }\n  },\n  \"ileo\": {\n    \"mh\": {\n      \"rr\": 0.750,\n      \"ic95\": [0.316, 1.770]\n    },\n    \"dl\": {\n      \"rr\": 0.750,\n      \"ic95\": [0.334, 1.700]\n    }\n  },\n  \"tempo_flatus_h\": {\n    \"iv\": {\n      \"md\": -11.2,\n      \"ic95\": [-24.8, -0.4]\n    }\n  },\n  \"tempo_dieta_oral\": {\n    \"iv\": {\n      \"md\": \"NAO-CALCULAVEL\"\n    }\n  }\n}",
+   "dt": 45.0
+  }
+ ]
+}

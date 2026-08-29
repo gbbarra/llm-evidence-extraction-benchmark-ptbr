@@ -1,0 +1,17 @@
+{
+ "modelo": "qwen38",
+ "familia": "md",
+ "braco": "A",
+ "replica": 1,
+ "think": false,
+ "chamadas": 0,
+ "dt": 82.1,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\n  \"tempo_flatus_h\": {\n    \"Sun 2023\": {\n      \"md\": -11.20,\n      \"ic95\": [-21.32, -1.08],\n      \"nota\": \"\"\n    },\n    \"Coeckelenbergh 2024\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Dados reportados como NR\"\n    },\n    \"Diaper 2021\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Dados reportados como NR\"\n    }\n  },\n  \"tempo_dieta_oral\": {\n    \"Sun 2023\": {\n      \"md\": -2.00,\n      \"ic95\": [-3.87, -0.13],\n      \"nota\": \"Desfecho reportado em dias. Conversão para horas: MD = -48.00 h; IC95% = [-92.88 h, -3.12 h]\"\n    },\n    \"Sujatha 2019\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Dados reportados como NR\"\n    }\n  }\n}",
+   "dt": 82.1
+  }
+ ]
+}

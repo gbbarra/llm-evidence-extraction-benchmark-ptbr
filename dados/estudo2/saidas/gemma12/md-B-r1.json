@@ -1,0 +1,22 @@
+{
+ "modelo": "gemma12",
+ "familia": "md",
+ "braco": "B",
+ "replica": 1,
+ "think": false,
+ "chamadas": 4,
+ "dt": 110.7,
+ "rodadas": 2,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "CALC: md(28.2, 19.4, 50, 39.4, 21.3, 50)\nCALC: ic95_md(28.2, 19.4, 50, 39.4, 21.3, 50)\nCALC: md(96, 33.6, 50, 144, 21.3, 50)\nCALC: ic95_md(96, 33.6, 50, 144, 21.3, 50)\n\n```json\n{\n  \"tempo_flatus_h\": {\n    \"Sun 2023\": {\n      \"md\": -11.2,\n      \"ic95\": [-18.0, -4.4],\n      \"nota\": \"\"\n    },\n    \"Coeckelenbergh 2024\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Dados NR\"\n    },\n    \"Diaper 2021\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Dados NR\"\n    }\n  },\n  \"tempo_dieta_oral\": {\n    \"Sun 2023\": {\n      \"md\": -144.0,\n      \"ic95\": [-216.0, -72.0],\n      \"nota\": \"Convertido 6.0 days para 144h\"\n    },\n    \"Sujatha 2019\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Descrição qualitativa e dado de controle NR\"\n    }\n  }\n}\n```",
+   "dt": 61.0
+  },
+  {
+   "rodada": 2,
+   "saida": "```json\n{\n  \"tempo_flatus_h\": {\n    \"Sun 2023\": {\n      \"md\": -11.2,\n      \"ic95\": [-19.19, -3.21],\n      \"nota\": \"\"\n    },\n    \"Coeckelenbergh 2024\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Dados NR\"\n    },\n    \"Diaper 2021\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Dados NR\"\n    }\n  },\n  \"tempo_dieta_oral\": {\n    \"Sun 2023\": {\n      \"md\": -48.0,\n      \"ic95\": [-59.03, -36.97],\n      \"nota\": \"Convertido 6.0 days para 144h; 4.0 days para 96h\"\n    },\n    \"Sujatha 2019\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Descrição qualitativa e dado de controle NR\"\n    }\n  }\n}\n```",
+   "dt": 49.6
+  }
+ ]
+}

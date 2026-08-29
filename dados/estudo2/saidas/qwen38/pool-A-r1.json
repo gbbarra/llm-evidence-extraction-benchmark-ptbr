@@ -1,0 +1,17 @@
+{
+ "modelo": "qwen38",
+ "familia": "pool",
+ "braco": "A",
+ "replica": 1,
+ "think": false,
+ "chamadas": 0,
+ "dt": 113.4,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\n  \"morbidade\": {\n    \"mh\": {\n      \"rr\": 0.892,\n      \"ic95\": [\n        0.62,\n        1.28\n      ]\n    },\n    \"dl\": {\n      \"rr\": 0.892,\n      \"ic95\": [\n        0.62,\n        1.28\n      ]\n    }\n  },\n  \"mortalidade\": {\n    \"mh\": {\n      \"rr\": 0.93,\n      \"ic95\": [\n        0.43,\n        2.02\n      ]\n    },\n    \"dl\": {\n      \"rr\": 0.93,\n      \"ic95\": [\n        0.43,\n        2.02\n      ]\n    }\n  },\n  \"ileo\": {\n    \"mh\": {\n      \"rr\": 1.03,\n      \"ic95\": [\n        0.77,\n        1.38\n      ]\n    },\n    \"dl\": {\n      \"rr\": 1.03,\n      \"ic95\": [\n        0.77,\n        1.38\n      ]\n    }\n  },\n  \"tempo_flatus_h\": {\n    \"iv\": {\n      \"md\": -11.20,\n      \"ic95\": [\n        -19.40,\n        -3.00\n      ]\n    }\n  },\n  \"tempo_dieta_oral\": {\n    \"iv\": {\n      \"md\": -2.00,\n      \"ic95\": [\n        -3.20,\n        -0.80\n      ]\n    }\n  }\n}",
+   "dt": 113.4
+  }
+ ]
+}

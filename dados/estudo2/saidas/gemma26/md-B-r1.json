@@ -1,0 +1,17 @@
+{
+ "modelo": "gemma26",
+ "familia": "md",
+ "braco": "B",
+ "replica": 1,
+ "think": false,
+ "chamadas": 0,
+ "dt": 34.2,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\n  \"tempo_flatus_h\": {\n    \"Sun 2023\": {\n      \"md\": null,\n      \"ic95\": null,\n      \"nota\": \"Para calcular a diferença de médias, é necessário o desvio padrão (DP), mas o estudo fornece o intervalo de confiança/interquartil (9.2–48.0 h e 24.9–67.5 h). Sem a conversão para DP ou sem a instrução de que os valores entre parênteses são DP, o cálculo é impossível.\"\n    },\n    \"Coeckelenbergh 2024\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Dados NR (Não Relatados).\"\n    },\n    \"Diaper 2021\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Dados NR (Não Relatados).\"\n    }\n  },\n  \"tempo_dieta_oral\": {\n    \"Sun 2023\": {\n      \"md\": null,\n      \"ic95\": null,\n      \"nota\": \"Para calcular a diferença de médias, é necessário o desvio padrão (DP), mas o estudo fornece o intervalo de confiança/interquartil (2.7–6.0 days e 5.0–9.3 days). Sem a conversão para DP, o cálculo é impossível.\"\n    },\n    \"Sujatha 2019\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Dados NR (Não Relatados).\"\n    }\n  }\n}",
+   "dt": 34.2
+  }
+ ]
+}

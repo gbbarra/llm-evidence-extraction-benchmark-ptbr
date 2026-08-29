@@ -210,7 +210,7 @@ def post_json(url, body, timeout=3600):
 
 def gerar(mod, prompt, think=False, max_tokens=1600):
     m = MODELS[mod]
-    opts = dict(num_predict=max_tokens, num_ctx=CTX)
+    opts = dict(num_predict=(4000 + max_tokens) if think else max_tokens, num_ctx=CTX)
     if m["cpu"]:
         opts["num_gpu"] = 0
     body = dict(model=m["ollama"], prompt=prompt, stream=False, think=bool(think), options=opts)

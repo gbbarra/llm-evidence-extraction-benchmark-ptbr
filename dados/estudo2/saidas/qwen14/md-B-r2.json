@@ -1,0 +1,17 @@
+{
+ "modelo": "qwen14",
+ "familia": "md",
+ "braco": "B",
+ "replica": 2,
+ "think": false,
+ "chamadas": 0,
+ "dt": 37.0,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\"tempo_flatus_h\": {\"Sun 2023\": {\"md\": -11.2, \"ic95\": [-21.3, -1.1], \"nota\": \"Convertido de horas para dias: GDFT = 28.2 horas ≈ 1.17 dias; controle = 39.4 horas ≈ 1.64 dias\"}, \"Coeckelenbergh 2024\": {\"md\": \"NAO-CALCULAVEL\", \"ic95\": [\"NAO-CALCULAVEL\", \"NAO-CALCULAVEL\"], \"nota\": \"Dados NR para ambos os grupos\"}, \"Diaper 2021\": {\"md\": \"NAO-CALCULAVEL\", \"ic95\": [\"NAO-CALCULAVEL\", \"NAO-CALCULAVEL\"], \"nota\": \"Dados NR para ambos os grupos\"}}, \"tempo_dieta_oral\": {\"Sun 2023\": {\"md\": -2.0, \"ic95\": [-3.3, -0.7], \"nota\": \"Valores já em dias\"}, \"Sujatha 2019\": {\"md\": \"NAO-CALCULAVEL\", \"ic95\": [\"NAO-CALCULAVEL\", \"NAO-CALCULAVEL\"], \"nota\": \"Dados NR para ambos os grupos\"}}}",
+   "dt": 37.0
+  }
+ ]
+}

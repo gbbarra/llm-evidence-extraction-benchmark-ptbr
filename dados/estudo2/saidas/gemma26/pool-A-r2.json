@@ -1,0 +1,17 @@
+{
+ "modelo": "gemma26",
+ "familia": "pool",
+ "braco": "A",
+ "replica": 2,
+ "think": false,
+ "chamadas": 0,
+ "dt": 28.5,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\n  \"morbidade\": {\n    \"mh\": {\n      \"rr\": 0.546,\n      \"ic95\": [\n        0.352,\n        0.848\n      ]\n    },\n    \"dl\": {\n      \"rr\": 0.546,\n      \"ic95\": [\n        0.352,\n        0.848\n      ]\n    }\n  },\n  \"mortalidade\": {\n    \"mh\": {\n      \"rr\": 0.931,\n      \"ic95\": [\n        0.444,\n        1.958\n      ]\n    },\n    \"dl\": {\n      \"rr\": 0.931,\n      \"ic95\": [\n        0.444,\n        1.958\n      ]\n    }\n  },\n  \"ileo\": {\n    \"mh\": {\n      \"rr\": 0.225,\n      \"ic95\": [\n        0.094,\n        0.536\n      ]\n    },\n    \"dl\": {\n      \"regressao_erro\": \"NAO-CALCULAVEL\",\n      \"rr\": 0.225,\n      \"ic95\": [\n        0.094,\n        0.536\n      ]\n    }\n  },\n  \"tempo_flatus_h\": {\n    \"iv\": {\n      \"md\": -11.2,\n      \"ic95\": [\n        -22.6,\n        0.2\n      ]\n    }\n  },\n  \"tempo_dieta_oral\": {\n    \"iv\": {\n      \"md\": -2.0,\n      \"ic95\": [\n        -3.9,\n        -0.1\n      ]\n    }\n  }\n}",
+   "dt": 28.5
+  }
+ ]
+}

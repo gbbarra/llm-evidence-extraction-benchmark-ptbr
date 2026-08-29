@@ -1,0 +1,17 @@
+{
+ "modelo": "gemma12",
+ "familia": "md",
+ "braco": "A",
+ "replica": 1,
+ "think": false,
+ "chamadas": 0,
+ "dt": 51.4,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\n  \"tempo_flatus_h\": {\n    \"Sun 2023\": {\n      \"md\": -11.20,\n      \"ic95\": [\n        -22.84,\n        -0.36\n      ],\n      \"nota\": \"\"\n    },\n    \"Coeckelenbergh 2024\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": [\n        \"NAO-CALCULAVEL\",\n        \"NAO-CALCULAVEL\"\n      ],\n      \"nota\": \"\"\n    },\n    \"Diaper 2021\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": [\n        \"NAO-CALCULAVEL\",\n        \"NAO-CALCULAVEL\"\n      ],\n      \"nota\": \"\"\n    }\n  },\n  \"tempo_dieta_oral\": {\n    \"Sun 2023\": {\n      \"md\": -2.00,\n      \"ic95\": [\n        -4.13,\n        -0.23\n      ],\n      \"nota\": \"Convertido de dias para dias: 4.0 - 6.0 = -2.0\"\n    },\n    \"Sujatha 2019\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": [\n        \"NAO-CALCULAVEL\",\n        \"NAO-CALCULAVEL\"\n      ],\n      \"nota\": \"Descrição qualitativa sem valores numéricos\"\n    }\n  }\n}",
+   "dt": 51.4
+  }
+ ]
+}

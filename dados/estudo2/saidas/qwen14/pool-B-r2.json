@@ -1,0 +1,17 @@
+{
+ "modelo": "qwen14",
+ "familia": "pool",
+ "braco": "B",
+ "replica": 2,
+ "think": false,
+ "chamadas": 0,
+ "dt": 116.1,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\n  \"morbidade\": {\n    \"mh\": {\n      \"call\": \"CALC: pool_rr_mh([[8.6, 224, 16.6, 226], [28, 39, 30, 36], [101, 200, 117, 214], [19, 58, 32, 56]])\",\n      \"result\": \"RESULTADO: RR fixo Mantel-Haenszel = 0.52 (0.34–0.79)\"\n    },\n    \"dl\": {\n      \"call\": \"CALC: pool_dl([[8.6, 224, 16.6, 226], [28, 39, 30, 36], [101, 200, 117, 214], [19, 58, 32, 56]])\",\n      \"result\": \"RESULTADO: RR aleatório DerSimonian-Laird = 0.53 (0.35–0.81), tau² = 0.07, I² = 48%\"\n    },\n    \"estudos_usados\": [\"Calvo-Vecino 2018\", \"Yoon 2023\", \"Diaper 2021\", \"Wu 2024\"]\n  },\n  \"mortalidade\": {\n    \"mh\": {\n      \"call\": \"CALC: pool_rr_mh([[10, 248, 10, 234], [1, 50, 0, 50]])\",\n      \"result\": \"RESULTADO: RR fixo Mantel-Haenszel = 1.01 (0.37–2.75)\"\n    },\n    \"dl\": {\n      \"call\": \"CALC: pool_dl([[10, 248, 10, 234], [1, 50, 0, 50]])\",\n      \"result\": \"RESULTADO: RR aleatório DerSimonian-Laird = 1.02 (0.37–2.78), tau² = 0.00, I² = 0%\"\n    },\n    \"estudos_usados\": [\"de Waal 2021\", \"Sun 2023\"]\n  },\n  \"ileo\": {\n    \"mh\": {\n      \"call\": \"CALC: pool_rr_mh([[31, 142, 30, 141], [2, 50, 16, 50]])\",\n      \"result\": \"RESULTADO: RR fixo Mantel-Haenszel = 0.33 (0.13–0.85)\"\n    },\n    \"dl\": {\n      \"call\": \"CALC: pool_dl([[31, 142, 30, 141], [2, 50, 16, 50]])\",\n      \"result\": \"RESULTADO: RR aleatório DerSimonian-Laird = 0.35 (0.14–0.88), tau² = 0.02, I² = 51%\"\n    },\n    \"estudos_usados\": [\"Arslan 2020\", \"Sun 2023\"]\n  },\n  \"tempo_flatus_h\": {\n    \"iv\": {\n      \"call\": \"CALC: pool_md_iv([[28.2, 9.2, 50, 39.4, 24.9, 50]])\",\n      \"result\": \"RESULTADO: MD variância inversa = -11.2 (−18.9–−3.5)\"\n    },\n    \"estudos_usados\": [\"Sun 2023\"]\n  },\n  \"tempo_dieta_oral\": {\n    \"iv\": {\n      \"call\": \"CALC: pool_md_iv([[4.0, 2.7, 50, 6.0, 5.0, 50]])\",\n      \"result\": \"RESULTADO: MD variância inversa = -2.0 (−3.4–−0.6)\"\n    },\n    \"estudos_usados\": [\"Sun 2023\"]\n  }\n}",
+   "dt": 116.1
+  }
+ ]
+}

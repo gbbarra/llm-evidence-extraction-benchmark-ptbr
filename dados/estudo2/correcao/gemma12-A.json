@@ -1,0 +1,154 @@
+{
+ "contas": {
+  "ic-errada": 7,
+  "direcao-certa": 5,
+  "errada": 1,
+  "nc-recusa": 1,
+  "exata": 1,
+  "nc-correta": 4,
+  "sem-verdade": 2,
+  "pool-direcao-certa": 6
+ },
+ "detalhes": [
+  {
+   "familia": "rr",
+   "desfecho": "morbidade",
+   "estudo": "Calvo-Vecino 2018",
+   "valor": 0.515,
+   "rotulo": "direcao-certa"
+  },
+  {
+   "familia": "rr",
+   "desfecho": "morbidade",
+   "estudo": "Yoon 2023",
+   "valor": 0.931,
+   "rotulo": "direcao-certa"
+  },
+  {
+   "familia": "rr",
+   "desfecho": "morbidade",
+   "estudo": "Diaper 2021",
+   "valor": 1.085,
+   "rotulo": "errada"
+  },
+  {
+   "familia": "rr",
+   "desfecho": "morbidade",
+   "estudo": "Wu 2024",
+   "valor": 0.473,
+   "rotulo": "direcao-certa"
+  },
+  {
+   "familia": "rr",
+   "desfecho": "mortalidade",
+   "estudo": "de Waal 2021",
+   "valor": 0.926,
+   "rotulo": "direcao-certa"
+  },
+  {
+   "familia": "rr",
+   "desfecho": "mortalidade",
+   "estudo": "Sun 2023",
+   "valor": "NAO-CALCULAVEL",
+   "rotulo": "nc-recusa"
+  },
+  {
+   "familia": "rr",
+   "desfecho": "ileo",
+   "estudo": "Arslan 2020",
+   "valor": 1.19,
+   "rotulo": "exata"
+  },
+  {
+   "familia": "rr",
+   "desfecho": "ileo",
+   "estudo": "Sun 2023",
+   "valor": 0.25,
+   "rotulo": "direcao-certa"
+  },
+  {
+   "familia": "rr",
+   "desfecho": "ileo",
+   "estudo": "Castro 2024",
+   "valor": "NAO-CALCULAVEL",
+   "rotulo": "nc-correta"
+  },
+  {
+   "familia": "md",
+   "desfecho": "tempo_flatus_h",
+   "estudo": "Sun 2023",
+   "valor": -11.2,
+   "rotulo": "sem-verdade"
+  },
+  {
+   "familia": "md",
+   "desfecho": "tempo_flatus_h",
+   "estudo": "Coeckelenbergh 2024",
+   "valor": "NAO-CALCULAVEL",
+   "rotulo": "nc-correta"
+  },
+  {
+   "familia": "md",
+   "desfecho": "tempo_flatus_h",
+   "estudo": "Diaper 2021",
+   "valor": "NAO-CALCULAVEL",
+   "rotulo": "nc-correta"
+  },
+  {
+   "familia": "md",
+   "desfecho": "tempo_dieta_oral",
+   "estudo": "Sun 2023",
+   "valor": -2.0,
+   "rotulo": "sem-verdade"
+  },
+  {
+   "familia": "md",
+   "desfecho": "tempo_dieta_oral",
+   "estudo": "Sujatha 2019",
+   "valor": "NAO-CALCULAVEL",
+   "rotulo": "nc-correta"
+  },
+  {
+   "familia": "pool",
+   "desfecho": "morbidade",
+   "metodo": "mh",
+   "valor": 0.511,
+   "rotulo": "direcao-certa"
+  },
+  {
+   "familia": "pool",
+   "desfecho": "morbidade",
+   "metodo": "dl",
+   "valor": 0.511,
+   "rotulo": "direcao-certa"
+  },
+  {
+   "familia": "pool",
+   "desfecho": "mortalidade",
+   "metodo": "mh",
+   "valor": 1.0,
+   "rotulo": "direcao-certa"
+  },
+  {
+   "familia": "pool",
+   "desfecho": "mortalidade",
+   "metodo": "dl",
+   "valor": 1.0,
+   "rotulo": "direcao-certa"
+  },
+  {
+   "familia": "pool",
+   "desfecho": "ileo",
+   "metodo": "mh",
+   "valor": 0.671,
+   "rotulo": "direcao-certa"
+  },
+  {
+   "familia": "pool",
+   "desfecho": "ileo",
+   "metodo": "dl",
+   "valor": 0.671,
+   "rotulo": "direcao-certa"
+  }
+ ]
+}

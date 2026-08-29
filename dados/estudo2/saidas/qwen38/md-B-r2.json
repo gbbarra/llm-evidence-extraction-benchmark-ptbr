@@ -1,0 +1,17 @@
+{
+ "modelo": "qwen38",
+ "familia": "md",
+ "braco": "B",
+ "replica": 2,
+ "think": false,
+ "chamadas": 0,
+ "dt": 89.1,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\n  \"tempo_flatus_h\": {\n    \"Sun 2023\": {\n      \"md\": -11.20,\n      \"ic95\": [\n        -17.07,\n        -5.33\n      ],\n      \"nota\": \"Unidades: horas. Dados extraídos como mediana (range). Assumindo que o intervalo entre parênteses representa o desvio padrão (DP) para o cálculo estatístico, como indicado na instrução de usar 'dp' nas funções de calculadora. Sun 2023: GDFT média=28.2h, DP=9.2h, n=50; Controle média=39.4h, DP=24.9h, n=50. MD = 28.2 - 39.4 = -11.2h. IC95 calculado com a fórmula: md ± 1.96 * sqrt((dp1^2/n1) + (dp2^2/n2)).\"\n    },\n    \"Coeckelenbergh 2024\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Dados marcados como NR (Not Reported).\"\n    },\n    \"Diaper 2021\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Dados marcados como NR (Not Reported).\"\n    }\n  },\n  \"tempo_dieta_oral\": {\n    \"Sun 2023\": {\n      \"md\": -2.00,\n      \"ic95\": [\n        -2.90,\n        -1.10\n      ],\n      \"nota\": \"Unidades: dias. Dados extraídos como mediana (range). Assumindo que o intervalo entre parênteses representa o desvio padrão (DP) para o cálculo estatístico. Sun 2023: GDFT média=4.0d, DP=2.7d, n=50; Controle média=6.0d, DP=5.0d, n=50. MD = 4.0 - 6.0 = -2.0d. IC95 calculado com a fórmula: md ± 1.96 * sqrt((dp1^2/n1) + (dp2^2/n2)).\"\n    },\n    \"Sujatha 2019\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Dados marcados como NR (Not Reported).\"\n    }\n  }\n}",
+   "dt": 89.1
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "modelo": "gemma26",
+ "familia": "md",
+ "braco": "B",
+ "replica": 2,
+ "think": false,
+ "chamadas": 0,
+ "dt": 22.1,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\n  \"tempo_flatus_h\": {\n    \"Sun 2023\": {\n      \"md\": \"CALC_PENDING\",\n      \"ic95\": [0.0, 0.0],\n      \"nota\": \"Intervalos fornecidos parecem ser intervalos de confiança (95% CI). Precisarei estimar o DP a partir do intervalo para proceder.\"\n    },\n    \"Coeckelenbergh 2024\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": [0.0, 0.0],\n      \"nota\": \"Dados de valores NR.\"\n    },\n    \"Diaper 2021\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": [0.0, 0.0],\n      \"nota\": \"Dados de valores NR.\"\n    }\n  },\n  \"tempo_dieta_oral\": {\n    \"Sun 2023\": {\n      \"md\": \"CALC_PENDING\",\n      \"ic95\": [0.0, 0.0],\n      \"nota\": \"Intervalos fornecidos parecem ser intervalos de confiança (95% CI). Precisarei estimar o DP a partir do intervalo para proceder.\"\n    },\n    \"Sujatha 2019\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": [0.0, 0.0],\n      \"nota\": \"Dados de valores NR.\"\n    }\n  }\n}",
+   "dt": 22.1
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "modelo": "qwen14",
+ "familia": "rr",
+ "braco": "A",
+ "replica": 1,
+ "think": true,
+ "chamadas": 0,
+ "dt": 707.4,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "",
+   "dt": 707.4
+  }
+ ]
+}

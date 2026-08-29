@@ -1,0 +1,17 @@
+{
+ "modelo": "qwen38",
+ "familia": "pool",
+ "braco": "B",
+ "replica": 2,
+ "think": false,
+ "chamadas": 0,
+ "dt": 68.5,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\n  \"morbidade\": {\n    \"mh\": \"CALC: pool_rr_mh([[18, 224, 35, 226], [28, 39, 30, 36], [101, 200, 117, 214], [19, 61, 32, 61]])\",\n    \"dl\": \"CALC: pool_dl([[18, 224, 35, 226], [28, 39, 30, 36], [101, 200, 117, 214], [19, 61, 32, 61]])\",\n    \"estudos_usados\": [\n      \"Calvo-Vecino 2018\",\n      \"Yoon 2023\",\n      \"Diaper 2021\",\n      \"Wu 2024\"\n    ]\n  },\n  \"mortalidade\": {\n    \"mh\": \"CALC: pool_rr_mh([[10, 259, 10, 305], [1, 50, 0, 50]])\",\n    \"dl\": \"CALC: pool_dl([[10, 259, 10, 305], [1, 50, 0, 50]])\",\n    \"estudos_usados\": [\n      \"de Waal 2021\",\n      \"Sun 2023\"\n    ]\n  },\n  \"ileo\": {\n    \"mh\": \"CALC: pool_rr_mh([[31, 142, 30, 141], [2, 50, 16, 50]])\",\n    \"dl\": \"CALC: pool_dl([[31, 142, 30, 141], [2, 50, 16, 50]])\",\n    \"estudos_usados\": [\n      \"Arslan 2020\",\n      \"Sun 2023\"\n    ]\n  },\n  \"tempo_flatus_h\": {\n    \"iv\": \"NAO-CALCULAVEL\",\n    \"estudos_usados\": []\n  },\n  \"tempo_dieta_oral\": {\n    \"iv\": \"NAO-CALCULAVEL\",\n    \"estudos_usados\": []\n  }\n}",
+   "dt": 68.5
+  }
+ ]
+}

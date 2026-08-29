@@ -1,0 +1,17 @@
+{
+ "modelo": "qwen38",
+ "familia": "rr",
+ "braco": "A",
+ "replica": 2,
+ "think": false,
+ "chamadas": 0,
+ "dt": 72.4,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\n  \"morbidade\": {\n    \"Calvo-Vecino 2018\": {\n      \"rr\": 0.517,\n      \"ic95\": [\n        0.326,\n        0.822\n      ]\n    },\n    \"Yoon 2023\": {\n      \"rr\": 0.920,\n      \"ic95\": [\n        0.614,\n        1.376\n      ]\n    },\n    \"Diaper 2021\": {\n      \"rr\": 1.113,\n      \"ic95\": [\n        0.916,\n        1.351\n      ]\n    },\n    \"Wu 2024\": {\n      \"rr\": 0.482,\n      \"ic95\": [\n        0.290,\n        0.808\n      ]\n    }\n  },\n  \"mortalidade\": {\n    \"de Waal 2021\": {\n      \"rr\": 0.932,\n      \"ic95\": [\n        0.437,\n        2.002\n      ]\n    },\n    \"Sun 2023\": {\n      \"rr\": \"NAO-CALCULAVEL\",\n      \"ic95\": [\n        \"NAO-CALCULAVEL\",\n        \"NAO-CALCULAVEL\"\n      ]\n    }\n  },\n  \"ileo\": {\n    \"Arslan 2020\": {\n      \"rr\": 1.009,\n      \"ic95\": [\n        0.685,\n        1.482\n      ]\n    },\n    \"Sun 2023\": {\n      \"rr\": 0.125,\n      \"ic95\": [\n        0.028,\n        0.561\n      ]\n    },\n    \"Castro 2024\": {\n      \"rr\": \"NAO-CALCULAVEL\",\n      \"ic95\": [\n        \"NAO-CALCULAVEL\",\n        \"NAO-CALCULAVEL\"\n      ]\n    }\n  }\n}",
+   "dt": 72.4
+  }
+ ]
+}

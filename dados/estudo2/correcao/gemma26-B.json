@@ -1,0 +1,44 @@
+{
+ "contas": {
+  "json-invalido": 1,
+  "nc-correta": 5,
+  "pool-nc": 6
+ },
+ "detalhes": [
+  {
+   "familia": "md",
+   "desfecho": "tempo_flatus_h",
+   "estudo": "Sun 2023",
+   "valor": null,
+   "rotulo": "nc-correta"
+  },
+  {
+   "familia": "md",
+   "desfecho": "tempo_flatus_h",
+   "estudo": "Coeckelenbergh 2024",
+   "valor": "NAO-CALCULAVEL",
+   "rotulo": "nc-correta"
+  },
+  {
+   "familia": "md",
+   "desfecho": "tempo_flatus_h",
+   "estudo": "Diaper 2021",
+   "valor": "NAO-CALCULAVEL",
+   "rotulo": "nc-correta"
+  },
+  {
+   "familia": "md",
+   "desfecho": "tempo_dieta_oral",
+   "estudo": "Sun 2023",
+   "valor": null,
+   "rotulo": "nc-correta"
+  },
+  {
+   "familia": "md",
+   "desfecho": "tempo_dieta_oral",
+   "estudo": "Sujatha 2019",
+   "valor": "NAO-CALCULAVEL",
+   "rotulo": "nc-correta"
+  }
+ ]
+}

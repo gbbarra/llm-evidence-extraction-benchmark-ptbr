@@ -1,0 +1,22 @@
+{
+ "modelo": "qwen38",
+ "familia": "rr",
+ "braco": "B",
+ "replica": 2,
+ "think": false,
+ "chamadas": 16,
+ "dt": 234.6,
+ "rodadas": 2,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "CALC: rr(18, 224, 35, 226)\nCALC: ic95_rr(18, 224, 35, 226)\nCALC: rr(28, 39, 30, 36)\nCALC: ic95_rr(28, 39, 30, 36)\nCALC: rr(101, 200, 117, 214)\nCALC: ic95_rr(101, 200, 117, 214)\nCALC: rr(19, 61, 32, 61)\nCALC: ic95_rr(19, 61, 32, 61)\nCALC: rr(10, 259, 10, 305)\nCALC: ic95_rr(10, 259, 10, 305)\nCALC: rr(1, 50, 0, 50)\nCALC: ic95_rr(1, 50, 0, 50)\nCALC: rr(31, 142, 30, 141)\nCALC: ic95_rr(31, 142, 30, 141)\nCALC: rr(2, 50, 16, 50)\nCALC: ic95_rr(2, 50, 16, 50)",
+   "dt": 89.2
+  },
+  {
+   "rodada": 2,
+   "saida": "{\n\"morbidade\": {\n\"Calvo-Vecino 2018\": {\n\"rr\": 0.519,\n\"ic95\": [\n0.303,\n0.888\n]\n},\n\"Yoon 2023\": {\n\"rr\": 0.862,\n\"ic95\": [\n0.674,\n1.101\n]\n},\n\"Diaper 2021\": {\n\"rr\": 0.924,\n\"ic95\": [\n0.769,\n1.11\n]\n},\n\"Wu 2024\": {\n\"rr\": 0.594,\n\"ic95\": [\n0.381,\n0.925\n]\n}\n},\n\"mortalidade\": {\n\"de Waal 2021\": {\n\"rr\": 1.178,\n\"ic95\": [\n0.498,\n2.785\n]\n},\n\"Sun 2023\": {\n\"rr\": 3.0,\n\"ic95\": [\n0.125,\n71.927\n]\n}\n},\n\"ileo\": {\n\"Arslan 2020\": {\n\"rr\": 1.026,\n\"ic95\": [\n0.658,\n1.601\n]\n},\n\"Sun 2023\": {\n\"rr\": 0.125,\n\"ic95\": [\n0.03,\n0.515\n]\n},\n\"Castro 2024\": \"NAO-CALCULAVEL\"\n}\n}",
+   "dt": 145.4
+  }
+ ]
+}

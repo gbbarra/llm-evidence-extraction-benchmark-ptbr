@@ -1,0 +1,17 @@
+{
+ "modelo": "gemma12",
+ "familia": "md",
+ "braco": "B",
+ "replica": 2,
+ "think": false,
+ "chamadas": 0,
+ "dt": 61.2,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "```json\n{\n  \"tempo_flatus_h\": {\n    \"Sun 2023\": {\n      \"md\": 0.00,\n      \"ic95\": [\n        0.00,\n        0.00\n      ],\n      \"nota\": \"CALC: md(28.2, 19.4, 50, 39.4, 22.3, 50) | CALC: ic95_md(28.2, 19.4, 50, 39.4, 22.3, 50)\"\n    },\n    \"Coeckelenbergh 2024\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Dados NR\"\n    },\n    \"Diaper 2021\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Dados NR\"\n    }\n  },\n  \"tempo_dieta_oral\": {\n    \"Sun 2023\": {\n      \"md\": 0.00,\n      \"ic95\": [\n        0.00,\n        0.00\n      ],\n      \"nota\": \"Conversão: 4.0 dias = 96h; 6.0 dias = 144h. CALC: md(96, 32.4, 50, 144, 44.8, 50) | CALC: ic95_md(96, 32.4, 50, 144, 44.8, 50)\"\n    },\n    \"Sujatha 2019\": {\n      \"md\": \"NAO-CALCULAVEL\",\n      \"ic95\": \"NAO-CALCULAVEL\",\n      \"nota\": \"Diferença descrita qualitativamente, valores numéricos não fornecidos.\"\n    }\n  }\n}\n```",
+   "dt": 61.2
+  }
+ ]
+}
