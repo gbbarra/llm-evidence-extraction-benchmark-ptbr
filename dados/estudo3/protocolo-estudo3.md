@@ -112,3 +112,14 @@ Grading the 14 extraction sheets against the source under the rite ("verify befo
 4. **Missed literal routes added to the key**: Saslow 2017's control completers-with-data ("*0% (0/8) in the control group*" → 8), Dorans's 6-month analyzed columns ("*(n = 73) … (n = 69)*"), Thomsen's randomized arms ("*CD 36, CRHP 36*").
 
 **Stage-E result under the amended key** (public adjudications in [`adjudicacoes-e3.json`](adjudicacoes-e3.json)): replicate 1 = **99/101 cells (98%)**, 2 wrong (one root cause: Chen's final-timepoint SDs paired to the change mean), 0 omissions, 0 attributable recitations; replicate 2 **identical cell-for-cell** (stability 100%). H3.1 (≥95%) is met; formal verdicts wait for the full pipeline.
+
+## Amendment 3 (2026-08-30, registered before any run of the arm; the baseline pipeline was complete and graded)
+
+**Exploratory arm: the all-gemma cast** (author's question: can the whole pipeline run on the extraction champion alone?). Cast: stages A, C and S all performed by **gemma4:12b** (integrated GPU); Stage E is **reused verbatim** from the baseline (the extractor is gemma4:12b in both casts), so the arm isolates the audit/arithmetic/synthesis cast with **identical inputs and identical sealed seeds**. Frozen and unchanged: prompts, context 16384, the 24-call CALC cap (exhausting it is a measured outcome, not a reason to widen), corpus, perturbation and seed seals, auto-application of audit corrections (the flags-not-fixes redesign belongs to a future hardened-pipeline study, not to this arm).
+
+**Harness v2** (three changes, committed before the run):
+1. **Cast/namespace parameterization** (`E3_ELENCO` env var; outputs to `saidas-allgemma/`) so alternative arms can never overwrite the baseline record.
+2. **Closure net extended to the call-as-data mode**: a final JSON containing `CALC:` strings counts as not-closed and triggers a fixed reprompt ("write the CALC calls OUTSIDE the JSON…", up to the same 3 tries, calls executed if emitted). Mechanical trigger, zero content hints; **provably inert on the baseline cast** (the qwen closed clean and would never meet the trigger).
+3. **Pool-input echo, log-only**: the raw per-study `md()` call arguments and the `pool_dl_md` rows are recorded in the run output for mechanical comparison at grading (measures the Study-3 finding-5 discrepancy; no intervention).
+
+**Directional expectations (exploratory, not formal hypotheses)**: audit sensitivity below the baseline's 90% with the correlated-blindness question open (same-family auditor may confirm same-family misreadings); CALC exactness near Study 2's 6/8 with more input-assembly slips; wall-clock several-fold faster (every stage on the integrated GPU).

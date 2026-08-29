@@ -16,6 +16,7 @@ against the anchor's forest before any run; both seals' SHA-256 go to stdout.
 import hashlib
 import json
 import math
+import os
 import re
 import sys
 import time
@@ -26,7 +27,18 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 ROOT = Path(__file__).resolve().parents[2]
 D3 = ROOT / "dados" / "estudo3"
 PERT = ROOT / "corpus" / "estudo3" / "perturbados"
-SAIDAS = D3 / "saidas"
+# Harness v2 (Amendment 3): cast and output namespace selected by the
+# E3_ELENCO env var so alternative-cast arms never touch the baseline record.
+# Stage E is SHARED across casts (the extractor is gemma4:12b in every arm):
+# extraction sheets are read from the baseline directory and reused verbatim,
+# so alternative arms isolate the audit/arithmetic/synthesis cast with
+# identical inputs and identical sealed seeds.
+ELENCO = os.environ.get("E3_ELENCO", "base")
+CAST = {"E": "gemma12", "A": "qwen38", "C": "qwen38", "S": "gemma26"}
+if ELENCO == "allgemma":
+    CAST = {"E": "gemma12", "A": "gemma12", "C": "gemma12", "S": "gemma12"}
+SAIDAS = D3 / ("saidas" if ELENCO == "base" else f"saidas-{ELENCO}")
+EXTRACAO = D3 / "saidas" / "extracao"
 OLLAMA = "http://localhost:11434"
 CTX = 16384
 MODELS = {
@@ -179,13 +191,13 @@ def etapa_extracao():
     base = prompt_txt("e3-extracao.txt")
     for tid in TRIALS:
         for rep in (1, 2):
-            out = SAIDAS / "extracao" / f"{tid}-r{rep}.json"
+            out = EXTRACAO / f"{tid}-r{rep}.json"
             out.parent.mkdir(parents=True, exist_ok=True)
             if out.exists():
                 print(f"  pulando extracao {tid}-r{rep}", flush=True)
                 continue
             texto = (PERT / f"{tid}.txt").read_text(encoding="utf-8")
-            r = gerar("gemma12", base + texto, max_tokens=2000)
+            r = gerar(CAST["E"], base + texto, max_tokens=2000)
             out.write_text(json.dumps(dict(modelo="gemma12", trial=tid, replica=rep, **r),
                                       ensure_ascii=False, indent=1), encoding="utf-8")
             print(f"  extracao {tid}-r{rep}: {r['dt']:.0f}s, {r['tokens']} tok", flush=True)
@@ -194,7 +206,7 @@ def etapa_extracao():
 def ficha(tid):
     """First parseable replicate (E1 rule)."""
     for rep in (1, 2):
-        f = SAIDAS / "extracao" / f"{tid}-r{rep}.json"
+        f = EXTRACAO / f"{tid}-r{rep}.json"
         if not f.exists():
             continue
         j = acha_json(json.loads(f.read_text(encoding="utf-8"))["content"])
@@ -283,7 +295,7 @@ def etapa_auditoria():
                 continue
             texto = (PERT / f"{tid}.txt").read_text(encoding="utf-8")
             prompt = base.replace("{FICHA}", json.dumps(fichas[tid], ensure_ascii=False, indent=1)) + texto
-            r = gerar("qwen38", prompt, max_tokens=2800)
+            r = gerar(CAST["A"], prompt, max_tokens=2800)
             out.write_text(json.dumps(dict(modelo="qwen38", trial=tid, lane=lane, **r),
                                       ensure_ascii=False, indent=1), encoding="utf-8")
             print(f"  auditoria {tid}-{lane}: {r['dt']:.0f}s", flush=True)
@@ -324,7 +336,7 @@ def etapa_calc():
         atual = prompt
         final_json = None
         for rodada in range(1, 7):
-            r = gerar("qwen38", atual, max_tokens=1800)
+            r = gerar(CAST["C"], atual, max_tokens=1800)
             total_dt += r["dt"]
             transcricao.append(dict(rodada=rodada, saida=r["content"], dt=round(r["dt"], 1)))
             calcs = [ln for ln in r["content"].splitlines() if re.match(r"\s*CALC:", ln, re.I)]
@@ -343,17 +355,53 @@ def etapa_calc():
                 "\n\n[RESULTADOS DAS SUAS CHAMADAS]\n" + "\n".join(respostas) + \
                 "\n\nContinue: use os RESULTADOS acima. Se precisar de mais cálculos, escreva novas linhas CALC:. " \
                 "Quando tiver tudo, responda com o JSON final."
+        # Closure net v2 (Amendment 3): besides "no final JSON", the known
+        # call-as-data mode (CALC: strings INSIDE the final JSON, the gemma
+        # failure documented in Study 2) also counts as not-closed. Fixed
+        # strings, mechanical triggers, zero content hints; provably inert on
+        # the baseline cast (the qwen closed clean, never meeting either
+        # trigger).
+        def _calc_dentro(fj):
+            return bool(fj) and "CALC:" in json.dumps(fj, ensure_ascii=False)
+
         fechamentos = 0
-        while (not final_json or not isinstance(final_json.get("agregado"), dict)) and fechamentos < 3:
+        while (not final_json or not isinstance(final_json.get("agregado"), dict)
+               or _calc_dentro(final_json)) and fechamentos < 3:
             fechamentos += 1
-            atual = atual + "\n\nEmita agora APENAS o JSON final, no formato pedido, sem novas chamadas."
-            r = gerar("qwen38", atual, max_tokens=1200)
+            if _calc_dentro(final_json):
+                instrucao = ("\n\nSeu JSON contém chamadas CALC escritas como texto. Escreva as "
+                             "chamadas CALC FORA do JSON, uma por linha, aguarde os RESULTADOS e "
+                             "só então emita o JSON final apenas com números.")
+            else:
+                instrucao = "\n\nEmita agora APENAS o JSON final, no formato pedido, sem novas chamadas."
+            atual = atual + instrucao
+            r = gerar(CAST["C"], atual, max_tokens=1600)
             total_dt += r["dt"]
             transcricao.append(dict(rodada=f"fechamento-{fechamentos}", saida=r["content"], dt=round(r["dt"], 1)))
+            calcs = [ln for ln in r["content"].splitlines() if re.match(r"\s*CALC:", ln, re.I)]
+            respostas = []
+            for ln in calcs[: 24 - chamadas]:
+                res = executa_calc(ln)
+                if res:
+                    respostas.append(ln.strip() + "\n" + res)
+                    chamadas += 1
+            if respostas:
+                atual = (atual + "\n\n[SUA RODADA ANTERIOR]\n" + r["content"] +
+                         "\n\n[RESULTADOS DAS SUAS CHAMADAS]\n" + "\n".join(respostas) +
+                         "\n\nAgora emita o JSON final apenas com números.")
             final_json = acha_json(r["content"])
-        out.write_text(json.dumps(dict(modelo="qwen38", lane=lane, chamadas=chamadas,
+        # Pool-input echo, LOG-ONLY (Amendment 3): raw record of the per-study
+        # md() call arguments vs the pool call rows, compared mechanically at
+        # grading time. No intervention.
+        texto_completo = "\n".join(str(x.get("saida", "")) for x in transcricao)
+        registro_eco = dict(
+            chamadas_md=re.findall(r"CALC:\s*md\(([^)]*)\)", texto_completo),
+            chamadas_pool=re.findall(r"CALC:\s*pool_dl_md\((.*?)\)\s*$", texto_completo, re.M),
+        )
+        out.write_text(json.dumps(dict(modelo=CAST["C"], lane=lane, chamadas=chamadas,
                                        fechamentos_forcados=fechamentos, fechou=bool(final_json),
-                                       dt=round(total_dt, 1), transcricao=transcricao,
+                                       dt=round(total_dt, 1), registro_eco=registro_eco,
+                                       transcricao=transcricao,
                                        json_final=final_json), ensure_ascii=False, indent=1),
                        encoding="utf-8")
         print(f"  calc {lane}: {chamadas} chamadas, {fechamentos} fechamentos forçados, "
@@ -376,14 +424,15 @@ def etapa_sintese():
             fichas[ROT[tid]] = fs
         dados = ("\n## Fichas auditadas\n" + json.dumps(fichas, ensure_ascii=False, indent=1) +
                  "\n\n## Resultados da calculadora\n" + json.dumps(calc.get("json_final"), ensure_ascii=False, indent=1))
-        r = gerar("gemma26", base + dados, max_tokens=900)
-        out.write_text(json.dumps(dict(modelo="gemma26", lane=lane, **r),
+        r = gerar(CAST["S"], base + dados, max_tokens=900)
+        out.write_text(json.dumps(dict(modelo=CAST["S"], lane=lane, **r),
                                   ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"  sintese {lane}: {r['dt']:.0f}s, {len(r['content'].split())} palavras", flush=True)
 
 
 def main():
     alvo = sys.argv[1] if len(sys.argv) > 1 else "tudo"
+    print(f"ELENCO: {ELENCO} · CAST: {CAST} · SAIDAS: {SAIDAS.name}", flush=True)
     for selo in ("perturbacoes-estudo3.json", "sementes-auditoria.json"):
         h = hashlib.sha256((D3 / selo).read_bytes()).hexdigest()
         print(f"SHA-256 {selo}: {h}", flush=True)
