@@ -23,7 +23,7 @@ The anchor: a meta-analysis of goal-directed fluid therapy (Cureus, June 2026 �
 
 ### 1. The scoreboard: evidence extraction is essentially solved on this hardware
 
-156 gradable cells per model (the rest — unverifiable, pending, or absent from the input — count against no one):
+156 gradable cells per model (the rest — unverifiable, pending, or absent from the input — count against no one). The corpus's two strata: **open** = the 8 open-access trials (Europe PMC); **closed** = the 6 paywalled ones, legally obtained through institutional access and author manuscripts — each stratum ran as its own queue, under the same rules:
 
 | Model | Open stratum | Closed stratum | **Total** | Omissions | Wrong | Invented | Recited |
 |---|---|---|---|---|---|---|---|

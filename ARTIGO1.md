@@ -23,7 +23,7 @@ A âncora: uma metanálise de fluidoterapia guiada por metas (Cureus, junho/2026
 
 ### 1. O placar: extração de evidência está praticamente resolvida neste hardware
 
-156 células pontuáveis por modelo (as demais: sem valor verificável, pendentes ou dado ausente do insumo — não contam contra ninguém):
+156 células pontuáveis por modelo (as demais: sem valor verificável, pendentes ou dado ausente do insumo — não contam contra ninguém). Os dois estratos do corpus: **aberto** = os 8 ensaios de acesso aberto (Europe PMC); **fechado** = os 6 atrás de paywall, obtidos legalmente por acesso institucional e manuscritos de autor — cada estrato rodou como uma fila própria, com as mesmas regras:
 
 | Modelo | Estrato aberto | Estrato fechado | **Total** | Omissas | Erradas | Inventadas | Recitadas |
 |---|---|---|---|---|---|---|---|
