@@ -8,7 +8,7 @@ Queue of 51 runs completed in 71 min (2026-08-28); grading 100% mechanical (`cor
 
 - Bug fixed before analysis: the exploratory *thinking* arm came out empty in its first round (the reasoning budget consumed all of `num_predict`); re-run with `12000 + 1600` tokens after a 5,600-token attempt also collapsed silently.
 - gemma26 in arm B (rr family) hit the 20-call cap without emitting the final JSON within 5 rounds — scored as a closure failure (invalid JSON), not an arithmetic one.
-- In arm B's *pool* family, qwen14 and qwen38 **did not call the calculator** (0 CALC) and answered directly; gemma26 wrote the calls **inside** the JSON as text (understood the what, not the how). The behavioral record is itself a result.
+- In arm B's *pool* family, **no model executed a single CALC call**. Three modes (correction 2026-08-29, after re-reading the raw outputs — the first write-up described qwen38 as "answered directly"): gemma12, gemma26 **and qwen38** wrote the calls **inside** the final JSON as text (understood the what, not the how; gemma12's call also passes percentages 8.6/16.6 as event counts); qwen14 answered by-head numbers (wrong on 2 of 3 outcomes, its declared `estudos_usados` also carrying percentages as events). The behavioral record is itself a result.
 
 ## Scoreboard (replicate 1; a point = one per-study RR or MD)
 
