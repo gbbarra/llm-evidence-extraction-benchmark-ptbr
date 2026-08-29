@@ -41,7 +41,7 @@ And the reading proof (the perturbed-number cells):
 | qwen3.8:27b | 50 | 0 | 13 |
 | qwen3:14b | 47 | 0 | 14 |
 
-**Zero attributable recitations in 228 runs.** What that means in practice: Castro's perturbed text said ASA II = 28 (the real, published value is 31); every model that answered wrote "II: 28 (72%)" — the value that exists only in the text they were given. The single wrong cell of the entire study came from the 27B: it put one arm's value in the other arm's field while reading a flowchart the PDF extraction had scrambled ("…274 Assigned to PGDT group 259 Received…").
+**Zero attributable recitations in 228 runs.** What that means in practice: Castro's perturbed text said the ASA II patients numbered 28 (the real, published value is 31 — ASA is the American Society of Anesthesiologists' scale grading a patient's physical status before surgery, from I, healthy, to IV, critically ill); every model that answered wrote "II: 28 (72%)" — the value that exists only in the text they were given. The single wrong cell of the entire study came from the 27B: it put one arm's value in the other arm's field while reading a flowchart the PDF extraction had scrambled ("…274 Assigned to PGDT group 259 Received…").
 
 ### 2. The central hypothesis fell — and the failure mode is refusal
 
@@ -49,7 +49,7 @@ The pre-registration (H1.1) bet on the big faithful models: 27B ≥ 26b > 12b �
 
 ### 3. The models audited the published meta-analysis — 15 errata entries, every one with a quote
 
-The [errata file](dados/estudo1/erratas-da-ancora.md) records each item with the deciding source snippet. The headliners:
+The [errata file](dados/estudo1/erratas-da-ancora.md) records each item with the deciding source snippet (in the table, "MA" is the anchor meta-analysis — the published review whose tables serve as the answer key). The headliners:
 
 | # | Study | What the MA published | What the source says |
 |---|---|---|---|

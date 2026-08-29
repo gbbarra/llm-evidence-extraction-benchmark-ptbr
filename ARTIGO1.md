@@ -41,7 +41,7 @@ E a prova de leitura (as células com números perturbados):
 | qwen3.8:27b | 50 | 0 | 13 |
 | qwen3:14b | 47 | 0 | 14 |
 
-**Zero recitações atribuíveis em 228 corridas.** Exemplo do que isso significa na prática: o texto perturbado do Castro dizia ASA II = 28 (o real, publicado, é 31); os três modelos que responderam escreveram "II: 28 (72%)" — o valor que só existe no texto que leram. A única célula errada de todo o estudo foi do 27B: pôs o valor de um braço no campo do outro ao ler um fluxograma que a extração do PDF havia embaralhado ("…274 Assigned to PGDT group 259 Received…").
+**Zero recitações atribuíveis em 228 corridas.** Exemplo do que isso significa na prática: o texto perturbado do Castro dizia que os pacientes ASA II eram 28 (o real, publicado, é 31 — ASA é a escala da Sociedade Americana de Anestesiologistas que gradua o estado físico do paciente antes da cirurgia, de I, saudável, a IV, gravíssimo); os três modelos que responderam escreveram "II: 28 (72%)" — o valor que só existe no texto que leram. A única célula errada de todo o estudo foi do 27B: pôs o valor de um braço no campo do outro ao ler um fluxograma que a extração do PDF havia embaralhado ("…274 Assigned to PGDT group 259 Received…").
 
 ### 2. A hipótese central caiu — e o modo de falha é a recusa
 
@@ -49,7 +49,7 @@ O pré-registro (H1.1) apostava nos grandes fiéis: 27B ≥ 26b > 12b ≥ 14b. A
 
 ### 3. Os modelos auditaram a metanálise publicada — 15 itens de errata, todos com citação
 
-O [arquivo de erratas](dados/estudo1/erratas-da-ancora.md) registra cada item com o trecho da fonte que o decide. Os principais:
+O [arquivo de erratas](dados/estudo1/erratas-da-ancora.md) registra cada item com o trecho da fonte que o decide (na tabela, "MA" é a metanálise-âncora — a revisão publicada cujas tabelas servem de gabarito). Os principais:
 
 | # | Estudo | O que a MA publicou | O que a fonte diz |
 |---|---|---|---|
