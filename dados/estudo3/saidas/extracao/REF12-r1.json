@@ -1,0 +1,10 @@
+{
+ "modelo": "gemma12",
+ "trial": "REF12",
+ "replica": 1,
+ "content": "```json\n{\n \"estudo\": \"S.I. et al. (2021)\",\n \"desenho\": \"paralelo 2 braços\",\n \"pais\": \"Dinamarca\",\n \"duracao\": \"6 semanas\",\n \"n_randomizado_total\": \"72\",\n \"braco_experimental\": {\n  \"rotulo\": \"CRHP\",\n  \"descricao_intervencao\": \"carbohydrate-reduced high-protein diet (CH30/P30/F40)\",\n  \"n_randomizado\": \"36\",\n  \"n_analisado\": \"34\",\n  \"hba1c_mudanca_media\": \"-0.83\",\n  \"hba1c_mudanca_dispersao\": \"0.38\",\n  \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n  \"hba1c_basal_media\": \"8.09\",\n  \"hba1c_basal_dp\": \"0.77\",\n  \"hba1c_final_media\": \"NR\",\n  \"hba1c_final_dp\": \"NR\"\n },\n \"braco_controle\": {\n  \"rotulo\": \"CD\",\n  \"descricao_intervencao\": \"conventional diabetes diet (CH50/P17/F13)\",\n  \"n_randomizado\": \"36\",\n  \"n_analisado\": \"33\",\n  \"hba1c_mudanca_media\": \"-0.56\",\n  \"hba1c_mudanca_dispersao\": \"0.37\",\n  \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n  \"hba1c_basal_media\": \"7.40\",\n  \"hba1c_basal_dp\": \"0.70\",\n  \"hba1c_final_media\": \"NR\",\n  \"hba1c_final_dp\": \"NR\"\n }\n}\n```",
+ "dt": 229.62129,
+ "tokens": 474,
+ "prompt_tokens": 12824,
+ "finish": "stop"
+}

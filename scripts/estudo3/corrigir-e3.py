@@ -88,6 +88,8 @@ EXPECTED = {
   C+"hba1c_mudanca_media": cel([-0.04]),
   E+"hba1c_mudanca_tipo_dispersao": cel(["IC95: -0.33 a -0.19", "IC95"]),
   C+"hba1c_mudanca_tipo_dispersao": cel(["IC95: -0.10 a 0.02", "IC95"]),
+  E+"hba1c_mudanca_dispersao": cel(["-0.33 to -0.19", "IC95: -0.33 a -0.19", "NR"]),
+  C+"hba1c_mudanca_dispersao": cel(["-0.10 to 0.02", "IC95: -0.10 a 0.02", "NR"]),
   E+"hba1c_basal_media": cel([6.17, "NR"]), C+"hba1c_basal_media": cel([6.14, "NR"]),
   E+"hba1c_basal_dp": cel([0.31, "NR"]), C+"hba1c_basal_dp": cel([0.30, 0.3, "NR"]),
   "n_randomizado_total": cel([141], original=150),
@@ -133,8 +135,10 @@ EXPECTED = {
   E+"n_analisado": cel([45]), C+"n_analisado": cel([40]),
   E+"hba1c_mudanca_media": cel(["NR"]), C+"hba1c_mudanca_media": cel(["NR"]),
   E+"hba1c_mudanca_tipo_dispersao": cel(["NR"]), C+"hba1c_mudanca_tipo_dispersao": cel(["NR"]),
-  E+"hba1c_basal_media": cel([6.9]), C+"hba1c_basal_media": cel([6.8]),
-  E+"hba1c_basal_dp": cel([1.1]), C+"hba1c_basal_dp": cel([1.0, 1]),
+  E+"hba1c_basal_media": cel([6.9, 6.89]), C+"hba1c_basal_media": cel([6.8, 6.88]),
+  E+"hba1c_basal_dp": cel([1.1, 1.11]), C+"hba1c_basal_dp": cel([1.0, 1, 1.03]),
+  # Amendment 2 spirit: tables 1 and 3 of the primary disagree at rounding
+  # level (6.89/1.11 vs 6.9/1.1) — both literal routes accepted
   E+"hba1c_final_media": cel([5.3], original=6.0),
   C+"hba1c_final_media": cel([7.1], original=6.4),
   E+"hba1c_final_dp": cel([0.7]), C+"hba1c_final_dp": cel([0.8]),
@@ -263,6 +267,13 @@ def corrige_auditoria():
                         break
                 veredito = (ver or {}).get("veredito", "sem-veredito")
                 corr = (ver or {}).get("valor_corrigido")
+                # no-op correction (corrected value == sheet value) counts as confirma
+                if veredito == "corrige" and corr is not None:
+                    if str(corr).strip() == str(v_ficha).strip() or (
+                            num(corr) is not None and num(v_ficha) is not None
+                            and abs(num(corr) - num(v_ficha)) <= 0.005):
+                        veredito = "confirma"
+                        corr = None
                 certa = r_ficha in ("exata", "nr-correta")
                 linhas.append(dict(lane=lane, trial=tid, campo=caminho,
                                    valor_na_ficha=v_ficha, ficha_estava=r_ficha,
@@ -279,11 +290,14 @@ def corrige_auditoria():
         pegou = [l for l in sem if l["veredito"] == "corrige"]
         corr_ok = [l for l in pegou if l["correcao_bate"]]
         limpas = [l for l in linhas if not l["semeada"] and l["ficha_estava"] in ("exata", "nr-correta")]
-        fa = [l for l in limpas if l["veredito"] == "corrige"]
+        fa = [l for l in limpas if l["veredito"] == "corrige" and not l["correcao_bate"]]
+        rotas = [l for l in limpas if l["veredito"] == "corrige" and l["correcao_bate"]]
         print(f"  lane {lane}: campos={len(linhas)}"
               + (f" · sementes {len(pegou)}/{len(sem)} pegas, correção exata {len(corr_ok)}/{len(pegou)}"
                  if lane == "S" else "")
-              + f" · falso-alarme {len(fa)}/{len(limpas)}")
+              + f" · falso-alarme {len(fa)}/{len(limpas)} · trocas-de-rota {len(rotas)}")
+        for l in fa:
+            print(f"      FA: {l[chr(39)+chr(116)+chr(114)+chr(105)+chr(97)+chr(108)+chr(39)] if False else l['trial']} {l['campo'].split('.')[-1]} {l['valor_na_ficha']} -> {l['valor_corrigido']}")
         for l in sem:
             print(f"      semente {l['classe']:<14} {l['trial']:<11} {l['campo'].split('.')[-1]:<24}"
                   f" -> {l['veredito']}" + (f" (corrigiu p/ {l['valor_corrigido']})" if l["veredito"] == "corrige" else ""))
@@ -311,9 +325,14 @@ def sexteto(ficha):
                     dp = h3.dp_mudanca_r05(d0, d1)
                     tipo = "DP"
         if tipo.startswith("IC"):
-            ms = re.findall(r"-?\d+(?:\.\d+)?", str(b.get("hba1c_mudanca_tipo_dispersao")))
+            # last two numbers = the bounds (the "95" in "IC95:" must never
+            # be parsed as a bound — the model got this right before the judge did)
+            fonte_ic = str(b.get("hba1c_mudanca_tipo_dispersao"))
+            ms = re.findall(r"-?\d+(?:\.\d+)?", fonte_ic)
+            if len(ms) < 3:  # bounds may live in the dispersao field instead
+                ms = re.findall(r"-?\d+(?:\.\d+)?", fonte_ic + " " + str(b.get("hba1c_mudanca_dispersao")))
             if len(ms) >= 2 and n:
-                dp = h3.dp_de_ic(float(ms[0]), float(ms[1]), n)
+                dp = h3.dp_de_ic(float(ms[-2]), float(ms[-1]), n)
         elif tipo in ("EP", "SE") and dp is not None and n:
             dp = h3.dp_de_se(dp, n)
         if m is not None and m > 0 and str(b.get("hba1c_mudanca_media", "")).strip()[0].isdigit():
@@ -342,7 +361,10 @@ def corrige_calc():
         linhas = []
         for est in final.get("por_estudo", []):
             nome = est.get("estudo", "")
-            chave = next((r for r in sext if r.split()[0].lower() in nome.lower()), None)
+            chave = next((r for r in sext if r.lower() in nome.lower()), None)
+            if chave is None:  # surname+year both required (E1 rigid-window lesson)
+                chave = next((r for r in sext if r.split()[0].lower() in nome.lower()
+                              and r.split()[-1] in nome), None)
             s = sext.get(chave)
             if not s:
                 linhas.append(dict(estudo=nome, rotulo="sem-verdade"))

@@ -1,0 +1,10 @@
+{
+ "modelo": "gemma12",
+ "trial": "PMC5048014",
+ "replica": 1,
+ "content": "```json\n{\n \"estudo\": \"Brackgold et al. (implied by content, though author name not explicitly in header provided, first author is typically found in citations, but as the text provided is the full body, I will use the primary title reference)\",\n \"desenho\": \"paralelo 2 braços\",\n \"pais\": \"Espanha\",\n \"duracao\": \"4 months\",\n \"n_randomizado_total\": \"89\",\n \"braco_experimental\": {\n  \"rotulo\": \"VLCK diet\",\n  \"descricao_intervencao\": \"very low-calorie-ketogenic (VLCK) diet (<50g of carbohydrate daily) as part of a commercial weight-loss program (DiaproKal Method)\",\n  \"n_randomizado\": \"45\",\n  \"n_analisado\": \"45\",\n  \"hba1c_mudanca_media\": \"NR\",\n  \"hba1c_mudanca_dispersao\": \"NR\",\n  \"hba1c_mudanca_tipo_dispersao\": \"NR\",\n  \"hba1c_basal_media\": \"6.9\",\n  \"hba1c_basal_dp\": \"1.1\",\n  \"hba1c_final_media\": \"5.3\",\n  \"hba1c_final_dp\": \"0.7\"\n },\n \"braco_controle\": {\n  \"rotulo\": \"LC diet\",\n  \"descricao_intervencao\": \"low-calorie diet based on the ADA (American Diabetes Association) guidelines\",\n  \"n_randomizado\": \"44\",\n  \"n_analisado\": \"40\",\n  \"hba1c_mudanca_media\": \"NR\",\n  \"hba1c_mudanca_dispersao\": \"NR\",\n  \"hba1c_mudanca_tipo_dispersao\": \"NR\",\n  \"hba1c_basal_media\": \"6.8\",\n  \"hba1c_basal_dp\": \"1.0\",\n  \"hba1c_final_media\": \"7.1\",\n  \"hba1c_final_dp\": \"0.8\"\n }\n}\n```",
+ "dt": 185.7080935,
+ "tokens": 517,
+ "prompt_tokens": 9909,
+ "finish": "stop"
+}

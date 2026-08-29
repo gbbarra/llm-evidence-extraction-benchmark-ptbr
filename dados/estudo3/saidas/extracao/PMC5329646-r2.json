@@ -1,0 +1,10 @@
+{
+ "modelo": "gemma12",
+ "trial": "PMC5329646",
+ "replica": 2,
+ "content": "```json\n{\n \"estudo\": \"Saslow et al. (ano não informado)\",\n \"desenho\": \"paralelo 2 braços\",\n \"pais\": \"Estados Unidos\",\n \"duracao\": \"32 semanas\",\n \"n_randomizado_total\": \"25\",\n \"braco_experimental\": {\n  \"rotulo\": \"intervention\",\n  \"descricao_intervencao\": \"online intervention based on previous recommendations (an ad libitum very low-carbohydrate ketogenic diet with lifestyle factors)\",\n  \"n_randomizado\": \"12\",\n  \"n_analisado\": \"11\",\n  \"hba1c_mudanca_media\": \"-0.8\",\n  \"hba1c_mudanca_dispersao\": \"-1.1 to -0.6\",\n  \"hba1c_mudanca_tipo_dispersao\": \"IC95: -1.1 a -0.6\",\n  \"hba1c_basal_media\": \"5.8\",\n  \"hba1c_basal_dp\": \"0.4\",\n  \"hba1c_final_media\": \"NR\",\n  \"hba1c_final_dp\": \"NR\"\n },\n \"braco_controle\": {\n  \"rotulo\": \"control\",\n  \"descricao_intervencao\": \"online diet program based on the American Diabetes Associations' 'Create Your Plate' diet\",\n  \"n_randomizado\": \"13\",\n  \"n_analisado\": \"8\",\n  \"hba1c_mudanca_media\": \"-0.3\",\n  \"hba1c_mudanca_dispersao\": \"-0.6 to 0.0\",\n  \"hba1c_mudanca_tipo_dispersao\": \"IC95: -0.6 a 0.0\",\n  \"hba1c_basal_media\": \"7.6\",\n  \"hba1c_basal_dp\": \"0.3\",\n  \"hba1c_final_media\": \"NR\",\n  \"hba1c_final_dp\": \"NR\"\n }\n}\n```",
+ "dt": 67.9444157,
+ "tokens": 498,
+ "prompt_tokens": 11776,
+ "finish": "stop"
+}

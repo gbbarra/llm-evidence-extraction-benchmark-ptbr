@@ -1,0 +1,20 @@
+{
+ "_metodo": "EXTRAI Study 3 — sealed seed spec for the audit arm (lane S), protocol §4. k=8 seeds, 4 classes × 2, at most 2 per sheet; PMC5329646 (Saslow 2017) and PMC5048014 (Goday 2016) are left UNTOUCHED as specificity controls. Operations are applied by the harness to Stage E's replicate-1 sheet at runtime (deterministic rules below); the auditor is never told whether or how many errors exist. Sealed before any run; SHA-256 printed in the run log.",
+ "_regras_de_operacao": {
+  "troca-de-braco": "swap the named field's values between braco_experimental and braco_controle (dispersions and ns stay put — the inconsistency is the point)",
+  "sinal": "flip the sign of the named numeric field (as string: add/remove leading '-')",
+  "digito": "in the named field, replace the LAST digit d by (d+4) mod 10 (for an 'IC95: a a b' string, apply to the LOWER bound); if unchanged, use (d+5) mod 10",
+  "n-trocado": "transpose the last two digits of the named integer field; if they are equal, add 9"
+ },
+ "sementes": [
+  {"id": 1, "classe": "troca-de-braco", "estudo": "REF12",      "campo": "hba1c_mudanca_media"},
+  {"id": 2, "classe": "troca-de-braco", "estudo": "PMC7535044", "campo": "hba1c_mudanca_media"},
+  {"id": 3, "classe": "sinal",          "estudo": "REF9",       "campo": "braco_experimental.hba1c_mudanca_media"},
+  {"id": 4, "classe": "sinal",          "estudo": "PMC6024764", "campo": "braco_controle.hba1c_mudanca_media"},
+  {"id": 5, "classe": "digito",         "estudo": "PMC9606840", "campo": "braco_experimental.hba1c_mudanca_dispersao"},
+  {"id": 6, "classe": "digito",         "estudo": "PMC7535044", "campo": "braco_experimental.hba1c_basal_media"},
+  {"id": 7, "classe": "n-trocado",      "estudo": "PMC9606840", "campo": "braco_experimental.n_analisado"},
+  {"id": 8, "classe": "n-trocado",      "estudo": "REF12",      "campo": "braco_experimental.n_analisado"}
+ ],
+ "intactos_controle_especificidade": ["PMC5329646", "PMC5048014"]
+}

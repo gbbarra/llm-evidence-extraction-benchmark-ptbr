@@ -1,0 +1,89 @@
+{
+ "modelo": "qwen38",
+ "lane": "S",
+ "chamadas": 22,
+ "fechamentos_forcados": 0,
+ "fechou": true,
+ "dt": 937.5,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "Aqui está o plano de cálculo para as 7 fichas fornecidas.\n\n**Análise Prévias:**\n1.  **Saslow 2017:** Dados de mudança com IC95. Precisa converter IC para DP. `n_analisado` disponível.\n2.  **Saslow 2023:** Dados de mudança com EP. Precisa converter EP para DP. `n_analisado` disponível.\n3.  **Dorans 2022:** Dados de mudança com IC95 (nota: o texto diz \"IC95: -0.33 a -0.19\" mas a média é -0.24; verificar coerência, mas seguiremos a regra de converter IC para DP). `n_analisado` disponível.\n4.  **Chen 2020:** Dados de mudança com DP/SD direto. `n_analisado` disponível.\n5.  **Thomsen 2022:** Dados de mudança com DP/SD direto. `n_analisado` disponível.\n6.  **Wang 2018:** Dados de mudança com DP/SD direto. `n_analisado` disponível.\n7.  **Goday 2016:** Dados de Basal e Final (Média e DP). Precisamos calcular a média da mudança (Final - Basal) e o DP da mudança usando `dp_mudanca_r05`. `n_analisado` disponível.\n\n**Execução das Chamadas CALC:**\n\n1.  *Saslow 2017 (Exp):* Converter IC95 (-1.1, -0.6) para DP com n=11.\n2.  *Saslow 2017 (Ctl):* Converter IC95 (-0.6, 0.0) para DP com n=8.\n3.  *Saslow 2017 (MD):* Calcular MD entre os braços.\n4.  *Saslow 2017 (IC):* Calcular IC95 da MD.\n5.  *Saslow 2023 (Exp):* Converter EP (0.07) para DP com n=45.\n6.  *Saslow 2023 (Ctl):* Converter EP (0.07) para DP com n=49.\n7.  *Saslow 2023 (MD):* Calcular MD.\n8.  *Saslow 2023 (IC):* Calcular IC95.\n9.  *Dorans 2022 (Exp):* Converter IC95 (-0.33, -0.19) para DP com n=75.\n10. *Dorans 2022 (Ctl):* Converter IC95 (-0.10, 0.02) para DP com n=69.\n11. *Dorans 2022 (MD):* Calcular MD.\n12. *Dorans 2022 (IC):* Calcular IC95.\n13. *Chen 2020 (MD):* Já tem DP, calcular MD.\n14. *Chen 2020 (IC):* Calcular IC95.\n15. *Thomsen 2022 (MD):* Já tem DP, calcular MD.\n16. *Thomsen 2022 (IC):* Calcular IC95.\n17. *Wang 2018 (MD):* Já tem DP, calcular MD.\n18. *Wang 2018 (IC):* Calcular IC95.\n19. *Goday 2016 (DP Mudança Exp):* Calcular DP da mudança a partir de basal/final (r=0.5).\n20. *Goday 2016 (DP Mudança Ctl):* Calcular DP da mudança a partir de basal/final (r=0.5).\n21. *Goday 2016 (MD):* Calcular MD com as DPs obtidas.\n22. *Goday 2016 (IC):* Calcular IC95.\n23. *Agregado DL:* Pooling de todos os 6 estudos calculados acima.\n\nCALC: dp_de_ic(-1.1, -0.6, 11)\nCALC: dp_de_ic(-0.6, 0.0, 8)\nCALC: md(-0.8, 0.35, 11, -0.3, 0.42, 8)\nCALC: ic95_md(-0.8, 0.35, 11, -0.3, 0.42, 8)\nCALC: dp_de_se(0.07, 45)\nCALC: dp_de_se(0.07, 49)\nCALC: md(-0.32, 0.47, 45, -0.14, 0.49, 49)\nCALC: ic95_md(-0.32, 0.47, 45, -0.14, 0.49, 49)\nCALC: dp_de_ic(-0.33, -0.19, 75)\nCALC: dp_de_ic(-0.10, 0.02, 69)\nCALC: md(-0.24, 0.14, 75, -0.04, 0.12, 69)\nCALC: ic95_md(-0.24, 0.14, 75, -0.04, 0.12, 69)\nCALC: md(-1.44, 1.06, 41, -1.01, 0.59, 42)\nCALC: ic95_md(-1.44, 1.06, 41, -1.01, 0.59, 42)\nCALC: md(-0.83, 0.38, 34, -0.56, 0.37, 33)\nCALC: ic95_md(-0.83, 0.38, 34, -0.56, 0.37, 33)\nCALC: md(-0.63, 1.18, 24, -0.31, 0.70, 25)\nCALC: ic95_md(-0.63, 1.18, 24, -0.31, 0.70, 25)\nCALC: dp_mudanca_r05(1.11, 0.7)\nCALC: dp_mudanca_r05(1.03, 0.8)\nCALC: md(5.3 - 6.89, 1.11, 45, 7.1 - 6.88, 1.03, 40)\nCALC: ic95_md(5.3 - 6.89, 1.11, 45, 7.1 - 6.88, 1.03, 40)\nCALC: pool_dl_md([[-0.8, 0.35, 11, -0.3, 0.42, 8], [-0.32, 0.47, 45, -0.14, 0.49, 49], [-0.24, 0.14, 75, -0.04, 0.12, 69], [-",
+   "dt": 573.0
+  },
+  {
+   "rodada": 2,
+   "saida": "CALC: md(-1.59, 0.97, 45, 0.22, 0.94, 40)\nCALC: ic95_md(-1.59, 0.97, 45, 0.22, 0.94, 40)\nCALC: pool_dl_md([[-0.8, 0.42, 11, -0.3, 0.43, 8], [-0.32, 0.47, 45, -0.14, 0.49, 49], [-0.24, 0.31, 75, -0.04, 0.25, 69], [-1.44, 1.06, 41, -1.01, 0.59, 42], [-0.83, 0.38, 34, -0.56, 0.37, 33], [-0.63, 1.18, 24, -0.31, 0.70, 25], [-1.59, 0.97, 45, 0.22, 0.94, 40]])\n\n{\n \"por_estudo\": [\n  {\"estudo\": \"Saslow 2017\", \"md\": -0.5, \"ic95\": [-0.86, -0.14]},\n  {\"estudo\": \"Saslow 2023\", \"md\": -0.18, \"ic95\": [-0.37, 0.01]},\n  {\"estudo\": \"Dorans 2022\", \"md\": -0.2, \"ic95\": [-0.24, -0.16]},\n  {\"estudo\": \"Chen 2020\", \"md\": -0.43, \"ic95\": [-0.8, -0.06]},\n  {\"estudo\": \"Thomsen 2022\", \"md\": -0.27, \"ic95\": [-0.45, -0.09]},\n  {\"estudo\": \"Wang 2018\", \"md\": -0.32, \"ic95\": [-0.87, 0.23]},\n  {\"estudo\": \"Goday 2016\", \"md\": -1.81, \"ic95\": [-2.92, -0.7]}\n ],\n \"agregado\": {\"metodo\": \"DL\", \"md\": -0.43, \"ic95\": [-0.62, -0.24], \"i2_pct\": 75.5}\n}",
+   "dt": 364.5
+  }
+ ],
+ "json_final": {
+  "por_estudo": [
+   {
+    "estudo": "Saslow 2017",
+    "md": -0.5,
+    "ic95": [
+     -0.86,
+     -0.14
+    ]
+   },
+   {
+    "estudo": "Saslow 2023",
+    "md": -0.18,
+    "ic95": [
+     -0.37,
+     0.01
+    ]
+   },
+   {
+    "estudo": "Dorans 2022",
+    "md": -0.2,
+    "ic95": [
+     -0.24,
+     -0.16
+    ]
+   },
+   {
+    "estudo": "Chen 2020",
+    "md": -0.43,
+    "ic95": [
+     -0.8,
+     -0.06
+    ]
+   },
+   {
+    "estudo": "Thomsen 2022",
+    "md": -0.27,
+    "ic95": [
+     -0.45,
+     -0.09
+    ]
+   },
+   {
+    "estudo": "Wang 2018",
+    "md": -0.32,
+    "ic95": [
+     -0.87,
+     0.23
+    ]
+   },
+   {
+    "estudo": "Goday 2016",
+    "md": -1.81,
+    "ic95": [
+     -2.92,
+     -0.7
+    ]
+   }
+  ],
+  "agregado": {
+   "metodo": "DL",
+   "md": -0.43,
+   "ic95": [
+    -0.62,
+    -0.24
+   ],
+   "i2_pct": 75.5
+  }
+ }
+}

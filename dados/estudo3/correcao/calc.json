@@ -1,0 +1,248 @@
+{
+ "L": {
+  "fechou": true,
+  "chamadas": 23,
+  "fechamentos_forcados": 0,
+  "por_estudo": [
+   {
+    "estudo": "Saslow 2017",
+    "modelo_md": -0.5,
+    "verdade_md": -0.5,
+    "modelo_ic": [
+     -0.89,
+     -0.11
+    ],
+    "verdade_ic": [
+     -0.89,
+     -0.11
+    ],
+    "rotulo": "exata"
+   },
+   {
+    "estudo": "Saslow 2023",
+    "modelo_md": -0.18,
+    "verdade_md": -0.18,
+    "modelo_ic": [
+     -0.37,
+     0.01
+    ],
+    "verdade_ic": [
+     -0.37,
+     0.01
+    ],
+    "rotulo": "exata"
+   },
+   {
+    "estudo": "Dorans 2022",
+    "modelo_md": -0.2,
+    "verdade_md": -0.2,
+    "modelo_ic": [
+     -0.29,
+     -0.11
+    ],
+    "verdade_ic": [
+     -0.29,
+     -0.11
+    ],
+    "rotulo": "exata"
+   },
+   {
+    "estudo": "Chen 2020",
+    "modelo_md": -0.43,
+    "verdade_md": -0.43,
+    "modelo_ic": [
+     -0.78,
+     -0.08
+    ],
+    "verdade_ic": [
+     -0.78,
+     -0.08
+    ],
+    "rotulo": "exata"
+   },
+   {
+    "estudo": "Thomsen 2022",
+    "modelo_md": -0.27,
+    "verdade_md": -0.27,
+    "modelo_ic": [
+     -0.45,
+     -0.09
+    ],
+    "verdade_ic": [
+     -0.45,
+     -0.09
+    ],
+    "rotulo": "exata"
+   },
+   {
+    "estudo": "Wang 2018",
+    "modelo_md": -0.32,
+    "verdade_md": -0.32,
+    "modelo_ic": [
+     -0.87,
+     0.23
+    ],
+    "verdade_ic": [
+     -0.87,
+     0.23
+    ],
+    "rotulo": "exata"
+   },
+   {
+    "estudo": "Goday 2016",
+    "modelo_md": -1.3,
+    "verdade_md": -1.9,
+    "modelo_ic": [
+     -1.56,
+     -1.04
+    ],
+    "verdade_ic": [
+     -2.3,
+     -1.5
+    ],
+    "rotulo": "errada"
+   }
+  ],
+  "agregado_modelo": {
+   "metodo": "DL",
+   "md": -0.39,
+   "ic95": [
+    -0.6,
+    -0.18
+   ],
+   "i2_pct": 75.7
+  },
+  "agregado_verdade": {
+   "md": -0.52,
+   "ic95": [
+    -0.81,
+    -0.22
+   ],
+   "tau2": 0.1352,
+   "i2_pct": 91.3
+  }
+ },
+ "S": {
+  "fechou": true,
+  "chamadas": 22,
+  "fechamentos_forcados": 0,
+  "por_estudo": [
+   {
+    "estudo": "Saslow 2017",
+    "modelo_md": -0.5,
+    "verdade_md": -0.5,
+    "modelo_ic": [
+     -0.86,
+     -0.14
+    ],
+    "verdade_ic": [
+     -0.89,
+     -0.11
+    ],
+    "rotulo": "md-exata-ic-errada"
+   },
+   {
+    "estudo": "Saslow 2023",
+    "modelo_md": -0.18,
+    "verdade_md": -0.18,
+    "modelo_ic": [
+     -0.37,
+     0.01
+    ],
+    "verdade_ic": [
+     -0.37,
+     0.01
+    ],
+    "rotulo": "exata"
+   },
+   {
+    "estudo": "Dorans 2022",
+    "modelo_md": -0.2,
+    "verdade_md": -0.2,
+    "modelo_ic": [
+     -0.24,
+     -0.16
+    ],
+    "verdade_ic": [
+     -0.29,
+     -0.11
+    ],
+    "rotulo": "md-exata-ic-errada"
+   },
+   {
+    "estudo": "Chen 2020",
+    "modelo_md": -0.43,
+    "verdade_md": -0.43,
+    "modelo_ic": [
+     -0.8,
+     -0.06
+    ],
+    "verdade_ic": [
+     -0.8,
+     -0.06
+    ],
+    "rotulo": "exata"
+   },
+   {
+    "estudo": "Thomsen 2022",
+    "modelo_md": -0.27,
+    "verdade_md": -0.27,
+    "modelo_ic": [
+     -0.45,
+     -0.09
+    ],
+    "verdade_ic": [
+     -0.45,
+     -0.09
+    ],
+    "rotulo": "exata"
+   },
+   {
+    "estudo": "Wang 2018",
+    "modelo_md": -0.32,
+    "verdade_md": -0.32,
+    "modelo_ic": [
+     -0.87,
+     0.23
+    ],
+    "verdade_ic": [
+     -0.87,
+     0.23
+    ],
+    "rotulo": "exata"
+   },
+   {
+    "estudo": "Goday 2016",
+    "modelo_md": -1.81,
+    "verdade_md": -1.81,
+    "modelo_ic": [
+     -2.92,
+     -0.7
+    ],
+    "verdade_ic": [
+     -2.22,
+     -1.4
+    ],
+    "rotulo": "md-exata-ic-errada"
+   }
+  ],
+  "agregado_modelo": {
+   "metodo": "DL",
+   "md": -0.43,
+   "ic95": [
+    -0.62,
+    -0.24
+   ],
+   "i2_pct": 75.5
+  },
+  "agregado_verdade": {
+   "md": -0.5,
+   "ic95": [
+    -0.78,
+    -0.22
+   ],
+   "tau2": 0.1178,
+   "i2_pct": 90.0
+  }
+ }
+}

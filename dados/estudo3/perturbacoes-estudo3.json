@@ -1,0 +1,189 @@
+{
+  "PMC5329646": [
+    {
+      "campo": "exp_basal_media",
+      "original": "7.1",
+      "perturbado": "5.8",
+      "ocorrencias": 1,
+      "contextos": [
+        "D) 5.3 (4.1) 5.7 (3.7) HbA 1c (%), mean (SD) 7.1 (0.4) 7.2 (0.3) Weight (kg), mean (SD) 109.7"
+      ],
+      "vazamento_residual": [
+        "n (SD) 16 weeks –7.8 (3.6) –4.2 (3.7) –3.6 (–7.1, –0.1) .04 32 weeks –12.0 (7.3) –2.5 (4.6) –"
+      ]
+    },
+    {
+      "campo": "ctl_basal_media",
+      "original": "7.2",
+      "perturbado": "7.6",
+      "ocorrencias": 1,
+      "contextos": [
+        "1) 5.7 (3.7) HbA 1c (%), mean (SD) 7.1 (0.4) 7.2 (0.3) Weight (kg), mean (SD) 109.7 (24.9) 90"
+      ],
+      "vazamento_residual": [
+        " (–2.9, 28.7) .11 32 weeks 0.5 (–13.6, 14.8) 7.2 (–9.0, 23.4) –6.6 (–23.5, 10.3) .45 DES Nega"
+      ]
+    }
+  ],
+  "REF9": [
+    {
+      "campo": "exp_media",
+      "original": "0.35",
+      "perturbado": "0.32",
+      "ocorrencias": 2,
+      "contextos": [
+        "greater improvement in glycated hemoglobin (–0.35% vs –0.14%; P = .034), and greater improveme",
+        "–4.59 .046 HbA1c, % 6.09 (0.07) 5.74 (0.08) –0.35 (0.07) <.001 6.10 (0.07) 5.97 (0.07) –0.14 ("
+      ]
+    },
+    {
+      "campo": "n_randomizado_total",
+      "original": "94",
+      "perturbado": "83",
+      "ocorrencias": 4,
+      "contextos": [
+        "should be recommended. METHODS We randomized 94 adults from southeast Michigan with this tri",
+        "ng an intention-to-treat (ITT) analysis (n = 94). To examine the robustness of findings, we ",
+        "ri - als enrollment flow diagram (Figure 1), 94 participants were randomized. Demographic ch",
+        "o participate 1,027 Assessed for eligibility 94 Randomized EnrollmentAllocationFollow-upAnal"
+      ],
+      "vazamento_residual": [
+        "m satisfaction for all groups was high, with 94% of participants rating their satisfaction a"
+      ]
+    }
+  ],
+  "PMC9606840": [
+    {
+      "campo": "exp_media",
+      "original": "0.26",
+      "perturbado": "0.24",
+      "ocorrencias": 2,
+      "contextos": [
+        "crease in HbA 1c from baseline to 6 months (–0.26%; 95% CI, –0.33% to –0.19%) than those in th",
+        " –0.02) –0.16 (–0.25 to –0.07) <.001 6 mo a –0.26 (–0.33 to –0.19) –0.04 (–0.10 to 0.02) –0.23"
+      ]
+    },
+    {
+      "campo": "n_randomizado_total",
+      "original": "150",
+      "perturbado": "141",
+      "ocorrencias": 4,
+      "contextos": [
+        "this randomized clinical trial that included 150 adults, the low-carbohydrate diet interventi",
+        "month net change in HbA 1c . Therefore, with 150 participants, we had 80% statistical power a",
+        "cipants, 962 underwent screening. A total of 150 participants (mean [SD] age, 58.9 [7.9] year",
+        "diet (n = 75) Usual diet (n = 75) Total (N = 150) Age, mean (SD), y 59.3 (7.0) 58.6 (8.8) 58."
+      ]
+    }
+  ],
+  "PMC7535044": [
+    {
+      "campo": "exp_media",
+      "original": "1.63",
+      "perturbado": "1.44",
+      "ocorrencias": 1,
+      "contextos": [
+        "01(-1.40 ~ -0.63) + 8.47 (1.04) 6.84 (0.59) -1.63(-1.96 ~ -1.30) + 0.0034 * Fasting glucose (m"
+      ]
+    },
+    {
+      "campo": "exp_basal_media",
+      "original": "8.47",
+      "perturbado": "9.95",
+      "ocorrencias": 1,
+      "contextos": [
+        "70 (1.01) 7.69 (1.06) -1.01(-1.40 ~ -0.63) + 8.47 (1.04) 6.84 (0.59) -1.63(-1.96 ~ -1.30) + 0."
+      ]
+    },
+    {
+      "campo": "exp_n",
+      "original": "43",
+      "perturbado": "41",
+      "ocorrencias": 2,
+      "contextos": [
+        "pants. Characteristics TDD (n = 42) LCD (n = 43) p-value mean±SD mean±SD Age (years) 64.1±7.",
+        " completion (18 months). TDD(n = 42) LCD(n = 43) LCD vs. TDD (change %) baseline 18 months b"
+      ]
+    }
+  ],
+  "REF12": [
+    {
+      "campo": "exp_basal_media",
+      "original": "7.42",
+      "perturbado": "8.09",
+      "ocorrencias": 2,
+      "contextos": [
+        "57.4 ± 7.7 57.6 ± 8.4 HbA 1c , % 7.40 ± 0.70 7.42 ± 0.77 Body weight, kg 97.5 ± 25.4 98.0 ± 14",
+        "18 HbA 1c , % 7.40 ± 0.70 −0.66 ± 0.37 ‡ 33 7.42 ± 0.77 −0.83 ± 0.38 ‡ 34 −0.18 (−0.32, −0.03"
+      ]
+    },
+    {
+      "campo": "ctl_media",
+      "original": "0.66",
+      "perturbado": "0.56",
+      "ocorrencias": 1,
+      "contextos": [
+        " (−3.5, −0.3) 0.018 HbA 1c , % 7.40 ± 0.70 −0.66 ± 0.37 ‡ 33 7.42 ± 0.77 −0.83 ± 0.38 ‡ 34 −0"
+      ]
+    },
+    {
+      "campo": "n_randomizado_total",
+      "original": "72",
+      "perturbado": "63",
+      "ocorrencias": 2,
+      "contextos": [
+        "screenings and 102 on-site screening visits; 72 participants were finally included in the st",
+        "f restrictions due to the COVID-19 pandemic, 72 participants rather than the planned 80 were"
+      ]
+    }
+  ],
+  "PMC6024764": [
+    {
+      "campo": "exp_media",
+      "original": "0.54",
+      "perturbado": "0.48",
+      "ocorrencias": 1,
+      "contextos": [
+        "h 6.85 ± 0.79 7.89 ± 1.63 −3.017 0.004 ** MD 0.54 ± 1.12 0.28 ± 0.67 - - t 2.556 2.194 - - p 0"
+      ]
+    },
+    {
+      "campo": "exp_dp",
+      "original": "1.12",
+      "perturbado": "0.94",
+      "ocorrencias": 1,
+      "contextos": [
+        "± 0.79 7.89 ± 1.63 −3.017 0.004 ** MD 0.54 ± 1.12 0.28 ± 0.67 - - t 2.556 2.194 - - p 0.017 * "
+      ]
+    },
+    {
+      "campo": "n_randomizado_total",
+      "original": "56",
+      "perturbado": "49",
+      "ocorrencias": 1,
+      "contextos": [
+        "e basis of inclusion and exclusion criteria, 56 T2DM participants were recruited and randoml"
+      ]
+    }
+  ],
+  "PMC5048014": [
+    {
+      "campo": "exp_final_media",
+      "original": "6.0",
+      "perturbado": "5.3",
+      "ocorrencias": 1,
+      "contextos": [
+        ".1) 123.3 (24.3) 0.1821 HbA1c (%) 6.9 (1.1) 6.0 (0.7) <0.0001 6.8 (1.0) 6.4 (0.8) 0.1453 Pa"
+      ]
+    },
+    {
+      "campo": "ctl_final_media",
+      "original": "6.4",
+      "perturbado": "7.1",
+      "ocorrencias": 1,
+      "contextos": [
+        "1c (%) 6.9 (1.1) 6.0 (0.7) <0.0001 6.8 (1.0) 6.4 (0.8) 0.1453 Patients with HbA1c ⩾7% 21 (46"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+SHA-256 perturbacoes-estudo3.json: a8bc6e1ae2faa8a2b8af75afb6c1fafd354a1d08076ffe2183cc319ecc171b04
+SHA-256 sementes-auditoria.json: bf341cf6da1bae8ce805018e1c2e26342efc3396cd6c902f8ba180553491555a
+validação das funções (Emenda 1):
+  valida dp_de_ic Saslow17: 0.44 vs 0.44 OK
+  valida dp_de_se Saslow23: 0.47 vs 0.47 OK
+  valida dp_mudanca_r05 Goday: 0.96 vs 0.96 OK
+  valida pool MD: -0.24 vs -0.24 OK
+  valida pool IC inf: -0.32 vs -0.31 OK
+  valida pool IC sup: -0.16 vs -0.17 OK
+  valida pool i2: 5.7% (publicado 6%)
+
+== Etapa E: extração (gemma12, 14 corridas)
+  extracao PMC5329646-r1: 229s, 519 tok
+  extracao PMC5329646-r2: 68s, 498 tok
+  extracao REF9-r1: 193s, 516 tok
+  extracao REF9-r2: 64s, 500 tok
+  extracao PMC9606840-r1: 208s, 573 tok
+  extracao PMC9606840-r2: 73s, 546 tok
+  extracao PMC7535044-r1: 226s, 499 tok
+  extracao PMC7535044-r2: 63s, 477 tok
+  extracao REF12-r1: 230s, 474 tok
+  extracao REF12-r2: 66s, 498 tok
+  extracao PMC6024764-r1: 174s, 518 tok
+  extracao PMC6024764-r2: 65s, 504 tok
+  extracao PMC5048014-r1: 186s, 517 tok
+  extracao PMC5048014-r2: 67s, 523 tok
+
+== Etapa A: auditoria (qwen38, 14 corridas)
+  auditoria PMC5329646-L: 971s
+  auditoria REF9-L: 849s
+  auditoria PMC9606840-L: 819s
+  auditoria PMC7535044-L: 952s
+  auditoria REF12-L: 957s
+  auditoria PMC6024764-L: 772s
+  auditoria PMC5048014-L: 797s
+  auditoria PMC5329646-S: 919s
+  auditoria REF9-S: 875s
+  auditoria PMC9606840-S: 851s
+  auditoria PMC7535044-S: 1099s
+  auditoria REF12-S: 1023s
+  auditoria PMC6024764-S: 739s
+  auditoria PMC5048014-S: 813s
+
+== Etapa C: aritmética (qwen38, 2 lanes)
+  calc L: 23 chamadas, 0 fechamentos forçados, fechou=True, 816s
+  calc S: 22 chamadas, 0 fechamentos forçados, fechou=True, 937s
+
+== Etapa S: síntese (gemma26, 2 lanes)
+  sintese L: 138s, 246 palavras
+  sintese S: 95s, 248 palavras
+
+fila 'tudo' completa em 272.2 min
