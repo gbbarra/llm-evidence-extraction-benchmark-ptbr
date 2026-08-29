@@ -108,11 +108,14 @@ O mesmo corretor auditou a âncora:
 
 | Quantidade | Publicado | Recomputado | Veredito |
 |---|---|---|---|
-| RRs por estudo (11 células, tabelas 5/6/11) | — | — | **11/11 corretos** (±0,015) |
-| Morbidade agregada | 0,778 [0,57–1,07] | DL: **0,774** [0,566–1,059] | número certo… |
-| …calculada como | "Mantel-Haenszel" (legenda) | MH daria **0,863** | **…nome do método errado** |
+| RRs por estudo (9 células, tabelas 5/6/11) | — | — | **9/9 corretos** (±0,015) |
+| Morbidade agregada | 0,778 [0,567–1,068] | DL: **0,778 [0,567–1,068]** (dígito a dígito) | número certo… |
+| …calculada como | "Mantel-Haenszel" (legenda) | MH daria **0,873 [0,758–1,005]** | **…nome do método errado** |
+| Mortalidade agregada | 1,021 [0,446–2,337] | DL: **1,021 [0,446–2,337]** (dígito a dígito) | correta |
 
 A aritmética dos revisores humanos está absolvida — os erros da parte 1 eram de *transcrição*. Mas o agregado da morbidade é um DerSimonian-Laird exato rotulado de Mantel-Haenszel: a 15ª entrada do arquivo público de erratas.
+
+*(Correção de 2026-08-29: a primeira versão deste achado imprimiu uma recomputação ad hoc irreproduzível — "DL 0,774 [0,566–1,059]" e "MH 0,863". Re-verificado a partir das células publicadas da âncora com as mesmas funções validadas: a reprodução DL é exata, dígito a dígito, e o MH recomputado é 0,873. O achado fica mais forte, não mais fraco; nota completa na avaliação do Estudo 2 do repositório.)*
 
 ## O que isso significa
 

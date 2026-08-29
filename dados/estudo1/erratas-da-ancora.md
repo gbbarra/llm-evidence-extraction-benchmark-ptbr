@@ -42,7 +42,7 @@ Record under Amendment 4 of the [protocol](protocolo-estudo1.md). Every item was
 
 14. **Internally contradictory primaries (besides Redondo):** Diaper (prose "data from 198 and 196" vs table "GDHT n=196 / RNT n=198") and FEDORA (abstract "450 randomized" vs methods "428 were randomised"; 224+226=450≠428).
 
-15. **Pooled morbidity labeled with the wrong method** *(found in Study 2's arithmetic audit)*. The published pooled morbidity RR (0.778; CI 0.57–1.07) reproduces exactly under DerSimonian-Laird (recomputed: 0.774; 0.566–1.059), while table 5's caption describes it as Mantel-Haenszel (which would give 0.863). Right number, wrong method name. The 11 published per-study RRs are all correct (±0.015).
+15. **Pooled morbidity labeled with the wrong method** *(found in Study 2's arithmetic audit; figures re-verified 2026-08-29)*. The published pooled morbidity RR reproduces **digit-for-digit** under DerSimonian-Laird from the as-published cells of table 5 (recomputed: 0.778 [0.567–1.068]; τ² 0.074, I² 76.3%), while the caption describes it as Mantel-Haenszel (recomputed MH: 0.873 [0.758–1.005]). Right number, wrong method name. Pooled mortality also reproduces digit-for-digit under DL (1.021 [0.446–2.337]); the 9 per-study RRs and CIs all reproduce within ±0.015 (table 11's totals are not published and were derived from the percentages). *(Correction note: the first write-up printed an unreproducible ad-hoc figure, 0.774 [0.566–1.059] / MH 0.863; details in the Study-2 evaluation.)*
 
 ## Pending final adjudication (excluded from scoring)
 

@@ -108,11 +108,14 @@ The same grader audited the anchor:
 
 | Quantity | Published | Recomputed | Verdict |
 |---|---|---|---|
-| Per-study RRs (11 cells, tables 5/6/11) | — | — | **11/11 correct** (±0.015) |
-| Pooled morbidity | 0.778 [0.57–1.07] | DL: **0.774** [0.566–1.059] | right number… |
-| …computed as | "Mantel-Haenszel" (caption) | MH would give **0.863** | **…wrong method name** |
+| Per-study RRs (9 cells, tables 5/6/11) | — | — | **9/9 correct** (±0.015) |
+| Pooled morbidity | 0.778 [0.567–1.068] | DL: **0.778 [0.567–1.068]** (digit-for-digit) | right number… |
+| …computed as | "Mantel-Haenszel" (caption) | MH would give **0.873 [0.758–1.005]** | **…wrong method name** |
+| Pooled mortality | 1.021 [0.446–2.337] | DL: **1.021 [0.446–2.337]** (digit-for-digit) | correct |
 
 The human reviewers' arithmetic stands absolved — part 1's errors were of *transcription*. But the pooled morbidity is an exact DerSimonian-Laird labeled Mantel-Haenszel: entry 15 in the public errata file.
+
+*(Correction, 2026-08-29: the first version of this finding printed an unreproducible ad-hoc recomputation — "DL 0.774 [0.566–1.059]" and "MH 0.863". Re-verified from the anchor's as-published cells with the same validated functions: the DL reproduction is exact, digit for digit, and the recomputed MH is 0.873. The finding gets stronger, not weaker; full note in the repository's Study-2 evaluation.)*
 
 ## What this means
 
