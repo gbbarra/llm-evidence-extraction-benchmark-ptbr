@@ -88,6 +88,7 @@ Requisitos: Python 3.12 (stdlib apenas para o corpus), Ollama para os modelos lo
 | Estudo | Pergunta | Status |
 |---|---|---|
 | [Estudo 1](dados/estudo1/protocolo-estudo1.md) | Os quatro veteranos do FIEL extraem evidência como os revisores da metanálise-âncora (GDFT)? | **concluído** ([avaliação](dados/estudo1/avaliacao-estudo1.md) · [análise](dados/estudo1/analise-estudo1.md) · [erratas da âncora](dados/estudo1/erratas-da-ancora.md)) |
+| [Estudo 2](dados/estudo2/protocolo-estudo2.md) | Eles refazem a estatística da metanálise — de cabeça e com calculadora? | **concluído** ([avaliação](dados/estudo2/avaliacao-estudo2.md) · [análise](dados/estudo2/analise-estudo2.md)) |
 
 ## Tabela vigente
 
@@ -104,6 +105,15 @@ pontuáveis/modelo; corrigido 2026-08-28):
 
 Vereditos: H1.1 refutada (a disciplina gemma venceu a extração também) · H1.2, H1.3,
 H1.5, H1.6 confirmadas · H1.4 parcial. **Em 624 células decididas: 1 errada, 0
-inventadas, 0 recitações atribuíveis** — enquanto a metanálise publicada acumulou 14
+inventadas, 0 recitações atribuíveis** — enquanto a metanálise publicada acumulou 15
 itens de errata/divergência confirmados pela fonte, e o adjudicador, 3 erratas próprias
 registradas em público. A régua não se dobra para ninguém.
+
+Estudo 2 (as contas; corrigido 2026-08-29): de cabeça, IC95 exato = **0/30 nos quatro
+modelos** e RRs exatos 1–3 por modelo; com a calculadora (protocolo CALC), qwen3.8:27b
+fecha **8/8 pontos e 8/8 intervalos**, qwen14 7/8, gemma12 6/8 — e gemma26 chama 20
+funções sem nunca emitir a resposta. Nenhum modelo orquestrou o agrupamento via
+ferramenta. Thinking (exploratório): triplica a aritmética simples, custa 10–17×, e
+colapsa em perseveração no agrupamento. Bônus: os 11 RRs por estudo da âncora estão
+corretos, mas o agregado da morbidade é um DerSimonian-Laird exato rotulado de
+Mantel-Haenszel na legenda — a 15ª errata.
