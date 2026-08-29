@@ -10,14 +10,16 @@ EXTRAI is the second benchmark of a line that runs entirely on consumer hardware
 
 ## What exactly was done
 
-The anchor: a meta-analysis of goal-directed fluid therapy (Cureus, June 2026 — published *after* the models' training cutoffs), with 14 randomized trials. The 8 open-access ones came from Europe PMC; the 6 paywalled ones from my institutional access and legal author manuscripts — **the entire meta-analysis**. Each model read each trial and performed three tasks: the 30-field form (T1), risk of bias across the 7 Cochrane domains (T2), and a synthesis using only its own extractions (T3). Two replicates per task, 232 graded runs:
+The anchor: a meta-analysis of goal-directed fluid therapy (GDFT — steering surgical fluids by measured hemodynamic targets instead of fixed volumes), published in Cureus in June 2026 — published *after* the models' training cutoffs), with 14 randomized trials. The 8 open-access ones came from Europe PMC; the 6 paywalled ones from my institutional access and legal author manuscripts — **the entire meta-analysis**. Each model read each trial and performed three tasks: the 30-field form (T1), risk of bias across the 7 Cochrane domains (T2), and a synthesis using only its own extractions (T3). Two replicates per task, 232 graded runs:
 
 | Block | Compute | Runs | Time |
 |---|---|---|---|
-| gemma4:12b | iGPU (Vulkan) | 57 | ~2.2 h |
-| qwen3:14b | iGPU (Vulkan) | 57 | ~1.7 h |
-| gemma4:26b (MoE) | CPU | 57 | ~2.0 h |
+| gemma4:12b | integrated GPU (Vulkan) | 57 | ~2.2 h |
+| qwen3:14b | integrated GPU (Vulkan) | 57 | ~1.7 h |
+| gemma4:26b (MoE)* | CPU | 57 | ~2.0 h |
 | qwen3.8:27b | CPU | 57 | ~7.1 h |
+
+\* MoE = mixture-of-experts: of its 26 billion parameters, only ~4 billion are active per token — which is why the 26b is fast even on CPU.
 
 ## What we found
 
@@ -49,7 +51,7 @@ The pre-registration (H1.1) bet on the big faithful models: 27B ≥ 26b > 12b �
 
 ### 3. The models audited the published meta-analysis — 15 errata entries, every one with a quote
 
-The [errata file](dados/estudo1/erratas-da-ancora.md) records each item with the deciding source snippet (in the table, "MA" is the anchor meta-analysis — the published review whose tables serve as the answer key). The headliners:
+The [errata file](dados/estudo1/erratas-da-ancora.md) records each item with the deciding source snippet (in the table, "MA" is the anchor meta-analysis — the published review whose tables serve as the answer key; and each trial names its guided arm its own way: GDHT, PGDT, GDT — it is always the GDFT arm). The headliners:
 
 | # | Study | What the MA published | What the source says |
 |---|---|---|---|
@@ -70,7 +72,7 @@ The benchmark's rite ("verify against the source before deducting") binds the ad
 
 ### 5. On risk of bias, the models are harsher than the reviewers
 
-Agreement with the published Cochrane judgments (7 domains × 13 studies — Weinberg has no RoB row in the MA, another inconsistency):
+Agreement with the published Cochrane judgments (7 domains × 13 studies — Weinberg has no risk-of-bias row in the MA, another inconsistency):
 
 | Model | Agreement | Overall judgment equal | Stability r1=r2 |
 |---|---|---|---|

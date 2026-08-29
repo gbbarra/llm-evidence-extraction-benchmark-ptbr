@@ -10,14 +10,16 @@ O EXTRAI é o segundo benchmark de uma linha que roda inteira em hardware de con
 
 ## O que exatamente foi feito
 
-A âncora: uma metanálise de fluidoterapia guiada por metas (Cureus, junho/2026 — publicada *depois* do corte de treino dos modelos), com 14 ensaios randomizados. Os 8 de acesso aberto vieram do Europe PMC; os 6 fechados, do meu acesso institucional e de manuscritos de autor legais — **a metanálise inteira**. Cada modelo leu cada ensaio e cumpriu três tarefas: a ficha de 30 campos (T1), o risco de viés nos 7 domínios Cochrane (T2) e uma síntese usando só as próprias extrações (T3). Duas réplicas por tarefa, 232 corridas corrigidas:
+A âncora: uma metanálise de fluidoterapia guiada por metas (GDFT, na sigla em inglês — a estratégia de dar fluidos na cirurgia guiando-se por metas hemodinâmicas medidas, em vez de volumes fixos), publicada na revista Cureus em junho/2026 — publicada *depois* do corte de treino dos modelos), com 14 ensaios randomizados. Os 8 de acesso aberto vieram do Europe PMC; os 6 fechados, do meu acesso institucional e de manuscritos de autor legais — **a metanálise inteira**. Cada modelo leu cada ensaio e cumpriu três tarefas: a ficha de 30 campos (T1), o risco de viés nos 7 domínios Cochrane (T2) e uma síntese usando só as próprias extrações (T3). Duas réplicas por tarefa, 232 corridas corrigidas:
 
 | Bloco | Execução | Corridas | Tempo |
 |---|---|---|---|
-| gemma4:12b | iGPU (Vulkan) | 57 | ~2,2 h |
-| qwen3:14b | iGPU (Vulkan) | 57 | ~1,7 h |
-| gemma4:26b (MoE) | CPU | 57 | ~2,0 h |
+| gemma4:12b | GPU integrada (Vulkan) | 57 | ~2,2 h |
+| qwen3:14b | GPU integrada (Vulkan) | 57 | ~1,7 h |
+| gemma4:26b (MoE)* | CPU | 57 | ~2,0 h |
 | qwen3.8:27b | CPU | 57 | ~7,1 h |
+
+\* MoE = mixture-of-experts: dos 26 bilhões de parâmetros, só ~4 bilhões ficam ativos por token — por isso o 26b é rápido até em CPU.
 
 ## O que encontramos
 
@@ -49,7 +51,7 @@ O pré-registro (H1.1) apostava nos grandes fiéis: 27B ≥ 26b > 12b ≥ 14b. A
 
 ### 3. Os modelos auditaram a metanálise publicada — 15 itens de errata, todos com citação
 
-O [arquivo de erratas](dados/estudo1/erratas-da-ancora.md) registra cada item com o trecho da fonte que o decide (na tabela, "MA" é a metanálise-âncora — a revisão publicada cujas tabelas servem de gabarito). Os principais:
+O [arquivo de erratas](dados/estudo1/erratas-da-ancora.md) registra cada item com o trecho da fonte que o decide (na tabela, "MA" é a metanálise-âncora — a revisão publicada cujas tabelas servem de gabarito; e cada ensaio nomeia seu braço guiado à própria maneira: GDHT, PGDT, GDT — é sempre o braço GDFT). Os principais:
 
 | # | Estudo | O que a MA publicou | O que a fonte diz |
 |---|---|---|---|
@@ -70,7 +72,7 @@ O rito do benchmark ("verificar na fonte antes de deduzir") vale para o adjudica
 
 ### 5. No risco de viés, os modelos são mais duros que os revisores
 
-Concordância com os julgamentos Cochrane publicados (7 domínios × 13 estudos — o Weinberg não tem linha de RoB na MA, outra inconsistência):
+Concordância com os julgamentos Cochrane publicados (7 domínios × 13 estudos — o Weinberg não tem linha de risco de viés na MA, outra inconsistência):
 
 | Modelo | Concordância | Julgamento global igual | Estabilidade r1=r2 |
 |---|---|---|---|
