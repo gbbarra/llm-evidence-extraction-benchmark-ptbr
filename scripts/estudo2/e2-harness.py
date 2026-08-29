@@ -210,14 +210,15 @@ def post_json(url, body, timeout=3600):
 
 def gerar(mod, prompt, think=False, max_tokens=1600):
     m = MODELS[mod]
-    opts = dict(num_predict=(4000 + max_tokens) if think else max_tokens, num_ctx=CTX)
+    opts = dict(num_predict=(12000 + max_tokens) if think else max_tokens, num_ctx=CTX)
     if m["cpu"]:
         opts["num_gpu"] = 0
     body = dict(model=m["ollama"], prompt=prompt, stream=False, think=bool(think), options=opts)
     r, dt = post_json(OLLAMA + "/api/generate", body)
     if r.get("error"):
         raise RuntimeError(r["error"])
-    return dict(content=r.get("response", "") or "", dt=r.get("total_duration", 0) / 1e9 or dt,
+    return dict(content=r.get("response", "") or "", reasoning=(r.get("thinking", "") or "")[-4000:],
+                dt=r.get("total_duration", 0) / 1e9 or dt,
                 tokens=r.get("eval_count", 0), prompt_tokens=r.get("prompt_eval_count", 0),
                 finish=r.get("done_reason"))
 
@@ -237,7 +238,8 @@ def corrida(mod, familia, braco, rep, think=False):
     for rodada in range(1, 6 if braco == "B" else 2):
         r = gerar(mod, prompt, think=think)
         total_dt += r["dt"]
-        transcricao.append(dict(rodada=rodada, saida=r["content"], dt=round(r["dt"], 1)))
+        transcricao.append(dict(rodada=rodada, saida=r["content"], dt=round(r["dt"], 1),
+                                **({"reasoning_fim": r.get("reasoning", "")} if think else {})))
         if braco == "A":
             break
         calcs = [ln for ln in r["content"].splitlines() if re.match(r"\s*CALC:", ln, re.I)]

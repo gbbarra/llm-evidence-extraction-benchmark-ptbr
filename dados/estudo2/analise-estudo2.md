@@ -37,6 +37,13 @@ protocolo pré-registrado [aqui](protocolo-estudo2.md).
    não quando *falta capacidade*: diante do IC, todos tentaram e erraram com confiança.
    O "sabe que não sabe" funciona para o insumo, não para o próprio limite aritmético.
 
+5. **O thinking é meia-calculadora com um preço e um fantasma** (braço exploratório,
+   qwen3:14b). Na aritmética simples, pensar ~10 mil tokens triplica as exatas (6/7 vs
+   2/8) — quase nível ferramenta. Mas o IC continua 0/7, o custo é 10–17× e, no
+   agrupamento, 17 minutos de raciocínio terminaram em perseveração: os mesmos números
+   clonados em quatro desfechos, dois deles inexistentes no insumo — a única fabricação
+   de todo o estudo. A calculadora vence o thinking em precisão, custo e sanidade.
+
 ## Limitações
 
 Uma réplica pontuada por braço (a segunda existe e mede estabilidade); insumos herdados

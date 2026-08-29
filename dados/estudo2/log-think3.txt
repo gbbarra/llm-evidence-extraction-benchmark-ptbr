@@ -1,0 +1,7 @@
+
+=== qwen14 — 00:18 ===
+  qwen14 rr-A-think-r1: 1 rodada(s), 0 CALC, 323s
+  qwen14 md-A-think-r1: 1 rodada(s), 0 CALC, 405s
+  qwen14 pool-A-think-r1: 1 rodada(s), 0 CALC, 1019s
+
+FILA E2 CONCLUÍDA em 29 min.

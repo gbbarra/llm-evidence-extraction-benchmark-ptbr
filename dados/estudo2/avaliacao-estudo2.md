@@ -41,7 +41,21 @@ agrupamento com a calculadora**.
 
 ## Braço exploratório (qwen3:14b + thinking, braço A, 1 réplica)
 
-*(preenchido na re-rodada corrigida — ver seção de emendas do protocolo/registro acima)*
+Registro de execução: com orçamentos de 5.600 tokens o thinking consumiu tudo e não
+emitiu resposta (o eco do colapso metacognitivo da Série 1 do FIEL); convergiu com
+**12.000 tokens** (323–1.019 s por corrida — 10–17× o custo sem thinking).
+
+| Família | Resultado com thinking | Sem thinking (mesmo modelo) |
+|---|---|---|
+| RR + MD por estudo | **6 exatas / 7 pontos** + 1 NC honesto | 2 exatas / 8 |
+| IC95 | **0/7** — a fronteira continua | 0/8 |
+| Agrupamento | **colapso por perseveração**: os mesmos dois números (0,768/0,741) clonados em quatro desfechos, dois deles ("recurrence", "symptoms") inexistentes no insumo — a única *fabricação* de todo o Estudo 2 | errado/NC |
+
+Leitura: o thinking é a única via "de cabeça" que se aproxima da calculadora na
+aritmética simples — e o "random effects 0,741" da morbidade ficou a 0,03 do DL
+verdadeiro antes de ser clonado nos desfechos fantasmas. Mas o IC segue impossível, o
+agrupamento derrete em perseveração, e o custo é uma ordem de grandeza. A calculadora
+domina o thinking em tudo: mais exata, mais barata e sem fantasmas.
 
 ## Auditoria aritmética da âncora (H2.6)
 
