@@ -1,5 +1,7 @@
 # EXTRAI — benchmark de extração de evidência científica para LLMs locais
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22159050.svg)](https://doi.org/10.5281/zenodo.22159050)
+
 *Evidence-extraction benchmark for local LLMs, in Brazilian Portuguese. English articles will accompany each study.*
 
 O [FIEL](https://github.com/gbbarra/llm-summarization-benchmark-ptbr) pergunta se um modelo local *escreve* com fidelidade. O **EXTRAI** pergunta se ele *lê* como um revisor: diante de um ensaio clínico completo, o modelo extrai o que os revisores humanos de uma metanálise publicada extraíram — números certos, das seções certas, admitindo o que o artigo não reporta?

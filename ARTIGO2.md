@@ -2,7 +2,7 @@
 
 *A parte 1 terminou com um paradoxo: os quatro modelos locais extraem evidência quase sem erro, mas sintetizam "no olho" — contam estudos favoráveis onde a metanálise agregada diz "sem diferença significativa". Faltava saber: eles conseguem fazer as contas? O Estudo 2 respondeu com um desenho de dois braços sugerido pelo próprio dono do benchmark: primeiro os modelos calculam risk ratios, intervalos de confiança e agrupamentos **de cabeça**; depois ganham uma **calculadora** que podem chamar por texto. O resultado de cabeça: zero intervalos de confiança corretos em trinta tentativas, nos quatro modelos. Com a calculadora: um deles fechou 8 de 8 pontos e 8 de 8 intervalos — nível de metanalista. E o braço bônus, com thinking ligado, produziu a cena mais estranha da série: dezessete minutos de raciocínio terminando em desfechos que não existem.*
 
-> 📄 Parte 1: extração célula a célula ([ARTIGO1](ARTIGO1.md)). Método, protocolos pré-registrados, correção mecânica e todos os dados: [github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr](https://github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr) · Benchmark irmão: [FIEL](https://github.com/gbbarra/llm-summarization-benchmark-ptbr)
+> 📄 Parte 1: extração célula a célula ([ARTIGO1](ARTIGO1.md)). Método, protocolos pré-registrados, correção mecânica e todos os dados: [github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr](https://github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr) · DOI: [10.5281/zenodo.22159050](https://doi.org/10.5281/zenodo.22159050) · Benchmark irmão: [FIEL](https://github.com/gbbarra/llm-summarization-benchmark-ptbr)
 
 ## O desenho, em um parágrafo
 

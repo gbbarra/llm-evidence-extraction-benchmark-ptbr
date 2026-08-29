@@ -2,7 +2,7 @@
 
 *Depois de catorze partes do benchmark FIEL medindo se modelos locais escrevem resumos fiéis, resolvi duvidar do meu próprio veredito. As partes 13 e 14 diziam que os modelos grandes seriam "extratores e auditores, não escritores" — uma frase bonita que nunca tinha sido testada na tarefa real. Então nasceu o EXTRAI, um segundo benchmark: os mesmos quatro modelos, rodando num mini-PC, refazendo célula a célula o trabalho de extração de uma metanálise publicada e revisada por pares — os 14 ensaios clínicos dela, inteiros. O placar final: em 624 células corrigidas, os modelos erraram exatamente uma. No caminho, encontraram braços trocados, colunas invertidas e dados fantasma na metanálise publicada — e me corrigiram três vezes.*
 
-> 📄 O EXTRAI é irmão do [FIEL](https://github.com/gbbarra/llm-summarization-benchmark-ptbr) (14 partes sobre sumarização fiel). Método, protocolo pré-registrado, gabarito verificado na fonte, erratas e todos os dados: [github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr](https://github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr)
+> 📄 O EXTRAI é irmão do [FIEL](https://github.com/gbbarra/llm-summarization-benchmark-ptbr) (14 partes sobre sumarização fiel). Método, protocolo pré-registrado, gabarito verificado na fonte, erratas e todos os dados: [github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr](https://github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr) · DOI: [10.5281/zenodo.22159050](https://doi.org/10.5281/zenodo.22159050)
 
 ## O desenho, em um parágrafo
 
