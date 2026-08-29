@@ -1,0 +1,104 @@
+{
+ "_metodo": "EXTRAI Study 3 — source-verified answer key (two-layer, as in E1 Amendment 4). Layer 1 = the anchor's forest-plot cells as published (ma-lowcarb-meta.json). Layer 2 (this file) = each cell verified against the primary's full text: value, provenance (literal | derivada), derivation rule, literal quote. Built by Claude (assistant) from the reconnaissance of 2026-08-29 (scripts/estudo3/verify-source.py + manual digs recorded in the session); every quote copied from corpus/estudo3/primarios-texto/. Grading against models uses the PERTURBED text's values; this file documents the unperturbed source routes.",
+ "_regras_de_derivacao": {
+  "dp_de_ic": "SD = (upper−lower)/2/1.96 × sqrt(n) — the MA's SD column for trials that publish change mean with 95% CI",
+  "dp_de_se": "SD = SE × sqrt(n) — for trials that publish change mean with SE",
+  "dp_imputada_r05": "SD_change = sqrt(SD_baseline² + SD_final² − 2·0.5·SD_baseline·SD_final) — Cochrane handbook imputation with r=0.5; used by the MA where only baseline/final SDs exist (Goday)",
+  "media_de_basal_final": "mean_change = mean_final − mean_baseline"
+ },
+ "estudos": {
+  "PMC5329646": {
+   "estudo": "Saslow 2017 (JMIR)", "ref_ma": "8",
+   "braco_exp": "intervention (very-low-carbohydrate ketogenic + lifestyle, online)", "braco_ctl": "control (plate method diet, online)",
+   "celulas": {
+    "exp_media": {"valor": -0.8, "proveniencia": "literal", "cit": "32 weeks –0.8 (–1.1, –0.6)", "nota": "EMM (estimated marginal mean) na tabela 2; também na prosa: 'EMM –0.8%, 95% CI –1.1% to –0.6%'"},
+    "exp_dispersao": {"valor": 0.44, "tipo_na_fonte": "IC95", "proveniencia": "derivada", "regra": "dp_de_ic", "conta": "(−0.6−(−1.1))/2/1.96×sqrt(12)=0.44", "cit": "–0.8 (–1.1, –0.6)"},
+    "exp_n": {"valor": 12, "proveniencia": "literal", "cit": "intervention: n=12", "nota": "randomizados; dropout 1/12 — EMM é modelo ITT"},
+    "ctl_media": {"valor": -0.3, "proveniencia": "literal", "cit": "–0.3 (–0.6, 0.0)"},
+    "ctl_dispersao": {"valor": 0.55, "tipo_na_fonte": "IC95", "proveniencia": "derivada", "regra": "dp_de_ic", "conta": "(0.0−(−0.6))/2/1.96×sqrt(13)=0.55"},
+    "ctl_n": {"valor": 13, "proveniencia": "literal", "cit": "control: n=13"},
+    "n_randomizado_total": {"valor": 25, "proveniencia": "derivada", "regra": "12+13; abstract usa 'body mass index ≥25' (cuidado: 25 aparece como IMC, não como n)"}
+   }
+  },
+  "REF9": {
+   "estudo": "Saslow 2023 (Ann Fam Med)", "ref_ma": "9", "estrato": "fechado",
+   "desenho": "FATORIAL 2×2 (dieta × suporte, 4 grupos 1:1:1:1 de 94 randomizados) — os 'braços' da MA são as MARGENS de dieta",
+   "braco_exp": "VLC (very low-carbohydrate, margem dos 2 grupos VLC)", "braco_ctl": "DASH (margem dos 2 grupos DASH)",
+   "celulas": {
+    "exp_media": {"valor": -0.35, "proveniencia": "literal", "cit": "HbA1c, % 6.09 (0.07) 5.74 (0.08) –0.35 (0.07) <.001", "nota": "efeito principal de dieta, ITT; também no abstract: '–0.35% vs –0.14%; P = .034'"},
+    "exp_dispersao": {"valor": 0.47, "tipo_na_fonte": "SE", "proveniencia": "derivada", "regra": "dp_de_se", "conta": "0.07×sqrt(45)=0.47", "cit": "–0.35 (0.07)"},
+    "exp_n": {"valor": 45, "proveniencia": "derivada", "regra": "soma das células fatoriais VLC no fluxograma/tabela 1 (margem de dieta); não aparece literal como 'n=45'"},
+    "ctl_media": {"valor": -0.14, "proveniencia": "literal", "cit": "6.10 (0.07) 5.97 (0.07) –0.14 (0.07) .06"},
+    "ctl_dispersao": {"valor": 0.49, "tipo_na_fonte": "SE", "proveniencia": "derivada", "regra": "dp_de_se", "conta": "0.07×sqrt(49)=0.49"},
+    "ctl_n": {"valor": 49, "proveniencia": "derivada", "regra": "margem DASH do fatorial"},
+    "n_randomizado_total": {"valor": 94, "proveniencia": "literal", "cit": "94 participants were randomized"}
+   }
+  },
+  "PMC9606840": {
+   "estudo": "Dorans 2022 (JAMA Netw Open)", "ref_ma": "10",
+   "braco_exp": "low-carbohydrate diet intervention", "braco_ctl": "usual diet",
+   "celulas": {
+    "exp_media": {"valor": -0.26, "proveniencia": "literal", "cit": "6 mo –0.26 (–0.33 to –0.19)"},
+    "exp_dispersao": {"valor": 0.31, "tipo_na_fonte": "IC95", "proveniencia": "derivada", "regra": "dp_de_ic", "conta": "(−0.19−(−0.33))/2/1.96×sqrt(75)=0.31", "nota": "cuidado: 0.31 também é o DP BASAL literal da tabela 1 ('6.17 (0.31)') — coincidência numérica"},
+    "exp_n": {"valor": 75, "proveniencia": "literal", "cit": "Low-carbohydrate diet (n = 75)"},
+    "ctl_media": {"valor": -0.04, "proveniencia": "literal", "cit": "–0.04 (–0.10 to 0.02)"},
+    "ctl_dispersao": {"valor": 0.27, "tipo_na_fonte": "IC95", "proveniencia": "derivada", "regra": "dp_de_ic", "conta": "(0.02−(−0.10))/2/1.96×sqrt(75)=0.27"},
+    "ctl_n": {"valor": 75, "proveniencia": "literal", "cit": "Usual diet (n = 75)"},
+    "n_randomizado_total": {"valor": 150, "proveniencia": "literal", "cit": "A total of 150 participants"}
+   }
+  },
+  "PMC7535044": {
+   "estudo": "Chen 2020 (PLOS One)", "ref_ma": "11",
+   "braco_exp": "LCD (low-carbohydrate diet, 90 g/day)", "braco_ctl": "TDD (traditional diabetic diet)",
+   "celulas": {
+    "exp_media": {"valor": -1.63, "proveniencia": "literal", "cit": "8.47 (1.04) 6.84 (0.59) -1.63(-1.96 ~ -1.30)", "nota": "variação em 18 meses, coluna LCD"},
+    "exp_dispersao": {"valor": 1.10, "tipo_na_fonte": "IC95", "proveniencia": "derivada", "regra": "dp_de_ic", "conta": "(−1.30−(−1.96))/2/1.96×sqrt(43)=1.10"},
+    "exp_n": {"valor": 43, "proveniencia": "literal", "cit": "LCD (n = 43)", "nota": "analisados/completadores; randomizados 46/46 de 92"},
+    "ctl_media": {"valor": -1.01, "proveniencia": "literal", "cit": "8.70 (1.01) 7.69 (1.06) -1.01(-1.40 ~ -0.63)"},
+    "ctl_dispersao": {"valor": 1.27, "tipo_na_fonte": "IC95", "proveniencia": "derivada", "regra": "dp_de_ic", "conta": "(−0.63−(−1.40))/2/1.96×sqrt(42)=1.27"},
+    "ctl_n": {"valor": 42, "proveniencia": "literal", "cit": "TDD (n = 42)"},
+    "n_randomizado_total": {"valor": 92, "proveniencia": "literal", "cit": "92 patients with type 2 diabetes… randomized (85 completaram, '92.4%')"}
+   }
+  },
+  "REF12": {
+   "estudo": "Thomsen 2022 (Diabetologia)", "ref_ma": "12", "estrato": "fechado",
+   "braco_exp": "CRHP (carbohydrate-reduced high-protein diet)", "braco_ctl": "CD (conventional diabetes diet)",
+   "celulas": {
+    "exp_media": {"valor": -0.83, "proveniencia": "literal", "cit": "HbA 1c , % 7.40 ± 0.70 −0.66 ± 0.37 ‡ 33 7.42 ± 0.77 −0.83 ± 0.38 ‡ 34", "nota": "ÚNICO ensaio com DP de variação literal; colunas: CD basal, CD variação, n=33, CRHP basal, CRHP variação, n=34"},
+    "exp_dispersao": {"valor": 0.38, "tipo_na_fonte": "SD", "proveniencia": "literal", "cit": "−0.83 ± 0.38"},
+    "exp_n": {"valor": 34, "proveniencia": "literal", "cit": "CRHP 34 completaram"},
+    "ctl_media": {"valor": -0.66, "proveniencia": "literal", "cit": "−0.66 ± 0.37"},
+    "ctl_dispersao": {"valor": 0.37, "tipo_na_fonte": "SD", "proveniencia": "literal", "cit": "−0.66 ± 0.37"},
+    "ctl_n": {"valor": 33, "proveniencia": "literal", "cit": "CD 33 completaram"},
+    "n_randomizado_total": {"valor": 72, "proveniencia": "literal", "cit": "72 participants rather than the planned 80 were included"}
+   }
+  },
+  "PMC6024764": {
+   "estudo": "Wang 2018 (Nutrients)", "ref_ma": "13",
+   "braco_exp": "LCD (low-carbohydrate diet)", "braco_ctl": "LFD (low-fat diet)",
+   "celulas": {
+    "exp_media": {"valor": -0.54, "proveniencia": "literal-com-sinal-invertido", "cit": "MD 0.54 ± 1.12 0.28 ± 0.67", "nota": "a fonte reporta a QUEDA como MD positivo; a MA converteu para variação negativa. Ordem das colunas: LCD, LFD"},
+    "exp_dispersao": {"valor": 1.12, "tipo_na_fonte": "SD", "proveniencia": "literal", "cit": "0.54 ± 1.12"},
+    "exp_n": {"valor": 28, "proveniencia": "literal", "cit": "LCD group ( n = 28)"},
+    "ctl_media": {"valor": -0.28, "proveniencia": "literal-com-sinal-invertido", "cit": "0.28 ± 0.67"},
+    "ctl_dispersao": {"valor": 0.67, "tipo_na_fonte": "SD", "proveniencia": "literal", "cit": "0.28 ± 0.67"},
+    "ctl_n": {"valor": 28, "proveniencia": "literal", "cit": "LFD group ( n = 28)"},
+    "n_randomizado_total": {"valor": 56, "proveniencia": "literal", "cit": "56 T2DM participants were recruited and randomly allocated"}
+   }
+  },
+  "PMC5048014": {
+   "estudo": "Goday 2016 (Nutr & Diabetes)", "ref_ma": "14",
+   "braco_exp": "VLCK diet (very-low-calorie ketogenic)", "braco_ctl": "LC diet (standard low-calorie)",
+   "nota_estrutural": "os valores do forest NÃO existem literalmente: a MA derivou tudo da tabela 3 (basal vs 4 meses). A tabela 3 vive em <floats-group> fora do <body> do XML — capturada após correção do extrator (2026-08-29)",
+   "celulas": {
+    "exp_media": {"valor": -0.9, "proveniencia": "derivada", "regra": "media_de_basal_final", "conta": "6.0 − 6.9 = −0.9", "cit": "HbA1c (%) 6.9 (1.1) 6.0 (0.7) <0.0001 6.8 (1.0) 6.4 (0.8) 0.1453"},
+    "exp_dispersao": {"valor": 0.96, "tipo_na_fonte": "SDs basal+final", "proveniencia": "derivada", "regra": "dp_imputada_r05", "conta": "sqrt(1.1²+0.7²−2·0.5·1.1·0.7)=0.964"},
+    "exp_n": {"valor": 45, "proveniencia": "literal", "cit": "VLCK diet group ( n =45)", "nota": "cabeçalho da tabela 3 (analisados)"},
+    "ctl_media": {"valor": -0.4, "proveniencia": "derivada", "regra": "media_de_basal_final", "conta": "6.4 − 6.8 = −0.4"},
+    "ctl_dispersao": {"valor": 0.92, "tipo_na_fonte": "SDs basal+final", "proveniencia": "derivada", "regra": "dp_imputada_r05", "conta": "sqrt(1.0²+0.8²−2·0.5·1.0·0.8)=0.917"},
+    "ctl_n": {"valor": 40, "proveniencia": "literal", "cit": "LC diet group ( n =40)"},
+    "n_randomizado_total": {"valor": 89, "proveniencia": "literal", "cit": "A total of 89 subjects were randomized"}
+   }
+  }
+ }
+}

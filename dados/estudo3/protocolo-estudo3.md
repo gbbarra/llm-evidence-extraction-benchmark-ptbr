@@ -93,4 +93,11 @@ Screening/PRISMA reproduction (author's choice: not in this study); risk-of-bias
 
 ---
 
-*Amendments: (none)*
+## Amendment 1 (2026-08-29, after source reconnaissance, before any prompt was frozen or any run made)
+
+The cell-by-cell verification of the anchor's forest inputs against the 7 primary texts (`scripts/estudo3/verify-source.py` + manual digs; two-layer key in [`gabarito-fonte.json`](gabarito-fonte.json), **42/42 cells mechanically validated** against the published forest) changed four pre-run decisions:
+
+1. **Corpus builder fix**: some journals (Nature family — Goday) ship tables in `<floats-group>` outside `<body>`; the extractor now appends those table-wraps (Study-1 echo: this is where Sujatha's "table 4 out of input" lived). Without the fix, Goday's primary-endpoint table was absent from the model input.
+2. **The MA's SD column is mostly derived, not extracted**: of 14 per-arm dispersions, only Thomsen's 2 (and Wang's 2) are literal change-SDs; 6 come from 95% CIs (SD = half-width/1.96×√n: Saslow 2017, Dorans, Chen), 2 from SEs (×√n: Saslow 2023), and 2 from Cochrane's r=0.5 imputation over baseline/final SDs (Goday — whose change means are themselves baseline→final differences). Saslow 2023 is a 2×2 factorial whose "arms" are diet margins (n=45/49 nowhere literal). **Stage E's sheet therefore extracts what the text states** — per arm: label, n randomized (total and per arm if stated), n analyzed, HbA1c change mean *as reported* (sign as printed), dispersion value + **dispersion type** (SD | SE | CI bounds), and baseline/final mean (SD) when the change is not reported — and **Stage C owns the derivations**, with three new CALC functions: `dp_de_ic(lo, hi, n)`, `dp_de_se(se, n)`, `dp_mudanca_r05(dp1, dp2)`, alongside `pool_dl_md`. All four are validated against the anchor's forest before the queue (the 42/42 validation above stands as the record).
+3. **Perturbation targets are the source-side numbers** (table/prose values the sheet extracts), never the forest-side derived values; multi-occurrence facts are perturbed at every occurrence within their semantic anchors (E1 operator), and known numeric collisions found in the reconnaissance are excluded (e.g., Dorans's 0.31 doubles as a baseline SD; Thomsen's 0.83 doubles as a p-value; Saslow 2023's 0.07 SE repeats across rows).
+4. **Wang reports the drop as a positive "MD"** (0.54/0.28) that the MA sign-flips; the sheet instructs "sign as printed in the source" and the key records the convention, so neither reading is penalized mechanically.

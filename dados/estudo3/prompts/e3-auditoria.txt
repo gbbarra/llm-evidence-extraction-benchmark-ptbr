@@ -1,0 +1,27 @@
+Você é o auditor de qualidade de uma esteira de metanálise. Outro revisor preencheu a ficha de extração abaixo a partir do artigo. Sua tarefa é VERIFICAR CADA CAMPO contra o texto do artigo, um por um.
+
+REGRAS:
+1. Não presuma que a ficha está certa nem errada. Alguns campos podem conter erros (de qualquer tipo: número trocado, sinal trocado, braços invertidos, dígitos transpostos); outros podem estar todos corretos. Só o texto decide.
+2. Para CADA campo da ficha, emita um veredito:
+   - "confirma" — o valor confere com o texto;
+   - "corrige" — o valor NÃO confere; forneça o valor certo em "valor_corrigido" e copie em "onde" o trecho literal do texto (até 15 palavras) que prova a correção;
+   - "nao-encontrado" — você não localizou a informação no texto (nem para confirmar nem para corrigir).
+3. "NR" na ficha está CERTO se o texto realmente não reporta o campo — nesse caso, "confirma". Se o texto reporta e a ficha diz "NR", use "corrige" com o valor e o trecho.
+4. Verifique números dígito a dígito e confira a que braço cada número pertence.
+5. Responda APENAS com o JSON, no formato:
+{
+ "estudo": "<como na ficha>",
+ "vereditos": {
+  "<caminho do campo, ex.: braco_experimental.hba1c_mudanca_media>": {
+   "veredito": "confirma | corrige | nao-encontrado",
+   "valor_corrigido": "<só se corrige>",
+   "onde": "<trecho literal, só se corrige>"
+  },
+  ...um por campo da ficha...
+ }
+}
+
+FICHA A AUDITAR:
+{FICHA}
+
+ARTIGO:

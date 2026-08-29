@@ -1,0 +1,406 @@
+{
+ "PMC7535044": {
+  "exp_media": {
+   "valor_forest": -1.63,
+   "ocorrencias": 1,
+   "trechos": [
+    "70 (1.01) 7.69 (1.06) -1.01(-1.40 ~ -0.63) + 8.47 (1.04) 6.84 (0.59) -1.63(-1.96 ~ -1.30) + 0.0034 * Fasting glucose (mg/dl) 160.17 (37.58) 150."
+   ]
+  },
+  "exp_dp": {
+   "valor_forest": 1.1,
+   "ocorrencias": 1,
+   "trechos": [
+    "DD 64.3±25.2 55.6±17.7 -8.8(-16.1 ~ -1.5) † 55.7±14.9 * -8.7(-16.3 ~ -1.1) † 67.2±22.2 * 3.3(-7.4 ~ 14.0) LCD 56.7±24.6 60.6±21.2 4.3(-3.8 ~ 12"
+   ]
+  },
+  "exp_n": {
+   "valor_forest": 43,
+   "ocorrencias": 3,
+   "trechos": [
+    "tics of the study participants. Characteristics TDD (n = 42) LCD (n = 43) p-value mean±SD mean±SD Age (years) 64.1±7.4 63.1±10.5 0.968 Educati",
+    "nts at baseline and study completion (18 months). TDD(n = 42) LCD(n = 43) LCD vs. TDD (change %) baseline 18 months baseline 18 months mean (S",
+    "103.02 (27.90) 101.26 (26.75) -1.77(-10.88 ~ 7.35) 0.5067 HDL (mg/dl) 43.61 (9.41) 46.55 (8.41) 2.94(-0.16 ~ 6.03) 47.21 (11.09) 52.15 (12.19)"
+   ]
+  },
+  "ctl_media": {
+   "valor_forest": -1.01,
+   "ocorrencias": 2,
+   "trechos": [
+    "(SD) mean (SD) b MD(95% CI) p-value Glycaemic Control HbA1C (%) 8.70 (1.01) 7.69 (1.06) -1.01(-1.40 ~ -0.63) + 8.47 (1.04) 6.84 (0.59) -1.63(-1.",
+    "(95% CI) p-value Glycaemic Control HbA1C (%) 8.70 (1.01) 7.69 (1.06) -1.01(-1.40 ~ -0.63) + 8.47 (1.04) 6.84 (0.59) -1.63(-1.96 ~ -1.30) + 0.003"
+   ]
+  },
+  "ctl_dp": {
+   "valor_forest": 1.27,
+   "ocorrencias": 1,
+   "trechos": [
+    "~ 4.4) LCD 12.9±7.8 11.8±7.4 -0.2(-2.9 ~ 2.4) 13.2±8.3 * -0.8(-2.8 ~ 1.3) 13.9±8.5 * 0.0(-2.0 ~ 2.1) Energy (KJ/d) TDD 7459.7±1980.3 6176.0±15"
+   ]
+  },
+  "ctl_n": {
+   "valor_forest": 42,
+   "ocorrencias": 3,
+   "trechos": [
+    "e characteristics of the study participants. Characteristics TDD (n = 42) LCD (n = 43) p-value mean±SD mean±SD Age (years) 64.1±7.4 63.1±10.5",
+    "he participants at baseline and study completion (18 months). TDD(n = 42) LCD(n = 43) LCD vs. TDD (change %) baseline 18 months baseline 18 mo",
+    "se (mg/dl) 160.17 (37.58) 150.48 (37.64) -9.69(-25.44 ~ 6.06) 160.33 (42.76) 133.44 (26.26) -26.88(-39.47 ~ -14.29) + 0.0727 2-h glucose (mg/d"
+   ]
+  },
+  "n_randomizado": {
+   "valor_forest": 92,
+   "ocorrencias": 2,
+   "trechos": [
+    "uria and carotid intima-media thickness (IMT). Results A total of 85 (92.4%) patients completed 18 months of the trial. At the end of the stud",
+    "were recruited from February 2016 to July 2016. Eighty-five patients (92.4%) completed the study ( Fig 1 ). There were no significant differen"
+   ]
+  }
+ },
+ "PMC5329646": {
+  "exp_media": {
+   "valor_forest": -0.8,
+   "ocorrencias": 16,
+   "trechos": [
+    "roup reduced their HbA 1c levels more (estimated marginal mean [EMM] –0.8%, 95% CI –1.1% to –0.6%) than participants in the control group (EMM",
+    "SD) 96.9 (30.4) 90.5 (29.0) Diabetes-related distress, mean (SD) 1.9 (0.8) 2.4 (1.2) CES-Depression, mean (SD) 10.5 (7.7) 9.8 (7.4) CES-D Posit",
+    "ntion group: estimated marginal mean [EMM] –0.9% at 16 weeks and EMM –0.8% at 32 weeks; control group: EMM –0.5% at 16 weeks and EMM –0.4% at 3"
+   ]
+  },
+  "exp_dp": {
+   "valor_forest": 0.44,
+   "ocorrencias": 12,
+   "trechos": [
+    "tes (years), mean (SD) 5.3 (4.1) 5.7 (3.7) HbA 1c (%), mean (SD) 7.1 (0.4) 7.2 (0.3) Weight (kg), mean (SD) 109.7 (24.9) 90.9 (16.4) Triglyceri",
+    "EMM –0.8% at 32 weeks; control group: EMM –0.5% at 16 weeks and EMM –0.4% at 32 weeks; Table 2 , Figure 2 ). At both 16 and 32 weeks, a greate",
+    "M (95% CI) P HbA 1c (%) 16 weeks –0.9 (–1.1, –0.6) –0.5 (–0.8, –0.2) –0.4 (–0.7, –0.1) .01 32 weeks –0.8 (–1.1, –0.6) –0.3 (–0.6, 0.0) –0.5 (–0"
+   ]
+  },
+  "exp_n": {
+   "valor_forest": 12,
+   "ocorrencias": 24,
+   "trechos": [
+    "32-week online intervention based on our previous recommendations (n=12) or an online diet program based around a plate method diet (n=13) to",
+    "=.02). Participants in the intervention group lost more weight (EMM –12.7 kg, 95% CI –16.1 to –9.2 kg) than participants in the control group",
+    "MM –6.2 mg/dL, 95% CI –46.0 to 33.6 mg/dL; P =.01). Dropout was 8% (1/12) and 46% (6/13) for the intervention and control groups, respectively"
+   ]
+  },
+  "ctl_media": {
+   "valor_forest": -0.3,
+   "ocorrencias": 14,
+   "trechos": [
+    ", 95% CI –1.1% to –0.6%) than participants in the control group (EMM –0.3%, 95% CI –0.6% to 0.0%; P =.002). More than half of the participants",
+    "), mean (SD) 5.3 (4.1) 5.7 (3.7) HbA 1c (%), mean (SD) 7.1 (0.4) 7.2 (0.3) Weight (kg), mean (SD) 109.7 (24.9) 90.9 (16.4) Triglycerides (mg/dL",
+    ") –0.5 (–0.8, –0.2) –0.4 (–0.7, –0.1) .01 32 weeks –0.8 (–1.1, –0.6) –0.3 (–0.6, 0.0) –0.5 (–0.8, –0.2) .002 Weight (kg) 16 weeks –8.5 (–11.9,"
+   ]
+  },
+  "ctl_dp": {
+   "valor_forest": 0.55,
+   "ocorrencias": 12,
+   "trechos": [
+    "1c levels more (estimated marginal mean [EMM] –0.8%, 95% CI –1.1% to –0.6%) than participants in the control group (EMM –0.3%, 95% CI –0.6% to",
+    "to –0.6%) than participants in the control group (EMM –0.3%, 95% CI –0.6% to 0.0%; P =.002). More than half of the participants in the interve",
+    "rence between groups, EMM (95% CI) P HbA 1c (%) 16 weeks –0.9 (–1.1, –0.6) –0.5 (–0.8, –0.2) –0.4 (–0.7, –0.1) .01 32 weeks –0.8 (–1.1, –0.6) –"
+   ]
+  },
+  "ctl_n": {
+   "valor_forest": 13,
+   "ocorrencias": 15,
+   "trechos": [
+    "(n=12) or an online diet program based around a plate method diet (n=13) to assess the impact of each intervention on glycemic control and ot",
+    "95% CI –46.0 to 33.6 mg/dL; P =.01). Dropout was 8% (1/12) and 46% (6/13) for the intervention and control groups, respectively ( P =.07). Con",
+    "zed participants to one of two groups (intervention: n=12; control: n=13) participating in a 32-week online dietary and lifestyle intervention"
+   ]
+  },
+  "n_randomizado": {
+   "valor_forest": 25,
+   "ocorrencias": 8,
+   "trechos": [
+    "feasibility study, we randomized overweight adults (body mass index ≥25) with type 2 diabetes (glycated hemoglobin [HbA 1c ] 6.5%-9.0%) to a",
+    "ty criteria included age 18 years or older with a body mass index of ≥25, an elevated HbA 1c level diagnostic of type 2 diabetes (6.5%-9%, mea",
+    "ood Addiction Scale [ 24 ] and the Eating Disorder Diagnostic Scale [ 25 ] to screen out participants who had the tendency to be addicted to f"
+   ]
+  }
+ },
+ "PMC5048014": {
+  "exp_media": {
+   "valor_forest": -0.9,
+   "ocorrencias": 0,
+   "trechos": []
+  },
+  "exp_dp": {
+   "valor_forest": 0.96,
+   "ocorrencias": 1,
+   "trechos": [
+    "K diet group during the study was recorded at 2 weeks follow-up (1.15±0.96 mmol l −1 ). The study participant with a ketonemia of 4.2 mmol l −1"
+   ]
+  },
+  "exp_n": {
+   "valor_forest": 45,
+   "ocorrencias": 7,
+   "trechos": [
+    "individual and the weight loss target, but they lasted between 30 and 45 days in total. In the metabolic stabilization stage, the ketogenic ph",
+    "y intake of <30% of calories coming from fat, 10–20% from protein and 45–60% from carbohydrates. Safety and tolerability assessment Safety par",
+    "cipated in both study groups. Thus, we aimed at recruiting a total of 45 subjects per group. Statistical analysis was performed using Statisti"
+   ]
+  },
+  "ctl_media": {
+   "valor_forest": -0.4,
+   "ocorrencias": 1,
+   "trechos": [
+    "three specific active ingredients, (20 μg chromium, 0.8 g Ginseng and 0.4 mg Biotin); and provided 90–100 kcal. This method has three stages: a"
+   ]
+  },
+  "ctl_dp": {
+   "valor_forest": 0.92,
+   "ocorrencias": 0,
+   "trechos": []
+  },
+  "ctl_n": {
+   "valor_forest": 40,
+   "ocorrencias": 1,
+   "trechos": [
+    "reater than equal to twofold the upper normal limit), alcohol intake ⩾40 g per day for men and ⩾24 g per day for women, pregnancy, lactation,"
+   ]
+  },
+  "n_randomizado": {
+   "valor_forest": 89,
+   "ocorrencias": 2,
+   "trechos": [
+    "teristics of the study participants are shown in Table 1 . A total of 89 subjects were randomized to the low-calorie, ketogenic diet (VLCK die",
+    "recommended daily allowance, 1 throughout the 6–10 initial weeks (32–89 g carbohydrate per day). VLCK diets have been shown to have beneficia"
+   ]
+  }
+ },
+ "PMC6024764": {
+  "exp_media": {
+   "valor_forest": -0.54,
+   "ocorrencias": 1,
+   "trechos": [
+    "± 1.59 −1.994 NS 3rd month 6.85 ± 0.79 7.89 ± 1.63 −3.017 0.004 ** MD 0.54 ± 1.12 0.28 ± 0.67 - - t 2.556 2.194 - - p 0.017 * 0.037 * - - p valu"
+   ]
+  },
+  "exp_dp": {
+   "valor_forest": 1.12,
+   "ocorrencias": 1,
+   "trechos": [
+    "−1.994 NS 3rd month 6.85 ± 0.79 7.89 ± 1.63 −3.017 0.004 ** MD 0.54 ± 1.12 0.28 ± 0.67 - - t 2.556 2.194 - - p 0.017 * 0.037 * - - p value for c"
+   ]
+  },
+  "exp_n": {
+   "valor_forest": 28,
+   "ocorrencias": 12,
+   "trechos": [
+    "patients were recruited and randomly allocated to the LCD group ( n = 28) and the LFD group ( n = 28). The LCD group received education about",
+    "randomly allocated to the LCD group ( n = 28) and the LFD group ( n = 28). The LCD group received education about LCD’s six-point formula, whi",
+    ".80. In view of the sample loss of 10%, the number for each group was 28. Finally, we recruited 28 patients for each group in the study. 2.4."
+   ]
+  },
+  "ctl_media": {
+   "valor_forest": -0.28,
+   "ocorrencias": 1,
+   "trechos": [
+    "4 NS 3rd month 6.85 ± 0.79 7.89 ± 1.63 −3.017 0.004 ** MD 0.54 ± 1.12 0.28 ± 0.67 - - t 2.556 2.194 - - p 0.017 * 0.037 * - - p value for compar"
+   ]
+  },
+  "ctl_dp": {
+   "valor_forest": 0.67,
+   "ocorrencias": 1,
+   "trechos": [
+    "d month 6.85 ± 0.79 7.89 ± 1.63 −3.017 0.004 ** MD 0.54 ± 1.12 0.28 ± 0.67 - - t 2.556 2.194 - - p 0.017 * 0.037 * - - p value for comparison by"
+   ]
+  },
+  "ctl_n": {
+   "valor_forest": 28,
+   "ocorrencias": 12,
+   "trechos": [
+    "patients were recruited and randomly allocated to the LCD group ( n = 28) and the LFD group ( n = 28). The LCD group received education about",
+    "randomly allocated to the LCD group ( n = 28) and the LFD group ( n = 28). The LCD group received education about LCD’s six-point formula, whi",
+    ".80. In view of the sample loss of 10%, the number for each group was 28. Finally, we recruited 28 patients for each group in the study. 2.4."
+   ]
+  },
+  "n_randomizado": {
+   "valor_forest": 56,
+   "ocorrencias": 3,
+   "trechos": [
+    "Study Participants On the basis of inclusion and exclusion criteria, 56 T2DM participants were recruited and randomly allocated to the LCD gr",
+    "nce, No 1 (4.2) 1 (4.0) 0.001 b NS Family Support Value 19 (79.2) 14 (56.0) 2.988 b NS Ordinary 5 (20.8) 11 (44.0) Exercise Never exercise 1 (",
+    "l) 538.9 ± 92.4 542.0 ± 94.8 −0.084 NS Protein-calorie (Kcal) 306.6 ± 56.7 303.3 ± 41.8 0.166 NS 3rd month Total calorie intake/day 1808.0 ± 1"
+   ]
+  }
+ },
+ "PMC9606840": {
+  "exp_media": {
+   "valor_forest": -0.26,
+   "ocorrencias": 2,
+   "trechos": [
+    "ntion group had larger decrease in HbA 1c from baseline to 6 months (–0.26%; 95% CI, –0.33% to –0.19%) than those in the usual diet group (–0.04",
+    "to –0.15) –0.07 (–0.11 to –0.02) –0.16 (–0.25 to –0.07) <.001 6 mo a –0.26 (–0.33 to –0.19) –0.04 (–0.10 to 0.02) –0.23 (–0.32 to –0.14) <.001 F"
+   ]
+  },
+  "exp_dp": {
+   "valor_forest": 0.31,
+   "ocorrencias": 3,
+   "trechos": [
+    "5.9 (8.1) 77.9 (11.0) 76.9 (9.7) Hemoglobin A 1c , mean (SD), % 6.17 (0.31) 6.14 (0.30) 6.16 (0.30) Hemoglobin A 1c <6.5% 65 (87) 65 (87) 130 (8",
+    "= 75) Primary and secondary outcomes Hemoglobin A 1c , % 3 mo –0.23 (–0.31 to –0.15) –0.07 (–0.11 to –0.02) –0.16 (–0.25 to –0.07) <.001 6 mo a",
+    "0.12) .57 6 mo –0.54 (–0.67 to –0.40) –0.41 (–0.52 to –0.29) –0.13 (–0.31 to 0.05) .15 Body weight, kg 3 mo –4.6 (–5.5 to –3.6) –0.4 (–0.9 to 0"
+   ]
+  },
+  "exp_n": {
+   "valor_forest": 75,
+   "ocorrencias": 8,
+   "trechos": [
+    "pants Characteristic Participants, No. (%) Low-carbohydrate diet (n = 75) Usual diet (n = 75) Total (N = 150) Age, mean (SD), y 59.3 (7.0) 58.",
+    "Participants, No. (%) Low-carbohydrate diet (n = 75) Usual diet (n = 75) Total (N = 150) Age, mean (SD), y 59.3 (7.0) 58.6 (8.8) 58.9 (7.9) S",
+    "125.2 (15.4) 124.3 (14.1) Diastolic blood pressure, mean (SD), mm Hg 75.9 (8.1) 77.9 (11.0) 76.9 (9.7) Hemoglobin A 1c , mean (SD), % 6.17 (0"
+   ]
+  },
+  "ctl_media": {
+   "valor_forest": -0.04,
+   "ocorrencias": 2,
+   "trechos": [
+    "0.26%; 95% CI, –0.33% to –0.19%) than those in the usual diet group (–0.04%; 95% CI, –0.10% to –0.02%) with a net difference in change of –0.23%",
+    "to –0.02) –0.16 (–0.25 to –0.07) <.001 6 mo a –0.26 (–0.33 to –0.19) –0.04 (–0.10 to 0.02) –0.23 (–0.32 to –0.14) <.001 Fasting plasma glucose,"
+   ]
+  },
+  "ctl_dp": {
+   "valor_forest": 0.27,
+   "ocorrencias": 2,
+   "trechos": [
+    "0) .05 Waist circumference, cm 3 mo –3.0 (–4.3 to –1.7) –0.5 (–1.2 to 0.3) –2.5 (–4.0 to –1.0) .001 6 mo –5.2 (–6.9 to –3.5) –0.5 (–1.6 to 0.5)",
+    "o 0.2) .11 6 mo –1.7 (–2.5 to –0.9) –0.9 (–1.6 to –0.2) –0.8 (–1.8 to 0.3) .14 HDL, mg/dL b 3 mo 3.1 (1.2 to 4.9) 3.0 (1.6 to 4.4) 0.1 (–2.2 to"
+   ]
+  },
+  "ctl_n": {
+   "valor_forest": 75,
+   "ocorrencias": 8,
+   "trechos": [
+    "pants Characteristic Participants, No. (%) Low-carbohydrate diet (n = 75) Usual diet (n = 75) Total (N = 150) Age, mean (SD), y 59.3 (7.0) 58.",
+    "Participants, No. (%) Low-carbohydrate diet (n = 75) Usual diet (n = 75) Total (N = 150) Age, mean (SD), y 59.3 (7.0) 58.6 (8.8) 58.9 (7.9) S",
+    "125.2 (15.4) 124.3 (14.1) Diastolic blood pressure, mean (SD), mm Hg 75.9 (8.1) 77.9 (11.0) 76.9 (9.7) Hemoglobin A 1c , mean (SD), % 6.17 (0"
+   ]
+  },
+  "n_randomizado": {
+   "valor_forest": 150,
+   "ocorrencias": 4,
+   "trechos": [
+    ".0% to 6.9%? Findings In this randomized clinical trial that included 150 adults, the low-carbohydrate diet intervention significantly reduced",
+    "uggested a 0.35% SD of 6-month net change in HbA 1c . Therefore, with 150 participants, we had 80% statistical power at 2-sided significance le",
+    "Of 2722 prescreened participants, 962 underwent screening. A total of 150 participants (mean [SD] age, 58.9 [7.9] years; 108 women [72%]; 88 Bl"
+   ]
+  }
+ },
+ "REF9": {
+  "exp_media": {
+   "valor_forest": -0.35,
+   "ocorrencias": 2,
+   "trechos": [
+    "–5.18 mm Hg; P = .046), greater improvement in glycated hemoglobin (–0.35% vs –0.14%; P = .034), and greater improvement in weight (–19.14 lb v",
+    "(1.80) –5.18 (1.59) .002 –4.59 .046 HbA1c, % 6.09 (0.07) 5.74 (0.08) –0.35 (0.07) <.001 6.10 (0.07) 5.97 (0.07) –0.14 (0.07) .06 –0.21 .034 Weig"
+   ]
+  },
+  "exp_dp": {
+   "valor_forest": 0.47,
+   "ocorrencias": 1,
+   "trechos": [
+    "28.50 (7.51) <.001 Age, y −0.004 (0.14) .98 −0.002 (0.01) .69 −2.12 ( 0.47 ) <.001 BP = blood pressure; DASH = Dietary Approaches to Stop Hypert"
+   ]
+  },
+  "exp_n": {
+   "valor_forest": 45,
+   "ocorrencias": 1,
+   "trechos": [
+    "36) 4 (16.00) 8 (33.33) ≥$75,001 10 (43.48) 12 (54.55) 18 (72.00) 11 (45.83) Smoker, No. (%) 0 (0) 1 (4.55) 0 (0) 1 (4.17) SBP, mm Hg 132.53 ("
+   ]
+  },
+  "ctl_media": {
+   "valor_forest": -0.14,
+   "ocorrencias": 6,
+   "trechos": [
+    "Hg; P = .046), greater improvement in glycated hemoglobin (–0.35% vs –0.14%; P = .034), and greater improvement in weight (–19.14 lb vs –10.34 l",
+    "HbA1c decreased by 0.34 (SE, 0.08) % (n = 39) in the VLC group and by 0.14 (0.07) % (n = 42) in the DASH group, which was a difference between t",
+    "% 6.09 (0.07) 5.74 (0.08) –0.35 (0.07) <.001 6.10 (0.07) 5.97 (0.07) –0.14 (0.07) .06 –0.21 .034 Weight, lb 219.24 (5.39) 200.10 (5.41) –19.14 ("
+   ]
+  },
+  "ctl_dp": {
+   "valor_forest": 0.49,
+   "ocorrencias": 0,
+   "trechos": []
+  },
+  "ctl_n": {
+   "valor_forest": 49,
+   "ocorrencias": 1,
+   "trechos": [
+    "2 (8.2) 82.02 (8.24) Weight, lb 222.22 (40.53) 213.14 (31.64) 236.25 (49.61) 227.08 (42.77) BMI, kg/m2 35.10 (5.71) 35.50 (4.69) 37.34 (6.20)"
+   ]
+  },
+  "n_randomizado": {
+   "valor_forest": 94,
+   "ocorrencias": 5,
+   "trechos": [
+    "s and support strategies should be recommended. METHODS We randomized 94 adults from southeast Michigan with this triple multimor - bidity usi",
+    "gression models first using an intention-to-treat (ITT) analysis (n = 94). To examine the robustness of findings, we conducted linear regressi",
+    "Standards of Reporting Tri - als enrollment flow diagram (Figure 1), 94 participants were randomized. Demographic characteristics of the rand"
+   ]
+  }
+ },
+ "REF12": {
+  "exp_media": {
+   "valor_forest": -0.83,
+   "ocorrencias": 4,
+   "trechos": [
+    ".5 ± 25.4 −5.8 ± 2.3 ‡ 33 98.0 ± 14.2 −5.8 ± 1.8 ‡ 34 0.1 (−0.6, 0.7) 0.83  BMI, kg/m 2 33.2 ± 5.1 −2.0 ± 0.6 ‡ 33 33.6 ± 4.6 −2.0 ± 0.6 ‡ 34 −0",
+    "‡ p < 0.001 vs baseline Fig. 2 Fasting measures of body weight ( p  = 0.83) ( a ), HbA 1c ( p  = 0.018) ( b ), plasma glucose ( p  = 0.64) ( c )",
+    "5, −0.3) 0.018  HbA 1c , % 7.40 ± 0.70 −0.66 ± 0.37 ‡ 33 7.42 ± 0.77 −0.83 ± 0.38 ‡ 34 −0.18 (−0.32, −0.03) 0.018  Fasting glucose, mmol/l 8.4 ("
+   ]
+  },
+  "exp_dp": {
+   "valor_forest": 0.38,
+   "ocorrencias": 2,
+   "trechos": [
+    ") 0.018  HbA 1c , % 7.40 ± 0.70 −0.66 ± 0.37 ‡ 33 7.42 ± 0.77 −0.83 ± 0.38 ‡ 34 −0.18 (−0.32, −0.03) 0.018  Fasting glucose, mmol/l 8.4 (7.8, 10",
+    ".10, 0.06) 33 0.51 (0.44, 0.65) −0.04 (−0.08, 0.00)* 34 −4 (−11, 5) a 0.38 Data at baseline and changes from baseline are presented as means ± S"
+   ]
+  },
+  "exp_n": {
+   "valor_forest": 34,
+   "ocorrencias": 31,
+   "trechos": [
+    "%]) and mean BMI of 33 kg/m 2 were enrolled, of which 67 (CD 33, CRHP 34) completed the study. Body weight decreased by 5.8 kg (5.9%) in both",
+    "ipants Characteristic CD diet CRHP diet Participants/white, n 33 / 33 34 / 34 Male/female sex, n 15 / 18 20 / 14 Age, years 67.0 ± 8.8 66.4 ±",
+    "s Characteristic CD diet CRHP diet Participants/white, n 33 / 33 34 / 34 Male/female sex, n 15 / 18 20 / 14 Age, years 67.0 ± 8.8 66.4 ± 6.9 D"
+   ]
+  },
+  "ctl_media": {
+   "valor_forest": -0.66,
+   "ocorrencias": 1,
+   "trechos": [
+    "8.4 −9.1 ± 4.2 ‡ 34 −1.9 (−3.5, −0.3) 0.018  HbA 1c , % 7.40 ± 0.70 −0.66 ± 0.37 ‡ 33 7.42 ± 0.77 −0.83 ± 0.38 ‡ 34 −0.18 (−0.32, −0.03) 0.018"
+   ]
+  },
+  "ctl_dp": {
+   "valor_forest": 0.37,
+   "ocorrencias": 1,
+   "trechos": [
+    ".1 ± 4.2 ‡ 34 −1.9 (−3.5, −0.3) 0.018  HbA 1c , % 7.40 ± 0.70 −0.66 ± 0.37 ‡ 33 7.42 ± 0.77 −0.83 ± 0.38 ‡ 34 −0.18 (−0.32, −0.03) 0.018  Fastin"
+   ]
+  },
+  "ctl_n": {
+   "valor_forest": 33,
+   "ocorrencias": 38,
+   "trechos": [
+    "E%]: CH30/P30/F40) or a conventional diabetes diet (CD, E%: CH50/P17/F33). Fasting blood samples, continuous glucose monitoring and magnetic r",
+    "ean duration 8 years, mean HbA 1c 57 mmol/mol [7.4%]) and mean BMI of 33 kg/m 2 were enrolled, of which 67 (CD 33, CRHP 34) completed the stud",
+    "/mol [7.4%]) and mean BMI of 33 kg/m 2 were enrolled, of which 67 (CD 33, CRHP 34) completed the study. Body weight decreased by 5.8 kg (5.9%)"
+   ]
+  },
+  "n_randomizado": {
+   "valor_forest": 72,
+   "ocorrencias": 2,
+   "trechos": [
+    "process included 338 pre-screenings and 102 on-site screening visits; 72 participants were finally included in the study. Two participants wit",
+    "omes (Fig. 1 ). Because of restrictions due to the COVID-19 pandemic, 72 participants rather than the planned 80 were included in the study, w"
+   ]
+  }
+ }
+}

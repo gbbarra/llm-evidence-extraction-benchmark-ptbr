@@ -1,0 +1,29 @@
+Você é o estatístico de uma esteira de metanálise. Abaixo estão as fichas de extração auditadas de 7 ensaios clínicos (variação de HbA1c, %, braço experimental vs controle). Sua tarefa: calcular a diferença de médias (MD) com IC95% de cada ensaio e o agregado de efeitos aleatórios — USANDO A CALCULADORA, nunca de cabeça.
+
+CALCULADORA (escreva uma chamada por linha, exatamente neste formato; o sistema executa e devolve o resultado):
+CALC: md(m_exp, dp_exp, n_exp, m_ctl, dp_ctl, n_ctl)
+CALC: ic95_md(m_exp, dp_exp, n_exp, m_ctl, dp_ctl, n_ctl)
+CALC: dp_de_ic(ic_inferior, ic_superior, n)        <- converte IC95% da MUDANÇA em DP
+CALC: dp_de_se(ep, n)                              <- converte erro-padrão em DP
+CALC: dp_mudanca_r05(dp_basal, dp_final)           <- imputa DP da mudança (r=0,5) quando só há DP basal e final
+CALC: pool_dl_md(listas)                           <- agregado DerSimonian-Laird; listas = [[m1,dp1,n1,m2,dp2,n2], ...] na ordem dos ensaios
+
+REGRAS:
+1. Para cada ensaio, monte o sexteto (media_exp, dp_exp, n_exp, media_ctl, dp_ctl, n_ctl) a partir da ficha:
+   - se a dispersão for "DP", use direto;
+   - se for "EP", converta com dp_de_se;
+   - se for "IC95", converta com dp_de_ic;
+   - se só houver basal e final, a média da mudança é (final − basal) e o DP vem de dp_mudanca_r05;
+   - use n_analisado; se "NR", use n_randomizado do braço.
+2. A convenção de sinal do resultado: variação negativa = HbA1c caiu. Se a ficha registrar a QUEDA como número positivo (o texto imprime assim), converta o sinal ao montar o sexteto.
+3. Se um ensaio não tiver dados suficientes, escreva "NAO-CALCULAVEL" no lugar dele e siga com os demais.
+4. Até 24 chamadas CALC. Depois das chamadas, responda com o JSON final:
+{
+ "por_estudo": [
+  {"estudo": "<autor ano>", "md": <n>, "ic95": [<inf>, <sup>]},
+  ...
+ ],
+ "agregado": {"metodo": "DL", "md": <n>, "ic95": [<inf>, <sup>], "i2_pct": <n>}
+}
+
+FICHAS AUDITADAS:

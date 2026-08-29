@@ -1,0 +1,47 @@
+Você é um revisor de metanálise fazendo extração de dados. Leia o artigo de ensaio clínico abaixo e preencha a ficha JSON.
+
+REGRAS:
+1. Copie os números EXATAMENTE como impressos no texto, incluindo o sinal (se o texto diz "MD 0.54", escreva "0.54"; se diz "−0.83", escreva "-0.83").
+2. Se o artigo não reporta um campo, escreva "NR". Nunca invente nem calcule você mesmo — esta etapa é só de LEITURA.
+3. O desfecho de interesse é a VARIAÇÃO de HbA1c (%) entre o início e o fim do acompanhamento, por braço. Se o texto reporta a variação pronta, preencha "hba1c_mudanca_*". Se reporta só os valores basal e final, preencha "hba1c_basal_*" e "hba1c_final_*" e deixe a mudança como "NR".
+4. Em "hba1c_mudanca_tipo_dispersao", diga o que o número entre parênteses ou após ± significa NAQUELE texto: "DP" (desvio-padrão), "EP" (erro-padrão) ou "IC95: <inferior> a <superior>" (intervalo de confiança). Se não houver dispersão, "NR".
+5. Se o ensaio tiver mais de dois grupos (por exemplo, um desenho fatorial), use os agrupamentos que o próprio texto compara para o desfecho de HbA1c (por exemplo, as margens de dieta) e explique isso no campo "rotulo".
+6. "n_randomizado" é quem foi sorteado; "n_analisado" é quem entrou na análise daquele desfecho. Se o texto só der um deles, o outro é "NR".
+7. Responda APENAS com o JSON, sem comentários.
+
+FORMATO DA RESPOSTA:
+{
+ "estudo": "<primeiro autor e ano>",
+ "desenho": "<paralelo 2 braços | fatorial 2x2 | cluster | outro: descreva>",
+ "pais": "",
+ "duracao": "<com unidade, ex.: 32 semanas | 6 meses>",
+ "n_randomizado_total": "",
+ "braco_experimental": {
+  "rotulo": "<como o texto chama o braço de dieta com menos carboidrato>",
+  "descricao_intervencao": "",
+  "n_randomizado": "",
+  "n_analisado": "",
+  "hba1c_mudanca_media": "",
+  "hba1c_mudanca_dispersao": "",
+  "hba1c_mudanca_tipo_dispersao": "",
+  "hba1c_basal_media": "",
+  "hba1c_basal_dp": "",
+  "hba1c_final_media": "",
+  "hba1c_final_dp": ""
+ },
+ "braco_controle": {
+  "rotulo": "<como o texto chama o braço de comparação>",
+  "descricao_intervencao": "",
+  "n_randomizado": "",
+  "n_analisado": "",
+  "hba1c_mudanca_media": "",
+  "hba1c_mudanca_dispersao": "",
+  "hba1c_mudanca_tipo_dispersao": "",
+  "hba1c_basal_media": "",
+  "hba1c_basal_dp": "",
+  "hba1c_final_media": "",
+  "hba1c_final_dp": ""
+ }
+}
+
+ARTIGO:
