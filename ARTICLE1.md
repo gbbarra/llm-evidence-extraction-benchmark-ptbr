@@ -10,7 +10,7 @@ EXTRAI is the second benchmark of a line that runs entirely on consumer hardware
 
 ## What exactly was done
 
-The anchor: a meta-analysis of goal-directed fluid therapy (GDFT — steering surgical fluids by measured hemodynamic targets instead of fixed volumes), published in Cureus in June 2026 — published *after* the models' training cutoffs), with 14 randomized trials. The 8 open-access ones came from Europe PMC; the 6 paywalled ones from my institutional access and legal author manuscripts — **the entire meta-analysis**. Each model read each trial and performed three tasks: the 30-field form (T1), risk of bias across the 7 Cochrane domains (T2), and a synthesis using only its own extractions (T3). Two replicates per task, 232 graded runs:
+The anchor: Ashraf N, Zargar OUU and Albina A, **"Comparison of Goal-Directed Fluid Therapy and Conventional Fluid Therapy in Elective Major Abdominal Surgery: A Meta-Analysis of Randomized Controlled Trials"** ([Cureus, June 2026, open access CC BY](https://doi.org/10.7759/cureus.110243)) — a meta-analysis of goal-directed fluid therapy (GDFT — steering surgical fluids by measured hemodynamic targets instead of fixed volumes), published — published *after* the models' training cutoffs), with 14 randomized trials. The 8 open-access ones came from Europe PMC; the 6 paywalled ones from my institutional access and legal author manuscripts — **the entire meta-analysis**. Each model read each trial and performed three tasks: the 30-field form (T1), risk of bias across the 7 Cochrane domains (T2), and a synthesis using only its own extractions (T3). Two replicates per task, 232 graded runs:
 
 | Block | Compute | Runs | Time |
 |---|---|---|---|
@@ -51,7 +51,7 @@ The pre-registration (H1.1) bet on the big faithful models: 27B ≥ 26b > 12b �
 
 ### 3. The models audited the published meta-analysis — 15 errata entries, every one with a quote
 
-The [errata file](dados/estudo1/erratas-da-ancora.md) records each item with the deciding source snippet (in the table, "MA" is the anchor meta-analysis — the published review whose tables serve as the answer key; and each trial names its guided arm its own way: GDHT, PGDT, GDT — it is always the GDFT arm). The headliners:
+Before the list, a note of fairness: transcription errors happen in any hand-made review — this benchmark's own judge logged three errata in the same round, and the point here is the process, not the authors. The [errata file](dados/estudo1/erratas-da-ancora.md) records each item with the deciding source snippet (in the table, "MA" is the anchor meta-analysis — the published review whose tables serve as the answer key; and each trial names its guided arm its own way: GDHT, PGDT, GDT — it is always the GDFT arm). The headliners:
 
 | # | Study | What the MA published | What the source says |
 |---|---|---|---|
