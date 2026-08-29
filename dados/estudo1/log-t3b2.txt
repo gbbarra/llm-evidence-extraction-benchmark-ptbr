@@ -1,0 +1,5 @@
+gemma12 t3b: 278s, 15803+618 tok, fim=stop
+qwen14 t3b: 259s, 11969+647 tok, fim=stop
+gemma26 t3b: 382s, 13214+646 tok, fim=stop
+qwen38 t3b: 1345s, 16259+625 tok, fim=stop
+T3B CONCLUÍDA.

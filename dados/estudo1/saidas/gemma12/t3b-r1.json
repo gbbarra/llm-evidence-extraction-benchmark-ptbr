@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma12",
+  "ollama": "gemma4:12b",
+  "pmcid": null,
+  "tarefa": "t3b",
+  "replica": 1,
+  "inicio": "2026-08-28 20:18:38",
+  "content": "A análise dos 14 ensaios clínicos randomizados comparando a fluidoterapia guiada por metas (GDFT) com a fluidoterapia convencional em cirurgia abdominal de grande porte revela evidências variadas sobre os desfechos clínicos. Em relação à morbidade pós-operatória, os resultados são inconsistentes. Em alguns estudos, a GDFT demonstrou redução significativa de eventos (Sun 2023, Castro 2024 e Calvo-Vecino 2018), enquanto outros não mostraram diferença significativa ou apresentaram dados inconclusivos (Yoon 2023, Wu 2024 e Schmid 2016). No ensaio de Hokenek 2022, a taxa de morbidade foi numericamente menor no grupo controle, mas o tamanho da amostra e a consistência entre os estudos não permitem uma conclusão uniforme sobre a magnitude do efeito.\n\nQuanto à mortalidade, o desfecho foi reportado em apenas quatro ensaios. Em três destes (Sun 2023, Castro 2024 e Arslan-Carlon 2020), a mortalidade foi comparável entre os grupos ou não houve diferença significativa. No estudo de Schmid 2016, a mortalidade também foi reportada com valores próximos entre os grupos, embora com desvios padrão elevados, indicando que a GDFT não demonstra benefício ou prejuízo claro na sobrevida dos pacientes com base nos dados disponíveis.\n\nSobre o tempo de internação hospitalar (LOS), os resultados são mistos. Três ensaios (Sun 2023, Rosenberg 2017 e Calvo-Vecino 2018) sugerem uma tendência favorável à GDFT com menor tempo de permanência no hospital, enquanto o estudo de Redondo Calvo 2025 indicou um tempo ligeiramente menor para o grupo GDFT. No entanto, os estudos de Diaper 2021 e Arslan-Carlon 2020 reportaram tempos comparáveis. O ensaio de Sujatha 2019 também indicou resultados comparáveis para este desfecho.\n\nEm relação à função intestinal, os dados são escassos e inconsistentes. Apenas o estudo de Sujatha 2019 forneceu dados detalhados, indicando que a GDFT resultou em tempos de flatus, ingestão oral e evacuação comparáveis ao controle. O estudo de Wu 2024 reportou uma redução significativa no tempo de ingestão oral no grupo GDFT, mas considerou a diferença clinicamente insignificante. O ensaio de Arslan-Carlon 2020 reportou taxas de íleo pós-operatório comparáveis (25% vs 21%). Nos demais ensaios, os dados de flatus, ingestão oral e evacuação não foram reportados (NR).",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 618,
+  "dt": 278.4643708,
+  "prompt_tokens": 15803
+}

@@ -1,0 +1,97 @@
+{
+ "pmcid": "PMC13242649",
+ "titulo": "Effect of Low-Carbohydrate Diets on Glycemic Control in Type 2 Diabetes Mellitus: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+ "revista": "Cureus",
+ "licenca": "CC BY 4.0",
+ "primarios": [
+  {
+   "ref": "8",
+   "rotulo_tabela": "Saslow et al. [ 8 ]",
+   "titulo": "An online intervention comparing a very low-carbohydrate ketogenic diet and lifestyle recommendations versus a plate method diet in overweight individuals with type 2 diabetes: a randomized controlled trial",
+   "doi": "10.2196/jmir.5806",
+   "pmcid": "PMC5329646",
+   "oa": true,
+   "ano": "2017",
+   "revista": "?",
+   "xml": "PMC5329646.xml",
+   "licenca": "CC BY 2.0",
+   "estrato": "aberto"
+  },
+  {
+   "ref": "9",
+   "rotulo_tabela": "Saslow et al. [ 9 ]",
+   "titulo": "Comparing very low-carbohydrate vs DASH diets for overweight or obese adults with hypertension and prediabetes or type 2 diabetes: a randomized trial",
+   "doi": "10.1370/afm.2968",
+   "pmcid": "PMC10202504",
+   "oa": false,
+   "ano": "2023",
+   "revista": "?",
+   "licenca": "fechado (caça legal do autor; nunca versionar)",
+   "estrato": "fechado"
+  },
+  {
+   "ref": "10",
+   "rotulo_tabela": "Dorans et al. [ 10 ]",
+   "titulo": "Effects of a low-carbohydrate dietary intervention on hemoglobin A1c: a randomized clinical trial",
+   "doi": "10.1001/jamanetworkopen.2022.38645",
+   "pmcid": "PMC9606840",
+   "oa": true,
+   "ano": "2022",
+   "revista": "?",
+   "xml": "PMC9606840.xml",
+   "licenca": "CC BY 4.0",
+   "estrato": "aberto"
+  },
+  {
+   "ref": "11",
+   "rotulo_tabela": "Chen et al. [ 11 ]",
+   "titulo": "Effect of a 90 g/day low-carbohydrate diet on glycaemic control, small, dense low-density lipoprotein and carotid intima-media thickness in type 2 diabetic patients: an 18-month randomised controlled trial",
+   "doi": "10.1371/journal.pone.0240158",
+   "pmcid": "PMC7535044",
+   "oa": true,
+   "ano": "2020",
+   "revista": "?",
+   "xml": "PMC7535044.xml",
+   "licenca": "CC BY 4.0",
+   "estrato": "aberto"
+  },
+  {
+   "ref": "12",
+   "rotulo_tabela": "Thomsen et al. [ 12 ]",
+   "titulo": "Dietary carbohydrate restriction augments weight loss-induced improvements in glycaemic control and liver fat in individuals with type 2 diabetes: a randomised controlled trial",
+   "doi": "10.1007/s00125-021-05628-8",
+   "pmcid": "PMC8739348",
+   "oa": true,
+   "ano": "2022",
+   "revista": "?",
+   "licenca": "PMC COVID-19 OA Subset (não-CC; expirada com a declaração da OMS) — tratado como fechado: local, nunca versionar",
+   "estrato": "fechado"
+  },
+  {
+   "ref": "13",
+   "rotulo_tabela": "Wang et al. [ 13 ]",
+   "titulo": "The effect of low-carbohydrate diet on glycemic control in patients with type 2 diabetes mellitus",
+   "doi": "10.3390/nu10060661",
+   "pmcid": "PMC6024764",
+   "oa": true,
+   "ano": "2018",
+   "revista": "?",
+   "xml": "PMC6024764.xml",
+   "licenca": "CC BY 4.0",
+   "estrato": "aberto"
+  },
+  {
+   "ref": "14",
+   "rotulo_tabela": "Goday et al. [ 14 ]",
+   "titulo": "Short-term safety, tolerability and efficacy of a very low-calorie-ketogenic diet interventional weight loss program versus hypocaloric diet in patients with type 2 diabetes mellitus",
+   "doi": "10.1038/nutd.2016.36",
+   "pmcid": "PMC5048014",
+   "oa": true,
+   "ano": "2016",
+   "revista": "?",
+   "xml": "PMC5048014.xml",
+   "licenca": "CC BY 4.0",
+   "estrato": "aberto"
+  }
+ ]
+}

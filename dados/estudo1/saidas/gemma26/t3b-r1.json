@@ -1,0 +1,14 @@
+{
+  "modelo": "gemma26",
+  "ollama": "gemma4:26b",
+  "pmcid": null,
+  "tarefa": "t3b",
+  "replica": 1,
+  "inicio": "2026-08-28 20:27:36",
+  "content": "A análise dos 14 ensaios clínicos randomizados revela um cenário de heterogeneidade nos resultados da fluidoterapia guiada por metas (GDFT) em cirurgias abdominais de grande porte. No que diz respeito à morbidade pós-operatória, a evidência é inconsistente, com disparidades significativas na direção do efeito. Alguns estudos reportam uma redução clara na morbidade com o uso de GDFT (Sun 2023, Wu 2024, Calvo-Vecino 2018), enquanto outros demonstram um aumento de eventos no grupo GDFT (Diaper 2021, Hokenek 2022, Arslan-Carlon 2020) ou não apresentam diferença significativa (Yoon 2023, Castro 2024, de Waal 2021). A incerteza é alta devido à falta de convergência entre os ensaios que reportaram este desfecho.\n\nQuanto à mortalidade, os dados são escassos e insuficientes para estabelecer uma conclusão definitiva. Os ensaios que reportaram este desfecho não demonstraram uma tendência clara de superioridade para a GDFT, apresentando resultados que variam entre a similaridade (Schmid 2016, de Waal 2021) e uma leve tendência de aumento no grupo controle (Redondo Calvo 2025) ou no grupo GDFT (Castro 2024). A maioria dos estudos não reportou dados sobre mortalidade (NR).\n\nEm relação ao tempo de internação hospitalar (LOS), a evidência sugere um efeito favorável à GDFT, embora com baixa consistência quantitativa. Estudos como Sun 2023, Weinberrg 2017 e Calvo-Vecino 2018 indicam reduções no tempo de permanência hospitalar no grupo GDFT. Contudo, outros ensaios não encontraram diferença (Yoon 2023, de Waal 2021, Diaper 2021) ou reportaram valores muito próximos (Castro 2024, Redondo Calvo 2025).\n\nPor fim, sobre a função intestinal, os dados são limitados e apresentam resultados divergentes. No desfecho de íleo pós-operatório, há evidências de que a GDFT pode reduzir a incidência de íleo (Sun 2023, de Waal 2021), mas outros estudos não reportaram o dado ou mostraram resultados similares (Yoon 2023, Arslan-Carlon 2020). Quanto ao tempo para flatus, ingesta oral e evacuação, os resultados são escassos e incompletos; embora alguns ensaios sugiram uma aceleração da recuperação intestinal com GDFT (Sun 2023, Wu 2024, Calvo-Vecino 2018), muitos outros não reportaram esses parâmetros (NR).",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 646,
+  "dt": 381.7800957,
+  "prompt_tokens": 13214
+}

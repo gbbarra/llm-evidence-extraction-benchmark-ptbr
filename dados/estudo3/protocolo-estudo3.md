@@ -1,0 +1,96 @@
+# EXTRAI — Pre-registered protocol, Study 3: "the pipeline"
+
+**Registered 2026-08-29, before any run.** Amendments only as dated sections. General method: [`METHOD.md`](../../METHOD.md). Design sketched in the [roadmap](../../roadmap.md); the two arm-level decisions below marked *(author's choice)* were made by the author before this registration.
+
+> Language note (repo convention): protocol in English; task prompts in Portuguese (frozen pre-registered instruments — the benchmark scenario is Portuguese instructions over English articles).
+
+## 1. Question
+
+Study 1 measured extraction in isolation (champion: 100% over 156 cells). Study 2 measured arithmetic in isolation (champion: 8/8 + 8/8 CIs under the CALC protocol). Study 3 asks: **does a pipeline of local models — each stage cast by its measured winner — carry a stack of trial reports all the way to a finished forest plot, with no human between stages?** And the new capability under test: **can a second model serve as the quality gate**, verifying another model's extraction sheet against the source and catching errors deliberately planted in it?
+
+## 2. Anchor and corpus
+
+Chosen after a five-round hunt (~320 candidate meta-analyses screened; record in the [roadmap](../../roadmap.md)). A genetics/genomics angle was explored at the author's request and found unviable: pharmacogenomics RCT primaries live behind paywalls (0–33% OA in every candidate probed), gene-therapy meta-analyses pool single-arm trials (no comparator), and diagnostic-yield meta-analyses pool cohorts, not RCTs.
+
+**Anchor**: *Effect of Low-Carbohydrate Diets on Glycemic Control in Type 2 Diabetes Mellitus* (PMC13242649, Cureus, 2026-06, CC BY 4.0; DOI 10.7759/cureus.108479). Seven RCTs, 562 participants, one outcome: HbA1c change (%) vs control diet, mean difference by inverse variance, random effects. Published diamond: **MD −0.24 [−0.32, −0.16], I² = 6%, Tau² = 0.00**.
+
+- The per-study table (mean/SD/n both arms × 7 trials) exists only in the forest-plot figure; it was transcribed by Claude (assistant) into [`ma-lowcarb-meta.json`](../../corpus/estudo3/ma/ma-lowcarb-meta.json) and **mechanically validated before this registration**: all 7 per-study MDs and 95% CIs reproduce exactly (±0.01) under the Study-2 functions; the IV pooled MD reproduces exactly (−0.24) with CI bounds 0.01 inside the published ones — consistent with 2-decimal input rounding (tolerance policy in §8).
+- **Corpus**: 5/7 primaries carry CC BY licenses (XMLs versioned in `corpus/estudo3/primarios/`). Two are closed-stratum (local only, never versioned): Saslow 2023 (DOI 10.1370/afm.2968, Annals of Family Medicine; legally obtained by the author) and Thomsen 2022 (DOI 10.1007/s00125-021-05628-8, Diabetologia; full text available via the PMC COVID-19 Open Access Subset, whose re-use grant is tied to the ended WHO pandemic declaration — treated conservatively as non-redistributable). Per-file license record in `primarios.json`.
+- **Contamination stance**: the anchor is post-cutoff (2026-06); the primaries (2016–2023) predate the models' cutoffs. Defense is the perturbation operator (§5): every load-bearing number in the texts the models read is displaced, so a model reciting a remembered published value scores as a source mismatch — memory becomes detectable, not helpful. (Author's design note: the models are unlikely to remember trial-level numbers at all; the perturbation makes this an observable rather than an assumption.)
+
+## 3. Design: five stages, two lanes
+
+Stages are cast by the **measured winners** of Studies 1–2 (attribution: who does what is fixed here, before any run):
+
+| Stage | Task | Model (why) |
+|---|---|---|
+| **E — extract** | Per-trial extraction sheet (~14 fields: identity, design, country, duration, arm definitions, n randomized/analyzed per arm, HbA1c change mean/SD/n per arm, unit) from the **perturbed** full text | gemma4:12b (Study 1: 100% on 156 cells, fastest) |
+| **A — audit** | Receives the perturbed text + an extraction sheet; must verify **every field** against the text and emit per-field verdicts: `confirma` / `corrige: <value>` / `nao-encontrado` | qwen3.8:27b (Study 2 champion; different family from Stage E = independent eyes) |
+| **C — arithmetic** | Per-study MD + 95% CI + pooled DL + I², via the CALC text protocol with **forced closure** | qwen3.8:27b (Study 2: 8/8 + 8/8) |
+| **S — synthesis** | 250–400-word evidence summary **with the pooled numbers in its context** (Study-1 T3b lesson) | gemma4:26b (Study 1's strongest long-form profile) |
+| **F — forest plot** | Deterministic matplotlib render of Stage C's numbers. **No model.** Fidelity is judged on the numbers, not the pixels | script |
+
+**Two lanes end-to-end** (the seeded-errors arm is the author's choice, locked before registration):
+
+- **Lane L (clean)**: E → A (E's real sheets) → C → S → F.
+- **Lane S (seeded)**: E → A (same sheets with k planted errors, §4) → C → S → F.
+
+Stage A's output sheet (auditor-corrected) is what flows downstream in both lanes, so an uncaught seed **propagates** — the pipeline measures not just each stage but the cost of a missed catch on the final diamond.
+
+Replicates: Stage E ×2 (second measures stability; first parseable proceeds), Stages A/C/S ×1 per lane. Estimated ~30 runs total.
+
+## 4. Seeded errors (Lane S)
+
+**k = 8 seeds** over the 7 sheets: at most 2 per sheet, and **at least 2 sheets left untouched** (specificity controls — the auditor is never told whether or how many errors exist). Four classes, 2 each, chosen to span semantic distance:
+
+| Class | Example | Tests |
+|---|---|---|
+| `troca-de-braco` | experimental and control means swapped for one quantity | semantic reading (direction) |
+| `digito` | one digit altered (0.44 → 0.64) | character-level verification |
+| `n-trocado` | digit transposition in a sample size (75 → 57) | numeric attention |
+| `sinal` | sign flipped (−0.35 → 0.35) | direction sense |
+
+The seed list is generated and **sealed before any run** (`dados/estudo3/sementes-auditoria.json`, gitignored like the perturbation files; its SHA-256 is printed into the run log at execution time and the file is published with the grading).
+
+**Measures**: sensitivity (seeds caught), false-alarm rate (clean fields wrongly "corrected"), correction accuracy (does `corrige` land on the text's true value?), and **propagation** (Δ on the pooled MD per uncaught seed).
+
+## 5. Perturbation (proof of reading)
+
+The Study-1 operator (semantic anchors ±120 chars, distinctiveness tiers, manual curation, leak verification) applied to the 7 primary texts; seals gitignored until grading is published. Extraction is scored against the **perturbed** values: matching the perturbed text proves reading; matching the published value instead is scored as recitation (`recitou`).
+
+## 6. Frozen configurations
+
+Ollama `/api/generate`; ctx 16384 (Stage S: 24576 if the prompt exceeds ~15k tokens — Study-1 T3b lesson); `think: false` everywhere (Stage C outsources arithmetic to CALC, not to reasoning); temperature at model default; `num_gpu: 0` for the CPU-assigned models; queue order fastest-first; resume-safe queues; first-parseable-replicate rule.
+
+**CALC harness extension (declared before runs)**: Study 2's `pool_dl` covers dichotomous quadruples only; Study 3 adds `pool_dl_md` (DerSimonian-Laird over continuous sextuples) to the function table. It is validated against the anchor's published diamond before the queue starts, exactly as Study 2's functions were validated against its anchor (validation output kept in the run log).
+
+**Forced closure (Stage C)**: if a run makes CALC calls but emits no final JSON, the harness appends the calls-and-results transcript and reprompts — *"emita agora o JSON final"* — up to 3 times before scoring a closure failure. This is the harness fix motivated by Study 2's finding 2 (all arm-B failures were workflow, not arithmetic).
+
+## 7. Prompts
+
+Portuguese, frozen before the queue starts, in `dados/estudo3/prompts/` (e3-extracao.txt, e3-auditoria.txt, e3-calc.txt, e3-sintese.txt). The audit prompt instructs field-by-field verification against the text and forbids assuming the sheet is right or wrong a priori.
+
+## 8. Scoring (mechanical core + adjudication rite)
+
+- **Numeric fields**: exact vs the perturbed source (tolerance ±0.01 for MD/CI at 2 decimals; ±0.5 pp for I²). Text fields: Study-1 cell labels with the adjudication rite (verify against source before deducting; public rule-and-verdict record).
+- **Anchor comparison** (Stage C vs the published diamond): tolerance ±0.01 per bound **plus** a documented rounding allowance — the anchor's own inputs are 2-decimal rounded, so divergences ≤0.02 per CI bound are recorded as rounding-consistent; only >0.02 is flagged as a divergence for adjudication.
+- **End-to-end fidelity**: |pipeline pooled MD − mechanical truth recomputed over the pipeline's own audited inputs| (lane L and lane S separately), and the same against the anchor's published diamond.
+- **Attribution**: every report states what the local models did, what the harness did, and what Claude (assistant) did — standing rule.
+
+## 9. Pre-registered hypotheses
+
+- **H3.1 (extraction holds at pipeline scale)**: Stage E ≥95% cell accuracy (Study 1 measured 100%).
+- **H3.2 (the audit is real)**: sensitivity ≥75% on seeds AND false-alarm rate ≤10% on clean fields; directional: `troca-de-braco`/`sinal` (semantic) caught more often than `digito`/`n-trocado` (character-level).
+- **H3.3 (closure is a harness property)**: with forced closure, 100% of Stage-C runs emit a final JSON (Study 2 without it: 2 of 4 families failed closure).
+- **H3.4 (end-to-end fidelity)**: lane L's pooled MD within ±0.02 of the mechanical truth over its own inputs; the full pipeline reproduces the anchor's diamond within the rounding allowance.
+- **H3.5 (propagation is weight-proportional)**: an uncaught seed's Δ on the pooled MD scales with the study's IV weight (a seed in Dorans, 53.6% weight, moves the diamond an order of magnitude more than one in Chen, 2.4%).
+- **H3.6 (anchor audit, formalized)**: the pre-registration validation stands as the anchor's arithmetic audit — 7/7 per-study values exact; pooled bounds within rounding; any divergence beyond §8's allowance found during the study becomes an erratum candidate.
+- **H3.7 (synthesis with numbers in hand)**: Stage S contains zero orphan numbers and states the direction, magnitude and significance of the pooled effect correctly in both lanes — including any distortion inherited from lane S's uncaught seeds (the interesting failure mode).
+
+## 10. Out of scope
+
+Screening/PRISMA reproduction (author's choice: not in this study); risk-of-bias stage (measured in Study 1); subgroup analysis and meta-regression (the anchor has none); native tool calling; proportion pooling; GRADE.
+
+---
+
+*Amendments: (none)*

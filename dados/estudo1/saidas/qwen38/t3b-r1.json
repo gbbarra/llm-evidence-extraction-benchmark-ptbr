@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen38",
+  "ollama": "qwen3.8:27b-texto",
+  "pmcid": null,
+  "tarefa": "t3b",
+  "replica": 1,
+  "inicio": "2026-08-28 20:33:58",
+  "content": "A análise de catorze ensaios clínicos randomizados avaliando a fluidoterapia guiada por metas (GDFT) frente à convencional em cirurgias abdominais de grande porte revela um perfil de resultados heterogêneo, com direções de efeito variáveis conforme o desfecho. Quanto à morbidade pós-operatória, a evidência é inconsistente e contraditória. Enquanto alguns estudos de médio porte, como Wu (2024) e Calvo-Vecino (2018), reportam uma redução substancial de eventos adversos na coorte GDFT (30,7% vs. 64,9% e 8,6% vs. 16,6%, respectivamente), outros trabalhos de maior amostra, incluindo Diaper (2021) e Arslan-Carlon (2020), não demonstram benefício e, em alguns casos, sugerem taxa superior ou similar de complicações na GDFT (57,7% vs. 53,0% e 96% vs. 89%). A mortalidade apresenta baixo poder de detecção devido à escassez de eventos em ambas as coortes na maioria dos estudos. Os dados disponíveis indicam taxas baixas e estatisticamente semelhantes entre os grupos, com apenas Castro (2024) e Redondo Calvo (2025) reportando números absolutos de óbitos discretos, sem padrão claro de superioridade para uma das estratégias.\n\nNo que tange ao tempo de internação hospitalar, a GDFT demonstra tendência favorável ou equivalente, com alguns estudos apontando redução significativa (Sun 2023: 9,0 vs. 12,0 dias; Wu 2024: 11,0 vs. 13,0 dias), enquanto outros mostram valores idênticos ou levemente superiores na GDFT (Yoon 2023 e Arslan-Carlon 2020). Esta variabilidade sugere que o benefício em dias de internação não é consistente entre diferentes populações cirúrgicas. Por fim, quanto à função intestinal, os dados são os mais escassos e limitados a poucos ensaios específicos (Sun 2023 e Wu 2024), que indicam vantagem para a GDFT em termos de tempo até flatus, ingesta oral e evacuação, bem como menor incidência de íleo paralítico. No entanto, a maioria dos outros ensaios não reporta essas métricas (NR), impedindo uma conclusão robusta sobre a recuperação gastrointestinal. Dada a heterogeneidade nas populações (cirurgia urológica, oncológica, hepática e ginecológica) e a falta de consistência nos desfechos clínicos principais, não é possível estabelecer uma direção clara de superioridade da GDFT sobre a fluidoterapia convencional para o conjunto dos desfechos avaliados.",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 625,
+  "dt": 1344.7984427,
+  "prompt_tokens": 16259
+}

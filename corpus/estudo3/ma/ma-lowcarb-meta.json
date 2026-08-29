@@ -1,0 +1,23 @@
+{
+ "pmcid": "PMC13242649",
+ "doi": "10.7759/cureus.108479",
+ "titulo": "Effect of Low-Carbohydrate Diets on Glycemic Control in Type 2 Diabetes Mellitus: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+ "revista": "Cureus",
+ "publicado": "2026-06",
+ "licenca": "CC BY 4.0",
+ "desfecho_unico": "variação de HbA1c (%) vs dieta-controle; MD por variância inversa, efeitos aleatórios",
+ "proveniencia_forest": "Transcrito por Claude (assistente) da Figura 2 do artigo (forest-hba1c.png, CC BY), leitura visual dupla; verificação mecânica prevista no protocolo E3 (auditoria da âncora).",
+ "forest_hba1c": [
+  {"ref": "11", "estudo": "Chen et al. 2020",    "exp_media": -1.63, "exp_dp": 1.10, "exp_n": 43, "ctl_media": -1.01, "ctl_dp": 1.27, "ctl_n": 42, "peso_pct": 2.4,  "md": -0.62, "ic95": [-1.13, -0.11]},
+  {"ref": "8",  "estudo": "Saslow et al. 2017",  "exp_media": -0.80, "exp_dp": 0.44, "exp_n": 12, "ctl_media": -0.30, "ctl_dp": 0.55, "ctl_n": 13, "peso_pct": 4.1,  "md": -0.50, "ic95": [-0.89, -0.11]},
+  {"ref": "14", "estudo": "Goday et al. 2016",   "exp_media": -0.90, "exp_dp": 0.96, "exp_n": 45, "ctl_media": -0.40, "ctl_dp": 0.92, "ctl_n": 40, "peso_pct": 3.9,  "md": -0.50, "ic95": [-0.90, -0.10]},
+  {"ref": "13", "estudo": "Wang et al. 2018",    "exp_media": -0.54, "exp_dp": 1.12, "exp_n": 28, "ctl_media": -0.28, "ctl_dp": 0.67, "ctl_n": 28, "peso_pct": 2.7,  "md": -0.26, "ic95": [-0.74, 0.22]},
+  {"ref": "10", "estudo": "Dorans et al. 2022",  "exp_media": -0.26, "exp_dp": 0.31, "exp_n": 75, "ctl_media": -0.04, "ctl_dp": 0.27, "ctl_n": 75, "peso_pct": 53.6, "md": -0.22, "ic95": [-0.31, -0.13]},
+  {"ref": "9",  "estudo": "Saslow et al. 2023",  "exp_media": -0.35, "exp_dp": 0.47, "exp_n": 45, "ctl_media": -0.14, "ctl_dp": 0.49, "ctl_n": 49, "peso_pct": 15.5, "md": -0.21, "ic95": [-0.40, -0.02]},
+  {"ref": "12", "estudo": "Thomsen et al. 2022", "exp_media": -0.83, "exp_dp": 0.38, "exp_n": 34, "ctl_media": -0.66, "ctl_dp": 0.37, "ctl_n": 33, "peso_pct": 17.9, "md": -0.17, "ic95": [-0.35, 0.01]}
+ ],
+ "agrupado": {"modelo": "IV, Random", "n_exp": 282, "n_ctl": 280, "md": -0.24, "ic95": [-0.32, -0.16],
+              "tau2": 0.00, "chi2": 6.37, "gl": 6, "p_het": 0.38, "i2_pct": 6, "z": 5.98, "p": "<0.00001"},
+ "sensibilidade": "leave-one-out relatada como robusta (sem estimativa individual publicada por remoção)",
+ "funil": "sem assimetria clara; interpretação limitada pelo n de estudos (funnel.png)"
+}

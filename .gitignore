@@ -15,3 +15,10 @@ corpus/fechados-staging/
 corpus/fechados-texto/
 corpus/perturbados-fechados/
 dados/*/perturbacoes-fechados*.json
+
+# estudo3: mesmo regime dos estudos anteriores
+corpus/estudo3/primarios-texto/
+corpus/estudo3/perturbados/
+corpus/estudo3/fechados-staging/
+corpus/estudo3/fechados-texto/
+dados/*/sementes-auditoria.json

@@ -1,0 +1,14 @@
+{
+  "modelo": "qwen14",
+  "ollama": "qwen3:14b",
+  "pmcid": null,
+  "tarefa": "t3b",
+  "replica": 1,
+  "inicio": "2026-08-28 20:23:17",
+  "content": "A síntese do corpo de evidência sugere que a GDFT pode ter um efeito benéfico na redução da morbidade pós-operatória em comparação com a fluidoterapia convencional, embora com inconsistências entre os ensaios. Em alguns estudos, como Yoon 2023 e Sun 2023, a GDFT associou-se a taxas menores de eventos adversos (67,4% vs. 73,0% e 6 vs. 13, respectivamente), enquanto outros, como Wu 2024, mostraram redução na morbidade (19 vs. 32). No entanto, outros estudos, como Castro 2024 e Diaper 2021, não encontraram diferença estatisticamente significativa ou reportaram taxas semelhantes entre os grupos. Assim, embora a GDFT pareça favorecer a redução da morbidade em alguns contextos, a evidência não é consistente em todos os ensaios.\n\nQuanto à mortalidade, apenas dois estudos (Sun 2023 e de Waal 2021) reportaram dados, e a mortalidade foi semelhante entre os grupos (1 vs. 0 e 10 vs. 10, respectivamente), sugerindo que não há diferença clara entre GDFT e fluidoterapia convencional nesse desfecho.\n\nO tempo de internação hospitalar foi menor na GDFT em alguns estudos, como Sun 2023 (9,0 vs. 12,0 dias) e Wu 2024 (11,0 vs. 13,0 dias), mas outros, como Castro 2024, mostraram redução significativa (9 vs. 14,5 dias). Contudo, outros estudos, como Diaper 2021 e Hokenek 2022, não encontraram diferenças significativas. A evidência, portanto, sugere um efeito potencialmente benéfico da GDFT no tempo de internação, mas com variabilidade entre os ensaios.\n\nQuanto à função intestinal, a GDFT mostrou resultados promissores em alguns estudos, como Sun 2023, onde o tempo até o flatus foi significativamente menor (28,2 vs. 39,4 horas) e a incidência de ileo pós-operatório foi menor (2 vs. 16). Em Wu 2024, o tempo de evacuação também foi menor na GDFT (58,5 vs. 73,5 horas). No entanto, outros estudos não reportaram dados sobre esses desfechos, limitando a conclusão geral. Assim, embora a GDFT possa favorecer a recuperação intestinal em alguns contextos, há evidência insuficiente para generalizar esse efeito.",
+  "reasoning": "",
+  "finish": "stop",
+  "tokens": 647,
+  "dt": 259.2051643,
+  "prompt_tokens": 11969
+}
