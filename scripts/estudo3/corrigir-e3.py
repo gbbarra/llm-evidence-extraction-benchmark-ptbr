@@ -59,7 +59,7 @@ def cel(aceitos, original=None, vazamento=False):
 EXPECTED = {
  "PMC5329646": {  # Saslow 2017 — change reported as EMM with CI; baselines perturbed
   E+"n_randomizado": cel([12]), C+"n_randomizado": cel([13]),
-  E+"n_analisado": cel(["NR", 12, 11]), C+"n_analisado": cel(["NR", 13, 7]),
+  E+"n_analisado": cel(["NR", 12, 11]), C+"n_analisado": cel(["NR", 13, 7, 8]),
   E+"hba1c_mudanca_media": cel([-0.8]), C+"hba1c_mudanca_media": cel([-0.3]),
   E+"hba1c_mudanca_tipo_dispersao": cel(["IC95: -1.1 a -0.6", "IC95"]),
   C+"hba1c_mudanca_tipo_dispersao": cel(["IC95: -0.6 a 0.0", "IC95"]),
@@ -68,6 +68,8 @@ EXPECTED = {
   E+"hba1c_basal_dp": cel([0.4]), C+"hba1c_basal_dp": cel([0.3]),
   E+"hba1c_final_media": cel(["NR"]), C+"hba1c_final_media": cel(["NR"]),
   "n_randomizado_total": cel([25, "NR"]),
+  # Amendment 2: ctl completers-with-data 8 is literal ("0% (0/8) in the
+  # control group") — the first key missed the route; rite applied to the ruler
  },
  "REF9": {  # Saslow 2023 — factorial margins; SE dispersion; mean and total n perturbed
   E+"n_randomizado": cel(["NR", 45]), C+"n_randomizado": cel(["NR", 49]),
@@ -81,7 +83,7 @@ EXPECTED = {
  },
  "PMC9606840": {  # Dorans 2022 — CI dispersion; mean and total n perturbed
   E+"n_randomizado": cel([75]), C+"n_randomizado": cel([75]),
-  E+"n_analisado": cel(["NR", 75]), C+"n_analisado": cel(["NR", 75]),
+  E+"n_analisado": cel(["NR", 75, 73]), C+"n_analisado": cel(["NR", 75, 69]),
   E+"hba1c_mudanca_media": cel([-0.24], original=-0.26),
   C+"hba1c_mudanca_media": cel([-0.04]),
   E+"hba1c_mudanca_tipo_dispersao": cel(["IC95: -0.33 a -0.19", "IC95"]),
@@ -105,7 +107,7 @@ EXPECTED = {
   "n_randomizado_total": cel([92]),
  },
  "REF12": {  # Thomsen 2022 — the one literal-SD trial; ctl change, exp baseline, total n perturbed
-  E+"n_randomizado": cel(["NR", 34]), C+"n_randomizado": cel(["NR", 33]),
+  E+"n_randomizado": cel(["NR", 34, 36]), C+"n_randomizado": cel(["NR", 33, 36]),
   E+"n_analisado": cel([34]), C+"n_analisado": cel([33]),
   E+"hba1c_mudanca_media": cel([-0.83]),
   C+"hba1c_mudanca_media": cel([-0.56], original=-0.66),
@@ -114,17 +116,17 @@ EXPECTED = {
   E+"hba1c_basal_media": cel([8.09], original=7.42),
   C+"hba1c_basal_media": cel([7.40, 7.4]),
   E+"hba1c_basal_dp": cel([0.77]), C+"hba1c_basal_dp": cel([0.70, 0.7]),
-  "n_randomizado_total": cel([63], original=72),
+  "n_randomizado_total": cel([63, 72]),  # Amendment 2: "Seventy-two" survived in words — symmetric
  },
  "PMC6024764": {  # Wang 2018 — drop printed positive; change, its SD and total n perturbed
   E+"n_randomizado": cel([28]), C+"n_randomizado": cel([28]),
-  E+"n_analisado": cel(["NR", 24, 25, 28]), C+"n_analisado": cel(["NR", 24, 25, 28]),
-  E+"hba1c_mudanca_media": cel([0.48, -0.48], original=0.54),
-  C+"hba1c_mudanca_media": cel([0.28, -0.28]),
-  E+"hba1c_mudanca_dispersao": cel([0.94], original=1.12),
-  C+"hba1c_mudanca_dispersao": cel([0.67]),
+  E+"n_analisado": cel(["NR", 24, 28]), C+"n_analisado": cel(["NR", 25, 28]),
+  E+"hba1c_mudanca_media": cel([0.48, -0.48, -0.63, 0.63], original=0.54),  # twin table route
+  C+"hba1c_mudanca_media": cel([0.28, -0.28, -0.31, 0.31]),
+  E+"hba1c_mudanca_dispersao": cel([0.94, 1.18], original=1.12),
+  C+"hba1c_mudanca_dispersao": cel([0.67, 0.70]),
   E+"hba1c_mudanca_tipo_dispersao": cel(["DP", "SD"]), C+"hba1c_mudanca_tipo_dispersao": cel(["DP", "SD"]),
-  "n_randomizado_total": cel([49], original=56),
+  "n_randomizado_total": cel([49, 56]),  # Amendment 2: "Fifty-six" survived in words + 28+28 visible
  },
  "PMC5048014": {  # Goday 2016 — no change reported; finals perturbed
   E+"n_randomizado": cel(["NR", 45]), C+"n_randomizado": cel(["NR", 44, 40]),

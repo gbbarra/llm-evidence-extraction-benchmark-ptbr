@@ -1,0 +1,32 @@
+{
+ "_metodo": "EXTRAI Study 3 — public adjudication record for Stage E (rule + verdict + literal quote per decision; adjudicator: Claude, under the rite 'verify against the source before deducting'). Cell-wise philosophy inherited from E1: each cell is graded against what the source literally supports; PAIRING inconsistencies between cells are not double-punished at extraction — their arithmetic cost is measured downstream by the pipeline itself (that is Study 3's subject).",
+ "adjudicacoes": [
+  {
+   "estudo": "REF9", "campos": ["braco_experimental.n_randomizado", "braco_controle.n_randomizado",
+                                 "braco_experimental.n_analisado", "braco_controle.n_analisado"],
+   "modelo_disse": "23 / 25",
+   "veredito": "adjudicada-exata (rotulo-razoavel, com nota de pareamento)",
+   "regra": "Os ns 23/25 são as CÉLULAS do fatorial 2×2 (grupos VLC-só e DASH-só), literais nas colunas da tabela 1; a ficha declarou o desenho corretamente ('fatorial 2x2'). A MA usou as MARGENS de dieta (45/49, soma das células, nunca literais). Leitura defensável célula a célula; a INCONSISTÊNCIA (médias de margem pareadas com ns de célula) é herdada pela etapa C e medida lá — não é dupla punição na extração.",
+   "cit": "colunas da tabela 1 do primário (4 grupos; percentuais como '10 (43.48)… 12 (54.55)… 18 (72.00)… 11 (45.83)' implicam ns 23/22/25/24)"
+  },
+  {
+   "estudo": "PMC7535044", "campos": ["braco_experimental.n_randomizado", "braco_controle.n_randomizado"],
+   "modelo_disse": "41 / 42",
+   "veredito": "adjudicada-aceita (divergencia-de-camada; padrão E1 achado 13)",
+   "regra": "O texto do Chen NUNCA declara os randomizados por braço em dígitos ('Ninety-two patients were randomly allocated', sem split; os 46/46 não existem no texto). Os cabeçalhos de tabela dizem 'TDD (n = 42) LCD (n = 41-perturbado)' — analisados sem rótulo de camada, o mesmo padrão que o E1 flagrou na MA (errata 13). O modelo leu o valor PERTURBADO (41←43: prova de leitura) e o pôs na camada errada; como no E1, a leitura de cabeçalho é aceita e a divergência de camada anotada.",
+   "cit": "\"Characteristics TDD (n = 42) LCD (n = 41)\" (texto perturbado); \"Ninety-two patients were randomly allocated to either the TDD group or LCD group\""
+  },
+  {
+   "estudo": "PMC7535044", "campos": ["braco_experimental.hba1c_mudanca_tipo_dispersao", "braco_controle.hba1c_mudanca_tipo_dispersao"],
+   "modelo_disse": "DP (com dispersao = 0.59 / 1.06)",
+   "veredito": "ERRADA-adjudicada (pareamento de dispersão)",
+   "regra": "A dispersão da MUDANÇA no texto é o IC95 ('-1.44(-1.96 ~ -1.30)' / '-1.01(-1.40 ~ -0.63)'). Os valores 0.59/1.06 que a ficha rotulou como DP são os DPs do PONTO FINAL de 18 meses ('6.84 (0.59)' / '7.69 (1.06)') — um fato diferente colado ao campo errado. Único erro genuíno de extração do estudo até aqui (2 células, mesma raiz).",
+   "cit": "\"8.70 (1.01) 7.69 (1.06) -1.01(-1.40 ~ -0.63) + 9.95 (1.04) 6.84 (0.59) -1.44(-1.96 ~ -1.30)\""
+  }
+ ],
+ "placar_pos_adjudicacao": {
+  "nota": "réplica 1 (réplica 2 idêntica em todas as células — estabilidade 100%)",
+  "celulas": 101, "limpas": 99, "erradas": 2, "omissas": 0, "recitacoes": 0,
+  "acuracia": "98%", "h3_1_status": "CONFIRMADA (≥95%)"
+ }
+}
