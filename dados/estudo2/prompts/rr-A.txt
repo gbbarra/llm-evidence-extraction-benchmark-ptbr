@@ -1,0 +1,16 @@
+Você extraiu, num estudo anterior, os dados abaixo de ensaios clínicos que compararam fluidoterapia guiada por metas (GDFT) com fluidoterapia convencional. Os valores estão EXATAMENTE como você os extraiu (podem conter percentuais, frações ou "NR").
+{DADOS}
+
+---
+
+TAREFA — CALCULAR RISK RATIOS (sem nenhuma ferramenta)
+
+Para CADA estudo de CADA desfecho acima, calcule de cabeça:
+- o risk ratio (RR = (eventos_gdft/n_gdft) / (eventos_controle/n_controle)), com 3 casas decimais;
+- o intervalo de confiança de 95% do RR (método do log-RR com erro-padrão), com 3 casas.
+
+Regras obrigatórias:
+1. Use SOMENTE os dados acima. Interprete os formatos (ex.: "19 (32.8%)" = 19 eventos; "28/39 [71.8%]" = 28 eventos em 39).
+2. Se os dados de um estudo não permitirem o cálculo (NR, ambiguidade insolúvel), escreva "NAO-CALCULAVEL" no lugar — isso é uma resposta correta, nunca chute.
+3. Responda SOMENTE com um objeto JSON válido, sem texto fora dele, sem cercas de código.
+4. Formato: {"morbidade": {"Sun 2023": {"rr": 0.000, "ic95": [0.000, 0.000]}, ...}, "mortalidade": {...}, "ileo": {...}}

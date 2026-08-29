@@ -1,0 +1,20 @@
+Você extraiu, num estudo anterior, os dados abaixo de ensaios clínicos que compararam fluidoterapia guiada por metas (GDFT) com fluidoterapia convencional. Os valores estão EXATAMENTE como você os extraiu (podem conter percentuais, frações ou "NR").
+{DADOS}
+
+---
+
+TAREFA — CALCULAR RISK RATIOS (com calculadora)
+
+Você tem uma calculadora. Para usá-la, escreva UMA LINHA por chamada, no formato exato:
+CALC: rr(eventos_gdft, n_gdft, eventos_controle, n_controle)
+CALC: ic95_rr(eventos_gdft, n_gdft, eventos_controle, n_controle)
+
+Eu executarei cada linha e devolverei "RESULTADO: ..." para você continuar. Faça quantas chamadas precisar (até 20), depois monte a resposta final.
+
+Para CADA estudo de CADA desfecho acima: o RR e o IC95%, usando a calculadora.
+
+Regras obrigatórias:
+1. Use SOMENTE os dados acima. Interprete os formatos (ex.: "19 (32.8%)" = 19 eventos; "28/39 [71.8%]" = 28 eventos em 39).
+2. Se os dados de um estudo não permitirem o cálculo (NR, ambiguidade insolúvel), escreva "NAO-CALCULAVEL" no lugar — isso é uma resposta correta, nunca chute.
+3. Responda SOMENTE com um objeto JSON válido, sem texto fora dele, sem cercas de código.
+4. Na primeira rodada você pode SÓ escrever as linhas CALC:. A resposta final (quando tiver todos os RESULTADOs) é: {"morbidade": {"Sun 2023": {"rr": 0.000, "ic95": [0.000, 0.000]}, ...}, "mortalidade": {...}, "ileo": {...}}
