@@ -2,7 +2,7 @@
 
 *A parte 1 terminou com um paradoxo: os quatro modelos locais extraem evidência quase sem erro, mas concluem "no olho" — contam estudos favoráveis onde a metanálise agregada diz "sem diferença significativa". Faltava saber: eles fazem as contas? O Estudo 2 respondeu com dois braços, numa ideia do próprio dono do benchmark: primeiro os modelos calculam risk ratios, intervalos de confiança e agrupamentos **de cabeça**; depois ganham uma **calculadora** que chamam por texto. De cabeça: zero intervalos de confiança corretos em trinta tentativas, nos quatro. Com a calculadora: um deles fechou 8 de 8 pontos e 8 de 8 intervalos. E o braço bônus, com thinking, produziu a cena mais estranha da série: dezessete minutos de raciocínio terminando em desfechos que não existem.*
 
-> 📄 Série EXTRAI: [parte 1](ARTIGO1.md) · parte 2 (esta) · Dados, protocolos e correção mecânica: [github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr](https://github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr) · DOI: [10.5281/zenodo.22159050](https://doi.org/10.5281/zenodo.22159050) · Benchmark irmão: [FIEL](https://github.com/gbbarra/llm-summarization-benchmark-ptbr)
+> 📄 Série EXTRAI: [parte 1](ARTIGO1.md) · parte 2 (esta) · [parte 3](ARTIGO3.md) · Dados, protocolos e correção mecânica: [github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr](https://github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr) · DOI: [10.5281/zenodo.22159050](https://doi.org/10.5281/zenodo.22159050) · Benchmark irmão: [FIEL](https://github.com/gbbarra/llm-summarization-benchmark-ptbr)
 
 ## O contexto, para quem chega agora
 

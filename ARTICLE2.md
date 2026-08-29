@@ -2,7 +2,7 @@
 
 *Part 1 ended on a paradox: the four local models extract evidence almost without error, but conclude "by eye" — counting favorable studies where the pooled meta-analysis says "no significant difference". The missing question: can they do the math? Study 2 answered with two arms, from an idea by the benchmark's own author: first the models compute risk ratios, confidence intervals and pooled estimates **by head**; then they get a **calculator** they call through text. By head: zero correct confidence intervals in thirty attempts, across all four. With the calculator: one of them closed 8 of 8 points and 8 of 8 intervals. And the bonus arm, with thinking, produced the strangest scene of the series: seventeen minutes of reasoning ending in outcomes that do not exist.*
 
-> 📄 EXTRAI series: [part 1](ARTICLE1.md) · part 2 (this one) · Data, protocols and mechanical grading: [github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr](https://github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr) · DOI: [10.5281/zenodo.22159050](https://doi.org/10.5281/zenodo.22159050) · Sister benchmark: [FIEL](https://github.com/gbbarra/llm-summarization-benchmark-ptbr)
+> 📄 EXTRAI series: [part 1](ARTICLE1.md) · part 2 (this one) · [part 3](ARTICLE3.md) · Data, protocols and mechanical grading: [github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr](https://github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr) · DOI: [10.5281/zenodo.22159050](https://doi.org/10.5281/zenodo.22159050) · Sister benchmark: [FIEL](https://github.com/gbbarra/llm-summarization-benchmark-ptbr)
 
 ## The context, if you're just arriving
 
