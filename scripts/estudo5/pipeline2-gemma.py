@@ -180,9 +180,13 @@ def main():
     dados = ("AGREGADO (DerSimonian-Laird): MD " + str(ag.get("md")) + " IC95 " + str(ag.get("ic95"))
              + f" · I2 = {i2}%\nESTUDOS: {len(proprios)} · PARTICIPANTES TOTAIS: {total_n}\n"
              + "\n".join(linhas))
-    prompt = (D5 / "prompts" / "e5-sintese.txt").read_text(encoding="utf-8").replace("{DADOS}", dados)
-    r = h3.gerar(e5.MODELO, prompt, max_tokens=600)
-    sintese = r["content"].strip()
+    if (PIPE2 / "sintese.md").exists():
+        sintese = (PIPE2 / "sintese.md").read_text(encoding="utf-8").split("\n\n", 1)[-1].strip()
+        print("  pulando sintese (ja existe; produto reutilizado)", flush=True)
+    else:
+        prompt = (D5 / "prompts" / "e5-sintese.txt").read_text(encoding="utf-8").replace("{DADOS}", dados)
+        r = h3.gerar(e5.MODELO, prompt, max_tokens=600)
+        sintese = r["content"].strip()
     fornecidos = set(re.findall(r"-?\d+(?:\.\d+)?", dados.replace("−", "-")))
     orfaos = [x for x in re.findall(r"-?\d+(?:[.,]\d+)?", sintese.replace("−", "-"))
               if x.replace(",", ".") not in fornecidos
@@ -205,10 +209,13 @@ def main():
             ax.plot(f.get("md"), y, "s", ms=7, color="#2e5fa3")
         elif f.get("md") is not None:
             ax.plot(f["md"], y, "s", ms=7, color="#b3541e")
-            ax.annotate("IC reportado inválido (não contém o MD) — sinalizado, não plotado",
-                        (f["md"], y), xytext=(10, -3), textcoords="offset points",
-                        fontsize=7.6, color="#b3541e")
+            ax.annotate("IC inválido*", (f["md"], y), xytext=(9, -3.5),
+                        textcoords="offset points", fontsize=8.2, color="#b3541e")
         ax.text(-0.02, y, rot, ha="right", va="center", fontsize=9, transform=ax.get_yaxis_transform())
+    if any(not d.get("coerente") for _, d in ordem):
+        fig.text(0.12, -0.02, "* IC reportado pelo modelo não contém o próprio MD — "
+                 "sinalizado e excluído do gráfico; o agregado usa os sextetos executados, não este IC.",
+                 fontsize=7.8, color="#b3541e")
     ax.plot(ag["ic95"], [0, 0], color="#12315e", lw=3)
     ax.plot(ag["md"], 0, "D", ms=11, color="#12315e")
     ax.text(-0.02, 0, "AGREGADO (DL)", ha="right", va="center", fontsize=9.5,

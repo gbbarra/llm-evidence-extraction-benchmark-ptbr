@@ -37,5 +37,5 @@
  "participantes": 493,
  "numeros_orfaos": [],
  "sintese": "A análise de metanálise incluiu 7 estudos com um total de 493 participantes para avaliar o efeito sobre os níveis de HbA1c. O efeito agregado (modelo DerSimonian-Laird) apresentou uma diferença média (MD) de -0,51 [IC95: -0,75, -0,26], indicando uma redução nos níveis de HbA1c no braço experimental. Observou-se uma alta heterogeneidade estatística entre os estudos (I² = 94,0%).\n\nAo analisar os resultados individuais, os estudos de Saslow 2017 (MD -0,5 [IC95: -0,89, -0,11]), Saslow 2023 (MD -0,18 [IC95: -0,22, -0,14]), Dorans 2022 (MD -0,2 [IC95: -0,29, -0,11]) e Thomsen 2022 (MD -0,27 [IC95: -0,45, -0,09]) apresentaram intervalos de confiança que não cruzaram o zero, demonstrando significância estatística individual. Por outro lado, os estudos de Chen 2020 (MD -0,43 [IC95: -0,94, 0,08]) e Wang 2018 (MD -0,32 [IC95: -0,87, 0,23]) apresentaram intervalos de confiança que cruzaram o zero. O estudo de Goday 2016 (MD -1,8) não pôde ser incluído no cálculo do intervalo de confiança devido a dados reportados inválidos.",
- "minutos": 0.9
+ "minutos": 0.0
 }

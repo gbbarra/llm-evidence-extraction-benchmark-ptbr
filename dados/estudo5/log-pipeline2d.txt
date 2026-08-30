@@ -1,0 +1,42 @@
+===== PIPELINE v2 · etapa E: extracao fresca sob schema + rede anti-invencao
+  pulando extracao PMC5329646-r1
+  pulando extracao PMC5329646-r2
+  pulando extracao REF9-r1
+  pulando extracao REF9-r2
+  pulando extracao PMC9606840-r1
+  pulando extracao PMC9606840-r2
+  pulando extracao PMC7535044-r1
+  pulando extracao PMC7535044-r2
+  pulando extracao REF12-r1
+  pulando extracao REF12-r2
+  pulando extracao PMC6024764-r1
+  pulando extracao PMC6024764-r2
+  pulando extracao PMC5048014-r1
+  pulando extracao PMC5048014-r2
+  verificacoes anti-invencao: 0
+
+===== etapa 1: calculo por estudo (CALC2 = G2b + derivacao declarada)
+  pulando CALC2 PMC5329646 (já existe)
+  pulando CALC2 REF9 (já existe)
+  pulando CALC2 PMC9606840 (já existe)
+  pulando CALC2 PMC7535044 (já existe)
+  pulando CALC2 REF12 (já existe)
+  pulando CALC2 PMC6024764 (já existe)
+  pulando CALC2 PMC5048014 (já existe)
+
+===== etapa 2: pooling (instrumentos G3b)
+  pulando POOL2 (já existe)
+
+===== etapa 3+4: totais por codigo e sintese narrativa
+  ICs reportados incoerentes (sinalizados, nunca endossados): ['Goday 2016']
+  pulando sintese (ja existe; produto reutilizado)
+  orfaos: ZERO
+
+===== etapa 5: forest por codigo
+
+===== correcao (lado dos corretores): celulas · verdade · lente
+  celulas: 184/206 (89.3%)
+  agregado modelo: {"md": -0.51, "ic95": [-0.75, -0.26]} · verdade: {"md": -0.52, "ic95": [-0.83, -0.21], "tau2": 0.1416, "i2_pct": 91.2} · delta md 0.01
+  LENTE: {"md": -0.24, "ic95": [-0.33, -0.16], "tau2": 0.001, "i2_pct": 7.1} vs ancora -0.24 [-0.32, -0.16]
+
+== PIPELINE v2 COMPLETO em 0.0 min · consistente: True · orfaos: 0
