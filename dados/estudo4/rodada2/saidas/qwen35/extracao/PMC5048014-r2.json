@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen35",
+ "trial": "PMC5048014",
+ "replica": 2,
+ "content": "{\n \"estudo\": \"Brackground et al.\",\n \"desenho\": \"paralelo 2 braços\",\n \"pais\": \"Spain\",\n \"duracao\": \"4 meses\",\n \"n_randomizado_total\": \"89\",\n \"braco_experimental\": {\n  \"rotulo\": \"VLCK diet group (very low-calorie-ketogenic diet)\",\n  \"descricao_intervencao\": \"Dieta muito baixa em calorias e cetogênica (<50 g de carboidrato diariamente) baseada em preparações proteicas de alto valor biológico e alimentos naturais, com suporte comportamental.\",\n  \"n_randomizado\": \"45\",\n  \"n_analisado\": \"NR\",\n  \"hba1c_mudanca_media\": \"-1.6\",\n  \"hba1c_mudanca_dispersao\": \"0.7\",\n  \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n  \"hba1c_basal_media\": \"6.9\",\n  \"hba1c_basal_dp\": \"1.1\",\n  \"hba1c_final_media\": \"5.3\",\n  \"hba1c_final_dp\": \"0.7\"\n },\n \"braco_controle\": {\n  \"rotulo\": \"LC diet group (usual care low-calorie diet)\",\n  \"descricao_intervencao\": \"Dieta baixa em calorias baseada nas diretrizes da ADA, com suporte comportamental e consulta de nutricionista registrada.\",\n  \"n_randomizado\": \"44\",\n  \"n_analisado\": \"NR\",\n  \"hba1c_mudanca_media\": \"0.3\",\n  \"hba1c_mudanca_dispersao\": \"0.8\",\n  \"hba1c_mudanca_tipo_dispersao\": \"NR\",\n  \"hba1c_basal_media\": \"6.8\",\n  \"hba1c_basal_dp\": \"1.0\",\n  \"hba1c_final_media\": \"7.1\",\n  \"hba1c_final_dp\": \"0.8\"\n }\n}",
+ "dt": 38.0242724,
+ "tokens": 473,
+ "prompt_tokens": 9991,
+ "finish": "stop"
+}

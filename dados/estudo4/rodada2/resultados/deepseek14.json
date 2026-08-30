@@ -1,0 +1,191 @@
+{
+ "modelo": "deepseek14",
+ "arm": "rodada2-emenda2",
+ "estudos_no_pool": 4,
+ "gatilhos": [
+  {
+   "classe": "fatorial-margens",
+   "estudo": "Saslow 2023",
+   "resposta": "<think>\nOkay, so I'm trying to figure out how to answer this question about the ",
+   "ns_usados": null
+  },
+  {
+   "classe": "campo-faltante",
+   "estudo": "Saslow 2023",
+   "lado": "braco_experimental",
+   "faltavam": [
+    "n"
+   ],
+   "resposta": "<think>\nAlright, so the user has provided a snippet from the extraction form of ",
+   "preenchidos": {}
+  },
+  {
+   "classe": "campo-faltante",
+   "estudo": "Saslow 2023",
+   "lado": "braco_controle",
+   "faltavam": [
+    "n"
+   ],
+   "resposta": "<think>\nOkay, so I'm trying to figure out how to respond to this query. The user",
+   "preenchidos": {}
+  },
+  {
+   "classe": "campo-faltante",
+   "estudo": "Thomsen 2022",
+   "lado": "braco_experimental",
+   "faltavam": [
+    "media",
+    "dp"
+   ],
+   "resposta": "<think>\nOkay, so I'm trying to figure out how to solve this problem. The user pr",
+   "preenchidos": {}
+  },
+  {
+   "classe": "campo-faltante",
+   "estudo": "Thomsen 2022",
+   "lado": "braco_controle",
+   "faltavam": [
+    "media",
+    "dp"
+   ],
+   "resposta": "<think>\nOkay, so I'm trying to figure out how to fill in the missing data points",
+   "preenchidos": {}
+  },
+  {
+   "classe": "campo-faltante",
+   "estudo": "Goday 2016",
+   "lado": "braco_controle",
+   "faltavam": [
+    "media",
+    "dp"
+   ],
+   "resposta": "<think>\nOk, eu preciso analisar a ficha de extração do estudo Goday 2016, especi",
+   "preenchidos": {}
+  }
+ ],
+ "por_estudo": [
+  {
+   "estudo": "Saslow 2017",
+   "md": -0.5,
+   "ic95": [
+    -0.89,
+    -0.11
+   ],
+   "sexteto": [
+    -0.8,
+    0.44,
+    12.0,
+    -0.3,
+    0.55,
+    13.0
+   ],
+   "replica_usada": 1,
+   "replicas_identicas": false
+  },
+  {
+   "estudo": "Saslow 2023",
+   "status": "dados-insuficientes",
+   "exp": [
+    -0.32,
+    0.07,
+    null
+   ],
+   "ctl": [
+    -0.14,
+    0.07,
+    null
+   ]
+  },
+  {
+   "estudo": "Dorans 2022",
+   "md": -0.19,
+   "ic95": [
+    -67.33,
+    66.95
+   ],
+   "sexteto": [
+    -0.23,
+    -209.77,
+    75.0,
+    -0.04,
+    -209.75,
+    75.0
+   ],
+   "replica_usada": 1,
+   "replicas_identicas": false
+  },
+  {
+   "estudo": "Chen 2020",
+   "md": -0.43,
+   "ic95": [
+    -0.71,
+    -0.15
+   ],
+   "sexteto": [
+    -1.44,
+    0.59,
+    40.0,
+    -1.01,
+    0.7,
+    41.0
+   ],
+   "replica_usada": 1,
+   "replicas_identicas": false
+  },
+  {
+   "estudo": "Thomsen 2022",
+   "status": "dados-insuficientes",
+   "exp": [
+    null,
+    null,
+    34.0
+   ],
+   "ctl": [
+    null,
+    null,
+    33.0
+   ]
+  },
+  {
+   "estudo": "Wang 2018",
+   "md": -0.32,
+   "ic95": [
+    -0.87,
+    0.23
+   ],
+   "sexteto": [
+    -0.63,
+    1.18,
+    24.0,
+    -0.31,
+    0.7,
+    25.0
+   ],
+   "replica_usada": 1,
+   "replicas_identicas": false
+  },
+  {
+   "estudo": "Goday 2016",
+   "status": "dados-insuficientes",
+   "exp": [
+    -1.6,
+    0.7,
+    45.0
+   ],
+   "ctl": [
+    null,
+    null,
+    44.0
+   ]
+  }
+ ],
+ "agregado": {
+  "md": -0.43,
+  "ic95": [
+   -0.64,
+   -0.22
+  ],
+  "tau2": 0.0,
+  "i2_pct": 0.0
+ }
+}

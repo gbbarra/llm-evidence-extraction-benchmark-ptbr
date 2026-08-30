@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen35",
+ "trial": "PMC6024764",
+ "replica": 2,
+ "content": "{\n \"estudo\": \"Wang et al., 2017 (ou similar conforme submissão)\",\n \"desenho\": \"paralelo 2 braços\",\n \"pais\": \"China\",\n \"duracao\": \"3 meses\",\n \"n_randomizado_total\": \"56\",\n \"braco_experimental\": {\n  \"rotulo\": \"LCD (Low-carbohydrate diet)\",\n  \"descricao_intervencao\": \"Restrição de alimento básico/meal (1 Liang) por dia, substituído por nozes (60g/dia para homens, 50g/dia para mulheres).\",\n  \"n_randomizado\": \"28\",\n  \"n_analisado\": \"24\",\n  \"hba1c_mudanca_media\": \"-0.63\",\n  \"hba1c_mudanca_dispersao\": \"±1.18\",\n  \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n  \"hba1c_basal_media\": \"NR\",\n  \"hba1c_basal_dp\": \"NR\",\n  \"hba1c_final_media\": \"NR\",\n  \"hba1c_final_dp\": \"NR\"\n },\n \"braco_controle\": {\n  \"rotulo\": \"LFD (Low-fat diet)\",\n  \"descricao_intervencao\": \"Educação sobre a fórmula de seis pontos para LFD.\",\n  \"n_randomizado\": \"28\",\n  \"n_analisado\": \"25\",\n  \"hba1c_mudanca_media\": \"-0.31\",\n  \"hba1c_mudanca_dispersao\": \"±0.70\",\n  \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n  \"hba1c_basal_media\": \"NR\",\n  \"hba1c_basal_dp\": \"NR\",\n  \"hba1c_final_media\": \"NR\",\n  \"hba1c_final_dp\": \"NR\"\n }\n}",
+ "dt": 36.3137038,
+ "tokens": 453,
+ "prompt_tokens": 9196,
+ "finish": "stop"
+}

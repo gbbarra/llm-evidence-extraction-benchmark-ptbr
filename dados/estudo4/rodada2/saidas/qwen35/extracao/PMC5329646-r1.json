@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen35",
+ "trial": "PMC5329646",
+ "replica": 1,
+ "content": "{\n \"estudo\": \"Hecht et al. (implied by context/authors list in Acknowledgments, likely 2016 based on ClinicalTrials.gov NCT01967992 start date and typical publication lag for this specific study)\",\n \"desenho\": \"paralelo 2 braços\",\n \"pais\": \"Estados Unidos\",\n \"duracao\": \"32 semanas\",\n \"n_randomizado_total\": \"25\",\n \"braco_experimental\": {\n  \"rotulo\": \"muito baixo teor de carboidrato cetogênico e fatores de estilo de vida (dieta ad libitum)\",\n  \"descricao_intervencao\": \"recomendações para seguir uma dieta cetogênica com muito poucos carboidratos (20-50g de carboidratos não fibrosos/dia), medir cetonas na urina, estratégias de adesão comportamental (regulação de afeto positivo, alimentação atenta) e recomendações de atividade física e sono\",\n  \"n_randomizado\": \"12\",\n  \"n_analisado\": \"NR\",\n  \"hba1c_mudanca_media\": \"-0.8\",\n  \"hba1c_mudanca_dispersao\": \"95% CI –1.1 a –0.6\",\n  \"hba1c_mudanca_tipo_dispersao\": \"IC95: -1.1 a -0.6\",\n  \"hba1c_basal_media\": \"NR\",\n  \"hba1c_basal_dp\": \"NR\",\n  \"hba1c_final_media\": \"NR\",\n  \"hba1c_final_dp\": \"NR\"\n },\n \"braco_controle\": {\n  \"rotulo\": \"método da tigela (dieta pobre em gorduras baseado em 'Create Your Plate')\",\n  \"descricao_intervencao\": \"programa de dieta baseado no método da tigela, enfatizando vegetais verdes não amiláceos, fontes magras de proteína e carboidratos limitados, sem materiais de regulação de afeto ou alimentação atenta\",\n  \"n_randomizado\": \"13\",\n  \"n_analisado\": \"NR\",\n  \"hba1c_mudanca_media\": \"-0.3\",\n  \"hba1c_mudanca_dispersao\": \"95% CI –0.6 a 0.0\",\n  \"hba1c_mudanca_tipo_dispersao\": \"IC95: -0.6 a 0.0\",\n  \"hba1c_basal_media\": \"NR\",\n  \"hba1c_basal_dp\": \"NR\",\n  \"hba1c_final_media\": \"NR\",\n  \"hba1c_final_dp\": \"NR\"\n }\n}",
+ "dt": 107.6948546,
+ "tokens": 625,
+ "prompt_tokens": 11854,
+ "finish": "stop"
+}

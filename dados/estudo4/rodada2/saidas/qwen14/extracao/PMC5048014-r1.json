@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen14",
+ "trial": "PMC5048014",
+ "replica": 1,
+ "content": "{\n  \"estudo\": \"Brackground 2023\",\n  \"desenho\": \"paralelo 2 braços\",\n  \"pais\": \"Espanha\",\n  \"duracao\": \"4 meses\",\n  \"n_randomizado_total\": \"89\",\n  \"braco_experimental\": {\n    \"rotulo\": \"dieta VLCK (muito baixa caloria cetogênica)\",\n    \"descricao_intervencao\": \"dieta com menos de 50g de carboidratos diários, incluindo preparações proteicas e alimentos naturais, com três fases: ativa, estabilização metabólica e manutenção\",\n    \"n_randomizado\": \"45\",\n    \"n_analisado\": \"NR\",\n    \"hba1c_mudanca_media\": \"−1.6\",\n    \"hba1c_mudanca_dispersao\": \"0.7\",\n    \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n    \"hba1c_basal_media\": \"6.89\",\n    \"hba1c_basal_dp\": \"1.06\",\n    \"hba1c_final_media\": \"5.3\",\n    \"hba1c_final_dp\": \"0.7\"\n  },\n  \"braco_controle\": {\n    \"rotulo\": \"dieta LC (baixa caloria)\",\n    \"descricao_intervencao\": \"dieta com restrição calórica de 500–1000 kcal, com composição macronutricional de <30% de gordura, 10–20% de proteína e 45–60% de carboidratos\",\n    \"n_randomizado\": \"44\",\n    \"n_analisado\": \"NR\",\n    \"hba1c_mudanca_media\": \"0.3\",\n    \"hba1c_mudanca_dispersao\": \"0.8\",\n    \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n    \"hba1c_basal_media\": \"6.88\",\n    \"hba1c_basal_dp\": \"1.03\",\n    \"hba1c_final_media\": \"7.1\",\n    \"hba1c_final_dp\": \"0.8\"\n  }\n}",
+ "dt": 182.5455251,
+ "tokens": 512,
+ "prompt_tokens": 10042,
+ "finish": "stop"
+}

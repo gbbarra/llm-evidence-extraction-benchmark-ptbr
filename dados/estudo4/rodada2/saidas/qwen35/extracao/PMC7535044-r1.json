@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen35",
+ "trial": "PMC7535044",
+ "replica": 1,
+ "content": "{\n \"estudo\": \"Chao et al. 2018\",\n \"desenho\": \"paralelo 2 braços\",\n \"pais\": \"Taiwan\",\n \"duracao\": \"18 meses\",\n \"n_randomizado_total\": \"92\",\n \"braco_experimental\": {\n  \"rotulo\": \"LCD (low-carbohydrate diet)\",\n  \"descricao_intervencao\": \"Ingestão diária de carboidratos limitada a menos de 90 g sem restrição de energia total.\",\n  \"n_randomizado\": \"41\",\n  \"n_analisado\": \"NR\",\n  \"hba1c_mudanca_media\": \"-1.44\",\n  \"hba1c_mudanca_dispersao\": \"0.36\",\n  \"hba1c_mudanca_tipo_dispersao\": \"IC95: -1.96 a -1.30\",\n  \"hba1c_basal_media\": \"9.95\",\n  \"hba1c_basal_dp\": \"\",\n  \"hba1c_final_media\": \"6.84\",\n  \"hba1c_final_dp\": \"\"\n },\n \"braco_controle\": {\n  \"rotulo\": \"TDD (traditional diabetic diet)\",\n  \"descricao_intervencao\": \"Ingestão calórica baseada em peso ideal e macronutrientes: 50–60% carboidratos, 1.0–1.2 g/kg proteína e ≤30% gordura.\",\n  \"n_randomizado\": \"42\",\n  \"n_analisado\": \"NR\",\n  \"hba1c_mudanca_media\": \"-1.01\",\n  \"hba1c_mudanca_dispersao\": \"0.37\",\n  \"hba1c_mudanca_tipo_dispersao\": \"IC95: -1.40 a -0.63\",\n  \"hba1c_basal_media\": \"8.70\",\n  \"hba1c_basal_dp\": \"\",\n  \"hba1c_final_media\": \"7.69\",\n  \"hba1c_final_dp\": \"\"\n }\n}",
+ "dt": 95.5559799,
+ "tokens": 494,
+ "prompt_tokens": 12538,
+ "finish": "stop"
+}

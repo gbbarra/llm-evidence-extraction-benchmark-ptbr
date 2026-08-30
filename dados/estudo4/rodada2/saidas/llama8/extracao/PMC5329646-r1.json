@@ -1,0 +1,10 @@
+{
+ "modelo": "llama8",
+ "trial": "PMC5329646",
+ "replica": 1,
+ "content": "{\n \"estudo\": \"Saslow, et al., 2017\",\n \"desenho\": \"paralelo 2 braços\",\n \"pais\": \"Estados Unidos\",\n \"duracao\": \"32 semanas\",\n \"n_randomizado_total\": \"25\",\n \"braco_experimental\": {\n  \"rotulo\": \"Very Low-Carbohydrate Ketogenic Diet and Lifestyle Recommendations\",\n  \"descricao_intervencao\": \"Adaptação do início em pessoa para online, com recomendações de dieta e mudanças no estilo de vida.\",\n  \"n_randomizado\": \"12\",\n  \"n_analisado\": \"11\",\n  \"hba1c_mudanca_media\": \"-0.8%\",\n  \"hba1c_mudanca_dispersao\": \"NR\",\n  \"hba1c_mudanca_tipo_dispersao\": \"IC95: -1.1% a -0.6%\",\n  \"hba1c_basal_media\": \"5.8%\",\n  \"hba1c_basal_dp\": \"NR\",\n  \"hba1c_final_media\": \"5.0%\",\n  \"hba1c_final_dp\": \"NR\"\n },\n \"braco_controle\": {\n  \"rotulo\": \"Plate Method Diet (American Diabetes Associations’ \\\"Create Your Plate\\\" diet)\",\n  \"descricao_intervencao\": \"Dieta baseada em um método de prato, com ênfase em vegetais não fibrosos, proteínas magras e alimentos doces e fibrosos limitados.\",\n  \"n_randomizado\": \"13\",\n  \"n_analisado\": \"8\",\n  \"hba1c_mudanca_media\": \"-0.3%\",\n  \"hba1c_mudanca_dispersao\": \"NR\",\n  \"hba1c_mudanca_tipo_dispersao\": \"IC95: -0.6% a 0%\",\n  \"hba1c_basal_media\": \"7.6%\",\n  \"hba1c_basal_dp\": \"NR\",\n  \"hba1c_final_media\": \"7.3%\",\n  \"hba1c_final_dp\": \"NR\"\n }\n}",
+ "dt": 99.6746789,
+ "tokens": 461,
+ "prompt_tokens": 11245,
+ "finish": "stop"
+}

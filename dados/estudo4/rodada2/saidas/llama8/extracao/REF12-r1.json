@@ -1,0 +1,10 @@
+{
+ "modelo": "llama8",
+ "trial": "REF12",
+ "replica": 1,
+ "content": "{\n \"estudo\": \"Krogh et al. (2021)\",\n \"desenho\": \"paralelo 2 braços\",\n \"pais\": \"Dinamarca\",\n \"duracao\": \"6 semanas\",\n \"n_randomizado_total\": \"72\",\n \"braco_experimental\": {\n  \"rotulo\": \"carboidrato reduzido alto proteína\",\n  \"descricao_intervencao\": \"\",\n  \"n_randomizado\": \"36\",\n  \"n_analisado\": \"34\",\n  \"hba1c_mudanca_media\": \"-9.1\",\n  \"hba1c_mudanca_dispersao\": \"4.2\",\n  \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n  \"hba1c_basal_media\": \"57.6\",\n  \"hba1c_basal_dp\": \"NR\",\n  \"hba1c_final_media\": \"48.5\",\n  \"hba1c_final_dp\": \"NR\"\n },\n \"braco_controle\": {\n  \"rotulo\": \"dieta convencional\",\n  \"descricao_intervencao\": \"\",\n  \"n_randomizado\": \"36\",\n  \"n_analisado\": \"33\",\n  \"hba1c_mudanca_media\": \"-7.2\",\n  \"hba1c_mudanca_dispersao\": \"4.0\",\n  \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n  \"hba1c_basal_media\": \"57.4\",\n  \"hba1c_basal_dp\": \"NR\",\n  \"hba1c_final_media\": \"50.2\",\n  \"hba1c_final_dp\": \"NR\"\n }\n}",
+ "dt": 90.6180586,
+ "tokens": 368,
+ "prompt_tokens": 11962,
+ "finish": "stop"
+}

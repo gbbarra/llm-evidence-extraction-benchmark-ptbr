@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen35",
+ "trial": "REF9",
+ "replica": 2,
+ "content": "{\n \"estudo\": \"Saslow et al. 2023\",\n \"desenho\": \"fatorial 2x2\",\n \"pais\": \"Estados Unidos\",\n \"duracao\": \"4 meses\",\n \"n_randomizado_total\": \"83\",\n \"braco_experimental\": {\n  \"rotulo\": \"VLC diet (Very Low-Carbohydrate)\",\n  \"descricao_intervencao\": \"Dieta com ingestão de carboidratos não fibras entre 20 e 35 g por dia\",\n  \"n_randomizado\": \"41\",\n  \"n_analisado\": \"39\",\n  \"hba1c_mudanca_media\": \"-0.32\",\n  \"hba1c_mudanca_dispersao\": \"0.07\",\n  \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n  \"hba1c_basal_media\": \"6.09\",\n  \"hba1c_basal_dp\": \"NR\",\n  \"hba1c_final_media\": \"5.74\",\n  \"hba1c_final_dp\": \"NR\"\n },\n \"braco_controle\": {\n  \"rotulo\": \"DASH diet\",\n  \"descricao_intervencao\": \"Dieta DASH, limitando sódio a <2.300 mg/dia e gordura a 20%-30% das calorias\",\n  \"n_randomizado\": \"42\",\n  \"n_analisado\": \"42\",\n  \"hba1c_mudanca_media\": \"-0.14\",\n  \"hba1c_mudanca_dispersao\": \"0.07\",\n  \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n  \"hba1c_basal_media\": \"6.10\",\n  \"hba1c_basal_dp\": \"NR\",\n  \"hba1c_final_media\": \"5.97\",\n  \"hba1c_final_dp\": \"NR\"\n }\n}",
+ "dt": 37.3553565,
+ "tokens": 464,
+ "prompt_tokens": 10287,
+ "finish": "stop"
+}

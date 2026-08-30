@@ -1,0 +1,10 @@
+{
+ "modelo": "llama8",
+ "trial": "REF12",
+ "replica": 2,
+ "content": "{\n \"estudo\": \"Eskerod et al., 2021\",\n \"desenho\": \"paralelo 2 braços\",\n \"pais\": \"Danish\",\n \"duracao\": \"6 semanas\",\n \"n_randomizado_total\": \"80\",\n \"braco_experimental\": {\n  \"rotulo\": \"CRHP diet\",\n  \"descricao_intervencao\": \"carbohydrate-reduced high-protein diet\",\n  \"n_randomizado\": \"36\",\n  \"n_analisado\": \"34\",\n  \"hba1c_mudanca_media\": \"-1.9\",\n  \"hba1c_mudanca_dispersao\": \"0.4\",\n  \"hba1c_mudanca_tipo_dispersao\": \"IC95: -0.32 a -0.03\",\n  \"hba1c_basal_media\": \"57.6\",\n  \"hba1c_basal_dp\": \"8.4\",\n  \"hba1c_final_media\": \"57.4\",\n  \"hba1c_final_dp\": \"7.7\"\n },\n \"braco_controle\": {\n  \"rotulo\": \"CD diet\",\n  \"descricao_intervencao\": \"conventional diabetes diet\",\n  \"n_randomizado\": \"36\",\n  \"n_analisado\": \"33\",\n  \"hba1c_mudanca_media\": \"-7.2\",\n  \"hba1c_mudanca_dispersao\": \"4.0\",\n  \"hba1c_mudanca_tipo_dispersao\": \"IC95: -2.3 a -1.0\",\n  \"hba1c_basal_media\": \"57.4\",\n  \"hba1c_basal_dp\": \"7.7\",\n  \"hba1c_final_media\": \"50.2\",\n  \"hba1c_final_dp\": \"6.8\"\n }\n}",
+ "dt": 33.1417141,
+ "tokens": 401,
+ "prompt_tokens": 11962,
+ "finish": "stop"
+}

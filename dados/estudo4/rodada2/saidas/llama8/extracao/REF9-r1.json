@@ -1,0 +1,10 @@
+{
+ "modelo": "llama8",
+ "trial": "REF9",
+ "replica": 1,
+ "content": "{\n \"estudo\": \"Saslow, et al. 2023\",\n \"desenho\": \"paralelo 2 braços\",\n \"pais\": \"Estados Unidos\",\n \"duracao\": \"4 meses\",\n \"n_randomizado_total\": \"83\",\n \"braco_experimental\": {\n  \"rotulo\": \"VLC (very low-carbohydrate)\",\n  \"descricao_intervencao\": \"Dietary Approaches to Stop Hypertension (DASH) diet\",\n  \"n_randomizado\": \"25\",\n  \"n_analisado\": \"NR\",\n  \"hba1c_mudanca_media\": \"-0.32%\",\n  \"hba1c_mudanca_dispersao\": \"NR\",\n  \"hba1c_mudanca_tipo_dispersao\": \"NR\",\n  \"hba1c_basal_media\": \"6.09%\",\n  \"hba1c_basal_dp\": \"NR\",\n  \"hba1c_final_media\": \"5.74%\",\n  \"hba1c_final_dp\": \"NR\"\n },\n \"braco_controle\": {\n  \"rotulo\": \"DASH (Dietary Approaches to Stop Hypertension)\",\n  \"descricao_intervencao\": \"Very low-carbohydrate (VLC) diet\",\n  \"n_randomizado\": \"25\",\n  \"n_analisado\": \"NR\",\n  \"hba1c_mudanca_media\": \"-0.14%\",\n  \"hba1c_mudanca_dispersao\": \"NR\",\n  \"hba1c_mudanca_tipo_dispersao\": \"NR\",\n  \"hba1c_basal_media\": \"6.10%\",\n  \"hba1c_basal_dp\": \"NR\",\n  \"hba1c_final_media\": \"5.97%\",\n  \"hba1c_final_dp\": \"NR\"\n }\n}",
+ "dt": 73.5725874,
+ "tokens": 396,
+ "prompt_tokens": 9493,
+ "finish": "stop"
+}

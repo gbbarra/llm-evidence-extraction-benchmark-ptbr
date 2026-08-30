@@ -1,0 +1,192 @@
+{
+ "modelo": "llama8",
+ "arm": "rodada2-emenda2",
+ "estudos_no_pool": 5,
+ "gatilhos": [
+  {
+   "classe": "campo-faltante",
+   "estudo": "Saslow 2023",
+   "lado": "braco_experimental",
+   "faltavam": [
+    "dp"
+   ],
+   "resposta": "{\"dp\": 0.4, \"n\": 25}",
+   "preenchidos": {
+    "dp": 0.4
+   }
+  },
+  {
+   "classe": "campo-faltante",
+   "estudo": "Saslow 2023",
+   "lado": "braco_controle",
+   "faltavam": [
+    "dp"
+   ],
+   "resposta": "{\n \"hba1c_basal_dp\": 0.13,\n \"hba1c_final_dp\": 0.13\n}",
+   "preenchidos": {}
+  },
+  {
+   "classe": "campo-faltante",
+   "estudo": "Dorans 2022",
+   "lado": "braco_experimental",
+   "faltavam": [
+    "dp"
+   ],
+   "resposta": "{\"media\": -0.24, \"dp\": 0.30}",
+   "preenchidos": {
+    "dp": 0.3
+   }
+  },
+  {
+   "classe": "campo-faltante",
+   "estudo": "Dorans 2022",
+   "lado": "braco_controle",
+   "faltavam": [
+    "dp"
+   ],
+   "resposta": "NR.",
+   "preenchidos": {}
+  },
+  {
+   "classe": "campo-faltante",
+   "estudo": "Goday 2016",
+   "lado": "braco_controle",
+   "faltavam": [
+    "dp"
+   ],
+   "resposta": "{\"media\": 0.4, \"dp\": 0.15}",
+   "preenchidos": {
+    "dp": 0.15
+   }
+  }
+ ],
+ "por_estudo": [
+  {
+   "estudo": "Saslow 2017",
+   "md": -0.5,
+   "ic95": [
+    -0.89,
+    -0.11
+   ],
+   "sexteto": [
+    -0.8,
+    0.42,
+    11.0,
+    -0.3,
+    0.43,
+    8.0
+   ],
+   "replica_usada": 1,
+   "replicas_identicas": false
+  },
+  {
+   "estudo": "Saslow 2023",
+   "status": "dados-insuficientes",
+   "exp": [
+    -0.32,
+    0.4,
+    25.0
+   ],
+   "ctl": [
+    -0.14,
+    null,
+    25.0
+   ]
+  },
+  {
+   "estudo": "Dorans 2022",
+   "status": "dados-insuficientes",
+   "exp": [
+    -0.24,
+    0.3,
+    73.0
+   ],
+   "ctl": [
+    -0.04,
+    null,
+    69.0
+   ]
+  },
+  {
+   "estudo": "Chen 2020",
+   "md": -0.43,
+   "ic95": [
+    -2.35,
+    1.49
+   ],
+   "sexteto": [
+    -1.44,
+    5.33,
+    41.0,
+    -1.01,
+    3.36,
+    42.0
+   ],
+   "replica_usada": 1,
+   "replicas_identicas": false
+  },
+  {
+   "estudo": "Thomsen 2022",
+   "md": -1.9,
+   "ic95": [
+    -3.86,
+    0.06
+   ],
+   "sexteto": [
+    -9.1,
+    4.2,
+    34.0,
+    -7.2,
+    4.0,
+    33.0
+   ],
+   "replica_usada": 1,
+   "replicas_identicas": false
+  },
+  {
+   "estudo": "Wang 2018",
+   "md": -0.32,
+   "ic95": [
+    -0.87,
+    0.23
+   ],
+   "sexteto": [
+    -0.63,
+    1.18,
+    24.0,
+    -0.31,
+    0.7,
+    25.0
+   ],
+   "replica_usada": 1,
+   "replicas_identicas": false
+  },
+  {
+   "estudo": "Goday 2016",
+   "md": -0.21,
+   "ic95": [
+    -0.26,
+    -0.16
+   ],
+   "sexteto": [
+    -0.36,
+    0.11,
+    45.0,
+    -0.15,
+    0.15,
+    44.0
+   ],
+   "replica_usada": 1,
+   "replicas_identicas": false
+  }
+ ],
+ "agregado": {
+  "md": -0.3,
+  "ic95": [
+   -0.49,
+   -0.1
+  ],
+  "tau2": 0.0141,
+  "i2_pct": 21.8
+ }
+}

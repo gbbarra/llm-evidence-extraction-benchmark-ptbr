@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen35",
+ "trial": "PMC9606840",
+ "replica": 1,
+ "content": "{\n \"estudo\": \"Chiu et al. 2021\",\n \"desenho\": \"paralelo 2 braços\",\n \"pais\": \"United States\",\n \"duracao\": \"6 meses\",\n \"n_randomizado_total\": \"141\",\n \"braco_experimental\": {\n  \"rotulo\": \"Low-carbohydrate diet (Go Low/Keep it Low)\",\n  \"descricao_intervencao\": \"Comportamento e suplementos de alimentos para <40g carboidratos por dia nos primeiros 3 meses, depois <60g.\",\n  \"n_randomizado\": \"75\",\n  \"n_analisado\": \"75\",\n  \"hba1c_mudanca_media\": \"-0.24\",\n  \"hba1c_mudanca_dispersao\": \"95% CI, –0.33 to –0.19\",\n  \"hba1c_mudanca_tipo_dispersao\": \"IC95: <-0.33> a <-0.19>\",\n  \"hba1c_basal_media\": \"6.17\",\n  \"hba1c_basal_dp\": \"0.31\",\n  \"hba1c_final_media\": \"\",\n  \"hba1c_final_dp\": \"\"\n },\n \"braco_controle\": {\n  \"rotulo\": \"Usual diet\",\n  \"descricao_intervencao\": \"Avisamento escrito padrão, sem recomendações contínuas.\",\n  \"n_randomizado\": \"75\",\n  \"n_analisado\": \"75\",\n  \"hba1c_mudanca_media\": \"-0.04\",\n  \"hba1c_mudanca_dispersao\": \"95% CI, –0.10 to 0.02\",\n  \"hba1c_mudanca_tipo_dispersao\": \"IC95: <-0.10> a <0.02>\",\n  \"hba1c_basal_media\": \"6.14\",\n  \"hba1c_basal_dp\": \"0.30\",\n  \"hba1c_final_media\": \"\",\n  \"hba1c_final_dp\": \"\"\n }\n}",
+ "dt": 87.3225887,
+ "tokens": 498,
+ "prompt_tokens": 10697,
+ "finish": "stop"
+}

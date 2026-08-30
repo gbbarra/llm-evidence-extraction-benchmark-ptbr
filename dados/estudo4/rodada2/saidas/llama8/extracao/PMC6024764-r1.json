@@ -1,0 +1,10 @@
+{
+ "modelo": "llama8",
+ "trial": "PMC6024764",
+ "replica": 1,
+ "content": "{\n \"estudo\": \"Wang Q, et al. (2018)\",\n \"desenho\": \"paralelo 2 braços\",\n \"pais\": \"\",\n \"duracao\": \"3 meses\",\n \"n_randomizado_total\": \"56\",\n \"braco_experimental\": {\n  \"rotulo\": \"Dieta baixa em carboidratos (LCD)\",\n  \"descricao_intervencao\": \"Dieta baixa em carboidratos com seis pontos\",\n  \"n_randomizado\": \"28\",\n  \"n_analisado\": \"24\",\n  \"hba1c_mudanca_media\": \"−0.63%\",\n  \"hba1c_mudanca_dispersao\": \"1.18%\",\n  \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n  \"hba1c_basal_media\": \"7.43%\",\n  \"hba1c_basal_dp\": \"NR\",\n  \"hba1c_final_media\": \"6.80%\",\n  \"hba1c_final_dp\": \"NR\"\n },\n \"braco_controle\": {\n  \"rotulo\": \"Dieta baixa em gordura (LFD)\",\n  \"descricao_intervencao\": \"Dieta baixa em gordura com seis pontos\",\n  \"n_randomizado\": \"28\",\n  \"n_analisado\": \"25\",\n  \"hba1c_mudanca_media\": \"−0.31%\",\n  \"hba1c_mudanca_dispersao\": \"0.70%\",\n  \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n  \"hba1c_basal_media\": \"7.79%\",\n  \"hba1c_basal_dp\": \"NR\",\n  \"hba1c_final_media\": \"7.48%\",\n  \"hba1c_final_dp\": \"NR\"\n }\n}",
+ "dt": 68.355767,
+ "tokens": 395,
+ "prompt_tokens": 8660,
+ "finish": "stop"
+}

@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen35",
+ "trial": "REF12",
+ "replica": 2,
+ "content": "{\n \"estudo\": \"Agerholm et al. 2021\",\n \"desenho\": \"paralelo 2 braços\",\n \"pais\": \"Dinamarca\",\n \"duracao\": \"6 semanas\",\n \"n_randomizado_total\": \"72\",\n \"braco_experimental\": {\n  \"rotulo\": \"CRHP diet (carbohydrate-reduced high-protein)\",\n  \"descricao_intervencao\": \"Dieta com ~30% de energia como carboidrato, 30% como proteína e 40% como gordura\",\n  \"n_randomizado\": \"36\",\n  \"n_analisado\": \"34\",\n  \"hba1c_mudanca_media\": \"-9.1\",\n  \"hba1c_mudanca_dispersao\": \"4.2\",\n  \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n  \"hba1c_basal_media\": \"57.6\",\n  \"hba1c_basal_dp\": \"8.4\",\n  \"hba1c_final_media\": \"NR\",\n  \"hba1c_final_dp\": \"\"\n },\n \"braco_controle\": {\n  \"rotulo\": \"CD diet (conventional diabetes diet)\",\n  \"descricao_intervencao\": \"Dieta convencional para diabetes com ~50% de energia como carboidrato, 17% como proteína e 33% como gordura\",\n  \"n_randomizado\": \"36\",\n  \"n_analisado\": \"33\",\n  \"hba1c_mudanca_media\": \"-7.2\",\n  \"hba1c_mudanca_dispersao\": \"4.0\",\n  \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n  \"hba1c_basal_media\": \"57.4\",\n  \"hba1c_basal_dp\": \"7.7\",\n  \"hba1c_final_media\": \"NR\",\n  \"hba1c_final_dp\": \"\"\n }\n}",
+ "dt": 37.7906969,
+ "tokens": 462,
+ "prompt_tokens": 12869,
+ "finish": "stop"
+}

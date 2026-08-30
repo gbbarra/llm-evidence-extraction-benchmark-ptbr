@@ -1,0 +1,118 @@
+SHA-256 perturbacoes-estudo3.json: a8bc6e1ae2faa8a2b8af75afb6c1fafd354a1d08076ffe2183cc319ecc171b04
+SHA-256 sementes-auditoria.json: bf341cf6da1bae8ce805018e1c2e26342efc3396cd6c902f8ba180553491555a
+limpeza inicial de memoria:
+  memoria: descarregado tudo · residentes agora: nenhum
+
+===== Estudo 4 · rodada 2 (Emenda 2) · gemma12 [gemma4:12b]
+  extracao gemma12 PMC5329646-r1: 206s, 505 tok
+  extracao gemma12 PMC5329646-r2: 67s, 495 tok
+  extracao gemma12 REF9-r1: 175s, 516 tok
+  extracao gemma12 REF9-r2: 69s, 516 tok
+  extracao gemma12 PMC9606840-r1: 183s, 529 tok
+  extracao gemma12 PMC9606840-r2: 73s, 544 tok
+  extracao gemma12 PMC7535044-r1: 206s, 488 tok
+  extracao gemma12 PMC7535044-r2: 66s, 485 tok
+  extracao gemma12 REF12-r1: 212s, 478 tok
+  extracao gemma12 REF12-r2: 67s, 488 tok
+  extracao gemma12 PMC6024764-r1: 156s, 492 tok
+  extracao gemma12 PMC6024764-r2: 67s, 500 tok
+  extracao gemma12 PMC5048014-r1: 164s, 475 tok
+  extracao gemma12 PMC5048014-r2: 64s, 478 tok
+  gatilho fatorial gemma12 Saslow 2023: SIM
+== gemma12: 7/7 estudos no pool · gatilhos: 1
+   agregado: {"md": -0.52, "ic95": [-0.82, -0.22], "tau2": 0.1367, "i2_pct": 91.3}
+  memoria: descarregado ['gemma4:12b'] · residentes agora: nenhum
+
+===== Estudo 4 · rodada 2 (Emenda 2) · qwen14 [qwen3:14b]
+  extracao qwen14 PMC5329646-r1: 225s, 487 tok
+  extracao qwen14 PMC5329646-r2: 83s, 529 tok
+  extracao qwen14 REF9-r1: 184s, 484 tok
+  extracao qwen14 REF9-r2: 77s, 512 tok
+  extracao qwen14 PMC9606840-r1: 205s, 571 tok
+  extracao qwen14 PMC9606840-r2: 77s, 504 tok
+  extracao qwen14 PMC7535044-r1: 241s, 571 tok
+  extracao qwen14 PMC7535044-r2: 97s, 623 tok
+  extracao qwen14 REF12-r1: 235s, 490 tok
+  extracao qwen14 REF12-r2: 84s, 528 tok
+  extracao qwen14 PMC6024764-r1: 166s, 492 tok
+  extracao qwen14 PMC6024764-r2: 71s, 483 tok
+  extracao qwen14 PMC5048014-r1: 183s, 512 tok
+  extracao qwen14 PMC5048014-r2: 77s, 517 tok
+  gatilho sinal qwen14 Goday 2016 braco_controle: 0.3 -> 0.3
+  gatilho fatorial qwen14 Saslow 2023: SIM
+== qwen14: 7/7 estudos no pool · gatilhos: 2
+   agregado: {"md": -0.62, "ic95": [-0.99, -0.25], "tau2": 0.1919, "i2_pct": 95.0}
+  memoria: descarregado ['qwen3:14b'] · residentes agora: nenhum
+
+===== Estudo 4 · rodada 2 (Emenda 2) · llama8 [llama3.1:8b]
+  extracao llama8 PMC5329646-r1: 100s, 461 tok
+  extracao llama8 PMC5329646-r2: 32s, 393 tok
+  extracao llama8 REF9-r1: 74s, 396 tok
+  extracao llama8 REF9-r2: 30s, 382 tok
+  extracao llama8 PMC9606840-r1: 75s, 377 tok
+  extracao llama8 PMC9606840-r2: 29s, 374 tok
+  extracao llama8 PMC7535044-r1: 89s, 415 tok
+  extracao llama8 PMC7535044-r2: 31s, 386 tok
+  extracao llama8 REF12-r1: 91s, 368 tok
+  extracao llama8 REF12-r2: 33s, 401 tok
+  extracao llama8 PMC6024764-r1: 68s, 395 tok
+  extracao llama8 PMC6024764-r2: 32s, 415 tok
+  extracao llama8 PMC5048014-r1: 72s, 396 tok
+  extracao llama8 PMC5048014-r2: 32s, 416 tok
+  gatilho NR llama8 Saslow 2023 braco_experimental: faltavam ['dp'] -> [-0.32, 0.4, 25.0]
+  gatilho NR llama8 Saslow 2023 braco_controle: faltavam ['dp'] -> [-0.14, None, 25.0]
+  gatilho NR llama8 Dorans 2022 braco_experimental: faltavam ['dp'] -> [-0.24, 0.3, 73.0]
+  gatilho NR llama8 Dorans 2022 braco_controle: faltavam ['dp'] -> [-0.04, None, 69.0]
+  gatilho NR llama8 Goday 2016 braco_controle: faltavam ['dp'] -> [-0.15, 0.15, 44.0]
+== llama8: 5/7 estudos no pool · gatilhos: 5
+   agregado: {"md": -0.3, "ic95": [-0.49, -0.1], "tau2": 0.0141, "i2_pct": 21.8}
+  memoria: descarregado ['llama3.1:8b'] · residentes agora: nenhum
+
+===== Estudo 4 · rodada 2 (Emenda 2) · qwen35 [qwen3.5:9b]
+  extracao qwen35 PMC5329646-r1: 108s, 625 tok
+  extracao qwen35 PMC5329646-r2: 62s, 772 tok
+  extracao qwen35 REF9-r1: 83s, 465 tok
+  extracao qwen35 REF9-r2: 37s, 464 tok
+  extracao qwen35 PMC9606840-r1: 87s, 498 tok
+  extracao qwen35 PMC9606840-r2: 38s, 477 tok
+  extracao qwen35 PMC7535044-r1: 96s, 494 tok
+  extracao qwen35 PMC7535044-r2: 40s, 495 tok
+  extracao qwen35 REF12-r1: 97s, 493 tok
+  extracao qwen35 REF12-r2: 38s, 462 tok
+  extracao qwen35 PMC6024764-r1: 79s, 477 tok
+  extracao qwen35 PMC6024764-r2: 36s, 453 tok
+  extracao qwen35 PMC5048014-r1: 81s, 461 tok
+  extracao qwen35 PMC5048014-r2: 38s, 473 tok
+  gatilho fatorial qwen35 Saslow 2023: RESPOSTA: SIM
+  gatilho NR qwen35 Thomsen 2022 braco_controle: faltavam ['dp'] -> [-0.56, None, 33.0]
+== qwen35: 6/7 estudos no pool · gatilhos: 2
+   agregado: {"md": -0.57, "ic95": [-0.84, -0.3], "tau2": 0.0776, "i2_pct": 94.7}
+  memoria: descarregado ['qwen3.5:9b'] · residentes agora: nenhum
+
+===== Estudo 4 · rodada 2 (Emenda 2) · deepseek14 [deepseek-r1:14b]
+  extracao deepseek14 PMC5329646-r1: 322s, 1019 tok
+  extracao deepseek14 PMC5329646-r2: 198s, 1257 tok
+  extracao deepseek14 REF9-r1: 302s, 1198 tok
+  extracao deepseek14 REF9-r2: 133s, 884 tok
+  extracao deepseek14 PMC9606840-r1: 300s, 1153 tok
+  extracao deepseek14 PMC9606840-r2: 158s, 1042 tok
+  extracao deepseek14 PMC7535044-r1: 306s, 924 tok
+  extracao deepseek14 PMC7535044-r2: 138s, 882 tok
+  extracao deepseek14 REF12-r1: 329s, 1014 tok
+  extracao deepseek14 REF12-r2: 156s, 988 tok
+  extracao deepseek14 PMC6024764-r1: 262s, 1116 tok
+  extracao deepseek14 PMC6024764-r2: 154s, 1048 tok
+  extracao deepseek14 PMC5048014-r1: 253s, 943 tok
+  extracao deepseek14 PMC5048014-r2: 153s, 1030 tok
+  gatilho fatorial deepseek14 Saslow 2023: <think>
+Okay, so I'm trying to figure out how to answer this
+  gatilho NR deepseek14 Saslow 2023 braco_experimental: faltavam ['n'] -> [-0.32, 0.07, None]
+  gatilho NR deepseek14 Saslow 2023 braco_controle: faltavam ['n'] -> [-0.14, 0.07, None]
+  gatilho NR deepseek14 Thomsen 2022 braco_experimental: faltavam ['media', 'dp'] -> [None, None, 34.0]
+  gatilho NR deepseek14 Thomsen 2022 braco_controle: faltavam ['media', 'dp'] -> [None, None, 33.0]
+  gatilho NR deepseek14 Goday 2016 braco_controle: faltavam ['media', 'dp'] -> [None, None, 44.0]
+== deepseek14: 4/7 estudos no pool · gatilhos: 6
+   agregado: {"md": -0.43, "ic95": [-0.64, -0.22], "tau2": 0.0, "i2_pct": 0.0}
+  memoria: descarregado ['deepseek-r1:14b'] · residentes agora: nenhum
+
+Rodada 2 completa em 146.3 min

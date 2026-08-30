@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen35",
+ "trial": "PMC6024764",
+ "replica": 1,
+ "content": "{\n \"estudo\": \"Wang et al. 2017\",\n \"desenho\": \"paralelo 2 braços\",\n \"pais\": \"China\",\n \"duracao\": \"3 meses\",\n \"n_randomizado_total\": \"56\",\n \"braco_experimental\": {\n  \"rotulo\": \"LCD group\",\n  \"descricao_intervencao\": \"Recebeu educação sobre a 'fórmula de seis pontos' para dieta baixa em carboidratos (LCD), incluindo restrição de alimentos ricos em carboidratos e substituição por nozes.\",\n  \"n_randomizado\": \"28\",\n  \"n_analisado\": \"24\",\n  \"hba1c_mudanca_media\": \"-0.63\",\n  \"hba1c_mudanca_dispersao\": \"1.18\",\n  \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n  \"hba1c_basal_media\": \"7.43\",\n  \"hba1c_basal_dp\": \"1.39\",\n  \"hba1c_final_media\": \"6.80\",\n  \"hba1c_final_dp\": \"0.83\"\n },\n \"braco_controle\": {\n  \"rotulo\": \"LFD group\",\n  \"descricao_intervencao\": \"Recebeu educação sobre a 'fórmula de seis pontos' para dieta baixa em gordura (LFD).\",\n  \"n_randomizado\": \"28\",\n  \"n_analisado\": \"25\",\n  \"hba1c_mudanca_media\": \"-0.31\",\n  \"hba1c_mudanca_dispersao\": \"0.70\",\n  \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n  \"hba1c_basal_media\": \"7.79\",\n  \"hba1c_basal_dp\": \"1.20\",\n  \"hba1c_final_media\": \"7.48\",\n  \"hba1c_final_dp\": \"1.15\"\n }\n}",
+ "dt": 78.8680829,
+ "tokens": 477,
+ "prompt_tokens": 9196,
+ "finish": "stop"
+}

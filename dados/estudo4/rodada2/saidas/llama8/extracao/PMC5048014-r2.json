@@ -1,0 +1,10 @@
+{
+ "modelo": "llama8",
+ "trial": "PMC5048014",
+ "replica": 2,
+ "content": "{\n  \"estudo\": \"Rodriguez et al, 2012\",\n  \"desenho\": \"paralelo 2 braços\",\n  \"pais\": \"\",\n  \"duracao\": \"4 meses\",\n  \"n_randomizado_total\": \"89\",\n  \"braco_experimental\": {\n    \"rotulo\": \"VLCK diet\",\n    \"descricao_intervencao\": \"Diet <50 g of carbohydrate daily; VLCK diet as part of a commercial weight loss program (DiaproKal Method) based on a high-biological-value protein preparations diet and natural foods\",\n    \"n_randomizado\": \"45\",\n    \"n_analisado\": \"NR\",\n    \"hba1c_mudanca_media\": \"1.6\",\n    \"hba1c_mudanca_dispersao\": \"0.7\",\n    \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n    \"hba1c_basal_media\": \"6.89\",\n    \"hba1c_basal_dp\": \"1.06\",\n    \"hba1c_final_media\": \"5.3\",\n    \"hba1c_final_dp\": \"0.7\"\n  },\n  \"braco_controle\": {\n    \"rotulo\": \"LC diet\",\n    \"descricao_intervencao\": \"Low-calorie diet based on the ADA guidelines\",\n    \"n_randomizado\": \"44\",\n    \"n_analisado\": \"NR\",\n    \"hba1c_mudanca_media\": \"NR\",\n    \"hba1c_mudanca_dispersao\": \"NR\",\n    \"hba1c_mudanca_tipo_dispersao\": \"NR\",\n    \"hba1c_basal_media\": \"6.88\",\n    \"hba1c_basal_dp\": \"1.03\",\n    \"hba1c_final_media\": \"7.1\",\n    \"hba1c_final_dp\": \"0.8\"\n  }\n}",
+ "dt": 32.3553977,
+ "tokens": 416,
+ "prompt_tokens": 9310,
+ "finish": "stop"
+}

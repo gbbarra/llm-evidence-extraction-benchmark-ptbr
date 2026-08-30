@@ -1,0 +1,10 @@
+{
+ "modelo": "llama8",
+ "trial": "PMC9606840",
+ "replica": 1,
+ "content": "{\n\"estudo\": \"Kahleova et al., 2022\",\n\"desenho\": \"paralelo 2 braços\",\n\"pais\": \"\",\n\"duracao\": \"6 meses\",\n\"n_randomizado_total\": \"141\",\n\"braco_experimental\": {\n  \"rotulo\": \"low-carbohydrate diet\",\n  \"descricao_intervencao\": \"intervenção de baixo teor de carboidratos\",\n  \"n_randomizado\": \"75\",\n  \"n_analisado\": \"73\",\n  \"hba1c_mudanca_media\": \"-0.24\",\n  \"hba1c_mudanca_dispersao\": \"NR\",\n  \"hba1c_mudanca_tipo_dispersao\": \"NR\",\n  \"hba1c_basal_media\": \"6.17\",\n  \"hba1c_basal_dp\": \"0.31\",\n  \"hba1c_final_media\": \"6.14\",\n  \"hba1c_final_dp\": \"0.30\"\n},\n\"braco_controle\": {\n  \"rotulo\": \"usual diet\",\n  \"descricao_intervencao\": \"dieta padrão\",\n  \"n_randomizado\": \"75\",\n  \"n_analisado\": \"69\",\n  \"hba1c_mudanca_media\": \"-0.04\",\n  \"hba1c_mudanca_dispersao\": \"NR\",\n  \"hba1c_mudanca_tipo_dispersao\": \"NR\",\n  \"hba1c_basal_media\": \"6.14\",\n  \"hba1c_basal_dp\": \"0.30\",\n  \"hba1c_final_media\": \"6.14\",\n  \"hba1c_final_dp\": \"0.30\"\n}\n}",
+ "dt": 74.7822907,
+ "tokens": 377,
+ "prompt_tokens": 9954,
+ "finish": "stop"
+}

@@ -1,0 +1,629 @@
+{
+ "regua": "EXPECTED E3 emendada (corrigir-e3.py)",
+ "celulas": {
+  "gemma12": {
+   "boas": 190,
+   "total": 206,
+   "pct": 92.2,
+   "adjudicar": [
+    "REF9-r1 braco_experimental.n_randomizado=23",
+    "REF9-r1 braco_controle.n_randomizado=25",
+    "REF9-r1 braco_experimental.n_analisado=23",
+    "REF9-r1 braco_controle.n_analisado=25",
+    "REF9-r2 braco_experimental.n_randomizado=23",
+    "REF9-r2 braco_controle.n_randomizado=25",
+    "REF9-r2 braco_experimental.n_analisado=23",
+    "REF9-r2 braco_controle.n_analisado=25",
+    "PMC7535044-r1 braco_experimental.n_randomizado=41",
+    "PMC7535044-r1 braco_controle.n_randomizado=42",
+    "PMC7535044-r1 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC7535044-r1 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC7535044-r2 braco_experimental.n_randomizado=41",
+    "PMC7535044-r2 braco_controle.n_randomizado=42",
+    "PMC7535044-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC7535044-r2 braco_controle.hba1c_mudanca_tipo_dispersao=DP"
+   ]
+  },
+  "qwen14": {
+   "boas": 151,
+   "total": 206,
+   "pct": 73.3,
+   "adjudicar": [
+    "REF9-r1 braco_experimental.n_randomizado=23",
+    "REF9-r1 braco_controle.n_randomizado=23",
+    "REF9-r1 braco_experimental.n_analisado=22",
+    "REF9-r1 braco_controle.n_analisado=22",
+    "REF9-r1 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "REF9-r1 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "REF9-r2 braco_experimental.n_randomizado=23",
+    "REF9-r2 braco_controle.n_randomizado=23",
+    "REF9-r2 braco_experimental.n_analisado=22",
+    "REF9-r2 braco_controle.n_analisado=24",
+    "REF9-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "REF9-r2 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC9606840-r1 braco_experimental.hba1c_mudanca_dispersao=0.07",
+    "PMC9606840-r1 braco_controle.hba1c_mudanca_dispersao=0.04",
+    "PMC7535044-r1 braco_experimental.n_randomizado=41",
+    "PMC7535044-r1 braco_controle.n_randomizado=42",
+    "PMC7535044-r1 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC7535044-r1 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC7535044-r2 braco_experimental.n_randomizado=41",
+    "PMC7535044-r2 braco_controle.n_randomizado=42",
+    "PMC7535044-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC7535044-r2 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "REF12-r1 braco_experimental.hba1c_mudanca_media=-9.1",
+    "REF12-r1 braco_controle.hba1c_mudanca_media=-7.2",
+    "REF12-r1 braco_experimental.hba1c_mudanca_dispersao=4.2",
+    "REF12-r1 braco_controle.hba1c_mudanca_dispersao=4.0",
+    "REF12-r1 braco_experimental.hba1c_basal_media=57.6",
+    "REF12-r1 braco_controle.hba1c_basal_media=57.4",
+    "REF12-r1 braco_experimental.hba1c_basal_dp=8.4",
+    "REF12-r1 braco_controle.hba1c_basal_dp=7.7",
+    "REF12-r2 braco_experimental.hba1c_mudanca_media=-1.9",
+    "REF12-r2 braco_experimental.hba1c_mudanca_dispersao=3.5",
+    "REF12-r2 braco_controle.hba1c_mudanca_dispersao=4.2",
+    "REF12-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=IC95: -3.5 a -0.3",
+    "REF12-r2 braco_controle.hba1c_mudanca_tipo_dispersao=IC95: -3.5 a -0.3",
+    "REF12-r2 braco_experimental.hba1c_basal_media=57.6",
+    "REF12-r2 braco_controle.hba1c_basal_media=57.4",
+    "REF12-r2 braco_experimental.hba1c_basal_dp=8.4",
+    "REF12-r2 braco_controle.hba1c_basal_dp=7.7",
+    "PMC5048014-r1 braco_experimental.hba1c_mudanca_media=−1.6",
+    "PMC5048014-r1 braco_controle.hba1c_mudanca_media=0.3",
+    "PMC5048014-r1 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC5048014-r1 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC5048014-r1 braco_experimental.hba1c_basal_dp=1.06",
+    "PMC5048014-r2 braco_experimental.hba1c_mudanca_media=−1.6",
+    "PMC5048014-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC5048014-r2 braco_experimental.hba1c_basal_dp=1.06"
+   ]
+  },
+  "llama8": {
+   "boas": 146,
+   "total": 206,
+   "pct": 70.9,
+   "adjudicar": [
+    "PMC5329646-r1 braco_experimental.hba1c_final_media=5.0%",
+    "PMC5329646-r1 braco_controle.hba1c_final_media=7.3%",
+    "PMC5329646-r2 braco_experimental.hba1c_final_media=5.0",
+    "PMC5329646-r2 braco_controle.hba1c_final_media=7.2",
+    "REF9-r1 braco_experimental.n_randomizado=25",
+    "REF9-r1 braco_controle.n_randomizado=25",
+    "REF9-r2 braco_experimental.n_randomizado=41",
+    "REF9-r2 braco_controle.n_randomizado=42",
+    "PMC7535044-r1 braco_experimental.n_randomizado=41",
+    "PMC7535044-r1 braco_controle.n_randomizado=42",
+    "PMC7535044-r2 braco_experimental.n_randomizado=41",
+    "PMC7535044-r2 braco_controle.n_randomizado=42",
+    "PMC7535044-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=EP",
+    "PMC7535044-r2 braco_controle.hba1c_mudanca_tipo_dispersao=EP",
+    "REF12-r1 braco_experimental.hba1c_mudanca_media=-9.1",
+    "REF12-r1 braco_controle.hba1c_mudanca_media=-7.2",
+    "REF12-r1 braco_experimental.hba1c_mudanca_dispersao=4.2",
+    "REF12-r1 braco_controle.hba1c_mudanca_dispersao=4.0",
+    "REF12-r1 braco_experimental.hba1c_basal_media=57.6",
+    "REF12-r1 braco_controle.hba1c_basal_media=57.4",
+    "REF12-r2 braco_experimental.hba1c_mudanca_media=-1.9",
+    "REF12-r2 braco_controle.hba1c_mudanca_media=-7.2",
+    "REF12-r2 braco_experimental.hba1c_mudanca_dispersao=0.4",
+    "REF12-r2 braco_controle.hba1c_mudanca_dispersao=4.0",
+    "REF12-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=IC95: -0.32 a -0.03",
+    "REF12-r2 braco_controle.hba1c_mudanca_tipo_dispersao=IC95: -2.3 a -1.0",
+    "REF12-r2 braco_experimental.hba1c_basal_media=57.6",
+    "REF12-r2 braco_controle.hba1c_basal_media=57.4",
+    "REF12-r2 braco_experimental.hba1c_basal_dp=8.4",
+    "REF12-r2 braco_controle.hba1c_basal_dp=7.7",
+    "REF12-r2 n_randomizado_total=80",
+    "PMC5048014-r1 braco_experimental.hba1c_mudanca_media=-0.36",
+    "PMC5048014-r1 braco_controle.hba1c_mudanca_media=-0.15",
+    "PMC5048014-r1 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC5048014-r1 braco_experimental.hba1c_basal_dp=1.06",
+    "PMC5048014-r1 braco_experimental.hba1c_final_media=5.53",
+    "PMC5048014-r1 braco_controle.hba1c_final_media=7.07",
+    "PMC5048014-r2 braco_experimental.hba1c_mudanca_media=1.6",
+    "PMC5048014-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC5048014-r2 braco_experimental.hba1c_basal_dp=1.06"
+   ]
+  },
+  "qwen35": {
+   "boas": 153,
+   "total": 206,
+   "pct": 74.3,
+   "adjudicar": [
+    "PMC5329646-r2 braco_experimental.hba1c_basal_dp=7.6 (do resumo geral da tabela, mas os dados basais específicos por braço são: 7.6 para controle e não reportado explicitamente como média separada no texto principal além da Tabela 1 onde o valor é 5.8 vs 7.6 - preenchendo com NR conforme instrução de copiar exatamente ou usar se estiver na tabela, aqui a regra diz copiar números EXATAMENTE como impressos. A Tabela 1 lista HbA1c basal para intervenção como 5.8 e controle como 7.6. O texto principal só fala da variação. Vou preencher os basais baseados na Tabela 1 se possível, mas o formato pede media basal. A instrução 3 diz: Se reporta só os valores basal e final, preencha basal e final. O texto na Tabela 2 não tem basal, tem mudança. Mas a Tabela 1 tem basal. Vou usar os dados da Tabela 1 para ser preciso, assumindo que 'copiar números' inclui tabelas.",
+    "REF9-r1 braco_experimental.n_randomizado=41.5",
+    "REF9-r1 braco_controle.n_randomizado=41.5",
+    "REF9-r1 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "REF9-r1 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "REF9-r2 braco_experimental.n_randomizado=41",
+    "REF9-r2 braco_controle.n_randomizado=42",
+    "REF9-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "REF9-r2 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC9606840-r1 braco_experimental.hba1c_mudanca_dispersao=95% CI, –0.33 to –0.19",
+    "PMC9606840-r1 braco_controle.hba1c_mudanca_dispersao=95% CI, –0.10 to 0.02",
+    "PMC9606840-r2 braco_experimental.hba1c_mudanca_dispersao=0.33 a 0.19",
+    "PMC7535044-r1 braco_experimental.n_randomizado=41",
+    "PMC7535044-r1 braco_controle.n_randomizado=42",
+    "PMC7535044-r2 braco_experimental.n_randomizado=41",
+    "PMC7535044-r2 braco_controle.n_randomizado=42",
+    "PMC7535044-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=SD",
+    "PMC7535044-r2 braco_controle.hba1c_mudanca_tipo_dispersao=SD",
+    "REF12-r1 braco_experimental.hba1c_mudanca_media=-0.18",
+    "REF12-r1 braco_experimental.hba1c_mudanca_dispersao=-0.32",
+    "REF12-r1 braco_experimental.hba1c_mudanca_tipo_dispersao=IC95: <-0.32> a <-0.03>",
+    "REF12-r2 braco_experimental.hba1c_mudanca_media=-9.1",
+    "REF12-r2 braco_controle.hba1c_mudanca_media=-7.2",
+    "REF12-r2 braco_experimental.hba1c_mudanca_dispersao=4.2",
+    "REF12-r2 braco_controle.hba1c_mudanca_dispersao=4.0",
+    "REF12-r2 braco_experimental.hba1c_basal_media=57.6",
+    "REF12-r2 braco_controle.hba1c_basal_media=57.4",
+    "REF12-r2 braco_experimental.hba1c_basal_dp=8.4",
+    "REF12-r2 braco_controle.hba1c_basal_dp=7.7",
+    "PMC6024764-r2 braco_experimental.hba1c_mudanca_dispersao=±1.18",
+    "PMC6024764-r2 braco_controle.hba1c_mudanca_dispersao=±0.70",
+    "PMC5048014-r1 braco_experimental.hba1c_mudanca_media=-1.6",
+    "PMC5048014-r1 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC5048014-r2 braco_experimental.hba1c_mudanca_media=-1.6",
+    "PMC5048014-r2 braco_controle.hba1c_mudanca_media=0.3",
+    "PMC5048014-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=DP"
+   ]
+  },
+  "deepseek14": {
+   "boas": 139,
+   "total": 206,
+   "pct": 67.5,
+   "adjudicar": [
+    "REF9-r1 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "REF9-r1 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "REF9-r2 braco_experimental.n_randomizado=25",
+    "REF9-r2 braco_controle.n_randomizado=25",
+    "REF9-r2 braco_experimental.n_analisado=23",
+    "REF9-r2 braco_controle.n_analisado=24",
+    "REF9-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "REF9-r2 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC9606840-r1 braco_experimental.hba1c_mudanca_media=-0.23",
+    "PMC9606840-r1 braco_experimental.hba1c_mudanca_dispersao=0.05",
+    "PMC9606840-r1 braco_controle.hba1c_mudanca_dispersao=0.06",
+    "PMC9606840-r2 braco_experimental.hba1c_mudanca_media=-0.23",
+    "PMC9606840-r2 braco_experimental.hba1c_mudanca_dispersao=(-0.33 a -0.14)",
+    "PMC9606840-r2 braco_experimental.hba1c_basal_media=6.16",
+    "PMC9606840-r2 braco_controle.hba1c_basal_media=6.16",
+    "PMC9606840-r2 braco_experimental.hba1c_basal_dp=0.30",
+    "PMC7535044-r1 braco_experimental.n_randomizado=41",
+    "PMC7535044-r1 braco_controle.n_randomizado=42",
+    "PMC7535044-r1 braco_experimental.n_analisado=40",
+    "PMC7535044-r1 braco_controle.n_analisado=41",
+    "PMC7535044-r1 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC7535044-r1 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC7535044-r2 braco_experimental.n_randomizado=41",
+    "PMC7535044-r2 braco_controle.n_randomizado=42",
+    "PMC7535044-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC7535044-r2 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "REF12-r1 braco_experimental.hba1c_mudanca_media=-9.1 mmol/mol",
+    "REF12-r1 braco_controle.hba1c_mudanca_media=-7.2 mmol/mol",
+    "REF12-r1 braco_experimental.hba1c_mudanca_dispersao=±4.2",
+    "REF12-r1 braco_controle.hba1c_mudanca_dispersao=±4.0",
+    "REF12-r2 braco_experimental.hba1c_mudanca_media=-1.9",
+    "REF12-r2 braco_experimental.hba1c_mudanca_dispersao=(-3.5, -0.3)",
+    "REF12-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=IC95",
+    "REF12-r2 braco_experimental.hba1c_basal_media=57",
+    "REF12-r2 braco_controle.hba1c_basal_media=57",
+    "PMC5048014-r1 braco_experimental.hba1c_mudanca_media=-1.6%",
+    "PMC5048014-r1 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC5048014-r2 braco_experimental.n_analisado=40",
+    "PMC5048014-r2 braco_experimental.hba1c_mudanca_media=-1.6",
+    "PMC5048014-r2 braco_controle.hba1c_mudanca_media=0.3",
+    "PMC5048014-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC5048014-r2 braco_controle.hba1c_mudanca_tipo_dispersao=DP"
+   ]
+  }
+ },
+ "modelos": {
+  "gemma12": {
+   "pool_pipeline": {
+    "md": -0.52,
+    "ic95": [
+     -0.82,
+     -0.22
+    ],
+    "tau2": 0.1367,
+    "i2_pct": 91.3
+   },
+   "verdade_mecanica": {
+    "md": -0.52,
+    "ic95": [
+     -0.82,
+     -0.22
+    ],
+    "tau2": 0.1367,
+    "i2_pct": 91.3
+   },
+   "delta_pool_verdade": {
+    "md": 0.0,
+    "ic": [
+     0.0,
+     0.0
+    ]
+   },
+   "lente_desperturbada": {
+    "md": -0.27,
+    "ic95": [
+     -0.38,
+     -0.17
+    ],
+    "tau2": 0.0052,
+    "i2_pct": 28.6
+   },
+   "ancora_publicada": {
+    "md": -0.24,
+    "ic95": [
+     -0.32,
+     -0.16
+    ],
+    "i2_pct": 6
+   },
+   "concordancia_replicas_celulas": {
+    "iguais": 99,
+    "total": 103,
+    "pct": 96.1
+   },
+   "gatilhos": [
+    {
+     "classe": "fatorial-margens",
+     "estudo": "Saslow 2023",
+     "resposta": "SIM",
+     "ns_usados": null
+    }
+   ]
+  },
+  "qwen14": {
+   "pool_pipeline": {
+    "md": -0.62,
+    "ic95": [
+     -0.99,
+     -0.25
+    ],
+    "tau2": 0.1919,
+    "i2_pct": 95.0
+   },
+   "verdade_mecanica": {
+    "md": -0.47,
+    "ic95": [
+     -0.7,
+     -0.24
+    ],
+    "tau2": 0.053,
+    "i2_pct": 88.8
+   },
+   "delta_pool_verdade": {
+    "md": 0.15,
+    "ic": [
+     0.29,
+     0.01
+    ]
+   },
+   "lente_desperturbada": {
+    "md": -0.51,
+    "ic95": [
+     -0.74,
+     -0.28
+    ],
+    "tau2": 0.053,
+    "i2_pct": 88.8
+   },
+   "ancora_publicada": {
+    "md": -0.24,
+    "ic95": [
+     -0.32,
+     -0.16
+    ],
+    "i2_pct": 6
+   },
+   "concordancia_replicas_celulas": {
+    "iguais": 85,
+    "total": 103,
+    "pct": 82.5
+   },
+   "gatilhos": [
+    {
+     "classe": "sinal-como-impresso",
+     "estudo": "Goday 2016",
+     "lado": "braco_controle",
+     "valor_na_ficha": 0.3,
+     "resposta": "+0.3",
+     "valor_usado": 0.3
+    },
+    {
+     "classe": "fatorial-margens",
+     "estudo": "Saslow 2023",
+     "resposta": "SIM",
+     "ns_usados": null
+    }
+   ]
+  },
+  "llama8": {
+   "pool_pipeline": {
+    "md": -0.3,
+    "ic95": [
+     -0.49,
+     -0.1
+    ],
+    "tau2": 0.0141,
+    "i2_pct": 21.8
+   },
+   "verdade_mecanica": {
+    "md": -0.46,
+    "ic95": [
+     -0.73,
+     -0.2
+    ],
+    "tau2": 0.0,
+    "i2_pct": 0.0
+   },
+   "delta_pool_verdade": {
+    "md": 0.16,
+    "ic": [
+     0.24,
+     0.1
+    ]
+   },
+   "lente_desperturbada": {
+    "md": -0.52,
+    "ic95": [
+     -0.78,
+     -0.25
+    ],
+    "tau2": 0.0,
+    "i2_pct": 0.0
+   },
+   "ancora_publicada": {
+    "md": -0.24,
+    "ic95": [
+     -0.32,
+     -0.16
+    ],
+    "i2_pct": 6
+   },
+   "concordancia_replicas_celulas": {
+    "iguais": 84,
+    "total": 103,
+    "pct": 81.6
+   },
+   "gatilhos": [
+    {
+     "classe": "campo-faltante",
+     "estudo": "Saslow 2023",
+     "lado": "braco_experimental",
+     "faltavam": [
+      "dp"
+     ],
+     "resposta": "{\"dp\": 0.4, \"n\": 25}",
+     "preenchidos": {
+      "dp": 0.4
+     }
+    },
+    {
+     "classe": "campo-faltante",
+     "estudo": "Saslow 2023",
+     "lado": "braco_controle",
+     "faltavam": [
+      "dp"
+     ],
+     "resposta": "{\n \"hba1c_basal_dp\": 0.13,\n \"hba1c_final_dp\": 0.13\n}",
+     "preenchidos": {}
+    },
+    {
+     "classe": "campo-faltante",
+     "estudo": "Dorans 2022",
+     "lado": "braco_experimental",
+     "faltavam": [
+      "dp"
+     ],
+     "resposta": "{\"media\": -0.24, \"dp\": 0.30}",
+     "preenchidos": {
+      "dp": 0.3
+     }
+    },
+    {
+     "classe": "campo-faltante",
+     "estudo": "Dorans 2022",
+     "lado": "braco_controle",
+     "faltavam": [
+      "dp"
+     ],
+     "resposta": "NR.",
+     "preenchidos": {}
+    },
+    {
+     "classe": "campo-faltante",
+     "estudo": "Goday 2016",
+     "lado": "braco_controle",
+     "faltavam": [
+      "dp"
+     ],
+     "resposta": "{\"media\": 0.4, \"dp\": 0.15}",
+     "preenchidos": {
+      "dp": 0.15
+     }
+    }
+   ]
+  },
+  "qwen35": {
+   "pool_pipeline": {
+    "md": -0.57,
+    "ic95": [
+     -0.84,
+     -0.3
+    ],
+    "tau2": 0.0776,
+    "i2_pct": 94.7
+   },
+   "verdade_mecanica": {
+    "md": -0.56,
+    "ic95": [
+     -0.85,
+     -0.28
+    ],
+    "tau2": 0.0944,
+    "i2_pct": 94.7
+   },
+   "delta_pool_verdade": {
+    "md": 0.01,
+    "ic": [
+     0.01,
+     0.02
+    ]
+   },
+   "lente_desperturbada": {
+    "md": -0.44,
+    "ic95": [
+     -0.62,
+     -0.25
+    ],
+    "tau2": 0.0313,
+    "i2_pct": 85.7
+   },
+   "ancora_publicada": {
+    "md": -0.24,
+    "ic95": [
+     -0.32,
+     -0.16
+    ],
+    "i2_pct": 6
+   },
+   "concordancia_replicas_celulas": {
+    "iguais": 65,
+    "total": 103,
+    "pct": 63.1
+   },
+   "gatilhos": [
+    {
+     "classe": "fatorial-margens",
+     "estudo": "Saslow 2023",
+     "resposta": "RESPOSTA: SIM",
+     "ns_usados": null
+    },
+    {
+     "classe": "campo-faltante",
+     "estudo": "Thomsen 2022",
+     "lado": "braco_controle",
+     "faltavam": [
+      "dp"
+     ],
+     "resposta": "{\"media\": -0.56, \"dp\": null, \"n\": 33}",
+     "preenchidos": {}
+    }
+   ]
+  },
+  "deepseek14": {
+   "pool_pipeline": {
+    "md": -0.43,
+    "ic95": [
+     -0.64,
+     -0.22
+    ],
+    "tau2": 0.0,
+    "i2_pct": 0.0
+   },
+   "verdade_mecanica": {
+    "md": -0.43,
+    "ic95": [
+     -0.64,
+     -0.22
+    ],
+    "tau2": 0.0,
+    "i2_pct": 0.0
+   },
+   "delta_pool_verdade": {
+    "md": 0.0,
+    "ic": [
+     0.0,
+     0.0
+    ]
+   },
+   "lente_desperturbada": {
+    "md": -0.54,
+    "ic95": [
+     -0.75,
+     -0.33
+    ],
+    "tau2": 0.0,
+    "i2_pct": 0.0
+   },
+   "ancora_publicada": {
+    "md": -0.24,
+    "ic95": [
+     -0.32,
+     -0.16
+    ],
+    "i2_pct": 6
+   },
+   "concordancia_replicas_celulas": {
+    "iguais": 60,
+    "total": 103,
+    "pct": 58.3
+   },
+   "gatilhos": [
+    {
+     "classe": "fatorial-margens",
+     "estudo": "Saslow 2023",
+     "resposta": "<think>\nOkay, so I'm trying to figure out how to answer this question about the ",
+     "ns_usados": null
+    },
+    {
+     "classe": "campo-faltante",
+     "estudo": "Saslow 2023",
+     "lado": "braco_experimental",
+     "faltavam": [
+      "n"
+     ],
+     "resposta": "<think>\nAlright, so the user has provided a snippet from the extraction form of ",
+     "preenchidos": {}
+    },
+    {
+     "classe": "campo-faltante",
+     "estudo": "Saslow 2023",
+     "lado": "braco_controle",
+     "faltavam": [
+      "n"
+     ],
+     "resposta": "<think>\nOkay, so I'm trying to figure out how to respond to this query. The user",
+     "preenchidos": {}
+    },
+    {
+     "classe": "campo-faltante",
+     "estudo": "Thomsen 2022",
+     "lado": "braco_experimental",
+     "faltavam": [
+      "media",
+      "dp"
+     ],
+     "resposta": "<think>\nOkay, so I'm trying to figure out how to solve this problem. The user pr",
+     "preenchidos": {}
+    },
+    {
+     "classe": "campo-faltante",
+     "estudo": "Thomsen 2022",
+     "lado": "braco_controle",
+     "faltavam": [
+      "media",
+      "dp"
+     ],
+     "resposta": "<think>\nOkay, so I'm trying to figure out how to fill in the missing data points",
+     "preenchidos": {}
+    },
+    {
+     "classe": "campo-faltante",
+     "estudo": "Goday 2016",
+     "lado": "braco_controle",
+     "faltavam": [
+      "media",
+      "dp"
+     ],
+     "resposta": "<think>\nOk, eu preciso analisar a ficha de extração do estudo Goday 2016, especi",
+     "preenchidos": {}
+    }
+   ]
+  }
+ }
+}

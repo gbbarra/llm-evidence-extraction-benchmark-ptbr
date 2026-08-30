@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen35",
+ "trial": "PMC9606840",
+ "replica": 2,
+ "content": "{\n \"estudo\": \"Key Points\",\n \"desenho\": \"paralelo 2 braços\",\n \"pais\": \"\",\n \"duracao\": \"6 meses\",\n \"n_randomizado_total\": \"141\",\n \"braco_experimental\": {\n  \"rotulo\": \"Low-carbohydrate diet intervention group\",\n  \"descricao_intervencao\": \"Comportamental e suplementação alimentar (fase Go Low <40g carboidratos/dia, fase Keep it Low <60g carboidratos/dia) com sessões semanais/mensais\",\n  \"n_randomizado\": \"75\",\n  \"n_analisado\": \"NR\",\n  \"hba1c_mudanca_media\": \"-0.24\",\n  \"hba1c_mudanca_dispersao\": \"0.33 a 0.19\",\n  \"hba1c_mudanca_tipo_dispersao\": \"IC95: <inferior> a <superior>\",\n  \"hba1c_basal_media\": \"NR\",\n  \"hba1c_basal_dp\": \"NR\",\n  \"hba1c_final_media\": \"NR\",\n  \"hba1c_final_dp\": \"NR\"\n },\n \"braco_controle\": {\n  \"rotulo\": \"Usual diet group\",\n  \"descricao_intervencao\": \"Informação escrita com aconselhamento dietético padrão; sem recomendações contínuas\",\n  \"n_randomizado\": \"75\",\n  \"n_analisado\": \"NR\",\n  \"hba1c_mudanca_media\": \"-0.04\",\n  \"hba1c_mudanca_dispersao\": \"0.10 a 0.02\",\n  \"hba1c_mudanca_tipo_dispersao\": \"IC95: <inferior> a <superior>\",\n  \"hba1c_basal_media\": \"NR\",\n  \"hba1c_basal_dp\": \"NR\",\n  \"hba1c_final_media\": \"NR\",\n  \"hba1c_final_dp\": \"NR\"\n }\n}",
+ "dt": 38.4358375,
+ "tokens": 477,
+ "prompt_tokens": 10697,
+ "finish": "stop"
+}

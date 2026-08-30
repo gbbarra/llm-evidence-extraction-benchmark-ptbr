@@ -1,0 +1,156 @@
+{
+ "modelo": "qwen35",
+ "arm": "rodada2-emenda2",
+ "estudos_no_pool": 6,
+ "gatilhos": [
+  {
+   "classe": "fatorial-margens",
+   "estudo": "Saslow 2023",
+   "resposta": "RESPOSTA: SIM",
+   "ns_usados": null
+  },
+  {
+   "classe": "campo-faltante",
+   "estudo": "Thomsen 2022",
+   "lado": "braco_controle",
+   "faltavam": [
+    "dp"
+   ],
+   "resposta": "{\"media\": -0.56, \"dp\": null, \"n\": 33}",
+   "preenchidos": {}
+  }
+ ],
+ "por_estudo": [
+  {
+   "estudo": "Saslow 2017",
+   "md": -0.5,
+   "ic95": [
+    -0.89,
+    -0.11
+   ],
+   "sexteto": [
+    -0.8,
+    -0.44,
+    12.0,
+    -0.3,
+    -0.55,
+    13.0
+   ],
+   "replica_usada": 1,
+   "replicas_identicas": false
+  },
+  {
+   "estudo": "Saslow 2023",
+   "md": -0.18,
+   "ic95": [
+    -0.21,
+    -0.15
+   ],
+   "sexteto": [
+    -0.32,
+    0.07,
+    39.0,
+    -0.14,
+    0.07,
+    42.0
+   ],
+   "replica_usada": 1,
+   "replicas_identicas": false
+  },
+  {
+   "estudo": "Dorans 2022",
+   "md": -0.2,
+   "ic95": [
+    -0.28,
+    -0.12
+   ],
+   "sexteto": [
+    -0.24,
+    -0.31,
+    75.0,
+    -0.04,
+    -0.18,
+    75.0
+   ],
+   "replica_usada": 1,
+   "replicas_identicas": false
+  },
+  {
+   "estudo": "Chen 2020",
+   "md": -0.43,
+   "ic95": [
+    -1.4,
+    0.54
+   ],
+   "sexteto": [
+    -1.44,
+    2.71,
+    41.0,
+    -1.01,
+    1.65,
+    42.0
+   ],
+   "replica_usada": 1,
+   "replicas_identicas": false
+  },
+  {
+   "estudo": "Thomsen 2022",
+   "status": "dados-insuficientes",
+   "exp": [
+    -0.18,
+    -0.43,
+    34.0
+   ],
+   "ctl": [
+    -0.56,
+    null,
+    33.0
+   ]
+  },
+  {
+   "estudo": "Wang 2018",
+   "md": -0.32,
+   "ic95": [
+    -0.87,
+    0.23
+   ],
+   "sexteto": [
+    -0.63,
+    1.18,
+    24.0,
+    -0.31,
+    0.7,
+    25.0
+   ],
+   "replica_usada": 1,
+   "replicas_identicas": false
+  },
+  {
+   "estudo": "Goday 2016",
+   "md": -1.9,
+   "ic95": [
+    -2.25,
+    -1.55
+   ],
+   "sexteto": [
+    -1.6,
+    0.7,
+    45.0,
+    0.3,
+    0.92,
+    40.0
+   ],
+   "replica_usada": 1,
+   "replicas_identicas": false
+  }
+ ],
+ "agregado": {
+  "md": -0.57,
+  "ic95": [
+   -0.84,
+   -0.3
+  ],
+  "tau2": 0.0776,
+  "i2_pct": 94.7
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen35",
+ "trial": "REF12",
+ "replica": 1,
+ "content": "{\n \"estudo\": \"Agerholm et al., 2021\",\n \"desenho\": \"paralelo 2 braços\",\n \"pais\": \"Dinamarca\",\n \"duracao\": \"6 semanas\",\n \"n_randomizado_total\": \"72\",\n \"braco_experimental\": {\n  \"rotulo\": \"CRHP (dieta com restrição de carboidratos e alto teor de proteína)\",\n  \"descricao_intervencao\": \"Dieta com 30% E% de carboidratos, 30% E% de proteína, 40% E% de gordura\",\n  \"n_randomizado\": \"36\",\n  \"n_analisado\": \"34\",\n  \"hba1c_mudanca_media\": \"-0.18\",\n  \"hba1c_mudanca_dispersao\": \"-0.32\",\n  \"hba1c_mudanca_tipo_dispersao\": \"IC95: <-0.32> a <-0.03>\",\n  \"hba1c_basal_media\": \"8.09\",\n  \"hba1c_basal_dp\": \"0.77\",\n  \"hba1c_final_media\": \"NR\",\n  \"hba1c_final_dp\": \"\"\n },\n \"braco_controle\": {\n  \"rotulo\": \"CD (dieta convencional para diabetes)\",\n  \"descricao_intervencao\": \"Dieta com 50% E% de carboidratos, 17% E% de proteína, 33% E% de gordura\",\n  \"n_randomizado\": \"36\",\n  \"n_analisado\": \"33\",\n  \"hba1c_mudanca_media\": \"-0.56\",\n  \"hba1c_mudanca_dispersao\": \"NR\",\n  \"hba1c_mudanca_tipo_dispersao\": \"NR\",\n  \"hba1c_basal_media\": \"7.40\",\n  \"hba1c_basal_dp\": \"0.70\",\n  \"hba1c_final_media\": \"NR\",\n  \"hba1c_final_dp\": \"\"\n }\n}",
+ "dt": 97.1673353,
+ "tokens": 493,
+ "prompt_tokens": 12869,
+ "finish": "stop"
+}
