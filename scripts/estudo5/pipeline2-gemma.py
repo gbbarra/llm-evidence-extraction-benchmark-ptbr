@@ -156,12 +156,25 @@ def main():
 
     print("\n===== etapa 3+4: totais por codigo e sintese narrativa", flush=True)
     linhas, total_n = [], 0
+    incoerentes = []
     for rot, d in proprios.items():
         s = d["sexteto"]
         n = int(s[2] + s[5])
         total_n += n
         f = d["final"] or {}
-        linhas.append(f"- {rot}: MD {f.get('md')} IC95 {f.get('ic95')} · participantes: {n}")
+        ic = f.get("ic95")
+        # E5-5 coherence check (detection at the product layer): an interval
+        # that does not contain its own MD is flagged, never endorsed.
+        coerente = bool(ic) and f.get("md") is not None and ic[0] - 1e-9 <= f["md"] <= ic[1] + 1e-9
+        if coerente:
+            linhas.append(f"- {rot}: MD {f.get('md')} IC95 {ic} · participantes: {n}")
+        else:
+            incoerentes.append(rot)
+            linhas.append(f"- {rot}: MD {f.get('md')} · IC95 REPORTADO INVALIDO "
+                          f"(o intervalo {ic} nao contem o proprio MD; nao usar) · participantes: {n}")
+        d["coerente"] = coerente
+    if incoerentes:
+        print(f"  ICs reportados incoerentes (sinalizados, nunca endossados): {incoerentes}", flush=True)
     ag = pool_reg.get("final") or pool_reg["pool_sobre_os_proprios_sextetos"]
     i2 = pool_reg["pool_sobre_os_proprios_sextetos"].get("i2_pct")
     dados = ("AGREGADO (DerSimonian-Laird): MD " + str(ag.get("md")) + " IC95 " + str(ag.get("ic95"))
@@ -187,9 +200,14 @@ def main():
     for i, (rot, d) in enumerate(ordem):
         f = d["final"] or {}
         y = len(ordem) - i
-        if f.get("ic95"):
+        if d.get("coerente"):
             ax.plot(f["ic95"], [y, y], color="#2e5fa3", lw=2)
             ax.plot(f.get("md"), y, "s", ms=7, color="#2e5fa3")
+        elif f.get("md") is not None:
+            ax.plot(f["md"], y, "s", ms=7, color="#b3541e")
+            ax.annotate("IC reportado inválido (não contém o MD) — sinalizado, não plotado",
+                        (f["md"], y), xytext=(10, -3), textcoords="offset points",
+                        fontsize=7.6, color="#b3541e")
         ax.text(-0.02, y, rot, ha="right", va="center", fontsize=9, transform=ax.get_yaxis_transform())
     ax.plot(ag["ic95"], [0, 0], color="#12315e", lw=3)
     ax.plot(ag["md"], 0, "D", ms=11, color="#12315e")
