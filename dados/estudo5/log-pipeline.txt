@@ -1,0 +1,75 @@
+===== PIPELINE 100% gemma4:12b · etapa 1: cálculo por estudo (instrumentos G2b)
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-1.1, -0.6, 11], "fonte": ["hba1c_mudanca_dispersao", "hba1c_m
+    HARNESS: RESULTADO: 0.42
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.6, 0.0, 8], "fonte": ["hba1c_mudanca_dispersao", "hba1c_mud
+    HARNESS: RESULTADO: 0.43
+    MODELO : {"funcao": "md", "argumentos": [-0.8, 0.42, 11, -0.3, 0.43, 8], "fonte": ["hba1c_mudanca_media", "re
+    HARNESS: RESULTADO: -0.5
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.8, 0.42, 11, -0.3, 0.43, 8], "fonte": ["hba1c_mudanca_media"
+    HARNESS: RESULTADO: [-0.89, -0.11]
+  Saslow 2017: 5 turnos · avisos de conteúdo: 0 · final: {"md": -0.5, "ic95": [-0.89, -0.11]}
+    MODELO : {"funcao": "md", "argumentos": [-0.32, 0.07, 23, -0.14, 0.07, 25], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.18
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.32, 0.07, 23, -0.14, 0.07, 25], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.22, -0.14]
+  Saslow 2023: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.18, "ic95": [-0.22, -0.14]}
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.33, -0.19, 73], "fonte": ["hba1c_mudanca_dispersao_inferior
+    HARNESS: RESULTADO: 0.31
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.1, 0.02, 69], "fonte": ["hba1c_mudanca_dispersao_inferior",
+    HARNESS: RESULTADO: 0.25
+    MODELO : {"funcao": "md", "argumentos": [-0.24, 0.31, 73, -0.04, 0.25, 69], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.2
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.24, 0.31, 73, -0.04, 0.25, 69], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.29, -0.11]
+  Dorans 2022: 5 turnos · avisos de conteúdo: 0 · final: {"md": -0.2, "ic95": [-0.29, -0.11]}
+    MODELO : {"funcao": "md", "argumentos": [-1.44, 0.59, 41, -1.01, 1.06, 42], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.43
+    MODELO : {"funcao": "ic95_md", "argumentos": [-1.44, 0.59, 41, -1.01, 1.06, 42], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.8, -0.06]
+  Chen 2020: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.43, "ic95": [-0.8, -0.06]}
+    MODELO : {"funcao": "md", "argumentos": [-0.83, 0.38, 34, -0.56, 0.37, 33], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.27
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.83, 0.38, 34, -0.56, 0.37, 33], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.45, -0.09]
+  Thomsen 2022: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.27, "ic95": [-0.45, -0.09]}
+    MODELO : {"funcao": "md", "argumentos": [-0.63, 1.18, 24, -0.31, 0.70, 25], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.32
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.63, 1.18, 24, -0.31, 0.70, 25], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.87, 0.23]
+  Wang 2018: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.32, "ic95": [-0.87, 0.23]}
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.1, 0.7], "fonte": ["hba1c_basal_dp", "hba1c_final_dp"]
+    HARNESS: RESULTADO: 0.96
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.0, 0.8], "fonte": ["hba1c_basal_dp", "hba1c_final_dp"]
+    HARNESS: RESULTADO: 0.92
+    MODELO : {"funcao": "md", "argumentos": [5.3, 0.96, 45, 7.1, 0.92, 40], "fonte": ["hba1c_final_media", "deriv
+    HARNESS: RESULTADO: -1.8
+    MODELO : {"funcao": "ic95_md", "argumentos": [5.3, 0.96, 45, 7.1, 0.92, 40], "fonte": ["hba1c_final_media", "
+    HARNESS: RESULTADO: [-2.2, -1.4]
+  Goday 2016: 5 turnos · avisos de conteúdo: 0 · final: {"md": -1.8, "ic95": [-2.2, -1.4]}
+
+===== etapa 2: síntese estatística (instrumentos G3b)
+    MODELO : {"funcao": "pool_dl_md", "sextetos": [[-0.8, 0.42, 11.0, -0.3, 0.43, 8.0], [-0.32, 0.07, 23.0, -0.14
+    HARNESS: RESULTADO: {"md": -0.46, "ic95": [-0.67, -0.26], "tau2": 0.055, "i2_pct": 91.0}
+== G3PIPE: consistente com os próprios sextetos: True · final {"md": -0.46, "ic95": [-0.67, -0.26]} · pool dos próprios: {"md": -0.46, "ic95": [-0.67, -0.26], "tau2": 0.055, "i2_pct": 91.0}
+
+===== etapa 3: totais pré-computados pelo código
+AGREGADO (DerSimonian-Laird): MD -0.46 IC95 [-0.67, -0.26] · I2 = 91.0%
+ESTUDOS: 7 · PARTICIPANTES TOTAIS: 493
+- Saslow 2017: MD -0.5 IC95 [-0.89, -0.11] · participantes: 19
+- Saslow 2023: MD -0.18 IC95 [-0.22, -0.14] · participantes: 48
+- Dorans 2022: MD -0.2 IC95 [-0.29, -0.11] · participantes: 142
+- Chen 2020: MD -0.43 IC95 [-0.8, -0.06] · participantes: 83
+- Thomsen 2022: MD -0.27 IC95 [-0.45, -0.09] · participantes: 67
+- Wang 2018: MD -0.32 IC95 [-0.87, 0.23] · participantes: 49
+- Goday 2016: MD -1.8 IC95 [-2.2, -1.4] · participantes: 85
+
+===== etapa 4: síntese narrativa (gemma12; só os números fornecidos)
+A análise dos dados compilados revelou um efeito agregado de redução nos níveis de HbA1c no braço experimental, com uma diferença média (MD) de -0,46 (IC95% [-0,67, -0,26]). A análise de heterogeneidade indicou um valor de $I^2$ de 91,0%.
+
+A metanálise incluiu um total de 7 estudos com 493 participantes. Ao observar os resultados individuais, cinco dos estudos apresentaram intervalos de confiança …
+
+checagem anti-invencao: numeros orfaos = ZERO
+
+===== etapa 5: forest plot (codigo deterministico)
+
+== PIPELINE COMPLETO em 7.8 min · consistente: True · orfaos: 0 · gravado em dados/estudo5/pipeline/
