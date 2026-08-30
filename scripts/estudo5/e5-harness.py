@@ -1,0 +1,232 @@
+# -*- coding: utf-8 -*-
+"""EXTRAI Study 5 — GEMMA-SÓ: the minimal-harness frontier (rungs G1/G2).
+
+gemma4:12b orchestrates the calculator over ITS OWN round-2 sheets; the
+harness nets DETECT and WARN, never substitute (protocol §1). G1 = free-text
+CALC + sign-echo net. G2 = schema-constrained JSON calls with declared
+per-argument source fields + the same detection-only net.
+
+Run: python scripts/estudo5/e5-harness.py G1|G2
+Outputs: dados/estudo5/saidas/<rung>/<estudo>.json · dados/estudo5/resultados-<rung>.json
+"""
+import importlib.util
+import json
+import re
+import sys
+import time
+from pathlib import Path
+
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+ROOT = Path(__file__).resolve().parents[2]
+D5 = ROOT / "dados" / "estudo5"
+R2 = ROOT / "dados" / "estudo4" / "rodada2"
+MODELO = "gemma12"
+MAX_TURNOS = 16
+MAX_AVISOS_POR_CHAMADA = 2
+
+SCHEMA_G2 = {
+    "type": "object",
+    "properties": {
+        "funcao": {"type": "string",
+                   "enum": ["md", "ic95_md", "dp_de_ic", "dp_de_se", "dp_mudanca_r05", "fim"]},
+        "argumentos": {"type": "array", "items": {"type": "number"}, "minItems": 1, "maxItems": 6},
+        "fonte": {"type": "array", "items": {"type": "string"}, "maxItems": 6},
+    },
+    "required": ["funcao", "argumentos"],
+}
+
+
+def carrega(nome, rel):
+    sp = importlib.util.spec_from_file_location(nome, ROOT / rel)
+    m = importlib.util.module_from_spec(sp)
+    sp.loader.exec_module(m)
+    return m
+
+
+h3 = carrega("h3", "scripts/estudo3/e3-harness.py")
+FUNCOES = {k: v for k, v in h3.FUNCOES.items() if k != "pool_dl_md"}
+
+
+def gerar_schema(prompt, max_tokens):
+    body = dict(model=h3.MODELS[MODELO]["ollama"], prompt=prompt, stream=False, think=False,
+                format=SCHEMA_G2, options=dict(num_predict=max_tokens, num_ctx=h3.CTX))
+    r, dt = h3.post_json(h3.OLLAMA + "/api/generate", body)
+    if r.get("error"):
+        raise RuntimeError(r["error"])
+    return dict(content=r.get("response", "") or "", dt=r.get("total_duration", 0) / 1e9 or dt)
+
+
+def ficha_r2(tid):
+    for rep in (1, 2):
+        f = R2 / "saidas" / MODELO / "extracao" / f"{tid}-r{rep}.json"
+        if f.exists():
+            js = h3.acha_json(json.loads(f.read_text(encoding="utf-8"))["content"])
+            if js:
+                return js
+    return None
+
+
+def numeros_da_ficha(ficha):
+    """Every number readable in the sheet, with its field path and sign."""
+    nums = []
+
+    def anda(d, trilha):
+        if isinstance(d, dict):
+            for k, v in d.items():
+                anda(v, f"{trilha}.{k}" if trilha else k)
+        else:
+            s = str(d).replace("−", "-").replace("–", "-")
+            for m in re.finditer(r"-?\d+(?:\.\d+)?", s):
+                nums.append((trilha, float(m.group(0))))
+    anda(ficha, "")
+    return nums
+
+
+def aviso_sinal(args, nums):
+    """Detection only: an argument whose magnitude exists in the sheet with the
+    opposite sign, while no sheet number equals it as emitted."""
+    for a in args:
+        if a == 0:
+            continue
+        if any(abs(v - a) <= 0.005 for _, v in nums):
+            continue
+        opostos = [c for c, v in nums if abs(abs(v) - abs(a)) <= 0.005 and (v > 0) != (a > 0)]
+        if opostos:
+            return (f"AVISO: o argumento {a} tem a mesma magnitude do campo '{opostos[0]}' "
+                    f"da ficha, mas com o SINAL oposto — e nenhum número da ficha vale {a}. "
+                    "Confira e reemita a chamada (corrigida, ou idêntica se você confirma).")
+    return None
+
+
+def aviso_fonte(args, fontes, ficha):
+    """G2 detection net: argument vs its declared source field (value and sign)."""
+    for a, f in zip(args, fontes or []):
+        fl = str(f).strip().lower()
+        if fl in ("derivado", "resultado-anterior", "resultado anterior", ""):
+            continue
+        alvo = None
+        for trilha, v in numeros_da_ficha(ficha):
+            if trilha.lower().endswith(fl) or fl in trilha.lower():
+                alvo = (trilha, v)
+                break
+        if alvo and abs(alvo[1] - a) > 0.005:
+            return (f"AVISO: o argumento {a} declara vir do campo '{alvo[0]}', mas a ficha "
+                    f"registra {alvo[1]} nesse campo. Confira e reemita a chamada "
+                    "(corrigida, ou idêntica se você confirma).")
+    return None
+
+
+def parse_g1(linha):
+    m = re.match(r"\s*CALC:\s*([a-z0-9_]+)\s*\((.*)\)\s*$", linha.strip(), re.I)
+    if not m:
+        return None
+    try:
+        args = [float(x) for x in json.loads(f"[{m.group(2)}]")]
+    except Exception:
+        return None
+    return m.group(1).lower(), args, None
+
+
+def roda_estudo(rung, tid, base):
+    rot = h3.ROT[tid]
+    ficha = ficha_r2(tid)
+    nums = numeros_da_ficha(ficha)
+    prompt0 = base.replace("{FICHA}", json.dumps(ficha, ensure_ascii=False, indent=1))
+    historico = ""
+    turnos = []
+    avisados = {}
+    final = None
+    for _ in range(MAX_TURNOS):
+        if rung == "G1":
+            r = h3.gerar(MODELO, prompt0 + historico + "\nPróxima linha:", max_tokens=80)
+            bruto = next((l for l in r["content"].splitlines() if l.strip()), "").strip()
+            if re.fullmatch(r"FIM\.?", bruto, re.I):
+                turnos.append(dict(emitiu=bruto))
+                break
+            parsed = parse_g1(bruto)
+        else:
+            r = gerar_schema(prompt0 + historico + "\nPróximo JSON:", max_tokens=120)
+            bruto = r["content"].strip()
+            try:
+                js = json.loads(bruto)
+                fn = js.get("funcao", "")
+                if fn == "fim":
+                    a = js.get("argumentos", [])
+                    final = dict(md=a[0], ic95=[a[1], a[2]]) if len(a) >= 3 else None
+                    turnos.append(dict(emitiu=bruto))
+                    break
+                parsed = (fn, [float(x) for x in js.get("argumentos", [])], js.get("fonte"))
+            except Exception:
+                parsed = None
+        if not parsed:
+            historico += f"{bruto}\nAVISO: formato inválido — emita exatamente uma chamada no formato pedido.\n"
+            turnos.append(dict(emitiu=bruto, aviso="formato"))
+            continue
+        fn, args, fontes = parsed
+        chave = f"{fn}{args}"
+        aviso = None
+        if avisados.get(chave, 0) < MAX_AVISOS_POR_CHAMADA and chave not in avisados.get("_conf", []):
+            aviso = aviso_sinal(args, nums) or (aviso_fonte(args, fontes, ficha) if rung == "G2" else None)
+        if aviso and avisados.get("_ultimo") == chave:
+            avisados.setdefault("_conf", []).append(chave)   # re-emitted identical: confirmed
+            aviso = None
+        if aviso:
+            avisados[chave] = avisados.get(chave, 0) + 1
+            avisados["_ultimo"] = chave
+            historico += f"{bruto}\n{aviso}\n"
+            turnos.append(dict(emitiu=bruto, aviso=aviso))
+            continue
+        avisados["_ultimo"] = None
+        if fn not in FUNCOES:
+            res = f"RESULTADO: erro — função '{fn}' indisponível neste degrau"
+        else:
+            try:
+                res = f"RESULTADO: {json.dumps(FUNCOES[fn](*args), ensure_ascii=False)}"
+            except Exception as e:
+                res = f"RESULTADO: erro — {str(e)[:60]}"
+        historico += f"{bruto}\n{res}\n"
+        turnos.append(dict(emitiu=bruto, resultado=res))
+    if rung == "G1" and final is None:
+        r = h3.gerar(MODELO, prompt0 + historico +
+                     '\nEscreva APENAS o JSON final: {"md": <valor>, "ic95": [<inferior>, <superior>]}',
+                     max_tokens=60)
+        final = h3.acha_json(r["content"])
+    saida = D5 / "saidas" / rung
+    saida.mkdir(parents=True, exist_ok=True)
+    (saida / f"{tid}.json").write_text(json.dumps(dict(estudo=rot, turnos=turnos, final=final),
+                                                  ensure_ascii=False, indent=1), encoding="utf-8")
+    n_avisos = sum(1 for t in turnos if t.get("aviso") and t["aviso"] != "formato")
+    print(f"  {rot}: {len(turnos)} turnos · avisos de conteúdo: {n_avisos} · "
+          f"final: {json.dumps(final, ensure_ascii=False)}", flush=True)
+    return dict(estudo=rot, final=final, turnos=len(turnos), avisos=n_avisos)
+
+
+def main():
+    rung = (sys.argv[1] if len(sys.argv) > 1 else "G1").upper()
+    assert rung in ("G1", "G2"), "uso: e5-harness.py G1|G2"
+    assert h3.ELENCO == "base"
+    base = (D5 / "prompts" / f"e5-{rung.lower()}.txt").read_text(encoding="utf-8")
+    print(f"===== Estudo 5 · {rung} · {MODELO} [{h3.MODELS[MODELO]['ollama']}]", flush=True)
+    t0 = time.time()
+    resultados = [roda_estudo(rung, tid, base) for tid in h3.TRIALS]
+    # grading reference (grader-side, computed after the runs)
+    c3 = carrega("c3", "scripts/estudo3/corrigir-e3.py")
+    exatos = 0
+    for r, tid in zip(resultados, h3.TRIALS):
+        s = c3.sexteto(ficha_r2(tid))
+        if s and r["final"]:
+            vmd, vic = h3.md(*s), h3.ic95_md(*s)
+            ok = (abs(float(r["final"].get("md", 9)) - vmd) <= 0.01
+                  and abs(float(r["final"]["ic95"][0]) - vic[0]) <= 0.01
+                  and abs(float(r["final"]["ic95"][1]) - vic[1]) <= 0.01)
+            r["verdade"] = dict(md=vmd, ic95=vic)
+            r["exato"] = ok
+            exatos += ok
+    (D5 / f"resultados-{rung}.json").write_text(json.dumps(resultados, ensure_ascii=False, indent=1),
+                                                encoding="utf-8")
+    print(f"== {rung}: {exatos}/7 estudos exatos vs a verdade das próprias fichas "
+          f"· {(time.time() - t0) / 60:.1f} min", flush=True)
+
+
+if __name__ == "__main__":
+    main()
