@@ -15,12 +15,14 @@ Outputs: dados/estudo4/correcao/extracao.json · dados/estudo4/avaliacao-mecanic
 """
 import importlib.util
 import json
+import os
 import sys
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 ROOT = Path(__file__).resolve().parents[2]
-D4 = ROOT / "dados" / "estudo4"
+# E4_DIR points the whole evaluation at another round's tree (e.g. rodada2/)
+D4 = Path(os.environ["E4_DIR"]) if os.environ.get("E4_DIR") else ROOT / "dados" / "estudo4"
 MODELOS = sys.argv[1:] or ["gemma12", "qwen14"]
 SUFIXO = ("-" + "-".join(MODELOS)) if sys.argv[1:] else ""
 
