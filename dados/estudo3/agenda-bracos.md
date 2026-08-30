@@ -13,4 +13,6 @@ One line per question; one arm per question; nothing runs without a registered a
 | Q7 | Does gemma26 audit? (last empty cell of the 4×matrix) | Amendment 7 (cast aud26, audit stage only) | **queued after Q6** | — |
 | Q8 | Flags-not-fixes + committee-with-reverification | Study 4 ("hardened pipeline") — new protocol | future | — |
 
+**Publication split (author's decision, 2026-08-30)**: **Preprint 1** ends at the baseline pipeline's first diamond (-0.28 vs -0.24) — the closed arc read→compute→chain→reproduce; the entire ablation program (Q2–Q7 + committee + scaffolding + championship) is **Preprint 2**, seeded by `paper/material-preprint2-ablation.tex`.
+
 Instrument-fix backlog (apply to FUTURE corpora/rulers, never retroactively): keep title/byline in corpus text (gap #5); `estudo` field enters the ruler; perturbation operator covers number words (gap #1), totals with visible addends (#2), twin tables (#3), rounded prose restatements (#4).
