@@ -60,9 +60,9 @@ h3 = carrega("h3", "scripts/estudo3/e3-harness.py")
 FUNCOES = {k: v for k, v in h3.FUNCOES.items() if k != "pool_dl_md"}
 
 
-def gerar_schema(prompt, max_tokens):
+def gerar_schema(prompt, max_tokens, schema=None):
     body = dict(model=h3.MODELS[MODELO]["ollama"], prompt=prompt, stream=False, think=False,
-                format=SCHEMA_G2, options=dict(num_predict=max_tokens, num_ctx=h3.CTX))
+                format=schema or SCHEMA_G2, options=dict(num_predict=max_tokens, num_ctx=h3.CTX))
     r, dt = h3.post_json(h3.OLLAMA + "/api/generate", body)
     if r.get("error"):
         raise RuntimeError(r["error"])
@@ -266,7 +266,7 @@ def roda_g3():
     avisados = {}
     final = None
     for _ in range(8):
-        r = gerar_schema(prompt0 + historico + "\nPróximo JSON:", max_tokens=400)
+        r = gerar_schema(prompt0 + historico + "\nPróximo JSON:", max_tokens=400, schema=SCHEMA_G3)
         bruto = r["content"].strip()
         try:
             js = json.loads(bruto)
@@ -280,6 +280,15 @@ def roda_g3():
             turnos.append(dict(emitiu=bruto))
             break
         sxs = js.get("sextetos") or []
+        if len(sxs) < 2:
+            aviso = ("AVISO: a chamada pool_dl_md precisa do campo 'sextetos' com pelo menos "
+                     "dois sextetos [m1, dp1, n1, m2, dp2, n2] — os seus resultados por estudo "
+                     "estão listados acima. Reemita a chamada completa.")
+            historico += f"{bruto}\n{aviso}\n"
+            turnos.append(dict(emitiu=bruto, aviso=aviso))
+            print(f"    MODELO : {bruto[:100]}", flush=True)
+            print(f"    HARNESS: {aviso[:110]}", flush=True)
+            continue
         aviso = None
         proprios_l = [d["sexteto"] for d in proprios.values()]
         for s in sxs:
@@ -308,7 +317,7 @@ def roda_g3():
         turnos.append(dict(emitiu=bruto, resultado=res))
         print(f"    MODELO : {bruto[:100]}", flush=True)
         print(f"    HARNESS: {res[:90]}", flush=True)
-    saida = D5 / "saidas" / "G3"
+    saida = D5 / "saidas" / (sys.argv[1].upper() if len(sys.argv) > 1 else "G3")
     saida.mkdir(parents=True, exist_ok=True)
     (saida / "pool.json").write_text(json.dumps(dict(estudo="POOL", resumo=resumo, turnos=turnos,
                                                      final=final), ensure_ascii=False, indent=1),
@@ -318,18 +327,19 @@ def roda_g3():
         all(abs(a - b) <= 0.01 for a, b in zip(final["ic95"], verdade_propria["ic95"]))
     resultado = dict(final=final, pool_sobre_os_proprios_sextetos=verdade_propria,
                      consistente=consistente, estudos_oferecidos=len(proprios))
-    (D5 / "resultados-G3.json").write_text(json.dumps(resultado, ensure_ascii=False, indent=1),
-                                           encoding="utf-8")
-    print(f"== G3: consistente com os próprios sextetos: {consistente} · "
+    rung_nome = sys.argv[1].upper() if len(sys.argv) > 1 else "G3"
+    (D5 / f"resultados-{rung_nome}.json").write_text(json.dumps(resultado, ensure_ascii=False, indent=1),
+                                                     encoding="utf-8")
+    print(f"== {rung_nome}: consistente com os próprios sextetos: {consistente} · "
           f"final {json.dumps(final, ensure_ascii=False)} · "
           f"pool dos próprios: {json.dumps(verdade_propria, ensure_ascii=False)}", flush=True)
 
 
 def main():
     rung = (sys.argv[1] if len(sys.argv) > 1 else "G1").upper()
-    assert rung in ("G1", "G2", "G2B", "G3"), "uso: e5-harness.py G1|G2|G2B|G3"
+    assert rung in ("G1", "G2", "G2B", "G3", "G3B"), "uso: e5-harness.py G1|G2|G2B|G3|G3B"
     assert h3.ELENCO == "base"
-    if rung == "G3":
+    if rung.startswith("G3"):
         print(f"===== Estudo 5 · G3 (pooling) · {MODELO}", flush=True)
         roda_g3()
         return
