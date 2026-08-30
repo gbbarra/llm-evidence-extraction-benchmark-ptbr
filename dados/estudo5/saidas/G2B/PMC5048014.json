@@ -1,0 +1,39 @@
+{
+ "estudo": "Goday 2016",
+ "turnos": [
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.1, 0.7], \"fonte\": [\"hba1c_basal_dp\", \"hba1c_final_dp\"]}",
+   "resultado": "RESULTADO: 0.96"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [0.96, 45], \"fonte\": [\"resultado-anterior\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: 6.44"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [0.8, 40], \"fonte\": [\"hba1c_final_dp\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: 5.06"
+  },
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [5.3, 0.7, 45, 7.1, 0.8, 40], \"fonte\": [\"hba1c_final_media\", \"hba1c_final_dp\", \"n_analisado\", \"hba1c_final_media\", \"hba1c_final_dp\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: -1.8"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-1.8, 6.44, 45, 5.06, 40], \"fonte\": [\"resultado-anterior\", \"resultado-anterior\", \"n_analisado\", \"resultado-anterior\", \"n_analisado\"]}",
+   "aviso": "AVISO: a função ic95_md exige 6 argumentos — ic95_md(m1, dp1, n1, m2, dp2, n2) — e você enviou 5. Reemita a chamada completa."
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-1.8, 6.44, 45, 5.06, 40, 40], \"fonte\": [\"resultado-anterior\", \"resultado-anterior\", \"n_analisado\", \"resultado-anterior\", \"n_analisado\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: [-19.4, 5.68]"
+  },
+  {
+   "emitiu": "{\"funcao\": \"fim\", \"argumentos\": [-1.8, -19.4, 5.68], \"fonte\": [\"resultado-anterior\", \"resultado-anterior\", \"resultado-anterior\"]}"
+  }
+ ],
+ "final": {
+  "md": -1.8,
+  "ic95": [
+   -19.4,
+   5.68
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+===== Estudo 5 · G3 (pooling) · gemma12
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.42, 11.0, 0.43, 8.0]}
+    HARNESS: RESULTADO: erro — division by zero
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.42, 11.0, 0.43, 8.0]}
+    HARNESS: RESULTADO: erro — division by zero
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.42, 11.0, 0.43, 8.0]}
+    HARNESS: RESULTADO: erro — division by zero
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.42, 11.0, 0.43, 8.0]}
+    HARNESS: RESULTADO: erro — division by zero
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.42, 11.0, 0.43, 8.0]}
+    HARNESS: RESULTADO: erro — division by zero
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.42, 11.0, 0.43, 8.0]}
+    HARNESS: RESULTADO: erro — division by zero
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.42, 11.0, 0.43, 8.0]}
+    HARNESS: RESULTADO: erro — division by zero
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.42, 11.0, 0.43, 8.0]}
+    HARNESS: RESULTADO: erro — division by zero
+== G3: consistente com os próprios sextetos: False · final null · pool dos próprios: {"md": -0.5, "ic95": [-0.74, -0.26], "tau2": 0.0835, "i2_pct": 94.0}

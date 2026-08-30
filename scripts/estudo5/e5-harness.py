@@ -234,11 +234,11 @@ def roda_estudo(rung, tid, base):
     return dict(estudo=rot, final=final, turnos=len(turnos), avisos=n_avisos)
 
 
-def sextetos_do_g2b():
-    """Each study's LAST executed md-call arguments in G2b = the model's own sextet."""
+def sextetos_do_g2b(origem="G2B"):
+    """Each study's LAST executed md-call arguments = the model's own sextet."""
     por_estudo = {}
     for tid in h3.TRIALS:
-        f = D5 / "saidas" / "G2B" / f"{tid}.json"
+        f = D5 / "saidas" / origem / f"{tid}.json"
         if not f.exists():
             continue
         j = json.loads(f.read_text(encoding="utf-8"))
@@ -254,9 +254,10 @@ def sextetos_do_g2b():
     return por_estudo
 
 
-def roda_g3():
+def roda_g3(origem="G2B", rotulo=None):
+    rotulo = rotulo or (sys.argv[1].upper() if len(sys.argv) > 1 else "G3")
     base = (D5 / "prompts" / "e5-g3.txt").read_text(encoding="utf-8")
-    proprios = sextetos_do_g2b()
+    proprios = sextetos_do_g2b(origem)
     resumo = "\n".join(
         f"- {rot}: sexteto {d['sexteto']} → MD {d['final'].get('md') if d['final'] else '?'} "
         f"IC95 {d['final'].get('ic95') if d['final'] else '?'}" for rot, d in proprios.items())
@@ -317,7 +318,7 @@ def roda_g3():
         turnos.append(dict(emitiu=bruto, resultado=res))
         print(f"    MODELO : {bruto[:100]}", flush=True)
         print(f"    HARNESS: {res[:90]}", flush=True)
-    saida = D5 / "saidas" / (sys.argv[1].upper() if len(sys.argv) > 1 else "G3")
+    saida = D5 / "saidas" / rotulo
     saida.mkdir(parents=True, exist_ok=True)
     (saida / "pool.json").write_text(json.dumps(dict(estudo="POOL", resumo=resumo, turnos=turnos,
                                                      final=final), ensure_ascii=False, indent=1),
@@ -327,10 +328,9 @@ def roda_g3():
         all(abs(a - b) <= 0.01 for a, b in zip(final["ic95"], verdade_propria["ic95"]))
     resultado = dict(final=final, pool_sobre_os_proprios_sextetos=verdade_propria,
                      consistente=consistente, estudos_oferecidos=len(proprios))
-    rung_nome = sys.argv[1].upper() if len(sys.argv) > 1 else "G3"
-    (D5 / f"resultados-{rung_nome}.json").write_text(json.dumps(resultado, ensure_ascii=False, indent=1),
-                                                     encoding="utf-8")
-    print(f"== {rung_nome}: consistente com os próprios sextetos: {consistente} · "
+    (D5 / f"resultados-{rotulo}.json").write_text(json.dumps(resultado, ensure_ascii=False, indent=1),
+                                                  encoding="utf-8")
+    print(f"== {rotulo}: consistente com os próprios sextetos: {consistente} · "
           f"final {json.dumps(final, ensure_ascii=False)} · "
           f"pool dos próprios: {json.dumps(verdade_propria, ensure_ascii=False)}", flush=True)
 

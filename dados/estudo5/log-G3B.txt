@@ -1,0 +1,4 @@
+===== Estudo 5 · G3 (pooling) · gemma12
+    MODELO : {"funcao": "pool_dl_md", "sextetos": [[-0.8, 0.42, 11.0, -0.3, 0.43, 8.0], [-0.32, 0.07, 23.0, -0.14
+    HARNESS: RESULTADO: {"md": -0.5, "ic95": [-0.74, -0.26], "tau2": 0.0835, "i2_pct": 94.0}
+== G3B: consistente com os próprios sextetos: True · final {"md": -0.5, "ic95": [-0.74, -0.26]} · pool dos próprios: {"md": -0.5, "ic95": [-0.74, -0.26], "tau2": 0.0835, "i2_pct": 94.0}

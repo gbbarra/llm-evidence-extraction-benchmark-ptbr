@@ -1,0 +1,9 @@
+Você é o redator de uma metanálise. Escreva a síntese dos resultados abaixo em português, entre 150 e 300 palavras, para leitores clínicos.
+
+REGRAS:
+1. Use APENAS os números fornecidos abaixo. Não calcule, não some, não derive nada — todos os totais de que você precisa já estão computados.
+2. Reporte: o efeito agregado com seu intervalo de confiança, a direção do efeito (negativo = a HbA1c caiu mais no braço experimental), a heterogeneidade (I²), quantos estudos e participantes entraram, e quais estudos individualmente cruzam ou não o zero.
+3. Tom sóbrio; nada de recomendações clínicas.
+
+DADOS (os únicos números que você pode citar):
+{DADOS}

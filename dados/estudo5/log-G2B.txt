@@ -1,0 +1,53 @@
+===== Estudo 5 · G2B · gemma12 [gemma4:12b]
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-1.1, -0.6, 11], "fonte": ["hba1c_mudanca_dispersao", "hba1c_m
+    HARNESS: RESULTADO: 0.42
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.6, 0.0, 8], "fonte": ["hba1c_mudanca_dispersao", "hba1c_mud
+    HARNESS: RESULTADO: 0.43
+    MODELO : {"funcao": "md", "argumentos": [-0.8, 0.42, 11, -0.3, 0.43, 8], "fonte": ["hba1c_mudanca_media", "re
+    HARNESS: RESULTADO: -0.5
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.8, 0.42, 11, -0.3, 0.43, 8], "fonte": ["hba1c_mudanca_media"
+    HARNESS: RESULTADO: [-0.89, -0.11]
+  Saslow 2017: 5 turnos · avisos de conteúdo: 0 · final: {"md": -0.5, "ic95": [-0.89, -0.11]}
+    MODELO : {"funcao": "md", "argumentos": [-0.32, 0.07, 23, -0.14, 0.07, 25], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.18
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.32, 0.07, 23, -0.14, 0.07, 25], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.22, -0.14]
+  Saslow 2023: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.18, "ic95": [-0.22, -0.14]}
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.33, -0.19, 73], "fonte": ["hba1c_mudanca_dispersao (inferio
+    HARNESS: RESULTADO: 0.31
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.10, 0.02, 69], "fonte": ["hba1c_mudanca_dispersao (inferior
+    HARNESS: RESULTADO: 0.25
+    MODELO : {"funcao": "md", "argumentos": [-0.24, 0.31, 73, -0.04, 0.25, 69], "fonte": ["hba1c_mudanca_media (e
+    HARNESS: RESULTADO: -0.2
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.24, 0.31, 73, -0.04, 0.25, 69], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.29, -0.11]
+  Dorans 2022: 5 turnos · avisos de conteúdo: 0 · final: {"md": -0.2, "ic95": [-0.29, -0.11]}
+    MODELO : {"funcao": "md", "argumentos": [-1.44, 0.59, 41, -1.01, 1.06, 42], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.43
+    MODELO : {"funcao": "ic95_md", "argumentos": [-1.44, 0.59, 41, -1.01, 1.06, 42], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.8, -0.06]
+  Chen 2020: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.43, "ic95": [-0.8, -0.06]}
+    MODELO : {"funcao": "md", "argumentos": [-0.83, 0.38, 34, -0.56, 0.37, 33], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.27
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.83, 0.38, 34, -0.56, 0.37, 33], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.45, -0.09]
+  Thomsen 2022: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.27, "ic95": [-0.45, -0.09]}
+    MODELO : {"funcao": "md", "argumentos": [-0.63, 1.18, 24, -0.31, 0.70, 25], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.32
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.63, 1.18, 24, -0.31, 0.70, 25], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.87, 0.23]
+  Wang 2018: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.32, "ic95": [-0.87, 0.23]}
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.1, 0.7], "fonte": ["hba1c_basal_dp", "hba1c_final_dp"]
+    HARNESS: RESULTADO: 0.96
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.96, 45], "fonte": ["resultado-anterior", "n_analisado"]}
+    HARNESS: RESULTADO: 6.44
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.8, 40], "fonte": ["hba1c_final_dp", "n_analisado"]}
+    HARNESS: RESULTADO: 5.06
+    MODELO : {"funcao": "md", "argumentos": [5.3, 0.7, 45, 7.1, 0.8, 40], "fonte": ["hba1c_final_media", "hba1c_f
+    HARNESS: RESULTADO: -1.8
+    MODELO : {"funcao": "ic95_md", "argumentos": [-1.8, 6.44, 45, 5.06, 40], "fonte": ["resultado-anterior", "res
+    HARNESS: AVISO: a função ic95_md exige 6 argumentos — ic95_md(m1, dp1, n1, m2, dp2, n2) — e você enviou 5. Reemita a ch
+    MODELO : {"funcao": "ic95_md", "argumentos": [-1.8, 6.44, 45, 5.06, 40, 40], "fonte": ["resultado-anterior", 
+    HARNESS: RESULTADO: [-19.4, 5.68]
+  Goday 2016: 7 turnos · avisos de conteúdo: 1 · final: {"md": -1.8, "ic95": [-19.4, 5.68]}
+== G2B: 5/7 estudos exatos vs a verdade das próprias fichas · 6.7 min
