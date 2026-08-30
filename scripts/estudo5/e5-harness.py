@@ -168,6 +168,56 @@ def aviso_derivacao(args, fontes, js, nums):
     return None
 
 
+# --- Amendment 5 (G2c): argument type system + coherence, detection-only ---
+# Slot classes: M mean-change · D dispersion/SD · N group size · I CI bound · E std. error
+SLOTS = {"md": "MDNMDN", "ic95_md": "MDNMDN", "dp_de_ic": "IIN", "dp_de_se": "EN",
+         "dp_mudanca_r05": "DD"}
+CLASSE_OK = {
+    "M": ("mudanca_media", "derivado"),
+    "D": ("dispersao", "_dp", "derivado", "resultado-anterior", "resultado anterior"),
+    "N": ("n_randomizado", "n_analisado"),
+    "I": ("dispersao", "tipo_dispersao"),
+    "E": ("dispersao",),
+}
+CLASSE_NOME = {"M": "média de MUDANÇA (mudanca_media ou derivação declarada)",
+               "D": "dispersão/DP (dispersao, _dp, derivação ou resultado de dp_*)",
+               "N": "tamanho de grupo (n_randomizado/n_analisado)",
+               "I": "limite de IC (campo de dispersao)",
+               "E": "erro-padrão (campo de dispersao)"}
+
+
+def aviso_tipos(fn, args, fontes):
+    """G2c type net: a declared source of the wrong class for its slot; plus
+    per-class value impossibilities (negative SD; non-integer or tiny n)."""
+    slots = SLOTS.get(fn, "")
+    for i, (a, cls) in enumerate(zip(args, slots)):
+        f = str(fontes[i]).strip().lower() if fontes and i < len(fontes) else ""
+        if cls == "D" and a < 0:
+            return (f"AVISO: o argumento {a} (slot {i+1} de {fn}, classe DP) é NEGATIVO — "
+                    "um desvio-padrão é sempre positivo. Confira e reemita.")
+        if cls == "N" and (a <= 1 or abs(a - round(a)) > 0.001):
+            return (f"AVISO: o argumento {a} (slot {i+1} de {fn}, classe n) não é um tamanho "
+                    "de grupo válido (inteiro > 1). Confira e reemita.")
+        if f and not any(t in f for t in CLASSE_OK.get(cls, ())):
+            return (f"AVISO: o slot {i+1} de {fn} pede {CLASSE_NOME[cls]}, mas recebeu a fonte "
+                    f"'{fontes[i]}' com o valor {a}. Um nível (basal/final) não é uma mudança, "
+                    "e um resultado de md não é uma média de braço. Confira e reemita "
+                    "(corrigida, ou idêntica se você confirma).")
+    return None
+
+
+def aviso_coerencia_ic(fn, args, ultimo_md):
+    """G2c coherence net: ic95_md's implied difference must match the study's
+    own last executed md result."""
+    if fn == "ic95_md" and ultimo_md is not None and len(args) >= 4:
+        d = round(args[0] - args[3], 2)
+        if abs(d - ultimo_md) > 0.01:
+            return (f"AVISO: os argumentos deste ic95_md implicam diferença m1−m2 = {d}, "
+                    f"mas o MD deste estudo (seu último resultado de md) é {ultimo_md}. "
+                    "Os dois devem usar o MESMO sexteto. Confira e reemita.")
+    return None
+
+
 ARIDADE = {"md": (6, "md(m1, dp1, n1, m2, dp2, n2)"),
            "ic95_md": (6, "ic95_md(m1, dp1, n1, m2, dp2, n2)"),
            "dp_de_ic": (3, "dp_de_ic(inferior, superior, n)"),
@@ -214,14 +264,33 @@ def roda_estudo(rung, tid, base, pasta_fichas=None):
             parsed = parse_g1(bruto)
         else:
             r = gerar_schema(prompt0 + historico + "\nPróximo JSON:", max_tokens=160,
-                             schema=SCHEMA_CALC2 if rung == "CALC2" else SCHEMA_G2)
+                             schema=SCHEMA_CALC2 if rung.startswith("CALC2") else SCHEMA_G2)
             bruto = r["content"].strip()
             try:
                 js = json.loads(bruto)
                 fn = js.get("funcao", "")
                 if fn == "fim":
                     a = js.get("argumentos", [])
+                    if rung == "CALC2C" and len(a) >= 3 and not avisados.get("_fim_avisado"):
+                        difere = []
+                        if avisados.get("_ultimo_md") is not None and abs(a[0] - avisados["_ultimo_md"]) > 0.005:
+                            difere.append(f"md {a[0]} ≠ resultado executado {avisados['_ultimo_md']}")
+                        ic_exec = avisados.get("_ultimo_ic")
+                        if ic_exec and (abs(a[1] - ic_exec[0]) > 0.005 or abs(a[2] - ic_exec[1]) > 0.005):
+                            difere.append(f"ic95 [{a[1]}, {a[2]}] ≠ resultado executado {ic_exec}")
+                        if difere:
+                            avisados["_fim_avisado"] = True
+                            aviso_f = ("AVISO: seu fim difere dos seus próprios resultados executados: "
+                                       + "; ".join(difere) + ". Reemita o fim com os resultados executados, "
+                                       "ou idêntico se você confirma.")
+                            historico += f"{bruto}\n{aviso_f}\n"
+                            turnos.append(dict(emitiu=bruto, aviso=aviso_f))
+                            print(f"    MODELO : {bruto[:100]}", flush=True)
+                            print(f"    HARNESS: {aviso_f[:110]}", flush=True)
+                            continue
                     final = dict(md=a[0], ic95=[a[1], a[2]]) if len(a) >= 3 else None
+                    if rung == "CALC2C" and avisados.get("_fim_avisado") and final:
+                        final["requer_revisao_humana"] = True
                     turnos.append(dict(emitiu=bruto))
                     break
                 parsed = (fn, [float(x) for x in js.get("argumentos", [])], js.get("fonte"))
@@ -236,8 +305,12 @@ def roda_estudo(rung, tid, base, pasta_fichas=None):
         aviso = aviso_aridade(fn, args)
         if not aviso and avisados.get(chave, 0) < MAX_AVISOS_POR_CHAMADA and chave not in avisados.get("_conf", []):
             aviso = aviso_sinal(args, nums) or \
-                (aviso_fonte(args, fontes, ficha) if rung.startswith("G2") or rung == "CALC2" else None) or \
-                (aviso_derivacao(args, fontes, js, nums) if rung == "CALC2" else None)
+                (aviso_fonte(args, fontes, ficha) if rung.startswith("G2") or rung.startswith("CALC2") else None) or \
+                (aviso_derivacao(args, fontes, js, nums) if rung.startswith("CALC2") else None) or \
+                (aviso_tipos(fn, args, fontes) if rung == "CALC2C" else None) or \
+                (aviso_coerencia_ic(fn, args, avisados.get("_ultimo_md")) if rung == "CALC2C" else None)
+        if aviso and rung == "CALC2C" and avisados.get(chave, 0) >= MAX_AVISOS_POR_CHAMADA:
+            avisados["_insistiu"] = True
         if aviso and avisados.get("_ultimo") == chave:
             avisados.setdefault("_conf", []).append(chave)   # re-emitted identical: confirmed
             aviso = None
@@ -254,13 +327,20 @@ def roda_estudo(rung, tid, base, pasta_fichas=None):
             res = f"RESULTADO: erro — função '{fn}' indisponível neste degrau"
         else:
             try:
-                res = f"RESULTADO: {json.dumps(FUNCOES[fn](*args), ensure_ascii=False)}"
+                valor = FUNCOES[fn](*args)
+                res = f"RESULTADO: {json.dumps(valor, ensure_ascii=False)}"
+                if fn == "md":
+                    avisados["_ultimo_md"] = valor
+                elif fn == "ic95_md":
+                    avisados["_ultimo_ic"] = valor
             except Exception as e:
                 res = f"RESULTADO: erro — {str(e)[:60]}"
         historico += f"{bruto}\n{res}\n"
         turnos.append(dict(emitiu=bruto, resultado=res))
         print(f"    MODELO : {bruto[:100]}", flush=True)
         print(f"    HARNESS: {res[:90]}", flush=True)
+    if rung == "CALC2C" and final and avisados.get("_insistiu"):
+        final["requer_revisao_humana"] = True
     if rung == "G1" and final is None:
         r = h3.gerar(MODELO, prompt0 + historico +
                      '\nEscreva APENAS o JSON final: {"md": <valor>, "ic95": [<inferior>, <superior>]}',
@@ -379,21 +459,24 @@ def roda_g3(origem="G2B", rotulo=None):
 
 def main():
     rung = (sys.argv[1] if len(sys.argv) > 1 else "G1").upper()
-    assert rung in ("G1", "G2", "G2B", "G3", "G3B"), "uso: e5-harness.py G1|G2|G2B|G3|G3B"
+    assert rung in ("G1", "G2", "G2B", "G3", "G3B", "CALC2C"), "uso: e5-harness.py G1|G2|G2B|G3|G3B|CALC2C"
     assert h3.ELENCO == "base"
     if rung.startswith("G3"):
         print(f"===== Estudo 5 · G3 (pooling) · {MODELO}", flush=True)
         roda_g3()
         return
-    base = (D5 / "prompts" / f"e5-{'g2' if rung.startswith('G2') else 'g1'}.txt").read_text(encoding="utf-8")
-    print(f"===== Estudo 5 · {rung} · {MODELO} [{h3.MODELS[MODELO]['ollama']}]", flush=True)
+    pasta = D5 / "saidas" / "EXTRA2" if rung == "CALC2C" else None
+    nome_prompt = "calc2" if rung == "CALC2C" else ("g2" if rung.startswith("G2") else "g1")
+    base = (D5 / "prompts" / f"e5-{nome_prompt}.txt").read_text(encoding="utf-8")
+    print(f"===== Estudo 5 · {rung} · {MODELO} [{h3.MODELS[MODELO]['ollama']}]"
+          + (" · redes ativas: 8" if rung == "CALC2C" else ""), flush=True)
     t0 = time.time()
-    resultados = [roda_estudo(rung, tid, base) for tid in h3.TRIALS]
+    resultados = [roda_estudo(rung, tid, base, pasta_fichas=pasta) for tid in h3.TRIALS]
     # grading reference (grader-side, computed after the runs)
     c3 = carrega("c3", "scripts/estudo3/corrigir-e3.py")
     exatos = 0
     for r, tid in zip(resultados, h3.TRIALS):
-        s = c3.sexteto(ficha_r2(tid))
+        s = c3.sexteto(ficha_r2(tid, pasta))
         if s and r["final"]:
             vmd, vic = h3.md(*s), h3.ic95_md(*s)
             ok = (abs(float(r["final"].get("md", 9)) - vmd) <= 0.01
