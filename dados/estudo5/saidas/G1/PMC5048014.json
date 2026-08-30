@@ -1,0 +1,31 @@
+{
+ "estudo": "Goday 2016",
+ "turnos": [
+  {
+   "emitiu": "CALC: dp_mudanca_r05(1.1, 0.7)",
+   "resultado": "RESULTADO: 0.96"
+  },
+  {
+   "emitiu": "CALC: dp_mudanca_r05(1.0, 0.8)",
+   "resultado": "RESULTADO: 0.92"
+  },
+  {
+   "emitiu": "CALC: md(5.3, 0.7, 45, 7.1, 0.8, 40)",
+   "resultado": "RESULTADO: -1.8"
+  },
+  {
+   "emitiu": "CALC: ic95_md(5.3, 0.7, 45, 7.1, 0.8, 40)",
+   "resultado": "RESULTADO: [-2.12, -1.48]"
+  },
+  {
+   "emitiu": "FIM"
+  }
+ ],
+ "final": {
+  "md": -1.8,
+  "ic95": [
+   -2.12,
+   -1.48
+  ]
+ }
+}

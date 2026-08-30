@@ -99,20 +99,36 @@ def aviso_sinal(args, nums):
 
 
 def aviso_fonte(args, fontes, ficha):
-    """G2 detection net: argument vs its declared source field (value and sign)."""
+    """G2 detection net, arm-agnostic (Amendment 1 / E5-1): silent if the
+    argument matches the declared field in ANY arm; fires only when it matches
+    none, listing every candidate."""
     for a, f in zip(args, fontes or []):
         fl = str(f).strip().lower()
         if fl in ("derivado", "resultado-anterior", "resultado anterior", ""):
             continue
-        alvo = None
-        for trilha, v in numeros_da_ficha(ficha):
-            if trilha.lower().endswith(fl) or fl in trilha.lower():
-                alvo = (trilha, v)
-                break
-        if alvo and abs(alvo[1] - a) > 0.005:
-            return (f"AVISO: o argumento {a} declara vir do campo '{alvo[0]}', mas a ficha "
-                    f"registra {alvo[1]} nesse campo. Confira e reemita a chamada "
+        candidatos = [(t, v) for t, v in numeros_da_ficha(ficha)
+                      if t.lower().endswith(fl) or fl in t.lower()]
+        if candidatos and not any(abs(v - a) <= 0.005 for _, v in candidatos):
+            lista = "; ".join(f"'{t}' = {v}" for t, v in candidatos[:3])
+            return (f"AVISO: o argumento {a} declara vir de '{f}', mas a ficha registra: "
+                    f"{lista}. Confira e reemita a chamada "
                     "(corrigida, ou idêntica se você confirma).")
+    return None
+
+
+ARIDADE = {"md": (6, "md(m1, dp1, n1, m2, dp2, n2)"),
+           "ic95_md": (6, "ic95_md(m1, dp1, n1, m2, dp2, n2)"),
+           "dp_de_ic": (3, "dp_de_ic(inferior, superior, n)"),
+           "dp_de_se": (2, "dp_de_se(ep, n)"),
+           "dp_mudanca_r05": (2, "dp_mudanca_r05(dp_basal, dp_final)")}
+
+
+def aviso_aridade(fn, args):
+    """Amendment 1 / E5-2: arity pre-check with the full Portuguese signature."""
+    if fn in ARIDADE and len(args) != ARIDADE[fn][0]:
+        n, ass = ARIDADE[fn]
+        return (f"AVISO: a função {fn} exige {n} argumentos — {ass} — e você enviou "
+                f"{len(args)}. Reemita a chamada completa.")
     return None
 
 
@@ -164,9 +180,9 @@ def roda_estudo(rung, tid, base):
             continue
         fn, args, fontes = parsed
         chave = f"{fn}{args}"
-        aviso = None
-        if avisados.get(chave, 0) < MAX_AVISOS_POR_CHAMADA and chave not in avisados.get("_conf", []):
-            aviso = aviso_sinal(args, nums) or (aviso_fonte(args, fontes, ficha) if rung == "G2" else None)
+        aviso = aviso_aridade(fn, args)
+        if not aviso and avisados.get(chave, 0) < MAX_AVISOS_POR_CHAMADA and chave not in avisados.get("_conf", []):
+            aviso = aviso_sinal(args, nums) or (aviso_fonte(args, fontes, ficha) if rung.startswith("G2") else None)
         if aviso and avisados.get("_ultimo") == chave:
             avisados.setdefault("_conf", []).append(chave)   # re-emitted identical: confirmed
             aviso = None
@@ -175,6 +191,8 @@ def roda_estudo(rung, tid, base):
             avisados["_ultimo"] = chave
             historico += f"{bruto}\n{aviso}\n"
             turnos.append(dict(emitiu=bruto, aviso=aviso))
+            print(f"    MODELO : {bruto[:100]}", flush=True)
+            print(f"    HARNESS: {aviso[:110]}", flush=True)
             continue
         avisados["_ultimo"] = None
         if fn not in FUNCOES:
@@ -186,6 +204,8 @@ def roda_estudo(rung, tid, base):
                 res = f"RESULTADO: erro — {str(e)[:60]}"
         historico += f"{bruto}\n{res}\n"
         turnos.append(dict(emitiu=bruto, resultado=res))
+        print(f"    MODELO : {bruto[:100]}", flush=True)
+        print(f"    HARNESS: {res[:90]}", flush=True)
     if rung == "G1" and final is None:
         r = h3.gerar(MODELO, prompt0 + historico +
                      '\nEscreva APENAS o JSON final: {"md": <valor>, "ic95": [<inferior>, <superior>]}',
@@ -203,9 +223,9 @@ def roda_estudo(rung, tid, base):
 
 def main():
     rung = (sys.argv[1] if len(sys.argv) > 1 else "G1").upper()
-    assert rung in ("G1", "G2"), "uso: e5-harness.py G1|G2"
+    assert rung in ("G1", "G2", "G2B"), "uso: e5-harness.py G1|G2|G2B"
     assert h3.ELENCO == "base"
-    base = (D5 / "prompts" / f"e5-{rung.lower()}.txt").read_text(encoding="utf-8")
+    base = (D5 / "prompts" / f"e5-{'g2' if rung.startswith('G2') else 'g1'}.txt").read_text(encoding="utf-8")
     print(f"===== Estudo 5 · {rung} · {MODELO} [{h3.MODELS[MODELO]['ollama']}]", flush=True)
     t0 = time.time()
     resultados = [roda_estudo(rung, tid, base) for tid in h3.TRIALS]

@@ -1,0 +1,70 @@
+{
+ "estudo": "Saslow 2023",
+ "turnos": [
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [-0.32, 0.07, 23, -0.14, 0.07, 25], \"fonte\": [\"hba1c_mudanca_media\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_media\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "aviso": "AVISO: o argumento -0.14 declara vir do campo 'braco_experimental.hba1c_mudanca_media', mas a ficha registra -0.32 nesse campo. Confira e reemita a chamada (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [-0.32, 0.07, 23, -0.14, 0.07, 25], \"fonte\": [\"hba1c_mudanca_media\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_media\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: -0.18"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.18, 0.07, 23, 0.07, 25], \"fonte\": [\"resultado-anterior\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "aviso": "AVISO: o argumento 25.0 declara vir do campo 'braco_experimental.n_analisado', mas a ficha registra 23.0 nesse campo. Confira e reemita a chamada (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.18, 0.07, 23, 0.07, 25], \"fonte\": [\"resultado-anterior\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: erro — ic95_md() missing 1 required positional argument: 'n2'"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.18, 0.07, 23, 0.07, 25], \"fonte\": [\"resultado-anterior\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: erro — ic95_md() missing 1 required positional argument: 'n2'"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.18, 0.07, 23, 0.07, 25], \"fonte\": [\"resultado-anterior\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: erro — ic95_md() missing 1 required positional argument: 'n2'"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.18, 0.07, 23, 0.07, 25], \"fonte\": [\"resultado-anterior\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: erro — ic95_md() missing 1 required positional argument: 'n2'"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.18, 0.07, 23, 0.07, 25], \"fonte\": [\"resultado-anterior\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: erro — ic95_md() missing 1 required positional argument: 'n2'"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.18, 0.07, 23, 0.07, 25], \"fonte\": [\"resultado-anterior\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: erro — ic95_md() missing 1 required positional argument: 'n2'"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.18, 0.07, 23, 0.07, 25], \"fonte\": [\"resultado-anterior\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: erro — ic95_md() missing 1 required positional argument: 'n2'"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.18, 0.07, 23, 0.07, 25], \"fonte\": [\"resultado-anterior\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: erro — ic95_md() missing 1 required positional argument: 'n2'"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.18, 0.07, 23, 0.07, 25], \"fonte\": [\"resultado-anterior\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: erro — ic95_md() missing 1 required positional argument: 'n2'"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.18, 0.07, 23, 0.07, 25], \"fonte\": [\"resultado-anterior\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: erro — ic95_md() missing 1 required positional argument: 'n2'"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.18, 0.07, 23, 0.07, 25], \"fonte\": [\"resultado-anterior\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: erro — ic95_md() missing 1 required positional argument: 'n2'"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.18, 0.07, 23, 0.07, 25], \"fonte\": [\"resultado-anterior\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: erro — ic95_md() missing 1 required positional argument: 'n2'"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.18, 0.07, 23, 0.07, 25], \"fonte\": [\"resultado-anterior\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: erro — ic95_md() missing 1 required positional argument: 'n2'"
+  }
+ ],
+ "final": null
+}

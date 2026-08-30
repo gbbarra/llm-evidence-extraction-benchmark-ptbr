@@ -1,0 +1,9 @@
+===== Estudo 5 · G1 · gemma12 [gemma4:12b]
+  Saslow 2017: 5 turnos · avisos de conteúdo: 0 · final: {"md": -0.5, "ic95": [-0.89, -0.11]}
+  Saslow 2023: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.18, "ic95": [-0.22, -0.14]}
+  Dorans 2022: 9 turnos · avisos de conteúdo: 2 · final: {"md": -0.2, "ic95": [-0.29, -0.11]}
+  Chen 2020: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.43, "ic95": [-0.8, -0.06]}
+  Thomsen 2022: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.27, "ic95": [-0.45, -0.09]}
+  Wang 2018: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.32, "ic95": [-0.87, 0.23]}
+  Goday 2016: 5 turnos · avisos de conteúdo: 0 · final: {"md": -1.8, "ic95": [-2.12, -1.48]}
+== G1: 5/7 estudos exatos vs a verdade das próprias fichas · 5.2 min

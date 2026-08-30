@@ -1,0 +1,23 @@
+{
+ "estudo": "Thomsen 2022",
+ "turnos": [
+  {
+   "emitiu": "CALC: md(-0.83, 0.38, 34, -0.56, 0.37, 33)",
+   "resultado": "RESULTADO: -0.27"
+  },
+  {
+   "emitiu": "CALC: ic95_md(-0.83, 0.38, 34, -0.56, 0.37, 33)",
+   "resultado": "RESULTADO: [-0.45, -0.09]"
+  },
+  {
+   "emitiu": "FIM"
+  }
+ ],
+ "final": {
+  "md": -0.27,
+  "ic95": [
+   -0.45,
+   -0.09
+  ]
+ }
+}

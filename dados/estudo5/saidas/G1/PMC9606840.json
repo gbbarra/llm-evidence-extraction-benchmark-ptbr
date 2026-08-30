@@ -1,0 +1,47 @@
+{
+ "estudo": "Dorans 2022",
+ "turnos": [
+  {
+   "emitiu": "CALC: dp_de_ic(-0.19, -0.33, 73)",
+   "resultado": "RESULTADO: -0.31"
+  },
+  {
+   "emitiu": "CALC: dp_de_ic(0.02, -0.10, 69)",
+   "resultado": "RESULTADO: -0.25"
+  },
+  {
+   "emitiu": "CALC: md(-0.24, -0.31, 73, -0.04, -0.25, 69)",
+   "aviso": "AVISO: o argumento -0.31 tem a mesma magnitude do campo 'braco_experimental.hba1c_basal_dp' da ficha, mas com o SINAL oposto — e nenhum número da ficha vale -0.31. Confira e reemita a chamada (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "CALC: dp_de_ic(-0.19, -0.33, 73)",
+   "resultado": "RESULTADO: -0.31"
+  },
+  {
+   "emitiu": "CALC: dp_de_ic(0.02, -0.10, 69)",
+   "resultado": "RESULTADO: -0.25"
+  },
+  {
+   "emitiu": "CALC: md(-0.24, -0.31, 73, -0.04, -0.25, 69)",
+   "aviso": "AVISO: o argumento -0.31 tem a mesma magnitude do campo 'braco_experimental.hba1c_basal_dp' da ficha, mas com o SINAL oposto — e nenhum número da ficha vale -0.31. Confira e reemita a chamada (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "CALC: md(-0.24, 0.31, 73, -0.04, 0.25, 69)",
+   "resultado": "RESULTADO: -0.2"
+  },
+  {
+   "emitiu": "CALC: ic95_md(-0.24, 0.31, 73, -0.04, 0.25, 69)",
+   "resultado": "RESULTADO: [-0.29, -0.11]"
+  },
+  {
+   "emitiu": "FIM"
+  }
+ ],
+ "final": {
+  "md": -0.2,
+  "ic95": [
+   -0.29,
+   -0.11
+  ]
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "estudo": "Chen 2020",
+ "turnos": [
+  {
+   "emitiu": "CALC: md(-1.44, 0.59, 41, -1.01, 1.06, 42)",
+   "resultado": "RESULTADO: -0.43"
+  },
+  {
+   "emitiu": "CALC: ic95_md(-1.44, 0.59, 41, -1.01, 1.06, 42)",
+   "resultado": "RESULTADO: [-0.8, -0.06]"
+  },
+  {
+   "emitiu": "FIM"
+  }
+ ],
+ "final": {
+  "md": -0.43,
+  "ic95": [
+   -0.8,
+   -0.06
+  ]
+ }
+}
