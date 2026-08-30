@@ -12,6 +12,7 @@
 - **Results**: Study 1 [evaluation](dados/estudo1/avaliacao-estudo1.md) · [analysis](dados/estudo1/analise-estudo1.md) · [anchor errata](dados/estudo1/erratas-da-ancora.md) — Study 2 [evaluation](dados/estudo2/avaliacao-estudo2.md) · [analysis](dados/estudo2/analise-estudo2.md).
 - **Preprints**: [extrai-preprint.pdf](paper/extrai-preprint.pdf) (Studies 1–3's baseline arc; submitted to medRxiv) · [extrai-preprint2.pdf](paper/extrai-preprint2.pdf) (EXTRAI-2: Study 4, "reading is the whole game").
 - **[RECOMMENDATIONS.md](RECOMMENDATIONS.md)** — what to trust when building a meta-analysis pipeline with local LLMs: the benchmark's practical distillate, every claim linked to its measured record.
+- **[ROADMAP-HARNESS.md](ROADMAP-HARNESS.md)** — the prioritized instrument backlog: every planned improvement tied to a named, measured failure; detection-only by law.
 - **Articles**: part 1 [en](ARTICLE1.md)/[pt](ARTIGO1.md) ([published](https://www.linkedin.com/pulse/extrai-part-1-i-made-four-local-models-redo-data-extraction-barra-dvfsf/)) · part 2 [en](ARTICLE2.md)/[pt](ARTIGO2.md) ([published](https://www.linkedin.com/pulse/extrai-part-2-model-got-single-confidence-interval-right-barra-oqixf/)) · part 3 [en](ARTICLE3.md)/[pt](ARTIGO3.md) ([published](https://www.linkedin.com/pulse/extrai-part-3-i-built-meta-analysis-pipeline-out-local-gustavo-barra-jpxzf/)).
 
 ## Headline results
