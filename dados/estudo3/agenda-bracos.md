@@ -1,18 +1,39 @@
-# Study 3 — question ledger (the arms, in logical order)
+# Study 3 — question ledger
 
-One line per question; one arm per question; nothing runs without a registered amendment. Updated as arms close.
+## Paper 1 (CLOSED — preprint ready)
 
-| # | Question | Arm / instrument | Status | Answer |
-|---|---|---|---|---|
-| Q1 | Does the pipeline work with the measured winners? | baseline (protocol §3) | **closed** | Yes: unperturbed diamond −0.28 vs −0.24 published; gate did 6× the sabotage's damage |
-| Q2 | Can the whole pipeline run on the extraction champion? | Amendment 3 (all-gemma) | **closed** | No: runs 4.5× faster, inverts the meta-analysis (+0.85); audit = per-sheet gate 60%/0% FA |
-| Q3 | Does gemma+qwen on the iGPU hit the sweet spot? | Amendment 4 (igpu) | **closed** | Audit half yes (70%, corrections 7/7, unique digit catches); calc half no (same mixed-round joint) |
-| Q4 | Is a committee a mechanism or just retrospective arithmetic? | Amendment 5 (OR-27B vs MAJ-3, calc+synthesis over committee sheets) | **closed** | OR: 10/10 seeds fixed; champion calc pool = sheet truth digit-for-digit (-0.47) at FA cost (truth drift -0.52 to -0.47). MAJ: truth preserved (-0.52) but the champion went by-head (0 calls, -0.45) |
-| Q5 | What scaffolding makes small models close the tool loop? | **Harness v3** (this commit): mixed-round fix + tool-avoidance net + pool reconciliation, all gated behind `E3_HARNESS=v3` | **built, unrun** | — |
-| Q6 | Who is the best tool calculator, fairly compared? | Amendment 6: calculator championship — 4 veterans × 2 lanes under v3, identical audited sheets | **running** | — |
-| Q7 | Does gemma26 audit? (last empty cell of the 4×matrix) | Amendment 7 (cast aud26, audit stage only) | **queued after Q6** | — |
-| Q8 | Flags-not-fixes + committee-with-reverification | Study 4 ("hardened pipeline") — new protocol | future | — |
+The baseline arc: read → compute → chain → **reproduce the low-carb meta-analysis** (unperturbed diamond −0.28 [−0.39, −0.17] vs published −0.24 [−0.32, −0.16]). Ends at the first diamond by the author's editorial decision (commit 70c4249).
 
-**Publication split (author's decision, 2026-08-30)**: **Preprint 1** ends at the baseline pipeline's first diamond (-0.28 vs -0.24) — the closed arc read→compute→chain→reproduce; the entire ablation program (Q2–Q7 + committee + scaffolding + championship) is **Preprint 2**, seeded by `paper/material-preprint2-ablation.tex`.
+## Paper 2 (REORGANIZED 2026-08-30 — one question, one answer)
 
-Instrument-fix backlog (apply to FUTURE corpora/rulers, never retroactively): keep title/byline in corpus text (gap #5); `estudo` field enters the ruler; perturbation operator covers number words (gap #1), totals with visible addends (#2), twin tables (#3), rounded prose restatements (#4).
+**Question: can local models that fit on the integrated GPU (≤14B) reach the expected meta-analytic value, if the harness is fixed?**
+
+Design principles set by the author:
+- **Focus**: iGPU models only — gemma4:12b + qwen3:14b — and harness engineering; bigger/CPU models (gemma26, qwen38) return later only as reference points; previously discarded small models (e.g., llama3.1:8b, qwen3.5:9b, deepseek-r1:14b) may enter after the harness works.
+- **Starting point**: the extraction sheets already exist (gemma12, 98%, replicate-identical) — the study starts from the audited-clean sheets, not from the PDFs.
+- **Outcome**: the diamond. Primary metric = |pooled MD − mechanical truth over the same sheets| (target: digit-exact, as the 27B achieved on committee-OR sheets); anchor comparison via the unperturbation lens (published −0.24).
+- **Seeded errors: DROPPED from the main line** (decision record below). **Corpus perturbation: KEPT** (contamination defense; costs nothing — the sheets already live in the perturbed world; the double target sheet-truth/unperturbed-vs-anchor is already built).
+
+The harness ladder (independent variable; each rung pre-registered before running):
+
+| Rung | Harness | Status |
+|---|---|---|
+| H0 | v2, spontaneous discipline | **measured**: both small models fail (mixed-round; by-head; wrong-side diamonds) |
+| H1 | v3 nets (flow policing) | **partially measured** (gemma12 L+S ran before the pause): flow fixed — tool used, pool reconciled, closed — diamond still wrong (+0.37/+0.36) because argument assembly drops signs; content failure, nets can't reach it |
+| H2 | **harness-driven ("esteira dirigida")**: the harness owns the flow — reads the sheet fields, applies the dispersion conversions deterministically, asks the model only narrow questions (one study, one field set at a time), assembles and executes the pool itself | to design + pre-register |
+| H3 | H2 + targeted field re-verification (one field, one question) where sheets are uncertain | optional rung |
+
+Answer (filled when the ladder closes): —
+
+### Seeds decision record (author asked for rigor here)
+The 8 seeded errors existed to answer ONE question — "is the audit gate real?" — and that question is **answered** (sensitivity matrix: 27B 90%, 14B 70%, 12B 60%; complementary blind spots; committee rules quantified end to end). For Paper 2's question the outcome is the diamond, and a seeded lane would conflate harness effects with corruption-propagation effects. Seeds therefore leave the main line; if H2/H3 includes an audit step, its value is measured by **diamond delta with vs without the step**, not by seed sensitivity. The seed matrix becomes Paper-2 motivation/appendix material. (Distinct from seeds, the corpus perturbation stays: without it, "reached the expected value" cannot be told apart from "remembered the published value".)
+
+### Inventory of already-run arms (Paper-2 motivation material; no re-runs)
+- all-gemma (Amendment 3): spontaneous small-cast pipeline inverts the answer (+0.85).
+- igpu (Amendment 4): audit half works (70%, corrections 7/7), calc dies at the mixed-round joint.
+- committee (Amendment 5): OR repairs 10/10 and the 27B calcs sheet-truth digit-for-digit — proof the SHEETS support an exact diamond; MAJ preserves truth but the champion went by-head.
+- championship under v3 (Amendment 6, **interrupted by design**): gemma12 L+S only — flow nets work, content assembly fails. gemma26/qwen38 runs and the aud26 arm (Amendment 7) are **paused**, returning only as reference points after H2.
+
+**Publication split**: Preprint 1 = the baseline arc (done). Preprint 2 = this page's question; the removed ablation material (`paper/material-preprint2-ablation.tex`) seeds its motivation section.
+
+Instrument-fix backlog (future corpora/rulers, never retroactive): title/byline kept in corpus text (gap #5); `estudo` field graded; perturbation operator covers number words (#1), totals with visible addends (#2), twin tables (#3), rounded prose restatements (#4).

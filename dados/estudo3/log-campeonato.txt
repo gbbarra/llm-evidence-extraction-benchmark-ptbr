@@ -1,0 +1,2 @@
+  gemma12-L: agregado={"metodo": "DL", "md": 0.37, "ic95": [0.24, 0.5], "i2_pct": 89.7}
+  gemma12-S: agregado={"metodo": "DL", "md": 0.36, "ic95": [0.27, 0.45], "i2_pct": 0.0}
