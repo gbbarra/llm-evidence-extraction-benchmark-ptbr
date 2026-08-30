@@ -377,12 +377,20 @@ def corrige_calc():
                 usaveis.append(s)
         verdade_pool = h3.pool_dl_md(usaveis) if usaveis else None
         linhas = []
-        for est in final.get("por_estudo", []):
+        ordem_trials = [ROT[t] for t in TRIALS]
+        for idx, est in enumerate(final.get("por_estudo", [])):
             nome = est.get("estudo", "")
             chave = next((r for r in sext if r.lower() in nome.lower()), None)
             if chave is None:  # surname+year both required (E1 rigid-window lesson)
                 chave = next((r for r in sext if r.split()[0].lower() in nome.lower()
                               and r.split()[-1] in nome), None)
+            if chave is None and len(final.get("por_estudo", [])) == len(ordem_trials):
+                # order fallback: the extractor confabulated study names for
+                # bylines absent from its input (instrument gap #5), and some
+                # calc casts echo those fields; when the list is complete,
+                # position identifies the study (the prompt presents trials in
+                # TRIALS order)
+                chave = ordem_trials[idx] if ordem_trials[idx] in sext else None
             s = sext.get(chave)
             if not s:
                 linhas.append(dict(estudo=nome, rotulo="sem-verdade"))

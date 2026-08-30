@@ -1,0 +1,9 @@
+{
+ "modelo": "gemma12",
+ "lane": "S",
+ "content": "A análise da evidência sobre o efeito de dietas com restrição de carboidratos no controle glicêmico (HbA1c) em indivíduos com diabetes tipo 2 baseia-se em 7 ensaios clínicos que envolveram um total de 484 participantes. O efeito agregado da metanálise revelou uma redução significativa no HbA1c, com um MD de 0,25 (IC95%: 0,05 a 0,45). Como o intervalo de confiança de 95% não cruza o zero, o resultado é considerado estatisticamente significativo, indicando um efeito positivo da intervenção no controle glicêmico. A magnitude clínica do efeito é moderada, embora a heterogeneidade entre os estudos seja alta (I² = 68,2%).\n\nObservou-se uma variação considerável nos resultados individuais entre os ensaios. O maior efeito de redução de HbA1c foi observado no estudo Saslow 2017 (MD -0,5; IC95: -1,04 a -0,06), enquanto o estudo Goday 2016 apresentou o maior valor positivo de MD (0,6; IC95: 0,36 a 0,84). É importante notar que o resultado de Chen 2020 apresentou um IC95 amplo (-0,85 a 1,71) e o de Thomsen 2022 resultou em um MD de 0,0 (IC95: -0,76 a 0,76).\n\nAs limitações da evidência incluem a variabilidade no tamanho das amostras (variando de 25 a 141 participantes por estudo) e a diversidade nas durações das intervenções (variando de 6 semanas até 18 meses). Além disso, as abordagens dietéticas variaram significativamente, incluindo dietas cetogênicas (VLCK), dietas de baixo carboidrato moderado (LCD) e regimes de alta proteína (CRHP), o que contribui para a heterogeneidade observada nos dados.",
+ "dt": 94.9537141,
+ "tokens": 458,
+ "prompt_tokens": 4476,
+ "finish": "stop"
+}

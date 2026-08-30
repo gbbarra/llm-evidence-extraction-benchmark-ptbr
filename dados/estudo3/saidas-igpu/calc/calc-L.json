@@ -1,0 +1,98 @@
+{
+ "modelo": "qwen14",
+ "lane": "L",
+ "chamadas": 0,
+ "fechamentos_forcados": 0,
+ "fechou": true,
+ "dt": 239.9,
+ "registro_eco": {
+  "chamadas_md": [
+   "-0.8, dp_de_ic(-1.1, -0.6, 11",
+   "-0.32, 0.07, 23, -0.14, 0.07, 25",
+   "-0.24, dp_de_ic(-0.33, -0.19, 73",
+   "-1.44, 0.30, 41, -1.01, 0.30, 42",
+   "-0.83, 0.38, 34, -0.56, 0.37, 33",
+   "-0.63, 1.18, 24, -0.31, 0.70, 25",
+   "(5.3 - 6.9"
+  ],
+  "chamadas_pool": [
+   "[[-0.8, dp_de_ic(-1.1, -0.6, 11), 11, -0.3, dp_de_ic(-0.6, 0.0, 8), 8], [-0.32, 0.07, 23, -0.14, 0.07, 25], [-0.24, dp_de_ic(-0.33, -0.19, 73), 73, -0.04, dp_de_ic(-0.10, 0.02, 69), 69], [-1.44, 0.30, 41, -1.01, 0.30, 42], [-0.83, 0.38, 34, -0.56, 0.37, 33], [-0.63, 1.18, 24, -0.31, 0.70, 25], [-1.6, dp_mudanca_r05(1.1, 0.7), 45, 0.3, dp_mudanca_r05(1.0, 0.8), 40]]"
+  ]
+ },
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "CALC: md(-0.8, dp_de_ic(-1.1, -0.6, 11), 11, -0.3, dp_de_ic(-0.6, 0.0, 8), 8)  \nCALC: ic95_md(-0.8, dp_de_ic(-1.1, -0.6, 11), 11, -0.3, dp_de_ic(-0.6, 0.0, 8), 8)  \nCALC: md(-0.32, 0.07, 23, -0.14, 0.07, 25)  \nCALC: ic95_md(-0.32, 0.07, 23, -0.14, 0.07, 25)  \nCALC: md(-0.24, dp_de_ic(-0.33, -0.19, 73), 73, -0.04, dp_de_ic(-0.10, 0.02, 69), 69)  \nCALC: ic95_md(-0.24, dp_de_ic(-0.33, -0.19, 73), 73, -0.04, dp_de_ic(-0.10, 0.02, 69), 69)  \nCALC: md(-1.44, 0.30, 41, -1.01, 0.30, 42)  \nCALC: ic95_md(-1.44, 0.30, 41, -1.01, 0.30, 42)  \nCALC: md(-0.83, 0.38, 34, -0.56, 0.37, 33)  \nCALC: ic95_md(-0.83, 0.38, 34, -0.56, 0.37, 33)  \nCALC: md(-0.63, 1.18, 24, -0.31, 0.70, 25)  \nCALC: ic95_md(-0.63, 1.18, 24, -0.31, 0.70, 25)  \nCALC: md((5.3 - 6.9), dp_mudanca_r05(1.1, 0.7), 45, (7.1 - 6.8), dp_mudanca_r05(1.0, 0.8), 40)  \nCALC: ic95_md((5.3 - 6.9), dp_mudanca_r05(1.1, 0.7), 45, (7.1 - 6.8), dp_mudanca_r05(1.0, 0.8), 40)  \nCALC: pool_dl_md([[-0.8, dp_de_ic(-1.1, -0.6, 11), 11, -0.3, dp_de_ic(-0.6, 0.0, 8), 8], [-0.32, 0.07, 23, -0.14, 0.07, 25], [-0.24, dp_de_ic(-0.33, -0.19, 73), 73, -0.04, dp_de_ic(-0.10, 0.02, 69), 69], [-1.44, 0.30, 41, -1.01, 0.30, 42], [-0.83, 0.38, 34, -0.56, 0.37, 33], [-0.63, 1.18, 24, -0.31, 0.70, 25], [-1.6, dp_mudanca_r05(1.1, 0.7), 45, 0.3, dp_mudanca_r05(1.0, 0.8), 40]])\n\n```json\n{\n \"por_estudo\": [\n  {\"estudo\": \"Saslow & Mason (implied by authors/context, note: text doesn't provide full author list in snippet, but common for such extractions)\", \"md\": -0.5, \"ic95\": [-0.97, -0.03]},\n  {\"estudo\": \"Saslow 2023\", \"md\": -0.18, \"ic95\": [-0.28, -0.08]},\n  {\"estudo\": \"Tidgren et al. (Year not explicitly in title, but text refers to study from 2018-2021; note: title/author list not fully provided in snippet, typically cited as Tidgren 2022)\", \"md\": -0.2, \"ic95\": [-0.28, -0.12]},\n  {\"estudo\": \"Taves (o autor do protocolo/artigo não está explicitamente no título, mas o texto cita o design de Taves; o texto original não fornece o nome do primeiro autor no abstract)\", \"md\": -0.43, \"ic95\": [-0.65, -0.21]},\n  {\"estudo\": \"S.I. et al. (2021)\", \"md\": -0.27, \"ic95\": [-0.43, -0.11]},\n  {\"estudo\": \"Lu et al. (Ano não especificado no texto, mas o estudo foi realizado entre 2015-2016)\", \"md\": -0.32, \"ic95\": [-0.64, 0.0]},\n  {\"estudo\": \"Brackgold et al. (implied by content, though author name not explicitly in header provided, first author is typically found in citations, but as the text provided is the full body, I will use the primary title reference)\", \"md\": -1.6, \"ic95\": [-2.36, -0.84]}\n ],\n \"agregado\": {\"metodo\": \"DL\", \"md\": -0.61, \"ic95\": [-1.01, -0.21], \"i2_pct\": 68.9}\n}\n```",
+   "dt": 239.9
+  }
+ ],
+ "json_final": {
+  "por_estudo": [
+   {
+    "estudo": "Saslow & Mason (implied by authors/context, note: text doesn't provide full author list in snippet, but common for such extractions)",
+    "md": -0.5,
+    "ic95": [
+     -0.97,
+     -0.03
+    ]
+   },
+   {
+    "estudo": "Saslow 2023",
+    "md": -0.18,
+    "ic95": [
+     -0.28,
+     -0.08
+    ]
+   },
+   {
+    "estudo": "Tidgren et al. (Year not explicitly in title, but text refers to study from 2018-2021; note: title/author list not fully provided in snippet, typically cited as Tidgren 2022)",
+    "md": -0.2,
+    "ic95": [
+     -0.28,
+     -0.12
+    ]
+   },
+   {
+    "estudo": "Taves (o autor do protocolo/artigo não está explicitamente no título, mas o texto cita o design de Taves; o texto original não fornece o nome do primeiro autor no abstract)",
+    "md": -0.43,
+    "ic95": [
+     -0.65,
+     -0.21
+    ]
+   },
+   {
+    "estudo": "S.I. et al. (2021)",
+    "md": -0.27,
+    "ic95": [
+     -0.43,
+     -0.11
+    ]
+   },
+   {
+    "estudo": "Lu et al. (Ano não especificado no texto, mas o estudo foi realizado entre 2015-2016)",
+    "md": -0.32,
+    "ic95": [
+     -0.64,
+     0.0
+    ]
+   },
+   {
+    "estudo": "Brackgold et al. (implied by content, though author name not explicitly in header provided, first author is typically found in citations, but as the text provided is the full body, I will use the primary title reference)",
+    "md": -1.6,
+    "ic95": [
+     -2.36,
+     -0.84
+    ]
+   }
+  ],
+  "agregado": {
+   "metodo": "DL",
+   "md": -0.61,
+   "ic95": [
+    -1.01,
+    -0.21
+   ],
+   "i2_pct": 68.9
+  }
+ }
+}

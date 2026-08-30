@@ -1,0 +1,248 @@
+{
+ "L": {
+  "fechou": true,
+  "chamadas": 0,
+  "fechamentos_forcados": 0,
+  "por_estudo": [
+   {
+    "estudo": "Saslow & Mason (implied by authors/context, note: text doesn't provide full author list in snippet, but common for such extractions)",
+    "modelo_md": -0.5,
+    "verdade_md": -0.5,
+    "modelo_ic": [
+     -0.97,
+     -0.03
+    ],
+    "verdade_ic": [
+     -0.89,
+     -0.11
+    ],
+    "rotulo": "md-exata-ic-errada"
+   },
+   {
+    "estudo": "Saslow 2023",
+    "modelo_md": -0.18,
+    "verdade_md": -0.18,
+    "modelo_ic": [
+     -0.28,
+     -0.08
+    ],
+    "verdade_ic": [
+     -0.38,
+     0.02
+    ],
+    "rotulo": "md-exata-ic-errada"
+   },
+   {
+    "estudo": "Tidgren et al. (Year not explicitly in title, but text refers to study from 2018-2021; note: title/author list not fully provided in snippet, typically cited as Tidgren 2022)",
+    "modelo_md": -0.2,
+    "verdade_md": -0.2,
+    "modelo_ic": [
+     -0.28,
+     -0.12
+    ],
+    "verdade_ic": [
+     -0.29,
+     -0.11
+    ],
+    "rotulo": "exata"
+   },
+   {
+    "estudo": "Taves (o autor do protocolo/artigo não está explicitamente no título, mas o texto cita o design de Taves; o texto original não fornece o nome do primeiro autor no abstract)",
+    "modelo_md": -0.43,
+    "verdade_md": -0.43,
+    "modelo_ic": [
+     -0.65,
+     -0.21
+    ],
+    "verdade_ic": [
+     -0.56,
+     -0.3
+    ],
+    "rotulo": "md-exata-ic-errada"
+   },
+   {
+    "estudo": "S.I. et al. (2021)",
+    "modelo_md": -0.27,
+    "verdade_md": -0.27,
+    "modelo_ic": [
+     -0.43,
+     -0.11
+    ],
+    "verdade_ic": [
+     -0.45,
+     -0.09
+    ],
+    "rotulo": "md-exata-ic-errada"
+   },
+   {
+    "estudo": "Lu et al. (Ano não especificado no texto, mas o estudo foi realizado entre 2015-2016)",
+    "modelo_md": -0.32,
+    "verdade_md": -0.32,
+    "modelo_ic": [
+     -0.64,
+     0.0
+    ],
+    "verdade_ic": [
+     -0.87,
+     0.23
+    ],
+    "rotulo": "md-exata-ic-errada"
+   },
+   {
+    "estudo": "Brackgold et al. (implied by content, though author name not explicitly in header provided, first author is typically found in citations, but as the text provided is the full body, I will use the primary title reference)",
+    "modelo_md": -1.6,
+    "verdade_md": -1.9,
+    "modelo_ic": [
+     -2.36,
+     -0.84
+    ],
+    "verdade_ic": [
+     -2.3,
+     -1.5
+    ],
+    "rotulo": "errada"
+   }
+  ],
+  "agregado_modelo": {
+   "metodo": "DL",
+   "md": -0.61,
+   "ic95": [
+    -1.01,
+    -0.21
+   ],
+   "i2_pct": 68.9
+  },
+  "agregado_verdade": {
+   "md": -0.5,
+   "ic95": [
+    -0.76,
+    -0.25
+   ],
+   "tau2": 0.0988,
+   "i2_pct": 91.7
+  }
+ },
+ "S": {
+  "fechou": true,
+  "chamadas": 0,
+  "fechamentos_forcados": 0,
+  "por_estudo": [
+   {
+    "estudo": "Saslow 2017",
+    "modelo_md": -0.5,
+    "verdade_md": -0.5,
+    "modelo_ic": [
+     -1.04,
+     -0.06
+    ],
+    "verdade_ic": [
+     -0.89,
+     -0.11
+    ],
+    "rotulo": "md-exata-ic-errada"
+   },
+   {
+    "estudo": "Saslow 2023",
+    "modelo_md": 0.46,
+    "verdade_md": -0.18,
+    "modelo_ic": [
+     0.32,
+     0.6
+    ],
+    "verdade_ic": [
+     -0.38,
+     0.02
+    ],
+    "rotulo": "errada"
+   },
+   {
+    "estudo": "Dorans 2022",
+    "modelo_md": -0.19,
+    "verdade_md": -0.19,
+    "modelo_ic": [
+     -0.34,
+     -0.04
+    ],
+    "verdade_ic": [
+     -0.28,
+     -0.1
+    ],
+    "rotulo": "md-exata-ic-errada"
+   },
+   {
+    "estudo": "Chen 2020",
+    "modelo_md": 0.43,
+    "verdade_md": 0.43,
+    "modelo_ic": [
+     -0.85,
+     1.71
+    ],
+    "verdade_ic": [
+     0.06,
+     0.8
+    ],
+    "rotulo": "md-exata-ic-errada"
+   },
+   {
+    "estudo": "Thomsen 2022",
+    "modelo_md": 0.0,
+    "verdade_md": 0.0,
+    "modelo_ic": [
+     -0.76,
+     0.76
+    ],
+    "verdade_ic": [
+     -0.18,
+     0.18
+    ],
+    "rotulo": "md-exata-ic-errada"
+   },
+   {
+    "estudo": "Wang 2018",
+    "modelo_md": 0.32,
+    "verdade_md": -0.32,
+    "modelo_ic": [
+     -0.66,
+     1.3
+    ],
+    "verdade_ic": [
+     -0.87,
+     0.23
+    ],
+    "rotulo": "errada"
+   },
+   {
+    "estudo": "Goday 2016",
+    "modelo_md": 0.6,
+    "verdade_md": -1.7,
+    "modelo_ic": [
+     0.36,
+     0.84
+    ],
+    "verdade_ic": [
+     -2.08,
+     -1.32
+    ],
+    "rotulo": "errada"
+   }
+  ],
+  "agregado_modelo": {
+   "metodo": "DL",
+   "md": 0.25,
+   "ic95": [
+    0.05,
+    0.45
+   ],
+   "i2_pct": 68.2
+  },
+  "agregado_verdade": {
+   "md": -0.33,
+   "ic95": [
+    -0.65,
+    -0.02
+   ],
+   "tau2": 0.1548,
+   "i2_pct": 92.3
+  }
+ }
+}

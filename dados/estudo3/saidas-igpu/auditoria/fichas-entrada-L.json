@@ -1,0 +1,237 @@
+{
+ "lane": "L",
+ "sementes_aplicadas": [],
+ "fichas": {
+  "PMC5329646": {
+   "estudo": "Saslow & Mason (implied by authors/context, note: text doesn't provide full author list in snippet, but common for such extractions)",
+   "desenho": "paralelo 2 braços",
+   "pais": "USA",
+   "duracao": "32 weeks",
+   "n_randomizado_total": "25",
+   "braco_experimental": {
+    "rotulo": "intervention",
+    "descricao_intervencao": "online intervention based on previous recommendations (an ad libitum very low-carbohydrate ketogenic diet with lifestyle factors)",
+    "n_randomizado": "12",
+    "n_analisado": "11",
+    "hba1c_mudanca_media": "-0.8",
+    "hba1c_mudanca_dispersao": "-1.1 to -0.6",
+    "hba1c_mudanca_tipo_dispersao": "IC95: -1.1 a -0.6",
+    "hba1c_basal_media": "5.8",
+    "hba1c_basal_dp": "0.4",
+    "hba1c_final_media": "NR",
+    "hba1c_final_dp": "NR"
+   },
+   "braco_controle": {
+    "rotulo": "control",
+    "descricao_intervencao": "online diet program based on the American Diabetes Associations’ \"Create Your Plate\" diet",
+    "n_randomizado": "13",
+    "n_analisado": "8",
+    "hba1c_mudanca_media": "-0.3",
+    "hba1c_mudanca_dispersao": "-0.6 to 0.0",
+    "hba1c_mudanca_tipo_dispersao": "IC95: -0.6 a 0.0",
+    "hba1c_basal_media": "7.6",
+    "hba1c_basal_dp": "0.3",
+    "hba1c_final_media": "NR",
+    "hba1c_final_dp": "NR"
+   }
+  },
+  "REF9": {
+   "estudo": "Saslow 2023",
+   "desenho": "fatorial 2x2",
+   "pais": "Estados Unidos",
+   "duracao": "4 meses",
+   "n_randomizado_total": "83",
+   "braco_experimental": {
+    "rotulo": "VLC (Very Low-Carbohydrate)",
+    "descricao_intervencao": "Very low-carbohydrate (VLC) diet, decreasing carbohydrate intake to 20 to 35 nonfiber g of carbohydrates a day.",
+    "n_randomizado": "23",
+    "n_analisado": "23",
+    "hba1c_mudanca_media": "-0.32",
+    "hba1c_mudanca_dispersao": "0.07",
+    "hba1c_mudanca_tipo_dispersao": "EP",
+    "hba1c_basal_media": "6.09",
+    "hba1c_basal_dp": "0.45",
+    "hba1c_final_media": "5.74",
+    "hba1c_final_dp": "NR"
+   },
+   "braco_controle": {
+    "rotulo": "DASH",
+    "descricao_intervencao": "Dietary Approaches to Stop Hypertension (DASH) diet, limiting sodium to <2,300 mg daily and fat intake to 20% to 30% of calories per day.",
+    "n_randomizado": "25",
+    "n_analisado": "25",
+    "hba1c_mudanca_media": "-0.14",
+    "hba1c_mudanca_dispersao": "0.07",
+    "hba1c_mudanca_tipo_dispersao": "EP",
+    "hba1c_basal_media": "6.10",
+    "hba1c_basal_dp": "0.07",
+    "hba1c_final_media": "5.97",
+    "hba1c_final_dp": "NR"
+   }
+  },
+  "PMC9606840": {
+   "estudo": "Tidgren et al. (Year not explicitly in title, but text refers to study from 2018-2021; note: title/author list not fully provided in snippet, typically cited as Tidgren 2022)",
+   "desenho": "paralelo 2 braços",
+   "pais": "USA",
+   "duracao": "6 months",
+   "n_randomizado_total": "141",
+   "braco_experimental": {
+    "rotulo": "Low-carbohydrate diet",
+    "descricao_intervencao": "behavioral intervention promoting a healthy, low-carbohydrate diet (Phase 1: <40g net carbs/day; Phase 2: <60g net carbs/day)",
+    "n_randomizado": "75",
+    "n_analisado": "73",
+    "hba1c_mudanca_media": "-0.24",
+    "hba1c_mudanca_dispersao": "-0.33 to -0.19",
+    "hba1c_mudanca_tipo_dispersao": "IC95: -0.33 a -0.19",
+    "hba1c_basal_media": "6.17",
+    "hba1c_basal_dp": "0.31",
+    "hba1c_final_media": "NR",
+    "hba1c_final_dp": "NR"
+   },
+   "braco_controle": {
+    "rotulo": "Usual diet",
+    "descricao_intervencao": "written information with standard dietary advice; no ongoing recommendations",
+    "n_randomizado": "75",
+    "n_analisado": "69",
+    "hba1c_mudanca_media": "-0.04",
+    "hba1c_mudanca_dispersao": "-0.10 to 0.02",
+    "hba1c_mudanca_tipo_dispersao": "IC95: -0.10 a 0.02",
+    "hba1c_basal_media": "6.14",
+    "hba1c_basal_dp": "0.30",
+    "hba1c_final_media": "NR",
+    "hba1c_final_dp": "NR"
+   }
+  },
+  "PMC7535044": {
+   "estudo": "Taves (o autor do protocolo/artigo não está explicitamente no título, mas o texto cita o design de Taves; o texto original não fornece o nome do primeiro autor no abstract)",
+   "desenho": "paralelo 2 braços",
+   "pais": "Taiwan",
+   "duracao": "18 months",
+   "n_randomizado_total": "92",
+   "braco_experimental": {
+    "rotulo": "LCD",
+    "descricao_intervencao": "moderate (90 g/d) low-carbohydrate diet (LCD)",
+    "n_randomizado": "41",
+    "n_analisado": "41",
+    "hba1c_mudanca_media": "-1.44",
+    "hba1c_mudanca_dispersao": "0.59",
+    "hba1c_mudanca_tipo_dispersao": "DP",
+    "hba1c_basal_media": "9.95",
+    "hba1c_basal_dp": "1.04",
+    "hba1c_final_media": "6.84",
+    "hba1c_final_dp": "0.59"
+   },
+   "braco_controle": {
+    "rotulo": "TDD",
+    "descricao_intervencao": "traditional diabetic diet (TDD)",
+    "n_randomizado": "42",
+    "n_analisado": "42",
+    "hba1c_mudanca_media": "-1.01",
+    "hba1c_mudanca_dispersao": "1.06",
+    "hba1c_mudanca_tipo_dispersao": "DP",
+    "hba1c_basal_media": "8.70",
+    "hba1c_basal_dp": "1.01",
+    "hba1c_final_media": "7.69",
+    "hba1c_final_dp": "1.06"
+   }
+  },
+  "REF12": {
+   "estudo": "S.I. et al. (2021)",
+   "desenho": "paralelo 2 braços",
+   "pais": "Dinamarca",
+   "duracao": "6 semanas",
+   "n_randomizado_total": "72",
+   "braco_experimental": {
+    "rotulo": "CRHP",
+    "descricao_intervencao": "carbohydrate-reduced high-protein diet (CH30/P30/F40)",
+    "n_randomizado": "36",
+    "n_analisado": "34",
+    "hba1c_mudanca_media": "-0.83",
+    "hba1c_mudanca_dispersao": "0.38",
+    "hba1c_mudanca_tipo_dispersao": "DP",
+    "hba1c_basal_media": "8.09",
+    "hba1c_basal_dp": "0.77",
+    "hba1c_final_media": "NR",
+    "hba1c_final_dp": "NR"
+   },
+   "braco_controle": {
+    "rotulo": "CD",
+    "descricao_intervencao": "conventional diabetes diet (CH50/P17/F13)",
+    "n_randomizado": "36",
+    "n_analisado": "33",
+    "hba1c_mudanca_media": "-0.56",
+    "hba1c_mudanca_dispersao": "0.37",
+    "hba1c_mudanca_tipo_dispersao": "DP",
+    "hba1c_basal_media": "7.40",
+    "hba1c_basal_dp": "0.70",
+    "hba1c_final_media": "NR",
+    "hba1c_final_dp": "NR"
+   }
+  },
+  "PMC6024764": {
+   "estudo": "Lu et al. (Ano não especificado no texto, mas o estudo foi realizado entre 2015-2016)",
+   "desenho": "paralelo 2 braços",
+   "pais": "China",
+   "duracao": "3 months",
+   "n_randomizado_total": "56",
+   "braco_experimental": {
+    "rotulo": "LCD group",
+    "descricao_intervencao": "Low-carbohydrate diet education using a 'six-point formula', with replacement of staples with 60g/day nuts for males and 50g/day for females.",
+    "n_randomizado": "28",
+    "n_analisado": "24",
+    "hba1c_mudanca_media": "-0.63",
+    "hba1c_mudanca_dispersao": "1.18",
+    "hba1c_mudanca_tipo_dispersao": "DP",
+    "hba1c_basal_media": "7.43",
+    "hba1c_basal_dp": "1.39",
+    "hba1c_final_media": "6.80",
+    "hba1c_final_dp": "0.83"
+   },
+   "braco_controle": {
+    "rotulo": "LFD group",
+    "descricao_intervencao": "Low-fat diet education using a 'six-point formula'.",
+    "n_randomizado": "28",
+    "n_analisado": "25",
+    "hba1c_mudanca_media": "-0.31",
+    "hba1c_mudanca_dispersao": "0.70",
+    "hba1c_mudanca_tipo_dispersao": "DP",
+    "hba1c_basal_media": "7.79",
+    "hba1c_basal_dp": "1.20",
+    "hba1c_final_media": "7.48",
+    "hba1c_final_dp": "1.15"
+   }
+  },
+  "PMC5048014": {
+   "estudo": "Brackgold et al. (implied by content, though author name not explicitly in header provided, first author is typically found in citations, but as the text provided is the full body, I will use the primary title reference)",
+   "desenho": "paralelo 2 braços",
+   "pais": "Espanha",
+   "duracao": "4 months",
+   "n_randomizado_total": "89",
+   "braco_experimental": {
+    "rotulo": "VLCK diet",
+    "descricao_intervencao": "very low-calorie-ketogenic (VLCK) diet (<50g of carbohydrate daily) as part of a commercial weight-loss program (DiaproKal Method)",
+    "n_randomizado": "45",
+    "n_analisado": "45",
+    "hba1c_mudanca_media": "NR",
+    "hba1c_mudanca_dispersao": "NR",
+    "hba1c_mudanca_tipo_dispersao": "NR",
+    "hba1c_basal_media": "6.9",
+    "hba1c_basal_dp": "1.1",
+    "hba1c_final_media": "5.3",
+    "hba1c_final_dp": "0.7"
+   },
+   "braco_controle": {
+    "rotulo": "LC diet",
+    "descricao_intervencao": "low-calorie diet based on the ADA (American Diabetes Association) guidelines",
+    "n_randomizado": "44",
+    "n_analisado": "40",
+    "hba1c_mudanca_media": "NR",
+    "hba1c_mudanca_dispersao": "NR",
+    "hba1c_mudanca_tipo_dispersao": "NR",
+    "hba1c_basal_media": "6.8",
+    "hba1c_basal_dp": "1.0",
+    "hba1c_final_media": "7.1",
+    "hba1c_final_dp": "0.8"
+   }
+  }
+ }
+}
