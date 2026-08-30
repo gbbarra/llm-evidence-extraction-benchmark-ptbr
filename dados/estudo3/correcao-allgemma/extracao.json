@@ -1,0 +1,2272 @@
+{
+ "placar": {
+  "PMC5329646-r1": {
+   "parse": true,
+   "exata": 13,
+   "nr-correta": 2
+  },
+  "PMC5329646-r2": {
+   "parse": true,
+   "exata": 13,
+   "nr-correta": 2
+  },
+  "REF9-r1": {
+   "parse": true,
+   "adjudicar": 4,
+   "exata": 9
+  },
+  "REF9-r2": {
+   "parse": true,
+   "adjudicar": 4,
+   "exata": 9
+  },
+  "PMC9606840-r1": {
+   "parse": true,
+   "exata": 15
+  },
+  "PMC9606840-r2": {
+   "parse": true,
+   "exata": 15
+  },
+  "PMC7535044-r1": {
+   "parse": true,
+   "adjudicar": 4,
+   "exata": 13
+  },
+  "PMC7535044-r2": {
+   "parse": true,
+   "adjudicar": 4,
+   "exata": 13
+  },
+  "REF12-r1": {
+   "parse": true,
+   "exata": 15
+  },
+  "REF12-r2": {
+   "parse": true,
+   "exata": 15
+  },
+  "PMC6024764-r1": {
+   "parse": true,
+   "exata": 11
+  },
+  "PMC6024764-r2": {
+   "parse": true,
+   "exata": 11
+  },
+  "PMC5048014-r1": {
+   "parse": true,
+   "exata": 13,
+   "nr-correta": 4
+  },
+  "PMC5048014-r2": {
+   "parse": true,
+   "exata": 13,
+   "nr-correta": 4
+  }
+ },
+ "detalhes": [
+  {
+   "trial": "PMC5329646",
+   "rep": 1,
+   "campo": "braco_experimental.n_randomizado",
+   "modelo": "12",
+   "aceitos": [
+    12
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 1,
+   "campo": "braco_controle.n_randomizado",
+   "modelo": "13",
+   "aceitos": [
+    13
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 1,
+   "campo": "braco_experimental.n_analisado",
+   "modelo": "11",
+   "aceitos": [
+    "NR",
+    12,
+    11
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 1,
+   "campo": "braco_controle.n_analisado",
+   "modelo": "8",
+   "aceitos": [
+    "NR",
+    13,
+    7,
+    8
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_mudanca_media",
+   "modelo": "-0.8",
+   "aceitos": [
+    -0.8
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_mudanca_media",
+   "modelo": "-0.3",
+   "aceitos": [
+    -0.3
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_mudanca_tipo_dispersao",
+   "modelo": "IC95: -1.1 a -0.6",
+   "aceitos": [
+    "IC95: -1.1 a -0.6",
+    "IC95"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_mudanca_tipo_dispersao",
+   "modelo": "IC95: -0.6 a 0.0",
+   "aceitos": [
+    "IC95: -0.6 a 0.0",
+    "IC95"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_basal_media",
+   "modelo": "5.8",
+   "aceitos": [
+    5.8
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_basal_media",
+   "modelo": "7.6",
+   "aceitos": [
+    7.6
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_basal_dp",
+   "modelo": "0.4",
+   "aceitos": [
+    0.4
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_basal_dp",
+   "modelo": "0.3",
+   "aceitos": [
+    0.3
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_final_media",
+   "modelo": "NR",
+   "aceitos": [
+    "NR"
+   ],
+   "rotulo": "nr-correta"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_final_media",
+   "modelo": "NR",
+   "aceitos": [
+    "NR"
+   ],
+   "rotulo": "nr-correta"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 1,
+   "campo": "n_randomizado_total",
+   "modelo": "25",
+   "aceitos": [
+    25,
+    "NR"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 2,
+   "campo": "braco_experimental.n_randomizado",
+   "modelo": "12",
+   "aceitos": [
+    12
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 2,
+   "campo": "braco_controle.n_randomizado",
+   "modelo": "13",
+   "aceitos": [
+    13
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 2,
+   "campo": "braco_experimental.n_analisado",
+   "modelo": "11",
+   "aceitos": [
+    "NR",
+    12,
+    11
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 2,
+   "campo": "braco_controle.n_analisado",
+   "modelo": "8",
+   "aceitos": [
+    "NR",
+    13,
+    7,
+    8
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_mudanca_media",
+   "modelo": "-0.8",
+   "aceitos": [
+    -0.8
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_mudanca_media",
+   "modelo": "-0.3",
+   "aceitos": [
+    -0.3
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_mudanca_tipo_dispersao",
+   "modelo": "IC95: -1.1 a -0.6",
+   "aceitos": [
+    "IC95: -1.1 a -0.6",
+    "IC95"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_mudanca_tipo_dispersao",
+   "modelo": "IC95: -0.6 a 0.0",
+   "aceitos": [
+    "IC95: -0.6 a 0.0",
+    "IC95"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_basal_media",
+   "modelo": "5.8",
+   "aceitos": [
+    5.8
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_basal_media",
+   "modelo": "7.6",
+   "aceitos": [
+    7.6
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_basal_dp",
+   "modelo": "0.4",
+   "aceitos": [
+    0.4
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_basal_dp",
+   "modelo": "0.3",
+   "aceitos": [
+    0.3
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_final_media",
+   "modelo": "NR",
+   "aceitos": [
+    "NR"
+   ],
+   "rotulo": "nr-correta"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_final_media",
+   "modelo": "NR",
+   "aceitos": [
+    "NR"
+   ],
+   "rotulo": "nr-correta"
+  },
+  {
+   "trial": "PMC5329646",
+   "rep": 2,
+   "campo": "n_randomizado_total",
+   "modelo": "25",
+   "aceitos": [
+    25,
+    "NR"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF9",
+   "rep": 1,
+   "campo": "braco_experimental.n_randomizado",
+   "modelo": "23",
+   "aceitos": [
+    "NR",
+    45
+   ],
+   "rotulo": "adjudicar"
+  },
+  {
+   "trial": "REF9",
+   "rep": 1,
+   "campo": "braco_controle.n_randomizado",
+   "modelo": "25",
+   "aceitos": [
+    "NR",
+    49
+   ],
+   "rotulo": "adjudicar"
+  },
+  {
+   "trial": "REF9",
+   "rep": 1,
+   "campo": "braco_experimental.n_analisado",
+   "modelo": "23",
+   "aceitos": [
+    "NR",
+    45,
+    39
+   ],
+   "rotulo": "adjudicar"
+  },
+  {
+   "trial": "REF9",
+   "rep": 1,
+   "campo": "braco_controle.n_analisado",
+   "modelo": "25",
+   "aceitos": [
+    "NR",
+    49,
+    42
+   ],
+   "rotulo": "adjudicar"
+  },
+  {
+   "trial": "REF9",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_mudanca_media",
+   "modelo": "-0.32",
+   "aceitos": [
+    -0.32
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF9",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_mudanca_media",
+   "modelo": "-0.14",
+   "aceitos": [
+    -0.14
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF9",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_mudanca_dispersao",
+   "modelo": "0.07",
+   "aceitos": [
+    0.07
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF9",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_mudanca_dispersao",
+   "modelo": "0.07",
+   "aceitos": [
+    0.07
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF9",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_mudanca_tipo_dispersao",
+   "modelo": "EP",
+   "aceitos": [
+    "EP",
+    "SE"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF9",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_mudanca_tipo_dispersao",
+   "modelo": "EP",
+   "aceitos": [
+    "EP",
+    "SE"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF9",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_basal_media",
+   "modelo": "6.09",
+   "aceitos": [
+    6.09,
+    "NR"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF9",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_basal_media",
+   "modelo": "6.10",
+   "aceitos": [
+    6.1,
+    6.1,
+    "NR"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF9",
+   "rep": 1,
+   "campo": "n_randomizado_total",
+   "modelo": "83",
+   "aceitos": [
+    83
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF9",
+   "rep": 2,
+   "campo": "braco_experimental.n_randomizado",
+   "modelo": "23",
+   "aceitos": [
+    "NR",
+    45
+   ],
+   "rotulo": "adjudicar"
+  },
+  {
+   "trial": "REF9",
+   "rep": 2,
+   "campo": "braco_controle.n_randomizado",
+   "modelo": "25",
+   "aceitos": [
+    "NR",
+    49
+   ],
+   "rotulo": "adjudicar"
+  },
+  {
+   "trial": "REF9",
+   "rep": 2,
+   "campo": "braco_experimental.n_analisado",
+   "modelo": "23",
+   "aceitos": [
+    "NR",
+    45,
+    39
+   ],
+   "rotulo": "adjudicar"
+  },
+  {
+   "trial": "REF9",
+   "rep": 2,
+   "campo": "braco_controle.n_analisado",
+   "modelo": "25",
+   "aceitos": [
+    "NR",
+    49,
+    42
+   ],
+   "rotulo": "adjudicar"
+  },
+  {
+   "trial": "REF9",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_mudanca_media",
+   "modelo": "-0.32",
+   "aceitos": [
+    -0.32
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF9",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_mudanca_media",
+   "modelo": "-0.14",
+   "aceitos": [
+    -0.14
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF9",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_mudanca_dispersao",
+   "modelo": "0.07",
+   "aceitos": [
+    0.07
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF9",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_mudanca_dispersao",
+   "modelo": "0.07",
+   "aceitos": [
+    0.07
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF9",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_mudanca_tipo_dispersao",
+   "modelo": "EP",
+   "aceitos": [
+    "EP",
+    "SE"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF9",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_mudanca_tipo_dispersao",
+   "modelo": "EP",
+   "aceitos": [
+    "EP",
+    "SE"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF9",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_basal_media",
+   "modelo": "6.09",
+   "aceitos": [
+    6.09,
+    "NR"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF9",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_basal_media",
+   "modelo": "6.10",
+   "aceitos": [
+    6.1,
+    6.1,
+    "NR"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF9",
+   "rep": 2,
+   "campo": "n_randomizado_total",
+   "modelo": "83",
+   "aceitos": [
+    83
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 1,
+   "campo": "braco_experimental.n_randomizado",
+   "modelo": "75",
+   "aceitos": [
+    75
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 1,
+   "campo": "braco_controle.n_randomizado",
+   "modelo": "75",
+   "aceitos": [
+    75
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 1,
+   "campo": "braco_experimental.n_analisado",
+   "modelo": "73",
+   "aceitos": [
+    "NR",
+    75,
+    73
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 1,
+   "campo": "braco_controle.n_analisado",
+   "modelo": "69",
+   "aceitos": [
+    "NR",
+    75,
+    69
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_mudanca_media",
+   "modelo": "-0.24",
+   "aceitos": [
+    -0.24
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_mudanca_media",
+   "modelo": "-0.04",
+   "aceitos": [
+    -0.04
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_mudanca_tipo_dispersao",
+   "modelo": "IC95: -0.33 a -0.19",
+   "aceitos": [
+    "IC95: -0.33 a -0.19",
+    "IC95"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_mudanca_tipo_dispersao",
+   "modelo": "IC95: -0.10 a 0.02",
+   "aceitos": [
+    "IC95: -0.10 a 0.02",
+    "IC95"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_mudanca_dispersao",
+   "modelo": "-0.33 to -0.19",
+   "aceitos": [
+    "-0.33 to -0.19",
+    "IC95: -0.33 a -0.19",
+    "NR"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_mudanca_dispersao",
+   "modelo": "-0.10 to 0.02",
+   "aceitos": [
+    "-0.10 to 0.02",
+    "IC95: -0.10 a 0.02",
+    "NR"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_basal_media",
+   "modelo": "6.17",
+   "aceitos": [
+    6.17,
+    "NR"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_basal_media",
+   "modelo": "6.14",
+   "aceitos": [
+    6.14,
+    "NR"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_basal_dp",
+   "modelo": "0.31",
+   "aceitos": [
+    0.31,
+    "NR"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_basal_dp",
+   "modelo": "0.30",
+   "aceitos": [
+    0.3,
+    0.3,
+    "NR"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 1,
+   "campo": "n_randomizado_total",
+   "modelo": "141",
+   "aceitos": [
+    141
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 2,
+   "campo": "braco_experimental.n_randomizado",
+   "modelo": "75",
+   "aceitos": [
+    75
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 2,
+   "campo": "braco_controle.n_randomizado",
+   "modelo": "75",
+   "aceitos": [
+    75
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 2,
+   "campo": "braco_experimental.n_analisado",
+   "modelo": "73",
+   "aceitos": [
+    "NR",
+    75,
+    73
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 2,
+   "campo": "braco_controle.n_analisado",
+   "modelo": "69",
+   "aceitos": [
+    "NR",
+    75,
+    69
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_mudanca_media",
+   "modelo": "-0.24",
+   "aceitos": [
+    -0.24
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_mudanca_media",
+   "modelo": "-0.04",
+   "aceitos": [
+    -0.04
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_mudanca_tipo_dispersao",
+   "modelo": "IC95: <inferior> a <superior>",
+   "aceitos": [
+    "IC95: -0.33 a -0.19",
+    "IC95"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_mudanca_tipo_dispersao",
+   "modelo": "IC95: <inferior> a <superior>",
+   "aceitos": [
+    "IC95: -0.10 a 0.02",
+    "IC95"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_mudanca_dispersao",
+   "modelo": "IC95: -0.33 a -0.19",
+   "aceitos": [
+    "-0.33 to -0.19",
+    "IC95: -0.33 a -0.19",
+    "NR"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_mudanca_dispersao",
+   "modelo": "IC95: -0.10 to 0.02",
+   "aceitos": [
+    "-0.10 to 0.02",
+    "IC95: -0.10 a 0.02",
+    "NR"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_basal_media",
+   "modelo": "6.17",
+   "aceitos": [
+    6.17,
+    "NR"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_basal_media",
+   "modelo": "6.14",
+   "aceitos": [
+    6.14,
+    "NR"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_basal_dp",
+   "modelo": "0.31",
+   "aceitos": [
+    0.31,
+    "NR"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_basal_dp",
+   "modelo": "0.30",
+   "aceitos": [
+    0.3,
+    0.3,
+    "NR"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC9606840",
+   "rep": 2,
+   "campo": "n_randomizado_total",
+   "modelo": "141",
+   "aceitos": [
+    141
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 1,
+   "campo": "braco_experimental.n_randomizado",
+   "modelo": "41",
+   "aceitos": [
+    "NR",
+    46
+   ],
+   "rotulo": "adjudicar"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 1,
+   "campo": "braco_controle.n_randomizado",
+   "modelo": "42",
+   "aceitos": [
+    "NR",
+    46
+   ],
+   "rotulo": "adjudicar"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 1,
+   "campo": "braco_experimental.n_analisado",
+   "modelo": "41",
+   "aceitos": [
+    41
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 1,
+   "campo": "braco_controle.n_analisado",
+   "modelo": "42",
+   "aceitos": [
+    42
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_mudanca_media",
+   "modelo": "-1.44",
+   "aceitos": [
+    -1.44
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_mudanca_media",
+   "modelo": "-1.01",
+   "aceitos": [
+    -1.01
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_mudanca_tipo_dispersao",
+   "modelo": "DP",
+   "aceitos": [
+    "IC95: -1.96 a -1.30",
+    "IC95"
+   ],
+   "rotulo": "adjudicar"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_mudanca_tipo_dispersao",
+   "modelo": "DP",
+   "aceitos": [
+    "IC95: -1.40 a -0.63",
+    "IC95"
+   ],
+   "rotulo": "adjudicar"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_basal_media",
+   "modelo": "9.95",
+   "aceitos": [
+    9.95
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_basal_media",
+   "modelo": "8.70",
+   "aceitos": [
+    8.7,
+    8.7
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_basal_dp",
+   "modelo": "1.04",
+   "aceitos": [
+    1.04
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_basal_dp",
+   "modelo": "1.01",
+   "aceitos": [
+    1.01
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_final_media",
+   "modelo": "6.84",
+   "aceitos": [
+    6.84
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_final_media",
+   "modelo": "7.69",
+   "aceitos": [
+    7.69
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_final_dp",
+   "modelo": "0.59",
+   "aceitos": [
+    0.59
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_final_dp",
+   "modelo": "1.06",
+   "aceitos": [
+    1.06
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 1,
+   "campo": "n_randomizado_total",
+   "modelo": "92",
+   "aceitos": [
+    92
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 2,
+   "campo": "braco_experimental.n_randomizado",
+   "modelo": "41",
+   "aceitos": [
+    "NR",
+    46
+   ],
+   "rotulo": "adjudicar"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 2,
+   "campo": "braco_controle.n_randomizado",
+   "modelo": "42",
+   "aceitos": [
+    "NR",
+    46
+   ],
+   "rotulo": "adjudicar"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 2,
+   "campo": "braco_experimental.n_analisado",
+   "modelo": "41",
+   "aceitos": [
+    41
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 2,
+   "campo": "braco_controle.n_analisado",
+   "modelo": "42",
+   "aceitos": [
+    42
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_mudanca_media",
+   "modelo": "-1.44",
+   "aceitos": [
+    -1.44
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_mudanca_media",
+   "modelo": "-1.01",
+   "aceitos": [
+    -1.01
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_mudanca_tipo_dispersao",
+   "modelo": "DP",
+   "aceitos": [
+    "IC95: -1.96 a -1.30",
+    "IC95"
+   ],
+   "rotulo": "adjudicar"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_mudanca_tipo_dispersao",
+   "modelo": "DP",
+   "aceitos": [
+    "IC95: -1.40 a -0.63",
+    "IC95"
+   ],
+   "rotulo": "adjudicar"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_basal_media",
+   "modelo": "9.95",
+   "aceitos": [
+    9.95
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_basal_media",
+   "modelo": "8.70",
+   "aceitos": [
+    8.7,
+    8.7
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_basal_dp",
+   "modelo": "1.04",
+   "aceitos": [
+    1.04
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_basal_dp",
+   "modelo": "1.01",
+   "aceitos": [
+    1.01
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_final_media",
+   "modelo": "6.84",
+   "aceitos": [
+    6.84
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_final_media",
+   "modelo": "7.69",
+   "aceitos": [
+    7.69
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_final_dp",
+   "modelo": "0.59",
+   "aceitos": [
+    0.59
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_final_dp",
+   "modelo": "1.06",
+   "aceitos": [
+    1.06
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC7535044",
+   "rep": 2,
+   "campo": "n_randomizado_total",
+   "modelo": "92",
+   "aceitos": [
+    92
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 1,
+   "campo": "braco_experimental.n_randomizado",
+   "modelo": "36",
+   "aceitos": [
+    "NR",
+    34,
+    36
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 1,
+   "campo": "braco_controle.n_randomizado",
+   "modelo": "36",
+   "aceitos": [
+    "NR",
+    33,
+    36
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 1,
+   "campo": "braco_experimental.n_analisado",
+   "modelo": "34",
+   "aceitos": [
+    34
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 1,
+   "campo": "braco_controle.n_analisado",
+   "modelo": "33",
+   "aceitos": [
+    33
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_mudanca_media",
+   "modelo": "-0.83",
+   "aceitos": [
+    -0.83
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_mudanca_media",
+   "modelo": "-0.56",
+   "aceitos": [
+    -0.56
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_mudanca_dispersao",
+   "modelo": "0.38",
+   "aceitos": [
+    0.38
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_mudanca_dispersao",
+   "modelo": "0.37",
+   "aceitos": [
+    0.37
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_mudanca_tipo_dispersao",
+   "modelo": "DP",
+   "aceitos": [
+    "DP",
+    "SD"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_mudanca_tipo_dispersao",
+   "modelo": "DP",
+   "aceitos": [
+    "DP",
+    "SD"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_basal_media",
+   "modelo": "8.09",
+   "aceitos": [
+    8.09
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_basal_media",
+   "modelo": "7.40",
+   "aceitos": [
+    7.4,
+    7.4
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_basal_dp",
+   "modelo": "0.77",
+   "aceitos": [
+    0.77
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_basal_dp",
+   "modelo": "0.70",
+   "aceitos": [
+    0.7,
+    0.7
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 1,
+   "campo": "n_randomizado_total",
+   "modelo": "72",
+   "aceitos": [
+    63,
+    72
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 2,
+   "campo": "braco_experimental.n_randomizado",
+   "modelo": "36",
+   "aceitos": [
+    "NR",
+    34,
+    36
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 2,
+   "campo": "braco_controle.n_randomizado",
+   "modelo": "36",
+   "aceitos": [
+    "NR",
+    33,
+    36
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 2,
+   "campo": "braco_experimental.n_analisado",
+   "modelo": "34",
+   "aceitos": [
+    34
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 2,
+   "campo": "braco_controle.n_analisado",
+   "modelo": "33",
+   "aceitos": [
+    33
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_mudanca_media",
+   "modelo": "-0.83",
+   "aceitos": [
+    -0.83
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_mudanca_media",
+   "modelo": "-0.56",
+   "aceitos": [
+    -0.56
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_mudanca_dispersao",
+   "modelo": "0.38",
+   "aceitos": [
+    0.38
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_mudanca_dispersao",
+   "modelo": "0.37",
+   "aceitos": [
+    0.37
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_mudanca_tipo_dispersao",
+   "modelo": "DP",
+   "aceitos": [
+    "DP",
+    "SD"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_mudanca_tipo_dispersao",
+   "modelo": "DP",
+   "aceitos": [
+    "DP",
+    "SD"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_basal_media",
+   "modelo": "8.09",
+   "aceitos": [
+    8.09
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_basal_media",
+   "modelo": "7.40",
+   "aceitos": [
+    7.4,
+    7.4
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_basal_dp",
+   "modelo": "0.77",
+   "aceitos": [
+    0.77
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_basal_dp",
+   "modelo": "0.70",
+   "aceitos": [
+    0.7,
+    0.7
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "REF12",
+   "rep": 2,
+   "campo": "n_randomizado_total",
+   "modelo": "72",
+   "aceitos": [
+    63,
+    72
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 1,
+   "campo": "braco_experimental.n_randomizado",
+   "modelo": "28",
+   "aceitos": [
+    28
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 1,
+   "campo": "braco_controle.n_randomizado",
+   "modelo": "28",
+   "aceitos": [
+    28
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 1,
+   "campo": "braco_experimental.n_analisado",
+   "modelo": "24",
+   "aceitos": [
+    "NR",
+    24,
+    28
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 1,
+   "campo": "braco_controle.n_analisado",
+   "modelo": "25",
+   "aceitos": [
+    "NR",
+    25,
+    28
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_mudanca_media",
+   "modelo": "-0.63",
+   "aceitos": [
+    0.48,
+    -0.48,
+    -0.63,
+    0.63
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_mudanca_media",
+   "modelo": "-0.31",
+   "aceitos": [
+    0.28,
+    -0.28,
+    -0.31,
+    0.31
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_mudanca_dispersao",
+   "modelo": "1.18",
+   "aceitos": [
+    0.94,
+    1.18
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_mudanca_dispersao",
+   "modelo": "0.70",
+   "aceitos": [
+    0.67,
+    0.7
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_mudanca_tipo_dispersao",
+   "modelo": "DP",
+   "aceitos": [
+    "DP",
+    "SD"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_mudanca_tipo_dispersao",
+   "modelo": "DP",
+   "aceitos": [
+    "DP",
+    "SD"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 1,
+   "campo": "n_randomizado_total",
+   "modelo": "56",
+   "aceitos": [
+    49,
+    56
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 2,
+   "campo": "braco_experimental.n_randomizado",
+   "modelo": "28",
+   "aceitos": [
+    28
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 2,
+   "campo": "braco_controle.n_randomizado",
+   "modelo": "28",
+   "aceitos": [
+    28
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 2,
+   "campo": "braco_experimental.n_analisado",
+   "modelo": "24",
+   "aceitos": [
+    "NR",
+    24,
+    28
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 2,
+   "campo": "braco_controle.n_analisado",
+   "modelo": "25",
+   "aceitos": [
+    "NR",
+    25,
+    28
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_mudanca_media",
+   "modelo": "-0.63",
+   "aceitos": [
+    0.48,
+    -0.48,
+    -0.63,
+    0.63
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_mudanca_media",
+   "modelo": "-0.31",
+   "aceitos": [
+    0.28,
+    -0.28,
+    -0.31,
+    0.31
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_mudanca_dispersao",
+   "modelo": "1.18",
+   "aceitos": [
+    0.94,
+    1.18
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_mudanca_dispersao",
+   "modelo": "0.70",
+   "aceitos": [
+    0.67,
+    0.7
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_mudanca_tipo_dispersao",
+   "modelo": "DP",
+   "aceitos": [
+    "DP",
+    "SD"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_mudanca_tipo_dispersao",
+   "modelo": "DP",
+   "aceitos": [
+    "DP",
+    "SD"
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC6024764",
+   "rep": 2,
+   "campo": "n_randomizado_total",
+   "modelo": "56",
+   "aceitos": [
+    49,
+    56
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 1,
+   "campo": "braco_experimental.n_randomizado",
+   "modelo": "45",
+   "aceitos": [
+    "NR",
+    45
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 1,
+   "campo": "braco_controle.n_randomizado",
+   "modelo": "44",
+   "aceitos": [
+    "NR",
+    44,
+    40
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 1,
+   "campo": "braco_experimental.n_analisado",
+   "modelo": "45",
+   "aceitos": [
+    45
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 1,
+   "campo": "braco_controle.n_analisado",
+   "modelo": "40",
+   "aceitos": [
+    40
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_mudanca_media",
+   "modelo": "NR",
+   "aceitos": [
+    "NR"
+   ],
+   "rotulo": "nr-correta"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_mudanca_media",
+   "modelo": "NR",
+   "aceitos": [
+    "NR"
+   ],
+   "rotulo": "nr-correta"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_mudanca_tipo_dispersao",
+   "modelo": "NR",
+   "aceitos": [
+    "NR"
+   ],
+   "rotulo": "nr-correta"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_mudanca_tipo_dispersao",
+   "modelo": "NR",
+   "aceitos": [
+    "NR"
+   ],
+   "rotulo": "nr-correta"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_basal_media",
+   "modelo": "6.9",
+   "aceitos": [
+    6.9,
+    6.89
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_basal_media",
+   "modelo": "6.8",
+   "aceitos": [
+    6.8,
+    6.88
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_basal_dp",
+   "modelo": "1.1",
+   "aceitos": [
+    1.1,
+    1.11
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_basal_dp",
+   "modelo": "1.0",
+   "aceitos": [
+    1.0,
+    1,
+    1.03
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_final_media",
+   "modelo": "5.3",
+   "aceitos": [
+    5.3
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_final_media",
+   "modelo": "7.1",
+   "aceitos": [
+    7.1
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 1,
+   "campo": "braco_experimental.hba1c_final_dp",
+   "modelo": "0.7",
+   "aceitos": [
+    0.7
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 1,
+   "campo": "braco_controle.hba1c_final_dp",
+   "modelo": "0.8",
+   "aceitos": [
+    0.8
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 1,
+   "campo": "n_randomizado_total",
+   "modelo": "89",
+   "aceitos": [
+    89
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 2,
+   "campo": "braco_experimental.n_randomizado",
+   "modelo": "45",
+   "aceitos": [
+    "NR",
+    45
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 2,
+   "campo": "braco_controle.n_randomizado",
+   "modelo": "44",
+   "aceitos": [
+    "NR",
+    44,
+    40
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 2,
+   "campo": "braco_experimental.n_analisado",
+   "modelo": "45",
+   "aceitos": [
+    45
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 2,
+   "campo": "braco_controle.n_analisado",
+   "modelo": "40",
+   "aceitos": [
+    40
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_mudanca_media",
+   "modelo": "NR",
+   "aceitos": [
+    "NR"
+   ],
+   "rotulo": "nr-correta"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_mudanca_media",
+   "modelo": "NR",
+   "aceitos": [
+    "NR"
+   ],
+   "rotulo": "nr-correta"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_mudanca_tipo_dispersao",
+   "modelo": "NR",
+   "aceitos": [
+    "NR"
+   ],
+   "rotulo": "nr-correta"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_mudanca_tipo_dispersao",
+   "modelo": "NR",
+   "aceitos": [
+    "NR"
+   ],
+   "rotulo": "nr-correta"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_basal_media",
+   "modelo": "6.9",
+   "aceitos": [
+    6.9,
+    6.89
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_basal_media",
+   "modelo": "6.8",
+   "aceitos": [
+    6.8,
+    6.88
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_basal_dp",
+   "modelo": "1.1",
+   "aceitos": [
+    1.1,
+    1.11
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_basal_dp",
+   "modelo": "1.0",
+   "aceitos": [
+    1.0,
+    1,
+    1.03
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_final_media",
+   "modelo": "5.3",
+   "aceitos": [
+    5.3
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_final_media",
+   "modelo": "7.1",
+   "aceitos": [
+    7.1
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 2,
+   "campo": "braco_experimental.hba1c_final_dp",
+   "modelo": "0.7",
+   "aceitos": [
+    0.7
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 2,
+   "campo": "braco_controle.hba1c_final_dp",
+   "modelo": "0.8",
+   "aceitos": [
+    0.8
+   ],
+   "rotulo": "exata"
+  },
+  {
+   "trial": "PMC5048014",
+   "rep": 2,
+   "campo": "n_randomizado_total",
+   "modelo": "89",
+   "aceitos": [
+    89
+   ],
+   "rotulo": "exata"
+  }
+ ]
+}

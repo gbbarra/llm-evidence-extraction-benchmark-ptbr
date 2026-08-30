@@ -1,0 +1,11 @@
+{
+ "modelo": "gemma12",
+ "trial": "PMC5048014",
+ "lane": "S",
+ "content": "```json\n{\n \"estudo\": \"Brackgold et al. (implied by content, though author name not explicitly in header provided, first author is typically found in citations, but as the text provided is the full body, I will use the primary title reference)\",\n \"vereditos\": {\n  \"desenho\": \"confirma\",\n  \"pais\": \"confirma\",\n  \"duracao\": \"confirma\",\n  \"n_randomizado_total\": \"confirma\",\n  \"braco_experimental.rotulo\": \"confirma\",\n  \"braco_experimental.descricao_intervencao\": \"confirma\",\n  \"braco_experimental.n_randomizado\": \"confirma\",\n  \"braco_experimental.n_analisado\": \"confirma\",\n  \"braco_experimental.hba1c_mudanca_media\": \"confirma\",\n  \"braco_experimental.hba1c_mudanca_dispersao\": \"confirma\",\n  \"braco_experimental.hba1c_mudanca_tipo_dispersao\": \"confirma\",\n  \"braco_experimental.hba1c_basal_media\": \"confirma\",\n  \"braco_experimental.hba1c_basal_dp\": \"confirma\",\n  \"braco_experimental.hba1c_final_media\": \"confirma\",\n  \"braco_experimental.hba1c_final_dp\": \"confirma\",\n  \"braco_controle.rotulo\": \"confirma\",\n  \"braco_controle.descricao_intervencao\": \"confirma\",\n  \"braco_controle.n_randomizado\": \"confirma\",\n  \"braco_controle.n_analisado\": \"confirma\",\n  \"braco_controle.hba1c_mudanca_media\": \"confirma\",\n  \"braco_controle.hba1c_mudanca_dispersao\": \"confirma\",\n  \"braco_controle.hba1c_mudanca_tipo_dispersao\": \"confirma\",\n  \"braco_controle.hba1c_basal_media\": \"confirma\",\n  \"braco_controle.hba1c_basal_dp\": \"confirma\",\n  \"braco_controle.hba1c_final_media\": \"confirma\",\n  \"braco_controle.hba1c_final_dp\": \"confirma\"\n }\n}\n```",
+ "dt": 180.1559388,
+ "tokens": 565,
+ "prompt_tokens": 10014,
+ "finish": "stop",
+ "_nota_proveniencia": "rotulo original gravou qwen38 por literal nao-parametrizado (bug corrigido no harness durante a fila); a execucao foi gemma12 (CAST allgemma; tempos 3-5min/auditoria na iGPU vs 13-18min do qwen38 em CPU)"
+}

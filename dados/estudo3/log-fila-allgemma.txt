@@ -1,0 +1,53 @@
+ELENCO: allgemma · CAST: {'E': 'gemma12', 'A': 'gemma12', 'C': 'gemma12', 'S': 'gemma12'} · SAIDAS: saidas-allgemma
+SHA-256 perturbacoes-estudo3.json: a8bc6e1ae2faa8a2b8af75afb6c1fafd354a1d08076ffe2183cc319ecc171b04
+SHA-256 sementes-auditoria.json: bf341cf6da1bae8ce805018e1c2e26342efc3396cd6c902f8ba180553491555a
+validação das funções (Emenda 1):
+  valida dp_de_ic Saslow17: 0.44 vs 0.44 OK
+  valida dp_de_se Saslow23: 0.47 vs 0.47 OK
+  valida dp_mudanca_r05 Goday: 0.96 vs 0.96 OK
+  valida pool MD: -0.24 vs -0.24 OK
+  valida pool IC inf: -0.32 vs -0.31 OK
+  valida pool IC sup: -0.16 vs -0.17 OK
+  valida pool i2: 5.7% (publicado 6%)
+
+== Etapa E: extração (gemma12, 14 corridas)
+  pulando extracao PMC5329646-r1
+  pulando extracao PMC5329646-r2
+  pulando extracao REF9-r1
+  pulando extracao REF9-r2
+  pulando extracao PMC9606840-r1
+  pulando extracao PMC9606840-r2
+  pulando extracao PMC7535044-r1
+  pulando extracao PMC7535044-r2
+  pulando extracao REF12-r1
+  pulando extracao REF12-r2
+  pulando extracao PMC6024764-r1
+  pulando extracao PMC6024764-r2
+  pulando extracao PMC5048014-r1
+  pulando extracao PMC5048014-r2
+
+== Etapa A: auditoria (qwen38, 14 corridas)
+  auditoria PMC5329646-L: 252s
+  auditoria REF9-L: 204s
+  auditoria PMC9606840-L: 216s
+  auditoria PMC7535044-L: 252s
+  auditoria REF12-L: 244s
+  auditoria PMC6024764-L: 199s
+  auditoria PMC5048014-L: 180s
+  auditoria PMC5329646-S: 109s
+  auditoria REF9-S: 201s
+  auditoria PMC9606840-S: 227s
+  auditoria PMC7535044-S: 325s
+  auditoria REF12-S: 312s
+  auditoria PMC6024764-S: 201s
+  auditoria PMC5048014-S: 180s
+
+== Etapa C: aritmética (qwen38, 2 lanes)
+  calc L: 0 chamadas, 0 fechamentos forçados, fechou=True, 151s
+  calc S: 0 chamadas, 0 fechamentos forçados, fechou=True, 224s
+
+== Etapa S: síntese (gemma26, 2 lanes)
+  sintese L: 91s, 239 palavras
+  sintese S: 92s, 242 palavras
+
+fila 'tudo' completa em 61.0 min

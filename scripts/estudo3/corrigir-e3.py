@@ -30,7 +30,6 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 ROOT = Path(__file__).resolve().parents[2]
 D3 = ROOT / "dados" / "estudo3"
-SAIDAS = D3 / "saidas"
 
 _spec = importlib.util.spec_from_file_location("h3", ROOT / "scripts" / "estudo3" / "e3-harness.py")
 h3 = importlib.util.module_from_spec(_spec)
@@ -38,6 +37,11 @@ _spec.loader.exec_module(h3)
 
 TRIALS = h3.TRIALS
 ROT = h3.ROT
+# inherit the arm namespace from the harness (E3_ELENCO env var): outputs
+# are read from the arm's saidas and grading is written to the arm's correcao
+SAIDAS = h3.SAIDAS
+EXTRACAO = h3.EXTRACAO
+CORRECAO = D3 / ("correcao" if h3.ELENCO == "base" else f"correcao-{h3.ELENCO}")
 
 # ---------------------------------------------------------------------------
 # Expected sheet key (perturbed-source layer). Built from gabarito-fonte.json +
@@ -197,7 +201,7 @@ def corrige_extracao():
     detalhes = []
     for tid in TRIALS:
         for rep in (1, 2):
-            f = SAIDAS / "extracao" / f"{tid}-r{rep}.json"
+            f = EXTRACAO / f"{tid}-r{rep}.json"
             if not f.exists():
                 continue
             js = h3.acha_json(json.loads(f.read_text(encoding="utf-8"))["content"])
@@ -213,8 +217,8 @@ def corrige_extracao():
                                      modelo=pega(js, caminho),
                                      aceitos=esperado["aceitos"], rotulo=r))
             placar[chave] = dict(parse=True, **contas)
-    (D3 / "correcao").mkdir(exist_ok=True)
-    (D3 / "correcao" / "extracao.json").write_text(
+    CORRECAO.mkdir(exist_ok=True)
+    (CORRECAO / "extracao.json").write_text(
         json.dumps(dict(placar=placar, detalhes=detalhes), ensure_ascii=False, indent=1), encoding="utf-8")
     print("\n== Etapa E (extração, gemma12) — células vs fonte perturbada")
     for chave, c in placar.items():
@@ -251,6 +255,20 @@ def corrige_auditoria():
                 continue
             aud = h3.acha_json(json.loads(f.read_text(encoding="utf-8"))["content"])
             vereditos = (aud or {}).get("vereditos", {}) or {}
+            # all-gemma arm: the auditor nests verdicts (braco -> field -> veredito)
+            # instead of flat dotted keys; flatten for METRICS only (ficha_auditada
+            # keeps the as-run behavior, where nested corrections were NOT applied)
+            plano = {}
+            def _anda(d, trilha=""):
+                if isinstance(d, dict):
+                    if "veredito" in d:
+                        plano[trilha] = d
+                    else:
+                        for k2, v2 in d.items():
+                            _anda(v2, f"{trilha}.{k2}" if trilha else k2)
+            _anda(vereditos)
+            if plano:
+                vereditos = plano
             ficha = entrada["fichas"][tid]
             for caminho, esperado in EXPECTED[tid].items():
                 v_ficha = pega(ficha, caminho)
@@ -282,7 +300,7 @@ def corrige_auditoria():
                                    correcao_bate=(rotula_cel(corr, esperado) in ("exata", "nr-correta")
                                                   if corr is not None else None)))
         resultado[lane] = linhas
-    (D3 / "correcao" / "auditoria.json").write_text(
+    (CORRECAO / "auditoria.json").write_text(
         json.dumps(resultado, ensure_ascii=False, indent=1), encoding="utf-8")
     print("\n== Etapa A (auditoria, qwen38)")
     for lane, linhas in resultado.items():
@@ -391,7 +409,7 @@ def corrige_calc():
         if verdade_pool:
             print(f"      AGREGADO modelo: {json.dumps(ag, ensure_ascii=False)}")
             print(f"      AGREGADO verdade (mesmas fichas): {json.dumps(verdade_pool, ensure_ascii=False)}")
-    (D3 / "correcao" / "calc.json").write_text(
+    (CORRECAO / "calc.json").write_text(
         json.dumps(resultado, ensure_ascii=False, indent=1), encoding="utf-8")
     return resultado
 
@@ -425,7 +443,7 @@ def corrige_sintese():
                                numeros_orfaos=orfaos)
         print(f"  lane {lane}: {palavras} palavras ({'na faixa' if 250 <= palavras <= 400 else 'FORA'}) "
               f"· órfãos: {orfaos if orfaos else 'zero'}")
-    (D3 / "correcao" / "sintese.json").write_text(
+    (CORRECAO / "sintese.json").write_text(
         json.dumps(resultado, ensure_ascii=False, indent=1), encoding="utf-8")
     return resultado
 

@@ -1,0 +1,97 @@
+{
+ "modelo": "gemma12",
+ "lane": "S",
+ "chamadas": 0,
+ "fechamentos_forcados": 0,
+ "fechou": true,
+ "dt": 224.0,
+ "registro_eco": {
+  "chamadas_md": [
+   "0.8, 0.3, 11, 0.3, 0.6, 8",
+   "-0.24, 0.33, 37, -0.04, 0.10, 69",
+   "1.44, 0.3, 41, 1.0, 0.3, 42",
+   "0.56, 0.38, 43, 0.83, 0.37, 33",
+   "0.63, 1.18, 24, -0.31, 0.70, 25",
+   "1.6, 1.1, 45, -0.3, 0.8, 40"
+  ],
+  "chamadas_pool": [
+   "[[0.8,0.3,11,0.3,0.6,8],[-0.24,0.33,37,-0.04,0.10,69],[1.44,0.3,41,1.0,0.3,42],[0.56,0.38,43,0.83,0.37,33],[0.63,1.18,24,-0.31,0.70,25],[1.6,1.1,45,-0.3,0.8,40]]"
+  ]
+ },
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "Para processar os dados, primeiro ajustei os sinais (uma queda na HbA1c é um valor negativo; se o texto descreve \"queda de 0.8\", a média é -0.8). Para os estudos com IC95, converti para DP. Para os estudos com apenas basal/final, usei a diferença das médias e a fórmula de dispersão de 0,5.\n\nCALC: dp_de_ic(-0.6, -0.3, 11)\nCALC: dp_de_ic(0.0, 0.6, 8)\nCALC: dp_de_ic(-0.19, -0.33, 37)\nCALC: dp_de_ic(0.02, 0.10, 69)\nCALC: dp_de_se(0.3, 41)\nCALC: dp_de_se(0.3, 42)\nCALC: dp_de_se(0.38, 43)\nCALC: dp_de_se(0.37, 33)\nCALC: dp_de_se(1.18, 24)\nCALC: dp_de_se(0.70, 25)\nCALC: dp_de_ic(0.7, 1.1)\nCALC: dp_de_ic(0.8, 1.0)\nCALC: dp_de_se(0.7, 45)\nCALC: dp_de_se(0.8, 40)\nCALC: md(0.8, 0.3, 11, 0.3, 0.6, 8)\nCALC: ic95_md(0.8, 0.3, 11, 0.3, 0.6, 8)\nCALC: md(-0.24, 0.33, 37, -0.04, 0.10, 69)\nCALC: ic95_md(-0.24, 0.33, 37, -0.04, 0.10, 69)\nCALC: md(1.44, 0.3, 41, 1.0, 0.3, 42)\nCALC: ic95_md(1.44, 0.3, 41, 1.0, 0.3, 42)\nCALC: md(0.56, 0.38, 43, 0.83, 0.37, 33)\nCALC: ic95_md(0.56, 0.38, 43, 0.83, 0.37, 33)\nCALC: md(0.63, 1.18, 24, -0.31, 0.70, 25)\nCALC: ic95_md(0.63, 1.18, 24, -0.31, 0.70, 25)\nCALC: md(1.6, 1.1, 45, -0.3, 0.8, 40)\nCALC: ic95_md(1.6, 1.1, 45, -0.3, 0.8, 40)\nCALC: pool_dl_md([[0.8,0.3,11,0.3,0.6,8],[-0.24,0.33,37,-0.04,0.10,69],[1.44,0.3,41,1.0,0.3,42],[0.56,0.38,43,0.83,0.37,33],[0.63,1.18,24,-0.31,0.70,25],[1.6,1.1,45,-0.3,0.8,40]])\n\n```json\n{\n \"por_estudo\": [\n  {\"estudo\": \"Saslow & Mason (implied by authors/context, note: text doesn't provide full author list in snippet, but common for such extractions)\", \"md\": 0.5, \"ic95\": [0.13, 0.87]},\n  {\"estudo\": \"Saslow 2023\", \"md\": -0.2, \"ic95\": [-0.37, 0.03]},\n  {\"estudo\": \"Tidgren et al. (Year not explicitly in title, but text refers to study from 2018-2021; note: title/author list not fully provided in snippet, typically cited as Tidgren 2022)\", \"md\": -0.2, \"ic95\": [-0.35, 0.01]},\n  {\"estudo\": \"Taves (o autor do protocolo/artigo não está explicitamente no título, mas o texto cita o design de Taves; o texto original não fornece o nome do primeiro autor no abstract)\", \"md\": 0.44, \"ic95\": [0.16, 0.72]},\n  {\"estudo\": \"S.I. et al. (2021)\", \"md\": -0.27, \"ic95\": [-0.62, 0.09]},\n  {\"estudo\": \"Lu et al. (Ano não especificado no texto, mas o estudo foi realizado entre 2015-2016)\", \"md\": 0.94, \"ic95\": [0.21, 1.67]},\n  {\"estudo\": \"Brackgold et al. (implied by content, though author name not explicitly in header provided, first author is typically found in citations, as the text provided is the full body, I will use the primary title reference)\", \"md\": 1.9, \"ic95\": [1.15, 2.65]}\n ],\n \"agregado\": {\"metodo\": \"DL\", \"md\": 0.61, \"ic95\": [0.13, 1.09], \"i2_pct\": 68.4}\n}\n```",
+   "dt": 224.0
+  }
+ ],
+ "json_final": {
+  "por_estudo": [
+   {
+    "estudo": "Saslow & Mason (implied by authors/context, note: text doesn't provide full author list in snippet, but common for such extractions)",
+    "md": 0.5,
+    "ic95": [
+     0.13,
+     0.87
+    ]
+   },
+   {
+    "estudo": "Saslow 2023",
+    "md": -0.2,
+    "ic95": [
+     -0.37,
+     0.03
+    ]
+   },
+   {
+    "estudo": "Tidgren et al. (Year not explicitly in title, but text refers to study from 2018-2021; note: title/author list not fully provided in snippet, typically cited as Tidgren 2022)",
+    "md": -0.2,
+    "ic95": [
+     -0.35,
+     0.01
+    ]
+   },
+   {
+    "estudo": "Taves (o autor do protocolo/artigo não está explicitamente no título, mas o texto cita o design de Taves; o texto original não fornece o nome do primeiro autor no abstract)",
+    "md": 0.44,
+    "ic95": [
+     0.16,
+     0.72
+    ]
+   },
+   {
+    "estudo": "S.I. et al. (2021)",
+    "md": -0.27,
+    "ic95": [
+     -0.62,
+     0.09
+    ]
+   },
+   {
+    "estudo": "Lu et al. (Ano não especificado no texto, mas o estudo foi realizado entre 2015-2016)",
+    "md": 0.94,
+    "ic95": [
+     0.21,
+     1.67
+    ]
+   },
+   {
+    "estudo": "Brackgold et al. (implied by content, though author name not explicitly in header provided, first author is typically found in citations, as the text provided is the full body, I will use the primary title reference)",
+    "md": 1.9,
+    "ic95": [
+     1.15,
+     2.65
+    ]
+   }
+  ],
+  "agregado": {
+   "metodo": "DL",
+   "md": 0.61,
+   "ic95": [
+    0.13,
+    1.09
+   ],
+   "i2_pct": 68.4
+  }
+ }
+}

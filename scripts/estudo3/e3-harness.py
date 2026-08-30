@@ -296,7 +296,7 @@ def etapa_auditoria():
             texto = (PERT / f"{tid}.txt").read_text(encoding="utf-8")
             prompt = base.replace("{FICHA}", json.dumps(fichas[tid], ensure_ascii=False, indent=1)) + texto
             r = gerar(CAST["A"], prompt, max_tokens=2800)
-            out.write_text(json.dumps(dict(modelo="qwen38", trial=tid, lane=lane, **r),
+            out.write_text(json.dumps(dict(modelo=CAST["A"], trial=tid, lane=lane, **r),
                                       ensure_ascii=False, indent=1), encoding="utf-8")
             print(f"  auditoria {tid}-{lane}: {r['dt']:.0f}s", flush=True)
 
