@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen14",
+ "trial": "PMC7535044",
+ "replica": 2,
+ "content": "{\n  \"estudo\": \"Chang 2020\",\n  \"desenho\": \"paralelo 2 braços\",\n  \"pais\": \"Taiwan\",\n  \"duracao\": \"18 meses\",\n  \"n_randomizado_total\": \"92\",\n  \"braco_experimental\": {\n    \"rotulo\": \"LCD (dieta de baixo teor de carboidrato)\",\n    \"descricao_intervencao\": \"Dieta com ingestão de carboidrato limitada a menos de 90 g/dia, sem restrição total de energia. Foram introduzidas seis porções de carboidrato por dia, com uma lista de alimentos com equivalência de 15 g de carboidrato (uma porção de carboidrato).\",\n    \"n_randomizado\": \"41\",\n    \"n_analisado\": \"41\",\n    \"hba1c_mudanca_media\": \"-1.44\",\n    \"hba1c_mudanca_dispersao\": \"0.59\",\n    \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n    \"hba1c_basal_media\": \"9.95\",\n    \"hba1c_basal_dp\": \"1.04\",\n    \"hba1c_final_media\": \"6.84\",\n    \"hba1c_final_dp\": \"0.59\"\n  },\n  \"braco_controle\": {\n    \"rotulo\": \"TDD (dieta tradicional para diabetes)\",\n    \"descricao_intervencao\": \"Dieta com ingestão de carboidrato de 50–60% das calorias totais, proteína de 1.0–1.2 g/kg e gordura de ≤ 30% das calorias totais. A ingestão calórica foi calculada com base no peso ideal multiplicado por 25 kcal/kg para pacientes com BMI entre 18.5 e 24, 20 kcal/kg para sobrepeso/obesos e 30 kcal/dia para pacientes com BMI < 18.5.\",\n    \"n_randomizado\": \"42\",\n    \"n_analisado\": \"42\",\n    \"hba1c_mudanca_media\": \"-1.01\",\n    \"hba1c_mudanca_dispersao\": \"1.06\",\n    \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n    \"hba1c_basal_media\": \"8.70\",\n    \"hba1c_basal_dp\": \"1.01\",\n    \"hba1c_final_media\": \"7.69\",\n    \"hba1c_final_dp\": \"1.06\"\n  }\n}",
+ "dt": 97.2570733,
+ "tokens": 606,
+ "prompt_tokens": 12568,
+ "finish": "stop"
+}

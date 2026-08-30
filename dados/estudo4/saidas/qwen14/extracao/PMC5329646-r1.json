@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen14",
+ "trial": "PMC5329646",
+ "replica": 1,
+ "content": "{\n  \"estudo\": \"Zhou et al. 2019\",\n  \"desenho\": \"paralelo 2 braços\",\n  \"pais\": \"Estados Unidos\",\n  \"duracao\": \"32 semanas\",\n  \"n_randomizado_total\": \"25\",\n  \"braco_experimental\": {\n    \"rotulo\": \"Very Low-Carbohydrate Ketogenic Diet and Lifestyle Recommendations\",\n    \"descricao_intervencao\": \"Recomendações para seguir uma dieta muito baixa em carboidratos e mudanças de estilo de vida (atividade física, sono, afeto positivo, mindfulness).\",\n    \"n_randomizado\": \"12\",\n    \"n_analisado\": \"11\",\n    \"hba1c_mudanca_media\": \"-0.8\",\n    \"hba1c_mudanca_dispersao\": \"-1.1 a -0.6\",\n    \"hba1c_mudanca_tipo_dispersao\": \"IC95: -1.1 a -0.6\",\n    \"hba1c_basal_media\": \"NR\",\n    \"hba1c_basal_dp\": \"NR\",\n    \"hba1c_final_media\": \"NR\",\n    \"hba1c_final_dp\": \"NR\"\n  },\n  \"braco_controle\": {\n    \"rotulo\": \"American Diabetes Associations’ “Create Your Plate” Diet\",\n    \"descricao_intervencao\": \"Dieta baseada no método de plate method (metade da prato com vegetais não amiláceos, um quarto com carboidratos, um quarto com proteínas magras).\",\n    \"n_randomizado\": \"13\",\n    \"n_analisado\": \"8\",\n    \"hba1c_mudanca_media\": \"-0.3\",\n    \"hba1c_mudanca_dispersao\": \"-0.6 a 0.0\",\n    \"hba1c_mudanca_tipo_dispersao\": \"IC95: -0.6 a 0.0\",\n    \"hba1c_basal_media\": \"NR\",\n    \"hba1c_basal_dp\": \"NR\",\n    \"hba1c_final_media\": \"NR\",\n    \"hba1c_final_dp\": \"NR\"\n  }\n}",
+ "dt": 270.0750446,
+ "tokens": 502,
+ "prompt_tokens": 11878,
+ "finish": "stop"
+}

@@ -1,0 +1,41 @@
+SHA-256 perturbacoes-estudo3.json: a8bc6e1ae2faa8a2b8af75afb6c1fafd354a1d08076ffe2183cc319ecc171b04
+SHA-256 sementes-auditoria.json: bf341cf6da1bae8ce805018e1c2e26342efc3396cd6c902f8ba180553491555a
+
+===== Estudo 4 · gemma12
+  extracao gemma12 PMC5329646-r1: 224s, 528 tok
+  extracao gemma12 PMC5329646-r2: 70s, 521 tok
+  extracao gemma12 REF9-r1: 186s, 516 tok
+  extracao gemma12 REF9-r2: 69s, 516 tok
+  extracao gemma12 PMC9606840-r1: 192s, 511 tok
+  extracao gemma12 PMC9606840-r2: 70s, 517 tok
+  extracao gemma12 PMC7535044-r1: 224s, 511 tok
+  extracao gemma12 PMC7535044-r2: 60s, 451 tok
+  extracao gemma12 REF12-r1: 219s, 481 tok
+  extracao gemma12 REF12-r2: 66s, 484 tok
+  extracao gemma12 PMC6024764-r1: 165s, 480 tok
+  extracao gemma12 PMC6024764-r2: 63s, 473 tok
+  extracao gemma12 PMC5048014-r1: 173s, 510 tok
+  extracao gemma12 PMC5048014-r2: 62s, 488 tok
+== gemma12: 7/7 estudos no pool · gatilhos disparados: 0
+   agregado: {"md": -0.52, "ic95": [-0.83, -0.21], "tau2": 0.1413, "i2_pct": 91.2}
+
+===== Estudo 4 · qwen14
+  extracao qwen14 PMC5329646-r1: 270s, 502 tok
+  extracao qwen14 PMC5329646-r2: 85s, 531 tok
+  extracao qwen14 REF9-r1: 215s, 507 tok
+  extracao qwen14 REF9-r2: 77s, 521 tok
+  extracao qwen14 PMC9606840-r1: 234s, 528 tok
+  extracao qwen14 PMC9606840-r2: 74s, 497 tok
+  extracao qwen14 PMC7535044-r1: 292s, 596 tok
+  extracao qwen14 PMC7535044-r2: 97s, 606 tok
+  extracao qwen14 REF12-r1: 290s, 489 tok
+  extracao qwen14 REF12-r2: 77s, 479 tok
+  extracao qwen14 PMC6024764-r1: 192s, 475 tok
+  extracao qwen14 PMC6024764-r2: 70s, 458 tok
+  extracao qwen14 PMC5048014-r1: 213s, 485 tok
+  extracao qwen14 PMC5048014-r2: 72s, 485 tok
+  gatilho qwen14 Goday 2016 braco_controle: 0.3 -> -0.3
+== qwen14: 7/7 estudos no pool · gatilhos disparados: 1
+   agregado: {"md": -0.48, "ic95": [-0.73, -0.22], "tau2": 0.0784, "i2_pct": 88.7}
+
+Estudo 4 completo em 68.5 min

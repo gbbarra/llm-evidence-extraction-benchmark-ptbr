@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen14",
+ "trial": "PMC5048014",
+ "replica": 1,
+ "content": "{\n  \"estudo\": \"Brackground 2023\",\n  \"desenho\": \"paralelo 2 braços\",\n  \"pais\": \"Espanha\",\n  \"duracao\": \"4 meses\",\n  \"n_randomizado_total\": \"89\",\n  \"braco_experimental\": {\n    \"rotulo\": \"VLCK diet\",\n    \"descricao_intervencao\": \"Very low-calorie-ketogenic diet (<50 g of carbohydrate daily) with high-biological-value protein preparations and natural foods, including three stages: active, metabolic stabilization, and maintenance.\",\n    \"n_randomizado\": \"45\",\n    \"n_analisado\": \"NR\",\n    \"hba1c_mudanca_media\": \"−1.6\",\n    \"hba1c_mudanca_dispersao\": \"0.7\",\n    \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n    \"hba1c_basal_media\": \"6.89\",\n    \"hba1c_basal_dp\": \"1.06\",\n    \"hba1c_final_media\": \"5.3\",\n    \"hba1c_final_dp\": \"0.7\"\n  },\n  \"braco_controle\": {\n    \"rotulo\": \"LC diet\",\n    \"descricao_intervencao\": \"Low-calorie diet based on the American Diabetes Association guidelines with a daily energy restriction of 500–1000 kcal, aiming at <30% of calories from fat, 10–20% from protein, and 45–60% from carbohydrates.\",\n    \"n_randomizado\": \"44\",\n    \"n_analisado\": \"NR\",\n    \"hba1c_mudanca_media\": \"0.3\",\n    \"hba1c_mudanca_dispersao\": \"0.8\",\n    \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n    \"hba1c_basal_media\": \"6.88\",\n    \"hba1c_basal_dp\": \"1.03\",\n    \"hba1c_final_media\": \"7.1\",\n    \"hba1c_final_dp\": \"0.8\"\n  }\n}",
+ "dt": 213.0184507,
+ "tokens": 485,
+ "prompt_tokens": 10042,
+ "finish": "stop"
+}

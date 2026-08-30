@@ -1,0 +1,199 @@
+{
+ "regua": "EXPECTED E3 emendada (corrigir-e3.py)",
+ "celulas": {
+  "gemma12": {
+   "boas": 184,
+   "total": 206,
+   "pct": 89.3,
+   "adjudicar": [
+    "REF9-r1 braco_experimental.n_randomizado=23",
+    "REF9-r1 braco_controle.n_randomizado=25",
+    "REF9-r1 braco_experimental.n_analisado=23",
+    "REF9-r1 braco_controle.n_analisado=24",
+    "REF9-r2 braco_experimental.n_randomizado=23",
+    "REF9-r2 braco_controle.n_randomizado=25",
+    "REF9-r2 braco_experimental.n_analisado=23",
+    "REF9-r2 braco_controle.n_analisado=25",
+    "PMC7535044-r1 braco_experimental.n_randomizado=41",
+    "PMC7535044-r1 braco_controle.n_randomizado=42",
+    "PMC7535044-r2 braco_experimental.n_randomizado=41",
+    "PMC7535044-r2 braco_controle.n_randomizado=42",
+    "PMC7535044-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC7535044-r2 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC7535044-r2 braco_experimental.hba1c_basal_media=6.84",
+    "PMC7535044-r2 braco_controle.hba1c_basal_media=7.69",
+    "PMC7535044-r2 braco_experimental.hba1c_basal_dp=0.59",
+    "PMC7535044-r2 braco_controle.hba1c_basal_dp=1.06"
+   ]
+  },
+  "qwen14": {
+   "boas": 146,
+   "total": 206,
+   "pct": 70.9,
+   "adjudicar": [
+    "REF9-r1 braco_experimental.n_randomizado=23",
+    "REF9-r1 braco_controle.n_randomizado=23",
+    "REF9-r1 braco_experimental.n_analisado=23",
+    "REF9-r1 braco_controle.n_analisado=23",
+    "REF9-r1 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "REF9-r1 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "REF9-r2 braco_experimental.n_randomizado=23",
+    "REF9-r2 braco_controle.n_randomizado=23",
+    "REF9-r2 braco_experimental.n_analisado=23",
+    "REF9-r2 braco_controle.n_analisado=23",
+    "REF9-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "REF9-r2 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC9606840-r1 braco_experimental.hba1c_mudanca_dispersao=0.07",
+    "PMC9606840-r1 braco_controle.hba1c_mudanca_dispersao=0.04",
+    "PMC9606840-r2 braco_experimental.hba1c_mudanca_dispersao=0.06",
+    "PMC9606840-r2 braco_controle.hba1c_mudanca_dispersao=0.04",
+    "PMC7535044-r1 braco_experimental.n_randomizado=41",
+    "PMC7535044-r1 braco_controle.n_randomizado=42",
+    "PMC7535044-r1 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC7535044-r1 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC7535044-r2 braco_experimental.n_randomizado=41",
+    "PMC7535044-r2 braco_controle.n_randomizado=42",
+    "PMC7535044-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC7535044-r2 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "REF12-r1 braco_experimental.hba1c_mudanca_media=-1.9",
+    "REF12-r1 braco_experimental.hba1c_mudanca_dispersao=3.5",
+    "REF12-r1 braco_controle.hba1c_mudanca_dispersao=4.2",
+    "REF12-r1 braco_experimental.hba1c_mudanca_tipo_dispersao=IC95: -3.5 a -0.3",
+    "REF12-r1 braco_controle.hba1c_mudanca_tipo_dispersao=IC95: -3.5 a -0.3",
+    "REF12-r1 braco_experimental.hba1c_basal_media=57.6",
+    "REF12-r1 braco_controle.hba1c_basal_media=57.4",
+    "REF12-r1 braco_experimental.hba1c_basal_dp=8.4",
+    "REF12-r1 braco_controle.hba1c_basal_dp=7.7",
+    "REF12-r2 braco_experimental.hba1c_mudanca_media=-1.9",
+    "REF12-r2 braco_experimental.hba1c_mudanca_dispersao=3.5",
+    "REF12-r2 braco_controle.hba1c_mudanca_dispersao=4.2",
+    "REF12-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=IC95: -3.5 a -0.3",
+    "REF12-r2 braco_controle.hba1c_mudanca_tipo_dispersao=IC95: -3.5 a -0.3",
+    "REF12-r2 braco_experimental.hba1c_basal_media=57.6",
+    "REF12-r2 braco_controle.hba1c_basal_media=57.4",
+    "REF12-r2 braco_experimental.hba1c_basal_dp=8.4",
+    "REF12-r2 braco_controle.hba1c_basal_dp=7.7",
+    "PMC5048014-r1 braco_experimental.hba1c_mudanca_media=−1.6",
+    "PMC5048014-r1 braco_controle.hba1c_mudanca_media=0.3",
+    "PMC5048014-r1 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC5048014-r1 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC5048014-r1 braco_experimental.hba1c_basal_dp=1.06",
+    "PMC5048014-r2 braco_experimental.hba1c_mudanca_media=−1.6",
+    "PMC5048014-r2 braco_controle.hba1c_mudanca_media=0.3",
+    "PMC5048014-r2 braco_experimental.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC5048014-r2 braco_controle.hba1c_mudanca_tipo_dispersao=DP",
+    "PMC5048014-r2 braco_experimental.hba1c_basal_dp=1.06"
+   ]
+  }
+ },
+ "modelos": {
+  "gemma12": {
+   "pool_pipeline": {
+    "md": -0.52,
+    "ic95": [
+     -0.83,
+     -0.21
+    ],
+    "tau2": 0.1413,
+    "i2_pct": 91.2
+   },
+   "verdade_mecanica": {
+    "md": -0.52,
+    "ic95": [
+     -0.83,
+     -0.21
+    ],
+    "tau2": 0.1413,
+    "i2_pct": 91.2
+   },
+   "delta_pool_verdade": {
+    "md": 0.0,
+    "ic": [
+     0.0,
+     0.0
+    ]
+   },
+   "lente_desperturbada": {
+    "md": -0.24,
+    "ic95": [
+     -0.33,
+     -0.16
+    ],
+    "tau2": 0.001,
+    "i2_pct": 7.1
+   },
+   "ancora_publicada": {
+    "md": -0.24,
+    "ic95": [
+     -0.32,
+     -0.16
+    ],
+    "i2_pct": 6
+   },
+   "concordancia_replicas_celulas": {
+    "iguais": 92,
+    "total": 103,
+    "pct": 89.3
+   },
+   "gatilhos": []
+  },
+  "qwen14": {
+   "pool_pipeline": {
+    "md": -0.48,
+    "ic95": [
+     -0.73,
+     -0.22
+    ],
+    "tau2": 0.0784,
+    "i2_pct": 88.7
+   },
+   "verdade_mecanica": {
+    "md": -0.46,
+    "ic95": [
+     -0.68,
+     -0.25
+    ],
+    "tau2": 0.0507,
+    "i2_pct": 88.8
+   },
+   "delta_pool_verdade": {
+    "md": 0.02,
+    "ic": [
+     0.05,
+     0.03
+    ]
+   },
+   "lente_desperturbada": {
+    "md": -0.5,
+    "ic95": [
+     -0.72,
+     -0.29
+    ],
+    "tau2": 0.0502,
+    "i2_pct": 88.7
+   },
+   "ancora_publicada": {
+    "md": -0.24,
+    "ic95": [
+     -0.32,
+     -0.16
+    ],
+    "i2_pct": 6
+   },
+   "concordancia_replicas_celulas": {
+    "iguais": 98,
+    "total": 103,
+    "pct": 95.1
+   },
+   "gatilhos": [
+    {
+     "estudo": "Goday 2016",
+     "lado": "braco_controle",
+     "valor_na_ficha": 0.3,
+     "resposta": "-0.3",
+     "valor_usado": -0.3
+    }
+   ]
+  }
+ }
+}

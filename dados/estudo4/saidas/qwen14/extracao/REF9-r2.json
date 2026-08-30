@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen14",
+ "trial": "REF9",
+ "replica": 2,
+ "content": "{\n  \"estudo\": \"Saslow, PhD et al. 2023\",\n  \"desenho\": \"fatorial 2x2\",\n  \"pais\": \"Estados Unidos\",\n  \"duracao\": \"4 meses\",\n  \"n_randomizado_total\": \"83\",\n  \"braco_experimental\": {\n    \"rotulo\": \"Dieta VLC\",\n    \"descricao_intervencao\": \"Dieta muito baixa em carboidratos, com ingestão de carboidratos não fibrosos limitada a 20 a 35 g por dia, com objetivo de alcançar cetose nutricional.\",\n    \"n_randomizado\": \"23\",\n    \"n_analisado\": \"23\",\n    \"hba1c_mudanca_media\": \"-0.32\",\n    \"hba1c_mudanca_dispersao\": \"0.07\",\n    \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n    \"hba1c_basal_media\": \"6.09\",\n    \"hba1c_basal_dp\": \"0.45\",\n    \"hba1c_final_media\": \"5.74\",\n    \"hba1c_final_dp\": \"0.42\"\n  },\n  \"braco_controle\": {\n    \"rotulo\": \"Dieta DASH\",\n    \"descricao_intervencao\": \"Dieta que limita o sódio a <2300 mg/dia e a ingestão de gordura a 20-30% das calorias diárias, com foco em frutas, vegetais, grãos integrais, proteínas magras e laticínios de baixo teor de gordura.\",\n    \"n_randomizado\": \"23\",\n    \"n_analisado\": \"23\",\n    \"hba1c_mudanca_media\": \"-0.14\",\n    \"hba1c_mudanca_dispersao\": \"0.07\",\n    \"hba1c_mudanca_tipo_dispersao\": \"DP\",\n    \"hba1c_basal_media\": \"6.10\",\n    \"hba1c_basal_dp\": \"0.55\",\n    \"hba1c_final_media\": \"5.97\",\n    \"hba1c_final_dp\": \"0.47\"\n  }\n}",
+ "dt": 76.8794084,
+ "tokens": 521,
+ "prompt_tokens": 10320,
+ "finish": "stop"
+}

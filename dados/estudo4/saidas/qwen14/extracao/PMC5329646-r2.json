@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen14",
+ "trial": "PMC5329646",
+ "replica": 2,
+ "content": "{\n  \"estudo\": \"Wong et al. 2020\",\n  \"desenho\": \"paralelo 2 braços\",\n  \"pais\": \"Estados Unidos\",\n  \"duracao\": \"32 semanas\",\n  \"n_randomizado_total\": \"25\",\n  \"braco_experimental\": {\n    \"rotulo\": \"Dieta muito baixa em carboidratos e recomendações de estilo de vida\",\n    \"descricao_intervencao\": \"Recomendações para seguir uma dieta muito baixa em carboidratos (20-50 gramas de carboidratos não fibras por dia) e alterações no estilo de vida (exercício físico, sono, regulação do afeto positivo, mindfulness).\",\n    \"n_randomizado\": \"12\",\n    \"n_analisado\": \"11\",\n    \"hba1c_mudanca_media\": \"-0.8\",\n    \"hba1c_mudanca_dispersao\": \"0.2\",\n    \"hba1c_mudanca_tipo_dispersao\": \"IC95: -1.1 a -0.6\",\n    \"hba1c_basal_media\": \"5.8\",\n    \"hba1c_basal_dp\": \"0.4\",\n    \"hba1c_final_media\": \"NR\",\n    \"hba1c_final_dp\": \"NR\"\n  },\n  \"braco_controle\": {\n    \"rotulo\": \"Dieta baseada no método da 'Create Your Plate'\",\n    \"descricao_intervencao\": \"Dieta baseada no método da 'Create Your Plate' da American Diabetes Association, que enfatiza vegetais não amiláceos, proteínas magras e limita carboidratos e alimentos doces.\",\n    \"n_randomizado\": \"13\",\n    \"n_analisado\": \"8\",\n    \"hba1c_mudanca_media\": \"-0.3\",\n    \"hba1c_mudanca_dispersao\": \"0.3\",\n    \"hba1c_mudanca_tipo_dispersao\": \"IC95: -0.6 a 0.0\",\n    \"hba1c_basal_media\": \"7.6\",\n    \"hba1c_basal_dp\": \"0.3\",\n    \"hba1c_final_media\": \"NR\",\n    \"hba1c_final_dp\": \"NR\"\n  }\n}",
+ "dt": 85.1267986,
+ "tokens": 531,
+ "prompt_tokens": 11878,
+ "finish": "stop"
+}

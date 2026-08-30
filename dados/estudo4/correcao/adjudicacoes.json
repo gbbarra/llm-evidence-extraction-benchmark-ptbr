@@ -1,0 +1,61 @@
+{
+ "_metodo": "EXTRAI Study 4 — adjudication of the 70 cells the mechanical grader marked 'adjudicar' (rite: verify against the perturbed source before deducting). Every verdict cites the source. All 70 resolve to 'errada'; the per-model totals in correcao/extracao.json therefore stand as final (gemma12 184/206 = 89.3%; qwen14 146/206 = 70.9%).",
+ "clusters": [
+  {
+   "celulas": "gemma12+qwen14 · REF9 (Saslow 2023) · n_randomizado/n_analisado, both arms, both replicates (gemma12: 8 cells; qwen14: 8 cells)",
+   "veredito": "errada",
+   "subtipo": "granularidade-fatorial (células do 2x2 no lugar das margens)",
+   "citacao_fonte": "Flow: '83 Randomized EnrollmentAllocationFollow-upAnalysis 25 DASH 25 ...' (perturbed total 94->83, sealed); outcomes print the DIET MARGINS the analysis uses: 'decreased by 8.94 (SE, 0.67; n = 41) in the VLC group and by 4.94 (0.69; n = 41) in the DASH group'; ruler accepts the allocation margins 45/49.",
+   "nota": "The trial is a 2x2 factorial (diet x support; the text prints a 'Diet Ã— support' interaction row). Instrument rule 5 requires the groupings the text compares (margins). Both models chose per-cell counts (23/25/24). Mitigant: margin ns are printed and the models' values are also printed (allocation cells) — a grouping error, not an invention. gemma12's own Study-3 run took the margin route on these same cells: route drift between runs. The protocol's pre-declared factorial-margin judgment trigger would have caught this, but was never implemented in the engine (erratum E4-2 in the evaluation)."
+  },
+  {
+   "celulas": "gemma12+qwen14 · PMC7535044 (Chen 2020) · n_randomizado, both arms, both replicates (4+4 cells)",
+   "veredito": "errada",
+   "subtipo": "campo-errado (n analisado da tabela no campo de randomizados)",
+   "citacao_fonte": "'Ninety-two ... were randomly assigned'; Table 3 header: 'TDD(n = 42) LCD(n = 41)'; flow: 92 randomized, 7 withdrew, '85 patients were followed-up' (table ns sum 83 — the text is internally inconsistent).",
+   "nota": "Both models independently filled n_randomizado with the analysis-table ns (41/42). Faithful readings of printed numbers placed in the wrong field, on a trial whose own counts do not reconcile."
+  },
+  {
+   "celulas": "gemma12 · PMC7535044 (Chen) r2 only · hba1c_basal_media, hba1c_basal_dp, hba1c_mudanca_tipo_dispersao, both arms (6 cells)",
+   "veredito": "errada",
+   "subtipo": "finais-no-campo-basal",
+   "citacao_fonte": "Table 3: 'HbA1C (%) 8.70 (1.01) 7.69 (1.06) [TDD baseline, 18 months] ... 9.95 (1.04) 6.84 (0.59) [LCD baseline, 18 months]'.",
+   "nota": "Replicate 2 wrote the 18-MONTH values (6.84/0.59; 7.69/1.06) into the baseline fields and declared 'DP' where the change is printed as MD (95% CI). Replicate 1 read correctly; the first-parseable rule kept r1, so the pool was untouched. Counted against replicate agreement and r2 cells."
+  },
+  {
+   "celulas": "qwen14 · REF9 (Saslow 2023) · hba1c_mudanca_tipo_dispersao, both arms, both replicates (4 cells)",
+   "veredito": "errada",
+   "subtipo": "tipo-de-dispersao-errado (DP declarado onde o texto imprime SE)",
+   "citacao_fonte": "'HbA1c ... –0.32 (0.07)' in the outcome table, with the article's dispersion style '(SE, 1.76)' stated for the same table family; ruler accepts EP/SE.",
+   "nota": "The VALUE 0.07 was accepted as exata; declaring it 'DP' skipped the SE->SD conversion downstream, so the engine pooled raw SEs as SDs for this trial (visible in the sextets: 0.07/0.07)."
+  },
+  {
+   "celulas": "qwen14 · PMC9606840 (Dorans 2022) · hba1c_mudanca_dispersao, both arms, both replicates (4 cells)",
+   "veredito": "errada",
+   "subtipo": "autocomputado (meia-largura do IC escrita como dispersao)",
+   "citacao_fonte": "Text prints only CIs: '(–0.32%; 95% CI, –0.33% to –0.19%) than those in the usual diet group (–0.04%; 95% CI, –0.10% to –0.02%)'. The values 0.07 and 0.04 are the CI half-widths (0.14/2; 0.08/2) and appear nowhere as dispersions.",
+   "nota": "The model computed where the instrument says read ('Nunca invente nem calcule você mesmo — esta etapa é só de LEITURA')."
+  },
+  {
+   "celulas": "qwen14 · PMC7535044 (Chen) · hba1c_mudanca_tipo_dispersao, both arms, both replicates (4 cells)",
+   "veredito": "errada",
+   "subtipo": "tipo-de-dispersao-errado (DP declarado onde o texto imprime MD com IC95)",
+   "citacao_fonte": "Table 3: change printed as '-1.44(-1.96 ~ -1.30)' (MD with 95% CI); ruler accepts 'IC95: -1.96 a -1.30' / 'IC95'.",
+   "nota": "Same conversion-skipping consequence as REF9."
+  },
+  {
+   "celulas": "qwen14 · REF12 (Thomsen 2022) · mudanca_media (exp), mudanca_dispersao (both), tipo_dispersao (both), basal_media (both), basal_dp (both), both replicates (18 cells)",
+   "veredito": "errada",
+   "subtipo": "quimera-de-unidades-e-niveis",
+   "citacao_fonte": "The text prints BOTH units: 'HbA1c, mmol/mol 57.4 ± 7.7 −7.2 ± 4.0 (n 33) | 57.6 ± 8.4 −9.1 ± 4.2 (n 34) | −1.9 (−3.5, −0.3)' and 'HbA1c, % 7.40 ± 0.70 | 8.09 ± 0.77' with the per-arm %-changes the ruler accepts (−0.83; −0.56). Instrument rule 3 pins the outcome to HbA1c in %.",
+   "nota": "The sheet mixes three things: baselines in mmol/mol (57.6/57.4, printed but wrong unit), the BETWEEN-GROUP difference (−1.9 mmol/mol) placed as the experimental arm's change, the difference's CI ('IC95: −3.5 a −0.3') pasted as both arms' dispersion type, and the control change in % (−0.56). Every value is printed somewhere; the assembly is a chimera across units and levels of analysis, and it single-handedly wrecked this trial's row in the model's pool."
+  },
+  {
+   "celulas": "qwen14 · PMC5048014 (Goday 2016) · hba1c_mudanca_media (both arms), tipo_dispersao (both), basal_dp (exp), both replicates (10 cells)",
+   "veredito": "errada",
+   "subtipo": "autocomputado + tabela-errada",
+   "citacao_fonte": "Outcome table prints only levels: 'HbA1c (%) 6.9 (1.1) 5.3 (0.7) <0.0001 | 6.8 (1.0) 7.1 (0.8)' — no change values anywhere (ruler expects NR). The sheet's −1.6/+0.3 are the differences of the perturbed finals and basals, computed by the model. The basal_dp 1.06 is the TOTAL-sample SD from the baseline-characteristics table ('HbA1c (%) 6.89 (1.06) 6.89 (1.11) 6.88 (1.03)'), not the arm's (1.1).",
+   "nota": "The self-computed +0.3 (control worsened — arithmetically correct in the perturbed world) is the value the as-printed-positive trigger later fired on. The paired dispersions (0.7/0.8) are the FINAL-timepoint SDs — the same failure mode as gemma12's two wrong Study-3 cells (final SDs paired to a change mean), now in a second model."
+  }
+ ]
+}
