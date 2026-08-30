@@ -62,4 +62,16 @@ Author's directive: apply the roadmap's Priority-1 items and repeat the COMPLETE
 4. Downstream unchanged: pooling (G3b instruments, over CALC2's sextets), totals pre-computed by code, synthesis (`e5-sintese.txt` frozen), forest by code.
 5. **Scoring, extraction to result**: cells of the fresh sheets vs the Study-3 amended ruler; per-study and pooled vs the graders' mechanical truth over the SAME fresh sheets; and the sealed unperturbation lens vs the published $-0.24$ $[-0.32, -0.16]$ — the headline: does the improved, self-verifying pipeline still reconstruct the literature?
 
-Outputs: `dados/estudo5/saidas/EXTRA2` (extraction + verification log), `saidas/CALC2`, `saidas/POOL2`, `dados/estudo5/pipeline2/`. Genuine model behavior already visible through the noise, logged for the record: **over-conversion** — the model derived the Goday change-SD correctly via r=0.5 and then fed its own result into a further conversion (`dp_de_se(0.96, 45)`), a conceptual chaining habit, not transcription.
+Outputs: `dados/estudo5/saidas/EXTRA2` (extraction + verification log), `saidas/CALC2`, `saidas/POOL2`, `dados/estudo5/pipeline2/`.
+
+## Amendment 5 (2026-08-30, registered before any G2c run): typed calls
+
+Pipeline v2 sharpened the residual failure class to one shape — **role errors with honest provenance** (Goday's levels passed as means; the study's own MD result passed as an arm mean inside `ic95_md`, producing the author-caught invalid interval $[-9.22, -8.58]$; raw SDs used where the model's own derived SDs existed) — and erratum E5-5 exposed a family of mechanically impossible values that no net refused. Rung **G2c** re-runs the per-study stage under the CALC2 instruments plus, all detection-only:
+
+1. **Argument type system**: each function slot declares the class of sheet field that may feed it (mean-slots: `hba1c_mudanca_media` or a declared final−basal derivation; SD-slots: `hba1c_*_dispersao`/`_dp`, a `dp_*` function result, or an r=0.5 derivation; n-slots: `n_*` fields). A declared source of the wrong class draws a warning naming slot, class and field. Same budget and confirm-by-repeat as all nets.
+2. **Coherence nets**: an `ic95_md` result that does not contain the same sexteto's `md`; a negative SD anywhere; a non-integer or $\le 1$ n — each mechanically impossible, each a warning.
+3. **Closing-restatement check**: a `fim` differing from the study's last executed `md`/`ic95_md` results draws a warning (transcription is the measured failure surface).
+4. **Escalation flag**: any call standing wrong after its budget enters the study's record with `requer_revisao_humana: true`, propagated to the product layer (flag, never endorse — E5-5's rule).
+5. **Reported harness complexity**: the record states the active-net count per rung (G0: 1; G1: 2; G2b: 4; G2c: 8) beside accuracy — how much harness the model needs is itself the result.
+
+**Registered prediction**: the type net converts the Goday levels-as-means route into a warned self-correction, making 7/7 per-study exactness reachable for the first time; if the model insists through the budget, the study arrives flagged, not silent. Inputs: the EXTRA2 sheets (unchanged). Outputs: `saidas/CALC2C`, `resultados-CALC2C`. Genuine model behavior already visible through the noise, logged for the record: **over-conversion** — the model derived the Goday change-SD correctly via r=0.5 and then fed its own result into a further conversion (`dp_de_se(0.96, 45)`), a conceptual chaining habit, not transcription.
