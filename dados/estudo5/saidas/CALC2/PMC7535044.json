@@ -1,0 +1,39 @@
+{
+ "estudo": "Chen 2020",
+ "turnos": [
+  {
+   "emitiu": "{\"funcao\": \"dp_de_ic\", \"argumentos\": [-1.96, -1.30, 41], \"fonte\": [\"hba1c_mudanca_dispersao\", \"hba1c_mudanca_dispersao\", \"braco_experimental_n_analisado\"]}",
+   "aviso": "AVISO: o argumento -1.96 declara vir de 'hba1c_mudanca_dispersao', mas a ficha registra: 'braco_experimental.hba1c_mudanca_dispersao' = 1.96; 'braco_experimental.hba1c_mudanca_dispersao' = 1.3; 'braco_controle.hba1c_mudanca_dispersao' = 1.4. Confira e reemita a chamada (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_ic\", \"argumentos\": [-1.96, -1.30, 41], \"fonte\": [\"hba1c_mudanca_dispersao\", \"hba1c_mudanca_dispersao\", \"braco_experimental_n_analisado\"]}",
+   "resultado": "RESULTADO: 1.08"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_ic\", \"argumentos\": [-1.40, -0.63, 42], \"fonte\": [\"hba1c_mudanca_dispersao\", \"hba1c_mudanca_dispersao\", \"braco_controle_n_analisado\"]}",
+   "aviso": "AVISO: o argumento -1.4 declara vir de 'hba1c_mudanca_dispersao', mas a ficha registra: 'braco_experimental.hba1c_mudanca_dispersao' = 1.96; 'braco_experimental.hba1c_mudanca_dispersao' = 1.3; 'braco_controle.hba1c_mudanca_dispersao' = 1.4. Confira e reemita a chamada (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_ic\", \"argumentos\": [-1.40, -0.63, 42], \"fonte\": [\"hba1c_mudanca_dispersao\", \"hba1c_mudanca_dispersao\", \"braco_controle_n_analisado\"]}",
+   "resultado": "RESULTADO: 1.27"
+  },
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [-1.44, 1.08, 41, -1.01, 1.27, 42], \"fonte\": [\"hba1c_mudanca_media\", \"resultado-anterior\", \"braco_experimental_n_analisado\", \"hba1c_mudanca_media\", \"resultado-anterior\", \"braco_controle_n_analisado\"]}",
+   "resultado": "RESULTADO: -0.43"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-1.44, 1.08, 41, -1.01, 1.27, 42], \"fonte\": [\"hba1c_mudanca_media\", \"resultado-anterior\", \"braco_experimental_n_analisado\", \"hba1c_mudanca_media\", \"resultado-anterior\", \"braco_controle_n_analisado\"]}",
+   "resultado": "RESULTADO: [-0.94, 0.08]"
+  },
+  {
+   "emitiu": "{\"funcao\": \"fim\", \"argumentos\": [-0.43, -0.94, 0.08], \"fonte\": [\"resultado-anterior\", \"resultado-anterior\", \"resultado-anterior\"]}"
+  }
+ ],
+ "final": {
+  "md": -0.43,
+  "ic95": [
+   -0.94,
+   0.08
+  ]
+ }
+}

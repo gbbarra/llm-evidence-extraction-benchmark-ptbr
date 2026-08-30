@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\gbbarra\Documents\localtts\extrai\scripts\estudo5\pipeline2-gemma.py", line 253, in <module>
+    main()
+  File "C:\Users\gbbarra\Documents\localtts\extrai\scripts\estudo5\pipeline2-gemma.py", line 216, in main
+    fs, _ = e5.ficha_r2(tid, EXTRA2)
+    ^^^^^
+ValueError: too many values to unpack (expected 2)

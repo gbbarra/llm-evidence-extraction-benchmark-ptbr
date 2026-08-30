@@ -1,0 +1,31 @@
+{
+ "estudo": "Goday 2016",
+ "turnos": [
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.1, 0.7], \"fonte\": [\"hba1c_basal_dp\", \"hba1c_final_dp\"]}",
+   "resultado": "RESULTADO: 0.96"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.0, 0.8], \"fonte\": [\"hba1c_basal_dp\", \"hba1c_final_dp\"]}",
+   "resultado": "RESULTADO: 0.92"
+  },
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [5.3, 0.7, 45, 7.1, 0.8, 40], \"fonte\": [\"hba1c_final_media\", \"hba1c_final_dp\", \"n_analisado\", \"hba1c_final_media\", \"hba1c_final_dp\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: -1.8"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-1.8, 0.7, 45, 7.1, 0.8, 40], \"fonte\": [\"resultado-anterior\", \"hba1c_final_dp\", \"n_analisado\", \"hba1c_final_media\", \"hba1c_final_dp\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: [-9.22, -8.58]"
+  },
+  {
+   "emitiu": "{\"funcao\": \"fim\", \"argumentos\": [-1.8, -9.22, -8.58], \"fonte\": [\"resultado-anterior\", \"resultado-anterior\", \"resultado-anterior\"]}"
+  }
+ ],
+ "final": {
+  "md": -1.8,
+  "ic95": [
+   -9.22,
+   -8.58
+  ]
+ }
+}

@@ -141,10 +141,16 @@ def main():
     print("\n===== etapa 1: calculo por estudo (CALC2 = G2b + derivacao declarada)", flush=True)
     base = (D5 / "prompts" / "e5-calc2.txt").read_text(encoding="utf-8")
     for tid in h3.TRIALS:
+        if (D5 / "saidas" / "CALC2" / f"{tid}.json").exists():
+            print(f"  pulando CALC2 {tid} (já existe)", flush=True)
+            continue
         e5.roda_estudo("CALC2", tid, base, pasta_fichas=EXTRA2)
 
     print("\n===== etapa 2: pooling (instrumentos G3b)", flush=True)
-    e5.roda_g3(origem="CALC2", rotulo="POOL2")
+    if (D5 / "resultados-POOL2.json").exists():
+        print("  pulando POOL2 (já existe)", flush=True)
+    else:
+        e5.roda_g3(origem="CALC2", rotulo="POOL2")
     pool_reg = json.loads((D5 / "resultados-POOL2.json").read_text(encoding="utf-8"))
     proprios = e5.sextetos_do_g2b("CALC2")
 
@@ -213,7 +219,7 @@ def main():
                                      valor=c3.pega(js, caminho), rotulo=rot))
     sext_v, sext_d = [], []
     for tid in h3.TRIALS:
-        fs, _ = e5.ficha_r2(tid, EXTRA2)
+        fs = e5.ficha_r2(tid, EXTRA2)
         s = c3.sexteto(fs)
         if s:
             sext_v.append(s)

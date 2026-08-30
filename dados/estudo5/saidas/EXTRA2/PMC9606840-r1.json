@@ -1,0 +1,6 @@
+{
+ "modelo": "gemma12",
+ "trial": "PMC9606840",
+ "replica": 1,
+ "content": "{\"estudo\": \"T. J. (2022)\", \"desenho\": \"paralelo 2 braços\", \"pais\": \"EUA\", \"duracao\": \"6 months\", \"n_randomizado_total\": \"141\", \"braco_experimental\": {\"rotulo\": \"Low-carbohydrate diet\", \"descricao_intervencao\": \"behavioral intervention promoting a healthy, low-carbohydrate diet (Phase 1: <40g net carbs/day; Phase 2: <60g net carbs/day)\", \"n_randomizado\": \"75\", \"n_analisado\": \"73\", \"hba1c_mudanca_media\": \"-0.24\", \"hba1c_mudanca_dispersao\": \"-0.33 to -0.19\", \"hba1c_mudanca_tipo_dispersao\": \"IC95\", \"hba1c_basal_media\": \"6.17\", \"hba1c_basal_dp\": \"0.31\", \"hba1c_final_media\": \"NR\", \"hba1c_final_dp\": \"NR\"}, \"braco_controle\": {\"rotulo\": \"Usual diet\", \"descricao_intervencao\": \"written information with standard dietary advice; no ongoing recommendations\", \"n_randomizado\": \"75\", \"n_analisado\": \"69\", \"hba1c_mudanca_media\": \"-0.04\", \"hba1c_mudanca_dispersao\": \"-0.10 to 0.02\", \"hba1c_mudanca_tipo_dispersao\": \"IC95\", \"hba1c_basal_media\": \"6.14\", \"hba1c_basal_dp\": \"0.30\", \"hba1c_final_media\": \"NR\", \"hba1c_final_dp\": \"NR\"}}"
+}

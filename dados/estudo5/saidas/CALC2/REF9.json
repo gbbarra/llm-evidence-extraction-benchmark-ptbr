@@ -1,0 +1,23 @@
+{
+ "estudo": "Saslow 2023",
+ "turnos": [
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [-0.32, 0.07, 23, -0.14, 0.07, 25], \"fonte\": [\"hba1c_mudanca_media\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_media\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: -0.18"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.32, 0.07, 23, -0.14, 0.07, 25], \"fonte\": [\"hba1c_mudanca_media\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_media\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: [-0.22, -0.14]"
+  },
+  {
+   "emitiu": "{\"funcao\": \"fim\", \"argumentos\": [-0.18, -0.22, -0.14], \"fonte\": [\"resultado-anterior\", \"resultado-anterior\", \"resultado-anterior\"]}"
+  }
+ ],
+ "final": {
+  "md": -0.18,
+  "ic95": [
+   -0.22,
+   -0.14
+  ]
+ }
+}

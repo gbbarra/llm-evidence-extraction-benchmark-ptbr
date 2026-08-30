@@ -47,6 +47,16 @@ A ladder of rungs over the model's own round-2 extraction sheets (frozen at `194
 - **Run-to-run habit variability**: the over-conversion habit (feeding its own correct r=0.5 result into `dp_de_se`) appeared in G2b's Goday and vanished in the pipeline's — same model, same sheet, same instruments. Orchestration reliability at 12B is stochastic at the margins; replicates remain mandatory.
 - **A consistent private route**: Saslow 2023 came out $-0.18$ $[-0.22, -0.14]$ in every rung — reproducibly different from the graders' route, never unstable. Consistency is not correctness (the Study-4 lesson, again).
 
-## 8. Standing
+## 8. Pipeline v2 (Amendment 4) — extraction to result, Priority-1 nets, measured
+
+The author ordered the roadmap's Priority-1 items applied and the whole pipeline repeated from FRESH extraction. Results ([`pipeline2/`](pipeline2/), transcripts in `saidas/EXTRA2·CALC2·POOL2`):
+
+- **The headline — the full circle closes**: fresh sheets (schema-constrained, prompt verbatim) → the model's own orchestration → pooling **consistent for the third consecutive time** ($-0.51$ $[-0.75, -0.26]$, digit-exact vs its own sextets) → and the sealed unperturbation lens lands **on the published value to the hundredth: $-0.24$ $[-0.33, -0.16]$ vs $-0.24$ $[-0.32, -0.16]$**, $I^2$ 7.1\% vs 6\%. A 12B model plus warn-only code, end to end, reconstructs the literature.
+- **Pipeline vs mechanical truth over the same fresh sheets**: $\Delta$MD 0.01 ($-0.51$ vs $-0.52$) — near-exact with the model, not code, assembling every call.
+- **Anti-invention net (roadmap #1): armed, zero triggers** — none of gemma12's fresh numbers is absent from the source text. The net exists for the invention class measured in other models (llama3.1:8b); on this extractor there was nothing to catch, which is itself the measurement.
+- **Derivation net (roadmap #3): never engaged — and that is the finding.** The model dodged it honestly: on Goday it declared the TRUE source fields (`hba1c_final_media`) of values placed in the WRONG role (levels passed as means; $-1.8$ persists, plus one garbage closing CI $[-9.22, -8.58]$ that never touched the pool, which uses the executed call's sextet). Provenance-checking nets verify **where a value came from, not what role it may play** — the precise next net is a ROLE check: an m-slot fed from a `*_final_media` field draws a warning. Registered in the roadmap.
+- Cells of the fresh sheets: 184/206 (89.3\%) pre-adjudication — run-to-run route variation, zero inventions; extraction remains the quality bound.
+
+## 9. Standing
 
 The author's directive — *turn the best reader into an orchestrator, correcting stage by stage, toward a 100%-gemma12 meta-analysis pipeline* — is fulfilled and archived: reader (round-2 sheets, 92.2% cells), orchestrator (this study), synthesist (zero inventions), with code doing only what code should (execute on command, count, draw, verify). Editorial decision pending: this record becomes Paper 3, or the second half of Paper 2.
