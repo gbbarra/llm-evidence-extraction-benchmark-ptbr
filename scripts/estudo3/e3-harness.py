@@ -41,6 +41,10 @@ elif ELENCO == "igpu":
     # Amendment 4: the mixed integrated-GPU cast — cross-family audit
     # independence + the qwen family in the calculator seat, all on the iGPU
     CAST = {"E": "gemma12", "A": "qwen14", "C": "qwen14", "S": "gemma12"}
+elif ELENCO == "aud26":
+    # Amendment 7: gemma4:26b as auditor — the last empty cell of the
+    # 4-veteran audit matrix; only the audit stage runs in this arm
+    CAST = {"E": "gemma12", "A": "gemma26", "C": "qwen38", "S": "gemma26"}
 SAIDAS = D3 / ("saidas" if ELENCO == "base" else f"saidas-{ELENCO}")
 EXTRACAO = D3 / "saidas" / "extracao"
 OLLAMA = "http://localhost:11434"
