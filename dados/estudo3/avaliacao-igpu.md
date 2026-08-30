@@ -24,7 +24,7 @@ exact corrections              8/9           4/6            7/7
 false alarms (clean lane)     6.5%           0%            4.2%
 ```
 
-**No seed escaped all three auditors, and the union of the 27B and the 14B covers 10/10** — their blind spots are complementary (the 27B misses only what the 14B uniquely catches, and vice versa). A two-of-three audit committee is the direct design implication for the hardened pipeline.
+**No seed escaped all three auditors, and the retrospective union of the 27B's and the 14B's flags covers 10/10** — their blind spots are complementary (the 27B misses only what the 14B uniquely catches, and vice versa). Precision note (added after the author challenged the claim): the union is a **detection ceiling computed over existing runs, not a tested mechanism** — majority voting (2-of-3) reaches only 7/10 with 3.5% false alarms, the 27B∪14B union pays 15.3% false alarms (above the pre-registered 10% bound), and the AND-intersection drops to 6/10 at 0%. A deployable committee therefore needs union-flagging **plus** the flags-not-fixes discipline (never auto-apply), and a value-conflict rule for cells both members correct differently; the committee-as-mechanism test is Amendment 5.
 
 ## The arithmetic (qwen3:14b): the family instinct, and the same broken joint
 
