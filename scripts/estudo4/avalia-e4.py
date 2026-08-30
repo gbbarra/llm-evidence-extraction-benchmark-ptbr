@@ -21,7 +21,8 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 ROOT = Path(__file__).resolve().parents[2]
 D4 = ROOT / "dados" / "estudo4"
-MODELOS = ["gemma12", "qwen14"]
+MODELOS = sys.argv[1:] or ["gemma12", "qwen14"]
+SUFIXO = ("-" + "-".join(MODELOS)) if sys.argv[1:] else ""
 
 
 def carrega(nome, rel):
@@ -80,7 +81,7 @@ def corrige_celulas():
                                          aceitos=esperado["aceitos"], rotulo=r))
                 placar[chave] = dict(parse=True, **contas)
     (D4 / "correcao").mkdir(exist_ok=True)
-    (D4 / "correcao" / "extracao.json").write_text(
+    (D4 / "correcao" / f"extracao{SUFIXO}.json").write_text(
         json.dumps(dict(placar=placar, detalhes=detalhes), ensure_ascii=False, indent=1), encoding="utf-8")
     print("== células vs régua EXPECTED (E3 emendada)")
     resumo = {}
@@ -162,7 +163,7 @@ def main():
               f" · verdade {verdade['md']} {verdade['ic95']} · Δ md={delta['md']} ic={delta['ic']}")
         print(f"    lente desperturbada: {lente['md']} {lente['ic95']} i2={lente['i2_pct']}%"
               f" · réplicas células: {conc['pct']}% ({conc['iguais']}/{conc['total']})")
-    (D4 / "avaliacao-mecanica.json").write_text(
+    (D4 / f"avaliacao-mecanica{SUFIXO}.json").write_text(
         json.dumps(aval, ensure_ascii=False, indent=1), encoding="utf-8")
     print("\ngravado: dados/estudo4/correcao/extracao.json · dados/estudo4/avaliacao-mecanica.json")
 

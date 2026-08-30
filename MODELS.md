@@ -9,4 +9,12 @@ The exact quantized builds behind every EXTRAI run, recorded 2026-08-30 on the b
 | gemma4:26b | `gemma4:26b` | `5571076f3d70` | 25.8B | Q4_K_M | gemma4 (MoE) |
 | qwen3.8:27b | `qwen3.8:27b-texto` | `7754b7d139c8` | 27.3B | Q4_K_M | qwen35 |
 
+Study-4 Amendment-1 extension arm (recorded 2026-08-30, same machine):
+
+| Paper name | Ollama tag | ID (digest prefix) | Params | Quant | Architecture |
+|---|---|---|---|---|---|
+| llama3.1:8b | `llama3.1:8b` | `46e0c10c039e` | 8.0B | Q4_K_M | llama |
+| qwen3.5:9b | `qwen3.5:9b` | `6488c96fa5fa` | 9.7B | Q4_K_M | qwen35 |
+| deepseek-r1:14b | `deepseek-r1:14b` | `c333b7232bdb` | 14.8B | Q4_K_M | qwen2 (distill) |
+
 **Note on the 27B tag.** All three studies call the 27B through the local tag `qwen3.8:27b-texto`: the same base-weights blob as the stock `qwen3.8:27b` (`sha256-f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d`, verified identical `FROM` on both tags) rebuilt with a raw-prompt template (`TEMPLATE {{ .Prompt }}`), so the frozen Portuguese instruments pass through verbatim with no chat wrapper. Each study's `MODELS` dict in `scripts/estudo*/e*-harness.py` records the tag it ran.

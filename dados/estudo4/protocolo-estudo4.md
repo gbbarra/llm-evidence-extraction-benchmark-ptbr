@@ -40,4 +40,10 @@ Audit stages and seeded errors (Study 3 closed those questions); CPU models (ret
 
 ---
 
-*Amendments: (none)*
+## Amendment 1 (2026-08-30, registered before any extension run): the discarded-smalls extension arm
+
+- **Models**: `llama3.1:8b`, `qwen3.5:9b`, `deepseek-r1:14b` — the small models left out of the original four at screening — as extractors under the **identical** engine, corpus, frozen instrument, 7×2 design, first-parseable rule and §3 scoring. Exact builds pinned in [`MODELS.md`](../../MODELS.md). They are injected into the harness's model table at run time by the new module [`e4-extensao.py`](../../scripts/estudo4/e4-extensao.py); the frozen Study-3 instruments (`e3-harness.py`, `dirigida.py`) are imported, never edited.
+- **Output allowance**: `num_predict` 4000 for the three extension models (uniform; the reasoning-family distill may be verbose even with the harness-wide `think=false`). The extraction prompt is unchanged.
+- **Erratum fixes applied forward, run-time instruments only**: **E4-1** — the sign-trigger question is rewritten neutrally (states only the analysis convention; no premise about what the printed positive means); **E4-2** — all three pre-declared trigger classes are implemented: as-printed positive; required-field-NR (sheet-scoped: the model may only recover a value from its own sheet, else the trial is dados-insuficientes); factorial-margin (fired by the sheet's declared design — a model that misdeclares the design escapes the trigger, and that escape is itself a logged result). Every firing and answer is logged.
+- **E4-3/E4-4 remain grading-side**: the referee (graders' `sexteto`) is unchanged for comparability with the iGPU pair; if malformed cells appear, both parses are reported exactly as done for qwen3:14b.
+- **Registered expectations**: the two general-purpose smalls extract in a wide 60–90% band with real wrong-value cells and possible format failures (both-replicate parse failure ⇒ dados-insuficientes, counted); the distill's open question is format compliance under `think=false`; and the architecture claim (H4.3) is expected to hold for all three — |pool − own-sheet truth| decomposes into named extraction/judgment/parsing differences, none arithmetic.
