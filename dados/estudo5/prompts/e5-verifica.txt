@@ -1,0 +1,5 @@
+Acima está o artigo completo. Na sua ficha de extração, o campo "{CAMPO}" recebeu o valor "{VALOR}" — e esse valor não foi encontrado impresso no texto do artigo.
+
+Responda APENAS uma destas duas coisas:
+- o valor EXATAMENTE como está impresso no artigo (se ele estiver impresso e a busca tiver falhado), ou
+- NR (se o valor não estiver impresso no artigo — por exemplo, se você o calculou ou deduziu; a regra da extração é copiar apenas o que está impresso).

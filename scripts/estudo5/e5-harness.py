@@ -36,6 +36,18 @@ SCHEMA_G2 = {
 }
 
 
+SCHEMA_CALC2 = {
+    "type": "object",
+    "properties": {
+        "funcao": {"type": "string",
+                   "enum": ["md", "ic95_md", "dp_de_ic", "dp_de_se", "dp_mudanca_r05", "fim"]},
+        "argumentos": {"type": "array", "items": {"type": "number"}, "minItems": 1, "maxItems": 6},
+        "fonte": {"type": "array", "items": {"type": "string"}, "maxItems": 6},
+        "derivacao": {"type": "string", "maxLength": 80},
+    },
+    "required": ["funcao", "argumentos"],
+}
+
 SCHEMA_G3 = {
     "type": "object",
     "properties": {
@@ -69,9 +81,10 @@ def gerar_schema(prompt, max_tokens, schema=None):
     return dict(content=r.get("response", "") or "", dt=r.get("total_duration", 0) / 1e9 or dt)
 
 
-def ficha_r2(tid):
+def ficha_r2(tid, pasta=None):
+    base = Path(pasta) if pasta else R2 / "saidas" / MODELO / "extracao"
     for rep in (1, 2):
-        f = R2 / "saidas" / MODELO / "extracao" / f"{tid}-r{rep}.json"
+        f = base / f"{tid}-r{rep}.json"
         if f.exists():
             js = h3.acha_json(json.loads(f.read_text(encoding="utf-8"))["content"])
             if js:
@@ -129,6 +142,32 @@ def aviso_fonte(args, fontes, ficha):
     return None
 
 
+def aviso_derivacao(args, fontes, js, nums):
+    """Amendment 4 / roadmap #3, detection-only: a 'derivado' argument must come
+    with a declared operation whose operands are sheet values and whose result
+    is the argument sent."""
+    fl = [str(f).strip().lower() for f in (fontes or [])]
+    if "derivado" not in fl:
+        return None
+    d = str(js.get("derivacao", "")).strip().replace("−", "-")
+    if not d:
+        return ('AVISO: um argumento declara fonte "derivado" — inclua o campo "derivacao" '
+                'com a operação e os operandos, por exemplo "7.1 - 6.8". Reemita a chamada completa.')
+    for x in re.findall(r"-?\d+(?:\.\d+)?", d):
+        if not any(abs(float(x) - v) <= 0.005 for _, v in nums):
+            return (f"AVISO: a derivação '{d}' usa {x}, que não é um valor da ficha. "
+                    "Confira e reemita (corrigida, ou idêntica se você confirma).")
+    m2 = re.match(r"\s*(-?\d+(?:\.\d+)?)\s*([-+])\s*(-?\d+(?:\.\d+)?)\s*$", d)
+    if m2:
+        a, op, b = float(m2.group(1)), m2.group(2), float(m2.group(3))
+        val = a - b if op == "-" else a + b
+        idx = fl.index("derivado")
+        if idx < len(args) and abs(args[idx] - val) > 0.01:
+            return (f"AVISO: a derivação '{d}' resulta em {round(val, 2)}, mas o argumento "
+                    f"enviado é {args[idx]}. Confira e reemita (corrigida, ou idêntica se confirma).")
+    return None
+
+
 ARIDADE = {"md": (6, "md(m1, dp1, n1, m2, dp2, n2)"),
            "ic95_md": (6, "ic95_md(m1, dp1, n1, m2, dp2, n2)"),
            "dp_de_ic": (3, "dp_de_ic(inferior, superior, n)"),
@@ -156,9 +195,9 @@ def parse_g1(linha):
     return m.group(1).lower(), args, None
 
 
-def roda_estudo(rung, tid, base):
+def roda_estudo(rung, tid, base, pasta_fichas=None):
     rot = h3.ROT[tid]
-    ficha = ficha_r2(tid)
+    ficha = ficha_r2(tid, pasta_fichas)
     nums = numeros_da_ficha(ficha)
     prompt0 = base.replace("{FICHA}", json.dumps(ficha, ensure_ascii=False, indent=1))
     historico = ""
@@ -174,7 +213,8 @@ def roda_estudo(rung, tid, base):
                 break
             parsed = parse_g1(bruto)
         else:
-            r = gerar_schema(prompt0 + historico + "\nPróximo JSON:", max_tokens=120)
+            r = gerar_schema(prompt0 + historico + "\nPróximo JSON:", max_tokens=160,
+                             schema=SCHEMA_CALC2 if rung == "CALC2" else SCHEMA_G2)
             bruto = r["content"].strip()
             try:
                 js = json.loads(bruto)
@@ -195,7 +235,9 @@ def roda_estudo(rung, tid, base):
         chave = f"{fn}{args}"
         aviso = aviso_aridade(fn, args)
         if not aviso and avisados.get(chave, 0) < MAX_AVISOS_POR_CHAMADA and chave not in avisados.get("_conf", []):
-            aviso = aviso_sinal(args, nums) or (aviso_fonte(args, fontes, ficha) if rung.startswith("G2") else None)
+            aviso = aviso_sinal(args, nums) or \
+                (aviso_fonte(args, fontes, ficha) if rung.startswith("G2") or rung == "CALC2" else None) or \
+                (aviso_derivacao(args, fontes, js, nums) if rung == "CALC2" else None)
         if aviso and avisados.get("_ultimo") == chave:
             avisados.setdefault("_conf", []).append(chave)   # re-emitted identical: confirmed
             aviso = None
