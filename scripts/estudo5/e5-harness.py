@@ -36,6 +36,19 @@ SCHEMA_G2 = {
 }
 
 
+SCHEMA_G3 = {
+    "type": "object",
+    "properties": {
+        "funcao": {"type": "string", "enum": ["pool_dl_md", "fim"]},
+        "sextetos": {"type": "array",
+                     "items": {"type": "array", "items": {"type": "number"},
+                               "minItems": 6, "maxItems": 6}},
+        "argumentos": {"type": "array", "items": {"type": "number"}},
+    },
+    "required": ["funcao"],
+}
+
+
 def carrega(nome, rel):
     sp = importlib.util.spec_from_file_location(nome, ROOT / rel)
     m = importlib.util.module_from_spec(sp)
@@ -221,10 +234,105 @@ def roda_estudo(rung, tid, base):
     return dict(estudo=rot, final=final, turnos=len(turnos), avisos=n_avisos)
 
 
+def sextetos_do_g2b():
+    """Each study's LAST executed md-call arguments in G2b = the model's own sextet."""
+    por_estudo = {}
+    for tid in h3.TRIALS:
+        f = D5 / "saidas" / "G2B" / f"{tid}.json"
+        if not f.exists():
+            continue
+        j = json.loads(f.read_text(encoding="utf-8"))
+        sext = None
+        for t in j["turnos"]:
+            if t.get("resultado", "").startswith("RESULTADO:") and '"funcao": "md"' in t.get("emitiu", ""):
+                try:
+                    sext = [float(x) for x in json.loads(t["emitiu"])["argumentos"]]
+                except Exception:
+                    pass
+        if sext and len(sext) == 6:
+            por_estudo[h3.ROT[tid]] = dict(sexteto=sext, final=j.get("final"))
+    return por_estudo
+
+
+def roda_g3():
+    base = (D5 / "prompts" / "e5-g3.txt").read_text(encoding="utf-8")
+    proprios = sextetos_do_g2b()
+    resumo = "\n".join(
+        f"- {rot}: sexteto {d['sexteto']} → MD {d['final'].get('md') if d['final'] else '?'} "
+        f"IC95 {d['final'].get('ic95') if d['final'] else '?'}" for rot, d in proprios.items())
+    prompt0 = base.replace("{RESUMO}", resumo)
+    historico = ""
+    turnos = []
+    avisados = {}
+    final = None
+    for _ in range(8):
+        r = gerar_schema(prompt0 + historico + "\nPróximo JSON:", max_tokens=400)
+        bruto = r["content"].strip()
+        try:
+            js = json.loads(bruto)
+        except Exception:
+            historico += f"{bruto}\nAVISO: formato inválido.\n"
+            turnos.append(dict(emitiu=bruto, aviso="formato"))
+            continue
+        if js.get("funcao") == "fim":
+            a = js.get("argumentos", [])
+            final = dict(md=a[0], ic95=[a[1], a[2]]) if len(a) >= 3 else None
+            turnos.append(dict(emitiu=bruto))
+            break
+        sxs = js.get("sextetos") or []
+        aviso = None
+        proprios_l = [d["sexteto"] for d in proprios.values()]
+        for s in sxs:
+            if not any(all(abs(a - b) <= 0.005 for a, b in zip(s, p)) for p in proprios_l):
+                aviso = (f"AVISO: o sexteto {s} não corresponde a nenhum dos seus resultados "
+                         "por estudo listados acima. Confira e reemita (corrigida, ou idêntica "
+                         "se você confirma).")
+                break
+        chave = json.dumps(sxs)
+        if aviso and avisados.get("_ultimo") == chave:
+            aviso = None
+        if aviso and avisados.get(chave, 0) < MAX_AVISOS_POR_CHAMADA:
+            avisados[chave] = avisados.get(chave, 0) + 1
+            avisados["_ultimo"] = chave
+            historico += f"{bruto}\n{aviso}\n"
+            turnos.append(dict(emitiu=bruto, aviso=aviso))
+            print(f"    MODELO : {bruto[:100]}", flush=True)
+            print(f"    HARNESS: {aviso[:110]}", flush=True)
+            continue
+        avisados["_ultimo"] = None
+        try:
+            res = f"RESULTADO: {json.dumps(h3.pool_dl_md(sxs), ensure_ascii=False)}"
+        except Exception as e:
+            res = f"RESULTADO: erro — {str(e)[:60]}"
+        historico += f"{bruto}\n{res}\n"
+        turnos.append(dict(emitiu=bruto, resultado=res))
+        print(f"    MODELO : {bruto[:100]}", flush=True)
+        print(f"    HARNESS: {res[:90]}", flush=True)
+    saida = D5 / "saidas" / "G3"
+    saida.mkdir(parents=True, exist_ok=True)
+    (saida / "pool.json").write_text(json.dumps(dict(estudo="POOL", resumo=resumo, turnos=turnos,
+                                                     final=final), ensure_ascii=False, indent=1),
+                                     encoding="utf-8")
+    verdade_propria = h3.pool_dl_md([d["sexteto"] for d in proprios.values()])
+    consistente = bool(final) and abs(final["md"] - verdade_propria["md"]) <= 0.01 and \
+        all(abs(a - b) <= 0.01 for a, b in zip(final["ic95"], verdade_propria["ic95"]))
+    resultado = dict(final=final, pool_sobre_os_proprios_sextetos=verdade_propria,
+                     consistente=consistente, estudos_oferecidos=len(proprios))
+    (D5 / "resultados-G3.json").write_text(json.dumps(resultado, ensure_ascii=False, indent=1),
+                                           encoding="utf-8")
+    print(f"== G3: consistente com os próprios sextetos: {consistente} · "
+          f"final {json.dumps(final, ensure_ascii=False)} · "
+          f"pool dos próprios: {json.dumps(verdade_propria, ensure_ascii=False)}", flush=True)
+
+
 def main():
     rung = (sys.argv[1] if len(sys.argv) > 1 else "G1").upper()
-    assert rung in ("G1", "G2", "G2B"), "uso: e5-harness.py G1|G2|G2B"
+    assert rung in ("G1", "G2", "G2B", "G3"), "uso: e5-harness.py G1|G2|G2B|G3"
     assert h3.ELENCO == "base"
+    if rung == "G3":
+        print(f"===== Estudo 5 · G3 (pooling) · {MODELO}", flush=True)
+        roda_g3()
+        return
     base = (D5 / "prompts" / f"e5-{'g2' if rung.startswith('G2') else 'g1'}.txt").read_text(encoding="utf-8")
     print(f"===== Estudo 5 · {rung} · {MODELO} [{h3.MODELS[MODELO]['ollama']}]", flush=True)
     t0 = time.time()
