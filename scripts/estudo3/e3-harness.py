@@ -37,12 +37,17 @@ ELENCO = os.environ.get("E3_ELENCO", "base")
 CAST = {"E": "gemma12", "A": "qwen38", "C": "qwen38", "S": "gemma26"}
 if ELENCO == "allgemma":
     CAST = {"E": "gemma12", "A": "gemma12", "C": "gemma12", "S": "gemma12"}
+elif ELENCO == "igpu":
+    # Amendment 4: the mixed integrated-GPU cast — cross-family audit
+    # independence + the qwen family in the calculator seat, all on the iGPU
+    CAST = {"E": "gemma12", "A": "qwen14", "C": "qwen14", "S": "gemma12"}
 SAIDAS = D3 / ("saidas" if ELENCO == "base" else f"saidas-{ELENCO}")
 EXTRACAO = D3 / "saidas" / "extracao"
 OLLAMA = "http://localhost:11434"
 CTX = 16384
 MODELS = {
     "gemma12": dict(ollama="gemma4:12b", cpu=False),
+    "qwen14":  dict(ollama="qwen3:14b", cpu=False),
     "gemma26": dict(ollama="gemma4:26b", cpu=True),
     "qwen38":  dict(ollama="qwen3.8:27b-texto", cpu=True),
 }
