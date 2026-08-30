@@ -1,0 +1,85 @@
+{
+ "_metodo": "EXTRAI Study 4 round 2 — adjudication of the 181 mechanically flagged cells (82 unique clusters), under the rite: verify against the perturbed source before deducting. 28 clusters (111 cells) repeat patterns already source-verified in round 1 and reuse those verdicts by citation (the sources did not change); 54 clusters (70 cells) received fresh verdicts. OUTCOME: 4 cells flip to exata (all qwen35, formatting-only mismatches against accepted routes); 177 cells confirmed errada. Final scores: gemma12 190/206 (92.2%), qwen14 151/206 (73.3%), llama8 146/206 (70.9%), qwen35 157/206 (76.2%), deepseek14 139/206 (67.5%).",
+ "reutilizados_da_rodada1": {
+  "clusters": 28,
+  "celulas": 111,
+  "fonte": "dados/estudo4/correcao/adjudicacoes.json (round 1), same trial+field+value patterns",
+  "padroes": [
+   "Goday: self-computed changes (-1.6/+0.3, table prints only levels) and 'DP' declared over them; total-sample basal SD 1.06 in arm field",
+   "Chen: analysis-table ns (41/42) in the randomized field; 'DP' declared over an MD (95% CI)",
+   "Dorans (qwen14): CI half-widths 0.07/0.04 computed and written as dispersions",
+   "Thomsen: the mmol/mol unit-and-level chimera (57.6/57.4 baselines, between-group -1.9 as arm change, difference CI as arm dispersion)",
+   "Saslow 2023: factorial per-cell ns (23/25/24) where rule 5 requires the compared margins; 'DP' declared over printed SEs"
+  ],
+  "veredito": "errada (todos), pelas mesmas verificacoes de fonte da rodada 1"
+ },
+ "novos": [
+  {
+   "celulas": "qwen35 · Wang · mudanca_dispersao exp '±1.18' e ctl '±0.70' (2 cells)",
+   "veredito": "EXATA (formatacao)",
+   "justificativa": "The ruler accepts exp [0.94, 1.18] and ctl [0.67, 0.7] (twin-table routes). The values are accepted routes verbatim; only the '±' prefix broke the numeric parser. No deduction."
+  },
+  {
+   "celulas": "qwen35 · Dorans · mudanca_dispersao exp '95% CI, –0.33 to –0.19' e ctl '95% CI, –0.10 to 0.02' (2 cells)",
+   "veredito": "EXATA (formatacao)",
+   "justificativa": "Content matches the ruler's accepted strings ('-0.33 to -0.19'; '-0.10 to 0.02') after stripping the '95% CI,' prefix and normalizing en-dashes. No deduction."
+  },
+  {
+   "celulas": "qwen35 · Dorans r-alt · exp '0.33 a 0.19' (1 cell)",
+   "veredito": "errada",
+   "justificativa": "Signs dropped from both bounds — value corruption, not formatting."
+  },
+  {
+   "celulas": "deepseek14 · Dorans · basal_media 6.16 (both arms) e basal_dp 0.30 (3 cells)",
+   "veredito": "errada (valor da amostra total no campo do braco)",
+   "citacao_fonte": "'The mean (SD) HbA1c was 6.16% (0.30%) at baseline' (total sample); the per-arm table prints 'Hemoglobin A1c, mean (SD), % 6.17 (0.31) 6.14 (0.30) 6.16 (0.30)' — arm values are 6.17/6.14, total is 6.16.",
+   "nota": "Same class as round 1's Goday 1.06 (qwen14): a printed value, from the wrong table column."
+  },
+  {
+   "celulas": "deepseek14 · Dorans · mudanca_media exp '-0.23' (2 cells) e dispersoes '(-0.33 a -0.14)', '0.05', '0.06' (3 cells)",
+   "veredito": "errada (janela temporal errada / valores nao impressos)",
+   "citacao_fonte": "'-0.23 (-0.31 to -0.15)' is the 3-MONTH secondary row ('Hemoglobin A1c, % 3 mo -0.23 (-0.31 to -0.15)'); the ruler expects the 6-month primary (-0.32, CI -0.33 to -0.19). The dispersion values written are half-widths or bound mashups printed nowhere.",
+   "nota": "New error class for the ledger: right outcome, wrong timepoint."
+  },
+  {
+   "celulas": "llama8 · Goday · finais 5.53/7.07/7.2/7.3% e mudancas -0.36/-0.15/1.6 (7 cells across reps) · Saslow17 finais 5.0%/7.3%/7.2 (4 cells)",
+   "veredito": "errada (valores nao impressos — computados ou fabricados)",
+   "citacao_fonte": "Goday prints only levels: '6.9 (1.1) 5.3 (0.7)' and '6.8 (1.0) 7.1 (0.8)'; Saslow 2017 prints changes and baselines, no finals. 5.0 = 5.8-0.8 (computed); 5.53, 7.07, -0.36, -0.15 appear nowhere in the texts.",
+   "nota": "llama8 is the first model in the whole benchmark to write values that are neither printed nor derivable-as-written — round 1's four veterans had ZERO inventions across 624 cells. The discarded small breaks the invention-free streak."
+  },
+  {
+   "celulas": "deepseek14 · Goday exp n_analisado '40' · Chen n_analisado '40'/'41' (3 cells)",
+   "veredito": "errada (valor do outro braco / nao impresso)",
+   "justificativa": "Goday ruler: exp analyzed [45], ctl [40] — the control count placed in the experimental field. Chen ruler: [41]/[42] — shifted by one position."
+  },
+  {
+   "celulas": "llama8 · Chen tipo 'EP' (2) · qwen35 · Chen tipo 'SD' (2)",
+   "veredito": "errada",
+   "justificativa": "Chen prints the change as MD (95% CI): '-1.44(-1.96 ~ -1.30)'. Neither EP nor SD."
+  },
+  {
+   "celulas": "REF9 (Saslow 2023) · qwen14 n_analisado '22' (3) · llama8/qwen35 n_randomizado '41'/'42' (4) · deepseek/llama8 n_randomizado '25' (2) · qwen35 n_randomizado '41.5' (2)",
+   "veredito": "errada (granularidade/campo no fatorial; e uma MEDIA computada de n)",
+   "citacao_fonte": "Flow prints per-cell counts (25, 22...); outcomes print analyzed margins ('n = 41 in the VLC group', 'n = 42 in the DASH group'); allocation margins accepted by the ruler are 45/49. '41.5' is the arithmetic average of 41 and 42 — a computed n, printed nowhere.",
+   "nota": "qwen35 averaging two group sizes into '41.5' is invention-by-arithmetic inside a count field."
+  },
+  {
+   "celulas": "REF12 (Thomsen) · variantes novas do cluster mmol/nivel (qwen35 '-0.18', '-0.32'; llama8 '0.4', 'IC95: -0.32 a -0.03', 'IC95: -2.3 a -1.0', total '80'; deepseek variantes com sufixo mmol/mol) (~15 cells)",
+   "veredito": "errada",
+   "citacao_fonte": "The %-row prints the between-group difference as '-0.18 (-0.32, -0.03)%' — a difference placed in arm fields; the ruler's arm-level % route is -0.83 ± 0.38. '80' is the a-priori sample-size calculation ('the appropriate sample size was calculated to be 80'), not the randomized total (ruler: 63 or 72).",
+   "nota": "Same chimera class as round 1, now in its % variant."
+  },
+  {
+   "celulas": "qwen35 · Saslow17 · basal_dp = paragrafo inteiro de raciocinio (1 cell)",
+   "veredito": "errada (campo contaminado por deliberacao)",
+   "nota": "The model wrote its chain of thought INTO the form field ('7.6 (do resumo geral da tabela, mas os dados basais especificos...'). New behavior class for the ledger: form contamination."
+  }
+ ],
+ "placar_final": {
+  "gemma12": "190/206 (92.2%)",
+  "qwen14": "151/206 (73.3%)",
+  "llama8": "146/206 (70.9%)",
+  "qwen35": "157/206 (76.2%) — +4 pela adjudicacao",
+  "deepseek14": "139/206 (67.5%)"
+ }
+}
