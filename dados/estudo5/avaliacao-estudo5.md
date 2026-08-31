@@ -67,6 +67,17 @@ Eight detection-only nets (type system by slot class; coherence: interval-contai
 - One borderline source warning (Chen's experimental CI) was absorbed by confirm-by-repeat with no damage — the false-alarm cost of the eighth net, measured at one extra turn.
 - Harness complexity, as now reported by doctrine: G0 1 net · G1 2 · G2b 4 · **G2c 8** — accuracy 5/7 → 5/7 → **6/7 + 1 flagged**.
 
-## 10. Standing
+## 10. Pipeline v3 (Amendment 6, frozen harness) — the honest ceiling, measured
+
+Everything from fresh extraction under the frozen 10-net harness. The registered 7/7 prediction was **REFUTED — in the instructive direction**:
+
+- **The stable, load-bearing result got its third confirmation**: the sealed lens over the fresh sheets landed on the published value AGAIN — $-0.24$ $[-0.33, -0.16]$ — making it **three independent fresh extractions, three lenses on $-0.24$** (round 2, v2, v3). Reading, the one stage the model owns outright, is reproducibly anchor-faithful. Extraction cells 85.4\% pre-adjudication (fresh-round route variation).
+- **The over-conversion habit returned and beat the cap**: on Goday the model again derived the change-SD correctly (0.96, r=0.5) and then insisted on re-converting its own result through `dp_de_se`; the type and derivation nets correctly refused every wrong move, seven times — **detection can refuse, it cannot teach** — and the study starved at 16 turns, closing null and leaving the pool. Per-study finals: 5 exact, 1 route-divergent (Chen, as in G2c), 1 null.
+- **The pooling was faithful and the aggregate is distorted anyway**: the model pooled its six surviving sextets consistently (TRUE, digit-exact) — and the product is $-0.19$ $[-0.23, -0.16]$, $I^2$ 0\%, because with Goday absent, heterogeneity collapses and Saslow 2023's tiny stored dispersions (its consistent private route) take dominant weight. **Local honesty at every link does not compose into global sanity**: a chain of correct refusals produced a faithful pool of a distorted composition. Two mechanically detectable product-layer flags are the registered successors (roadmap): a **missing-study flag** (a trial with sheets but no pooled row) and a **weight-dominance flag** (any single study above a declared share of the pooled weight).
+- The anti-invention net's four firings were all the corpus's **gap \#1 live** (digits absent because the text spells the numbers out — "ninety-two"); the model confirmed each value at the cost of four turns, zero damage.
+
+**What the three pipeline runs together establish**: the per-study orchestration layer oscillates with the model's stochastic habits (5/7 → 6/7+flag → 5+1+null under an identical frozen harness), while the extraction-level lens does not move ($-0.24$, three times). The division of labor's asymmetry is now measured from both sides: reading is reliable and orchestration is weather — which is precisely why the deterministic-downstream architecture of Study 4 remains the production recommendation, and the GEMMA-SÓ line is the measured map of what a 12B can and cannot yet own.
+
+## 11. Standing
 
 The author's directive — *turn the best reader into an orchestrator, correcting stage by stage, toward a 100%-gemma12 meta-analysis pipeline* — is fulfilled and archived: reader (round-2 sheets, 92.2% cells), orchestrator (this study), synthesist (zero inventions), with code doing only what code should (execute on command, count, draw, verify). Editorial decision pending: this record becomes Paper 3, or the second half of Paper 2.

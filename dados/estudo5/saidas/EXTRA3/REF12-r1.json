@@ -1,0 +1,6 @@
+{
+ "modelo": "gemma12",
+ "trial": "REF12",
+ "replica": 1,
+ "content": "{\"estudo\": \"Vörösmarty 2021\", \"desenho\": \"paralelo 2 braços\", \"pais\": \"Dinamarca\", \"duracao\": \"6 semanas\", \"n_randomizado_total\": \"72\", \"braco_experimental\": {\"rotulo\": \"CRHP\", \"descricao_intervencao\": \"carbohydrate-reduced high-protein diet (CRHP, percentage of total energy intake [E%]: CH30/P30/F40)\", \"n_randomizado\": \"36\", \"n_analisado\": \"34\", \"hba1c_mudanca_media\": \"-0.83\", \"hba1c_mudanca_dispersao\": \"0.38\", \"hba1c_mudanca_tipo_dispersao\": \"DP\", \"hba1c_basal_media\": \"8.09\", \"hba1c_basal_dp\": \"0.77\", \"hba1c_final_media\": \"NR\", \"hba1c_final_dp\": \"NR\"}, \"braco_controle\": {\"rotulo\": \"CD\", \"descricao_intervencao\": \"conventional diabetes diet (CD, E%: CH50/P17/F33)\", \"n_randomizado\": \"36\", \"n_analisado\": \"33\", \"hba1c_mudanca_media\": \"-0.56\", \"hba1c_mudanca_dispersao\": \"0.37\", \"hba1c_mudanca_tipo_dispersao\": \"DP\", \"hba1c_basal_media\": \"7.40\", \"hba1c_basal_dp\": \"0.70\", \"hba1c_final_media\": \"NR\", \"hba1c_final_dp\": \"NR\"}}"
+}

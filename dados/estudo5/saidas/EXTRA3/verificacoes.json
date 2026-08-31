@@ -1,0 +1,34 @@
+[
+ {
+  "trial": "PMC7535044",
+  "rep": 1,
+  "campo": "n_randomizado_total",
+  "valor_original": "92",
+  "resposta": "92",
+  "aplicado": "92"
+ },
+ {
+  "trial": "PMC7535044",
+  "rep": 2,
+  "campo": "n_randomizado_total",
+  "valor_original": "92",
+  "resposta": "92",
+  "aplicado": "92"
+ },
+ {
+  "trial": "REF12",
+  "rep": 1,
+  "campo": "n_randomizado_total",
+  "valor_original": "72",
+  "resposta": "72",
+  "aplicado": "72"
+ },
+ {
+  "trial": "REF12",
+  "rep": 2,
+  "campo": "n_randomizado_total",
+  "valor_original": "72",
+  "resposta": "72",
+  "aplicado": "72"
+ }
+]

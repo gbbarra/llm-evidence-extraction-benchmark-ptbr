@@ -1,0 +1,20 @@
+{
+ "final": {
+  "md": -0.19,
+  "ic95": [
+   -0.23,
+   -0.16
+  ]
+ },
+ "pool_sobre_os_proprios_sextetos": {
+  "md": -0.19,
+  "ic95": [
+   -0.23,
+   -0.16
+  ],
+  "tau2": 0.0,
+  "i2_pct": 0.0
+ },
+ "consistente": true,
+ "estudos_oferecidos": 6
+}

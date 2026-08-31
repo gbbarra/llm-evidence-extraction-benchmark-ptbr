@@ -18,6 +18,8 @@ The prioritized instrument backlog distilled from Studies 1–5. Rule of admissi
 - **Escalation to a human**: a value that stands wrong after its warning budget enters the product carrying a "needs human review" flag, never silently — the audit-as-flagger lesson applied to self-correction (it was the author, reading the figure, who caught E5-5).
 - **Harness complexity as a reported metric**: every net erodes the "minimal harness" claim, so the net count per rung is reported beside accuracy — *how much harness a model needs* is itself the comparable result.
 
+**Successors from pipeline v3 (frozen-harness run)** — both PRODUCT-layer flags, not model nets: a **missing-study flag** (a trial with sheets but no pooled row must be named in the product, never silently absent) and a **weight-dominance flag** (any single study above a declared share of the pooled weight is flagged — v3's faithful pool of six was dominated by one study's tiny stored dispersions, $I^2$ 0\%, $-0.19$ vs the truth's $-0.52$). Measured lesson attached: local honesty at every link does not compose into global sanity; composition needs its own flags.
+
 ## Priority 2 — structural guards
 
 4. **Unit field + mixed-unit refusal**: a mandatory `unidade` per numeric block on the sheet; the engine warns and counts (never silently converts) when a pool would mix units. — Targets the mmol/mol chimera that wrecked Thomsen's row for two models ([adjudications](dados/estudo4/rodada2/correcao/adjudicacoes.json)).
