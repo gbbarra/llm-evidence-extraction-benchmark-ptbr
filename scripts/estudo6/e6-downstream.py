@@ -55,7 +55,7 @@ DESFECHOS = [
     dict(nome="mortalidade", tipo="rr", tabela=6, e="mortalidade_gdft", c="mortalidade_controle"),
     dict(nome="ileo", tipo="rr", tabela=11, e="ileo_pos_op_gdft", c="ileo_pos_op_controle"),
     dict(nome="tempo_flatus", tipo="md", tabela=8, e="tempo_flatus_gdft", c="tempo_flatus_controle"),
-    dict(nome="tempo_dieta_oral", tipo="md", tabela=9, e="tempo_dieta_oral_gdft", c="tempo_dieta_oral_controle"),
+    dict(nome="tempo_ingesta_oral", tipo="md", tabela=9, e="tempo_ingesta_oral_gdft", c="tempo_ingesta_oral_controle"),
 ]
 
 
@@ -87,10 +87,33 @@ def valor(js, campo):
 
 
 def inteiro(s):
-    if not s or str(s).strip().upper() in ("NR", "NA", "N/A", ""):
+    if not s or str(s).strip().upper() in ("NR", "NA", "N/A", "", "NONE"):
         return None
     m = re.search(r"\d+", str(s))
     return int(m.group(0)) if m else None
+
+
+def eventos(s, n=None):
+    """Event count from a cell as models write them: '19 (32.8%)' -> 19;
+    '25% (36/142)' -> 36; '2 of 50' -> 2; '8.6%' alone -> deterministic
+    conversion round(pct/100*n), flagged."""
+    if not s or str(s).strip().upper() in ("NR", "NA", "N/A", "", "NONE"):
+        return None, ""
+    t = str(s)
+    m = re.search(r"\(\s*(\d+)\s*/\s*\d+\s*\)", t)
+    if m:
+        return int(m.group(1)), ""
+    m = re.match(r"\s*(\d+)(?![\.\d])\s*(?:\(|of|de|%?\s|$)", t)
+    if m and "%" not in t.split("(")[0].replace(m.group(1), "", 1)[:3]:
+        return int(m.group(1)), ""
+    m = re.match(r"\s*(\d+)\s*(?:\(|of|de)", t)
+    if m:
+        return int(m.group(1)), ""
+    m = re.search(r"(\d+(?:\.\d+)?)\s*%", t)
+    if m and n:
+        return round(float(m.group(1)) / 100 * n), "derivado-de-%"
+    m = re.match(r"\s*(\d+)\b", t)
+    return (int(m.group(1)), "") if m else (None, "")
 
 
 def media_dp(s):
@@ -109,6 +132,12 @@ def media_dp(s):
 def rr_pub(cel):
     r = cel.get("Risk ratio") or cel.get("RR")
     ic = cel.get("95% CI") or cel.get("95%CI")
+    if r is None and ic is None:
+        comb = cel.get("RR (95% CI)") or ""
+        ns = re.findall(r"\d+(?:\.\d+)?", str(comb))
+        if len(ns) >= 3:
+            return float(ns[0]), [float(ns[1]), float(ns[2])]
+        return None, None
     try:
         lo, hi = [float(x) for x in re.findall(r"\d+(?:\.\d+)?", str(ic))[:2]]
         return float(re.findall(r"\d+(?:\.\d+)?", str(r))[0]), [lo, hi]
@@ -124,17 +153,32 @@ def md_pub(cel):
     return None, None
 
 
+ERRATA_VER = ("errata-ma", "primario-contraditorio")
+ESCOLHA_VER = ("ma-inferiu", "divergencia-definicional", "derivavel-conversao",
+               "derivavel-arredondamento")
+INDISP_VER = ("nao-sustentada", "dado-fora-do-insumo")
+
+
 def categoria(tid, campos, nossa_igual_pub):
-    """Frozen classification, driven by the two-layer key's per-cell verdicts."""
-    if nossa_igual_pub:
-        return "reproduz", ""
+    """Frozen classification (protocol category ii operationalized by the
+    two-layer key's per-cell verdict vocabulary)."""
     gab = GAB.get(tid, {})
+    achado = ("", "")
     for campo in campos:
         g = gab.get(campo) or {}
         ver = str(g.get("veredito", ""))
-        if "errata" in ver or "indisponivel" in ver or "figura" in ver:
-            return (f"difere-por-errata-da-ancora" if "errata" in ver else "fonte-indisponivel",
-                    (g.get("cit") or "")[:140])
+        cit = (g.get("cit") or "")[:140]
+        if ver in ERRATA_VER:
+            achado = (f"difere-por-errata-da-ancora [{ver}]", cit)
+            break
+        if ver in INDISP_VER and not achado[0]:
+            achado = (f"fonte-indisponivel [{ver}]", cit)
+        elif ver in ESCOLHA_VER and not achado[0]:
+            achado = (f"difere-por-escolha-documentada-da-ancora [{ver}]", cit)
+    if nossa_igual_pub:
+        return "reproduz", ""
+    if achado[0]:
+        return achado
     return "verificar (rota-do-modelo ou erro-do-modelo — adjudicar na fonte)", ""
 
 
@@ -165,23 +209,37 @@ def main():
         L.append("|---|---|---|---|---|")
         sextetos = []
         linhas_r = []
+        pub_pool = None
         for linha in tab["linhas"]:
             tid = linha.get("pmcid")
-            if not tid or tid not in GAB:
-                continue
             cel = linha.get("celulas", {})
+            if not tid or tid not in GAB:
+                pr, pic = (rr_pub(cel) if d["tipo"] == "rr" else md_pub(cel))
+                if pr is not None:
+                    pub_pool = (pr, pic)
+                    L.append(f"| *(linha agregada da âncora: {linha.get('rotulo', 'pooled')})* | — | — | "
+                             f"{'RR' if d['tipo'] == 'rr' else 'MD'} {pr} {pic} | (pool publicado) |")
+                else:
+                    print(f"  [aviso] linha sem pmcid/efeito ignorada em T{d['tabela']}: "
+                          f"{linha.get('rotulo')}", flush=True)
+                continue
             js = fichas.get(tid)
             if d["tipo"] == "rr":
                 pub_r, pub_ic = rr_pub(cel)
                 if js is None:
                     nosso_txt, cat, cit = "(ficha pendente)", "pendente", ""
                 else:
-                    a = inteiro(valor(js, d["e"]))
-                    c = inteiro(valor(js, d["c"]))
                     n1 = inteiro(valor(js, "n_randomizados_gdft"))
                     n2 = inteiro(valor(js, "n_randomizados_controle"))
+                    a, fa = eventos(valor(js, d["e"]), n1)
+                    c, fc = eventos(valor(js, d["c"]), n2)
                     if None in (a, c, n1, n2):
-                        nosso_txt, cat, cit = "dados-insuficientes", "insuficiente", ""
+                        cat, cit = categoria(tid, [d["e"], d["c"]], False)
+                        if cat.startswith("verificar"):
+                            cat = "insuficiente"
+                        else:
+                            cat = "insuficiente · " + cat
+                        nosso_txt = "dados-insuficientes"
                     else:
                         r = e2.rr(a, n1, c, n2)
                         ic = e2.ic95_rr(a, n1, c, n2)
@@ -190,7 +248,8 @@ def main():
                             abs(ic[0] - pub_ic[0]) <= 0.01 and abs(ic[1] - pub_ic[1]) <= 0.01
                         cat, cit = categoria(tid, [d["e"], d["c"], "n_randomizados_gdft",
                                                   "n_randomizados_controle"], bate)
-                        nosso_txt = f"RR {r} {ic} (a={a}/{n1}, c={c}/{n2})"
+                        marca = f" [{fa or fc}]" if (fa or fc) else ""
+                        nosso_txt = f"RR {r} {ic} (a={a}/{n1}, c={c}/{n2}){marca}"
                 pub_txt = f"RR {pub_r} {pub_ic}" if pub_r is not None else "—"
             else:
                 pub_m, pub_ic = md_pub(cel)
@@ -202,7 +261,12 @@ def main():
                     n1 = inteiro(valor(js, "n_randomizados_gdft"))
                     n2 = inteiro(valor(js, "n_randomizados_controle"))
                     if None in (m1, s1, m2, s2, n1, n2):
-                        nosso_txt, cat, cit = "dados-insuficientes", "insuficiente", ""
+                        cat, cit = categoria(tid, [d["e"], d["c"]], False)
+                        if cat.startswith("verificar"):
+                            cat = "insuficiente"
+                        else:
+                            cat = "insuficiente · " + cat
+                        nosso_txt = "dados-insuficientes"
                     else:
                         mdv = e2.md(m1, s1, n1, m2, s2, n2)
                         ic = e2.ic95_md(m1, s1, n1, m2, s2, n2)
@@ -221,9 +285,17 @@ def main():
         if d["tipo"] == "rr" and len(sextetos) >= 2:
             pool_nosso = dict(MH=e2.pool_rr_mh(sextetos), DL=e2.pool_dl(sextetos))
             L.append("")
+            comp = ""
+            if pub_pool:
+                dl = pool_nosso["DL"]
+                bate_p = abs(dl["rr"] - pub_pool[0]) <= 0.01 and \
+                    abs(dl["ic95"][0] - pub_pool[1][0]) <= 0.01 and \
+                    abs(dl["ic95"][1] - pub_pool[1][1]) <= 0.01
+                comp = (f" **Publicado: RR {pub_pool[0]} {pub_pool[1]} → "
+                        f"{'REPRODUZ sob DL' if bate_p else 'difere (decompor nas linhas acima)'}**.")
             L.append(f"**Pool (nosso)**: MH {json.dumps(pool_nosso['MH'], ensure_ascii=False)} · "
-                     f"DL {json.dumps(pool_nosso['DL'], ensure_ascii=False)} — a comparação com o "
-                     "publicado é feita sob DL (errata-15 da âncora: números DL, legenda MH).")
+                     f"DL {json.dumps(pool_nosso['DL'], ensure_ascii=False)} — comparação sob DL "
+                     f"(errata-15: números DL, legenda MH).{comp}")
         L.append("")
         resultados[d["nome"]] = dict(linhas=linhas_r, pool=pool_nosso)
     D6.mkdir(exist_ok=True)

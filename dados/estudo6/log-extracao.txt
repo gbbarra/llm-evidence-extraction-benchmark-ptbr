@@ -1,0 +1,31 @@
+===== Estudo 6 · extração fresca MA-1 · gemma12 · 14 primários × 2
+  extracao PMC10561433-r1: 236s, 942 tok, fim=stop
+  extracao PMC10561433-r2: 156s, 1164 tok, fim=stop
+  extracao PMC10694978-r1: 221s, 977 tok, fim=stop
+  extracao PMC10694978-r2: 134s, 1006 tok, fim=stop
+  extracao PMC10912221-r1: 282s, 1385 tok, fim=stop
+  extracao PMC10912221-r2: 182s, 1360 tok, fim=stop
+  extracao PMC11061212-r1: 195s, 952 tok, fim=stop
+  extracao PMC11061212-r2: 148s, 1127 tok, fim=stop
+  extracao PMC12565272-r1: 235s, 1080 tok, fim=stop
+  extracao PMC12565272-r2: 114s, 854 tok, fim=stop
+  extracao PMC4782303-r1: 250s, 995 tok, fim=stop
+  extracao PMC4782303-r2: 167s, 1248 tok, fim=stop
+  extracao PMC5589093-r1: 273s, 1190 tok, fim=stop
+  extracao PMC5589093-r2: 163s, 1214 tok, fim=stop
+  extracao PMC6907038-r1: 192s, 1067 tok, fim=stop
+  extracao PMC6907038-r2: 144s, 1108 tok, fim=stop
+  extracao REF26-r1: 261s, 1161 tok, fim=stop
+  extracao REF26-r2: 114s, 856 tok, fim=stop
+  extracao REF29-r1: 278s, 1239 tok, fim=stop
+  extracao REF29-r2: 159s, 1184 tok, fim=stop
+  extracao REF30-r1: 209s, 1099 tok, fim=stop
+  extracao REF30-r2: 115s, 882 tok, fim=stop
+  extracao REF33-r1: 256s, 1175 tok, fim=stop
+  extracao REF33-r2: 157s, 1178 tok, fim=stop
+  extracao REF41-r1: 214s, 1026 tok, fim=stop
+  extracao REF41-r2: 105s, 795 tok, fim=stop
+  extracao REF47-r1: 216s, 1050 tok, fim=stop
+  extracao REF47-r2: 140s, 1065 tok, fim=stop
+
+Extração MA-1 completa em 88.7 min
