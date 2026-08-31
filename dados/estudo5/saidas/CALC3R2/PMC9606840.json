@@ -1,0 +1,39 @@
+{
+ "estudo": "Dorans 2022",
+ "turnos": [
+  {
+   "emitiu": "{\"funcao\": \"dp_de_ic\", \"argumentos\": [-0.33, -0.19, 73], \"fonte\": [\"hba1c_mudanca_dispersao_inferior\", \"hba1c_mudanca_dispersao_superior\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: 0.31"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_ic\", \"argumentos\": [-0.10, 0.02, 69], \"fonte\": [\"hba1c_mudanca_dispersao_inferior\", \"hba1c_mudanca_dispersao_superior\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: 0.25"
+  },
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [-0.24, 0.31, 73, -0.04, 0.25, 69], \"fonte\": [\"hba1c_mudanca_media\", \"derivado\", \"n_analisado\", \"hba1c_mudanca_media\", \"derivado\", \"n_analisado\"]}",
+   "aviso": "AVISO: um argumento declara fonte \"derivado\" — inclua o campo \"derivacao\" com a operação e os operandos, por exemplo \"7.1 - 6.8\". Reemita a chamada completa."
+  },
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [-0.24, 0.31, 73, -0.04, 0.25, 69], \"fonte\": [\"hba1c_mudanca_media\", \"derivado\", \"n_analisado\", \"hba1c_mudanca_media\", \"derivado\", \"n_analisado\"], \"derivacao\": \"0.31 (índice 1) vem de dp_de_ic e 0.25 (índice 5) vem de dp_de_ic\"}",
+   "resultado": "RESULTADO: -0.2"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.24, 0.31, 73, -0.04, 0.25, 69], \"fonte\": [\"hba1c_mudanca_media\", \"derivado\", \"n_analisado\", \"hba1c_mudanca_media\", \"derivado\", \"n_analisado\"], \"derivacao\": \"0.31 (índice 1) vem de dp_de_ic e 0.25 (índice 5) vem de dp_de_ic\"}",
+   "aviso": "AVISO: a derivação '0.31 (índice 1) vem de dp_de_ic e 0.25 (índice 5) vem de dp_de_ic' usa 0.25, que não é um valor da ficha. Confira e reemita (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.24, 0.31, 73, -0.04, 0.25, 69], \"fonte\": [\"hba1c_mudanca_media\", \"resultado-anterior\", \"n_analisado\", \"hba1c_mudanca_media\", \"resultado-anterior\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: [-0.29, -0.11]"
+  },
+  {
+   "emitiu": "{\"funcao\": \"fim\", \"argumentos\": [-0.2, -0.29, -0.11], \"fonte\": [\"resultado-anterior\", \"resultado-anterior\", \"resultado-anterior\"]}"
+  }
+ ],
+ "final": {
+  "md": -0.2,
+  "ic95": [
+   -0.29,
+   -0.11
+  ]
+ }
+}

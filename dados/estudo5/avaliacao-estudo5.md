@@ -90,6 +90,19 @@ Author's directive: keep the reader (gemma12's EXTRA3 sheets) and swap the orche
 
 Three conclusions the table forces: (1) **generation and family instruction-tuning dominate ``code'' specialization** — the older code model emits perfect JSON under the grammar and supplies no statistical role semantics at all (form is not semantics); (2) **the same-base code delta neither buys nor costs overall exactness — it moves the blind spots**: the coder takes the graders' route on Saslow 2023 where the base keeps its private one, and fumbles Wang where the base is exact — the union of the two covers 6/7, everything but Goday, echoing at the orchestration layer the complementary-blind-spots finding the companion benchmark measured between auditors; (3) **the Goday derivation wall is architectural, not a specialization gap** — both same-generation 12Bs starve on it identically, under identical warnings. Pooling execution is now demonstrated by two models of the family (base ×3, coder ×1, all digit-consistent).
 
-## 12. Standing
+## 12. The four cheap arms (Amendment 8) — and a correction to our own framing
+
+All rules frozen before the runs; full analysis in `resultados-bracos-baratos.json`.
+
+| Arm | Result |
+|---|---|
+| **C — committee** (base × coder, truth-free agreement) | **4/4 auto-accepts exact (the registered prediction), 3 flagged, zero wrong values unflagged** |
+| **A — replicate** (same orchestrator ×2) | 6 agreements of which **5 exact**: both replicates agree on Saslow 2023's *private route* — agreement across runs of ONE model cannot catch a consistent private habit; Goday **absent in both** — the registered prediction (one of two replicates closes it) was **REFUTED** |
+| **B — temperature-zero twins** | 5/7 turn-identical, 6/7 equal finals — greedy decoding does **not** fully eliminate run variance on this stack (2/7 twins diverged, Goday among them), and buys no exactness (5/7, same misses) |
+| **D — product flags** | v1 and v2 clean; **v3 raises both as registered**: missing study (Goday) and dominance (Saslow 2023 at 79.7% of the DL weight vs the 40% threshold) |
+
+**The correction the arms force on our own §10 framing**: the Goday starvation is **sheet-conditioned, not purely stochastic**. Four runs on the v3 sheet (CALC3, the replicate, both greedy twins) all starved identically; the "clean" Goday of pipeline v2 ran on a *different* sheet (EXTRA2) — our v2-vs-v3 contrast had confounded sheet identity with run randomness. Consequences, all measured here: a second **run** does not rescue a sheet-conditioned vice (arm A), temperature does not either (arm B), but a second **orchestrator** with complementary blind spots does change the game (arm C: perfect precision where it acts, honest flags elsewhere). The working antidote is the committee, not the replicate — and consistency, once again, is not correctness (the replicate pair happily agreed on the private route).
+
+## 13. Standing
 
 The author's directive — *turn the best reader into an orchestrator, correcting stage by stage, toward a 100%-gemma12 meta-analysis pipeline* — is fulfilled and archived: reader (round-2 sheets, 92.2% cells), orchestrator (this study), synthesist (zero inventions), with code doing only what code should (execute on command, count, draw, verify). Editorial decision pending: this record becomes Paper 3, or the second half of Paper 2.

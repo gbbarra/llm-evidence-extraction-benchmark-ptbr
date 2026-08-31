@@ -1,0 +1,128 @@
+[
+ {
+  "estudo": "Saslow 2017",
+  "final": {
+   "md": -0.5,
+   "ic95": [
+    -0.89,
+    -0.11
+   ]
+  },
+  "turnos": 6,
+  "avisos": 1,
+  "verdade": {
+   "md": -0.5,
+   "ic95": [
+    -0.89,
+    -0.11
+   ]
+  },
+  "exato": true
+ },
+ {
+  "estudo": "Saslow 2023",
+  "final": {
+   "md": -0.18,
+   "ic95": [
+    -0.22,
+    -0.14
+   ]
+  },
+  "turnos": 3,
+  "avisos": 0,
+  "verdade": {
+   "md": -0.18,
+   "ic95": [
+    -0.38,
+    0.02
+   ]
+  },
+  "exato": false
+ },
+ {
+  "estudo": "Dorans 2022",
+  "final": {
+   "md": -0.2,
+   "ic95": [
+    -0.29,
+    -0.11
+   ]
+  },
+  "turnos": 7,
+  "avisos": 2,
+  "verdade": {
+   "md": -0.2,
+   "ic95": [
+    -0.29,
+    -0.11
+   ]
+  },
+  "exato": true
+ },
+ {
+  "estudo": "Chen 2020",
+  "final": {
+   "md": -0.43,
+   "ic95": [
+    -0.94,
+    0.08
+   ]
+  },
+  "turnos": 8,
+  "avisos": 3,
+  "verdade": {
+   "md": -0.43,
+   "ic95": [
+    -0.94,
+    0.08
+   ]
+  },
+  "exato": true
+ },
+ {
+  "estudo": "Thomsen 2022",
+  "final": {
+   "md": -0.27,
+   "ic95": [
+    -0.45,
+    -0.09
+   ]
+  },
+  "turnos": 3,
+  "avisos": 0,
+  "verdade": {
+   "md": -0.27,
+   "ic95": [
+    -0.45,
+    -0.09
+   ]
+  },
+  "exato": true
+ },
+ {
+  "estudo": "Wang 2018",
+  "final": {
+   "md": -0.32,
+   "ic95": [
+    -0.87,
+    0.23
+   ]
+  },
+  "turnos": 3,
+  "avisos": 0,
+  "verdade": {
+   "md": -0.32,
+   "ic95": [
+    -0.87,
+    0.23
+   ]
+  },
+  "exato": true
+ },
+ {
+  "estudo": "Goday 2016",
+  "final": null,
+  "turnos": 16,
+  "avisos": 7
+ }
+]

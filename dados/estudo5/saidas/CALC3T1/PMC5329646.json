@@ -1,0 +1,35 @@
+{
+ "estudo": "Saslow 2017",
+ "turnos": [
+  {
+   "emitiu": "{\"funcao\": \"dp_de_ic\", \"argumentos\": [-1.1, -0.6], \"fonte\": [\"hba1c_mudanca_dispersao_inferior\", \"hba1c_mudanca_dispersao_superior\"]}",
+   "aviso": "AVISO: a função dp_de_ic exige 3 argumentos — dp_de_ic(inferior, superior, n) — e você enviou 2. Reemita a chamada completa."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_ic\", \"argumentos\": [-1.1, -0.6, 11], \"fonte\": [\"hba1c_mudanca_dispersao_inferior\", \"hba1c_mudanca_dispersao_superior\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: 0.42"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_ic\", \"argumentos\": [-0.6, 0.0, 8], \"fonte\": [\"hba1c_mudanca_dispersao_inferior\", \"hba1c_mudanca_dispersao_superior\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: 0.43"
+  },
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [-0.8, 0.42, 11, -0.3, 0.43, 8], \"fonte\": [\"hba1c_mudanca_media\", \"resultado-anterior\", \"n_analisado\", \"hba1c_mudanca_media\", \"resultado-anterior\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: -0.5"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.8, 0.42, 11, -0.3, 0.43, 8], \"fonte\": [\"hba1c_mudanca_media\", \"resultado-anterior\", \"n_analisado\", \"hba1c_mudanca_media\", \"resultado-anterior\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: [-0.89, -0.11]"
+  },
+  {
+   "emitiu": "{\"funcao\": \"fim\", \"argumentos\": [-0.5, -0.89, -0.11], \"fonte\": [\"resultado-anterior\", \"resultado-anterior\", \"resultado-anterior\"]}"
+  }
+ ],
+ "final": {
+  "md": -0.5,
+  "ic95": [
+   -0.89,
+   -0.11
+  ]
+ }
+}

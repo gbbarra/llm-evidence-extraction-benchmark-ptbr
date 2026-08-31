@@ -1,0 +1,73 @@
+===== Estudo 5 · CALC3T1 · gemma12 [gemma4:12b]
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-1.1, -0.6], "fonte": ["hba1c_mudanca_dispersao_inferior", "hb
+    HARNESS: AVISO: a função dp_de_ic exige 3 argumentos — dp_de_ic(inferior, superior, n) — e você enviou 2. Reemita a cha
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-1.1, -0.6, 11], "fonte": ["hba1c_mudanca_dispersao_inferior",
+    HARNESS: RESULTADO: 0.42
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.6, 0.0, 8], "fonte": ["hba1c_mudanca_dispersao_inferior", "
+    HARNESS: RESULTADO: 0.43
+    MODELO : {"funcao": "md", "argumentos": [-0.8, 0.42, 11, -0.3, 0.43, 8], "fonte": ["hba1c_mudanca_media", "re
+    HARNESS: RESULTADO: -0.5
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.8, 0.42, 11, -0.3, 0.43, 8], "fonte": ["hba1c_mudanca_media"
+    HARNESS: RESULTADO: [-0.89, -0.11]
+  Saslow 2017: 6 turnos · avisos de conteúdo: 1 · final: {"md": -0.5, "ic95": [-0.89, -0.11]}
+    MODELO : {"funcao": "md", "argumentos": [-0.32, 0.07, 23, -0.14, 0.07, 25], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.18
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.32, 0.07, 23, -0.14, 0.07, 25], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.22, -0.14]
+  Saslow 2023: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.18, "ic95": [-0.22, -0.14]}
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.33, -0.19, 73], "fonte": ["hba1c_mudanca_dispersao", "hba1c
+    HARNESS: RESULTADO: 0.31
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.10, 0.02, 69], "fonte": ["hba1c_mudanca_dispersao", "hba1c_
+    HARNESS: RESULTADO: 0.25
+    MODELO : {"funcao": "md", "argumentos": [-0.24, 0.31, 73, -0.04, 0.25, 69], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.2
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.24, 0.31, 73, -0.04, 0.25, 69], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.29, -0.11]
+  Dorans 2022: 5 turnos · avisos de conteúdo: 0 · final: {"md": -0.2, "ic95": [-0.29, -0.11]}
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-1.96, -1.30, 41], "fonte": ["hba1c_mudanca_dispersao", "hba1c
+    HARNESS: AVISO: o argumento -1.96 declara vir de 'hba1c_mudanca_dispersao', mas a ficha registra: 'braco_experimental.h
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-1.96, -1.30, 41], "fonte": ["hba1c_mudanca_dispersao", "hba1c
+    HARNESS: RESULTADO: 1.08
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [1.40, -0.63, 42], "fonte": ["hba1c_mudanca_dispersao", "hba1c_
+    HARNESS: AVISO: em dp_de_ic o primeiro argumento é o limite INFERIOR e o segundo o SUPERIOR — você enviou (1.4, -0.63),
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-1.40, -0.63, 42], "fonte": ["hba1c_mudanca_dispersao", "hba1c
+    HARNESS: AVISO: o argumento -1.4 declara vir de 'hba1c_mudanca_dispersao', mas a ficha registra: 'braco_experimental.hb
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-1.40, -0.63, 42], "fonte": ["hba1c_mudanca_dispersao", "hba1c
+    HARNESS: RESULTADO: 1.27
+    MODELO : {"funcao": "md", "argumentos": [-1.44, 1.08, 41, -1.01, 1.27, 42], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.43
+    MODELO : {"funcao": "ic95_md", "argumentos": [-1.44, 1.08, 41, -1.01, 1.27, 42], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.94, 0.08]
+  Chen 2020: 8 turnos · avisos de conteúdo: 3 · final: {"md": -0.43, "ic95": [-0.94, 0.08]}
+    MODELO : {"funcao": "md", "argumentos": [-0.83, 0.38, 34, -0.56, 0.37, 33], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.27
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.27, 0.38, 34, 0.37, 33], "fonte": ["resultado-anterior", "hb
+    HARNESS: AVISO: a função ic95_md exige 6 argumentos — ic95_md(m1, dp1, n1, m2, dp2, n2) — e você enviou 5. Reemita a ch
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.27, 0.38, 34, -0.56, 0.37, 33], "fonte": ["resultado-anterio
+    HARNESS: AVISO: o slot 1 de ic95_md pede média de MUDANÇA (mudanca_media ou derivação declarada), mas recebeu a fonte '
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.83, 0.38, 34, -0.56, 0.37, 33], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.45, -0.09]
+  Thomsen 2022: 5 turnos · avisos de conteúdo: 2 · final: {"md": -0.27, "ic95": [-0.45, -0.09]}
+    MODELO : {"funcao": "md", "argumentos": [-0.63, 1.18, 24, -0.31, 0.70, 25], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.32
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.63, 1.18, 24, -0.31, 0.70, 25], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.87, 0.23]
+  Wang 2018: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.32, "ic95": [-0.87, 0.23]}
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.1, 0.7], "fonte": ["hba1c_basal_dp", "hba1c_final_dp"]
+    HARNESS: RESULTADO: 0.96
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.0, 0.8], "fonte": ["hba1c_basal_dp", "hba1c_final_dp"]
+    HARNESS: RESULTADO: 0.92
+    MODELO : {"funcao": "md", "argumentos": [5.3, 0.96, 45, 7.1, 0.92, 40], "fonte": ["hba1c_final_media", "deriv
+    HARNESS: AVISO: a derivação '5.3 - 0.96 (braco_experimental); 7.1 - 0.92 (braco_controle)' usa 0.96, que não é um valor
+    MODELO : {"funcao": "md", "argumentos": [5.3, 0.7, 45, 7.1, 0.8, 40], "fonte": ["hba1c_final_media", "hba1c_f
+    HARNESS: AVISO: o slot 1 de md pede média de MUDANÇA (mudanca_media ou derivação declarada), mas recebeu a fonte 'hba1c
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.1, 0.7], "fonte": ["hba1c_basal_dp", "hba1c_final_dp"]
+    HARNESS: RESULTADO: 0.96
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.0, 0.8], "fonte": ["hba1c_basal_dp", "hba1c_final_dp"]
+    HARNESS: RESULTADO: 0.92
+    MODELO : {"funcao": "md", "argumentos": [5.3, 0.96, 45, 7.1, 0.92, 40], "fonte": ["derivado", "derivado", "n_
+    HARNESS: RESULTADO: -1.8
+    MODELO : {"funcao": "ic95_md", "argumentos": [5.3, 0.96, 45, 7.1, 0.92, 40], "fonte": ["derivado", "derivado"
+    HARNESS: RESULTADO: [-2.2, -1.4]
+  Goday 2016: 9 turnos · avisos de conteúdo: 2 · final: {"md": -1.8, "ic95": [-2.2, -1.4]}
+== CALC3T1: 5/7 estudos exatos vs a verdade das próprias fichas · 8.5 min

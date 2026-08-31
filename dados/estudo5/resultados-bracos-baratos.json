@@ -1,0 +1,228 @@
+{
+ "comite": {
+  "status": "ok",
+  "linhas": [
+   {
+    "veredito": "aceito-concordante",
+    "final": {
+     "md": -0.5,
+     "ic95": [
+      -0.89,
+      -0.11
+     ]
+    },
+    "estudo": "Saslow 2017",
+    "exato_vs_verdade": true
+   },
+   {
+    "veredito": "discordante (humano)",
+    "final": null,
+    "bandeira": true,
+    "estudo": "Saslow 2023"
+   },
+   {
+    "veredito": "aceito-concordante",
+    "final": {
+     "md": -0.2,
+     "ic95": [
+      -0.29,
+      -0.11
+     ]
+    },
+    "estudo": "Dorans 2022",
+    "exato_vs_verdade": true
+   },
+   {
+    "veredito": "aceito-concordante",
+    "final": {
+     "md": -0.43,
+     "ic95": [
+      -0.94,
+      0.08
+     ]
+    },
+    "estudo": "Chen 2020",
+    "exato_vs_verdade": true
+   },
+   {
+    "veredito": "aceito-concordante",
+    "final": {
+     "md": -0.27,
+     "ic95": [
+      -0.45,
+      -0.09
+     ]
+    },
+    "estudo": "Thomsen 2022",
+    "exato_vs_verdade": true
+   },
+   {
+    "veredito": "discordante (humano)",
+    "final": null,
+    "bandeira": true,
+    "estudo": "Wang 2018"
+   },
+   {
+    "veredito": "ausente",
+    "final": null,
+    "bandeira": true,
+    "estudo": "Goday 2016"
+   }
+  ],
+  "auto_aceitos_exatos": "4/4"
+ },
+ "replica": {
+  "status": "ok",
+  "linhas": [
+   {
+    "veredito": "aceito-concordante",
+    "final": {
+     "md": -0.5,
+     "ic95": [
+      -0.89,
+      -0.11
+     ]
+    },
+    "estudo": "Saslow 2017",
+    "exato_vs_verdade": true
+   },
+   {
+    "veredito": "aceito-concordante",
+    "final": {
+     "md": -0.18,
+     "ic95": [
+      -0.22,
+      -0.14
+     ]
+    },
+    "estudo": "Saslow 2023",
+    "exato_vs_verdade": false
+   },
+   {
+    "veredito": "aceito-concordante",
+    "final": {
+     "md": -0.2,
+     "ic95": [
+      -0.29,
+      -0.11
+     ]
+    },
+    "estudo": "Dorans 2022",
+    "exato_vs_verdade": true
+   },
+   {
+    "veredito": "aceito-concordante",
+    "final": {
+     "md": -0.43,
+     "ic95": [
+      -0.94,
+      0.08
+     ]
+    },
+    "estudo": "Chen 2020",
+    "exato_vs_verdade": true
+   },
+   {
+    "veredito": "aceito-concordante",
+    "final": {
+     "md": -0.27,
+     "ic95": [
+      -0.45,
+      -0.09
+     ]
+    },
+    "estudo": "Thomsen 2022",
+    "exato_vs_verdade": true
+   },
+   {
+    "veredito": "aceito-concordante",
+    "final": {
+     "md": -0.32,
+     "ic95": [
+      -0.87,
+      0.23
+     ]
+    },
+    "estudo": "Wang 2018",
+    "exato_vs_verdade": true
+   },
+   {
+    "veredito": "ausente",
+    "final": null,
+    "bandeira": true,
+    "estudo": "Goday 2016"
+   }
+  ],
+  "auto_aceitos_exatos": "5/6"
+ },
+ "t0": {
+  "status": "ok",
+  "linhas": [
+   {
+    "estudo": "Saslow 2017",
+    "turnos_identicos": true,
+    "finais_iguais": true,
+    "exato_t1": true
+   },
+   {
+    "estudo": "Saslow 2023",
+    "turnos_identicos": true,
+    "finais_iguais": true,
+    "exato_t1": false
+   },
+   {
+    "estudo": "Dorans 2022",
+    "turnos_identicos": true,
+    "finais_iguais": true,
+    "exato_t1": true
+   },
+   {
+    "estudo": "Chen 2020",
+    "turnos_identicos": true,
+    "finais_iguais": true,
+    "exato_t1": true
+   },
+   {
+    "estudo": "Thomsen 2022",
+    "turnos_identicos": false,
+    "finais_iguais": true,
+    "exato_t1": true
+   },
+   {
+    "estudo": "Wang 2018",
+    "turnos_identicos": true,
+    "finais_iguais": true,
+    "exato_t1": true
+   },
+   {
+    "estudo": "Goday 2016",
+    "turnos_identicos": false,
+    "finais_iguais": false,
+    "exato_t1": false
+   }
+  ],
+  "gemeos": "5/7",
+  "exatos_t1": "5/7"
+ },
+ "bandeiras": [
+  {
+   "pipeline": "v1",
+   "bandeiras": [
+    "nenhuma"
+   ]
+  },
+  {
+   "pipeline": "v2",
+   "bandeiras": [
+    "nenhuma"
+   ]
+  },
+  {
+   "pipeline": "v3",
+   "bandeiras": [
+    "ESTUDO-AUSENTE: ['Goday 2016']",
+    "DOMINÂNCIA: Saslow 2023 = 79.7% do peso (limite 40%)"
+   ]
+  }
+ ]
+}
