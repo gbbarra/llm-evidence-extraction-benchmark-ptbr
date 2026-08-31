@@ -37,7 +37,7 @@ for xi, (n, e, nota) in enumerate(zip(nets, exatos, notas)):
     ax1.text(xi, n - 0.55, str(n), ha="center", va="top", fontsize=8.6, color=AZUL)
     ax1t.annotate(nota, (xi, e), xytext=DESLOC[xi], textcoords="offset points",
                   ha="center", fontsize=7.6, color="#12315e")
-ax1.set_title("Orchestration under the ladder: nets bought correction,\nnot reliability — habits vary run to run",
+ax1.set_title("Orchestration under the ladder: nets bought correction, not\nreliability — the residual vice is sheet-conditioned, not cured by replicates",
               fontsize=9.8)
 ax1.spines[["top"]].set_visible(False)
 ax1t.spines[["top"]].set_visible(False)
