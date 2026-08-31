@@ -17,4 +17,11 @@ Study-4 Amendment-1 extension arm (recorded 2026-08-30, same machine):
 | qwen3.5:9b | `qwen3.5:9b` | `6488c96fa5fa` | 9.7B | Q4_K_M | qwen35 |
 | deepseek-r1:14b | `deepseek-r1:14b` | `c333b7232bdb` | 14.8B | Q4_K_M | qwen2 (distill) |
 
+Study-5 Amendment-7 orchestrator arm (recorded 2026-08-30):
+
+| Role | Ollama tag | ID (digest prefix) | Size | Notes |
+|---|---|---|---|---|
+| orchestrator under test | `codegemma:latest` | `0c96700aaada` | 5.0 GB | earlier-generation code model |
+| orchestrator under test | `xentriom/gemma-4-12B-coder-fable5-composer2.5-v1:latest` | `9d01307b99a8` | 7.4 GB | community GGUF fine-tune of gemma-4-12B (Python/code); Ollama mirror namespace differs from the Hugging Face author (yuxinlu1) — unofficial, hobbyist provenance |
+
 **Note on the 27B tag.** All three studies call the 27B through the local tag `qwen3.8:27b-texto`: the same base-weights blob as the stock `qwen3.8:27b` (`sha256-f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d`, verified identical `FROM` on both tags) rebuilt with a raw-prompt template (`TEMPLATE {{ .Prompt }}`), so the frozen Portuguese instruments pass through verbatim with no chat wrapper. Each study's `MODELS` dict in `scripts/estudo*/e*-harness.py` records the tag it ran.
