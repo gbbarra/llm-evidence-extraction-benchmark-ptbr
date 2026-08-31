@@ -1,0 +1,35 @@
+{
+ "estudo": "Wang 2018",
+ "turnos": [
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [-1.18, 24], \"fonte\": [\"braco_experimental.hba1c_mudanca_dispersao\", \"braco_experimental.n_analisado\"]}",
+   "aviso": "AVISO: o argumento -1.18 tem a mesma magnitude do campo 'braco_experimental.hba1c_mudanca_dispersao' da ficha, mas com o SINAL oposto — e nenhum número da ficha vale -1.18. Confira e reemita a chamada (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [1.18, 24], \"fonte\": [\"braco_experimental.hba1c_mudanca_dispersao\", \"braco_experimental.n_analisado\"]}",
+   "resultado": "RESULTADO: 5.78"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [0.70, 25], \"fonte\": [\"braco_controle.hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]}",
+   "resultado": "RESULTADO: 3.5"
+  },
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [-0.63, 5.78, 24, -0.31, 3.5, 25], \"fonte\": [\"braco_experimental.hba1c_mudanca_media\", \"resultado-anterior\", \"braco_experimental.n_analisado\", \"braco_controle.hba1c_mudanca_media\", \"resultado-anterior\", \"braco_controle.n_analisado\"]}",
+   "resultado": "RESULTADO: -0.32"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.63, 5.78, 24, -0.31, 3.5, 25], \"fonte\": [\"braco_experimental.hba1c_mudanca_media\", \"resultado-anterior\", \"braco_experimental.n_analisado\", \"braco_controle.hba1c_mudanca_media\", \"resultado-anterior\", \"braco_controle.n_analisado\"]}",
+   "resultado": "RESULTADO: [-3.01, 2.37]"
+  },
+  {
+   "emitiu": "{\"funcao\": \"fim\", \"argumentos\": [-0.32, -3.01, 2.37]}"
+  }
+ ],
+ "final": {
+  "md": -0.32,
+  "ic95": [
+   -3.01,
+   2.37
+  ]
+ }
+}

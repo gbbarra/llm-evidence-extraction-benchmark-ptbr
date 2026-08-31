@@ -1,0 +1,23 @@
+{
+ "estudo": "Thomsen 2022",
+ "turnos": [
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [-0.83, 0.38, 34, -0.56, 0.37, 33], \"fonte\": [\"braco_experimental.hba1c_mudanca_media\", \"braco_experimental.hba1c_mudanca_dispersao\", \"braco_experimental.n_analisado\", \"braco_controle.hba1c_mudanca_media\", \"braco_controle.hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]}",
+   "resultado": "RESULTADO: -0.27"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.83, 0.38, 34, -0.56, 0.37, 33], \"fonte\": [\"braco_experimental.hba1c_mudanca_media\", \"braco_experimental.hba1c_mudanca_dispersao\", \"braco_experimental.n_analisado\", \"braco_controle.hba1c_mudanca_media\", \"braco_controle.hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]}",
+   "resultado": "RESULTADO: [-0.45, -0.09]"
+  },
+  {
+   "emitiu": "{\"funcao\": \"fim\", \"argumentos\": [-0.27, -0.45, -0.09]}"
+  }
+ ],
+ "final": {
+  "md": -0.27,
+  "ic95": [
+   -0.45,
+   -0.09
+  ]
+ }
+}

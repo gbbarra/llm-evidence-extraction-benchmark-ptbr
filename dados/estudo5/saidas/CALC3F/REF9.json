@@ -1,0 +1,75 @@
+{
+ "estudo": "Saslow 2023",
+ "turnos": [
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [-0.32, 0.07], \"fonte\": [\"braco_experimental.hba1c_mudanca_media\", \"braco_experimental.hba1c_mudanca_dispersao\"]}",
+   "aviso": "AVISO: o slot 1 de dp_de_se pede erro-padrão (campo de dispersao), mas recebeu a fonte 'braco_experimental.hba1c_mudanca_media' com o valor -0.32. Um nível (basal/final) não é uma mudança, e um resultado de md não é uma média de braço. Confira e reemita (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [-0.32, 0.07], \"fonte\": [\"braco_experimental.hba1c_mudanca_media\", \"braco_experimental.hba1c_mudanca_dispersao\"]}",
+   "resultado": "RESULTADO: -0.08\nAVISO: um desvio-padrão negativo é impossível — confira a ordem e os sinais dos limites e refaça a conversão antes de usar este valor."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [0.32, 0.07], \"fonte\": [\"derivado\", \"braco_experimental.hba1c_mudanca_dispersao\"], \"derivacao\": \"abs(-0.32)\"}",
+   "aviso": "AVISO: o argumento 0.32 tem a mesma magnitude do campo 'braco_experimental.hba1c_mudanca_media' da ficha, mas com o SINAL oposto — e nenhum número da ficha vale 0.32. Confira e reemita a chamada (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [0.07, 23], \"fonte\": [\"braco_experimental.hba1c_mudanca_dispersao\", \"braco_experimental.n_analisado\"]}",
+   "resultado": "RESULTADO: 0.34"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [0.07, 25], \"fonte\": [\"braco_controle.hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]}",
+   "resultado": "RESULTADO: 0.35"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [0.07, 25], \"fonte\": [\"braco_controle.hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]}",
+   "resultado": "RESULTADO: 0.35"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [0.07, 25], \"fonte\": [\"braco_controle.hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]}",
+   "resultado": "RESULTADO: 0.35"
+  },
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [-0.32, 0.34, -0.14, 0.35], \"fonte\": [\"braco_experimental.hba1c_mudanca_media\", \"resultado-anterior\", \"braco_controle.hba1c_mudanca_media\", \"resultado-anterior\"]}",
+   "aviso": "AVISO: a função md exige 6 argumentos — md(m1, dp1, n1, m2, dp2, n2) — e você enviou 4. Reemita a chamada completa."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [-0.32, 0.07], \"fonte\": [\"braco_experimental.hba1c_mudanca_media\", \"braco_experimental.hba1c_mudanca_dispersao\"]}",
+   "resultado": "RESULTADO: -0.08\nAVISO: um desvio-padrão negativo é impossível — confira a ordem e os sinais dos limites e refaça a conversão antes de usar este valor."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [0.32, 23], \"fonte\": [\"derivado\", \"braco_experimental.n_analisado\"], \"derivacao\": \"abs(-0.32)\"}",
+   "aviso": "AVISO: o argumento 0.32 tem a mesma magnitude do campo 'braco_experimental.hba1c_mudanca_media' da ficha, mas com o SINAL oposto — e nenhum número da ficha vale 0.32. Confira e reemita a chamada (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [0.07, 23], \"fonte\": [\"braco_experimental.hba1c_mudanca_dispersao\", \"braco_experimental.n_analisado\"]}",
+   "resultado": "RESULTADO: 0.34"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [0.07, 25], \"fonte\": [\"braco_controle.hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]}",
+   "resultado": "RESULTADO: 0.35"
+  },
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [-0.32, 0.34, -0.14, 0.35], \"fonte\": [\"braco_experimental.hba1c_mudanca_media\", \"resultado-anterior\", \"braco_controle.hba1c_mudanca_media\", \"resultado-anterior\"]}",
+   "aviso": "AVISO: a função md exige 6 argumentos — md(m1, dp1, n1, m2, dp2, n2) — e você enviou 4. Reemita a chamada completa."
+  },
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [-0.32, 0.34, 23, -0.14, 0.35, 25], \"fonte\": [\"braco_experimental.hba1c_mudanca_media\", \"resultado-anterior\", \"braco_experimental.n_analisado\", \"braco_controle.hba1c_mudanca_media\", \"resultado-anterior\", \"braco_controle.n_analisado\"]}",
+   "resultado": "RESULTADO: -0.18"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.32, 0.34, 23, -0.14, 0.35, 25], \"fonte\": [\"braco_experimental.hba1c_mudanca_media\", \"resultado-anterior\", \"braco_experimental.n_analisado\", \"braco_controle.hba1c_mudanca_media\", \"resultado-anterior\", \"braco_controle.n_analisado\"]}",
+   "resultado": "RESULTADO: [-0.38, 0.02]"
+  },
+  {
+   "emitiu": "{\"funcao\": \"fim\", \"argumentos\": [-0.18, -0.38, 0.02]}"
+  }
+ ],
+ "final": {
+  "md": -0.18,
+  "ic95": [
+   -0.38,
+   0.02
+  ]
+ }
+}

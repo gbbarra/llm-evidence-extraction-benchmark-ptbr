@@ -1,0 +1,4 @@
+===== Estudo 5 · pooling · coder12
+    MODELO : {"funcao": "pool_dl_md", "sextetos": [[-0.8, 0.42, 11.0, -0.3, 0.43, 8.0], [-0.32, 0.34, 23.0, -0.14
+    HARNESS: RESULTADO: {"md": -0.22, "ic95": [-0.3, -0.15], "tau2": 0.0, "i2_pct": 0.0}
+== POOLF: consistente com os próprios sextetos: True · final {"md": -0.22, "ic95": [-0.3, -0.15]} · pool dos próprios: {"md": -0.22, "ic95": [-0.3, -0.15], "tau2": 0.0, "i2_pct": 0.0}

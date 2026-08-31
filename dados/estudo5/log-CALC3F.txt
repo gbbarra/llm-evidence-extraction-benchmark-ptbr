@@ -1,0 +1,111 @@
+===== Estudo 5 · CALC3F · coder12 [xentriom/gemma-4-12B-coder-fable5-composer2.5-v1]
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-1.1, -0.6, 11], "fonte": ["hba1c_mudanca_dispersao_inferior",
+    HARNESS: RESULTADO: 0.42
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.6, 0.0, 8], "fonte": ["hba1c_mudanca_dispersao_inferior", "
+    HARNESS: RESULTADO: 0.43
+    MODELO : {"funcao": "md", "argumentos": [-0.8, 0.42, 11, -0.3, 0.43, 8], "fonte": ["hba1c_mudanca_media", "re
+    HARNESS: RESULTADO: -0.5
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.8, 0.42, 11, -0.3, 0.43, 8], "fonte": ["hba1c_mudanca_media"
+    HARNESS: RESULTADO: [-0.89, -0.11]
+  Saslow 2017: 5 turnos · avisos de conteúdo: 0 · final: {"md": -0.5, "ic95": [-0.89, -0.11]}
+    MODELO : {"funcao": "dp_de_se", "argumentos": [-0.32, 0.07], "fonte": ["braco_experimental.hba1c_mudanca_medi
+    HARNESS: AVISO: o slot 1 de dp_de_se pede erro-padrão (campo de dispersao), mas recebeu a fonte 'braco_experimental.hba
+    MODELO : {"funcao": "dp_de_se", "argumentos": [-0.32, 0.07], "fonte": ["braco_experimental.hba1c_mudanca_medi
+    HARNESS: RESULTADO: -0.08
+AVISO: um desvio-padrão negativo é impossível — confira a ordem e os sina
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.32, 0.07], "fonte": ["derivado", "braco_experimental.hba1c_m
+    HARNESS: AVISO: o argumento 0.32 tem a mesma magnitude do campo 'braco_experimental.hba1c_mudanca_media' da ficha, mas 
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.07, 23], "fonte": ["braco_experimental.hba1c_mudanca_dispers
+    HARNESS: RESULTADO: 0.34
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.07, 25], "fonte": ["braco_controle.hba1c_mudanca_dispersao",
+    HARNESS: RESULTADO: 0.35
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.07, 25], "fonte": ["braco_controle.hba1c_mudanca_dispersao",
+    HARNESS: RESULTADO: 0.35
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.07, 25], "fonte": ["braco_controle.hba1c_mudanca_dispersao",
+    HARNESS: RESULTADO: 0.35
+    MODELO : {"funcao": "md", "argumentos": [-0.32, 0.34, -0.14, 0.35], "fonte": ["braco_experimental.hba1c_mudan
+    HARNESS: AVISO: a função md exige 6 argumentos — md(m1, dp1, n1, m2, dp2, n2) — e você enviou 4. Reemita a chamada comp
+    MODELO : {"funcao": "dp_de_se", "argumentos": [-0.32, 0.07], "fonte": ["braco_experimental.hba1c_mudanca_medi
+    HARNESS: RESULTADO: -0.08
+AVISO: um desvio-padrão negativo é impossível — confira a ordem e os sina
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.32, 23], "fonte": ["derivado", "braco_experimental.n_analisa
+    HARNESS: AVISO: o argumento 0.32 tem a mesma magnitude do campo 'braco_experimental.hba1c_mudanca_media' da ficha, mas 
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.07, 23], "fonte": ["braco_experimental.hba1c_mudanca_dispers
+    HARNESS: RESULTADO: 0.34
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.07, 25], "fonte": ["braco_controle.hba1c_mudanca_dispersao",
+    HARNESS: RESULTADO: 0.35
+    MODELO : {"funcao": "md", "argumentos": [-0.32, 0.34, -0.14, 0.35], "fonte": ["braco_experimental.hba1c_mudan
+    HARNESS: AVISO: a função md exige 6 argumentos — md(m1, dp1, n1, m2, dp2, n2) — e você enviou 4. Reemita a chamada comp
+    MODELO : {"funcao": "md", "argumentos": [-0.32, 0.34, 23, -0.14, 0.35, 25], "fonte": ["braco_experimental.hba
+    HARNESS: RESULTADO: -0.18
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.32, 0.34, 23, -0.14, 0.35, 25], "fonte": ["braco_experimenta
+    HARNESS: RESULTADO: [-0.38, 0.02]
+  Saslow 2023: 16 turnos · avisos de conteúdo: 5 · final: {"md": -0.18, "ic95": [-0.38, 0.02]}
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.33, -0.19, 73], "fonte": ["hba1c_mudanca_dispersao", "hba1c
+    HARNESS: RESULTADO: 0.31
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.1, 0.02, 69], "fonte": ["hba1c_mudanca_dispersao", "hba1c_m
+    HARNESS: RESULTADO: 0.25
+    MODELO : {"funcao": "md", "argumentos": [-0.24, 0.31, 73, -0.04, 0.25, 69], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.2
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.24, 0.31, 73, -0.04, 0.25, 69], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.29, -0.11]
+  Dorans 2022: 5 turnos · avisos de conteúdo: 0 · final: {"md": -0.2, "ic95": [-0.29, -0.11]}
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-1.96, -1.30, 41], "fonte": ["hba1c_mudanca_dispersao_inferior
+    HARNESS: RESULTADO: 1.08
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-1.40, -0.63, 42], "fonte": ["hba1c_mudanca_dispersao_inferior
+    HARNESS: RESULTADO: 1.27
+    MODELO : {"funcao": "md", "argumentos": [-1.44, 1.08, 41, -1.01, 1.27, 42], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.43
+    MODELO : {"funcao": "ic95_md", "argumentos": [-1.44, 1.08, 41, -1.01, 1.27, 42], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.94, 0.08]
+  Chen 2020: 5 turnos · avisos de conteúdo: 0 · final: {"md": -0.43, "ic95": [-0.94, 0.08]}
+    MODELO : {"funcao": "md", "argumentos": [-0.83, 0.38, 34, -0.56, 0.37, 33], "fonte": ["braco_experimental.hba
+    HARNESS: RESULTADO: -0.27
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.83, 0.38, 34, -0.56, 0.37, 33], "fonte": ["braco_experimenta
+    HARNESS: RESULTADO: [-0.45, -0.09]
+  Thomsen 2022: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.27, "ic95": [-0.45, -0.09]}
+    MODELO : {"funcao": "dp_de_se", "argumentos": [-1.18, 24], "fonte": ["braco_experimental.hba1c_mudanca_disper
+    HARNESS: AVISO: o argumento -1.18 tem a mesma magnitude do campo 'braco_experimental.hba1c_mudanca_dispersao' da ficha,
+    MODELO : {"funcao": "dp_de_se", "argumentos": [1.18, 24], "fonte": ["braco_experimental.hba1c_mudanca_dispers
+    HARNESS: RESULTADO: 5.78
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.70, 25], "fonte": ["braco_controle.hba1c_mudanca_dispersao",
+    HARNESS: RESULTADO: 3.5
+    MODELO : {"funcao": "md", "argumentos": [-0.63, 5.78, 24, -0.31, 3.5, 25], "fonte": ["braco_experimental.hba1
+    HARNESS: RESULTADO: -0.32
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.63, 5.78, 24, -0.31, 3.5, 25], "fonte": ["braco_experimental
+    HARNESS: RESULTADO: [-3.01, 2.37]
+  Wang 2018: 6 turnos · avisos de conteúdo: 1 · final: {"md": -0.32, "ic95": [-3.01, 2.37]}
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.6, 0.7], "fonte": ["derivado", "derivado"]}
+    HARNESS: AVISO: um argumento declara fonte "derivado" — inclua o campo "derivacao" com a operação e os operandos, por e
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.6, 0.7], "fonte": ["derivado", "derivado"], "derivacao
+    HARNESS: RESULTADO: 1.39
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.6, 0.7], "fonte": ["derivado", "derivado"], "derivacao
+    HARNESS: RESULTADO: 1.39
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.6, 0.7], "fonte": ["derivado", "derivado"], "derivacao
+    HARNESS: RESULTADO: 1.39
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.6, 0.7], "fonte": ["derivado", "derivado"], "derivacao
+    HARNESS: RESULTADO: 1.39
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.6, 0.7], "fonte": ["derivado", "derivado"], "derivacao
+    HARNESS: RESULTADO: 1.39
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.6, 0.7], "fonte": ["derivado", "derivado"], "derivacao
+    HARNESS: RESULTADO: 1.39
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.6, 0.7], "fonte": ["derivado", "derivado"], "derivacao
+    HARNESS: RESULTADO: 1.39
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.6, 0.7], "fonte": ["derivado", "derivado"], "derivacao
+    HARNESS: RESULTADO: 1.39
+    MODELO : {"funcao": "dp_de_se", "argumentos": [1.6, 45], "fonte": ["resultado-anterior", "braco_experimental.
+    HARNESS: AVISO: o slot 1 de dp_de_se pede erro-padrão (campo de dispersao), mas recebeu a fonte 'resultado-anterior' co
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.6, 0.7], "fonte": ["derivado", "derivado"], "derivacao
+    HARNESS: RESULTADO: 1.39
+    MODELO : {"funcao": "dp_de_se", "argumentos": [1.39, 45], "fonte": ["resultado-anterior", "braco_experimental
+    HARNESS: AVISO: o slot 1 de dp_de_se pede erro-padrão (campo de dispersao), mas recebeu a fonte 'resultado-anterior' co
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.7, 45], "fonte": ["braco_experimental.hba1c_final_dp", "brac
+    HARNESS: AVISO: o slot 1 de dp_de_se pede erro-padrão (campo de dispersao), mas recebeu a fonte 'braco_experimental.hba
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.6, 0.7], "fonte": ["derivado", "derivado"], "derivacao
+    HARNESS: RESULTADO: 1.39
+    MODELO : {"funcao": "dp_de_se", "argumentos": [0.7, 45], "fonte": ["braco_experimental.hba1c_final_dp", "brac
+    HARNESS: AVISO: o slot 1 de dp_de_se pede erro-padrão (campo de dispersao), mas recebeu a fonte 'braco_experimental.hba
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.6, 0.7], "fonte": ["derivado", "derivado"], "derivacao
+    HARNESS: RESULTADO: 1.39
+  Goday 2016: 16 turnos · avisos de conteúdo: 5 · final: null
+== CALC3F: 5/7 estudos exatos vs a verdade das próprias fichas · 10.2 min

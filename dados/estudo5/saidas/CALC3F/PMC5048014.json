@@ -1,0 +1,70 @@
+{
+ "estudo": "Goday 2016",
+ "turnos": [
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.6, 0.7], \"fonte\": [\"derivado\", \"derivado\"]}",
+   "aviso": "AVISO: um argumento declara fonte \"derivado\" — inclua o campo \"derivacao\" com a operação e os operandos, por exemplo \"7.1 - 6.8\". Reemita a chamada completa."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.6, 0.7], \"fonte\": [\"derivado\", \"derivado\"], \"derivacao\": \"5.3 - 3.7\" }",
+   "resultado": "RESULTADO: 1.39"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.6, 0.7], \"fonte\": [\"derivado\", \"derivado\"], \"derivacao\": \"5.3 - 3.7\"}",
+   "resultado": "RESULTADO: 1.39"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.6, 0.7], \"fonte\": [\"derivado\", \"derivado\"], \"derivacao\": \"5.3 - 3.7\"}",
+   "resultado": "RESULTADO: 1.39"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.6, 0.7], \"fonte\": [\"derivado\", \"derivado\"], \"derivacao\": \"5.3 - 3.7\"}",
+   "resultado": "RESULTADO: 1.39"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.6, 0.7], \"fonte\": [\"derivado\", \"derivado\"], \"derivacao\": \"5.3 - 3.7\"}",
+   "resultado": "RESULTADO: 1.39"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.6, 0.7], \"fonte\": [\"derivado\", \"derivado\"], \"derivacao\": \"5.3 - 3.7\"}",
+   "resultado": "RESULTADO: 1.39"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.6, 0.7], \"fonte\": [\"derivado\", \"derivado\"], \"derivacao\": \"5.3 - 3.7\"}",
+   "resultado": "RESULTADO: 1.39"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.6, 0.7], \"fonte\": [\"derivado\", \"derivado\"], \"derivacao\": \"5.3 - 3.7\"}",
+   "resultado": "RESULTADO: 1.39"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [1.6, 45], \"fonte\": [\"resultado-anterior\", \"braco_experimental.n_analisado\"]}",
+   "aviso": "AVISO: o slot 1 de dp_de_se pede erro-padrão (campo de dispersao), mas recebeu a fonte 'resultado-anterior' com o valor 1.6. Um nível (basal/final) não é uma mudança, e um resultado de md não é uma média de braço. Confira e reemita (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.6, 0.7], \"fonte\": [\"derivado\", \"derivado\"], \"derivacao\": \"5.3 - 3.7\"}",
+   "resultado": "RESULTADO: 1.39"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [1.39, 45], \"fonte\": [\"resultado-anterior\", \"braco_experimental.n_analisado\"]}",
+   "aviso": "AVISO: o slot 1 de dp_de_se pede erro-padrão (campo de dispersao), mas recebeu a fonte 'resultado-anterior' com o valor 1.39. Um nível (basal/final) não é uma mudança, e um resultado de md não é uma média de braço. Confira e reemita (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [0.7, 45], \"fonte\": [\"braco_experimental.hba1c_final_dp\", \"braco_experimental.n_analisado\"]}",
+   "aviso": "AVISO: o slot 1 de dp_de_se pede erro-padrão (campo de dispersao), mas recebeu a fonte 'braco_experimental.hba1c_final_dp' com o valor 0.7. Um nível (basal/final) não é uma mudança, e um resultado de md não é uma média de braço. Confira e reemita (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.6, 0.7], \"fonte\": [\"derivado\", \"derivado\"], \"derivacao\": \"5.3 - 3.7\"}",
+   "resultado": "RESULTADO: 1.39"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_se\", \"argumentos\": [0.7, 45], \"fonte\": [\"braco_experimental.hba1c_final_dp\", \"braco_experimental.n_analisado\"]}",
+   "aviso": "AVISO: o slot 1 de dp_de_se pede erro-padrão (campo de dispersao), mas recebeu a fonte 'braco_experimental.hba1c_final_dp' com o valor 0.7. Um nível (basal/final) não é uma mudança, e um resultado de md não é uma média de braço. Confira e reemita (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.6, 0.7], \"fonte\": [\"derivado\", \"derivado\"], \"derivacao\": \"5.3 - 3.7\"}",
+   "resultado": "RESULTADO: 1.39"
+  }
+ ],
+ "final": null
+}
