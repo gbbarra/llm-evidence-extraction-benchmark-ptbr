@@ -11,6 +11,7 @@ Outputs: dados/estudo5/saidas/<rung>/<estudo>.json · dados/estudo5/resultados-<
 """
 import importlib.util
 import json
+import os
 import re
 import sys
 import time
@@ -20,7 +21,8 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 ROOT = Path(__file__).resolve().parents[2]
 D5 = ROOT / "dados" / "estudo5"
 R2 = ROOT / "dados" / "estudo4" / "rodada2"
-MODELO = "gemma12"
+# Amendment 7: the orchestrator under test is selectable (extraction stays gemma12's)
+MODELO = os.environ.get("E5_MODELO", "gemma12")
 MAX_TURNOS = 16
 MAX_AVISOS_POR_CHAMADA = 2
 
@@ -69,6 +71,8 @@ def carrega(nome, rel):
 
 
 h3 = carrega("h3", "scripts/estudo3/e3-harness.py")
+if MODELO == "codegemma":
+    h3.MODELS["codegemma"] = dict(ollama="codegemma:latest", cpu=False)
 FUNCOES = {k: v for k, v in h3.FUNCOES.items() if k != "pool_dl_md"}
 
 
@@ -280,7 +284,7 @@ def roda_estudo(rung, tid, base, pasta_fichas=None):
                 fn = js.get("funcao", "")
                 if fn == "fim":
                     a = js.get("argumentos", [])
-                    if rung in ("CALC2C", "CALC3") and len(a) >= 3 and not avisados.get("_fim_avisado"):
+                    if (rung == "CALC2C" or rung.startswith("CALC3")) and len(a) >= 3 and not avisados.get("_fim_avisado"):
                         difere = []
                         if avisados.get("_ultimo_md") is not None and abs(a[0] - avisados["_ultimo_md"]) > 0.005:
                             difere.append(f"md {a[0]} ≠ resultado executado {avisados['_ultimo_md']}")
@@ -298,7 +302,7 @@ def roda_estudo(rung, tid, base, pasta_fichas=None):
                             print(f"    HARNESS: {aviso_f[:110]}", flush=True)
                             continue
                     final = dict(md=a[0], ic95=[a[1], a[2]]) if len(a) >= 3 else None
-                    if rung in ("CALC2C", "CALC3") and avisados.get("_fim_avisado") and final:
+                    if (rung == "CALC2C" or rung.startswith("CALC3")) and avisados.get("_fim_avisado") and final:
                         final["requer_revisao_humana"] = True
                     turnos.append(dict(emitiu=bruto))
                     break
@@ -316,10 +320,10 @@ def roda_estudo(rung, tid, base, pasta_fichas=None):
             aviso = aviso_sinal(args, nums) or \
                 (aviso_fonte(args, fontes, ficha) if rung.startswith("G2") or rung.startswith("CALC") else None) or \
                 (aviso_derivacao(args, fontes, js, nums) if rung.startswith("CALC") else None) or \
-                (aviso_tipos(fn, args, fontes) if rung in ("CALC2C", "CALC3") else None) or \
-                (aviso_ordem_ic(fn, args) if rung == "CALC3" else None) or \
-                (aviso_coerencia_ic(fn, args, avisados.get("_ultimo_md")) if rung in ("CALC2C", "CALC3") else None)
-        if aviso and rung in ("CALC2C", "CALC3") and avisados.get(chave, 0) >= MAX_AVISOS_POR_CHAMADA:
+                (aviso_tipos(fn, args, fontes) if rung == "CALC2C" or rung.startswith("CALC3") else None) or \
+                (aviso_ordem_ic(fn, args) if rung.startswith("CALC3") else None) or \
+                (aviso_coerencia_ic(fn, args, avisados.get("_ultimo_md")) if rung == "CALC2C" or rung.startswith("CALC3") else None)
+        if aviso and (rung == "CALC2C" or rung.startswith("CALC3")) and avisados.get(chave, 0) >= MAX_AVISOS_POR_CHAMADA:
             avisados["_insistiu"] = True
         if aviso and avisados.get("_ultimo") == chave:
             avisados.setdefault("_conf", []).append(chave)   # re-emitted identical: confirmed
@@ -339,7 +343,7 @@ def roda_estudo(rung, tid, base, pasta_fichas=None):
             try:
                 valor = FUNCOES[fn](*args)
                 res = f"RESULTADO: {json.dumps(valor, ensure_ascii=False)}"
-                if rung == "CALC3" and fn.startswith("dp_") and isinstance(valor, (int, float)) and valor < 0:
+                if rung.startswith("CALC3") and fn.startswith("dp_") and isinstance(valor, (int, float)) and valor < 0:
                     res += ("\nAVISO: um desvio-padrão negativo é impossível — confira a ordem "
                             "e os sinais dos limites e refaça a conversão antes de usar este valor.")
                 if fn == "md":
@@ -352,7 +356,7 @@ def roda_estudo(rung, tid, base, pasta_fichas=None):
         turnos.append(dict(emitiu=bruto, resultado=res))
         print(f"    MODELO : {bruto[:100]}", flush=True)
         print(f"    HARNESS: {res[:90]}", flush=True)
-    if rung in ("CALC2C", "CALC3") and final and avisados.get("_insistiu"):
+    if (rung == "CALC2C" or rung.startswith("CALC3")) and final and avisados.get("_insistiu"):
         final["requer_revisao_humana"] = True
     if rung == "G1" and final is None:
         r = h3.gerar(MODELO, prompt0 + historico +
@@ -472,14 +476,20 @@ def roda_g3(origem="G2B", rotulo=None):
 
 def main():
     rung = (sys.argv[1] if len(sys.argv) > 1 else "G1").upper()
-    assert rung in ("G1", "G2", "G2B", "G3", "G3B", "CALC2C"), "uso: e5-harness.py G1|G2|G2B|G3|G3B|CALC2C"
+    assert rung in ("G1", "G2", "G2B", "G3", "G3B", "CALC2C", "CALC3G", "POOLG"), \
+        "uso: e5-harness.py G1|G2|G2B|G3|G3B|CALC2C|CALC3G|POOLG"
     assert h3.ELENCO == "base"
-    if rung.startswith("G3"):
-        print(f"===== Estudo 5 · G3 (pooling) · {MODELO}", flush=True)
-        roda_g3()
+    if rung.startswith("G3") or rung == "POOLG":
+        print(f"===== Estudo 5 · pooling · {MODELO}", flush=True)
+        roda_g3(origem="CALC3G" if rung == "POOLG" else "G2B", rotulo=rung)
         return
-    pasta = D5 / "saidas" / "EXTRA2" if rung == "CALC2C" else None
-    nome_prompt = "calc2" if rung == "CALC2C" else ("g2" if rung.startswith("G2") else "g1")
+    if rung == "CALC2C":
+        pasta = D5 / "saidas" / "EXTRA2"
+    elif rung.startswith("CALC3"):
+        pasta = D5 / "saidas" / "EXTRA3"
+    else:
+        pasta = None
+    nome_prompt = "calc2" if (rung == "CALC2C" or rung.startswith("CALC3")) else ("g2" if rung.startswith("G2") else "g1")
     base = (D5 / "prompts" / f"e5-{nome_prompt}.txt").read_text(encoding="utf-8")
     print(f"===== Estudo 5 · {rung} · {MODELO} [{h3.MODELS[MODELO]['ollama']}]"
           + (" · redes ativas: 8" if rung == "CALC2C" else ""), flush=True)
