@@ -78,9 +78,12 @@ elif MODELO == "coder12":
 FUNCOES = {k: v for k, v in h3.FUNCOES.items() if k != "pool_dl_md"}
 
 
-def gerar_schema(prompt, max_tokens, schema=None):
+def gerar_schema(prompt, max_tokens, schema=None, temp=None):
+    opts = dict(num_predict=max_tokens, num_ctx=h3.CTX)
+    if temp is not None:
+        opts["temperature"] = temp
     body = dict(model=h3.MODELS[MODELO]["ollama"], prompt=prompt, stream=False, think=False,
-                format=schema or SCHEMA_G2, options=dict(num_predict=max_tokens, num_ctx=h3.CTX))
+                format=schema or SCHEMA_G2, options=opts)
     r, dt = h3.post_json(h3.OLLAMA + "/api/generate", body)
     if r.get("error"):
         raise RuntimeError(r["error"])
@@ -279,7 +282,8 @@ def roda_estudo(rung, tid, base, pasta_fichas=None):
             parsed = parse_g1(bruto)
         else:
             r = gerar_schema(prompt0 + historico + "\nPróximo JSON:", max_tokens=160,
-                             schema=SCHEMA_CALC2 if rung.startswith("CALC") else SCHEMA_G2)
+                             schema=SCHEMA_CALC2 if rung.startswith("CALC") else SCHEMA_G2,
+                             temp=0 if rung.startswith("CALC3T") else None)
             bruto = r["content"].strip()
             try:
                 js = json.loads(bruto)
@@ -478,8 +482,9 @@ def roda_g3(origem="G2B", rotulo=None):
 
 def main():
     rung = (sys.argv[1] if len(sys.argv) > 1 else "G1").upper()
-    assert rung in ("G1", "G2", "G2B", "G3", "G3B", "CALC2C", "CALC3G", "POOLG", "CALC3F", "POOLF"), \
-        "uso: e5-harness.py G1|G2|G2B|G3|G3B|CALC2C|CALC3G|POOLG|CALC3F|POOLF"
+    assert rung in ("G1", "G2", "G2B", "G3", "G3B", "CALC2C", "CALC3G", "POOLG", "CALC3F", "POOLF",
+                    "CALC3R2", "CALC3T1", "CALC3T2"), \
+        "uso: e5-harness.py G1|G2|G2B|G3|G3B|CALC2C|CALC3G|POOLG|CALC3F|POOLF|CALC3R2|CALC3T1|CALC3T2"
     assert h3.ELENCO == "base"
     if rung.startswith("G3") or rung.startswith("POOL"):
         print(f"===== Estudo 5 · pooling · {MODELO}", flush=True)
