@@ -73,6 +73,8 @@ def carrega(nome, rel):
 h3 = carrega("h3", "scripts/estudo3/e3-harness.py")
 if MODELO == "codegemma":
     h3.MODELS["codegemma"] = dict(ollama="codegemma:latest", cpu=False)
+elif MODELO == "coder12":
+    h3.MODELS["coder12"] = dict(ollama="xentriom/gemma-4-12B-coder-fable5-composer2.5-v1", cpu=False)
 FUNCOES = {k: v for k, v in h3.FUNCOES.items() if k != "pool_dl_md"}
 
 
@@ -476,12 +478,13 @@ def roda_g3(origem="G2B", rotulo=None):
 
 def main():
     rung = (sys.argv[1] if len(sys.argv) > 1 else "G1").upper()
-    assert rung in ("G1", "G2", "G2B", "G3", "G3B", "CALC2C", "CALC3G", "POOLG"), \
-        "uso: e5-harness.py G1|G2|G2B|G3|G3B|CALC2C|CALC3G|POOLG"
+    assert rung in ("G1", "G2", "G2B", "G3", "G3B", "CALC2C", "CALC3G", "POOLG", "CALC3F", "POOLF"), \
+        "uso: e5-harness.py G1|G2|G2B|G3|G3B|CALC2C|CALC3G|POOLG|CALC3F|POOLF"
     assert h3.ELENCO == "base"
-    if rung.startswith("G3") or rung == "POOLG":
+    if rung.startswith("G3") or rung.startswith("POOL"):
         print(f"===== Estudo 5 · pooling · {MODELO}", flush=True)
-        roda_g3(origem="CALC3G" if rung == "POOLG" else "G2B", rotulo=rung)
+        origem = {"POOLG": "CALC3G", "POOLF": "CALC3F"}.get(rung, "G2B")
+        roda_g3(origem=origem, rotulo=rung)
         return
     if rung == "CALC2C":
         pasta = D5 / "saidas" / "EXTRA2"
