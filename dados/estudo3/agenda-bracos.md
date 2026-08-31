@@ -52,4 +52,14 @@ The 8 seeded errors existed to answer ONE question — "is the audit gate real?"
 6. **Series part 4 on LinkedIn** — Studies 4–5 and the trilogy deserve the communication piece, after the preprints are public.
 7. **Study 6 pre-registered (2026-08-31)** — [the replication, in detail](../estudo6/protocolo-estudo6.md), Paper 4's record: both anchors replicated end to end (fresh gemma12 MA-1 extraction + validated dichotomous engine + sealed lens), with the erratum-aware comparison that lets a replication grade the original.
 
+## Study 7 concept (author's directive, 2026-08-31 — "anota aí"; protocol to be written before any run)
+
+**The side-by-side article, on CLEAN texts — no perturbation this time (author's explicit design decision).** The article shows, in sequence: (1) what the meta-analysis's authors searched and selected (their PRISMA trail); (2) **the sheet the humans filled** — the published evidence tables as the human extraction; (3) **gemma4:12b's extraction, two replicates**, over the ORIGINAL, unperturbed primary texts; (4) the meta-analysis recomputed with the correct calculations (the validated deterministic engine); (5) the comparison with the published calculation.
+
+Design notes registered with the concept, for the future protocol:
+- **Without perturbation, agreement cannot distinguish reading from recall** — the series' perturbed record (zero attributable recitations across Studies 1–5; three sealed lenses on the published value) stands as the established reading proof to CITE; this study's claim is the natural-condition head-to-head (human extractors × local model × code), not a new reading proof. State this scoping in the article's design section.
+- The three-way table — source text × human sheet × model sheets — makes the anchor's documented errata (15 entries, source-confirmed) directly visible to the reader: the human column disagrees with the source exactly where the errata live. The two-layer key still grades BOTH columns.
+- Replicate agreement (×2) doubles as the model's reliability exhibit in natural conditions.
+- Anchor choice open: MA-1 (GDFT — richer errata, 14 trials, dichotomous) or MA-2 (low-carb, continuous) or both; decide at protocol time.
+
 Instrument-fix backlog (future corpora/rulers, never retroactive): title/byline kept in corpus text (gap #5 — recurred in Study 4: qwen14 confabulated "Zhou et al. 2019"); `estudo` field graded; perturbation operator covers number words (#1), totals with visible addends (#2), twin tables (#3), rounded prose restatements (#4); neutral trigger question with no embedded premise (E4-1); all three declared trigger classes implemented (E4-2); Wang sign convention scoped to printed-drop fields in `sexteto` (E4-3); one shared bounds/route parser for engine and graders (E4-4).
