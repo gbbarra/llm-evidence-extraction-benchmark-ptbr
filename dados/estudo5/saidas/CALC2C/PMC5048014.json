@@ -1,0 +1,43 @@
+{
+ "estudo": "Goday 2016",
+ "turnos": [
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.1, 0.7], \"fonte\": [\"hba1c_basal_dp\", \"hba1c_final_dp\"]}",
+   "resultado": "RESULTADO: 0.96"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.0, 0.8], \"fonte\": [\"hba1c_basal_dp\", \"hba1c_final_dp\"]}",
+   "resultado": "RESULTADO: 0.92"
+  },
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [5.3, 0.7, 45, 7.1, 0.8, 40], \"fonte\": [\"hba1c_final_media\", \"hba1c_final_dp\", \"n_analisado\", \"hba1c_final_media\", \"hba1c_final_dp\", \"n_analisado\"]}",
+   "aviso": "AVISO: o slot 1 de md pede média de MUDANÇA (mudanca_media ou derivação declarada), mas recebeu a fonte 'hba1c_final_media' com o valor 5.3. Um nível (basal/final) não é uma mudança, e um resultado de md não é uma média de braço. Confira e reemita (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.1, 0.7], \"fonte\": [\"hba1c_basal_dp\", \"hba1c_final_dp\"]}",
+   "resultado": "RESULTADO: 0.96"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.0, 0.8], \"fonte\": [\"hba1c_basal_dp\", \"hba1c_final_dp\"]}",
+   "resultado": "RESULTADO: 0.92"
+  },
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [-1.6, 0.96, 45, 0.3, 0.92, 40], \"fonte\": [\"derivado\", \"resultado-anterior\", \"n_analisado\", \"derivado\", \"resultado-anterior\", \"n_analisado\"], \"derivacao\": \"5.3 - 6.9 for 1st, 7.1 - 6.8 for 4th\"}",
+   "resultado": "RESULTADO: -1.9"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-1.6, 0.96, 45, 0.3, 0.92, 40], \"fonte\": [\"derivado\", \"resultado-anterior\", \"n_analisado\", \"derivado\", \"resultado-anterior\", \"n_analisado\"], \"derivacao\": \"5.3 - 6.9 for 1st, 7.1 - 6.8 for 4th\"}",
+   "resultado": "RESULTADO: [-2.3, -1.5]"
+  },
+  {
+   "emitiu": "{\"funcao\": \"fim\", \"argumentos\": [-1.9, -2.3, -1.5]}"
+  }
+ ],
+ "final": {
+  "md": -1.9,
+  "ic95": [
+   -2.3,
+   -1.5
+  ]
+ }
+}

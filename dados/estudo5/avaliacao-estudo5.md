@@ -58,6 +58,15 @@ The author ordered the roadmap's Priority-1 items applied and the whole pipeline
 - Cells of the fresh sheets: 184/206 (89.3\%) pre-adjudication — run-to-run route variation, zero inventions; extraction remains the quality bound.
 - **E5-5 — caught by the AUTHOR reading the figure** (the human-in-the-loop catch the design invites): Goday's closing interval $[-9.22, -8.58]$ does not contain its own MD ($-1.8$) — the model had passed its previous RESULT as one arm's mean inside `ic95_md` (declared provenance honest: "resultado-anterior"; role wrong again) — and the product layer (forest and synthesis DADOS) endorsed the reported final as-is: the forest plotted it and the synthesis cited it, with the orphan scan blind to provided garbage. Three successor nets registered: a **coherence check** (an interval must contain its own MD — mechanically detectable, warning at the call and at the product); the already-registered **role check**; and the rule that the **product layer flags incoherent reported values, never endorses them** (implemented; the corrected forest marks Goday's interval as invalid instead of plotting it). The pool was never touched (it uses executed-call sextets).
 
-## 9. Standing
+## 9. Rung G2c (Amendment 5) — typed calls, measured
+
+Eight detection-only nets (type system by slot class; coherence: interval-contains-MD, positive SD, integer n; closing-restatement check; escalation flag), over the same EXTRA2 sheets. Result: **6/7 exact — the program's best — in 8.0 min**, and the seventh arrived FLAGGED, not silent, on the escalation net's maiden run.
+
+- **The registered prediction paid where it mattered**: the type net fired on Goday's levels-as-means call, the model re-derived, and **Goday closed on the correct route for the first time in the whole program — $-1.9$ $[-2.3, -1.5]$, digit-exact against the graders' truth.**
+- **Chen, the flagged seventh, is the flag working as designed**: the model swapped and unsigned the control CI's bounds (producing SD $-1.27$; the negative-SD net caught it at the `md` call and the model corrected to the RIGHT magnitude), then committed a pure copy error in its closing (`ic95 [0.08, 0.08]`), which the restatement net caught and the model fixed. Its final ($[-0.94, 0.08]$) differs from the graders' truth by a **dispersion-route divergence on the fresh sheet** — internally correct arithmetic, defensible route, flagged for exactly the human judgment it deserves.
+- One borderline source warning (Chen's experimental CI) was absorbed by confirm-by-repeat with no damage — the false-alarm cost of the eighth net, measured at one extra turn.
+- Harness complexity, as now reported by doctrine: G0 1 net · G1 2 · G2b 4 · **G2c 8** — accuracy 5/7 → 5/7 → **6/7 + 1 flagged**.
+
+## 10. Standing
 
 The author's directive — *turn the best reader into an orchestrator, correcting stage by stage, toward a 100%-gemma12 meta-analysis pipeline* — is fulfilled and archived: reader (round-2 sheets, 92.2% cells), orchestrator (this study), synthesist (zero inventions), with code doing only what code should (execute on command, count, draw, verify). Editorial decision pending: this record becomes Paper 3, or the second half of Paper 2.
