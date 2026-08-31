@@ -70,16 +70,17 @@ Each rung ran only after the previous was graded; every rung's full transcripts 
 \paragraph{Three orchestrators, one frozen harness.} By the author's directive, the reader was kept (the same fresh sheets) and the orchestrator swapped: the base model against an older-generation code specialist (\texttt{codegemma}) and against a community code fine-tune of the \emph{same} base and size (\texttt{gemma-4-12B-coder}; unofficial provenance, digest-pinned). Identical ten nets, identical instruments; every final re-graded mechanically against the sheets' truths.
 
 \begin{table}[t]
-\centering\small
+\centering\footnotesize
+\setlength{\tabcolsep}{4pt}
 \caption{The orchestrator exchange: same sheets, same frozen 10-net harness, three orchestrators. ``Exact'' = final MD and both CI bounds within $\pm 0.01$ of the graders' mechanical truth over the same sheets.}
 \label{tab:orchestrators}
 \begin{tabular}{lccl}
 \toprule
 Orchestrator & Exact /7 & Pooling & Where it fails \\
 \midrule
-\texttt{gemma4:12b} (base --- the reader itself) & 5 & consistent ($\times$3) & one private dispersion route; Goday starved \\
-\texttt{codegemma} (older-gen code model) & \textbf{0} & --- & every CI: wrong arities, $n$s in bound slots \\
-\texttt{gemma-4-12B-coder} (same base, code-tuned) & 5 & consistent & one dispersion mess (Wang); Goday starved \\
+\texttt{gemma4:12b} (base; the reader) & 5 & consistent ($\times$3) & a private dispersion route; Goday starved \\
+\texttt{codegemma} (older-gen code) & \textbf{0} & --- & every CI: arities, $n$s in bound slots \\
+\texttt{gemma-4-12B-coder} (same base) & 5 & consistent & a dispersion mess (Wang); Goday starved \\
 \bottomrule
 \end{tabular}
 \end{table}
