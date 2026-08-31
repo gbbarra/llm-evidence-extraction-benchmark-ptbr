@@ -1,0 +1,6 @@
+# Study 6 — seals SHA-256 (protocol §5 run log)
+
+6193840bb7e654e69bb6e2542386b1eacdae014e023fca8a65200751e9026a6e  perturbacoes-estudo1.json
+75e3aaf8c2fe833460db55329e5a6f78e9441ca0c121b6c2be9d4d77cb23594b  perturbacoes-fechados.json
+f7a4fdc5375bed00bd1b009ca7e9ac4daea3e3d8dcd4c44aa4e01b5c3d34195b  perturbacoes-manuais.json
+85fef70b33238313b7f44bcffc67e6211a23e4c5a6a872d693cebb0deac8ef9c  perturbacoes-fechados-manuais.json

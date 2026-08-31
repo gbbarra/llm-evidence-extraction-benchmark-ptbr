@@ -1,0 +1,103 @@
+===== MA-2 FORMAL E6 · etapa E: extracao fresca sob schema + rede anti-invencao
+  extracao PMC5329646-r1: 186s
+  extracao PMC5329646-r2: 68s
+  extracao REF9-r1: 165s
+  extracao REF9-r2: 68s
+  extracao PMC9606840-r1: 170s
+  extracao PMC9606840-r2: 68s
+  extracao PMC7535044-r1: 193s
+    verificacao PMC7535044-r1 n_randomizado_total = '92' -> '92'
+  extracao PMC7535044-r2: 65s
+    verificacao PMC7535044-r2 n_randomizado_total = '92' -> '92'
+  extracao REF12-r1: 198s
+    verificacao REF12-r1 n_randomizado_total = '72' -> '72'
+  extracao REF12-r2: 66s
+    verificacao REF12-r2 n_randomizado_total = '72' -> '72'
+  extracao PMC6024764-r1: 145s
+  extracao PMC6024764-r2: 67s
+  extracao PMC5048014-r1: 156s
+  extracao PMC5048014-r2: 64s
+  verificacoes anti-invencao: 4
+
+===== etapa 1: calculo por estudo (CALC2 = G2b + derivacao declarada)
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-1.1, -0.6, 11], "fonte": ["hba1c_mudanca_dispersao", "hba1c_m
+    HARNESS: RESULTADO: 0.42
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.6, 0.0, 8], "fonte": ["hba1c_mudanca_dispersao", "hba1c_mud
+    HARNESS: RESULTADO: 0.43
+    MODELO : {"funcao": "md", "argumentos": [-0.8, 0.42, 11, -0.3, 0.43, 8], "fonte": ["hba1c_mudanca_media", "re
+    HARNESS: RESULTADO: -0.5
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.8, 0.42, 11, -0.3, 0.43, 8], "fonte": ["hba1c_mudanca_media"
+    HARNESS: RESULTADO: [-0.89, -0.11]
+  Saslow 2017: 5 turnos · avisos de conteúdo: 0 · final: {"md": -0.5, "ic95": [-0.89, -0.11]}
+    MODELO : {"funcao": "md", "argumentos": [-0.32, 0.07, 23, -0.14, 0.07, 23], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.18
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.32, 0.07, 23, -0.14, 0.07, 23], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.22, -0.14]
+  Saslow 2023: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.18, "ic95": [-0.22, -0.14]}
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.19, -0.33, 2], "fonte": ["hba1c_mudanca_dispersao", "hba1c_
+    HARNESS: AVISO: o argumento 2.0 declara vir de 'n_analisado', mas a ficha registra: 'braco_experimental.n_analisado' = 
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.19, -0.33, 73], "fonte": ["hba1c_mudanca_dispersao", "hba1c
+    HARNESS: RESULTADO: -0.31
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [0.02, -0.10, 69], "fonte": ["hba1c_mudanca_dispersao", "hba1c_
+    HARNESS: RESULTADO: -0.25
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [0.02, -0.10, 69], "fonte": ["hba1c_mudanca_dispersao", "hba1c_
+    HARNESS: RESULTADO: -0.25
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.24, -0.31, 73, -0.04, -0.25, 69], "fonte": ["hba1c_mudanca_m
+    HARNESS: AVISO: o argumento -0.31 tem a mesma magnitude do campo 'braco_experimental.hba1c_basal_dp' da ficha, mas com 
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.19, -0.33, 73], "fonte": ["hba1c_mudanca_dispersao", "hba1c
+    HARNESS: RESULTADO: -0.31
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [0.02, -0.10, 69], "fonte": ["hba1c_mudanca_dispersao", "hba1c_
+    HARNESS: RESULTADO: -0.25
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.24, -0.31, 73, -0.04, -0.25, 69], "fonte": ["hba1c_mudanca_m
+    HARNESS: AVISO: o argumento -0.31 tem a mesma magnitude do campo 'braco_experimental.hba1c_basal_dp' da ficha, mas com 
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.19, -0.33, 73], "fonte": ["hba1c_mudanca_dispersao", "hba1c
+    HARNESS: RESULTADO: -0.31
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [0.02, -0.10, 69], "fonte": ["hba1c_mudanca_dispersao", "hba1c_
+    HARNESS: RESULTADO: -0.25
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.24, -0.31, 73, -0.04, -0.25, 69], "fonte": ["hba1c_mudanca_m
+    HARNESS: RESULTADO: [-0.29, -0.11]
+  Dorans 2022: 12 turnos · avisos de conteúdo: 3 · final: {"md": -0.2, "ic95": [-0.41, 0.12]}
+    MODELO : {"funcao": "md", "argumentos": [-1.44, 1.04, 41, -1.01, 1.40, 42], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.43
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-1.40, -0.63, 42], "fonte": ["hba1c_mudanca_dispersao_inferior
+    HARNESS: RESULTADO: 1.27
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.43, 1.04, 41, -1.01, 1.27, 42], "fonte": ["resultado-anterio
+    HARNESS: RESULTADO: [0.08, 1.08]
+  Chen 2020: 4 turnos · avisos de conteúdo: 0 · final: {"md": -0.43, "ic95": [0.08, 1.08]}
+    MODELO : {"funcao": "md", "argumentos": [-0.83, 0.38, 34, -0.56, 0.37, 33], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.27
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.83, 0.38, 34, -0.56, 0.37, 33], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.45, -0.09]
+  Thomsen 2022: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.27, "ic95": [-0.45, -0.09]}
+    MODELO : {"funcao": "md", "argumentos": [-0.63, 1.18, 24, -0.31, 0.70, 25], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.32
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.63, 1.18, 24, -0.31, 0.70, 25], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.87, 0.23]
+  Wang 2018: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.32, "ic95": [-0.87, 0.23]}
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.1, 0.7], "fonte": ["hba1c_basal_dp", "hba1c_final_dp"]
+    HARNESS: RESULTADO: 0.96
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.0, 0.8], "fonte": ["hba1c_basal_dp", "hba1c_final_dp"]
+    HARNESS: RESULTADO: 0.92
+    MODELO : {"funcao": "md", "argumentos": [5.3, 0.7, 45, 7.1, 0.8, 40], "fonte": ["hba1c_final_media", "hba1c_f
+    HARNESS: RESULTADO: -1.8
+    MODELO : {"funcao": "ic95_md", "argumentos": [5.3, 0.7, 45, 7.1, 0.8, 40], "fonte": ["hba1c_final_media", "hb
+    HARNESS: RESULTADO: [-2.12, -1.48]
+  Goday 2016: 5 turnos · avisos de conteúdo: 0 · final: {"md": -1.8, "ic95": [-2.12, -1.48]}
+
+===== etapa 2: pooling (instrumentos G3b)
+    MODELO : {"funcao": "pool_dl_md", "sextetos": [[-0.8, 0.42, 11.0, -0.3, 0.43, 8.0], [-0.32, 0.07, 23.0, -0.14
+    HARNESS: RESULTADO: {"md": -0.58, "ic95": [-1.0, -0.16], "tau2": 0.2403, "i2_pct": 95.0}
+== POOL6M2: consistente com os próprios sextetos: True · final {"md": -0.58, "ic95": [-1.0, -0.16]} · pool dos próprios: {"md": -0.58, "ic95": [-1.0, -0.16], "tau2": 0.2403, "i2_pct": 95.0}
+
+===== etapa 3+4: totais por codigo e sintese narrativa
+  ICs reportados incoerentes (sinalizados, nunca endossados): ['Chen 2020']
+  orfaos: ZERO
+
+===== etapa 5: forest por codigo
+
+===== correcao (lado dos corretores): celulas · verdade · lente
+  celulas: 191/206 (92.7%)
+  agregado modelo: {"md": -0.58, "ic95": [-1.0, -0.16]} · verdade: {"md": -0.52, "ic95": [-0.83, -0.21], "tau2": 0.1418, "i2_pct": 91.2} · delta md 0.06
+  LENTE: {"md": -0.25, "ic95": [-0.33, -0.16], "tau2": 0.0013, "i2_pct": 8.5} vs ancora -0.24 [-0.32, -0.16]
+
+== MA-2 FORMAL E6 COMPLETO em 41.2 min · consistente: True · orfaos: 0

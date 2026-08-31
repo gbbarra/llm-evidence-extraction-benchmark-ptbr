@@ -1,0 +1,6 @@
+{
+ "modelo": "gemma12",
+ "trial": "PMC6024764",
+ "replica": 1,
+ "content": "{\"estudo\": \"Liang et al. (ou similar, não especificado no texto, apenas \", \"desenho\": \"\", \"pais\": \"China\", \"duracao\": \"3 meses\", \"n_randomizado_total\": \"56\", \"braco_experimental\": {\"rotulo\": \"LCD\", \"descricao_intervencao\": \"low-carbohydrate diet using 'six-point formula'\", \"n_randomizado\": \"28\", \"n_analisado\": \"24\", \"hba1c_mudanca_media\": \"-0.63\", \"hba1c_mudanca_dispersao\": \"1.18\", \"hba1c_mudanca_tipo_dispersao\": \"DP\", \"hba1c_basal_media\": \"7.43\", \"hba1c_basal_dp\": \"1.39\", \"hba1c_final_media\": \"6.80\", \"hba1c_final_dp\": \"0.83\"}, \"braco_controle\": {\"rotulo\": \"LFD\", \"descricao_intervencao\": \"low-fat diet using 'six-point formula'\", \"n_randomizado\": \"28\", \"n_analisado\": \"25\", \"hba1c_mudanca_media\": \"-0.31\", \"hba1c_mudanca_dispersao\": \"0.70\", \"hba1c_mudanca_tipo_dispersao\": \"DP\", \"hba1c_basal_media\": \"7.79\", \"hba1c_basal_dp\": \"1.20\", \"hba1c_final_media\": \"7.48\", \"hba1c_final_dp\": \"1.15\"}}"
+}

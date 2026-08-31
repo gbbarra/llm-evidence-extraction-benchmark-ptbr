@@ -28,7 +28,7 @@ Every per-study and pooled difference across the five outcome families landed in
 | H6.1 | fresh extraction in the measured band: ≥90% graded cells, **zero inventions**, zero attributable recitations | 28/28 sheets parseable, all 124 eligible cells filled; **0 invented values in 124** (every number traces to a source layer — see the divergent decomposition); values carry perturbed images (reading, not recall) | **passes** |
 | H6.2 | zero unexplained residue; analyzed-vs-randomized ns and the Yoon rows land in *difere-por-errata* | zero unexplained residue ✓; the n-layer divergences land on errata #13/#14/#6 ✓; the **Yoon clause resolved differently**: erratum #1's swap is confined to baseline table T3 — the morbidity-table "Yun" row (39/36) was already the correct side, and our fresh reproduction (RR 0.862 exact) *confirms* #1's adjudication rather than exercising it | **passes** (Yoon clause: confirmed, not exercised — stated, not glossed) |
 | H6.3 | fresh vs archived sheets agree on ≥95% of graded cells | **96.0%** (119/124) | **passes** |
-| H6.4 | MA-2's lens lands beside −0.24 [−0.32, −0.16] a fourth time | *formal run in progress; this section is amended when it closes* | pending |
+| H6.4 | MA-2's lens lands beside −0.24 [−0.32, −0.16] a fourth time | lens **−0.25 [−0.33, −0.16]** (τ² 0.001, I² 8.5%) vs anchor −0.24 [−0.32, −0.16] — one hundredth off the three prior lenses' −0.24, CI matching to the hundredth on both bounds | **passes** (beside, not identical — stated plainly) |
 
 The companion mechanical score — fresh reversed cells identical to the key's `valor_fonte` under the numeric comparator — is **98/124 (79.0%)**. That comparator is a *mechanical approximation* of the E1 ruler (it cannot see summarization equivalence or layer choices); all 26 non-identical cells are decomposed below, and four of them are the **key's** error, not the model's.
 
@@ -75,9 +75,13 @@ The anchor's table 11 publishes Castro ileus 6 (14.0%) / 19 (45.2%), RR 0.31 [0.
 
 The fresh model wrote NR for Castro's ileus in both replicates — the reader refusing to invent is what exposed the row.
 
-## MA-2 formal run (H6.4)
+## MA-2 formal run (H6.4) — closed 2026-08-31, 41.2 min
 
-*In progress at the time of writing (extraction stage E under schema + anti-invention net; labels EXTRA6M2/CALC6M2/POOL6M2, log `log-ma2.txt`). This section is amended with the lens value when the run closes.*
+One formal execution of the Study-5 pipeline-v2 procedure under this protocol's labels (EXTRA6M2/CALC6M2/POOL6M2; log `log-ma2.txt`, artifacts in `ma2/`):
+
+- **Fresh extraction**: 191/206 graded cells (92.7%), zero content warnings in the calc stage, zero orphans.
+- **The orchestrated pool** (gemma12 calling typed harness functions; every number computed by code): −0.58 [−1.00, −0.16], internally consistent with its own sextets; mechanical truth over the same sheets −0.52 [−0.83, −0.21] — delta MD 0.06 from route/argument choices, the measured Study-5 phenomenon at its usual size. Chen's reported CI was flagged incoherent and **flagged, never endorsed** (the E5-5 doctrine executing as designed).
+- **The sealed lens (H6.4's number)**: **−0.25 [−0.33, −0.16]**, τ² 0.001, I² 8.5%, against the published −0.24 [−0.32, −0.16] (I² 6%). The fourth sealed lens; the first three sat at −0.24. Beside, not identical — the one-hundredth difference is fresh-extraction variance, reported as measured.
 
 ## Who did what (three voices)
 
