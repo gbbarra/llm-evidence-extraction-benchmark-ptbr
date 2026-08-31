@@ -1,0 +1,166 @@
+===== Estudo 5 · CALC3G · codegemma [codegemma:latest]
+    MODELO : {"funcao": "md",
+ "argumentos": [-0.8, -0.4, 11, -0.3, 0.3, 8],
+ "fonte": ["hba1c_mudanca_media", "h
+    HARNESS: AVISO: o argumento -0.4 tem a mesma magnitude do campo 'braco_experimental.hba1c_basal_dp' da ficha, mas com o
+    MODELO : {"funcao": "md",
+ "argumentos": [-0.8, 0.4, 11, -0.3, 0.3, 8],
+ "fonte": ["hba1c_mudanca_media", "hb
+    HARNESS: RESULTADO: -0.5
+    MODELO : {"funcao": "ic95_md",
+ "argumentos": [-0.8, 0.4, 11, -0.3, 0.3, 8],
+ "fonte": ["hba1c_mudanca_media"
+    HARNESS: RESULTADO: [-0.81, -0.19]
+  Saslow 2017: 4 turnos · avisos de conteúdo: 1 · final: {"md": -0.5, "ic95": [-0.81, -0.19]}
+    MODELO : {
+"funcao": "md",
+"argumentos": [-0.32, 0.07, 23, -0.14, 0.07, 25],
+"fonte": ["braco_experimental.hb
+    HARNESS: RESULTADO: -0.18
+    MODELO : {
+"funcao": "ic95_md",
+"argumentos": [-0.18, 0.07, 23, -0.14, 0.07, 25],
+"fonte": ["md", "braco_expe
+    HARNESS: AVISO: o argumento -0.14 declara vir de 'braco_controle.hba1c_mudanca_dispersao', mas a ficha registra: 'braco
+    MODELO : {
+"funcao": "dp_de_ic",
+"argumentos": [0.07, 0.07, 23],
+"fonte": ["braco_controle.hba1c_mudanca_disp
+    HARNESS: AVISO: o argumento 23.0 declara vir de 'braco_controle.n_analisado', mas a ficha registra: 'braco_controle.n_a
+    MODELO : {
+"funcao": "dp_de_se",
+"argumentos": [0.07, 23],
+"fonte": ["braco_controle.hba1c_mudanca_dispersao"
+    HARNESS: AVISO: o argumento 23.0 declara vir de 'braco_controle.n_analisado', mas a ficha registra: 'braco_controle.n_a
+  Saslow 2023: 5 turnos · avisos de conteúdo: 3 · final: {"md": -0.18, "ic95": [0.05, 0.13]}
+    MODELO : {
+"funcao": "md",
+"argumentos": [-0.24, -0.33, 73, -0.04, -0.10, 69],
+"fonte": ["braco_experimental.
+    HARNESS: AVISO: o argumento -0.33 (slot 2 de md, classe DP) é NEGATIVO — um desvio-padrão é sempre positivo. Confira e 
+    MODELO : {
+"funcao": "dp_de_ic",
+"argumentos": [-0.33, -0.19, 73],
+"fonte": ["braco_experimental.hba1c_mudanc
+    HARNESS: RESULTADO: 0.31
+    MODELO : {
+"funcao": "ic95_md",
+"argumentos": [-0.24, -0.33, 73, -0.04, -0.10, 69],
+"fonte": ["braco_experime
+    HARNESS: AVISO: o argumento -0.33 (slot 2 de ic95_md, classe DP) é NEGATIVO — um desvio-padrão é sempre positivo. Confi
+  Dorans 2022: 4 turnos · avisos de conteúdo: 2 · final: {"md": -0.24, "ic95": [0.31, 0.33]}
+    MODELO : {
+"funcao": "md",
+"argumentos": [-1.44, 1.96, 41, -1.01, 1.4, 42],
+"fonte": ["braco_experimental.hba
+    HARNESS: RESULTADO: -0.43
+    MODELO : {
+"funcao": "ic95_md",
+"argumentos": [-0.43, 1.96, 41, -1.01, 1.4, 42],
+"fonte": ["md", "braco_exper
+    HARNESS: AVISO: o slot 1 de ic95_md pede média de MUDANÇA (mudanca_media ou derivação declarada), mas recebeu a fonte '
+    MODELO : {
+"funcao": "dp_de_ic",
+"argumentos": [-1.96, -1.30, 41],
+"fonte": ["braco_experimental.hba1c_mudanc
+    HARNESS: RESULTADO: 1.08
+  Chen 2020: 4 turnos · avisos de conteúdo: 1 · final: {"md": -0.43, "ic95": [0.48, 1.57]}
+    MODELO : {
+"funcao": "md",
+"argumentos": [-0.83, 0.38, 34, -0.56, 0.37, 33],
+"fonte": ["hba1c_mudanca_media",
+    HARNESS: RESULTADO: -0.27
+    MODELO : {
+"funcao": "ic95_md",
+"argumentos": [-0.27, 0.38, 34, -0.56, 0.37, 33],
+"fonte": ["md", "hba1c_muda
+    HARNESS: AVISO: o argumento -0.56 declara vir de 'hba1c_mudanca_dispersao', mas a ficha registra: 'braco_experimental.h
+    MODELO : {
+"funcao": "ic95_md",
+"argumentos": [-0.27, 0.38, 34, 0.37, 33],
+"fonte": ["md", "hba1c_mudanca_dis
+    HARNESS: AVISO: a função ic95_md exige 6 argumentos — ic95_md(m1, dp1, n1, m2, dp2, n2) — e você enviou 5. Reemita a ch
+    MODELO : {
+"funcao": "dp_de_ic",
+"argumentos": [0.38, 0.37],
+"fonte": ["hba1c_mudanca_dispersao", "hba1c_muda
+    HARNESS: AVISO: a função dp_de_ic exige 3 argumentos — dp_de_ic(inferior, superior, n) — e você enviou 2. Reemita a cha
+    MODELO : {
+"funcao": "dp_de_ic",
+"argumentos": [0.38, 0.37, 34],
+"fonte": ["hba1c_mudanca_dispersao", "hba1c_
+    HARNESS: AVISO: em dp_de_ic o primeiro argumento é o limite INFERIOR e o segundo o SUPERIOR — você enviou (0.38, 0.37),
+    MODELO : {
+"funcao": "dp_de_ic",
+"argumentos": [0.37, 0.38, 34],
+"fonte": ["hba1c_mudanca_dispersao", "hba1c_
+    HARNESS: RESULTADO: 0.01
+    MODELO : {
+"funcao": "dp_de_se",
+"argumentos": [0.77, 34],
+"fonte": ["hba1c_basal_dp", "n_analisado"]
+}
+    HARNESS: AVISO: o slot 1 de dp_de_se pede erro-padrão (campo de dispersao), mas recebeu a fonte 'hba1c_basal_dp' com o 
+    MODELO : {
+"funcao": "dp_mudanca_r05",
+"argumentos": [0.77, 0.70],
+"fonte": ["hba1c_basal_dp", "hba1c_final_d
+    HARNESS: RESULTADO: 0.74
+  Thomsen 2022: 9 turnos · avisos de conteúdo: 5 · final: {"md": -0.27, "ic95": [0.01, 0.74]}
+    MODELO : {
+"funcao": "dp_de_ic",
+"argumentos": [1.18, 24],
+"fonte": ["hba1c_mudanca_dispersao", "n_analisado"
+    HARNESS: AVISO: a função dp_de_ic exige 3 argumentos — dp_de_ic(inferior, superior, n) — e você enviou 2. Reemita a cha
+    MODELO : {
+"funcao": "dp_de_ic",
+"argumentos": [1.18, 24, 0.70],
+"fonte": ["hba1c_mudanca_dispersao", "n_anal
+    HARNESS: AVISO: o slot 2 de dp_de_ic pede limite de IC (campo de dispersao), mas recebeu a fonte 'n_analisado' com o va
+    MODELO : {
+"funcao": "md",
+"argumentos": [-0.63, 1.18, 24, -0.31, 0.70, 25],
+"fonte": ["hba1c_mudanca_media",
+    HARNESS: RESULTADO: -0.32
+    MODELO : {
+"funcao": "ic95_md",
+"argumentos": [-0.32, 1.18, 24, -0.31, 0.70, 25],
+"fonte": ["md", "hba1c_muda
+    HARNESS: AVISO: o argumento -0.31 declara vir de 'hba1c_mudanca_dispersao', mas a ficha registra: 'braco_experimental.h
+    MODELO : {
+"funcao": "ic95_md",
+"argumentos": [-0.32, 1.18, 24, 0.70, 25],
+"fonte": ["md", "hba1c_mudanca_dis
+    HARNESS: AVISO: a função ic95_md exige 6 argumentos — ic95_md(m1, dp1, n1, m2, dp2, n2) — e você enviou 5. Reemita a ch
+    MODELO : {"funcao": "dp_de_ic",
+"argumentos": [1.18, 24, 1.18],
+"fonte": ["hba1c_mudanca_dispersao", "n_anali
+    HARNESS: AVISO: o slot 2 de dp_de_ic pede limite de IC (campo de dispersao), mas recebeu a fonte 'n_analisado' com o va
+  Wang 2018: 7 turnos · avisos de conteúdo: 5 · final: {"md": -0.32, "ic95": [1.08, 2.36]}
+    MODELO : {
+"funcao": "md",
+"argumentos": [6.9, 1.1, 45, 7.1, 0.8, 40],
+"fonte": ["braco_experimental.hba1c_ba
+    HARNESS: AVISO: o argumento 7.1 declara vir de 'braco_controle.hba1c_basal_media', mas a ficha registra: 'braco_control
+    MODELO : {
+"funcao": "ic95_md",
+"argumentos": [6.9, 1.1, 45, 7.1, 0.8, 40],
+"fonte": ["braco_experimental.hba
+    HARNESS: AVISO: o argumento 7.1 declara vir de 'braco_controle.hba1c_basal_media', mas a ficha registra: 'braco_control
+    MODELO : {
+"funcao": "dp_de_ic",
+"argumentos": [0.8, 0.7],
+"fonte": ["braco_controle.hba1c_final_dp", "braco_
+    HARNESS: AVISO: a função dp_de_ic exige 3 argumentos — dp_de_ic(inferior, superior, n) — e você enviou 2. Reemita a cha
+    MODELO : {
+"funcao": "dp_de_se",
+"argumentos": [0.7, 40],
+"fonte": ["braco_controle.hba1c_final_dp", "braco_c
+    HARNESS: AVISO: o argumento 0.7 declara vir de 'braco_controle.hba1c_final_dp', mas a ficha registra: 'braco_controle.h
+    MODELO : {
+"funcao": "dp_mudanca_r05",
+"argumentos": [1.1, 0.8],
+"fonte": ["braco_experimental.hba1c_basal_dp
+    HARNESS: RESULTADO: 0.98
+  Goday 2016: 6 turnos · avisos de conteúdo: 4 · final: {"md": 0.98, "ic95": [0.71, 1.24]}
+== CALC3G: 0/7 estudos exatos vs a verdade das próprias fichas · 5.2 min

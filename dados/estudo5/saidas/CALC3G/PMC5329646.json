@@ -1,0 +1,27 @@
+{
+ "estudo": "Saslow 2017",
+ "turnos": [
+  {
+   "emitiu": "{\"funcao\": \"md\",\n \"argumentos\": [-0.8, -0.4, 11, -0.3, 0.3, 8],\n \"fonte\": [\"hba1c_mudanca_media\", \"hba1c_basal_dp\", \"n_analisado\", \"hba1c_mudanca_media\", \"hba1c_final_dp\", \"n_analisado\"]}",
+   "aviso": "AVISO: o argumento -0.4 tem a mesma magnitude do campo 'braco_experimental.hba1c_basal_dp' da ficha, mas com o SINAL oposto — e nenhum número da ficha vale -0.4. Confira e reemita a chamada (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"md\",\n \"argumentos\": [-0.8, 0.4, 11, -0.3, 0.3, 8],\n \"fonte\": [\"hba1c_mudanca_media\", \"hba1c_basal_dp\", \"n_analisado\", \"hba1c_mudanca_media\", \"hba1c_final_dp\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: -0.5"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\",\n \"argumentos\": [-0.8, 0.4, 11, -0.3, 0.3, 8],\n \"fonte\": [\"hba1c_mudanca_media\", \"hba1c_basal_dp\", \"n_analisado\", \"hba1c_mudanca_media\", \"hba1c_final_dp\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: [-0.81, -0.19]"
+  },
+  {
+   "emitiu": "{\"funcao\": \"fim\",\n \"argumentos\": [-0.5, -0.81, -0.19],\n \"fonte\": [\"md\", \"ic95_inferior\", \"ic95_superior\"]}"
+  }
+ ],
+ "final": {
+  "md": -0.5,
+  "ic95": [
+   -0.81,
+   -0.19
+  ]
+ }
+}

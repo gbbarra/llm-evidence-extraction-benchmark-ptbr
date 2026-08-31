@@ -1,0 +1,27 @@
+{
+ "estudo": "Dorans 2022",
+ "turnos": [
+  {
+   "emitiu": "{\n\"funcao\": \"md\",\n\"argumentos\": [-0.24, -0.33, 73, -0.04, -0.10, 69],\n\"fonte\": [\"braco_experimental.hba1c_mudanca_media\", \"braco_experimental.hba1c_mudanca_dispersao\", \"braco_experimental.n_analisado\", \"braco_controle.hba1c_mudanca_media\", \"braco_controle.hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]\n}",
+   "aviso": "AVISO: o argumento -0.33 (slot 2 de md, classe DP) é NEGATIVO — um desvio-padrão é sempre positivo. Confira e reemita."
+  },
+  {
+   "emitiu": "{\n\"funcao\": \"dp_de_ic\",\n\"argumentos\": [-0.33, -0.19, 73],\n\"fonte\": [\"braco_experimental.hba1c_mudanca_dispersao\", \"braco_experimental.hba1c_mudanca_tipo_dispersao\", \"braco_experimental.n_analisado\"]\n}",
+   "resultado": "RESULTADO: 0.31"
+  },
+  {
+   "emitiu": "{\n\"funcao\": \"ic95_md\",\n\"argumentos\": [-0.24, -0.33, 73, -0.04, -0.10, 69],\n\"fonte\": [\"braco_experimental.hba1c_mudanca_media\", \"braco_experimental.hba1c_mudanca_dispersao\", \"braco_experimental.n_analisado\", \"braco_controle.hba1c_mudanca_media\", \"braco_controle.hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]\n}",
+   "aviso": "AVISO: o argumento -0.33 (slot 2 de ic95_md, classe DP) é NEGATIVO — um desvio-padrão é sempre positivo. Confira e reemita."
+  },
+  {
+   "emitiu": "{\n\"funcao\": \"fim\",\n\"argumentos\": [-0.24, 0.31, 0.33],\n\"fonte\": [\"braco_experimental.hba1c_mudanca_media\", \"ic95_inferior\", \"ic95_superior\"]\n}"
+  }
+ ],
+ "final": {
+  "md": -0.24,
+  "ic95": [
+   0.31,
+   0.33
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "estudo": "Chen 2020",
+ "turnos": [
+  {
+   "emitiu": "{\n\"funcao\": \"md\",\n\"argumentos\": [-1.44, 1.96, 41, -1.01, 1.4, 42],\n\"fonte\": [\"braco_experimental.hba1c_mudanca_media\", \"braco_experimental.hba1c_mudanca_dispersao\", \"braco_experimental.n_analisado\", \"braco_controle.hba1c_mudanca_media\", \"braco_controle.hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]\n}",
+   "resultado": "RESULTADO: -0.43"
+  },
+  {
+   "emitiu": "{\n\"funcao\": \"ic95_md\",\n\"argumentos\": [-0.43, 1.96, 41, -1.01, 1.4, 42],\n\"fonte\": [\"md\", \"braco_experimental.hba1c_mudanca_dispersao\", \"braco_experimental.n_analisado\", \"braco_controle.hba1c_mudanca_media\", \"braco_controle.hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]\n}",
+   "aviso": "AVISO: o slot 1 de ic95_md pede média de MUDANÇA (mudanca_media ou derivação declarada), mas recebeu a fonte 'md' com o valor -0.43. Um nível (basal/final) não é uma mudança, e um resultado de md não é uma média de braço. Confira e reemita (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\n\"funcao\": \"dp_de_ic\",\n\"argumentos\": [-1.96, -1.30, 41],\n\"fonte\": [\"braco_experimental.hba1c_mudanca_tipo_dispersao\", \"braco_experimental.hba1c_mudanca_dispersao\", \"braco_experimental.n_analisado\"]\n}",
+   "resultado": "RESULTADO: 1.08"
+  },
+  {
+   "emitiu": "{\n\"funcao\": \"fim\",\n\"argumentos\": [-0.43, 0.48, 1.57],\n\"fonte\": [\"md\", \"ic95_inferior\", \"ic95_superior\"]\n}"
+  }
+ ],
+ "final": {
+  "md": -0.43,
+  "ic95": [
+   0.48,
+   1.57
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "estudo": "Saslow 2023",
+ "turnos": [
+  {
+   "emitiu": "{\n\"funcao\": \"md\",\n\"argumentos\": [-0.32, 0.07, 23, -0.14, 0.07, 25],\n\"fonte\": [\"braco_experimental.hba1c_mudanca_media\", \"braco_experimental.hba1c_mudanca_dispersao\", \"braco_experimental.n_analisado\", \"braco_controle.hba1c_mudanca_media\", \"braco_controle.hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]\n}",
+   "resultado": "RESULTADO: -0.18"
+  },
+  {
+   "emitiu": "{\n\"funcao\": \"ic95_md\",\n\"argumentos\": [-0.18, 0.07, 23, -0.14, 0.07, 25],\n\"fonte\": [\"md\", \"braco_experimental.hba1c_mudanca_dispersao\", \"braco_experimental.n_analisado\", \"braco_controle.hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]\n}",
+   "aviso": "AVISO: o argumento -0.14 declara vir de 'braco_controle.hba1c_mudanca_dispersao', mas a ficha registra: 'braco_controle.hba1c_mudanca_dispersao' = 0.07. Confira e reemita a chamada (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\n\"funcao\": \"dp_de_ic\",\n\"argumentos\": [0.07, 0.07, 23],\n\"fonte\": [\"braco_controle.hba1c_mudanca_dispersao\", \"braco_controle.hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]\n}",
+   "aviso": "AVISO: o argumento 23.0 declara vir de 'braco_controle.n_analisado', mas a ficha registra: 'braco_controle.n_analisado' = 25.0. Confira e reemita a chamada (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\n\"funcao\": \"dp_de_se\",\n\"argumentos\": [0.07, 23],\n\"fonte\": [\"braco_controle.hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]\n}",
+   "aviso": "AVISO: o argumento 23.0 declara vir de 'braco_controle.n_analisado', mas a ficha registra: 'braco_controle.n_analisado' = 25.0. Confira e reemita a chamada (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\n\"funcao\": \"fim\",\n\"argumentos\": [-0.18, 0.05, 0.13],\n\"fonte\": [\"md\", \"ic95_inferior\", \"ic95_superior\"]\n}"
+  }
+ ],
+ "final": {
+  "md": -0.18,
+  "ic95": [
+   0.05,
+   0.13
+  ]
+ }
+}
