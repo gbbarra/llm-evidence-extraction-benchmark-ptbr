@@ -60,6 +60,10 @@ The 8 seeded errors existed to answer ONE question — "is the audit gate real?"
 - An English harness build (the model-facing WARNING/RESULT dialogue now inside the archived Study-2/3/5 code) is cut together with the next orchestration protocol, never retroactively.
 - Study-6 derived reports (detailed comparison, paired forest, cell grading) were regenerated in English from the same data — presentation only; every number unchanged (98/124, 96.0%, 26 divergents decomposed).
 
+## Editorial reset (author's decision, 2026-09-01)
+
+**The medRxiv submission of Paper 1 was withdrawn by the author** (reason on record: essay-format framing; the author wants the full English end-to-end campaign as the series' first publication). Consequences: the unified manuscript (`paper/extrai-unified.tex` — "EXTRAI: correcting and creating meta-analyses with local language models") is refactored as **the first article of the series**, self-contained: the Portuguese-instrument Studies 1–6 are presented as the archived **development pilot** (instruments, seals, keys, harness and errata built and validated there), the English campaign (Study 8 + Study 7) is the definitive study, and the language comparison is an internal robustness analysis. The former preprints 1–3 are shelved as internal records (their .tex/.pdf remain in the repo history); companion citations were removed from the unified manuscript.
+
 ## Study 7 concept (author's directive, 2026-08-31 — "anota aí")
 
 **Protocol registered 2026-08-31** — [protocolo-estudo7.md](../estudo7/protocolo-estudo7.md): **both anchors** (author's decision at protocol time), clean texts, no perturbation, the first study frozen from the English instrument library (both extraction sheets copied verbatim into `dados/estudo7/prompts/`; verified fully English, zero PT remnants). Scoping clause: no reading-proof claim — Studies 1–6 carry that.
