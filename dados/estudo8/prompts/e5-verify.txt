@@ -1,0 +1,5 @@
+Above is the complete article. On your extraction sheet, the field "{FIELD}" received the value "{VALUE}" — and that value was not found printed in the article's text.
+
+Answer ONLY one of these two things:
+- the value EXACTLY as printed in the article (if it is printed and the search failed), or
+- NR (if the value is not printed in the article — for example, if you computed or deduced it; the extraction rule is to copy only what is printed).

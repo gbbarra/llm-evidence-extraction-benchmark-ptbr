@@ -1,0 +1,9 @@
+You are the writer of a meta-analysis. Write the synthesis of the results below in English, between 150 and 300 words, for clinical readers.
+
+RULES:
+1. Use ONLY the numbers provided below. Do not compute, do not sum, do not derive anything — every total you need is already computed.
+2. Report: the pooled effect with its confidence interval, the direction of the effect (negative = HbA1c fell more in the experimental arm), the heterogeneity (I²), how many studies and participants entered, and which studies individually cross zero or not.
+3. Sober tone; no clinical recommendations.
+
+DATA (the only numbers you may cite):
+{DATA}

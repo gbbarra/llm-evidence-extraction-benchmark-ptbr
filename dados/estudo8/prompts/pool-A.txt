@@ -1,0 +1,16 @@
+In a previous study, you extracted the data below from clinical trials comparing goal-directed fluid therapy (GDFT) with conventional fluid therapy. The values are EXACTLY as you extracted them (they may contain percentages, fractions or "NR").
+{DATA}
+
+---
+
+TASK — POOL (META-ANALYSIS) WITH NO TOOL AT ALL
+
+For each event outcome (morbidity, mortality, ileus): compute the fixed-effect pooled RR (Mantel-Haenszel) and the random-effects pooled RR (DerSimonian-Laird), both with 95% CI, using the computable studies.
+For each mean outcome: the inverse-variance pooled MD with 95% CI.
+
+Mandatory rules:
+1. Use ONLY the data above. Interpret the formats (e.g., "19 (32.8%)" = 19 events; "28/39 [71.8%]" = 28 events out of 39).
+2. If a study's data do not allow the computation (NR, unresolvable ambiguity), write "NOT-COMPUTABLE" in its place — that is a correct answer, never guess.
+3. Answer ONLY with a valid JSON object, no text outside it, no code fences.
+4. If you do not know how to execute a method safely, write "NOT-COMPUTABLE" for that item.
+5. Format: {"morbidity": {"mh": {"rr": 0.000, "ci95": [..]}, "dl": {"rr": 0.000, "ci95": [..]}}, "mortality": {...}, "ileus": {...}, "time_to_flatus_h": {"iv": {"md": 0.00, "ci95": [..]}}, "time_to_oral_diet": {...}}
