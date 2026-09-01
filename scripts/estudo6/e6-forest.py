@@ -30,7 +30,7 @@ FINAL = {
     ("morbidity", "REF26"): "rota-do-modelo",
     ("morbidity", "PMC10912221"): "rota-do-modelo",
     ("ileus", "PMC10694978"): "reproduz (2 d.p.)",
-    ("ileus", "PMC11061212"): "erratum-cand.-#16",
+    ("ileus", "PMC11061212"): "erratum-#16 (confirmed)",
 }
 
 PUB_POOL = {
@@ -91,7 +91,7 @@ def main():
                     va="center", fontsize=8.2, fontweight="bold", color="#b0553a")
         else:
             ax.text(0.0, -0.75, "Published pool (abstract): RR 0.48 — not comparable by "
-                    "construction (candidate erratum #16)\n*Castro's source does not report ileus; "
+                    "construction (erratum #16, confirmed)\n*Castro's source does not report ileus; "
                     "the published numbers are its PPC counts", transform=tr,
                     va="center", fontsize=8.2, style="italic", color="#b0553a")
         ax.axvline(1, color="#999", lw=0.8, ls="--")

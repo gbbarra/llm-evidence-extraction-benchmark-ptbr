@@ -19,7 +19,7 @@ gemma12 re-extracted the 14 perturbed GDFT primaries from zero (2 replicates, fr
 | overall morbidity (T5) | **RR 0.778** [0.571, 1.062] | RR 0.778 [0.567, 1.068] | **reproduz** (RR exact to 3 dp) |
 | mortality (T6) | **RR 1.023** [0.447, 2.344] | RR 1.021 [0.446, 2.337] | **reproduz** |
 
-Every per-study and pooled difference across the five outcome families landed in a named category — **zero unexplained residue** — and the exercise surfaced errors *on both sides of the comparison*: it advanced the anchor's pending Castro item to a positively-identified erratum candidate (#16: PPC counts published as ileus), and it caught **two cells of our own grading key that contradict the source** (de Waal ASA, Coeckelenbergh blood loss — the model read them correctly; the ruler had them wrong). A replication framework that can only say "matches / doesn't match" has no drawer for either finding; the category system is the study's point.
+Every per-study and pooled difference across the five outcome families landed in a named category — **zero unexplained residue** — and the exercise surfaced errors *on both sides of the comparison*: it advanced the anchor's pending Castro item to **confirmed erratum #16** (the published "ileus" row is the primary's pulmonary-complication count — author-adjudicated 2026-08-31, [errata file](../estudo1/erratas-da-ancora.md)), and it caught **two cells of our own grading key that contradict the source** (de Waal ASA, Coeckelenbergh blood loss — the model read them correctly; the ruler had them wrong). A replication framework that can only say "matches / doesn't match" has no drawer for either finding; the category system is the study's point.
 
 ## Hypothesis verdicts
 
@@ -43,7 +43,7 @@ The companion mechanical score — fresh reversed cells identical to the key's `
 
 **Mortality (T6).** de Waal **reproduz** (0.946 vs 0.944) — with a route note: the model's denominators (258/244, cited "Results 3.2.1. Primary outcome") are the source's primary-outcome population, a third layer distinct from both randomized (274/259) and the anchor's T6 totals (248/234); the RR agrees within tolerance regardless. Sun **reproduz** exact (3.0 [0.125, 71.927]).
 
-**Ileus (T11).** Arslan-Carlon **reproduz** (1.192 vs 1.19). Sun **reproduz** at the published 2-dp precision (0.125 [0.030, 0.515] vs 0.13 [0.03, 0.53]) — with the errata file's standing caveat that the source counts are possibly I-FEED-derived (pending item). Castro: the model returned **NR — and the source proves it right** (candidate erratum #16, below). Consequently our ileus pool covers 2 of 3 studies (DL 0.429 [0.048, 3.87]) and the published pool (abstract: RR 0.48, 3 studies) is **not comparable by construction**: its third row does not exist as ileus in the primary's text. Category: *difere-por-errata-candidata-#16*, counted, never silent.
+**Ileus (T11).** Arslan-Carlon **reproduz** (1.192 vs 1.19). Sun **reproduz** at the published 2-dp precision (0.125 [0.030, 0.515] vs 0.13 [0.03, 0.53]) — with the errata file's standing caveat that the source counts are possibly I-FEED-derived (pending item). Castro: the model returned **NR — and the source proves it right** (confirmed erratum #16, below). Consequently our ileus pool covers 2 of 3 studies (DL 0.429 [0.048, 3.87]) and the published pool (abstract: RR 0.48, 3 studies) is **not comparable by construction**: its third row does not exist as ileus in the primary's text. Category: *difere-por-errata-da-ancora-#16*, counted, never silent.
 
 **Time to flatus (T8).** All three rows in named categories, none computable from the sheets (dados-insuficientes, declared design §3.2): Sun *derivável-conversão* ("shorten time to first flatus by 11 h"); Coeckelenbergh and Diaper *fonte-indisponível* — erratum #12, the word "flatus" does not occur in either full text.
 
@@ -69,9 +69,13 @@ The two-layer key (`gabarito-oficial.json`) is itself an instrument, and the rep
 
 Symmetry note for Paper 4: Study 1 logged the adjudicator's errata; Study 6 logs the key's. The process that grades is graded by the same rite.
 
-## Candidate anchor erratum #16 — Castro's "ileus" is the PPC count
+## Confirmed anchor erratum #16 — Castro's "ileus" is the PPC count
 
-The anchor's table 11 publishes Castro ileus 6 (14.0%) / 19 (45.2%), RR 0.31 [0.14, 0.68]. The primary's full text contains the word "ileus" **zero** times; its pulmonary-complications result reads: "**Nineteen patients (45%) in the SOC and 6 in the GDFT (14%) had at least one PPC** (p = 0.003)." The published "ileus" counts and percentages are exactly the primary's PPC counts. This promotes the errata file's pending Castro item to a positively-identified candidate — **pendente adjudicação final do autor** — and it is the reason the published ileus pool (RR 0.48) cannot be replicated from the sources: one of its three rows is a different outcome.
+**Adjudicated by the author, 2026-08-31 — confirmed.** The anchor's table 11 publishes Castro ileus 6 (14.0%) / 19 (45.2%), RR 0.31 [0.14, 0.68]. The primary's full text contains the word "ileus" **zero** times; its pulmonary-complications result reads: "**Nineteen patients (45%) in the SOC and 6 in the GDFT (14%) had at least one PPC** (p = 0.003)." The published "ileus" counts and percentages are exactly the primary's PPC counts.
+
+Before confirming, the standing doubt — could the ileus data live in the primary's Supplementary Material instead? — was checked rather than assumed away: the text was searched for every bowel/GI-adjacent term (bowel, obstruction, gastrointestinal, flatus, defecation, constipation), all **zero hits**; and every declared supplementary item was read by its own caption — two tables (demographics; reintubation profile), three hemodynamic/blood-data graphs, one renal-biomarker (NGAL) graph, and a boilerplate "Image, application 1" journal-footer file — **none labeled as complications or bowel-outcome data**. The doubt was reasonable to raise; it does not hold up. Full record: [errata file, item 16](../estudo1/erratas-da-ancora.md).
+
+This is now **erratum #16**, and it is the reason the published ileus pool (abstract RR 0.48) cannot be replicated from the sources: one of its three rows is a different outcome.
 
 The fresh model wrote NR for Castro's ileus in both replicates — the reader refusing to invent is what exposed the row.
 
@@ -87,4 +91,4 @@ One formal execution of the Study-5 pipeline-v2 procedure under this protocol's 
 
 - **gemma4:12b (local, iGPU, no API)**: read the 14 perturbed primaries twice and filled the sheets — including every printed percentage, every population layer, and the two NRs that exposed the Castro row. Nothing else.
 - **Deterministic code (this repo, validated in Studies 2–4)**: parsed sheets, chose routes, computed every RR/CI/MD, both pools, applied the sealed reversal, produced the side-by-side tables and the mechanical cell score.
-- **Claude (assistant)**: wrote the scripts, ran the pipeline, performed the adjudications recorded here (with the quoted sources), and drafted this record. The human author supervises, holds the seals, and adjudicates the pending items (#16; the key corrections).
+- **Claude (assistant)**: wrote the scripts, ran the pipeline, performed the adjudications recorded here (with the quoted sources), and drafted this record. The human author supervises, holds the seals, and adjudicates — erratum #16 confirmed 2026-08-31; the two key corrections remain pending the author's sign-off.
