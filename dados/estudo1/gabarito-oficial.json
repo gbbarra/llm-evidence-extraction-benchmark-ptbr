@@ -1347,14 +1347,14 @@
    },
    "asa_gdft": {
     "ma": "24:123:86:1",
-    "veredito": "literal",
-    "valor_fonte": "24:123:86:1",
+    "veredito": "errata-ma",
+    "valor_fonte": "17:132:95:4",
     "cit": "letal pathology 10 (4.3%) 9 (3.6%) Increased bleeding tendency 82 (35.0%) 81 (32.7%) ASA classification ASA I 24 (10.3%) 17 (6.9%) ASA II 123 (52.6%) 132 (53.2%) ASA III 86 (36.7%) 95 (38.3%) ASA IV 1 (0.4%) 4 (1.6%) Imm"
    },
    "asa_controle": {
     "ma": "17:132:95:4",
-    "veredito": "literal",
-    "valor_fonte": "17:132:95:4",
+    "veredito": "errata-ma",
+    "valor_fonte": "24:123:86:1",
     "cit": "logy 10 (4.3%) 9 (3.6%) Increased bleeding tendency 82 (35.0%) 81 (32.7%) ASA classification ASA I 24 (10.3%) 17 (6.9%) ASA II 123 (52.6%) 132 (53.2%) ASA III 86 (36.7%) 95 (38.3%) ASA IV 1 (0.4%) 4 (1.6%) Immunosuppress"
    },
    "fluido_total_gdft": {
@@ -1792,14 +1792,14 @@
    },
    "perda_sanguinea_gdft": {
     "ma": "500 (300–800)",
-    "veredito": "literal",
-    "valor_fonte": "500 (300–800)",
+    "veredito": "errata-ma",
+    "valor_fonte": "450 (300–600)",
     "cit": "y outcomes, there was no difference in blood loss (median [quartile 1 to quartile 3], 450 [300 to 600] ml vs. 500 [300 to 800] ml; P = 0.727), although central venous pressure was higher in the decision support group (me"
    },
    "perda_sanguinea_controle": {
     "ma": "450 (300–600)",
-    "veredito": "literal",
-    "valor_fonte": "450 (300–600)",
+    "veredito": "errata-ma",
+    "valor_fonte": "500 (300–800)",
     "cit": "ong secondary exploratory outcomes, there was no difference in blood loss (median [quartile 1 to quartile 3], 450 [300 to 600] ml vs. 500 [300 to 800] ml; P = 0.727), although central venous pressure was higher in the de"
    },
    "uso_inotropico": {

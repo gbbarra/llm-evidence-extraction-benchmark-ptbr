@@ -36,7 +36,7 @@ FINAL = {
 PUB_POOL = {
     "morbidity": (0.778, 0.567, 1.068, "0.778 [0.567, 1.068]"),
     "mortality": (1.021, 0.446, 2.337, "1.021 [0.446, 2.337]"),
-    "ileus": None,  # abstract-only RR 0.48; not comparable (candidate erratum #16)
+    "ileus": None,  # abstract-only RR 0.48; not comparable (confirmed erratum #16)
 }
 TITULO = {"morbidity": "overall morbidity (anchor T5)", "mortality": "mortality (anchor T6)",
           "ileus": "postoperative ileus (anchor T11)"}

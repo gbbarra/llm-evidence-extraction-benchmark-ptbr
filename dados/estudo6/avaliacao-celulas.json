@@ -1,5 +1,5 @@
 {
- "cells": "98/124 (79.0%)",
+ "cells": "100/124 (80.6%)",
  "stability": "119/124 (96.0%)",
  "divergents": [
   {
@@ -108,13 +108,13 @@
    "trial": "REF29",
    "field": "asa_gdft",
    "model": "ASA I (6.9%), ASA II (53.2%), ASA III (38.5%), ASA IV (1.4%)",
-   "source": "24:123:86:1"
+   "source": "17:132:95:4"
   },
   {
    "trial": "REF29",
    "field": "asa_controle",
    "model": "ASA I (10.3%), ASA II (52.6%), ASA III (36.7%), ASA IV (0.4%)",
-   "source": "17:132:95:4"
+   "source": "24:123:86:1"
   },
   {
    "trial": "REF30",
@@ -145,18 +145,6 @@
    "field": "tipo_cirurgia",
    "model": "major abdominal, urological, gynaecological, or orthopaedic",
    "source": "150 gastrointestinal, 48 urological, 11 gynecological"
-  },
-  {
-   "trial": "REF41",
-   "field": "perda_sanguinea_gdft",
-   "model": "450 [300 to 600] ml",
-   "source": "500 (300–800)"
-  },
-  {
-   "trial": "REF41",
-   "field": "perda_sanguinea_controle",
-   "model": "500 [300 to 800] ml",
-   "source": "450 (300–600)"
   }
  ]
 }
