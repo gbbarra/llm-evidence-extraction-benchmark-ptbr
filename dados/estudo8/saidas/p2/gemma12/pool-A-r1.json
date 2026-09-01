@@ -1,0 +1,16 @@
+{
+ "modelo": "gemma12",
+ "familia": "pool",
+ "braco": "A",
+ "replica": 1,
+ "chamadas": 0,
+ "dt": 55.3,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "```json\n{\n  \"morbidity\": {\n    \"mh\": {\n      \"rr\": 0.559,\n      \"ci95\": [0.332, 0.958]\n    },\n    \"dl\": {\n      \"rr\": 0.547,\n      \"ci95\": [0.321, 0.953]\n    }\n  },\n  \"mortality\": {\n    \"mh\": {\n      \"rr\": 1.000,\n      \"ci95\": [0.012, 1.000]\n    },\n    \"dl\": {\n      \"rr\": 1.000,\n      \"ci95\": [0.012, 1.000]\n    }\n  },\n  \"ileus\": {\n    \"mh\": {\n      \"rr\": 0.721,\n      \"ci95\": [0.315, 1.664]\n    },\n    \"dl\": {\n      \"rr\": 0.716,\n      \"ci95\": [0.314, 1.660]\n    }\n  },\n  \"time_to_flatus_h\": {\n    \"iv\": {\n      \"md\": -11.2,\n      \"ci95\": [-22.6, -0.8]\n    }\n  },\n  \"time_to_oral_diet\": {\n    \"iv\": {\n      \"md\": \"NOT-COMPUTABLE\"\n    }\n  }\n}\n```",
+   "dt": 55.3
+  }
+ ]
+}

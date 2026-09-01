@@ -1,0 +1,16 @@
+{
+ "modelo": "gemma12",
+ "familia": "pool",
+ "braco": "B",
+ "replica": 2,
+ "chamadas": 0,
+ "dt": 59.8,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "```json\n{\n  \"morbidity\": {\n    \"mh\": \"RESULT: 0.54 [0.34, 0.86]\",\n    \"dl\": \"RESULT: 0.51 [0.33, 0.82] (tau² = 0.02, I² = 45.2%)\",\n    \"studies_used\": [\n      \"Calvo-Vecino 2018\",\n      \"Yoon 2023\",\n      \"Diaper 2021\",\n      \"Wu 2024\"\n    ]\n  },\n  \"mortality\": {\n    \"mh\": \"RESULT: 0.40 [0.16, 1.00]\",\n    \"dl\": \"RESULT: 0.41 [0.17, 0.98] (tau² = 0.00, I² = 0.0%)\",\n    \"studies_used\": [\n      \"de Waal 2021\",\n      \"Sun 2023\"\n    ]\n  },\n  \"ileus\": {\n    \"mh\": \"RESULT: 0.65 [0.46, 0.92]\",\n    \"dl\": \"RESULT: 0.65 [0.46, 0.92] (tau² = 0.00, I² = 0.0%)\",\n    \"studies_used\": [\n      \"Arslan 2020\",\n      \"Sun 2023\"\n    ]\n  },\n  \"time_to_flatus_h\": {\n    \"iv\": \"NOT-COMPUTABLE\",\n    \"studies_used\": [\n      \"Sun 2023\"\n    ]\n  },\n  \"time_to_oral_diet\": {\n    \"iv\": \"NOT-COMPUTABLE\",\n    \"studies_used\": [\n      \"Sun 2023\",\n      \"Sujatha 2019\"\n    ]\n  }\n}\n```",
+   "dt": 59.8
+  }
+ ]
+}

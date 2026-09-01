@@ -1,0 +1,73 @@
+initial memory sweep:
+
+===== Study 8 · P2 CALCULATE · gemma12 [gemma4:12b]
+  gemma12 rr-A-r1: 1 round(s), 0 CALC, 69s
+  gemma12 rr-A-r2: 1 round(s), 0 CALC, 55s
+  gemma12 rr-B-r1: 2 round(s), 16 CALC, 125s
+  gemma12 rr-B-r2: 2 round(s), 16 CALC, 128s
+  gemma12 md-A-r1: 1 round(s), 0 CALC, 40s
+  gemma12 md-A-r2: 1 round(s), 0 CALC, 37s
+  gemma12 md-B-r1: 1 round(s), 0 CALC, 9s
+  gemma12 md-B-r2: 1 round(s), 0 CALC, 54s
+  gemma12 pool-A-r1: 1 round(s), 0 CALC, 55s
+  gemma12 pool-A-r2: 1 round(s), 0 CALC, 49s
+  gemma12 pool-B-r1: 1 round(s), 0 CALC, 67s
+  gemma12 pool-B-r2: 1 round(s), 0 CALC, 60s
+
+===== Study 8 · P2 CALCULATE · qwen14 [qwen3:14b]
+  qwen14 rr-A-r1: 1 round(s), 0 CALC, 68s
+  qwen14 rr-A-r2: 1 round(s), 0 CALC, 52s
+  qwen14 rr-B-r1: 2 round(s), 18 CALC, 108s
+  qwen14 rr-B-r2: 2 round(s), 18 CALC, 106s
+  qwen14 md-A-r1: 1 round(s), 0 CALC, 38s
+  qwen14 md-A-r2: 1 round(s), 0 CALC, 28s
+  qwen14 md-B-r1: 1 round(s), 0 CALC, 42s
+  qwen14 md-B-r2: 1 round(s), 0 CALC, 37s
+  qwen14 pool-A-r1: 1 round(s), 0 CALC, 48s
+  qwen14 pool-A-r2: 1 round(s), 0 CALC, 43s
+  qwen14 pool-B-r1: 1 round(s), 0 CALC, 79s
+  qwen14 pool-B-r2: 1 round(s), 0 CALC, 81s
+
+===== Study 8 · P2 CALCULATE · llama8 [llama3.1:8b]
+  llama8 rr-A-r1: 1 round(s), 0 CALC, 34s
+  llama8 rr-A-r2: 1 round(s), 0 CALC, 39s
+  llama8 rr-B-r1: 2 round(s), 20 CALC, 101s
+  llama8 rr-B-r2: 2 round(s), 20 CALC, 51s
+  llama8 md-A-r1: 1 round(s), 0 CALC, 35s
+  llama8 md-A-r2: 1 round(s), 0 CALC, 26s
+  llama8 md-B-r1: 4 round(s), 18 CALC, 151s
+  llama8 md-B-r2: 5 round(s), 12 CALC, 180s
+  llama8 pool-A-r1: 1 round(s), 0 CALC, 23s
+  llama8 pool-A-r2: 1 round(s), 0 CALC, 19s
+  llama8 pool-B-r1: 1 round(s), 0 CALC, 66s
+  llama8 pool-B-r2: 1 round(s), 0 CALC, 72s
+
+===== Study 8 · P2 CALCULATE · qwen35 [qwen3.5:9b]
+  qwen35 rr-A-r1: 1 round(s), 0 CALC, 48s
+  qwen35 rr-A-r2: 1 round(s), 0 CALC, 37s
+  qwen35 rr-B-r1: 2 round(s), 15 CALC, 122s
+  qwen35 rr-B-r2: 2 round(s), 18 CALC, 78s
+  qwen35 md-A-r1: 1 round(s), 0 CALC, 25s
+  qwen35 md-A-r2: 1 round(s), 0 CALC, 10s
+  qwen35 md-B-r1: 1 round(s), 0 CALC, 126s
+  qwen35 md-B-r2: 1 round(s), 0 CALC, 22s
+  qwen35 pool-A-r1: 1 round(s), 0 CALC, 57s
+  qwen35 pool-A-r2: 1 round(s), 0 CALC, 52s
+  qwen35 pool-B-r1: 1 round(s), 0 CALC, 62s
+  qwen35 pool-B-r2: 1 round(s), 0 CALC, 33s
+
+===== Study 8 · P2 CALCULATE · deepseek14 [deepseek-r1:14b]
+  deepseek14 rr-A-r1: 1 round(s), 0 CALC, 210s
+  deepseek14 rr-A-r2: 1 round(s), 0 CALC, 194s
+  deepseek14 rr-B-r1: 1 round(s), 0 CALC, 157s
+  deepseek14 rr-B-r2: 1 round(s), 0 CALC, 194s
+  deepseek14 md-A-r1: 1 round(s), 0 CALC, 131s
+  deepseek14 md-A-r2: 1 round(s), 0 CALC, 98s
+  deepseek14 md-B-r1: 1 round(s), 0 CALC, 193s
+  deepseek14 md-B-r2: 2 round(s), 1 CALC, 354s
+  deepseek14 pool-A-r1: 1 round(s), 0 CALC, 205s
+  deepseek14 pool-A-r2: 1 round(s), 0 CALC, 196s
+  deepseek14 pool-B-r1: 1 round(s), 0 CALC, 199s
+  deepseek14 pool-B-r2: 1 round(s), 0 CALC, 147s
+
+== P2 CALCULATE COMPLETE in 87.1 min

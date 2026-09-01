@@ -1,0 +1,21 @@
+{
+ "modelo": "qwen35",
+ "familia": "rr",
+ "braco": "B",
+ "replica": 1,
+ "chamadas": 15,
+ "dt": 122.2,
+ "rodadas": 2,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "CALC: rr(8, 224, 16, 226)\nRESULT: rr = 0.517969...\nCALC: ci95_rr(8, 224, 16, 226)\nRESULT: 95% CI [0.2357..., 1.1415...]\nCALC: rr(28, 39, 30, 36)\nRESULT: rr = 0.9333...\nCALC: ci95_rr(28, 39, 30, 36)\nRESULT: 95% CI [0.5741..., 1.5071...]\nCALC: rr(101, 200, 117, 214)\nRESULT: rr = 0.8640...\nCALC: ci95_rr(101, 200, 117, 214)\nRESULT: 95% CI [0.6836..., 1.0965...]\nCALC: rr(19, 61, 32, 61)\nRESULT: rr = 0.5937...\nCALC: ci95_rr(19, 61, 32, 61)\nRESULT: 95% CI [0.3464..., 0.9915...]\nCALC: rr(4, 259, 4, 244)\nRESULT: rr = 1.0765...\nCALC: ci95_rr(4, 259, 4, 244)\nRESULT: 95% CI [0.2312..., 5.0608...]\nCALC: rr(1, 50, 0, 50)\nRESULT: NOT-COMPUTABLE (division by zero in standard formula or event=0 in control)\nCALC: rr(25, 142, 30, 141)\nRESULT: rr = 0.8333...\nCALC: ci95_rr(25, 142, 30, 141)\nRESULT: 95% CI [0.5436..., 1.2784...]\nCALC: rr(2, 50, 16, 50)\nRESULT: rr = 0.1250...\nCALC: ci95_rr(2, 50, 16, 50)\nRESULT: 95% CI [0.0278..., 0.5434...]\n\n{\"morbidity\": {\"Calvo-Vecino 2018\": {\"rr\": 0.518, \"ci95\": [0.236, 1.142]}, \"Yoon 2023\": {\"rr\": 0.933, \"ci95\": [0.574, 1.507]}, \"Diaper 2021\": {\"rr\": 0.864, \"ci95\": [0.684, 1.097]}, \"Wu 2024\": {\"rr\": 0.594, \"ci95\": [0.346, 0.992]}, \"Sun 2023\": \"NOT-COMPUTABLE\"}, \"mortality\": {\"de Waal 2021\": {\"rr\": 1.077, \"ci95\": [0.231, 5.061]}, \"Sun 2023\": \"NOT-COMPUTABLE\"}, \"ileus\": {\"Arslan 2020\": {\"rr\": 0.833, \"ci95\": [0.544, 1.278]}, \"Sun 2023\": {\"rr\": 0.125, \"ci95\": [0.028, 0.543]}, \"Castro 2024\": \"NOT-COMPUTABLE\"}}",
+   "dt": 79.4
+  },
+  {
+   "rodada": 2,
+   "saida": "{\"morbidity\": {\"Calvo-Vecino 2018\": {\"rr\": 0.504, \"ci95\": [0.22, 1.155]}, \"Yoon 2023\": {\"rr\": 0.862, \"ci95\": [0.674, 1.101]}, \"Diaper 2021\": {\"rr\": 0.924, \"ci95\": [0.769, 1.11]}, \"Wu 2024\": {\"rr\": 0.594, \"ci95\": [0.381, 0.925]}, \"Sun 2023\": \"NOT-COMPUTABLE\"}, \"mortality\": {\"de Waal 2021\": {\"rr\": 0.942, \"ci95\": [0.238, 3.725]}, \"Sun 2023\": \"NOT-COMPUTABLE\"}, \"ileus\": {\"Arslan 2020\": {\"rr\": 0.827, \"ci95\": [0.514, 1.333]}, \"Sun 2023\": {\"rr\": 0.125, \"ci95\": [0.03, 0.515]}, \"Castro 2024\": \"NOT-COMPUTABLE\"}}",
+   "dt": 42.8
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "familia": "pool",
+ "braco": "B",
+ "replica": 1,
+ "chamadas": 0,
+ "dt": 62.2,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\"morbidity\": {\"mh\": {\"rr\": 0.7928, \"ci_low\": 0.6199, \"ci_high\": 1.0155, \"z\": -1.3409, \"p\": 0.1791}, \"dl\": {\"rr\": 0.7928, \"ci_low\": 0.6199, \"ci_high\": 1.0155, \"tau_sq\": 0.0118, \"i_sq\": 34.9}, \"studies_used\": [\"Calvo-Vecino 2018\", \"Yoon 2023\", \"Diaper 2021\", \"Wu 2024\"]}, \"mortality\": {\"mh\": {\"rr\": 0.8724, \"ci_low\": 0.4659, \"ci_high\": 1.6293, \"z\": -0.6472, \"p\": 0.5175}, \"dl\": {\"rr\": 0.8724, \"ci_low\": 0.4659, \"ci_high\": 1.6293, \"tau_sq\": 0.4019, \"i_sq\": 83.5}, \"studies_used\": [\"de Waal 2021\", \"Sun 2023\"]}, \"ileus\": {\"mh\": {\"rr\": 0.7691, \"ci_low\": 0.3624, \"ci_high\": 1.6294, \"z\": -1.1982, \"p\": 0.2305}, \"dl\": {\"rr\": 0.7691, \"ci_low\": 0.3624, \"ci_high\": 1.6294, \"tau_sq\": 0.4658, \"i_sq\": 84.2}, \"studies_used\": [\"Arslan 2020\", \"Sun 2023\"]}, \"time_to_flatus_h\": {\"iv\": {\"md\": -11.2, \"ci_low\": -23.56, \"ci_high\": 1.16, \"z\": -1.7499, \"p\": 0.081}, \"studies_used\": [\"Sun 2023\"]}, \"time_to_oral_diet\": {\"mh\": {\"rr\": 0.5375, \"ci_low\": 0.2696, \"ci_high\": 1.0736, \"z\": -1.4487, \"p\": 0.147}, \"dl\": {\"rr\": 0.5375, \"ci_low\": 0.2696, \"ci_high\": 1.0736, \"tau_sq\": 0.0014, \"i_sq\": 20.8}, \"studies_used\": [\"Sun 2023\"]}}",
+   "dt": 62.2
+  }
+ ]
+}

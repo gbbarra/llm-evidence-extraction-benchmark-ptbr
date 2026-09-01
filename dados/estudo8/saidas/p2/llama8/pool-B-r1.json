@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "familia": "pool",
+ "braco": "B",
+ "replica": 1,
+ "chamadas": 0,
+ "dt": 66.4,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "Here are the results:\n\n```json\n{\n  \"morbidity\": {\n    \"mh\": {\n      \"rr\": 0.694,\n      \"ci95\": [0.573, 0.845],\n      \"pvalue\": 0.001\n    },\n    \"dl\": {\n      \"rr\": 0.684,\n      \"ci95\": [0.536, 0.873],\n      \"tau2\": 0.051,\n      \"i2\": 34.1,\n      \"pvalue\": 0.005\n    },\n    \"studies_used\": [\n      {\"study\": \"Calvo-Vecino 2018\", \"events_g\": 18, \"n_g\": 224, \"events_c\": 36, \"n_c\": 226},\n      {\"study\": \"Yoon 2023\", \"events_g\": 28, \"n_g\": 39, \"events_c\": 30, \"n_c\": 36},\n      {\"study\": \"Diaper 2021\", \"events_g\": 113, \"n_g\": 200, \"events_c\": 117, \"n_c\": 200},\n      {\"study\": \"Wu 2024\", \"events_g\": 19, \"n_g\": 58, \"events_c\": 32, \"n_c\": 56}\n    ]\n  },\n  \"mortality\": {\n    \"mh\": {\n      \"rr\": 0.938,\n      \"ci95\": [0.444, 1.98],\n      \"pvalue\": 0.916\n    },\n    \"dl\": {\n      \"rr\": 0.941,\n      \"ci95\": [0.442, 2.00],\n      \"tau2\": 0.109,\n      \"i2\": 62.1,\n      \"pvalue\": 0.854\n    },\n    \"studies_used\": [\n      {\"study\": \"de Waal 2021\", \"events_g\": 10, \"n_g\": 258, \"events_c\": 10, \"n_c\": 244},\n      {\"study\": \"Sun 2023\", \"events_g\": 1, \"n_g\": 50, \"events_c\": 0, \"n_c\": 50}\n    ]\n  },\n  \"ileus\": {\n    \"iv\": {\n      \"md\": -0.176,\n      \"ci95\": [-0.331, -0.021],\n      \"pvalue\": 0.028\n    },\n    \"studies_used\": [\n      {\"study\": \"Arslan 2020\", \"events_g\": 31, \"n_g\": 142, \"events_c\": 30, \"n_c\": 141},\n      {\"study\": \"Sun 2023\", \"events_g\": 2, \"n_g\": 50, \"events_c\": 16, \"n_c\": 50},\n      {\"study\": \"Castro 2024\", \"events_g\": 0, \"n_g\": 43, \"events_c\": 5, \"n_c\": 42}\n    ]\n  },\n  \"time_to_flatus_h\": {\n    \"iv\": {\n      \"md\": -11.2,\n      \"ci95\": [-23.4, 1.01],\n      \"pvalue\": 0.058\n    },\n    \"studies_used\": [\n      {\"study\": \"Sun 2023\", \"mean_g\": 28.2, \"sd_g\": 14.1, \"n_g\": 50, \"mean_c\": 39.4, \"sd_c\": 21.4, \"n_c\": 50},\n      {\"study\": \"Coeckelenbergh 2024\", \"NOT-COMPUTABLE\"},\n      {\"study\": \"Diaper 2021\", \"NOT-COMPUTABLE\"}\n    ]\n  },\n  \"time_to_oral_diet\": {\n    \"iv\": {\n      \"md\": -2.0,\n      \"ci95\": [-3.73, -0.27],\n      \"pvalue\": 0.016\n    },\n    \"studies_used\": [\n      {\"study\": \"Sun 2023\", \"mean_g\": 4.0, \"sd_g\": 1.5, \"n_g\": 50, \"mean_c\": 6.0, \"sd_c\": 3.4, \"n_c\": 50},\n      {\"study\": \"Sujatha 2019\", \"mean_g\": 2.5, \"sd_g\": 0.5, \"n_g\": 102, \"mean_c\": 2.6, \"sd_c\": 0.5, \"n_c\": 101}\n    ]\n  }\n}\n```",
+   "dt": 66.4
+  }
+ ]
+}

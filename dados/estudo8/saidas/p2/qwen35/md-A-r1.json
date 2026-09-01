@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "familia": "md",
+ "braco": "A",
+ "replica": 1,
+ "chamadas": 0,
+ "dt": 24.8,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\"time_to_flatus_h\":{\"Sun 2023\":{\"md\":-11.20,\"ci95\":[-6.84,-17.04],\"note\":\"Units are hours in both groups. (39.4 - 28.2) = 11.2 -> MD = -11.20.\"},\"Coecelenbergh 2024\":{\"md\":\"NOT-COMPUTABLE\",\"ci95\":[0.0,0.0],\"note\":\"\"},\"Diaper 2021\":{\"md\":\"NOT-COMPUTABLE\",\"ci95\":[0.0,0.0],\"note\":\"\"}},\"time_to_oral_diet\":{\"Sun 2023\":{\"md\":-2.00,\"ci95\":[-1.50,-2.46],\"note\":\"Units are days in both groups. (6.0 - 4.0) = 2.0 -> MD = -2.00.\"},\"Sujatha 2019\":{\"md\":\"NOT-COMPUTABLE\",\"ci95\":[0.0,0.0],\"note\":\"\"}}}",
+   "dt": 24.8
+  }
+ ]
+}

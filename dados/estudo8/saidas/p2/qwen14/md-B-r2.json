@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen14",
+ "familia": "md",
+ "braco": "B",
+ "replica": 2,
+ "chamadas": 0,
+ "dt": 36.7,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\"time_to_flatus_h\": {\"Sun 2023\": {\"md\": 11.2, \"ci95\": [3.4, 19.0], \"note\": \"Converted hours to days for consistency (mean difference in hours: 11.2, converted to days: 0.47 days).\"}, \"Coeckelenbergh 2024\": {\"md\": \"NOT-COMPUTABLE\", \"ci95\": [\"NOT-COMPUTABLE\", \"NOT-COMPUTABLE\"], \"note\": \"NR values for both groups, no data available for computation.\"}, \"Diaper 2021\": {\"md\": \"NOT-COMPUTABLE\", \"ci95\": [\"NOT-COMPUTABLE\", \"NOT-COMPUTABLE\"], \"note\": \"NR values for both groups, no data available for computation.\"}}, \"time_to_oral_diet\": {\"Sun 2023\": {\"md\": 2.0, \"ci95\": [0.4, 3.6], \"note\": \"Data provided in days, no conversion necessary.\"}, \"Sujatha 2019\": {\"md\": \"NOT-COMPUTABLE\", \"ci95\": [\"NOT-COMPUTABLE\", \"NOT-COMPUTABLE\"], \"note\": \"NR values for GDFT group, no data available for computation.\"}}}",
+   "dt": 36.7
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "modelo": "gemma12",
+ "familia": "md",
+ "braco": "B",
+ "replica": 2,
+ "chamadas": 0,
+ "dt": 53.9,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "```json\n{\n  \"time_to_flatus_h\": {\n    \"Sun 2023\": {\n      \"md\": -11.2,\n      \"ci95\": [\n        -17.16,\n        -5.24\n      ],\n      \"note\": \"Note: Standard deviations calculated from provided ranges (assumed 95% CI: mean ± 1.96*SD).\"\n    },\n    \"Coeckelenbergh 2024\": {\n      \"md\": \"NOT-COMPUTABLE\",\n      \"ci95\": [\n        \"NOT-COMPUTABLE\",\n        \"NOT-COMPUTABLE\"\n      ],\n      \"note\": \"NR\"\n    },\n    \"Diaper 2021\": {\n      \"md\": \"NOT-COMPUTABLE\",\n      \"ci95\": [\n        \"NOT-COMPUTABLE\",\n        \"NOT-COMPUTABLE\"\n      ],\n      \"note\": \"NR\"\n    }\n  },\n  \"time_to_oral_diet\": {\n    \"Sun 2023\": {\n      \"md\": -168.0,\n      \"ci95\": [\n        -230.4,\n        -105.6\n      ],\n      \"note\": \"Converted 2.0 days difference to 48 hours (168 hours - 120 hours). Note: Standard deviations calculated from provided ranges (assumed 95% CI: mean ± 1.96*SD).\"\n    },\n    \"Sujatha 2019\": {\n      \"md\": \"NOT-COMPUTABLE\",\n      \"ci95\": [\n        \"NOT-COMPUTABLE\",\n        \"NOT-COMPUTABLE\"\n      ],\n      \"note\": \"Values are qualitative ('comparable').\"\n    }\n  }\n}\n```",
+   "dt": 53.9
+  }
+ ]
+}

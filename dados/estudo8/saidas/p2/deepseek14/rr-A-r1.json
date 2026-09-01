@@ -1,0 +1,16 @@
+{
+ "modelo": "deepseek14",
+ "familia": "rr",
+ "braco": "A",
+ "replica": 1,
+ "chamadas": 0,
+ "dt": 210.4,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "<think>\nAlright, I need to compute the risk ratios (RR) and their 95% confidence intervals (CI) for each study and each outcome based on the data provided. Let's take it step by step.\n\nFirst, I'll tackle the morbidity outcome.\n\n1. **Calvo-Vecino 2018**:\n   - GDFT: 8.6% (8.6% of 209). So, events = 209 * 0.086 = 18.014. But since we can't have a fraction of an event, I'll use the exact fraction. So, 8.6% is 86/1000, so 209 * 86/1000 = 18.014, but I'll keep it as 8.6% for calculation purposes.\n   - Control: 16.6% of 211. So, 211 * 0.166 = 35.066. Again, exact fraction isn't needed; I'll use percentages.\n   - RR = (0.086 / 209) / (0.166 / 211) = (0.086/209) / (0.166/211). Let me compute this:\n     - 0.086 / 209 ≈ 0.0004105\n     - 0.166 / 211 ≈ 0.0007867\n     - RR ≈ 0.0004105 / 0.0007867 ≈ 0.521\n   - Now, for the 95% CI using the log-RR method:\n     - ln(RR) ≈ ln(0.521) ≈ -0.652\n     - SE = sqrt(1/209 + 1/211) ≈ sqrt(0.00478 + 0.00474) ≈ sqrt(0.00952) ≈ 0.0976\n     - 95% CI: -0.652 ± 1.96 * 0.0976 ≈ -0.652 ± 0.191\n     - Exponentiating: exp(-0.652 - 0.191) ≈ exp(-0.843) ≈ 0.431 and exp(-0.652 + 0.191) ≈ exp(-0.461) ≈ 0.629\n     - So, CI is [0.431, 0.629]\n\n2. **Yoon 2023**:\n   - GDFT: 28/39 = 28/39 ≈ 0.7179\n   - Control: 30/36 = 0.8333\n   - RR = (28/39) / (30/36) = (28/39) * (36/30) ≈ (0.7179) / (0.8333) ≈ 0.862\n   - For CI:\n     - ln(0.862) ≈ -0.148\n     - SE = sqrt(1/39 + 1/36) ≈ sqrt(0.0256 + 0.0278) ≈ sqrt(0.0534) ≈ 0.231\n     - 95% CI: -0.148 ± 1.96*0.231 ≈ -0.148 ± 0.453\n     - Exponentiating: exp(-0.148 - 0.453) ≈ exp(-0.601) ≈ 0.547 and exp(-0.148 + 0.453) ≈ exp(0.305) ≈ 1.357\n     - So, CI is [0.547, 1.357]\n\n3. **Diaper 2021**:\n   - GDFT: 101 events, n=200 → 101/200 = 0.505\n   - Control: 117/214 ≈ 0.5467\n   - RR = 0.505 / 0.5467 ≈ 0.923\n   - CI:\n     - ln(0.923) ≈ -0.079\n     - SE = sqrt(1/200 + 1/214) ≈ sqrt(0.005 + 0.00467) ≈ sqrt(0.00967) ≈ 0.0983\n     - 95% CI: -0.079 ± 1.96*0.0983 ≈ -0.079 ± 0.193\n     - Exponentiating: exp(-0.079 - 0.193) ≈ exp(-0.272) ≈ 0.761 and exp(-0.079 + 0.193) ≈ exp(0.114) ≈ 1.121\n     - CI is [0.761, 1.121]\n\n4. **Wu 2024**:\n   - GDFT: 19/58 ≈ 0.3276\n   - Control: 32/56 ≈ 0.5714\n   - RR = 0.3276 / 0.5714 ≈ 0.573\n   - CI:\n     - ln(0.573) ≈ -0.557\n     - SE = sqrt(1/58 + 1/56) ≈ sqrt(0.0172 + 0.01786) ≈ sqrt(0.03506) ≈ 0.1873\n     - 95% CI: -0.557 ± 1.96*0.1873 ≈ -0.557 ± 0.367\n     - Exponentiating: exp(-0.557 - 0.367) ≈ exp(-0.924) ≈ 0.397 and exp(-0.557 + 0.367) ≈ exp(-0.19) ≈ 0.827\n     - CI is [0.397, 0.827]\n\nNext, **mortality**:\n\n1. **de Waal 2021**:\n   - GDFT:",
+   "dt": 210.4
+  }
+ ]
+}

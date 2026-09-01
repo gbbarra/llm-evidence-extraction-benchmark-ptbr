@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "familia": "pool",
+ "braco": "B",
+ "replica": 2,
+ "chamadas": 0,
+ "dt": 72.0,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "I'll help you pool the data. Here are the first two lines:\n\n```json\n{\"morbidity\": {\"mh\": [{\"ev_g\": 18, \"n_g\": 224, \"ev_c\": 36, \"n_c\": 226}, {\"ev_g\": 28, \"n_g\": 39, \"ev_c\": 30, \"n_c\": 36}, {\"ev_g\": 113, \"n_g\": 200, \"ev_c\": 117, \"n_c\": 200}, {\"ev_g\": 19, \"n_g\": 58, \"ev_c\": 32, \"n_c\": 56}], \"dl\": [{\"ev_g\": 18, \"n_g\": 224, \"ev_c\": 36, \"n_c\": 226}, {\"ev_g\": 28, \"n_g\": 39, \"ev_c\": 30, \"n_c\": 36}, {\"ev_g\": 113, \"n_g\": 200, \"ev_c\": 117, \"n_c\": 200}, {\"ev_g\": 19, \"n_g\": 58, \"ev_c\": 32, \"n_c\": 56}], \"studies_used\": [\"Calvo-Vecino 2018\", \"Yoon 2023\", \"Diaper 2021\", \"Wu 2024\"]}, \"mortality\": {\"mh\": [{\"ev_g\": 10, \"n_g\": 258, \"ev_c\": 10, \"n_c\": 244}, {\"ev_g\": 1, \"n_g\": 50, \"ev_c\": 0, \"n_c\": 50}], \"dl\": [{\"ev_g\": 10, \"n_g\": 258, \"ev_c\": 10, \"n_c\": 244}, {\"ev_g\": 1, \"n_g\": 50, \"ev_c\": 0, \"n_c\": 50}], \"studies_used\": [\"de Waal 2021\", \"Sun 2023\"]}}\n```\n\n```json\n{\"morbidity\": {\"mh\": [{\"ev_g\": 25, \"n_g\": 142, \"ev_c\": 30, \"n_c\": 141}, {\"ev_g\": 2, \"n_g\": 50, \"ev_c\": 16, \"n_c\": 50}, {\"ev_g\": 0, \"n_g\": 43, \"ev_c\": 5, \"n_c\": 42}], \"dl\": [{\"ev_g\": 25, \"n_g\": 142, \"ev_c\": 30, \"n_c\": 141}, {\"ev_g\": 2, \"n_g\": 50, \"ev_c\": 16, \"n_c\": 50}, {\"ev_g\": 0, \"n_g\": 43, \"ev_c\": 5, \"n_c\": 42}], \"studies_used\": [\"Arslan 2020\", \"Sun 2023\", \"Castro 2024\"]}, \"mortality\": {\"mh\": {}, \"dl\": {}, \"studies_used\": []}, \"ileus\": {\"mh\": {\"mh\": [{\"ev_g\": 25, \"n_g\": 142, \"ev_c\": 30, \"n_c\": 141}, {\"ev_g\": 2, \"n_g\": 50, \"ev_c\": 16, \"n_c\": 50}, {\"ev_g\": 0, \"n_g\": 43, \"ev_c\": 5, \"n_c\": 42}], \"dl\": [{\"ev_g\": 25, \"n_g\": 142, \"ev_c\": 30, \"n_c\": 141}, {\"ev_g\": 2, \"n_g\": 50, \"ev_c\": 16, \"n_c\": 50}, {\"ev_g\": 0, \"n_g\": 43, \"ev_c\": 5, \"n_c\": 42}], \"studies_used\": [\"Arslan 2020\", \"Sun 2023\", \"Castro 2024\"]}}, \"time_to_flatus_h\": {\"iv\": {\"iv\": [{\"ev_g\": 28.2, \"n_g\": 50, \"ev_c\": 39.4, \"n_c\": 50}, {\"ev_g\": \"NR\", \"n_g\": 49, \"ev_c\": \"NR\", \"n_c\": 49}, {\"ev_g\": \"NR\", \"n_g\": 200, \"ev_c\": \"NR\", \"n_c\": 200}], \"studies_used\": [\"Sun 2023\", \"Coeckelenbergh 2024\", \"Diaper 2021\"]}}, \"time_to_oral_diet\": {\"iv\": {\"iv\": [{\"ev_g\": 4.0, \"n_g\": 50, \"ev_c\": 6.0, \"n_c\": 50}, {\"ev_g\": 2.5, \"n_g\": 102, \"ev_c\": 2.6, \"n_c\": 101}], \"studies_used\": [\"Sun 2023\", \"Sujatha 2019\"]}}}\n```\n\nPlease let me know what to do next!",
+   "dt": 72.0
+  }
+ ]
+}

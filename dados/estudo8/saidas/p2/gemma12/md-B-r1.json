@@ -1,0 +1,16 @@
+{
+ "modelo": "gemma12",
+ "familia": "md",
+ "braco": "B",
+ "replica": 1,
+ "chamadas": 0,
+ "dt": 9.4,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "",
+   "dt": 9.4
+  }
+ ]
+}

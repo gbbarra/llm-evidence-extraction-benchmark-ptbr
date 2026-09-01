@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "familia": "rr",
+ "braco": "A",
+ "replica": 1,
+ "chamadas": 0,
+ "dt": 34.3,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "Here is the JSON object with the computed risk ratios (RR) and 95% confidence intervals (CI95) for each study and outcome:\n\n```json\n{\n  \"morbidity\": {\n    \"Calvo-Vecino 2018\": {\n      \"rr\": 0.500,\n      \"ci95\": [0.369, 0.679]\n    },\n    \"Yoon 2023\": {\n      \"rr\": 0.933,\n      \"ci95\": [0.656, 1.329]\n    },\n    \"Diaper 2021\": {\n      \"rr\": 0.966,\n      \"ci95\": [0.866, 1.084]\n    },\n    \"Wu 2024\": {\n      \"rr\": 0.476,\n      \"ci95\": [0.265, 0.855]\n    }\n  },\n  \"mortality\": {\n    \"de Waal 2021\": {\n      \"rr\": 0.933,\n      \"ci95\": [0.459, 1.893]\n    },\n    \"Sun 2023\": {\n      \"rr\": 0.000,\n      \"ci95\": [0.000, 0.000]\n    }\n  },\n  \"ileus\": {\n    \"Arslan 2020\": {\n      \"rr\": 1.190,\n      \"ci95\": [0.934, 1.517]\n    },\n    \"Sun 2023\": {\n      \"rr\": 0.125,\n      \"ci95\": [0.034, 0.463]\n    },\n    \"Castro 2024\": {\n      \"rr\": undefined,\n      \"ci95\": undefined\n    }\n  }\n}\n```\n\nNote that for the \"Castro 2024\" study under the \"ileus\" outcome, the RR and CI95 are not computable because there are no events in the GDFT group.",
+   "dt": 34.3
+  }
+ ]
+}

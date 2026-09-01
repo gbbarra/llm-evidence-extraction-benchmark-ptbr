@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen14",
+ "familia": "rr",
+ "braco": "A",
+ "replica": 1,
+ "chamadas": 0,
+ "dt": 67.8,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\n  \"morbidity\": {\n    \"Calvo-Vecino 2018\": {\n      \"rr\": 0.518,\n      \"ci95\": [0.355, 0.761]\n    },\n    \"Yoon 2023\": {\n      \"rr\": 0.917,\n      \"ci95\": [0.512, 1.648]\n    },\n    \"Diaper 2021\": {\n      \"rr\": 0.965,\n      \"ci95\": [0.755, 1.228]\n    },\n    \"Wu 2024\": {\n      \"rr\": 0.473,\n      \"ci95\": [0.256, 0.873]\n    }\n  },\n  \"mortality\": {\n    \"de Waal 2021\": {\n      \"rr\": 0.930,\n      \"ci95\": [0.506, 1.708]\n    },\n    \"Sun 2023\": {\n      \"rr\": 0.125,\n      \"ci95\": [0.013, 1.193]\n    }\n  },\n  \"ileus\": {\n    \"Arslan 2020\": {\n      \"rr\": 1.035,\n      \"ci95\": [0.663, 1.617]\n    },\n    \"Sun 2023\": {\n      \"rr\": 0.125,\n      \"ci95\": [0.013, 1.193]\n    },\n    \"Castro 2024\": {\n      \"rr\": \"NOT-COMPUTABLE\",\n      \"ci95\": \"NOT-COMPUTABLE\"\n    }\n  }\n}",
+   "dt": 67.8
+  }
+ ]
+}

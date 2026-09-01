@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "familia": "md",
+ "braco": "B",
+ "replica": 2,
+ "chamadas": 0,
+ "dt": 21.8,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\"time_to_flatus_h\":{\"Sun 2023\":{\"md\":11.2,\"ci95\":[7.86,14.54],\"note\":\"Difference in hours between GDFT (28.2) and control (39.4).\"},\"Coecenlergh 2024\":{\"md\":\"NOT-COMPUTABLE\",\"ci95\":[\"NOT-COMPUTABLE\",\"NOT-COMPUTABLE\"],\"note\":\"Data marked as NR.\"},\"Diaper 2021\":{\"md\":\"NOT-COMPUTABLE\",\"ci95\":[\"NOT-COMPUTABLE\",\"NOT-COMPUTABLE\"],\"note\":\"Data marked as NR.\"}},\"time_to_oral_diet\":{\"Sun 2023\":{\"md\":2.0,\"ci95\":[1.48,2.52],\"note\":\"Difference in days between GDFT (4.0) and control (6.0).\"},\"Sujatha 2019\":{\"md\":\"NOT-COMPUTABLE\",\"ci95\":[\"NOT-COMPUTABLE\",\"NOT-COMPUTABLE\"],\"note\":\"Data marked as NR.\"}}}",
+   "dt": 21.8
+  }
+ ]
+}

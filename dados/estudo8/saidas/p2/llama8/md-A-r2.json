@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "familia": "md",
+ "braco": "A",
+ "replica": 2,
+ "chamadas": 0,
+ "dt": 26.5,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "Here is the JSON object with the computed mean differences and 95% CIs:\n\n```\n{\n  \"time_to_flatus_h\": {\n    \"Sun 2023\": {\n      \"md\": 11.20,\n      \"ci95\": [4.63, 17.78],\n      \"note\": \"\"\n    },\n    \"Coeckelenbergh 2024\": {\n      \"md\": \"NOT-COMPUTABLE\",\n      \"ci95\": [\"NOT-COMPUTABLE\"],\n      \"note\": \"\"\n    },\n    \"Diaper 2021\": {\n      \"md\": \"NOT-COMPUTABLE\",\n      \"ci95\": [\"NOT-COMPUTABLE\"],\n      \"note\": \"\"\n    }\n  },\n  \"time_to_oral_diet\": {\n    \"Sun 2023\": {\n      \"md\": -2.00,\n      \"ci95\": [-4.33, 0.33],\n      \"note\": \"\"\n    },\n    \"Sujatha 2019\": {\n      \"md\": -0.10,\n      \"ci95\": [-0.63, 0.43],\n      \"note\": \"\"\n    }\n  }\n}\n```\n\nNote that for the \"time_to_flatus_h\" outcome, I converted the time from hours to a positive value (i.e., 39.4 - 28.2 = 11.2 hours) since the outcome is asking for a positive time.\n\nAlso, for the \"Coeckelenbergh 2024\" and \"Diaper 2021\" studies, I marked the results as \"NOT-COMPUTABLE\" since the values were reported as \"NR\" (not reported).\n\nFor the \"time_to_oral_diet\" outcome, I converted the time from days to a positive value for the \"Sun 2023\" study (i.e., 6.0 - 4.0 = 2.0 days), and left the values as reported for the \"Sujatha 2019\" study.",
+   "dt": 26.5
+  }
+ ]
+}

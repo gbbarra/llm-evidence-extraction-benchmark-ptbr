@@ -1,0 +1,16 @@
+{
+ "modelo": "gemma12",
+ "familia": "rr",
+ "braco": "A",
+ "replica": 1,
+ "chamadas": 0,
+ "dt": 69.3,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "```json\n{\n  \"morbidity\": {\n    \"Calvo-Vecino 2018\": {\n      \"rr\": 0.515,\n      \"ci95\": [0.313, 0.855]\n    },\n    \"Yoon 2023\": {\n      \"rr\": 0.924,\n      \"ci95\": [0.516, 1.679]\n    },\n    \"Diaper 2021\": {\n      \"rr\": 1.081,\n      \"ci95\": [0.716, 1.628]\n    },\n    \"Wu 2024\": {\n      \"rr\": 0.477,\n      \"ci95\": [0.246, 0.936]\n    }\n  },\n  \"mortality\": {\n    \"de Waal 2021\": {\n      \"rr\": 0.926,\n      \"ci95\": [0.470, 1.794]\n    },\n    \"Sun 2023\": {\n      \"rr\": \"NOT-COMPUTABLE\",\n      \"ci95\": [null, null]\n    }\n  },\n  \"ileus\": {\n    \"Arslan 2020\": {\n      \"rr\": 1.190,\n      \"ci95\": [0.663, 2.172]\n    },\n    \"Sun 2023\": {\n      \"rr\": 0.125,\n      \"ci95\": [0.035, 0.364]\n    },\n    \"Castro 2024\": {\n      \"rr\": \"NOT-COMPUTABLE\",\n      \"ci95\": [null, null]\n    }\n  }\n}\n```",
+   "dt": 69.3
+  }
+ ]
+}

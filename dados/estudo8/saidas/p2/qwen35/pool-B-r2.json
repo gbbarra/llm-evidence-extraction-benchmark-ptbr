@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "familia": "pool",
+ "braco": "B",
+ "replica": 2,
+ "chamadas": 0,
+ "dt": 33.1,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\"morbidity\": {\"mh\": {\"rr\": 1.28, \"ci95\": [0.89, 1.84], \"weight\": 1.43, \"z\": -2.14}, \"dl\": {\"rr\": 1.29, \"ci95\": [0.91, 1.84], \"tau_sq\": 0.042, \"i_sq\": 50.6, \"weight_inv\": 3.17, \"z\": -1.95}, \"studies_used\": [\"Calvo-Vecino 2018\", \"Yoon 2023\", \"Diaper 2021\", \"Wu 2024\"]}, \"mortality\": {\"mh\": {\"rr\": 1.0, \"ci95\": [0.04, 25.56], \"weight\": 0.91}, \"studies_used\": [\"de Waal 2021\", \"Sun 2023\"]}, \"ileus\": {\"mh\": {\"rr\": 1.89, \"ci95\": [0.14, 25.75], \"weight\": 2.65}, \"studies_used\": [\"Arslan 2020\", \"Sun 2023\"]}, \"time_to_flatus_h\": {\"iv\": {\"md\": -11.2, \"ci95\": [-41.4, 18.9], \"weight_inv\": 0.17}, \"studies_used\": [\"Sun 2023\"]}, \"time_to_oral_diet\": {\"mh\": {\"rr\": 0.67, \"ci95\": [0.28, 1.58], \"weight\": 1.14}, \"studies_used\": [\"Sun 2023\"]}}",
+   "dt": 33.1
+  }
+ ]
+}

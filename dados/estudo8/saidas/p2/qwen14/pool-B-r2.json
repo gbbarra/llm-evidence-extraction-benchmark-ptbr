@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen14",
+ "familia": "pool",
+ "braco": "B",
+ "replica": 2,
+ "chamadas": 0,
+ "dt": 80.6,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\"morbidity\": {\"mh\": {\"rr\": 0.48, \"ci95\": [0.33, 0.71]}, \"dl\": {\"rr\": 0.48, \"ci95\": [0.31, 0.73], \"tau2\": 0.0, \"i2\": 0.0}, \"studies_used\": [[8.6, 224, 16.6, 226], [28, 39, 30, 36], [113, 200, 117, 214], [19, 61, 32, 61]]}, \"mortality\": {\"mh\": {\"rr\": 0.93, \"ci95\": [0.41, 2.11]}, \"dl\": {\"rr\": 0.93, \"ci95\": [0.41, 2.11], \"tau2\": 0.0, \"i2\": 0.0}, \"studies_used\": [[10, 248, 10, 234], [1, 50, 0, 50]]}, \"ileus\": {\"mh\": {\"rr\": 1.03, \"ci95\": [0.66, 1.61]}, \"dl\": {\"rr\": 1.03, \"ci95\": [0.66, 1.61], \"tau2\": 0.0, \"i2\": 0.0}, \"studies_used\": [[31, 142, 30, 141], [2, 50, 16, 50], [\"NOT-COMPUTABLE\", 43, \"NOT-COMPUTABLE\", 42]]}, \"time_to_flatus_h\": {\"iv\": {\"md\": -11.2, \"ci95\": [-17.8, -4.6]}, \"studies_used\": [[28.2, 9.2, 50, 39.4, 24.9, 50], [\"NOT-COMPUTABLE\", 0, 49, \"NOT-COMPUTABLE\", 0, 49], [\"NOT-COMPUTABLE\", 0, 200, \"NOT-COMPUTABLE\", 0, 214]]}, \"time_to_oral_diet\": {\"iv\": {\"md\": -2.0, \"ci95\": [-3.3, -0.7]}, \"studies_used\": [[4.0, 2.7, 50, 6.0, 5.0, 50], [\"NOT-COMPUTABLE\", 0, 204, \"NOT-COMPUTABLE\", 0, 102]]}}",
+   "dt": 80.6
+  }
+ ]
+}
