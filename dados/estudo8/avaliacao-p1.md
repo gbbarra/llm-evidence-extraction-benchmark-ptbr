@@ -23,6 +23,20 @@ Five mechanical candidates, all adjudicated to **incomplete-perturbation artifac
 
 Both patterns are the already-registered instrument gaps (#2 derivable totals; #4 prose restatements), now with cross-model evidence. Backlog unchanged, never retroactive.
 
+## Factuality profile (grader-side extension, run 2026-09-01; `p1-factuality.py`)
+
+Divergent cells classified as omission / invention-candidate / value-or-format; the invention screen (numbers absent from the perturbed text and not derivable by %, sum, difference or mean) was also applied to **all** Anchor-2 sheet cells of P3-b (1,104 cells, both replicates):
+
+| model | P1 divergents | omissions | invention candidates | value/format |
+|---|---|---|---|---|
+| gemma12 | 21 | 0 | **0** | 21 |
+| qwen14 | 20 | 6 | **0** | 14 |
+| llama8 | 36 | 0 | **0** | 36 |
+| qwen35 | 20 | 4 | **0** | 16 |
+| deepseek14 | 27 | 2 | **0** | 25 |
+
+MA-2 screen: **zero invention candidates in any model** (NR counts 20–46 per model — the refusal behavior). The pilot's headline — *omission, never invention* — reproduces and strengthens under English instruments: even llama8, the pilot's inventor class, fabricated nothing in the campaign.
+
 ## Notes for the ablation table (H8.5)
 
 The only 1:1 English↔Portuguese comparison this phase supports is gemma12 (the other four have no MA-1 PT record; their PT comparison lands at P3-b on MA-2): **EN 103/124 (83.1%) / stability 96.0%** vs the PT perturbed record's **100/124 (80.6%) / 96.0%** (Study 6) — a +3-cell difference, within the format-class noise band; stability identical to the decimal. First column of the ablation says: no language effect visible at the reading stage. deepseek14's one unparseable replicate echoes its PT behavior class (reasoning leakage) at reduced size.

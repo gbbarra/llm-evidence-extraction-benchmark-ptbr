@@ -1,0 +1,105 @@
+{
+ "gemma12": {
+  "divergents": 21,
+  "omissions": 0,
+  "omission_cells": [],
+  "invention_candidates": 0,
+  "invention_cells": [],
+  "value_or_format": 21
+ },
+ "qwen14": {
+  "divergents": 20,
+  "omissions": 6,
+  "omission_cells": [
+   {
+    "trial": "PMC10694978",
+    "field": "uso_inotropico",
+    "source": "GDFT 18 (36%) vs controle 27 (54%)"
+   },
+   {
+    "trial": "PMC10912221",
+    "field": "uso_inotropico",
+    "source": "norepinefrina GDFT 15 (25.9%) vs controle 24 (42.9%); fenile"
+   },
+   {
+    "trial": "PMC12565272",
+    "field": "asa_gdft",
+    "source": "0:13:6:0"
+   },
+   {
+    "trial": "PMC12565272",
+    "field": "asa_controle",
+    "source": "0:10:6:0"
+   },
+   {
+    "trial": "REF26",
+    "field": "asa_gdft",
+    "source": "ASA-PS III-IV: 98 (50.0%)"
+   },
+   {
+    "trial": "REF26",
+    "field": "asa_controle",
+    "source": "ASA-PS III-IV: 85 (42.9%)"
+   }
+  ],
+  "invention_candidates": 0,
+  "invention_cells": [],
+  "value_or_format": 14
+ },
+ "llama8": {
+  "divergents": 36,
+  "omissions": 0,
+  "omission_cells": [],
+  "invention_candidates": 0,
+  "invention_cells": [],
+  "value_or_format": 36
+ },
+ "qwen35": {
+  "divergents": 20,
+  "omissions": 4,
+  "omission_cells": [
+   {
+    "trial": "PMC10694978",
+    "field": "uso_inotropico",
+    "source": "GDFT 18 (36%) vs controle 27 (54%)"
+   },
+   {
+    "trial": "PMC10912221",
+    "field": "uso_inotropico",
+    "source": "norepinefrina GDFT 15 (25.9%) vs controle 24 (42.9%); fenile"
+   },
+   {
+    "trial": "REF26",
+    "field": "asa_gdft",
+    "source": "ASA-PS III-IV: 98 (50.0%)"
+   },
+   {
+    "trial": "REF26",
+    "field": "asa_controle",
+    "source": "ASA-PS III-IV: 85 (42.9%)"
+   }
+  ],
+  "invention_candidates": 0,
+  "invention_cells": [],
+  "value_or_format": 16
+ },
+ "deepseek14": {
+  "divergents": 27,
+  "omissions": 2,
+  "omission_cells": [
+   {
+    "trial": "PMC12565272",
+    "field": "asa_gdft",
+    "source": "0:13:6:0"
+   },
+   {
+    "trial": "PMC12565272",
+    "field": "asa_controle",
+    "source": "0:10:6:0"
+   }
+  ],
+  "invention_candidates": 0,
+  "invention_cells": [],
+  "value_or_format": 25
+ }
+}
