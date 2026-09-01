@@ -1,0 +1,47 @@
+You are a meta-analysis reviewer doing data extraction. Read the clinical trial article below and fill in the JSON sheet.
+
+RULES:
+1. Copy the numbers EXACTLY as printed in the text, including the sign (if the text says "MD 0.54", write "0.54"; if it says "−0.83", write "-0.83").
+2. If the article does not report a field, write "NR". Never invent and never compute anything yourself — this step is READING only.
+3. The outcome of interest is the CHANGE in HbA1c (%) between the start and the end of follow-up, per arm. If the text reports the change ready-made, fill in "hba1c_change_*". If it reports only baseline and final values, fill in "hba1c_baseline_*" and "hba1c_final_*" and leave the change as "NR".
+4. In "hba1c_change_dispersion_type", say what the number in parentheses or after ± means IN THAT text: "SD" (standard deviation), "SE" (standard error) or "CI95: <lower> to <upper>" (confidence interval). If there is no dispersion, "NR".
+5. If the trial has more than two groups (for example, a factorial design), use the groupings the text itself compares for the HbA1c outcome (for example, the diet margins) and explain that in the "label" field.
+6. "n_randomized" is who was randomized; "n_analyzed" is who entered the analysis of that outcome. If the text gives only one of them, the other is "NR".
+7. Answer ONLY with the JSON, no comments.
+
+ANSWER FORMAT:
+{
+ "study": "<first author and year>",
+ "design": "<parallel 2-arm | 2x2 factorial | cluster | other: describe>",
+ "country": "",
+ "duration": "<with unit, e.g.: 32 weeks | 6 months>",
+ "n_randomized_total": "",
+ "experimental_arm": {
+  "label": "<what the text calls the lower-carbohydrate diet arm>",
+  "intervention_description": "",
+  "n_randomized": "",
+  "n_analyzed": "",
+  "hba1c_change_mean": "",
+  "hba1c_change_dispersion": "",
+  "hba1c_change_dispersion_type": "",
+  "hba1c_baseline_mean": "",
+  "hba1c_baseline_sd": "",
+  "hba1c_final_mean": "",
+  "hba1c_final_sd": ""
+ },
+ "control_arm": {
+  "label": "<what the text calls the comparison arm>",
+  "intervention_description": "",
+  "n_randomized": "",
+  "n_analyzed": "",
+  "hba1c_change_mean": "",
+  "hba1c_change_dispersion": "",
+  "hba1c_change_dispersion_type": "",
+  "hba1c_baseline_mean": "",
+  "hba1c_baseline_sd": "",
+  "hba1c_final_mean": "",
+  "hba1c_final_sd": ""
+ }
+}
+
+ARTICLE:

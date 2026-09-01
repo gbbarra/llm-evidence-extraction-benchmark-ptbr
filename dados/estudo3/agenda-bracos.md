@@ -60,7 +60,9 @@ The 8 seeded errors existed to answer ONE question — "is the audit gate real?"
 - An English harness build (the model-facing WARNING/RESULT dialogue now inside the archived Study-2/3/5 code) is cut together with the next orchestration protocol, never retroactively.
 - Study-6 derived reports (detailed comparison, paired forest, cell grading) were regenerated in English from the same data — presentation only; every number unchanged (98/124, 96.0%, 26 divergents decomposed).
 
-## Study 7 concept (author's directive, 2026-08-31 — "anota aí"; protocol to be written before any run)
+## Study 7 concept (author's directive, 2026-08-31 — "anota aí")
+
+**Protocol registered 2026-08-31** — [protocolo-estudo7.md](../estudo7/protocolo-estudo7.md): **both anchors** (author's decision at protocol time), clean texts, no perturbation, the first study frozen from the English instrument library (both extraction sheets copied verbatim into `dados/estudo7/prompts/`; verified fully English, zero PT remnants). Scoping clause: no reading-proof claim — Studies 1–6 carry that; H7.1 reliability ≥95%, H7.2 errata-panel visibility (100% on the three direction-critical swaps #1/#10/#17), H7.3 pools within tolerance, H7.4 zero inventions. Original concept notes below.
 
 **The side-by-side article, on CLEAN texts — no perturbation this time (author's explicit design decision).** The article shows, in sequence: (1) what the meta-analysis's authors searched and selected (their PRISMA trail); (2) **the sheet the humans filled** — the published evidence tables as the human extraction; (3) **gemma4:12b's extraction, two replicates**, over the ORIGINAL, unperturbed primary texts; (4) the meta-analysis recomputed with the correct calculations (the validated deterministic engine); (5) the comparison with the published calculation.
 
