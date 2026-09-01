@@ -67,3 +67,18 @@ Reading-proof claims (see §2); other models; orchestration (all arithmetic is c
 **N7-1b (declared here, detection-only, before its run)**: when BOTH forms are printed at the same mean — an interval and a "± x" spread — and the sheet declares a single-spread type, compare the spread value against the interval's half-width: **FLAG** if they coincide (±0.06), because a ± that equals the CI half-width is the CI in disguise, and an SD declaration over it is mechanically suspect. A spread that differs from the half-width (a genuine SD/SE printed alongside a CI) is coherent — no flag.
 
 **Hypothesis A7-H3**: N7-1b flags exactly Chen's two arms and no other MA-2 arm.
+
+## Amendment 3 (2026-09-01) — the deployment cell: model under the frozen ten-net harness, clean texts (registered before the run)
+
+**Author's directive**: release the Study-5 configuration — the model orchestrating its own calculations under the frozen warn-only harness — into Study 7's clean-text scenario, to identify the configuration closest to the truth in **real-world conditions: no answer key anywhere in the loop**. This fills the last cell of the series' 2×2 (perturbed/clean × deterministic/harness-orchestrated) and turns Study 7 into a three-configuration comparison on the same corpus: (a) deterministic, no nets — the silent distortion; (b) deterministic + sheet-layer nets (Amendments 1–2) — one mechanical flag; (c) model + conversational ten-net harness — this run.
+
+**Procedure (frozen, reused, declared)**:
+- The **frozen Study-5 pipeline-v3 procedure** (`pipeline3-gemma.py`), run under Study-7 labels: rung **CALC3E7** (the `CALC3*` prefix arms the complete frozen net set — schema-constrained typed calls with per-argument declared sources, source/derivation/type/interval-order/interval-coherence nets, negative-SD check, closing-vs-executed check, warning budgets), pooling **POOL3E7** (G3b instruments), then code totals, the E5-5 product-layer CI-coherence check (flag, never endorse), synthesis with the orphan check, and the forest by code. Harness artifacts land under the harness's own tree (`dados/estudo5/saidas/CALC3E7`, `resultados-POOL3E7.json`), as in Study 6's formal run — precedent §3.5 there.
+- **No new extraction**: the input sheets are Study 7's frozen clean-text MA-2 sheets (first-parseable replicate, the same ones the deterministic analysis used), converted EN→PT by the frozen correspondence tables (`dados/instruments-en/README.md`) and seeded into the pipeline's sheet folder — values untouched, presentation-layer conversion only.
+- The **harness dialogue runs as frozen — in Portuguese**: it is the archived Study-5 instrument, and running it unmodified is the point (the English harness build remains future work, as declared in the instrument library).
+- **No answer key, no published value, and no seal is visible to any model stage**; grader-side comparison happens only afterward, for the record.
+
+**Pre-registered hypotheses**:
+- **AE3-H1 (the deployment claim)**: the product-layer coherence check flags Chen — as it did in Study 6 — with **no key in the loop and no value substituted**.
+- **AE3-H2 (warn-only doctrine visible)**: the pipeline's pool is internally consistent with its own executed sextets and stays in the distorted band (more negative than −0.30) — the harness makes the problem visible, it does not make the number right.
+- **AE3-H3**: zero orphan numbers in the synthesis; zero substitutions anywhere.
