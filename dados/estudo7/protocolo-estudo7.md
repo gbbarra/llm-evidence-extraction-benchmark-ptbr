@@ -45,4 +45,17 @@ Reading-proof claims (see §2); other models; orchestration (all arithmetic is c
 
 ---
 
-*Amendments: (none)*
+## Amendment 1 (2026-09-01) — detection nets over the deterministic downstream (registered before the run)
+
+**Author's directive**: as an advance within Study 7's deterministic sequence, arm detection-only nets over the **same frozen sheets** and re-emit the downstream. Study 5's doctrine unchanged: nets **detect and warn, never substitute a value**. The primary H7.3 record stands exactly as measured (MA-2 pool −0.34); this amendment adds a measured question, not a correction.
+
+**Provenance (the "which harness" question, answered for the record)**: the benchmark has exactly one detection-net harness — Study 5's frozen ten-net, warn-only conversational harness — and its product-level CI-coherence check is what flagged Chen in Study 6's formal MA-2 run. That harness operates on *model-emitted calls and reports*; Study 7's downstream has no model in the loop (§7), so the same code cannot literally run here. This amendment **ports the same doctrine to the sheet layer** as two deterministic nets, declared here before any execution:
+
+- **N7-1 — dispersion-type vs printed source form (per arm, MA-2 sheets)**: locate the arm's declared change mean in the ORIGINAL text (tolerance ±0.05 for the model's rounding); mechanically classify the dispersion form printed around it — single-spread ("± x", "(x)") vs interval ("(a ~ b)", "(a to b)", "(a, b)"); **FLAG** when the sheet declares a single-spread type (SD/SE) but only interval forms are printed at that mean, with the detail strengthened when the declared dispersion equals the printed interval's half-width. A mean not locatable in the text is reported as *not-located*, never flagged.
+- **N7-2 — weight dominance (product layer; Paper 3's recommended flag)**: each study's DerSimonian–Laird weight share in the pool; **FLAG** any share > 40%. Applied to the MA-2 pool and, for symmetry, the MA-1 dichotomous pools — with the declared caveat that pools of ≤2 studies exceed 40% structurally (reported, not counted as dominance findings).
+
+**Inputs**: the existing replicate-1 sheets and the original texts — no re-extraction, **no model call anywhere**. **Outputs**: `redes-deteccao.md` + JSON, and an amendment section in the evaluation record.
+
+**Pre-registered hypotheses**:
+- **A7-H1**: N7-1 flags exactly Chen's two arms and **no other MA-2 arm** (zero false positives).
+- **A7-H2**: among pools with ≥3 studies (MA-2; MA-1 morbidity), N7-2 flags the MA-2 pool — with Chen the dominant study — and does not flag morbidity.
