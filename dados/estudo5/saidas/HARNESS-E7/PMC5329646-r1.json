@@ -1,0 +1,7 @@
+{
+ "modelo": "gemma12",
+ "trial": "PMC5329646",
+ "replica": 1,
+ "origem": "estudo7-clean-sheet-EN2PT",
+ "content": "{\"estudo\": \"Saslow et al. (year not explicitly in text, but based on context of clinical trial report)\", \"braco_experimental\": {\"rotulo\": \"intervention\", \"descricao_intervencao\": \"online intervention based on previously tested recommendations (an ad libitum very low-carbohydrate ketogenic diet with lifestyle factors)\", \"n_randomizado\": \"12\", \"n_analisado\": \"11\", \"hba1c_mudanca_media\": \"-0.8\", \"hba1c_mudanca_dispersao\": \"-1.1 to -0.6\", \"hba1c_mudanca_tipo_dispersao\": \"IC95: -1.1 to -0.6\", \"hba1c_basal_media\": \"7.1\", \"hba1c_basal_dp\": \"0.4\", \"hba1c_final_media\": \"NR\", \"hba1c_final_dp\": \"NR\"}, \"braco_controle\": {\"rotulo\": \"control\", \"descricao_intervencao\": \"online diet program based on the American Diabetes Associations’ \\\"Create Your Plate\\\" diet\", \"n_randomizado\": \"13\", \"n_analisado\": \"8\", \"hba1c_mudanca_media\": \"-0.3\", \"hba1c_mudanca_dispersao\": \"-0.6 to 0.0\", \"hba1c_mudanca_tipo_dispersao\": \"IC95: -0.6 to 0.0\", \"hba1c_basal_media\": \"7.2\", \"hba1c_basal_dp\": \"0.3\", \"hba1c_final_media\": \"NR\", \"hba1c_final_dp\": \"NR\"}}"
+}

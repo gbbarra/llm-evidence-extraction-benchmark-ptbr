@@ -1,0 +1,7 @@
+{
+ "modelo": "gemma12",
+ "trial": "REF12",
+ "replica": 1,
+ "origem": "estudo7-clean-sheet-EN2PT",
+ "content": "{\"estudo\": \"Visser et al. (or implicitly the authors of the provided text, though the first author's name is not in the snippet, it is usually the first author of the study's publication)\", \"braco_experimental\": {\"rotulo\": \"CRHP (carbohydrate-reduced high-protein diet)\", \"descricao_intervencao\": \"A 6-week carbohydrate-reduced high-protein diet (E%: CH30/P30/F40) aiming at ~6% weight loss.\", \"n_randomizado\": \"36\", \"n_analisado\": \"34\", \"hba1c_mudanca_media\": \"-0.83\", \"hba1c_mudanca_dispersao\": \"0.38\", \"hba1c_mudanca_tipo_dispersao\": \"DP\", \"hba1c_basal_media\": \"7.42\", \"hba1c_basal_dp\": \"0.77\", \"hba1c_final_media\": \"NR\", \"hba1c_final_dp\": \"NR\"}, \"braco_controle\": {\"rotulo\": \"CD (conventional diabetes diet)\", \"descricao_intervencao\": \"A 6-week conventional diabetes diet (E%: CH50/P17/F33) aiming at ~6% weight loss.\", \"n_randomizado\": \"36\", \"n_analisado\": \"33\", \"hba1c_mudanca_media\": \"-0.66\", \"hba1c_mudanca_dispersao\": \"0.37\", \"hba1c_mudanca_tipo_dispersao\": \"DP\", \"hba1c_basal_media\": \"7.40\", \"hba1c_basal_dp\": \"0.70\", \"hba1c_final_media\": \"NR\", \"hba1c_final_dp\": \"NR\"}}"
+}

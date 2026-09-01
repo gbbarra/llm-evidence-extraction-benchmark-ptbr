@@ -1,0 +1,7 @@
+{
+ "modelo": "gemma12",
+ "trial": "PMC5048014",
+ "replica": 1,
+ "origem": "estudo7-clean-sheet-EN2PT",
+ "content": "{\"estudo\": \"Brackground et al. (Year not explicitly provided in snippet, but data is from a multi-center RCT)\", \"braco_experimental\": {\"rotulo\": \"VLCK diet group\", \"descricao_intervencao\": \"very low-calorie-ketogenic (VLCK) diet (<50g of carbohydrate daily) as part of the Diaprokal Method\", \"n_randomizado\": \"45\", \"n_analisado\": \"45\", \"hba1c_mudanca_media\": \"NR\", \"hba1c_mudanca_dispersao\": \"NR\", \"hba1c_mudanca_tipo_dispersao\": \"NR\", \"hba1c_basal_media\": \"6.9\", \"hba1c_basal_dp\": \"1.1\", \"hba1c_final_media\": \"6.0\", \"hba1c_final_dp\": \"0.7\"}, \"braco_controle\": {\"rotulo\": \"LC diet group\", \"descricao_intervencao\": \"standard low-calorie diet based on the ADA (American Diabetes Association) guidelines\", \"n_randomizado\": \"44\", \"n_analisado\": \"40\", \"hba1c_mudanca_media\": \"NR\", \"hba1c_mudanca_dispersao\": \"NR\", \"hba1c_mudanca_tipo_dispersao\": \"NR\", \"hba1c_basal_media\": \"6.8\", \"hba1c_basal_dp\": \"1.0\", \"hba1c_final_media\": \"6.4\", \"hba1c_final_dp\": \"0.8\"}}"
+}

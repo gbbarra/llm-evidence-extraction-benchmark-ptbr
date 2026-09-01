@@ -72,6 +72,28 @@ The author directed a re-run of the analysis **with the detection net armed**, a
 
 What the ladder measured, honestly: the naive port catches nothing (the ambiguity is *printed in the source*); the sharpened rule catches the experimental arm mechanically — one flag is operationally sufficient (any flag sends a human to Chen's table, which resolves both arms) — and the control arm shows the limit of mechanical detection against a primary whose prose dispersion matches nothing. Backlog (registered, **not run**): N7-1c — compare the declared spread against the interval-implied SD (`dp_de_ic`) when both forms are printed; expected to catch both arms; awaits the author's decision, as every rung does. Structural note: two-study pools (mortality, ileus) exceed the 40% share by construction and are reported, never counted.
 
+## Amendment 3 — the deployment cell, run 2026-09-01 (9.4 min; registered before the run)
+
+The author's question: **in real-world conditions — clean texts, no answer key anywhere — which configuration comes closest to the truth, and which is safest?** This run filled the last cell of the series' 2×2: the model orchestrating its own calculations under the **frozen Study-5 ten-net harness**, over the same frozen clean sheets, with no key, no published value, and no seal visible to any model stage. Artifacts: `harness-run/` (summary, synthesis, forest), `CALC3E7`/`POOL3E7` transcripts under the harness tree.
+
+| hypothesis | pre-registered claim | measured | verdict |
+|---|---|---|---|
+| AE3-H1 | the product coherence layer flags Chen, key-free, as in Study 6 | **zero coherence flags** — Chen's conversation was flawless in form: 3 turns, 0 warnings, arguments straight from sheet fields with correct source declarations, a coherent CI [−0.73, −0.47] containing its own MD | **fails — informatively** (see below) |
+| AE3-H2 | pool consistent with its own sextets, still in the distorted band | −0.32 [−0.46, −0.19], I² 83.3%, digit-consistent with its own sextets; mechanical truth over the same sheets −0.34 (Δ 0.02, one Goday route choice) | **passes** — the harness warns, it does not fix |
+| AE3-H3 | zero orphans, zero substitutions | zero orphans; zero substitutions; live warnings all resolved by confirm-or-correct (1 arity on Saslow-17, 3 derivation declarations on Goday) | **passes** |
+
+**Why AE3-H1's failure is the finding.** Study 6's Chen flag and Study 7's Chen poison are **two different defect classes on the same trial**. In Study 6, that run's own fresh (perturbed-world) sheet led the model to *report* a CI that did not contain its own MD — a **conversation-layer defect**, exactly what the product coherence check polices, and it fired. In Study 7, the defect lives **in the sheet itself** (a real printed "±0.3" declared SD): every downstream call is then well-formed — legitimate field, correct source declaration, coherent arithmetic — and all ten conversation nets are satisfied. **Conversation nets catch conversation defects; sheet defects sail through them coherently.** The only net that touched this poison is Amendment 2's sheet-vs-source net (N7-1b).
+
+**The three-configuration comparison (the deployment answer), same corpus, same sheets, no key in any loop:**
+
+| configuration | pool delivered | what happened to the Chen poison | live slips caught |
+|---|---|---|---|
+| (a) deterministic engine, no nets (main run) | −0.34 [−0.51, −0.18] | **silent** | — |
+| (b) deterministic + sheet-layer nets (Amendments 1–2) | −0.34 (unchanged, warn-only) | **flagged**, exp arm, with both source quotes | — |
+| (c) model + frozen ten-net conversational harness (this run) | −0.32 [−0.46, −0.19] | **not flagged** (well-formed) | 1 arity + 3 derivation warnings, all confirm-or-correct |
+
+**Deployment conclusion, stated plainly**: no warn-only configuration makes the number right — by doctrine. Without an answer key, the safest architecture measured so far is the **deterministic engine + sheet-vs-source detection nets** (the only layer that saw this poison), with the conversational harness as a *complement* for orchestration-layer slips (which it caught live, four times, in nine minutes) — the two net families cover **different layers and are not substitutes**. And even combined they flagged one of two poisoned arms: the flag's job is to send a human to the table, which is where safety actually lives.
+
 ## Declared exploratory: clean (E7) vs perturbed (E6) MA-1 sheets — descriptive only
 
 Confounded by the instrument-language change (PT→EN) by design; no hypothesis. Descriptively: mechanical score 103/124 (83.1%) clean-EN vs 100/124 (80.6%) perturbed-PT; the divergent classes are the same families; two differences of note — the Castro blood-loss omission occurred only in the perturbed run, and Sujatha's n divergence occurred only there (clean-EN sheet matched the key). Nothing here separates language from perturbation from run-to-run variance.

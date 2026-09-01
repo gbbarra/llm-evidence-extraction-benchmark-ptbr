@@ -1,0 +1,7 @@
+{
+ "modelo": "gemma12",
+ "trial": "REF9",
+ "replica": 1,
+ "origem": "estudo7-clean-sheet-EN2PT",
+ "content": "{\"estudo\": \"Saslow 2023\", \"braco_experimental\": {\"rotulo\": \"VLC\", \"descricao_intervencao\": \"Very low-carbohydrate (VLC) diet, defined as 20 to 35 nonfiber g of carbohydrates a day.\", \"n_randomizado\": \"23\", \"n_analisado\": \"23\", \"hba1c_mudanca_media\": \"-0.35\", \"hba1c_mudanca_dispersao\": \"0.07\", \"hba1c_mudanca_tipo_dispersao\": \"SE\", \"hba1c_basal_media\": \"6.09\", \"hba1c_basal_dp\": \"0.45\", \"hba1c_final_media\": \"5.74\", \"hba1c_final_dp\": \"NR\"}, \"braco_controle\": {\"rotulo\": \"DASH\", \"descricao_intervencao\": \"Dietary Approaches to Stop Hypertension (DASH) diet, limiting sodium to <2,300 mg daily and fat intake to 20% to 30% of calories per day.\", \"n_randomizado\": \"25\", \"n_analisado\": \"25\", \"hba1c_mudanca_media\": \"-0.14\", \"hba1c_mudanca_dispersao\": \"0.07\", \"hba1c_mudanca_tipo_dispersao\": \"SE\", \"hba1c_basal_media\": \"6.10\", \"hba1c_basal_dp\": \"0.55\", \"hba1c_final_media\": \"5.97\", \"hba1c_final_dp\": \"NR\"}}"
+}

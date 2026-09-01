@@ -1,0 +1,89 @@
+===== A3 · stage E: seeding the frozen clean-text sheets (no extraction)
+  seeded PMC5329646
+  seeded REF9
+  seeded PMC9606840
+  seeded PMC7535044
+  seeded REF12
+  seeded PMC6024764
+  seeded PMC5048014
+
+===== stage 1: per-study calls under the full frozen net set (CALC3E7)
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-1.1, -0.6], "fonte": ["hba1c_mudanca_dispersao (inferior)", "
+    HARNESS: AVISO: a função dp_de_ic exige 3 argumentos — dp_de_ic(inferior, superior, n) — e você enviou 2. Reemita a cha
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-1.1, -0.6, 11], "fonte": ["hba1c_mudanca_dispersao (inferior)
+    HARNESS: RESULTADO: 0.42
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.6, 0.0, 8], "fonte": ["hba1c_mudanca_dispersao (inferior)",
+    HARNESS: RESULTADO: 0.43
+    MODELO : {"funcao": "md", "argumentos": [-0.8, 0.42, 11, -0.3, 0.43, 8], "fonte": ["hba1c_mudanca_media", "re
+    HARNESS: RESULTADO: -0.5
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.8, 0.42, 11, -0.3, 0.43, 8], "fonte": ["hba1c_mudanca_media"
+    HARNESS: RESULTADO: [-0.89, -0.11]
+  Saslow 2017: 6 turnos · avisos de conteúdo: 1 · final: {"md": -0.5, "ic95": [-0.89, -0.11]}
+    MODELO : {"funcao": "md", "argumentos": [-0.35, 0.07, 23, -0.14, 0.07, 25], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.21
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.35, 0.07, 23, -0.14, 0.07, 25], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.25, -0.17]
+  Saslow 2023: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.21, "ic95": [-0.25, -0.17]}
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.33, -0.19], "fonte": ["hba1c_mudanca_dispersao (inferior)",
+    HARNESS: AVISO: a função dp_de_ic exige 3 argumentos — dp_de_ic(inferior, superior, n) — e você enviou 2. Reemita a cha
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.33, -0.19, 73], "fonte": ["hba1c_mudanca_dispersao (inferio
+    HARNESS: RESULTADO: 0.31
+    MODELO : {"funcao": "dp_de_ic", "argumentos": [-0.1, 0.02, 69], "fonte": ["hba1c_mudanca_dispersao (inferior)
+    HARNESS: RESULTADO: 0.25
+    MODELO : {"funcao": "md", "argumentos": [-0.26, 0.31, 73, -0.04, 0.25, 69], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.22
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.26, 0.31, 73, -0.04, 0.25, 69], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.31, -0.13]
+  Dorans 2022: 6 turnos · avisos de conteúdo: 1 · final: {"md": -0.22, "ic95": [-0.31, -0.13]}
+    MODELO : {"funcao": "md", "argumentos": [-1.6, 0.3, 43, -1.0, 0.3, 42], "fonte": ["hba1c_mudanca_media", "hba
+    HARNESS: RESULTADO: -0.6
+    MODELO : {"funcao": "ic95_md", "argumentos": [-1.6, 0.3, 43, -1.0, 0.3, 42], "fonte": ["hba1c_mudanca_media",
+    HARNESS: RESULTADO: [-0.73, -0.47]
+  Chen 2020: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.6, "ic95": [-0.73, -0.47]}
+    MODELO : {"funcao": "md", "argumentos": [-0.83, 0.38, 34, -0.66, 0.37, 33], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.17
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.83, 0.38, 34, -0.66, 0.37, 33], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.35, 0.01]
+  Thomsen 2022: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.17, "ic95": [-0.35, 0.01]}
+    MODELO : {"funcao": "md", "argumentos": [-0.63, 1.18, 24, -0.31, 0.70, 25], "fonte": ["hba1c_mudanca_media", 
+    HARNESS: RESULTADO: -0.32
+    MODELO : {"funcao": "ic95_md", "argumentos": [-0.63, 1.18, 24, -0.31, 0.70, 25], "fonte": ["hba1c_mudanca_med
+    HARNESS: RESULTADO: [-0.87, 0.23]
+  Wang 2018: 3 turnos · avisos de conteúdo: 0 · final: {"md": -0.32, "ic95": [-0.87, 0.23]}
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.1, 0.7], "fonte": ["hba1c_basal_dp", "hba1c_final_dp"]
+    HARNESS: RESULTADO: 0.96
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.0, 0.8], "fonte": ["hba1c_basal_dp", "hba1c_final_dp"]
+    HARNESS: RESULTADO: 0.92
+    MODELO : {"funcao": "md", "argumentos": [6.0, 0.96, 45, 6.4, 0.92, 40], "fonte": ["hba1c_final_media", "deriv
+    HARNESS: AVISO: a derivação '0.96 (derivação anterior)' usa 0.96, que não é um valor da ficha. Confira e reemita (corri
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.1, 0.7], "fonte": ["hba1c_basal_dp", "hba1c_final_dp"]
+    HARNESS: RESULTADO: 0.96
+    MODELO : {"funcao": "dp_mudanca_r05", "argumentos": [1.0, 0.8], "fonte": ["hba1c_basal_dp", "hba1c_final_dp"]
+    HARNESS: RESULTADO: 0.92
+    MODELO : {"funcao": "md", "argumentos": [6.0, 0.96, 45, 6.4, 0.92, 40], "fonte": ["hba1c_final_media", "deriv
+    HARNESS: AVISO: a derivação '0.96 (dp_mudanca_r05 para grupo experimental)' usa 0.96, que não é um valor da ficha. Conf
+    MODELO : {"funcao": "md", "argumentos": [6.0, 0.96, 45, 6.4, 0.92, 40], "fonte": ["hba1c_final_media", "deriv
+    HARNESS: RESULTADO: -0.4
+    MODELO : {"funcao": "ic95_md", "argumentos": [6.0, 0.96, 45, 6.4, 0.92, 40], "fonte": ["hba1c_final_media", "
+    HARNESS: AVISO: a derivação '0.96 (dp_mudanca_r05)' usa 0.96, que não é um valor da ficha. Confira e reemita (corrigida
+    MODELO : {"funcao": "ic95_md", "argumentos": [6.0, 0.96, 45, 6.4, 0.92, 40], "fonte": ["hba1c_final_media", "
+    HARNESS: RESULTADO: [-0.8, -0.0]
+  Goday 2016: 10 turnos · avisos de conteúdo: 3 · final: {"md": -0.4, "ic95": [-0.8, -0.0]}
+
+===== stage 2: pooling (G3b instruments)
+    MODELO : {"funcao": "pool_dl_md", "sextetos": [[-0.8, 0.42, 11.0, -0.3, 0.43, 8.0], [-0.35, 0.07, 23.0, -0.14
+    HARNESS: RESULTADO: {"md": -0.32, "ic95": [-0.46, -0.19], "tau2": 0.021, "i2_pct": 83.3}
+== POOL3E7: consistente com os próprios sextetos: True · final {"md": -0.32, "ic95": [-0.46, -0.19]} · pool dos próprios: {"md": -0.32, "ic95": [-0.46, -0.19], "tau2": 0.021, "i2_pct": 83.3}
+
+===== stage 3+4: totals by code · product coherence check · synthesis
+  no incoherent reported CIs
+  orphans: ZERO
+
+===== stage 5: forest by code
+
+===== grader-side comparison (AFTER the run; nothing above saw a key)
+  model pool: {"md": -0.32, "ic95": [-0.46, -0.19]}
+  mechanical truth (same sheets): {"md": -0.34, "ic95": [-0.51, -0.18], "tau2": 0.0333, "i2_pct": 79.0} · delta md 0.02
+  published (grader-side only): -0.24 [-0.32, -0.16]
+
+== AMENDMENT 3 RUN COMPLETE in 9.4 min · consistent: True · coherence flags: none · orphans: 0

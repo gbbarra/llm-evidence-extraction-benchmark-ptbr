@@ -1,0 +1,23 @@
+{
+ "estudo": "Thomsen 2022",
+ "turnos": [
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [-0.83, 0.38, 34, -0.66, 0.37, 33], \"fonte\": [\"hba1c_mudanca_media\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_media\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: -0.17"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.83, 0.38, 34, -0.66, 0.37, 33], \"fonte\": [\"hba1c_mudanca_media\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_media\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: [-0.35, 0.01]"
+  },
+  {
+   "emitiu": "{\"funcao\": \"fim\", \"argumentos\": [-0.17, -0.35, 0.01], \"fonte\": [\"resultado-anterior\", \"resultado-anterior\", \"resultado-anterior\"]}"
+  }
+ ],
+ "final": {
+  "md": -0.17,
+  "ic95": [
+   -0.35,
+   0.01
+  ]
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "estudo": "Goday 2016",
+ "turnos": [
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.1, 0.7], \"fonte\": [\"hba1c_basal_dp\", \"hba1c_final_dp\"], \"derivacao\": \"Não aplicável\"}",
+   "resultado": "RESULTADO: 0.96"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.0, 0.8], \"fonte\": [\"hba1c_basal_dp\", \"hba1c_final_dp\"], \"derivacao\": \"Não aplicável\"}",
+   "resultado": "RESULTADO: 0.92"
+  },
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [6.0, 0.96, 45, 6.4, 0.92, 40], \"fonte\": [\"hba1c_final_media\", \"derivado\", \"n_analisado\", \"hba1c_final_media\", \"derivado\", \"n_analisado\"], \"derivacao\": \"0.96 (derivação anterior)\"}",
+   "aviso": "AVISO: a derivação '0.96 (derivação anterior)' usa 0.96, que não é um valor da ficha. Confira e reemita (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.1, 0.7], \"fonte\": [\"hba1c_basal_dp\", \"hba1c_final_dp\"], \"derivacao\": \"Não aplicável\"}",
+   "resultado": "RESULTADO: 0.96"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_mudanca_r05\", \"argumentos\": [1.0, 0.8], \"fonte\": [\"hba1c_basal_dp\", \"hba1c_final_dp\"], \"derivacao\": \"Não aplicável\"}",
+   "resultado": "RESULTADO: 0.92"
+  },
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [6.0, 0.96, 45, 6.4, 0.92, 40], \"fonte\": [\"hba1c_final_media\", \"derivado\", \"n_analisado\", \"hba1c_final_media\", \"derivado\", \"n_analisado\"], \"derivacao\": \"0.96 (dp_mudanca_r05 para grupo experimental)\"}",
+   "aviso": "AVISO: a derivação '0.96 (dp_mudanca_r05 para grupo experimental)' usa 0.96, que não é um valor da ficha. Confira e reemita (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [6.0, 0.96, 45, 6.4, 0.92, 40], \"fonte\": [\"hba1c_final_media\", \"derivado\", \"n_analisado\", \"hba1c_final_media\", \"derivado\", \"n_analisado\"], \"derivacao\": \"0.96 (dp_mudanca_r05)\"}",
+   "resultado": "RESULTADO: -0.4"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [6.0, 0.96, 45, 6.4, 0.92, 40], \"fonte\": [\"hba1c_final_media\", \"derivado\", \"n_analisado\", \"hba1c_final_media\", \"derivado\", \"n_analisado\"], \"derivacao\": \"0.96 (dp_mudanca_r05)\"}",
+   "aviso": "AVISO: a derivação '0.96 (dp_mudanca_r05)' usa 0.96, que não é um valor da ficha. Confira e reemita (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [6.0, 0.96, 45, 6.4, 0.92, 40], \"fonte\": [\"hba1c_final_media\", \"derivado\", \"n_analisado\", \"hba1c_final_media\", \"derivado\", \"n_analisado\"], \"derivacao\": \"0.96 (dp_mudanca_r05)\"}",
+   "resultado": "RESULTADO: [-0.8, -0.0]"
+  },
+  {
+   "emitiu": "{\"funcao\": \"fim\", \"argumentos\": [-0.4, -0.8, -0.0], \"fonte\": [\"resultado-anterior\", \"resultado-anterior\", \"resultado-anterior\"]}"
+  }
+ ],
+ "final": {
+  "md": -0.4,
+  "ic95": [
+   -0.8,
+   -0.0
+  ]
+ }
+}
