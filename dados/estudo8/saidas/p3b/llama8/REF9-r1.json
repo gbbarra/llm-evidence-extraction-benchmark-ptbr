@@ -1,0 +1,10 @@
+{
+ "modelo": "llama8",
+ "trial": "REF9",
+ "replica": 1,
+ "content": "{\n \"study\": \"Saslow et al. 2023\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"\",\n \"duration\": \"4-month period\",\n \"n_randomized_total\": \"83\",\n \"experimental_arm\": {\n  \"label\": \"VLC diet\",\n  \"intervention_description\": \"Very low-carbohydrate (VLC) diet, decreasing their carbohydrate intake to 20 to 35 nonfiber g of carbohydrates a day, with the goal of achieving nutritional ketosis\",\n  \"n_randomized\": \"43\",\n  \"n_analyzed\": \"43\",\n  \"hba1c_change_mean\": \"-0.32\",\n  \"hba1c_change_dispersion\": \"0.07\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"6.09\",\n  \"hba1c_baseline_sd\": \"0.45\",\n  \"hba1c_final_mean\": \"5.74\",\n  \"hba1c_final_sd\": \"0.08\"\n },\n \"control_arm\": {\n  \"label\": \"DASH diet\",\n  \"intervention_description\": \"Dietary Approaches to Stop Hypertension (DASH) diet, limiting sodium to <2,300 mg daily and fat intake to 20% to 30% of calories per day\",\n  \"n_randomized\": \"40\",\n  \"n_analyzed\": \"40\",\n  \"hba1c_change_mean\": \"-0.14\",\n  \"hba1c_change_dispersion\": \"0.07\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"6.10\",\n  \"hba1c_baseline_sd\": \"0.07\",\n  \"hba1c_final_mean\": \"5.97\",\n  \"hba1c_final_sd\": \"0.07\"\n }\n}",
+ "dt": 77.7809755,
+ "tokens": 404,
+ "prompt_tokens": 9347,
+ "finish": "stop"
+}

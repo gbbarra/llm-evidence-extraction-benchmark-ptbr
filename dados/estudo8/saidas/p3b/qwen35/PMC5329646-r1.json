@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen35",
+ "trial": "PMC5329646",
+ "replica": 1,
+ "content": "{\n \"study\": \"Saslow et al. (implied)\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"United States\",\n \"duration\": \"32 weeks\",\n \"n_randomized_total\": \"25\",\n \"experimental_arm\": {\n  \"label\": \"intervention group\",\n  \"intervention_description\": \"online ad libitum very low-carbohydrate ketogenic diet (20-50g nonfiber carbs/day) with lifestyle factors (positive affect regulation, mindful eating, sleep, physical activity)\",\n  \"n_randomized\": \"12\",\n  \"n_analyzed\": \"12\",\n  \"hba1c_change_mean\": \"-0.8\",\n  \"hba1c_change_dispersion\": \"1.1 to -0.6\",\n  \"hba1c_change_dispersion_type\": \"CI95: -1.1 to -0.6\",\n  \"hba1c_baseline_mean\": \"7.6\",\n  \"hba1c_baseline_sd\": \"NR\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"control group\",\n  \"intervention_description\": \"online diet program based on American Diabetes Associations' Create Your Plate (plate method, low-fat)\",\n  \"n_randomized\": \"13\",\n  \"n_analyzed\": \"8\",\n  \"hba1c_change_mean\": \"-0.3\",\n  \"hba1c_change_dispersion\": \"-0.6 to 0.0\",\n  \"hba1c_change_dispersion_type\": \"CI95: -0.6 to 0.0\",\n  \"hba1c_baseline_mean\": \"7.6\",\n  \"hba1c_baseline_sd\": \"NR\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}",
+ "dt": 106.7457518,
+ "tokens": 441,
+ "prompt_tokens": 11755,
+ "finish": "stop"
+}

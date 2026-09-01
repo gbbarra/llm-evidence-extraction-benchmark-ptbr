@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen14",
+ "trial": "PMC5329646",
+ "replica": 2,
+ "content": "{\n \"study\": \"Saslow 2017\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"USA\",\n \"duration\": \"32 weeks\",\n \"n_randomized_total\": \"25\",\n \"experimental_arm\": {\n  \"label\": \"very low-carbohydrate ketogenic diet and lifestyle recommendations\",\n  \"intervention_description\": \"recommendations on how to eat an ad libitum very low-carbohydrate ketogenic diet, to reduce carbohydrate intake to between 20-50 grams of nonfiber carbohydrates a day with the goal of restricting carbohydrate intake to a level at which a low amount of ketone production is induced, called nutritional ketosis. Lifestyle recommendations included behavioral adherence strategies aimed at increasing positive affect regulation and mindful eating, as well as encouraging physical activity and sleep starting in week 6.\",\n  \"n_randomized\": \"12\",\n  \"n_analyzed\": \"11\",\n  \"hba1c_change_mean\": \"-0.8\",\n  \"hba1c_change_dispersion\": \"-1.1 to -0.6\",\n  \"hba1c_change_dispersion_type\": \"CI95: -1.1 to -0.6\",\n  \"hba1c_baseline_mean\": \"5.8\",\n  \"hba1c_baseline_sd\": \"0.4\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"American Diabetes Associations’ “Create Your Plate” diet\",\n  \"intervention_description\": \"a low-fat diet that emphasizes green vegetables, lean protein sources, and somewhat limited starchy and sweet foods. All proportions are based on a 9-inch plate: half the plate is filled with nonstarchy vegetables, one-quarter with carbohydrates, and one-quarter with lean proteins.\",\n  \"n_randomized\": \"13\",\n  \"n_analyzed\": \"8\",\n  \"hba1c_change_mean\": \"-0.3\",\n  \"hba1c_change_dispersion\": \"-0.6 to 0.0\",\n  \"hba1c_change_dispersion_type\": \"CI95: -0.6 to 0.0\",\n  \"hba1c_baseline_mean\": \"7.6\",\n  \"hba1c_baseline_sd\": \"0.3\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}",
+ "dt": 80.6511086,
+ "tokens": 521,
+ "prompt_tokens": 11730,
+ "finish": "stop"
+}

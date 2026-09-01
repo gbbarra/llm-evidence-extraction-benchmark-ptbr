@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen14",
+ "trial": "PMC5329646",
+ "replica": 1,
+ "content": "{\n \"study\": \"Saslow 2016\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"USA\",\n \"duration\": \"32 weeks\",\n \"n_randomized_total\": \"25\",\n \"experimental_arm\": {\n  \"label\": \"very low-carbohydrate ketogenic diet and lifestyle recommendations\",\n  \"intervention_description\": \"ad libitum very low-carbohydrate ketogenic diet, with lifestyle recommendations including behavioral adherence strategies aimed at increasing positive affect regulation and mindful eating\",\n  \"n_randomized\": \"12\",\n  \"n_analyzed\": \"11\",\n  \"hba1c_change_mean\": \"-0.8\",\n  \"hba1c_change_dispersion\": \"-1.1 to -0.6\",\n  \"hba1c_change_dispersion_type\": \"CI95: -1.1 to -0.6\",\n  \"hba1c_baseline_mean\": \"5.8\",\n  \"hba1c_baseline_sd\": \"0.4\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"American Diabetes Associations’ 'Create Your Plate' diet\",\n  \"intervention_description\": \"plate method diet emphasizing green vegetables, lean protein sources, and somewhat limited starchy and sweet foods\",\n  \"n_randomized\": \"13\",\n  \"n_analyzed\": \"8\",\n  \"hba1c_change_mean\": \"-0.3\",\n  \"hba1c_change_dispersion\": \"-0.6 to 0.0\",\n  \"hba1c_change_dispersion_type\": \"CI95: -0.6 to 0.0\",\n  \"hba1c_baseline_mean\": \"7.6\",\n  \"hba1c_baseline_sd\": \"0.3\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}",
+ "dt": 239.696307,
+ "tokens": 419,
+ "prompt_tokens": 11730,
+ "finish": "stop"
+}

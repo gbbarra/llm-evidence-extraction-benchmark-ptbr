@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen35",
+ "trial": "REF9",
+ "replica": 1,
+ "content": "{\n \"study\": \"Saslow et al. (2023)\",\n \"design\": \"2x2 factorial\",\n \"country\": \"United States\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": \"83\",\n \"experimental_arm\": {\n  \"label\": \"VLC diet\",\n  \"intervention_description\": \"Very low-carbohydrate diet (20-35 nonfiber g/day carbohydrates)\",\n  \"n_randomized\": \"NR\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"-0.32\",\n  \"hba1c_change_dispersion\": \"0.07\",\n  \"hba1c_change_dispersion_type\": \"SE\",\n  \"hba1c_baseline_mean\": \"6.09\",\n  \"hba1c_baseline_sd\": \"NR\",\n  \"hba1c_final_mean\": \"5.74\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"DASH diet\",\n  \"intervention_description\": \"Dietary Approaches to Stop Hypertension (limit sodium <2,300 mg, fat 20-30% of calories)\",\n  \"n_randomized\": \"NR\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"-0.14\",\n  \"hba1c_change_dispersion\": \"0.07\",\n  \"hba1c_change_dispersion_type\": \"SE\",\n  \"hba1c_baseline_mean\": \"6.10\",\n  \"hba1c_baseline_sd\": \"NR\",\n  \"hba1c_final_mean\": \"5.97\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}",
+ "dt": 90.3066959,
+ "tokens": 410,
+ "prompt_tokens": 10188,
+ "finish": "stop"
+}

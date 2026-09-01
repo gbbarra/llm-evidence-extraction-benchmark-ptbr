@@ -1,0 +1,10 @@
+{
+ "modelo": "llama8",
+ "trial": "REF12",
+ "replica": 2,
+ "content": "{\n \"study\": \"A CRHP vs CD diet for 6 weeks in type 2 diabetes\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"\",\n \"duration\": \"6 weeks\",\n \"n_randomized_total\": \"72\",\n \"experimental_arm\": {\n  \"label\": \"CRHP diet\",\n  \"intervention_description\": \"Carbohydrate-reduced high-protein diet with percentage of total energy intake (E%): CH30/P30/F40\",\n  \"n_randomized\": \"36\",\n  \"n_analyzed\": \"34\",\n  \"hba1c_change_mean\": \"-9.1 ± 4.2\",\n  \"hba1c_change_dispersion\": \"4.2\",\n  \"hba1c_change_dispersion_type\": \"SE\",\n  \"hba1c_baseline_mean\": \"57.6 ± 8.4\",\n  \"hba1c_baseline_sd\": \"NR\",\n  \"hba1c_final_mean\": \"8.09 ± 0.77\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"CD diet\",\n  \"intervention_description\": \"Conventional diabetes diet with percentage of total energy intake (E%): CH50/P17/F33\",\n  \"n_randomized\": \"36\",\n  \"n_analyzed\": \"33\",\n  \"hba1c_change_mean\": \"-7.2 ± 4.0\",\n  \"hba1c_change_dispersion\": \"4.0\",\n  \"hba1c_change_dispersion_type\": \"SE\",\n  \"hba1c_baseline_mean\": \"57.4 ± 7.7\",\n  \"hba1c_baseline_sd\": \"NR\",\n  \"hba1c_final_mean\": \"7.40 ± 0.70\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}",
+ "dt": 34.5974847,
+ "tokens": 398,
+ "prompt_tokens": 11816,
+ "finish": "stop"
+}

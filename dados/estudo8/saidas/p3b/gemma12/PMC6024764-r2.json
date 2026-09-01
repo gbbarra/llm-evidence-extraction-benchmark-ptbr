@@ -1,0 +1,10 @@
+{
+ "modelo": "gemma12",
+ "trial": "PMC6024764",
+ "replica": 2,
+ "content": "```json\n{\n \"study\": \"Li et al. (year not explicitly provided in title/abstract, 2015-2016 study period)\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"China\",\n \"duration\": \"3 months\",\n \"n_randomized_total\": \"56\",\n \"experimental_arm\": {\n  \"label\": \"LCD group\",\n  \"intervention_description\": \"Low-carbohydrate diet (LCD) using a 'six-point formula' education; replaced staple food/meal with 60 g/day nuts (males) or 50 g/day (females).\",\n  \"n_randomized\": \"28\",\n  \"n_analyzed\": \"24\",\n  \"hba1c_change_mean\": \"-0.63\",\n  \"hba1c_change_dispersion\": \"1.18\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"7.43\",\n  \"hba1c_baseline_sd\": \"1.29\",\n  \"hba1c_final_mean\": \"6.80\",\n  \"hba1c_final_sd\": \"0.83\"\n },\n \"control_arm\": {\n  \"label\": \"LFD group\",\n  \"intervention_description\": \"Low-fat diet (LFD) using a 'six-point formula' education.\",\n  \"n_randomized\": \"28\",\n  \"n_analyzed\": \"25\",\n  \"hba1c_change_mean\": \"-0.31\",\n  \"hba1c_change_dispersion\": \"0.70\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"7.79\",\n  \"hba1c_baseline_sd\": \"1.20\",\n  \"hba1c_final_mean\": \"7.48\",\n  \"hba1c_final_sd\": \"1.15\"\n }\n}\n```",
+ "dt": 65.9499474,
+ "tokens": 501,
+ "prompt_tokens": 9013,
+ "finish": "stop"
+}

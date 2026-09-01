@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen35",
+ "trial": "REF12",
+ "replica": 2,
+ "content": "{\n \"study\": \"Pedersen et al. 2021\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Denmark\",\n \"duration\": \"6 weeks\",\n \"n_randomized_total\": \"72\",\n \"experimental_arm\": {\n  \"label\": \"CRHP diet (carbohydrate-reduced high-protein diet)\",\n  \"intervention_description\": \"Dietary intervention with 30E% carbohydrate, 30E% protein, 40E% fat under energy restriction aiming for ~6% weight loss\",\n  \"n_randomized\": \"36\",\n  \"n_analyzed\": \"34\",\n  \"hba1c_change_mean\": \"-0.18\",\n  \"hba1c_change_dispersion\": \"-0.32 to -0.03\",\n  \"hba1c_change_dispersion_type\": \"CI95: -0.32 to -0.03\",\n  \"hba1c_baseline_mean\": \"8.09\",\n  \"hba1c_baseline_sd\": \"0.77\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"CD diet (conventional diabetes diet)\",\n  \"intervention_description\": \"Conventional diabetes diet with 50E% carbohydrate, 17E% protein, 33E% fat under energy restriction aiming for ~6% weight loss\",\n  \"n_randomized\": \"36\",\n  \"n_analyzed\": \"33\",\n  \"hba1c_change_mean\": \"-0.56\",\n  \"hba1c_change_dispersion\": \"NR\",\n  \"hba1c_change_dispersion_type\": \"NR\",\n  \"hba1c_baseline_mean\": \"7.40\",\n  \"hba1c_baseline_sd\": \"0.70\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}",
+ "dt": 38.7321266,
+ "tokens": 466,
+ "prompt_tokens": 12770,
+ "finish": "stop"
+}

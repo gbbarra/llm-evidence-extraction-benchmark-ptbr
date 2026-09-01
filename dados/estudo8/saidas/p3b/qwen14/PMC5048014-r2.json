@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen14",
+ "trial": "PMC5048014",
+ "replica": 2,
+ "content": "{\n \"study\": \"Brackground 2023\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Spain\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": \"89\",\n \"experimental_arm\": {\n  \"label\": \"VLCK diet group\",\n  \"intervention_description\": \"VLCK diet (<50 g of carbohydrate daily) as part of a commercial weight-loss program (DiaproKal Method) based on a high-biological-value protein preparations diet and natural foods\",\n  \"n_randomized\": \"45\",\n  \"n_analyzed\": \"45\",\n  \"hba1c_change_mean\": \"−1.6\",\n  \"hba1c_change_dispersion\": \"0.7\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"6.89\",\n  \"hba1c_baseline_sd\": \"1.06\",\n  \"hba1c_final_mean\": \"5.3\",\n  \"hba1c_final_sd\": \"0.7\"\n },\n \"control_arm\": {\n  \"label\": \"LC diet group\",\n  \"intervention_description\": \"low-calorie diet (LC diet group) based on the ADA (American Diabetes Association) guidelines\",\n  \"n_randomized\": \"44\",\n  \"n_analyzed\": \"40\",\n  \"hba1c_change_mean\": \"0.3\",\n  \"hba1c_change_dispersion\": \"0.8\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"6.88\",\n  \"hba1c_baseline_sd\": \"1.03\",\n  \"hba1c_final_mean\": \"7.1\",\n  \"hba1c_final_sd\": \"0.8\"\n }\n}",
+ "dt": 59.4331524,
+ "tokens": 397,
+ "prompt_tokens": 9894,
+ "finish": "stop"
+}

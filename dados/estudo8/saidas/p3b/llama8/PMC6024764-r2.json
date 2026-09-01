@@ -1,0 +1,10 @@
+{
+ "modelo": "llama8",
+ "trial": "PMC6024764",
+ "replica": 2,
+ "content": "{\n  \"study\": \"Li-Li Wang, Qian Wang, et al. (2019)\",\n  \"design\": \"parallel 2-arm\",\n  \"country\": \"China\",\n  \"duration\": \"3 months\",\n  \"n_randomized_total\": \"56\",\n  \"experimental_arm\": {\n    \"label\": \"low-carbohydrate diet (LCD)\",\n    \"intervention_description\": \"LCD with a six-point formula and nuts consumption\",\n    \"n_randomized\": \"28\",\n    \"n_analyzed\": \"24\",\n    \"hba1c_change_mean\": \"-0.63\",\n    \"hba1c_change_dispersion\": \"1.18\",\n    \"hba1c_change_dispersion_type\": \"SD\",\n    \"hba1c_baseline_mean\": \"7.43\",\n    \"hba1c_baseline_sd\": \"1.39\",\n    \"hba1c_final_mean\": \"6.80\",\n    \"hba1c_final_sd\": \"0.83\"\n  },\n  \"control_arm\": {\n    \"label\": \"low-fat diet (LFD)\",\n    \"intervention_description\": \"LFD with a six-point formula\",\n    \"n_randomized\": \"28\",\n    \"n_analyzed\": \"25\",\n    \"hba1c_change_mean\": \"-0.31\",\n    \"hba1c_change_dispersion\": \"0.70\",\n    \"hba1c_change_dispersion_type\": \"SD\",\n    \"hba1c_baseline_mean\": \"7.79\",\n    \"hba1c_baseline_sd\": \"1.20\",\n    \"hba1c_final_mean\": \"7.48\",\n    \"hba1c_final_sd\": \"1.15\"\n  }\n}",
+ "dt": 29.0867929,
+ "tokens": 366,
+ "prompt_tokens": 8514,
+ "finish": "stop"
+}

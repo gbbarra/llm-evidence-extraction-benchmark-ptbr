@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen14",
+ "trial": "REF12",
+ "replica": 2,
+ "content": "{\n \"study\": \"Kamal et al. 2021\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Denmark\",\n \"duration\": \"6 weeks\",\n \"n_randomized_total\": \"72\",\n \"experimental_arm\": {\n  \"label\": \"Carbohydrate-reduced high-protein diet (CRHP)\",\n  \"intervention_description\": \"CRHP diet with 30% of total energy intake from carbohydrate, 30% from protein, and 40% from fat\",\n  \"n_randomized\": \"36\",\n  \"n_analyzed\": \"34\",\n  \"hba1c_change_mean\": \"-1.9\",\n  \"hba1c_change_dispersion\": \"3.5 to -0.3\",\n  \"hba1c_change_dispersion_type\": \"CI95: -3.5 to -0.3\",\n  \"hba1c_baseline_mean\": \"57.6\",\n  \"hba1c_baseline_sd\": \"8.4\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"Conventional diabetes diet (CD)\",\n  \"intervention_description\": \"CD diet with 50% of total energy intake from carbohydrate, 17% from protein, and 33% from fat\",\n  \"n_randomized\": \"36\",\n  \"n_analyzed\": \"33\",\n  \"hba1c_change_mean\": \"NR\",\n  \"hba1c_change_dispersion\": \"NR\",\n  \"hba1c_change_dispersion_type\": \"NR\",\n  \"hba1c_baseline_mean\": \"57.4\",\n  \"hba1c_baseline_sd\": \"7.7\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}",
+ "dt": 65.1636641,
+ "tokens": 412,
+ "prompt_tokens": 12748,
+ "finish": "stop"
+}

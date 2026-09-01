@@ -1,0 +1,10 @@
+{
+ "modelo": "llama8",
+ "trial": "REF9",
+ "replica": 2,
+ "content": "{\n  \"study\": \"Saslow et al. 2023\",\n  \"design\": \"parallel 2-arm\",\n  \"country\": \"United States\",\n  \"duration\": \"4 months\",\n  \"n_randomized_total\": \"83\",\n  \"experimental_arm\": {\n    \"label\": \"VLC diet\",\n    \"intervention_description\": \"Very low-carbohydrate diet, decreasing carbohydrate intake to 20-35 nonfiber g/day, aiming for nutritional ketosis\",\n    \"n_randomized\": \"43\",\n    \"n_analyzed\": \"NR\",\n    \"hba1c_change_mean\": \"-0.32%\",\n    \"hba1c_change_dispersion\": \"0.07%\",\n    \"hba1c_change_dispersion_type\": \"SE\",\n    \"hba1c_baseline_mean\": \"6.09%\",\n    \"hba1c_baseline_sd\": \"0.45%\",\n    \"hba1c_final_mean\": \"5.77%\",\n    \"hba1c_final_sd\": \"0.08%\"\n  },\n  \"control_arm\": {\n    \"label\": \"DASH diet\",\n    \"intervention_description\": \"DASH dietary pattern, limiting sodium to <2,300 mg/day and fat intake to 20-30% of calories/day\",\n    \"n_randomized\": \"40\",\n    \"n_analyzed\": \"NR\",\n    \"hba1c_change_mean\": \"-0.14%\",\n    \"hba1c_change_dispersion\": \"0.07%\",\n    \"hba1c_change_dispersion_type\": \"SE\",\n    \"hba1c_baseline_mean\": \"6.10%\",\n    \"hba1c_baseline_sd\": \"0.07%\",\n    \"hba1c_final_mean\": \"5.97%\",\n    \"hba1c_final_sd\": \"0.07%\"\n  }\n}",
+ "dt": 31.5515608,
+ "tokens": 389,
+ "prompt_tokens": 9347,
+ "finish": "stop"
+}

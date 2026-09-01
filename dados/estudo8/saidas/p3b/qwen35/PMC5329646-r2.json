@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen35",
+ "trial": "PMC5329646",
+ "replica": 2,
+ "content": "{\n \"study\": \"Saslow et al. (implied year based on trial ID NCT01967992)\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"United States\",\n \"duration\": \"32 weeks\",\n \"n_randomized_total\": \"25\",\n \"experimental_arm\": {\n  \"label\": \"Very Low-Carbohydrate Ketogenic Diet and Lifestyle Recommendations\",\n  \"intervention_description\": \"ad libitum very low-carbohydrate ketogenic diet (20-50g nonfiber carbs/day), lifestyle factors including physical activity, sleep, positive affect regulation, and mindfulness; emailed weekly lessons\",\n  \"n_randomized\": \"12\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"-0.8\",\n  \"hba1c_change_dispersion\": \"1.1\",\n  \"hba1c_change_dispersion_type\": \"CI95: -1.1 to -0.6\",\n  \"hba1c_baseline_mean\": \"NR\",\n  \"hba1c_baseline_sd\": \"NR\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"American Diabetes Associations' Create Your Plate Diet\",\n  \"intervention_description\": \"low-fat diet based on plate method (half nonstarchy vegetables, one-quarter carbs, one-quarter lean protein); emailed lessons weekly then every 4 weeks\",\n  \"n_randomized\": \"13\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"-0.3\",\n  \"hba1c_change_dispersion\": \"0.6\",\n  \"hba1c_change_dispersion_type\": \"CI95: -0.6 to 0.0\",\n  \"hba1c_baseline_mean\": \"NR\",\n  \"hba1c_baseline_sd\": \"NR\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}",
+ "dt": 38.9604876,
+ "tokens": 472,
+ "prompt_tokens": 11755,
+ "finish": "stop"
+}

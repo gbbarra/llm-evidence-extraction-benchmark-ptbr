@@ -1,0 +1,10 @@
+{
+ "modelo": "llama8",
+ "trial": "PMC5329646",
+ "replica": 1,
+ "content": "{\n \"study\": \"Saslow et al. 2017\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"\",\n \"duration\": \"32 weeks\",\n \"n_randomized_total\": \"25\",\n \"experimental_arm\": {\n  \"label\": \"Very Low-Carbohydrate Ketogenic Diet and Lifestyle Recommendations\",\n  \"intervention_description\": \"Ad libitum very low-carbohydrate ketogenic diet with lifestyle changes (sleep, exercise, positive affect regulation, mindful eating)\",\n  \"n_randomized\": \"12\",\n  \"n_analyzed\": \"12\",\n  \"hba1c_change_mean\": \"-0.8%\",\n  \"hba1c_change_dispersion\": \"0.1%\",\n  \"hba1c_change_dispersion_type\": \"CI95: -1.1% to -0.6%\",\n  \"hba1c_baseline_mean\": \"5.8%\",\n  \"hba1c_baseline_sd\": \"0.4\",\n  \"hba1c_final_mean\": \"5.0%\",\n  \"hba1c_final_sd\": \"0.5\"\n },\n \"control_arm\": {\n  \"label\": \"American Diabetes Associations' \\\"Create Your Plate\\\" Diet\",\n  \"intervention_description\": \"Low-fat diet emphasizing green vegetables, lean protein sources, and limited starchy and sweet foods\",\n  \"n_randomized\": \"13\",\n  \"n_analyzed\": \"13\",\n  \"hba1c_change_mean\": \"-0.3%\",\n  \"hba1c_change_dispersion\": \"0.1%\",\n  \"hba1c_change_dispersion_type\": \"CI95: -0.6% to 0.0%\",\n  \"hba1c_baseline_mean\": \"7.6%\",\n  \"hba1c_baseline_sd\": \"0.3\",\n  \"hba1c_final_mean\": \"7.3%\",\n  \"hba1c_final_sd\": \"0.4\"\n }\n}",
+ "dt": 99.2212175,
+ "tokens": 409,
+ "prompt_tokens": 11099,
+ "finish": "stop"
+}

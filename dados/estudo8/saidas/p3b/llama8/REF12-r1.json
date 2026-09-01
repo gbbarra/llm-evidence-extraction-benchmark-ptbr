@@ -1,0 +1,10 @@
+{
+ "modelo": "llama8",
+ "trial": "REF12",
+ "replica": 1,
+ "content": "{\n  \"study\": \"Various authors, 2021\",\n  \"design\": \"parallel 2-arm\",\n  \"country\": \"\",\n  \"duration\": \"6 weeks\",\n  \"n_randomized_total\": \"80\",\n  \"experimental_arm\": {\n    \"label\": \"CRHP diet\",\n    \"intervention_description\": \"Carbohydrate-reduced high-protein diet (30E% CH, 30E% P, 40E% F)\",\n    \"n_randomized\": \"34\",\n    \"n_analyzed\": \"34\",\n    \"hba1c_change_mean\": \"-9.1 ± 4.2\",\n    \"hba1c_change_dispersion\": \"4.2\",\n    \"hba1c_change_dispersion_type\": \"SD\",\n    \"hba1c_baseline_mean\": \"57.6 ± 8.4\",\n    \"hba1c_baseline_sd\": \"NR\",\n    \"hba1c_final_mean\": \"-9.1 ± 4.2\",\n    \"hba1c_final_sd\": \"NR\"\n  },\n  \"control_arm\": {\n    \"label\": \"CD diet\",\n    \"intervention_description\": \"Conventional diabetes diet (50E% CH, 17E% P, 33E% F)\",\n    \"n_randomized\": \"33\",\n    \"n_analyzed\": \"33\",\n    \"hba1c_change_mean\": \"-7.2 ± 4.0\",\n    \"hba1c_change_dispersion\": \"4.0\",\n    \"hba1c_change_dispersion_type\": \"SD\",\n    \"hba1c_baseline_mean\": \"57.4 ± 7.7\",\n    \"hba1c_baseline_sd\": \"NR\",\n    \"hba1c_final_mean\": \"-7.2 ± 4.0\",\n    \"hba1c_final_sd\": \"NR\"\n  }\n}",
+ "dt": 98.6524136,
+ "tokens": 400,
+ "prompt_tokens": 11816,
+ "finish": "stop"
+}

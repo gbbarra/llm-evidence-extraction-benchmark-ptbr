@@ -1,0 +1,269 @@
+{
+ "gemma12": {
+  "ma1_pools": {
+   "morbidity": {
+    "rr": 0.779,
+    "ic95": [
+     0.569,
+     1.065
+    ],
+    "tau2": 0.0714,
+    "i2": 75.6
+   },
+   "mortality": {
+    "rr": 1.023,
+    "ic95": [
+     0.447,
+     2.344
+    ],
+    "tau2": 0.0,
+    "i2": 0.0
+   }
+  },
+  "ma2": {
+   "estudos_no_pool": 7,
+   "faltas": [],
+   "pool_perturbado": {
+    "md": -0.52,
+    "ic95": [
+     -0.82,
+     -0.22
+    ],
+    "tau2": 0.1367,
+    "i2_pct": 91.3
+   },
+   "lens": {
+    "md": -0.27,
+    "ic95": [
+     -0.38,
+     -0.17
+    ],
+    "tau2": 0.0052,
+    "i2_pct": 28.6
+   },
+   "publicado": {
+    "md": -0.24,
+    "ic95": [
+     -0.32,
+     -0.16
+    ]
+   },
+   "lens_beside_published": false
+  }
+ },
+ "qwen14": {
+  "ma1_pools": {
+   "morbidity": {
+    "rr": 0.779,
+    "ic95": [
+     0.569,
+     1.065
+    ],
+    "tau2": 0.0714,
+    "i2": 75.6
+   },
+   "mortality": {
+    "rr": 1.021,
+    "ic95": [
+     0.446,
+     2.337
+    ],
+    "tau2": 0.0,
+    "i2": 0.0
+   }
+  },
+  "ma2": {
+   "estudos_no_pool": 6,
+   "faltas": [
+    "Thomsen 2022"
+   ],
+   "pool_perturbado": {
+    "md": -0.59,
+    "ic95": [
+     -1.04,
+     -0.13
+    ],
+    "tau2": 0.2932,
+    "i2_pct": 95.2
+   },
+   "lens": {
+    "md": -0.63,
+    "ic95": [
+     -1.08,
+     -0.17
+    ],
+    "tau2": 0.2907,
+    "i2_pct": 95.2
+   },
+   "publicado": {
+    "md": -0.24,
+    "ic95": [
+     -0.32,
+     -0.16
+    ]
+   },
+   "lens_beside_published": false
+  }
+ },
+ "llama8": {
+  "ma1_pools": {
+   "morbidity": {
+    "rr": 0.771,
+    "ic95": [
+     0.562,
+     1.059
+    ],
+    "tau2": 0.0738,
+    "i2": 76.2
+   },
+   "mortality": {
+    "rr": 1.023,
+    "ic95": [
+     0.447,
+     2.344
+    ],
+    "tau2": 0.0,
+    "i2": 0.0
+   }
+  },
+  "ma2": {
+   "estudos_no_pool": 5,
+   "faltas": [
+    "Dorans 2022",
+    "Thomsen 2022"
+   ],
+   "pool_perturbado": {
+    "md": -0.55,
+    "ic95": [
+     -0.98,
+     -0.13
+    ],
+    "tau2": 0.1965,
+    "i2_pct": 90.4
+   },
+   "lens": {
+    "md": -0.6,
+    "ic95": [
+     -1.02,
+     -0.18
+    ],
+    "tau2": 0.1986,
+    "i2_pct": 90.5
+   },
+   "publicado": {
+    "md": -0.24,
+    "ic95": [
+     -0.32,
+     -0.16
+    ]
+   },
+   "lens_beside_published": false
+  }
+ },
+ "qwen35": {
+  "ma1_pools": {
+   "morbidity": {
+    "rr": 0.779,
+    "ic95": [
+     0.569,
+     1.065
+    ],
+    "tau2": 0.0714,
+    "i2": 75.6
+   },
+   "mortality": {
+    "rr": 1.019,
+    "ic95": [
+     0.445,
+     2.336
+    ],
+    "tau2": 0.0,
+    "i2": 0.0
+   }
+  },
+  "ma2": {
+   "estudos_no_pool": 6,
+   "faltas": [
+    "Saslow 2023"
+   ],
+   "pool_perturbado": {
+    "md": -0.78,
+    "ic95": [
+     -1.66,
+     0.11
+    ],
+    "tau2": 0.9197,
+    "i2_pct": 95.1
+   },
+   "lens": {
+    "md": -0.8,
+    "ic95": [
+     -1.67,
+     0.07
+    ],
+    "tau2": 0.8977,
+    "i2_pct": 95.0
+   },
+   "publicado": {
+    "md": -0.24,
+    "ic95": [
+     -0.32,
+     -0.16
+    ]
+   },
+   "lens_beside_published": false
+  }
+ },
+ "deepseek14": {
+  "ma1_pools": {
+   "morbidity": {
+    "rr": 0.775,
+    "ic95": [
+     0.565,
+     1.063
+    ],
+    "tau2": 0.0737,
+    "i2": 76.4
+   },
+   "mortality": {
+    "rr": 0.98,
+    "ic95": [
+     0.428,
+     2.246
+    ],
+    "tau2": 0.0,
+    "i2": 0.0
+   }
+  },
+  "ma2": {
+   "estudos_no_pool": 7,
+   "faltas": [],
+   "pool_perturbado": {
+    "md": -0.45,
+    "ic95": [
+     -1.21,
+     0.3
+    ],
+    "tau2": 1.0085,
+    "i2_pct": 99.1
+   },
+   "lens": {
+    "md": -0.47,
+    "ic95": [
+     -1.22,
+     0.28
+    ],
+    "tau2": 0.9968,
+    "i2_pct": 99.1
+   },
+   "publicado": {
+    "md": -0.24,
+    "ic95": [
+     -0.32,
+     -0.16
+    ]
+   },
+   "lens_beside_published": false
+  }
+ }
+}

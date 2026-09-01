@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen35",
+ "trial": "PMC5048014",
+ "replica": 2,
+ "content": "{\n \"study\": \"Diaprokal Method et al. (implied from text, but no specific citation year provided in snippet)\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Spain\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": \"89\",\n \"experimental_arm\": {\n  \"label\": \"VLCK diet group\",\n  \"intervention_description\": \"Very low-calorie-ketogenic diet (<50 g carbohydrate daily) with protein preparations and natural foods\",\n  \"n_randomized\": \"45\",\n  \"n_analyzed\": \"45\",\n  \"hba1c_change_mean\": \"-1.6\",\n  \"hba1c_change_dispersion\": \"0.7\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"6.9\",\n  \"hba1c_baseline_sd\": \"1.1\",\n  \"hba1c_final_mean\": \"5.3\",\n  \"hba1c_final_sd\": \"0.7\"\n },\n \"control_arm\": {\n  \"label\": \"LC diet group\",\n  \"intervention_description\": \"Low-calorie diet based on ADA guidelines (<30% fat, 10-20% protein, 45-60% carbohydrates)\",\n  \"n_randomized\": \"44\",\n  \"n_analyzed\": \"40\",\n  \"hba1c_change_mean\": \"0.3\",\n  \"hba1c_change_dispersion\": \"0.8\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"6.8\",\n  \"hba1c_baseline_sd\": \"1.0\",\n  \"hba1c_final_mean\": \"7.1\",\n  \"hba1c_final_sd\": \"0.8\"\n }\n}",
+ "dt": 35.1664779,
+ "tokens": 428,
+ "prompt_tokens": 9892,
+ "finish": "stop"
+}

@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen35",
+ "trial": "PMC7535044",
+ "replica": 2,
+ "content": "{\n \"study\": \"Wang et al. (implied by text context, e.g., 'National Taiwan University Hospital' protocol link)\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Taiwan\",\n \"duration\": \"18 months\",\n \"n_randomized_total\": \"92\",\n \"experimental_arm\": {\n  \"label\": \"LCD group (low-carbohydrate diet)\",\n  \"intervention_description\": \"< 90 g/d carbohydrate intake without energy restriction; sulfonylurea/insulin reduced to half doses if compliant\",\n  \"n_randomized\": \"41\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"-1.44\",\n  \"hba1c_change_dispersion\": \"0.30\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"9.95\",\n  \"hba1c_baseline_sd\": \"1.04\",\n  \"hba1c_final_mean\": \"6.84\",\n  \"hba1c_final_sd\": \"0.59\"\n },\n \"control_arm\": {\n  \"label\": \"TDD group (traditional diabetic diet)\",\n  \"intervention_description\": \"Macronutrient percentage 50–60% carbohydrates, 1.0–1.2 g/kg protein, ≤ 30% fat; calculated calorie intake based on BMI\",\n  \"n_randomized\": \"42\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"-1.01\",\n  \"hba1c_change_dispersion\": \"1.40\",\n  \"hba1c_change_dispersion_type\": \"CI95: -1.40 to -0.63\",\n  \"hba1c_baseline_mean\": \"8.70\",\n  \"hba1c_baseline_sd\": \"1.01\",\n  \"hba1c_final_mean\": \"7.69\",\n  \"hba1c_final_sd\": \"1.06\"\n }\n}",
+ "dt": 39.4107752,
+ "tokens": 476,
+ "prompt_tokens": 12439,
+ "finish": "stop"
+}

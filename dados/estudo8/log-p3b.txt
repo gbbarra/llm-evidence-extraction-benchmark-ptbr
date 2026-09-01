@@ -1,0 +1,84 @@
+SHA-256 perturbacoes-estudo3.json: a8bc6e1ae2faa8a2b8af75afb6c1fafd354a1d08076ffe2183cc319ecc171b04
+initial memory sweep:
+
+===== Study 8 · P3-b MA-2 · gemma12 [gemma4:12b] · 7 primaries x 2 (EN sheet)
+  gemma12 PMC5329646-r1: 205s, 487 tok, fim=stop
+  gemma12 PMC5329646-r2: 65s, 480 tok, fim=stop
+  gemma12 REF9-r1: 172s, 482 tok, fim=stop
+  gemma12 REF9-r2: 65s, 497 tok, fim=stop
+  gemma12 PMC9606840-r1: 185s, 525 tok, fim=stop
+  gemma12 PMC9606840-r2: 69s, 517 tok, fim=stop
+  gemma12 PMC7535044-r1: 608s, 3428 tok, fim=stop
+  gemma12 PMC7535044-r2: 59s, 438 tok, fim=stop
+  gemma12 REF12-r1: 210s, 445 tok, fim=stop
+  gemma12 REF12-r2: 67s, 495 tok, fim=stop
+  gemma12 PMC6024764-r1: 158s, 494 tok, fim=stop
+  gemma12 PMC6024764-r2: 66s, 501 tok, fim=stop
+  gemma12 PMC5048014-r1: 166s, 465 tok, fim=stop
+  gemma12 PMC5048014-r2: 59s, 452 tok, fim=stop
+
+===== Study 8 · P3-b MA-2 · qwen14 [qwen3:14b] · 7 primaries x 2 (EN sheet)
+  qwen14 PMC5329646-r1: 240s, 419 tok, fim=stop
+  qwen14 PMC5329646-r2: 81s, 521 tok, fim=stop
+  qwen14 REF9-r1: 198s, 452 tok, fim=stop
+  qwen14 REF9-r2: 65s, 433 tok, fim=stop
+  qwen14 PMC9606840-r1: 209s, 458 tok, fim=stop
+  qwen14 PMC9606840-r2: 67s, 446 tok, fim=stop
+  qwen14 PMC7535044-r1: 258s, 477 tok, fim=stop
+  qwen14 PMC7535044-r2: 82s, 522 tok, fim=stop
+  qwen14 REF12-r1: 254s, 400 tok, fim=stop
+  qwen14 REF12-r2: 65s, 412 tok, fim=stop
+  qwen14 PMC6024764-r1: 167s, 395 tok, fim=stop
+  qwen14 PMC6024764-r2: 58s, 391 tok, fim=stop
+  qwen14 PMC5048014-r1: 184s, 395 tok, fim=stop
+  qwen14 PMC5048014-r2: 59s, 397 tok, fim=stop
+
+===== Study 8 · P3-b MA-2 · llama8 [llama3.1:8b] · 7 primaries x 2 (EN sheet)
+  llama8 PMC5329646-r1: 99s, 409 tok, fim=stop
+  llama8 PMC5329646-r2: 33s, 395 tok, fim=stop
+  llama8 REF9-r1: 78s, 404 tok, fim=stop
+  llama8 REF9-r2: 32s, 389 tok, fim=stop
+  llama8 PMC9606840-r1: 81s, 413 tok, fim=stop
+  llama8 PMC9606840-r2: 29s, 358 tok, fim=stop
+  llama8 PMC7535044-r1: 90s, 378 tok, fim=stop
+  llama8 PMC7535044-r2: 35s, 411 tok, fim=stop
+  llama8 REF12-r1: 99s, 400 tok, fim=stop
+  llama8 REF12-r2: 35s, 398 tok, fim=stop
+  llama8 PMC6024764-r1: 68s, 355 tok, fim=stop
+  llama8 PMC6024764-r2: 29s, 366 tok, fim=stop
+  llama8 PMC5048014-r1: 74s, 376 tok, fim=stop
+  llama8 PMC5048014-r2: 29s, 359 tok, fim=stop
+
+===== Study 8 · P3-b MA-2 · qwen35 [qwen3.5:9b] · 7 primaries x 2 (EN sheet)
+  qwen35 PMC5329646-r1: 107s, 441 tok, fim=stop
+  qwen35 PMC5329646-r2: 39s, 472 tok, fim=stop
+  qwen35 REF9-r1: 90s, 410 tok, fim=stop
+  qwen35 REF9-r2: 36s, 440 tok, fim=stop
+  qwen35 PMC9606840-r1: 91s, 400 tok, fim=stop
+  qwen35 PMC9606840-r2: 38s, 458 tok, fim=stop
+  qwen35 PMC7535044-r1: 105s, 427 tok, fim=stop
+  qwen35 PMC7535044-r2: 39s, 476 tok, fim=stop
+  qwen35 REF12-r1: 109s, 456 tok, fim=stop
+  qwen35 REF12-r2: 39s, 466 tok, fim=stop
+  qwen35 PMC6024764-r1: 85s, 420 tok, fim=stop
+  qwen35 PMC6024764-r2: 33s, 409 tok, fim=stop
+  qwen35 PMC5048014-r1: 87s, 390 tok, fim=stop
+  qwen35 PMC5048014-r2: 35s, 428 tok, fim=stop
+
+===== Study 8 · P3-b MA-2 · deepseek14 [deepseek-r1:14b] · 7 primaries x 2 (EN sheet)
+  deepseek14 PMC5329646-r1: 412s, 1496 tok, fim=stop
+  deepseek14 PMC5329646-r2: 189s, 1191 tok, fim=stop
+  deepseek14 REF9-r1: 280s, 967 tok, fim=stop
+  deepseek14 REF9-r2: 304s, 1967 tok, fim=stop
+  deepseek14 PMC9606840-r1: 283s, 907 tok, fim=stop
+  deepseek14 PMC9606840-r2: 138s, 895 tok, fim=stop
+  deepseek14 PMC7535044-r1: 344s, 969 tok, fim=stop
+  deepseek14 PMC7535044-r2: 167s, 1040 tok, fim=stop
+  deepseek14 REF12-r1: 370s, 1063 tok, fim=stop
+  deepseek14 REF12-r2: 137s, 847 tok, fim=stop
+  deepseek14 PMC6024764-r1: 263s, 1034 tok, fim=stop
+  deepseek14 PMC6024764-r2: 146s, 978 tok, fim=stop
+  deepseek14 PMC5048014-r1: 250s, 809 tok, fim=stop
+  deepseek14 PMC5048014-r2: 133s, 875 tok, fim=stop
+
+== P3-B MA-2 EXTRACTION COMPLETE in 155.1 min

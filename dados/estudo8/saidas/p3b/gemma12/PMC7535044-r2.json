@@ -1,0 +1,10 @@
+{
+ "modelo": "gemma12",
+ "trial": "PMC7535044",
+ "replica": 2,
+ "content": "```json\n{\n \"study\": \"Author not explicitly mentioned in text (National Taiwan University Hospital study) 2016\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Taiwan\",\n \"duration\": \"18 months\",\n \"n_randomized_total\": \"92\",\n \"experimental_arm\": {\n  \"label\": \"LCD\",\n  \"intervention_description\": \"moderate (90 g/d) low-carbohydrate diet (LCD)\",\n  \"n_randomized\": \"41\",\n  \"n_analyzed\": \"41\",\n  \"hba1c_change_mean\": \"-1.44\",\n  \"hba1c_change_dispersion\": \"0.59\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"6.84\",\n  \"hba1c_baseline_sd\": \"1.04\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"TDD\",\n  \"intervention_description\": \"traditional diabetic diet (TDD)\",\n  \"n_randomized\": \"42\",\n  \"n_analyzed\": \"42\",\n  \"hba1c_change_mean\": \"-1.01\",\n  \"hba1c_change_dispersion\": \"1.06\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"7.69\",\n  \"hba1c_baseline_sd\": \"1.06\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}\n```",
+ "dt": 58.5371131,
+ "tokens": 438,
+ "prompt_tokens": 12343,
+ "finish": "stop"
+}

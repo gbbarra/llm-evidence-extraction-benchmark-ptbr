@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen14",
+ "trial": "REF9",
+ "replica": 1,
+ "content": "{\n \"study\": \"Saslow 2023\",\n \"design\": \"2x2 factorial\",\n \"country\": \"USA\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": \"83\",\n \"experimental_arm\": {\n  \"label\": \"VLC diet\",\n  \"intervention_description\": \"Very low-carbohydrate (VLC) diet, decreasing carbohydrate intake to 20 to 35 nonfiber g of carbohydrates a day, with the goal of achieving nutritional ketosis defined as a positive urine dipstick result (Ketostix; Bayer Diabetes Care)\",\n  \"n_randomized\": \"23\",\n  \"n_analyzed\": \"23\",\n  \"hba1c_change_mean\": \"-0.32\",\n  \"hba1c_change_dispersion\": \"0.07\",\n  \"hba1c_change_dispersion_type\": \"SE\",\n  \"hba1c_baseline_mean\": \"6.09\",\n  \"hba1c_baseline_sd\": \"0.45\",\n  \"hba1c_final_mean\": \"5.74\",\n  \"hba1c_final_sd\": \"0.45\"\n },\n \"control_arm\": {\n  \"label\": \"DASH diet\",\n  \"intervention_description\": \"DASH diet, limiting sodium to <2,300 mg daily and fat intake to 20% to 30% of calories per day, with a variety of fruits and vegetables, lean meats and fish, whole grains, and low-fat dairy\",\n  \"n_randomized\": \"23\",\n  \"n_analyzed\": \"23\",\n  \"hba1c_change_mean\": \"-0.14\",\n  \"hba1c_change_dispersion\": \"0.07\",\n  \"hba1c_change_dispersion_type\": \"SE\",\n  \"hba1c_baseline_mean\": \"6.10\",\n  \"hba1c_baseline_sd\": \"0.55\",\n  \"hba1c_final_mean\": \"5.97\",\n  \"hba1c_final_sd\": \"0.55\"\n }\n}",
+ "dt": 197.98529,
+ "tokens": 452,
+ "prompt_tokens": 10172,
+ "finish": "stop"
+}

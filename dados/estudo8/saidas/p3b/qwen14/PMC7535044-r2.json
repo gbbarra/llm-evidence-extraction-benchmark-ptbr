@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen14",
+ "trial": "PMC7535044",
+ "replica": 2,
+ "content": "{\n  \"study\": \"Chen 2020\",\n  \"design\": \"parallel 2-arm\",\n  \"country\": \"Taiwan\",\n  \"duration\": \"18 months\",\n  \"n_randomized_total\": \"92\",\n  \"experimental_arm\": {\n    \"label\": \"low-carbohydrate diet (LCD)\",\n    \"intervention_description\": \"daily carbohydrate intake limited to less than 90 g without any restriction to the total energy. The concept of LCD with six servings of carbohydrates was introduced, and a list was provided to illustrate food items of 15 g of equivalent carbohydrates (one serving of carbohydrates).\",\n    \"n_randomized\": \"41\",\n    \"n_analyzed\": \"41\",\n    \"hba1c_change_mean\": \"-1.44\",\n    \"hba1c_change_dispersion\": \"0.59\",\n    \"hba1c_change_dispersion_type\": \"SD\",\n    \"hba1c_baseline_mean\": \"9.95\",\n    \"hba1c_baseline_sd\": \"1.04\",\n    \"hba1c_final_mean\": \"6.84\",\n    \"hba1c_final_sd\": \"0.59\"\n  },\n  \"control_arm\": {\n    \"label\": \"traditional diabetic diet (TDD)\",\n    \"intervention_description\": \"target total calorie intake calculated by multiplying the ideal weight by 25 kcal/kg for those with a BMI between 18.5 and 24, 20 kcal/kg for overweight/obese subjects (BMI > 24) and 30 kcal/d for underweight subjects with a BMI < 18.5. The macronutrient percentage was 50–60% for carbohydrates, 1.0–1.2 g/kg for protein and ≤ 30% for fat.\",\n    \"n_randomized\": \"42\",\n    \"n_analyzed\": \"42\",\n    \"hba1c_change_mean\": \"-1.01\",\n    \"hba1c_change_dispersion\": \"1.06\",\n    \"hba1c_change_dispersion_type\": \"SD\",\n    \"hba1c_baseline_mean\": \"8.70\",\n    \"hba1c_baseline_sd\": \"1.01\",\n    \"hba1c_final_mean\": \"7.69\",\n    \"hba1c_final_sd\": \"1.06\"\n  }\n}",
+ "dt": 81.8405143,
+ "tokens": 522,
+ "prompt_tokens": 12420,
+ "finish": "stop"
+}

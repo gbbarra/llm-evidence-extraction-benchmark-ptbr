@@ -1,0 +1,10 @@
+{
+ "modelo": "llama8",
+ "trial": "PMC5048014",
+ "replica": 1,
+ "content": "{\n \"study\": \"VLCK diet in T2DM patients, 2013\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Spain\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": \"89\",\n \"experimental_arm\": {\n  \"label\": \"VLCK diet group\",\n  \"intervention_description\": \"low-calorie-ketogenic diet (<50 g of carbohydrate daily) as part of an interventional weight loss program including lifestyle and behavioral modification support (Diaprokal Method)\",\n  \"n_randomized\": \"45\",\n  \"n_analyzed\": \"45\",\n  \"hba1c_change_mean\": \"-1.60\",\n  \"hba1c_change_dispersion\": \"0.70\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"6.89\",\n  \"hba1c_baseline_sd\": \"1.06\",\n  \"hba1c_final_mean\": \"5.29\",\n  \"hba1c_final_sd\": \"0.69\"\n },\n \"control_arm\": {\n  \"label\": \"LC diet group\",\n  \"intervention_description\": \"standard care nutritional intervention based on the ADA guidelines\",\n  \"n_randomized\": \"44\",\n  \"n_analyzed\": \"40\",\n  \"hba1c_change_mean\": \"-0.21\",\n  \"hba1c_change_dispersion\": \"1.07\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"6.88\",\n  \"hba1c_baseline_sd\": \"1.03\",\n  \"hba1c_final_mean\": \"7.09\",\n  \"hba1c_final_sd\": \"0.78\"\n }\n}",
+ "dt": 73.725917,
+ "tokens": 376,
+ "prompt_tokens": 9164,
+ "finish": "stop"
+}

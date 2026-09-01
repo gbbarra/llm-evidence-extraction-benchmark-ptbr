@@ -1,0 +1,10 @@
+{
+ "modelo": "llama8",
+ "trial": "PMC9606840",
+ "replica": 2,
+ "content": "{\n \"study\": \"Houghton et al. 2023\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"USA\",\n \"duration\": \"6 months\",\n \"n_randomized_total\": \"141\",\n \"experimental_arm\": {\n  \"label\": \"Low-carbohydrate diet\",\n  \"intervention_description\": \"Behavioral intervention promoting a healthy, low-carbohydrate diet with a net carbohydrate goal of less than 60 g per day\",\n  \"n_randomized\": \"75\",\n  \"n_analyzed\": \"73\",\n  \"hba1c_change_mean\": \"-0.24\",\n  \"hba1c_change_dispersion\": \"NR\",\n  \"hba1c_change_dispersion_type\": \"NR\",\n  \"hba1c_baseline_mean\": \"6.17\",\n  \"hba1c_baseline_sd\": \"0.31\",\n  \"hba1c_final_mean\": \"6.04\",\n  \"hba1c_final_sd\": \"0.30\"\n },\n \"control_arm\": {\n  \"label\": \"Usual diet\",\n  \"intervention_description\": \"Usual diet with standard dietary advice\",\n  \"n_randomized\": \"75\",\n  \"n_analyzed\": \"69\",\n  \"hba1c_change_mean\": \"-0.04\",\n  \"hba1c_change_dispersion\": \"NR\",\n  \"hba1c_change_dispersion_type\": \"NR\",\n  \"hba1c_baseline_mean\": \"6.14\",\n  \"hba1c_baseline_sd\": \"0.30\",\n  \"hba1c_final_mean\": \"6.20\",\n  \"hba1c_final_sd\": \"0.30\"\n }\n}",
+ "dt": 29.4399633,
+ "tokens": 358,
+ "prompt_tokens": 9808,
+ "finish": "stop"
+}

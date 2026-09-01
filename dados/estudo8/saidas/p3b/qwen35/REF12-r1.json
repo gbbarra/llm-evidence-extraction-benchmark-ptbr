@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen35",
+ "trial": "REF12",
+ "replica": 1,
+ "content": "{\n \"study\": \"Kronborg et al. (or similar first author year based on ClinicalTrials.gov NCT03814694 published ~2021)\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Denmark\",\n \"duration\": \"6 weeks\",\n \"n_randomized_total\": \"72\",\n \"experimental_arm\": {\n  \"label\": \"CRHP diet (carbohydrate-reduced high-protein)\",\n  \"intervention_description\": \"Hypo-energetic diet with CH30/P30/F40, provided by investigators for energy restriction aiming at ~6% weight loss\",\n  \"n_randomized\": \"36\",\n  \"n_analyzed\": \"34\",\n  \"hba1c_change_mean\": \"-9.1\",\n  \"hba1c_change_dispersion\": \"4.2\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"57.6\",\n  \"hba1c_baseline_sd\": \"8.4\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"CD diet (conventional diabetes diet)\",\n  \"intervention_description\": \"Hypo-energetic diet with CH50/P17/F33, provided by investigators for energy restriction aiming at ~6% weight loss\",\n  \"n_randomized\": \"36\",\n  \"n_analyzed\": \"33\",\n  \"hba1c_change_mean\": \"-7.2\",\n  \"hba1c_change_dispersion\": \"7.7\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"57.4\",\n  \"hba1c_baseline_sd\": \"7.7\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}",
+ "dt": 108.6558896,
+ "tokens": 456,
+ "prompt_tokens": 12770,
+ "finish": "stop"
+}

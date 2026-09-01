@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen35",
+ "trial": "REF9",
+ "replica": 2,
+ "content": "{\n \"study\": \"Saslow 2023\",\n \"design\": \"2x2 factorial\",\n \"country\": \"United States\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": \"83\",\n \"experimental_arm\": {\n  \"label\": \"VLC Diet\",\n  \"intervention_description\": \"Very low-carbohydrate diet (20-35 nonfiber g of carbohydrates/day), goal of nutritional ketosis\",\n  \"n_randomized\": \"23\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"-0.32\",\n  \"hba1c_change_dispersion\": \"0.07\",\n  \"hba1c_change_dispersion_type\": \"SE\",\n  \"hba1c_baseline_mean\": \"6.09\",\n  \"hba1c_baseline_sd\": \"0.45\",\n  \"hba1c_final_mean\": \"5.74\",\n  \"hba1c_final_sd\": \"0.08\"\n },\n \"control_arm\": {\n  \"label\": \"DASH Diet\",\n  \"intervention_description\": \"Dietary Approaches to Stop Hypertension (limit sodium <2,300 mg/day, fat 20-30%, rich in fruits/vegetables/whole grains/low-fat dairy)\",\n  \"n_randomized\": \"24\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"-0.14\",\n  \"hba1c_change_dispersion\": \"0.07\",\n  \"hba1c_change_dispersion_type\": \"SE\",\n  \"hba1c_baseline_mean\": \"6.10\",\n  \"hba1c_baseline_sd\": \"0.55\",\n  \"hba1c_final_mean\": \"5.97\",\n  \"hba1c_final_sd\": \"0.07\"\n }\n}",
+ "dt": 36.1205565,
+ "tokens": 440,
+ "prompt_tokens": 10188,
+ "finish": "stop"
+}
