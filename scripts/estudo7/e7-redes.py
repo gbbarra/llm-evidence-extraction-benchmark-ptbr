@@ -73,8 +73,17 @@ def classe_declarada(tipo):
 def n7_1():
     flags, linhas = [], []
     for tid, rot in h3.ROT.items():
-        f = E7 / "saidas" / "gemma12" / "ma2" / f"{tid}-r1.json"
-        js = h3.acha_json(json.loads(f.read_text(encoding="utf-8"))["content"])
+        js = None
+        for rep in (1, 2):  # first-parseable, the same rule the downstream used
+            f = E7 / "saidas" / "gemma12" / "ma2" / f"{tid}-r{rep}.json"
+            js = h3.acha_json(json.loads(f.read_text(encoding="utf-8"))["content"])
+            if js:
+                if rep == 2:
+                    print(f"  note: {tid} r1 not parseable, net reads r2 (as the downstream did)")
+                break
+        if not js:
+            linhas.append((rot, "—", "—", "no parseable sheet", ""))
+            continue
         texto = norm((TXT2 / f"{tid}.txt").read_text(encoding="utf-8", errors="replace"))
         for arm_en, rot_arm in (("experimental_arm", "exp"), ("control_arm", "ctl")):
             b = js.get(arm_en) or {}
@@ -93,14 +102,31 @@ def n7_1():
             if not achadas:
                 linhas.append((rot, rot_arm, tipo, "mean not located in text — not flagged", ""))
                 continue
+            ivs = [a for a in achadas if a[0] == "interval"]
+            sps = [a for a in achadas if a[0] == "spread"]
             coerente = any(a[0] == cls for a in achadas)
+            # N7-1b (Amendment 2): both forms printed at the same mean and the
+            # spread equals the interval's half-width -> the ± is the CI in
+            # disguise; an SD/SE declaration over it is mechanically suspect.
+            if cls == "spread" and ivs and sps:
+                meia = round(abs(ivs[0][2] - ivs[0][1]) / 2, 2)
+                casam = [s for s in sps if abs(s[1] - meia) <= 0.06]
+                if casam:
+                    flag = dict(trial=tid, study=rot, arm=rot_arm, declared=str(tipo),
+                                printed=f"{ivs[0][3]} and {casam[0][3]}",
+                                detail=f"printed ± {casam[0][1]} equals the printed "
+                                       f"interval's half-width {meia} (N7-1b)")
+                    flags.append(flag)
+                    linhas.append((rot, rot_arm, tipo,
+                                   "FLAG (N7-1b) — ± equals the CI half-width",
+                                   f"{ivs[0][3]} · {casam[0][3]}"))
+                    continue
             if coerente:
                 linhas.append((rot, rot_arm, tipo, "coherent with a printed form", achadas[0][3]))
                 continue
             det = ""
-            if cls == "spread":
-                iv = next(a for a in achadas if a[0] == "interval")
-                meia = round(abs(iv[2] - iv[1]) / 2, 2)
+            if cls == "spread" and ivs:
+                meia = round(abs(ivs[0][2] - ivs[0][1]) / 2, 2)
                 disp = b.get("hba1c_change_dispersion")
                 try:
                     if abs(float(norm(str(disp))) - meia) <= 0.06:
@@ -112,7 +138,8 @@ def n7_1():
                         printed=achadas[0][3], detail=det)
             flags.append(flag)
             linhas.append((rot, rot_arm, tipo,
-                           f"FLAG — declared {cls}, text prints interval only", achadas[0][3]))
+                           f"FLAG (N7-1) — declared {cls}, text prints interval only",
+                           achadas[0][3]))
     return flags, linhas
 
 

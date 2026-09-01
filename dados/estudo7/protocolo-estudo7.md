@@ -59,3 +59,11 @@ Reading-proof claims (see §2); other models; orchestration (all arithmetic is c
 **Pre-registered hypotheses**:
 - **A7-H1**: N7-1 flags exactly Chen's two arms and **no other MA-2 arm** (zero false positives).
 - **A7-H2**: among pools with ≥3 studies (MA-2; MA-1 morbidity), N7-2 flags the MA-2 pool — with Chen the dominant study — and does not flag morbidity.
+
+## Amendment 2 (2026-09-01) — N7-1b, the both-forms consistency rule (registered before its run; after Amendment 1's run)
+
+**Amendment 1's measured outcome, recorded before this extension**: **A7-H1 failed** — N7-1 as registered flagged nothing, and the reason is itself a finding: Chen's primary prints the change in **two layers** — the table as mean (95% CI), *"−1.63(−1.96 ~ −1.30)"*, and the results prose as *"the HbA1c (−1.6±0.3 vs. −1.0±0.3%)"* — so a spread-form **is** printed at that mean and N7-1's declared rule correctly stays silent. The model's cell is a verbatim transcription of the prose layer, not a computed value; the failure of the sheet is the **type judgment** on an ambiguous "±" (0.3 equals the table CI's half-width 0.33 — the paper's ± denotes the CI, not an SD). **A7-H2 also failed**: Chen's DL weight share is 19.3% (τ² absorbs the outlier and re-equalizes weights); the distortion's product signature is **heterogeneity inflation** (published I² 6% → ours 79%), not weight share — the >40% flag is blind to this mode.
+
+**N7-1b (declared here, detection-only, before its run)**: when BOTH forms are printed at the same mean — an interval and a "± x" spread — and the sheet declares a single-spread type, compare the spread value against the interval's half-width: **FLAG** if they coincide (±0.06), because a ± that equals the CI half-width is the CI in disguise, and an SD declaration over it is mechanically suspect. A spread that differs from the half-width (a genuine SD/SE printed alongside a CI) is coherent — no flag.
+
+**Hypothesis A7-H3**: N7-1b flags exactly Chen's two arms and no other MA-2 arm.
