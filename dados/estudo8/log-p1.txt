@@ -1,0 +1,157 @@
+SHA-256 perturbacoes-estudo1.json: 6193840bb7e654e69bb6e2542386b1eacdae014e023fca8a65200751e9026a6e
+SHA-256 perturbacoes-fechados.json: 75e3aaf8c2fe833460db55329e5a6f78e9441ca0c121b6c2be9d4d77cb23594b
+SHA-256 perturbacoes-manuais.json: f7a4fdc5375bed00bd1b009ca7e9ac4daea3e3d8dcd4c44aa4e01b5c3d34195b
+SHA-256 perturbacoes-fechados-manuais.json: 85fef70b33238313b7f44bcffc67e6211a23e4c5a6a872d693cebb0deac8ef9c
+initial memory sweep:
+
+===== Study 8 · P1 READ · gemma12 [gemma4:12b] · 14 primaries x 2 (EN instrument)
+  gemma12 PMC10561433-r1: 268s, 1187 tok, fim=stop
+  gemma12 PMC10561433-r2: 126s, 943 tok, fim=stop
+  gemma12 PMC10694978-r1: 218s, 952 tok, fim=stop
+  gemma12 PMC10694978-r2: 129s, 968 tok, fim=stop
+  gemma12 PMC10912221-r1: 269s, 1293 tok, fim=stop
+  gemma12 PMC10912221-r2: 168s, 1252 tok, fim=stop
+  gemma12 PMC11061212-r1: 221s, 1141 tok, fim=stop
+  gemma12 PMC11061212-r2: 161s, 1215 tok, fim=stop
+  gemma12 PMC12565272-r1: 236s, 1082 tok, fim=stop
+  gemma12 PMC12565272-r2: 145s, 1088 tok, fim=stop
+  gemma12 PMC4782303-r1: 301s, 1367 tok, fim=stop
+  gemma12 PMC4782303-r2: 168s, 1240 tok, fim=stop
+  gemma12 PMC5589093-r1: 244s, 973 tok, fim=stop
+  gemma12 PMC5589093-r2: 160s, 1179 tok, fim=stop
+  gemma12 PMC6907038-r1: 191s, 1043 tok, fim=stop
+  gemma12 PMC6907038-r2: 137s, 1045 tok, fim=stop
+  gemma12 REF26-r1: 254s, 1103 tok, fim=stop
+  gemma12 REF26-r2: 119s, 886 tok, fim=stop
+  gemma12 REF29-r1: 269s, 1160 tok, fim=stop
+  gemma12 REF29-r2: 125s, 922 tok, fim=stop
+  gemma12 REF30-r1: 209s, 1090 tok, fim=stop
+  gemma12 REF30-r2: 112s, 850 tok, fim=stop
+  gemma12 REF33-r1: 252s, 1141 tok, fim=stop
+  gemma12 REF33-r2: 160s, 1191 tok, fim=stop
+  gemma12 REF41-r1: 180s, 770 tok, fim=stop
+  gemma12 REF41-r2: 104s, 784 tok, fim=stop
+  gemma12 REF47-r1: 218s, 1053 tok, fim=stop
+  gemma12 REF47-r2: 139s, 1053 tok, fim=stop
+
+===== Study 8 · P1 READ · qwen14 [qwen3:14b] · 14 primaries x 2 (EN instrument)
+  qwen14 PMC10561433-r1: 263s, 827 tok, fim=stop
+  qwen14 PMC10561433-r2: 123s, 799 tok, fim=stop
+  qwen14 PMC10694978-r1: 249s, 887 tok, fim=stop
+  qwen14 PMC10694978-r2: 136s, 900 tok, fim=stop
+  qwen14 PMC10912221-r1: 263s, 911 tok, fim=stop
+  qwen14 PMC10912221-r2: 141s, 923 tok, fim=stop
+  qwen14 PMC11061212-r1: 204s, 786 tok, fim=stop
+  qwen14 PMC11061212-r2: 127s, 864 tok, fim=stop
+  qwen14 PMC12565272-r1: 222s, 704 tok, fim=stop
+  qwen14 PMC12565272-r2: 106s, 704 tok, fim=stop
+  qwen14 PMC4782303-r1: 248s, 634 tok, fim=stop
+  qwen14 PMC4782303-r2: 101s, 646 tok, fim=stop
+  qwen14 PMC5589093-r1: 281s, 831 tok, fim=stop
+  qwen14 PMC5589093-r2: 130s, 831 tok, fim=stop
+  qwen14 PMC6907038-r1: 166s, 715 tok, fim=stop
+  qwen14 PMC6907038-r2: 97s, 685 tok, fim=stop
+  qwen14 REF26-r1: 234s, 609 tok, fim=stop
+  qwen14 REF26-r2: 94s, 611 tok, fim=stop
+  qwen14 REF29-r1: 271s, 795 tok, fim=stop
+  qwen14 REF29-r2: 124s, 795 tok, fim=stop
+  qwen14 REF30-r1: 183s, 724 tok, fim=stop
+  qwen14 REF30-r2: 101s, 698 tok, fim=stop
+  qwen14 REF33-r1: 250s, 793 tok, fim=stop
+  qwen14 REF33-r2: 121s, 794 tok, fim=stop
+  qwen14 REF41-r1: 197s, 643 tok, fim=stop
+  qwen14 REF41-r2: 96s, 643 tok, fim=stop
+  qwen14 REF47-r1: 208s, 736 tok, fim=stop
+  qwen14 REF47-r2: 110s, 736 tok, fim=stop
+
+===== Study 8 · P1 READ · llama8 [llama3.1:8b] · 14 primaries x 2 (EN instrument)
+  llama8 PMC10561433-r1: 118s, 783 tok, fim=stop
+  llama8 PMC10561433-r2: 64s, 788 tok, fim=stop
+  llama8 PMC10694978-r1: 114s, 880 tok, fim=stop
+  llama8 PMC10694978-r2: 64s, 796 tok, fim=stop
+  llama8 PMC10912221-r1: 115s, 832 tok, fim=stop
+  llama8 PMC10912221-r2: 65s, 798 tok, fim=stop
+  llama8 PMC11061212-r1: 92s, 727 tok, fim=stop
+  llama8 PMC11061212-r2: 56s, 723 tok, fim=stop
+  llama8 PMC12565272-r1: 104s, 760 tok, fim=stop
+  llama8 PMC12565272-r2: 60s, 742 tok, fim=stop
+  llama8 PMC4782303-r1: 116s, 724 tok, fim=stop
+  llama8 PMC4782303-r2: 64s, 767 tok, fim=stop
+  llama8 PMC5589093-r1: 117s, 743 tok, fim=stop
+  llama8 PMC5589093-r2: 64s, 758 tok, fim=stop
+  llama8 PMC6907038-r1: 78s, 668 tok, fim=stop
+  llama8 PMC6907038-r2: 53s, 694 tok, fim=stop
+  llama8 REF26-r1: 114s, 748 tok, fim=stop
+  llama8 REF26-r2: 66s, 798 tok, fim=stop
+  llama8 REF29-r1: 120s, 781 tok, fim=stop
+  llama8 REF29-r2: 69s, 829 tok, fim=stop
+  llama8 REF30-r1: 90s, 749 tok, fim=stop
+  llama8 REF30-r2: 56s, 725 tok, fim=stop
+  llama8 REF33-r1: 111s, 750 tok, fim=stop
+  llama8 REF33-r2: 64s, 780 tok, fim=stop
+  llama8 REF41-r1: 94s, 653 tok, fim=stop
+  llama8 REF41-r2: 54s, 682 tok, fim=stop
+  llama8 REF47-r1: 95s, 744 tok, fim=stop
+  llama8 REF47-r2: 59s, 754 tok, fim=stop
+
+===== Study 8 · P1 READ · qwen35 [qwen3.5:9b] · 14 primaries x 2 (EN instrument)
+  qwen35 PMC10561433-r1: 119s, 824 tok, fim=stop
+  qwen35 PMC10561433-r2: 62s, 770 tok, fim=stop
+  qwen35 PMC10694978-r1: 120s, 958 tok, fim=stop
+  qwen35 PMC10694978-r2: 78s, 984 tok, fim=stop
+  qwen35 PMC10912221-r1: 124s, 980 tok, fim=stop
+  qwen35 PMC10912221-r2: 90s, 1130 tok, fim=stop
+  qwen35 PMC11061212-r1: 176s, 1787 tok, fim=stop
+  qwen35 PMC11061212-r2: 67s, 847 tok, fim=stop
+  qwen35 PMC12565272-r1: 110s, 830 tok, fim=stop
+  qwen35 PMC12565272-r2: 62s, 784 tok, fim=stop
+  qwen35 PMC4782303-r1: 138s, 1077 tok, fim=stop
+  qwen35 PMC4782303-r2: 87s, 1087 tok, fim=stop
+  qwen35 PMC5589093-r1: 120s, 843 tok, fim=stop
+  qwen35 PMC5589093-r2: 92s, 1150 tok, fim=stop
+  qwen35 PMC6907038-r1: 92s, 795 tok, fim=stop
+  qwen35 PMC6907038-r2: 60s, 769 tok, fim=stop
+  qwen35 REF26-r1: 105s, 688 tok, fim=stop
+  qwen35 REF26-r2: 65s, 804 tok, fim=stop
+  qwen35 REF29-r1: 134s, 1038 tok, fim=stop
+  qwen35 REF29-r2: 76s, 942 tok, fim=stop
+  qwen35 REF30-r1: 112s, 1001 tok, fim=stop
+  qwen35 REF30-r2: 68s, 871 tok, fim=stop
+  qwen35 REF33-r1: 115s, 850 tok, fim=stop
+  qwen35 REF33-r2: 118s, 1488 tok, fim=stop
+  qwen35 REF41-r1: 111s, 900 tok, fim=stop
+  qwen35 REF41-r2: 52s, 653 tok, fim=stop
+  qwen35 REF47-r1: 102s, 779 tok, fim=stop
+  qwen35 REF47-r2: 103s, 1317 tok, fim=stop
+
+===== Study 8 · P1 READ · deepseek14 [deepseek-r1:14b] · 14 primaries x 2 (EN instrument)
+  deepseek14 PMC10561433-r1: 411s, 1727 tok, fim=stop
+  deepseek14 PMC10561433-r2: 219s, 1413 tok, fim=stop
+  deepseek14 PMC10694978-r1: 355s, 1534 tok, fim=stop
+  deepseek14 PMC10694978-r2: 265s, 1737 tok, fim=stop
+  deepseek14 PMC10912221-r1: 397s, 1713 tok, fim=stop
+  deepseek14 PMC10912221-r2: 265s, 1722 tok, fim=stop
+  deepseek14 PMC11061212-r1: 295s, 1387 tok, fim=stop
+  deepseek14 PMC11061212-r2: 213s, 1454 tok, fim=stop
+  deepseek14 PMC12565272-r1: 323s, 1315 tok, fim=stop
+  deepseek14 PMC12565272-r2: 217s, 1423 tok, fim=stop
+  deepseek14 PMC4782303-r1: 486s, 2049 tok, fim=stop
+  deepseek14 PMC4782303-r2: 254s, 1599 tok, fim=stop
+  deepseek14 PMC5589093-r1: 399s, 1489 tok, fim=stop
+  deepseek14 PMC5589093-r2: 208s, 1311 tok, fim=stop
+  deepseek14 PMC6907038-r1: 254s, 1325 tok, fim=stop
+  deepseek14 PMC6907038-r2: 240s, 1691 tok, fim=stop
+  deepseek14 REF26-r1: 416s, 1683 tok, fim=stop
+  deepseek14 REF26-r2: 234s, 1487 tok, fim=stop
+  deepseek14 REF29-r1: 450s, 1833 tok, fim=stop
+  deepseek14 REF29-r2: 217s, 1377 tok, fim=stop
+  deepseek14 REF30-r1: 273s, 1326 tok, fim=stop
+  deepseek14 REF30-r2: 177s, 1227 tok, fim=stop
+  deepseek14 REF33-r1: 378s, 1547 tok, fim=stop
+  deepseek14 REF33-r2: 243s, 1567 tok, fim=stop
+  deepseek14 REF41-r1: 299s, 1285 tok, fim=stop
+  deepseek14 REF41-r2: 211s, 1412 tok, fim=stop
+  deepseek14 REF47-r1: 309s, 1374 tok, fim=stop
+  deepseek14 REF47-r2: 188s, 1267 tok, fim=stop
+
+== P1 READ COMPLETE in 390.4 min
