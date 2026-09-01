@@ -1,0 +1,59 @@
+{
+ "estudo": "Dorans 2022",
+ "turnos": [
+  {
+   "emitiu": "{\"funcao\": \"dp_de_ic\", \"argumentos\": [-0.19, -0.33, 2], \"fonte\": [\"hba1c_mudanca_dispersao\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "aviso": "AVISO: o argumento 2.0 declara vir de 'n_analisado', mas a ficha registra: 'braco_experimental.n_analisado' = 73.0; 'braco_controle.n_analisado' = 69.0. Confira e reemita a chamada (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_ic\", \"argumentos\": [-0.19, -0.33, 73], \"fonte\": [\"hba1c_mudanca_dispersao\", \"hba1c_mudanca_dispersao\", \"braco_experimental.n_analisado\"]}",
+   "resultado": "RESULTADO: -0.31"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_ic\", \"argumentos\": [0.02, -0.10, 69], \"fonte\": [\"hba1c_mudanca_dispersao\", \"hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]}",
+   "resultado": "RESULTADO: -0.25"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_ic\", \"argumentos\": [0.02, -0.10, 69], \"fonte\": [\"hba1c_mudanca_dispersao\", \"hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]}",
+   "resultado": "RESULTADO: -0.25"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.24, -0.31, 73, -0.04, -0.25, 69], \"fonte\": [\"hba1c_mudanca_media\", \"resultado-anterior\", \"braco_experimental.n_analisado\", \"hba1c_mudanca_media\", \"resultado-anterior\", \"braco_controle.n_analisado\"]}",
+   "aviso": "AVISO: o argumento -0.31 tem a mesma magnitude do campo 'braco_experimental.hba1c_basal_dp' da ficha, mas com o SINAL oposto — e nenhum número da ficha vale -0.31. Confira e reemita a chamada (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_ic\", \"argumentos\": [-0.19, -0.33, 73], \"fonte\": [\"hba1c_mudanca_dispersao\", \"hba1c_mudanca_dispersao\", \"braco_experimental.n_analisado\"]}",
+   "resultado": "RESULTADO: -0.31"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_ic\", \"argumentos\": [0.02, -0.10, 69], \"fonte\": [\"hba1c_mudanca_dispersao\", \"hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]}",
+   "resultado": "RESULTADO: -0.25"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.24, -0.31, 73, -0.04, -0.25, 69], \"fonte\": [\"hba1c_mudanca_media\", \"resultado-anterior\", \"braco_experimental.n_analisado\", \"hba1c_mudanca_media\", \"resultado-anterior\", \"braco_controle.n_analisado\"]}",
+   "aviso": "AVISO: o argumento -0.31 tem a mesma magnitude do campo 'braco_experimental.hba1c_basal_dp' da ficha, mas com o SINAL oposto — e nenhum número da ficha vale -0.31. Confira e reemita a chamada (corrigida, ou idêntica se você confirma)."
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_ic\", \"argumentos\": [-0.19, -0.33, 73], \"fonte\": [\"hba1c_mudanca_dispersao\", \"hba1c_mudanca_dispersao\", \"braco_experimental.n_analisado\"]}",
+   "resultado": "RESULTADO: -0.31"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_ic\", \"argumentos\": [0.02, -0.10, 69], \"fonte\": [\"hba1c_mudanca_dispersao\", \"hba1c_mudanca_dispersao\", \"braco_controle.n_analisado\"]}",
+   "resultado": "RESULTADO: -0.25"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.24, -0.31, 73, -0.04, -0.25, 69], \"fonte\": [\"hba1c_mudanca_media\", \"resultado-anterior\", \"braco_experimental.n_analisado\", \"hba1c_mudanca_media\", \"resultado-anterior\", \"braco_controle.n_analisado\"]}",
+   "resultado": "RESULTADO: [-0.29, -0.11]"
+  },
+  {
+   "emitiu": "{\"funcao\": \"fim\", \"argumentos\": [-0.2, -0.41, 0.12], \"fonte\": [\"resultado-anterior\", \"resultado-anterior\", \"resultado-anterior\"]}"
+  }
+ ],
+ "final": {
+  "md": -0.2,
+  "ic95": [
+   -0.41,
+   0.12
+  ]
+ }
+}

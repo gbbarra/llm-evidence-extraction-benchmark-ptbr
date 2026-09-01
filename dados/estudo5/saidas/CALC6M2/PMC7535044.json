@@ -1,0 +1,27 @@
+{
+ "estudo": "Chen 2020",
+ "turnos": [
+  {
+   "emitiu": "{\"funcao\": \"md\", \"argumentos\": [-1.44, 1.04, 41, -1.01, 1.40, 42], \"fonte\": [\"hba1c_mudanca_media\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_media\", \"hba1c_mudanca_dispersao\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: -0.43"
+  },
+  {
+   "emitiu": "{\"funcao\": \"dp_de_ic\", \"argumentos\": [-1.40, -0.63, 42], \"fonte\": [\"hba1c_mudanca_dispersao_inferior\", \"hba1c_mudanca_dispersao_superior\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: 1.27"
+  },
+  {
+   "emitiu": "{\"funcao\": \"ic95_md\", \"argumentos\": [-0.43, 1.04, 41, -1.01, 1.27, 42], \"fonte\": [\"resultado-anterior\", \"hba1c_mudanca_dispersao\", \"n_analisado\", \"hba1c_mudanca_media\", \"resultado-anterior\", \"n_analisado\"]}",
+   "resultado": "RESULTADO: [0.08, 1.08]"
+  },
+  {
+   "emitiu": "{\"funcao\": \"fim\", \"argumentos\": [-0.43, 0.08, 1.08], \"fonte\": [\"resultado-anterior\", \"resultado-anterior\", \"resultado-anterior\"]}"
+  }
+ ],
+ "final": {
+  "md": -0.43,
+  "ic95": [
+   0.08,
+   1.08
+  ]
+ }
+}
