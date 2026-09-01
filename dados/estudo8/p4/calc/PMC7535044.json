@@ -1,0 +1,23 @@
+{
+ "estudo": "Chen 2020",
+ "turnos": [
+  {
+   "emitiu": "{\"function\": \"md\", \"arguments\": [-1.44, 0.59, 41, -1.01, 1.06, 42], \"source\": [\"experimental_arm.hba1c_change_mean\", \"experimental_arm.hba1c_change_dispersion\", \"experimental_arm.n_analyzed\", \"control_arm.hba1c_change_mean\", \"control_arm.hba1c_change_dispersion\", \"control_arm.n_analyzed\"]}",
+   "resultado": "RESULT: -0.43"
+  },
+  {
+   "emitiu": "{\"function\": \"ci95_md\", \"arguments\": [-1.44, 0.59, 41, -1.01, 1.06, 42], \"source\": [\"experimental_arm.hba1c_change_mean\", \"experimental_arm.hba1c_change_dispersion\", \"experimental_arm.n_analyzed\", \"control_arm.hba1c_change_mean\", \"control_arm.hba1c_change_dispersion\", \"control_arm.n_analyzed\"]}",
+   "resultado": "RESULT: [-0.8, -0.06]"
+  },
+  {
+   "emitiu": "{\"function\": \"end\", \"arguments\": [-0.43, -0.8, -0.06], \"source\": [\"previous-result\", \"previous-result\", \"previous-result\"]}"
+  }
+ ],
+ "final": {
+  "md": -0.43,
+  "ic95": [
+   -0.8,
+   -0.06
+  ]
+ }
+}

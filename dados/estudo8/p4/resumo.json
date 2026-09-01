@@ -1,0 +1,40 @@
+{
+ "agregado_do_modelo": {
+  "md": -0.5,
+  "ic95": [
+   -0.78,
+   -0.22
+  ]
+ },
+ "verdade_mecanica": {
+  "md": -0.52,
+  "ic95": [
+   -0.82,
+   -0.22
+  ],
+  "tau2": 0.1367,
+  "i2_pct": 91.3
+ },
+ "delta_md": 0.02,
+ "lens_desperturbada": {
+  "md": -0.27,
+  "ic95": [
+   -0.38,
+   -0.17
+  ],
+  "tau2": 0.0052,
+  "i2_pct": 28.6
+ },
+ "publicado": {
+  "md": -0.24,
+  "ic95": [
+   -0.32,
+   -0.16
+  ]
+ },
+ "flags_coerencia": [],
+ "consistente": true,
+ "numeros_orfaos": [],
+ "sintese": "The meta-analysis included 7 studies involving a total of 493 participants to evaluate the effect on HbA1c levels. The pooled mean difference (MD) was -0.5 (95% CI [-0.78, -0.22]), indicating that HbA1c levels fell more in the experimental arm. Significant heterogeneity was observed among the included studies ($I^2$ = 90.2%).\n\nIndividual study results varied in significance. The studies by Saslow 2017 (MD -0.5; 95% CI [-0.89, -0.11]), Dorans 2022 (MD -0.2; 95% CI [-0.29, -0.11]), Chen 2020 (MD -0.43; 95% CI [-0.8, -0.06]), Thomsen 2022 (MD -0.27; 95% CI [-0.45, -0.09]), and Goday 2016 (MD -1.8; 95% CI [-2.2, -1.4]) reported results that did not cross zero. In contrast, the results from Saslow 2023 (MD -0.18; 95% CI [-0.38, 0.02]) and Wang 2018 (MD -0.32; 95% CI [-0.87, 0.23]) crossed zero.",
+ "minutos": 8.7
+}

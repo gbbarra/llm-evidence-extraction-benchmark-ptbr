@@ -1,0 +1,71 @@
+===== P4 · stage 1: per-study typed calls under the EN ten-net harness
+    MODEL  : {"function": "sd_from_ci", "arguments": [-1.1, -0.6, 11], "source": ["hba1c_change_dispersion", "hba
+    HARNESS: RESULT: 0.42
+    MODEL  : {"function": "sd_from_ci", "arguments": [-0.6, 0.0, 8], "source": ["hba1c_change_dispersion", "hba1c
+    HARNESS: RESULT: 0.43
+    MODEL  : {"function": "md", "arguments": [-0.8, 0.42, 11, -0.3, 0.43, 8], "source": ["hba1c_change_mean", "pr
+    HARNESS: RESULT: -0.5
+    MODEL  : {"function": "ci95_md", "arguments": [-0.8, 0.42, 11, -0.3, 0.43, 8], "source": ["hba1c_change_mean"
+    HARNESS: RESULT: [-0.89, -0.11]
+  Saslow 2017: 5 turns · content warnings: 0 · final: {"md": -0.5, "ic95": [-0.89, -0.11]}
+    MODEL  : {"function": "sd_from_se", "arguments": [0.07, 23], "source": ["hba1c_change_dispersion", "n_analyze
+    HARNESS: RESULT: 0.34
+    MODEL  : {"function": "sd_from_se", "arguments": [0.07, 25], "source": ["hba1c_change_dispersion", "n_analyze
+    HARNESS: RESULT: 0.35
+    MODEL  : {"function": "md", "arguments": [-0.32, 0.34, 23, -0.14, 0.35, 25], "source": ["hba1c_change_mean", 
+    HARNESS: RESULT: -0.18
+    MODEL  : {"function": "ci95_md", "arguments": [-0.32, 0.34, 23, -0.14, 0.35, 25], "source": ["hba1c_change_me
+    HARNESS: RESULT: [-0.38, 0.02]
+  Saslow 2023: 5 turns · content warnings: 0 · final: {"md": -0.18, "ic95": [-0.38, 0.02]}
+    MODEL  : {"function": "sd_from_ci", "arguments": [-0.33, -0.19, 73], "source": ["hba1c_change_dispersion", "h
+    HARNESS: RESULT: 0.31
+    MODEL  : {"function": "sd_from_ci", "arguments": [-0.1, 0.02, 69], "source": ["hba1c_change_dispersion", "hba
+    HARNESS: RESULT: 0.25
+    MODEL  : {"function": "md", "arguments": [-0.24, 0.31, 73, -0.04, 0.25, 69], "source": ["hba1c_change_mean", 
+    HARNESS: RESULT: -0.2
+    MODEL  : {"function": "ci95_md", "arguments": [-0.24, 0.31, 73, -0.04, 0.25, 69], "source": ["hba1c_change_me
+    HARNESS: RESULT: [-0.29, -0.11]
+  Dorans 2022: 5 turns · content warnings: 0 · final: {"md": -0.2, "ic95": [-0.29, -0.11]}
+    MODEL  : {"function": "md", "arguments": [-1.44, 0.59, 41, -1.01, 1.06, 42], "source": ["experimental_arm.hba
+    HARNESS: RESULT: -0.43
+    MODEL  : {"function": "ci95_md", "arguments": [-1.44, 0.59, 41, -1.01, 1.06, 42], "source": ["experimental_ar
+    HARNESS: RESULT: [-0.8, -0.06]
+  Chen 2020: 3 turns · content warnings: 0 · final: {"md": -0.43, "ic95": [-0.8, -0.06]}
+    MODEL  : {"function": "md", "arguments": [-0.83, 0.38, 34, -0.56, 0.37, 33], "source": ["experimental_arm.hba
+    HARNESS: RESULT: -0.27
+    MODEL  : {"function": "ci95_md", "arguments": [-0.83, 0.38, 34, -0.56, 0.37, 33], "source": ["experimental_ar
+    HARNESS: RESULT: [-0.45, -0.09]
+  Thomsen 2022: 3 turns · content warnings: 0 · final: {"md": -0.27, "ic95": [-0.45, -0.09]}
+    MODEL  : {"function": "md", "arguments": [-0.63, 1.18, 24, -0.31, 0.7, 25], "source": ["experimental_arm.hba1
+    HARNESS: RESULT: -0.32
+    MODEL  : {"function": "ci95_md", "arguments": [-0.63, 1.18, 24, -0.31, 0.7, 25], "source": ["experimental_arm
+    HARNESS: RESULT: [-0.87, 0.23]
+  Wang 2018: 3 turns · content warnings: 0 · final: {"md": -0.32, "ic95": [-0.87, 0.23]}
+    MODEL  : {"function": "sd_change_r05", "arguments": [1.1, 0.7], "source": ["hba1c_baseline_sd", "hba1c_final_
+    HARNESS: RESULT: 0.96
+    MODEL  : {"function": "sd_change_r05", "arguments": [1.0, 0.8], "source": ["hba1c_baseline_sd", "hba1c_final_
+    HARNESS: RESULT: 0.92
+    MODEL  : {"function": "md", "arguments": [5.3, 0.96, 45, 7.1, 0.92, 40], "source": ["hba1c_final_mean", "deri
+    HARNESS: WARNING: an argument declares source "derived" — include the "derivation" field with the operation and its ope
+    MODEL  : {"function": "md", "arguments": [5.3, 0.96, 45, 7.1, 0.92, 40], "source": ["hba1c_final_mean", "deri
+    HARNESS: RESULT: -1.8
+    MODEL  : {"function": "ci95_md", "arguments": [5.3, 0.96, 45, 7.1, 0.92, 40], "source": ["hba1c_final_mean", 
+    HARNESS: WARNING: an argument declares source "derived" — include the "derivation" field with the operation and its ope
+    MODEL  : {"function": "ci95_md", "arguments": [5.3, 0.96, 45, 7.1, 0.92, 40], "source": ["hba1c_final_mean", 
+    HARNESS: RESULT: [-2.2, -1.4]
+  Goday 2016: 7 turns · content warnings: 2 · final: {"md": -1.8, "ic95": [-2.2, -1.4]}
+
+===== P4 · stage 2: pooling (G3 instrument)
+    MODEL  : {"function": "pool_dl_md", "sextets": [[-0.8, 0.42, 11.0, -0.3, 0.43, 8.0], [-0.32, 0.34, 23.0, -0.1
+    HARNESS: RESULT: {"md": -0.5, "ic95": [-0.78, -0.22], "tau2": 0.1203, "i2_pct": 90.2}
+== POOL: consistent with its own sextets: True · final {"md": -0.5, "ic95": [-0.78, -0.22]} · pool over own sextets: {"md": -0.5, "ic95": [-0.78, -0.22], "tau2": 0.1203, "i2_pct": 90.2}
+
+===== P4 · stage 3: product coherence check + synthesis
+  incoherent reported CIs (flagged, never endorsed): none
+  orphans: ZERO
+
+===== grader-side (AFTER the run; no model stage saw a key)
+  model pool: {"md": -0.5, "ic95": [-0.78, -0.22]} · mechanical truth: {"md": -0.52, "ic95": [-0.82, -0.22], "tau2": 0.1367, "i2_pct": 91.3} · delta 0.02
+  LENS: {"md": -0.27, "ic95": [-0.38, -0.17], "tau2": 0.0052, "i2_pct": 28.6} vs published -0.24 [-0.32, -0.16]
+
+== P4 COMPLETE in 8.7 min · consistent: True · orphans: 0

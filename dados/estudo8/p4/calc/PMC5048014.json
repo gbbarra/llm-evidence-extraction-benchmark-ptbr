@@ -1,0 +1,39 @@
+{
+ "estudo": "Goday 2016",
+ "turnos": [
+  {
+   "emitiu": "{\"function\": \"sd_change_r05\", \"arguments\": [1.1, 0.7], \"source\": [\"hba1c_baseline_sd\", \"hba1c_final_sd\"]}",
+   "resultado": "RESULT: 0.96"
+  },
+  {
+   "emitiu": "{\"function\": \"sd_change_r05\", \"arguments\": [1.0, 0.8], \"source\": [\"hba1c_baseline_sd\", \"hba1c_final_sd\"]}",
+   "resultado": "RESULT: 0.92"
+  },
+  {
+   "emitiu": "{\"function\": \"md\", \"arguments\": [5.3, 0.96, 45, 7.1, 0.92, 40], \"source\": [\"hba1c_final_mean\", \"derived\", \"n_analyzed\", \"hba1c_final_mean\", \"derived\", \"n_analyzed\"]}",
+   "aviso": "WARNING: an argument declares source \"derived\" — include the \"derivation\" field with the operation and its operands, for example \"7.1 - 6.8\". Re-emit the complete call."
+  },
+  {
+   "emitiu": "{\"function\": \"md\", \"arguments\": [5.3, 0.96, 45, 7.1, 0.92, 40], \"source\": [\"hba1c_final_mean\", \"derived\", \"n_analyzed\", \"hba1c_final_mean\", \"derived\", \"n_analyzed\"], \"derivation\": \"5.3 - 6.9\" }",
+   "resultado": "RESULT: -1.8"
+  },
+  {
+   "emitiu": "{\"function\": \"ci95_md\", \"arguments\": [5.3, 0.96, 45, 7.1, 0.92, 40], \"source\": [\"hba1c_final_mean\", \"derived\", \"n_analyzed\", \"hba1c_final_mean\", \"derived\", \"n_analyzed\"]}",
+   "aviso": "WARNING: an argument declares source \"derived\" — include the \"derivation\" field with the operation and its operands, for example \"7.1 - 6.8\". Re-emit the complete call."
+  },
+  {
+   "emitiu": "{\"function\": \"ci95_md\", \"arguments\": [5.3, 0.96, 45, 7.1, 0.92, 40], \"source\": [\"hba1c_final_mean\", \"derived\", \"n_analyzed\", \"hba1c_final_mean\", \"derived\", \"n_analyzed\"], \"derivation\": \"5.3 - 6.9\" }",
+   "resultado": "RESULT: [-2.2, -1.4]"
+  },
+  {
+   "emitiu": "{\"function\": \"end\", \"arguments\": [-1.8, -2.2, -1.4], \"source\": [\"md_result\", \"ci95_md_lower\", \"ci95_md_upper\"]}"
+  }
+ ],
+ "final": {
+  "md": -1.8,
+  "ic95": [
+   -2.2,
+   -1.4
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "estudo": "Saslow 2023",
+ "turnos": [
+  {
+   "emitiu": "{\"function\": \"sd_from_se\", \"arguments\": [0.07, 23], \"source\": [\"hba1c_change_dispersion\", \"n_analyzed\"]}",
+   "resultado": "RESULT: 0.34"
+  },
+  {
+   "emitiu": "{\"function\": \"sd_from_se\", \"arguments\": [0.07, 25], \"source\": [\"hba1c_change_dispersion\", \"n_analyzed\"]}",
+   "resultado": "RESULT: 0.35"
+  },
+  {
+   "emitiu": "{\"function\": \"md\", \"arguments\": [-0.32, 0.34, 23, -0.14, 0.35, 25], \"source\": [\"hba1c_change_mean\", \"previous-result\", \"n_analyzed\", \"hba1c_change_mean\", \"previous-result\", \"n_analyzed\"]}",
+   "resultado": "RESULT: -0.18"
+  },
+  {
+   "emitiu": "{\"function\": \"ci95_md\", \"arguments\": [-0.32, 0.34, 23, -0.14, 0.35, 25], \"source\": [\"hba1c_change_mean\", \"previous-result\", \"n_analyzed\", \"hba1c_change_mean\", \"previous-result\", \"n_analyzed\"]}",
+   "resultado": "RESULT: [-0.38, 0.02]"
+  },
+  {
+   "emitiu": "{\"function\": \"end\", \"arguments\": [-0.18, -0.38, 0.02], \"source\": [\"previous-result\", \"previous-result\", \"previous-result\"]}"
+  }
+ ],
+ "final": {
+  "md": -0.18,
+  "ic95": [
+   -0.38,
+   0.02
+  ]
+ }
+}

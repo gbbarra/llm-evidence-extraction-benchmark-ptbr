@@ -1,0 +1,23 @@
+{
+ "estudo": "Thomsen 2022",
+ "turnos": [
+  {
+   "emitiu": "{\"function\": \"md\", \"arguments\": [-0.83, 0.38, 34, -0.56, 0.37, 33], \"source\": [\"experimental_arm.hba1c_change_mean\", \"experimental_arm.hba1c_change_dispersion\", \"experimental_arm.n_analyzed\", \"control_arm.hba1c_change_mean\", \"control_arm.hba1c_change_dispersion\", \"control_arm.n_analyzed\"]}",
+   "resultado": "RESULT: -0.27"
+  },
+  {
+   "emitiu": "{\"function\": \"ci95_md\", \"arguments\": [-0.83, 0.38, 34, -0.56, 0.37, 33], \"source\": [\"experimental_arm.hba1c_change_mean\", \"experimental_arm.hba1c_change_dispersion\", \"experimental_arm.n_analyzed\", \"control_arm.hba1c_change_mean\", \"control_arm.hba1c_change_dispersion\", \"control_arm.n_analyzed\"]}",
+   "resultado": "RESULT: [-0.45, -0.09]"
+  },
+  {
+   "emitiu": "{\"function\": \"end\", \"arguments\": [-0.27, -0.45, -0.09], \"source\": [\"previous-result\", \"previous-result\", \"previous-result\"]}"
+  }
+ ],
+ "final": {
+  "md": -0.27,
+  "ic95": [
+   -0.45,
+   -0.09
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "estudo": "Dorans 2022",
+ "turnos": [
+  {
+   "emitiu": "{\"function\": \"sd_from_ci\", \"arguments\": [-0.33, -0.19, 73], \"source\": [\"hba1c_change_dispersion\", \"hba1c_change_dispersion\", \"n_analyzed\"]}",
+   "resultado": "RESULT: 0.31"
+  },
+  {
+   "emitiu": "{\"function\": \"sd_from_ci\", \"arguments\": [-0.1, 0.02, 69], \"source\": [\"hba1c_change_dispersion\", \"hba1c_change_dispersion\", \"n_analyzed\"]}",
+   "resultado": "RESULT: 0.25"
+  },
+  {
+   "emitiu": "{\"function\": \"md\", \"arguments\": [-0.24, 0.31, 73, -0.04, 0.25, 69], \"source\": [\"hba1c_change_mean\", \"previous-result\", \"n_analyzed\", \"hba1c_change_mean\", \"previous-result\", \"n_analyzed\"]}",
+   "resultado": "RESULT: -0.2"
+  },
+  {
+   "emitiu": "{\"function\": \"ci95_md\", \"arguments\": [-0.24, 0.31, 73, -0.04, 0.25, 69], \"source\": [\"hba1c_change_mean\", \"previous-result\", \"n_analyzed\", \"hba1c_change_mean\", \"previous-result\", \"n_analyzed\"]}",
+   "resultado": "RESULT: [-0.29, -0.11]"
+  },
+  {
+   "emitiu": "{\"function\": \"end\", \"arguments\": [-0.2, -0.29, -0.11], \"source\": [\"previous-result\", \"previous-result\", \"previous-result\"]}"
+  }
+ ],
+ "final": {
+  "md": -0.2,
+  "ic95": [
+   -0.29,
+   -0.11
+  ]
+ }
+}

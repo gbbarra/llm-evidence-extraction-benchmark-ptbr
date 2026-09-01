@@ -1,0 +1,31 @@
+{
+ "estudo": "Saslow 2017",
+ "turnos": [
+  {
+   "emitiu": "{\"function\": \"sd_from_ci\", \"arguments\": [-1.1, -0.6, 11], \"source\": [\"hba1c_change_dispersion\", \"hba1c_change_dispersion\", \"n_analyzed\"]}",
+   "resultado": "RESULT: 0.42"
+  },
+  {
+   "emitiu": "{\"function\": \"sd_from_ci\", \"arguments\": [-0.6, 0.0, 8], \"source\": [\"hba1c_change_dispersion\", \"hba1c_change_dispersion\", \"n_analyzed\"]}",
+   "resultado": "RESULT: 0.43"
+  },
+  {
+   "emitiu": "{\"function\": \"md\", \"arguments\": [-0.8, 0.42, 11, -0.3, 0.43, 8], \"source\": [\"hba1c_change_mean\", \"previous-result\", \"n_analyzed\", \"hba1c_change_mean\", \"previous-result\", \"n_analyzed\"]}",
+   "resultado": "RESULT: -0.5"
+  },
+  {
+   "emitiu": "{\"function\": \"ci95_md\", \"arguments\": [-0.8, 0.42, 11, -0.3, 0.43, 8], \"source\": [\"hba1c_change_mean\", \"previous-result\", \"n_analyzed\", \"hba1c_change_mean\", \"previous-result\", \"n_analyzed\"]}",
+   "resultado": "RESULT: [-0.89, -0.11]"
+  },
+  {
+   "emitiu": "{\"function\": \"end\", \"arguments\": [-0.5, -0.89, -0.11], \"source\": [\"previous-result\", \"previous-result\", \"previous-result\"]}"
+  }
+ ],
+ "final": {
+  "md": -0.5,
+  "ic95": [
+   -0.89,
+   -0.11
+  ]
+ }
+}

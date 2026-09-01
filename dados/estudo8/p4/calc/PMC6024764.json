@@ -1,0 +1,23 @@
+{
+ "estudo": "Wang 2018",
+ "turnos": [
+  {
+   "emitiu": "{\"function\": \"md\", \"arguments\": [-0.63, 1.18, 24, -0.31, 0.7, 25], \"source\": [\"experimental_arm.hba1c_change_mean\", \"experimental_arm.hba1c_change_dispersion\", \"experimental_arm.n_analyzed\", \"control_arm.hba1c_change_mean\", \"control_arm.hba1c_change_dispersion\", \"control_arm.n_analyzed\"]}",
+   "resultado": "RESULT: -0.32"
+  },
+  {
+   "emitiu": "{\"function\": \"ci95_md\", \"arguments\": [-0.63, 1.18, 24, -0.31, 0.7, 25], \"source\": [\"experimental_arm.hba1c_change_mean\", \"experimental_arm.hba1c_change_dispersion\", \"experimental_arm.n_analyzed\", \"control_arm.hba1c_change_mean\", \"control_arm.hba1c_change_dispersion\", \"control_arm.n_analyzed\"]}",
+   "resultado": "RESULT: [-0.87, 0.23]"
+  },
+  {
+   "emitiu": "{\"function\": \"end\", \"arguments\": [-0.32, -0.87, 0.23], \"source\": [\"previous-result\", \"previous-result\", \"previous-result\"]}"
+  }
+ ],
+ "final": {
+  "md": -0.32,
+  "ic95": [
+   -0.87,
+   0.23
+  ]
+ }
+}
