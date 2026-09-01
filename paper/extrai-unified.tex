@@ -114,12 +114,13 @@ The mechanical recitation detector raised 5 candidate cells across 140 sheets, a
 The factuality classification of the divergent cells (Table~\ref{tab:p1}, middle columns) found \textbf{zero invention candidates in every model}: each number each model wrote exists in, or is arithmetically derivable from, the perturbed text it read. Most divergences were themselves replicate-stable --- the same non-key answer written in both independent readings: 17/21 for \texttt{gemma4:12b}, 20/20 for \texttt{qwen3:14b}, 13/20 for \texttt{qwen3.5:9b}, 16/26 for \texttt{deepseek-r1:14b}, but only 17/36 for \texttt{llama3.1:8b} --- suggesting that for the stronger readers, divergence from the key is a systematic reading choice rather than sampling noise.
 
 \begin{table}[H]
-\centering\small
-\caption{P1 extraction under English instruments (perturbed Anchor-1 corpus; 124 eligible key cells per model). Two comparators: \emph{stability} grades replicate 1 against replicate 2 (the model against itself, no key); \emph{correct cells} grades replicate 1 against the source-verified key. The three middle columns decompose the non-matching cells by factuality (omissions + inventions + value/format = 124 $-$ correct); a cell can be stable yet divergent from the key, so stability can exceed the key score. Recitation candidates are shown before/after adjudication. $\dagger$one replicate unparseable (its pair served).}
+\centering\footnotesize
+\caption{P1 extraction under English instruments (perturbed Anchor-1 corpus; 124 eligible key cells per model). Two comparators: \emph{stability} grades replicate 1 against replicate 2 (the model against itself, no key); \emph{correct} grades replicate 1 against the source-verified key. The three middle columns decompose the non-matching cells by factuality (omissions + inventions + value/format = 124 $-$ correct); a cell can be stable yet divergent from the key, so stability can exceed the key score. Recitation candidates before/after adjudication. $\dagger$one replicate unparseable (its pair served).}
 \label{tab:p1}
+\setlength{\tabcolsep}{4pt}
 \begin{tabular}{lcccccc}
 \toprule
-Model & Stability r1--r2 & Recit.\ cand. & Omissions & Inventions & Value/format & Correct vs key \\
+Model & Stability & Recit. & Omiss. & Invent. & Val./fmt & Correct (vs key) \\
 \midrule
 gemma4:12b & 119/124 (96.0\%) & 1 $\rightarrow$ 0 & 0 & 0 & 21 & 103/124 (83.1\%) \\
 qwen3:14b & 123/124 (99.2\%) & 1 $\rightarrow$ 0 & 6 & 0 & 14 & 104/124 (83.9\%) \\
