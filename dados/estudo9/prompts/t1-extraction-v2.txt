@@ -1,0 +1,55 @@
+SCIENTIFIC ARTICLE (sole and exclusive source for this task):
+
+{ARTICLE}
+
+---
+
+TASK — EVIDENCE EXTRACTION FOR META-ANALYSIS
+
+You are a systematic-review reviewer. Extract from the article above the data for the form below, comparing the goal-directed fluid therapy arm (GDFT) with the control arm (conventional fluid therapy).
+
+Mandatory rules:
+1. Use ONLY the article above. Do not use any prior knowledge about this trial.
+2. Transcribe the values AS REPORTED in the article: keep mean ± SD, median (interquartile range), original units and decimal places.
+3. If the datum is NOT reported in the article, write exactly "NR" in the value field.
+4. If the trial has more than one goal-directed intervention arm, report all of them in the _gdft field, separated by " | ", naming each arm (e.g., "arm X: 1234 ml | arm Y: 4321 ml").
+5. Answer ONLY with a valid JSON object, with no text before or after it, and no code fences.
+6. Each field is an object {"value": "...", "where": "...", "quote": "..."} — "where" states the section or table of the article the datum was taken from (e.g., "Results", "Table 2", "Abstract").
+7. "quote" is the VERBATIM sentence or fragment of the article that contains the value — copied exactly as printed, at most 240 characters (trim the sentence around the value if longer). Never paraphrase, never translate, never fix typography. If the value is "NR", write "" in quote.
+
+Form (use exactly these keys):
+
+{
+  "n_randomized_gdft": {"value": "", "where": "", "quote": ""},
+  "n_randomized_control": {"value": "", "where": "", "quote": ""},
+  "surgery_type": {"value": "", "where": "", "quote": ""},
+  "laparoscopy_gdft": {"value": "", "where": "", "quote": ""},
+  "laparoscopy_control": {"value": "", "where": "", "quote": ""},
+  "asa_gdft": {"value": "", "where": "", "quote": ""},
+  "asa_control": {"value": "", "where": "", "quote": ""},
+  "total_fluid_gdft": {"value": "", "where": "", "quote": ""},
+  "total_fluid_control": {"value": "", "where": "", "quote": ""},
+  "crystalloid_gdft": {"value": "", "where": "", "quote": ""},
+  "crystalloid_control": {"value": "", "where": "", "quote": ""},
+  "colloid_gdft": {"value": "", "where": "", "quote": ""},
+  "colloid_control": {"value": "", "where": "", "quote": ""},
+  "blood_loss_gdft": {"value": "", "where": "", "quote": ""},
+  "blood_loss_control": {"value": "", "where": "", "quote": ""},
+  "inotrope_use": {"value": "", "where": "", "quote": ""},
+  "morbidity_events_gdft": {"value": "", "where": "", "quote": ""},
+  "morbidity_events_control": {"value": "", "where": "", "quote": ""},
+  "mortality_gdft": {"value": "", "where": "", "quote": ""},
+  "mortality_control": {"value": "", "where": "", "quote": ""},
+  "hospital_los_gdft": {"value": "", "where": "", "quote": ""},
+  "hospital_los_control": {"value": "", "where": "", "quote": ""},
+  "time_to_flatus_gdft": {"value": "", "where": "", "quote": ""},
+  "time_to_flatus_control": {"value": "", "where": "", "quote": ""},
+  "time_to_oral_intake_gdft": {"value": "", "where": "", "quote": ""},
+  "time_to_oral_intake_control": {"value": "", "where": "", "quote": ""},
+  "time_to_defecation_gdft": {"value": "", "where": "", "quote": ""},
+  "time_to_defecation_control": {"value": "", "where": "", "quote": ""},
+  "postop_ileus_gdft": {"value": "", "where": "", "quote": ""},
+  "postop_ileus_control": {"value": "", "where": "", "quote": ""}
+}
+
+Definition notes: "n_randomized" = patients randomized per arm; "laparoscopy" = how many procedures were laparoscopic (count or %); "asa" = ASA physical status distribution (I:II:III:IV ratio if available); "morbidity_events" = number of patients with at least one postoperative complication; "mortality" = in-hospital or 30-day deaths; "hospital_los" = hospital length of stay; "postop_ileus" = cases of postoperative paralytic ileus.
