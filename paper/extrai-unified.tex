@@ -13,6 +13,7 @@
 \usepackage{caption}
 \captionsetup{font=small,labelfont=bf}
 \usepackage[section]{placeins} % floats never cross section boundaries
+\usepackage{float} % [H]: each table sits exactly after the text that describes it
 
 \title{\textbf{EXTRAI: correcting and creating meta-analyses with local language models --- a pre-registered five-phase benchmark with a perturbation reading proof and a self-correcting answer key}}
 \author{Gustavo Barcelos Barra\thanks{Independent researcher, Brazil. ORCID: \href{https://orcid.org/0000-0002-2136-3471}{0000-0002-2136-3471}. Correspondence: \texttt{gbbarra@gmail.com}.}}
@@ -82,7 +83,7 @@ All 140 extraction calls (5 models $\times$ 14 trials $\times$ 2 replicates) com
 
 The mechanical recitation detector raised 5 candidate cells across 140 sheets, and adjudication against the perturbed source texts resolved all 5 to incomplete-perturbation artifacts rather than recall: three models independently wrote a displaced count (113) that is arithmetically reconstructible from a surviving percentage printed beside it in the perturbed text (57.7\% $\times$ n=196 = 113.1), and two models transcribed a value (4088) that survives verbatim in a prose restatement the perturbation operator missed. Zero attributable recitations remained. The same three models copied, rather than reconstructed, the equally inconsistent control-arm cell of the same table --- an asymmetric preference shared across architectures, recorded as a behavior note.
 
-\begin{table}[t]
+\begin{table}[H]
 \centering\small
 \caption{P1 extraction under English instruments (perturbed Anchor-1 corpus; 124 eligible key cells per model). Recitation candidates are shown before/after adjudication.}
 \label{tab:p1}
@@ -105,9 +106,7 @@ Across all five models, exactly 1 of 57 unaided 95\% confidence intervals was ex
 \subsection{P3 --- creation: every model reproduces the dichotomous pools; exactly one reaches the continuous diamond}
 From the P1 sheets, the deterministic engines reproduced Anchor~1's published pooled estimates for \emph{all five} models: pooled morbidity 0.771--0.779 against the published 0.778 [0.567, 1.068], and pooled mortality 0.980--1.023 against the published 1.021 [0.446, 2.337], every value within $\pm$0.01 of the published except one mortality estimate at $\Delta$0.04 (Table~\ref{tab:p3ma1}). The postoperative-ileus pool is non-comparable by construction (anchor erratum \#16: one published row is a different outcome) and was reported, never pooled against.
 
-From the fresh Anchor-2 extractions (70/70 calls, 155.1 minutes), the same engine and sealed lens produced five diamonds (Table~\ref{tab:p3ma2}). \texttt{gemma4:12b}'s lens landed at $-0.27$ [$-0.38$, $-0.17$] (I\textsuperscript{2} 28.6\%), beside the published $-0.24$ [$-0.32$, $-0.16$] --- and identical to the hundredth to the same model's result in the archived development pilot. The other four landed between $-0.47$ and $-0.80$ with saturated heterogeneity (I\textsuperscript{2} 90.5--99.1\%), two of them with starved sheets (5/7 and 6/7 trials in the pool).
-
-\begin{table}[t]
+\begin{table}[H]
 \centering\small
 \caption{P3, Anchor 1: DerSimonian--Laird pools from each model's own sheets (published: morbidity 0.778 [0.567, 1.068]; mortality 1.021 [0.446, 2.337]).}
 \label{tab:p3ma1}
@@ -124,7 +123,9 @@ deepseek-r1:14b & 0.775 [0.565, 1.063] & 0.980 [0.428, 2.246] \\
 \end{tabular}
 \end{table}
 
-\begin{table}[t]
+From the fresh Anchor-2 extractions (70/70 calls, 155.1 minutes), the same engine and sealed lens produced five diamonds (Table~\ref{tab:p3ma2}). \texttt{gemma4:12b}'s lens landed at $-0.27$ [$-0.38$, $-0.17$] (I\textsuperscript{2} 28.6\%), beside the published $-0.24$ [$-0.32$, $-0.16$] --- and identical to the hundredth to the same model's result in the archived development pilot. The other four landed between $-0.47$ and $-0.80$ with saturated heterogeneity (I\textsuperscript{2} 90.5--99.1\%), two of them with starved sheets (5/7 and 6/7 trials in the pool).
+
+\begin{table}[H]
 \centering\small
 \caption{P3, Anchor 2: the five diamonds --- unperturbation-lens pooled HbA1c mean differences (published: $-0.24$ [$-0.32$, $-0.16$], I\textsuperscript{2} 6\%).}
 \label{tab:p3ma2}
@@ -149,7 +150,7 @@ On the original, unperturbed texts, replicate agreement was 96.8\% (Anchor~1) an
 
 Over the same sheets, the three detection configurations behaved differently against that poisoned cell (Table~\ref{tab:configs}): the bare engine delivered the distorted pool silently; the sheet-versus-source net flagged the experimental arm mechanically, with both source quotations, after a first rule revision (its initial form stayed correctly silent because the trial's own prose prints the $\pm$ form --- the flag rule was extended, as a dated amendment, to fire when a printed $\pm$ equals the printed interval's half-width; the control arm's $\pm$ matches nothing within the pre-registered tolerance and was not flagged); and the conversational ten-net harness raised zero flags on the poisoned cell --- whose downstream calls were well-formed, correctly source-declared and internally coherent --- while catching four live orchestration slips (one arity, three derivation declarations) in the same run. A DerSimonian--Laird weight-share flag ($>$40\%) was blind to the distortion (the poisoned trial's share was 19.3\%; the distortion's product signature was heterogeneity inflation, I\textsuperscript{2} 6\%$\rightarrow$79\%).
 
-\begin{table}[t]
+\begin{table}[H]
 \centering\small
 \caption{P5: three error-detection configurations against the same single-cell defect, same sheets, no answer key in any loop.}
 \label{tab:configs}
@@ -167,7 +168,7 @@ Configuration & Pool delivered & The poisoned cell \\
 \subsection{Instruction-language robustness}
 Per phase, the campaign's English-instrument results sat within replicate-level variance of the archived Portuguese-instrument pilot (Table~\ref{tab:ablation}). The largest reading-stage difference was $+3$ cells of 124 on the one directly comparable model, with replicate stability identical to the decimal; the arithmetic signature (unaided failure, calculator repair, pool ceiling, per-model deviant classes) matched point for point; the creation-stage flagship value was identical to the hundredth; and the orchestration-stage delta sat inside the measured route-variability band with the same warning classes on the same trial.
 
-\begin{table}[t]
+\begin{table}[H]
 \centering\small
 \caption{Instruction-language robustness: the English-instrument campaign vs the archived Portuguese-instrument development pilot, per phase (directly comparable quantities only).}
 \label{tab:ablation}
