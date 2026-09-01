@@ -1,0 +1,15 @@
+You extracted data from 8 randomized clinical trials that compared goal-directed fluid therapy (GDFT) with conventional fluid therapy in major abdominal surgery. Below are YOUR OWN extractions, one per trial:
+
+{EXTRACTIONS}
+
+---
+
+TASK — SYNTHESIS OF THE BODY OF EVIDENCE
+
+Write, in English, a narrative synthesis of 250 to 400 words of the body of evidence above, covering the effect of GDFT on: (a) postoperative morbidity, (b) mortality, (c) hospital length of stay and (d) bowel function (ileus, time to flatus/oral intake/defecation).
+
+Mandatory rules:
+1. Use ONLY the data from the extractions above. Do not use prior knowledge and do not invent missing numbers.
+2. For each outcome, state the direction of the effect (favors GDFT, favors control, no difference), the qualitative magnitude and the uncertainty (how many trials report the outcome, consistency among them).
+3. Where the extractions say "NR", treat the datum as not reported — do not estimate it.
+4. Answer only with the text of the synthesis, without headings, lists or comments about the task.

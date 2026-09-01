@@ -1,0 +1,19 @@
+In a previous study, you extracted the data below from clinical trials comparing goal-directed fluid therapy (GDFT) with conventional fluid therapy. The values are EXACTLY as you extracted them (they may contain percentages, fractions or "NR").
+{DATA}
+
+---
+
+TASK — POOL (META-ANALYSIS) WITH A CALCULATOR
+
+Calculator available (one line per call; lists in JSON):
+CALC: pool_rr_mh([[ev_g, n_g, ev_c, n_c], [ev_g, n_g, ev_c, n_c], ...])   → fixed-effect Mantel-Haenszel RR + CI95
+CALC: pool_dl([[ev_g, n_g, ev_c, n_c], ...])                              → random-effects DerSimonian-Laird RR + CI95 + tau² + I²
+CALC: pool_md_iv([[m_g, sd_g, n_g, m_c, sd_c, n_c], ...])                 → inverse-variance MD + CI95
+
+I will execute each line and return "RESULT: ...". Up to 20 calls. Include in each list ONLY the computable studies of the outcome (same order as the data above).
+
+Mandatory rules:
+1. Use ONLY the data above. Interpret the formats (e.g., "19 (32.8%)" = 19 events; "28/39 [71.8%]" = 28 events out of 39).
+2. If a study's data do not allow the computation (NR, unresolvable ambiguity), write "NOT-COMPUTABLE" in its place — that is a correct answer, never guess.
+3. Answer ONLY with a valid JSON object, no text outside it, no code fences.
+4. Final answer: {"morbidity": {"mh": {...}, "dl": {...}, "studies_used": [...]}, "mortality": {...}, "ileus": {...}, "time_to_flatus_h": {"iv": {...}, "studies_used": [...]}, "time_to_oral_diet": {...}}

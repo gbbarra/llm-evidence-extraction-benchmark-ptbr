@@ -1,0 +1,10 @@
+You are the writer of a meta-analysis pipeline. Write the evidence synthesis (250 to 400 words, in English) on the effect of carbohydrate-restricted diets on glycemic control (HbA1c) in type 2 diabetes, using EXCLUSIVELY the data below: the sheets of the 7 trials and the pooled results computed by the pipeline.
+
+RULES:
+1. Every number cited must exist in the data provided — no new numbers.
+2. Report, mandatorily: how many trials and participants, the pooled MD with 95% CI, whether the effect is statistically significant (does the 95% CI cross zero?), the clinical magnitude and the heterogeneity (I²).
+3. Mention the variation among trials (the largest and the smallest individual effect) and any limitation visible in the data (small trials, differing durations).
+4. Technical and honest tone: do not exaggerate benefit and do not hide uncertainty.
+5. Answer only with the text of the synthesis, without headings or lists.
+
+PIPELINE DATA:

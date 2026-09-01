@@ -1,0 +1,19 @@
+In a previous study, you extracted the data below from clinical trials comparing goal-directed fluid therapy (GDFT) with conventional fluid therapy. The values are EXACTLY as you extracted them (they may contain percentages, fractions or "NR").
+{DATA}
+
+---
+
+TASK — COMPUTE MEAN DIFFERENCES (with a calculator)
+
+Calculator available (one line per call, exact format):
+CALC: md(mean_gdft, sd_gdft, n_gdft, mean_control, sd_control, n_control)
+CALC: ci95_md(mean_gdft, sd_gdft, n_gdft, mean_control, sd_control, n_control)
+
+I will execute each line and return "RESULT: ...". Up to 20 calls.
+Mind the units (days↔hours): convert before calling and record it in "note".
+
+Mandatory rules:
+1. Use ONLY the data above. Interpret the formats (e.g., "19 (32.8%)" = 19 events; "28/39 [71.8%]" = 28 events out of 39).
+2. If a study's data do not allow the computation (NR, unresolvable ambiguity), write "NOT-COMPUTABLE" in its place — that is a correct answer, never guess.
+3. Answer ONLY with a valid JSON object, no text outside it, no code fences.
+4. Final answer: {"time_to_flatus_h": {"Sun 2023": {"md": 0.00, "ci95": [0.00, 0.00], "note": ""}, ...}, "time_to_oral_diet": {...}}

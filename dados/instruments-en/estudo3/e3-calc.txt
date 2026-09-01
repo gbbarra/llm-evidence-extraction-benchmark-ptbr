@@ -1,0 +1,29 @@
+You are the statistician of a meta-analysis pipeline. Below are the audited extraction sheets of 7 clinical trials (change in HbA1c, %, experimental arm vs control). Your task: compute each trial's mean difference (MD) with 95% CI and the random-effects pooled estimate — USING THE CALCULATOR, never in your head.
+
+CALCULATOR (write one call per line, exactly in this format; the system executes it and returns the result):
+CALC: md(m_exp, sd_exp, n_exp, m_ctl, sd_ctl, n_ctl)
+CALC: ci95_md(m_exp, sd_exp, n_exp, m_ctl, sd_ctl, n_ctl)
+CALC: sd_from_ci(ci_lower, ci_upper, n)        <- converts a 95% CI of the CHANGE into SD
+CALC: sd_from_se(se, n)                        <- converts standard error into SD
+CALC: sd_change_r05(sd_baseline, sd_final)     <- imputes the SD of the change (r=0.5) when only baseline and final SDs exist
+CALC: pool_dl_md(lists)                        <- DerSimonian-Laird pooled estimate; lists = [[m1,sd1,n1,m2,sd2,n2], ...] in trial order
+
+RULES:
+1. For each trial, assemble the sextet (mean_exp, sd_exp, n_exp, mean_ctl, sd_ctl, n_ctl) from the sheet:
+   - if the dispersion is "SD", use it directly;
+   - if it is "SE", convert with sd_from_se;
+   - if it is "CI95", convert with sd_from_ci;
+   - if only baseline and final exist, the change mean is (final − baseline) and the SD comes from sd_change_r05;
+   - use n_analyzed; if "NR", use the arm's n_randomized.
+2. The sign convention of the result: negative change = HbA1c fell. If the sheet records the DROP as a positive number (the text prints it that way), convert the sign when assembling the sextet.
+3. If a trial does not have sufficient data, write "NOT-COMPUTABLE" in its place and continue with the others.
+4. Up to 24 CALC calls. After the calls, answer with the final JSON:
+{
+ "per_study": [
+  {"study": "<author year>", "md": <n>, "ci95": [<lower>, <upper>]},
+  ...
+ ],
+ "pooled": {"method": "DL", "md": <n>, "ci95": [<lower>, <upper>], "i2_pct": <n>}
+}
+
+AUDITED SHEETS:

@@ -1,0 +1,19 @@
+You are the statistician of a meta-analysis. Your task: compute the mean difference (MD) and the 95% confidence interval of the HbA1c change of this study, using ONLY the calculator.
+
+AVAILABLE FUNCTIONS (one call per line, exactly in this format):
+CALC: md(m1, sd1, n1, m2, sd2, n2)
+CALC: ci95_md(m1, sd1, n1, m2, sd2, n2)
+CALC: sd_from_ci(lower, upper, n)
+CALC: sd_from_se(se, n)
+CALC: sd_change_r05(sd_baseline, sd_final)
+
+RULES:
+1. Emit ONE line at a time: a single CALC call, and nothing else. Wait for the RESULT before the next one.
+2. Copy the numbers from the sheet EXACTLY, including the sign (negative = HbA1c fell; positive = it rose).
+3. If the sheet's dispersion is CI95, convert with sd_from_ci; if it is SE, with sd_from_se. If the sheet only has baseline and final, derive the change (final − baseline) and the SD with sd_change_r05.
+4. Arm 1 = experimental; arm 2 = control.
+5. When you have the study's final MD and CI95, write only END.
+6. If you receive a WARNING, check the sheet and re-emit the call — corrected, or identical if you confirm the value.
+
+STUDY SHEET:
+{SHEET}

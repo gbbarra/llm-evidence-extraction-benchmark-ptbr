@@ -90,21 +90,21 @@ def main():
             ok = compat(d6.valor(rev, campo), fonte)
             boas += ok
             if not ok:
-                pend.append(dict(trial=tid, campo=campo, modelo=d6.valor(rev, campo),
-                                 fonte=str(fonte)[:60]))
+                pend.append(dict(trial=tid, field=campo, model=d6.valor(rev, campo),
+                                 source=str(fonte)[:60]))
             if arq is not None:
                 est_tot += 1
                 est_ig += compat(d6.valor(js, campo), d6.valor(arq, campo))
-    res = dict(celulas=f"{boas}/{tot} ({round(100 * boas / tot, 1)}%)",
-               estabilidade=f"{est_ig}/{est_tot} ({round(100 * est_ig / est_tot, 1)}%)",
-               divergentes=pend)
+    res = dict(cells=f"{boas}/{tot} ({round(100 * boas / tot, 1)}%)",
+               stability=f"{est_ig}/{est_tot} ({round(100 * est_ig / est_tot, 1)}%)",
+               divergents=pend)
     (D6 / "avaliacao-celulas.json").write_text(json.dumps(res, ensure_ascii=False, indent=1),
                                                encoding="utf-8")
-    print(f"H6.1 células (rev. vs fonte): {res['celulas']}")
-    print(f"H6.3 estabilidade (fresh vs arquivada): {res['estabilidade']}")
-    print(f"divergentes: {len(pend)}")
+    print(f"H6.1 cells (reversed vs source): {res['cells']}")
+    print(f"H6.3 stability (fresh vs archived): {res['stability']}")
+    print(f"divergents: {len(pend)}")
     for p in pend[:10]:
-        print(f"  {p['trial']} {p['campo']}: modelo={p['modelo']!r} fonte={p['fonte']!r}")
+        print(f"  {p['trial']} {p['field']}: model={p['model']!r} source={p['source']!r}")
 
 
 if __name__ == "__main__":

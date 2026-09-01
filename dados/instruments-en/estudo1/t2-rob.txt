@@ -1,0 +1,28 @@
+SCIENTIFIC ARTICLE (sole and exclusive source for this task):
+
+{ARTICLE}
+
+---
+
+TASK — RISK OF BIAS ASSESSMENT (Cochrane RoB)
+
+You are a systematic-review reviewer. Assess the risk of bias of the clinical trial above across the 7 domains of the Cochrane tool, plus the overall judgment.
+
+Mandatory rules:
+1. Use ONLY what the article reports (or fails to report). Do not use prior knowledge about this trial.
+2. Judgment per domain: exactly "Low", "High" or "Unclear".
+3. Justification: ONE sentence per domain, citing what the article says (or the absence of information).
+4. Answer ONLY with a valid JSON object, with no text before or after it, and no code fences.
+
+Format (use exactly these keys):
+
+{
+  "random_sequence_generation": {"judgment": "", "justification": ""},
+  "allocation_concealment": {"judgment": "", "justification": ""},
+  "blinding_participants_personnel": {"judgment": "", "justification": ""},
+  "blinding_outcome_assessment": {"judgment": "", "justification": ""},
+  "incomplete_outcome_data": {"judgment": "", "justification": ""},
+  "selective_reporting": {"judgment": "", "justification": ""},
+  "other_bias": {"judgment": "", "justification": ""},
+  "overall_risk": {"judgment": "", "justification": ""}
+}

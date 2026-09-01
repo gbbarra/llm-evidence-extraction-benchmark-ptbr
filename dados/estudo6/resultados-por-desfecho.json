@@ -1,33 +1,33 @@
 {
- "morbidade": {
-  "linhas": [
+ "morbidity": {
+  "rows": [
    {
-    "estudo": "Calvo-Vecino et al.",
+    "study": "Calvo-Vecino et al.",
     "pmcid": "REF33",
-    "nosso": "RR 0.504 [0.3, 0.847] (a=19/224, c=38/226) [derivado-de-%]",
-    "publicado": "RR 0.519 [0.304, 0.887]",
-    "categoria": "verificar (rota-do-modelo ou erro-do-modelo — adjudicar na fonte)"
+    "ours": "RR 0.504 [0.3, 0.847] (a=19/224, c=38/226) [derived-from-%]",
+    "published": "RR 0.519 [0.304, 0.887]",
+    "category": "verify (rota-do-modelo or erro-do-modelo — adjudicate in the source)"
    },
    {
-    "estudo": "Yun et al.",
+    "study": "Yun et al.",
     "pmcid": "PMC10561433",
-    "nosso": "RR 0.862 [0.674, 1.101] (a=28/39, c=30/36)",
-    "publicado": "RR 0.862 [0.674, 1.101]",
-    "categoria": "reproduz"
+    "ours": "RR 0.862 [0.674, 1.101] (a=28/39, c=30/36)",
+    "published": "RR 0.862 [0.674, 1.101]",
+    "category": "reproduz"
    },
    {
-    "estudo": "Diaper et al.",
+    "study": "Diaper et al.",
     "pmcid": "REF26",
-    "nosso": "RR 1.076 [0.9, 1.286] (a=113/198, c=105/198)",
-    "publicado": "RR 1.087 [0.91, 1.299]",
-    "categoria": "verificar (rota-do-modelo ou erro-do-modelo — adjudicar na fonte)"
+    "ours": "RR 1.076 [0.9, 1.286] (a=113/198, c=105/198)",
+    "published": "RR 1.087 [0.91, 1.299]",
+    "category": "verify (rota-do-modelo or erro-do-modelo — adjudicate in the source)"
    },
    {
-    "estudo": "Wu et al.",
+    "study": "Wu et al.",
     "pmcid": "PMC10912221",
-    "nosso": "RR 0.594 [0.381, 0.925] (a=19/61, c=32/61)",
-    "publicado": "RR 0.573 [0.372, 0.884]",
-    "categoria": "verificar (rota-do-modelo ou erro-do-modelo — adjudicar na fonte)"
+    "ours": "RR 0.594 [0.381, 0.925] (a=19/61, c=32/61)",
+    "published": "RR 0.573 [0.372, 0.884]",
+    "category": "verify (rota-do-modelo or erro-do-modelo — adjudicate in the source)"
    }
   ],
   "pool": {
@@ -49,21 +49,21 @@
    }
   }
  },
- "mortalidade": {
-  "linhas": [
+ "mortality": {
+  "rows": [
    {
-    "estudo": "de Waal et al.",
+    "study": "de Waal et al.",
     "pmcid": "REF29",
-    "nosso": "RR 0.946 [0.401, 2.232] (a=10/258, c=10/244)",
-    "publicado": "RR 0.944 [0.4, 2.226]",
-    "categoria": "reproduz"
+    "ours": "RR 0.946 [0.401, 2.232] (a=10/258, c=10/244)",
+    "published": "RR 0.944 [0.4, 2.226]",
+    "category": "reproduz"
    },
    {
-    "estudo": "Sun et al.",
+    "study": "Sun et al.",
     "pmcid": "PMC10694978",
-    "nosso": "RR 3.0 [0.125, 71.927] (a=1/50, c=0/50)",
-    "publicado": "RR 3.0 [0.125, 71.927]",
-    "categoria": "reproduz"
+    "ours": "RR 3.0 [0.125, 71.927] (a=1/50, c=0/50)",
+    "published": "RR 3.0 [0.125, 71.927]",
+    "category": "reproduz"
    }
   ],
   "pool": {
@@ -85,28 +85,28 @@
    }
   }
  },
- "ileo": {
-  "linhas": [
+ "ileus": {
+  "rows": [
    {
-    "estudo": "Arslan-Carlon et al.",
+    "study": "Arslan-Carlon et al.",
     "pmcid": "REF30",
-    "nosso": "RR 1.192 [0.779, 1.822] (a=36/142, c=30/141)",
-    "publicado": "RR 1.19 [0.77, 1.83]",
-    "categoria": "reproduz"
+    "ours": "RR 1.192 [0.779, 1.822] (a=36/142, c=30/141)",
+    "published": "RR 1.19 [0.77, 1.83]",
+    "category": "reproduz"
    },
    {
-    "estudo": "Sun et al.",
+    "study": "Sun et al.",
     "pmcid": "PMC10694978",
-    "nosso": "RR 0.125 [0.03, 0.515] (a=2/50, c=16/50)",
-    "publicado": "RR 0.13 [0.03, 0.53]",
-    "categoria": "verificar (rota-do-modelo ou erro-do-modelo — adjudicar na fonte)"
+    "ours": "RR 0.125 [0.03, 0.515] (a=2/50, c=16/50)",
+    "published": "RR 0.13 [0.03, 0.53]",
+    "category": "verify (rota-do-modelo or erro-do-modelo — adjudicate in the source)"
    },
    {
-    "estudo": "Castro et al.",
+    "study": "Castro et al.",
     "pmcid": "PMC11061212",
-    "nosso": "dados-insuficientes",
-    "publicado": "RR 0.31 [0.14, 0.68]",
-    "categoria": "insuficiente"
+    "ours": "insufficient-data",
+    "published": "RR 0.31 [0.14, 0.68]",
+    "category": "insufficient"
    }
   ],
   "pool": {
@@ -128,47 +128,47 @@
    }
   }
  },
- "tempo_flatus": {
-  "linhas": [
+ "time_to_flatus": {
+  "rows": [
    {
-    "estudo": "Sun et al.",
+    "study": "Sun et al.",
     "pmcid": "PMC10694978",
-    "nosso": "dados-insuficientes",
-    "publicado": "MD -11.0 [-16.2, -5.8]",
-    "categoria": "insuficiente · difere-por-escolha-documentada-da-ancora [derivavel-conversao]"
+    "ours": "insufficient-data",
+    "published": "MD -11.0 [-16.2, -5.8]",
+    "category": "insufficient · difere-por-escolha-documentada-da-ancora [derivavel-conversao]"
    },
    {
-    "estudo": "Coeckelenbergh et al.",
+    "study": "Coeckelenbergh et al.",
     "pmcid": "REF41",
-    "nosso": "dados-insuficientes",
-    "publicado": "MD -8.0 [-15.1, -0.9]",
-    "categoria": "insuficiente · fonte-indisponivel [nao-sustentada]"
+    "ours": "insufficient-data",
+    "published": "MD -8.0 [-15.1, -0.9]",
+    "category": "insufficient · fonte-indisponivel [nao-sustentada]"
    },
    {
-    "estudo": "Diaper et al.",
+    "study": "Diaper et al.",
     "pmcid": "REF26",
-    "nosso": "dados-insuficientes",
-    "publicado": "MD -3.0 [-6.8, 0.8]",
-    "categoria": "insuficiente · fonte-indisponivel [nao-sustentada]"
+    "ours": "insufficient-data",
+    "published": "MD -3.0 [-6.8, 0.8]",
+    "category": "insufficient · fonte-indisponivel [nao-sustentada]"
    }
   ],
   "pool": null
  },
- "tempo_ingesta_oral": {
-  "linhas": [
+ "time_to_oral_intake": {
+  "rows": [
    {
-    "estudo": "Sun et al.",
+    "study": "Sun et al.",
     "pmcid": "PMC10694978",
-    "nosso": "dados-insuficientes",
-    "publicado": "MD -24.0 [-34.5, -13.5]",
-    "categoria": "insuficiente · difere-por-errata-da-ancora [errata-ma]"
+    "ours": "insufficient-data",
+    "published": "MD -24.0 [-34.5, -13.5]",
+    "category": "insufficient · difere-por-errata-da-ancora [errata-ma]"
    },
    {
-    "estudo": "Sujatha et al.",
+    "study": "Sujatha et al.",
     "pmcid": "PMC6907038",
-    "nosso": "dados-insuficientes",
-    "publicado": "MD -5.0 [-12.1, 2.1]",
-    "categoria": "insuficiente · fonte-indisponivel [dado-fora-do-insumo]"
+    "ours": "insufficient-data",
+    "published": "MD -5.0 [-12.1, 2.1]",
+    "category": "insufficient · fonte-indisponivel [dado-fora-do-insumo]"
    }
   ],
   "pool": null

@@ -50,12 +50,14 @@ for nome in ("perturbacoes-estudo1.json", "perturbacoes-fechados.json",
         SELO.setdefault(tid, []).extend(
             r for r in regs if isinstance(r, dict) and "original" in r and "perturbado" in r)
 
+# display names in English; the e/c field keys stay Portuguese because they
+# address the archived Study-6 sheets, produced under the frozen PT instrument
 DESFECHOS = [
-    dict(nome="morbidade", tipo="rr", tabela=5, e="morbidade_eventos_gdft", c="morbidade_eventos_controle"),
-    dict(nome="mortalidade", tipo="rr", tabela=6, e="mortalidade_gdft", c="mortalidade_controle"),
-    dict(nome="ileo", tipo="rr", tabela=11, e="ileo_pos_op_gdft", c="ileo_pos_op_controle"),
-    dict(nome="tempo_flatus", tipo="md", tabela=8, e="tempo_flatus_gdft", c="tempo_flatus_controle"),
-    dict(nome="tempo_ingesta_oral", tipo="md", tabela=9, e="tempo_ingesta_oral_gdft", c="tempo_ingesta_oral_controle"),
+    dict(nome="morbidity", tipo="rr", tabela=5, e="morbidade_eventos_gdft", c="morbidade_eventos_controle"),
+    dict(nome="mortality", tipo="rr", tabela=6, e="mortalidade_gdft", c="mortalidade_controle"),
+    dict(nome="ileus", tipo="rr", tabela=11, e="ileo_pos_op_gdft", c="ileo_pos_op_controle"),
+    dict(nome="time_to_flatus", tipo="md", tabela=8, e="tempo_flatus_gdft", c="tempo_flatus_controle"),
+    dict(nome="time_to_oral_intake", tipo="md", tabela=9, e="tempo_ingesta_oral_gdft", c="tempo_ingesta_oral_controle"),
 ]
 
 
@@ -111,7 +113,7 @@ def eventos(s, n=None):
         return int(m.group(1)), ""
     m = re.search(r"(\d+(?:\.\d+)?)\s*%", t)
     if m and n:
-        return round(float(m.group(1)) / 100 * n), "derivado-de-%"
+        return round(float(m.group(1)) / 100 * n), "derived-from-%"
     m = re.match(r"\s*(\d+)\b", t)
     return (int(m.group(1)), "") if m else (None, "")
 
@@ -179,7 +181,7 @@ def categoria(tid, campos, nossa_igual_pub):
         return "reproduz", ""
     if achado[0]:
         return achado
-    return "verificar (rota-do-modelo ou erro-do-modelo — adjudicar na fonte)", ""
+    return "verify (rota-do-modelo or erro-do-modelo — adjudicate in the source)", ""
 
 
 def main():
@@ -191,21 +193,26 @@ def main():
             fichas[tid] = desperturba(tid, js)
         else:
             pendentes.append(tid)
-    print(f"fichas disponíveis: {len(fichas)}/{len(GAB)}"
-          + (f" · pendentes: {pendentes}" if pendentes else ""), flush=True)
+    print(f"sheets available: {len(fichas)}/{len(GAB)}"
+          + (f" · pending: {pendentes}" if pendentes else ""), flush=True)
 
-    L = ["# Estudo 6 — a replicação em detalhe (MA-1, GDFT)",
+    L = ["# Study 6 — the replication, in detail (MA-1, GDFT)",
          "",
-         "Lado a lado, por desfecho: as células do gemma12 (selo revertido), o efeito computado "
-         "pelo código, o valor publicado, e a categoria congelada da comparação. "
-         "Categorias que exigem fonte são adjudicadas no registro de avaliação.",
+         "Side by side, per outcome: gemma12's cells (seal reversed), the effect computed "
+         "by the code, the published value, and the frozen comparison category. "
+         "Categories that require the source are adjudicated in the evaluation record.",
+         "",
+         "Frozen category names (pre-registered in Portuguese, kept as labels): "
+         "*reproduz* = reproduces · *difere-por-errata-da-ancora* = differs by a documented "
+         "anchor erratum · *rota-do-modelo* = documented alternative reading route · "
+         "*erro-do-modelo* = model error · *fonte-indisponivel* = source unavailable.",
          ""]
     resultados = {}
     for d in DESFECHOS:
         tab = next(t for t in MA if t["numero"] == d["tabela"])
-        L.append(f"## {d['nome']} (tabela {d['tabela']} da âncora)")
+        L.append(f"## {d['nome']} (anchor table {d['tabela']})")
         L.append("")
-        L.append("| estudo | células (dele, revertidas) | nosso | publicado | categoria |")
+        L.append("| study | model cells (reversed) | ours | published | category |")
         L.append("|---|---|---|---|---|")
         sextetos = []
         linhas_r = []
@@ -217,17 +224,17 @@ def main():
                 pr, pic = (rr_pub(cel) if d["tipo"] == "rr" else md_pub(cel))
                 if pr is not None:
                     pub_pool = (pr, pic)
-                    L.append(f"| *(linha agregada da âncora: {linha.get('rotulo', 'pooled')})* | — | — | "
-                             f"{'RR' if d['tipo'] == 'rr' else 'MD'} {pr} {pic} | (pool publicado) |")
+                    L.append(f"| *(anchor's pooled row: {linha.get('rotulo', 'pooled')})* | — | — | "
+                             f"{'RR' if d['tipo'] == 'rr' else 'MD'} {pr} {pic} | (published pool) |")
                 else:
-                    print(f"  [aviso] linha sem pmcid/efeito ignorada em T{d['tabela']}: "
+                    print(f"  [warning] row without pmcid/effect skipped in T{d['tabela']}: "
                           f"{linha.get('rotulo')}", flush=True)
                 continue
             js = fichas.get(tid)
             if d["tipo"] == "rr":
                 pub_r, pub_ic = rr_pub(cel)
                 if js is None:
-                    nosso_txt, cat, cit = "(ficha pendente)", "pendente", ""
+                    nosso_txt, cat, cit = "(sheet pending)", "pending", ""
                 else:
                     n1 = inteiro(valor(js, "n_randomizados_gdft"))
                     n2 = inteiro(valor(js, "n_randomizados_controle"))
@@ -235,11 +242,11 @@ def main():
                     c, fc = eventos(valor(js, d["c"]), n2)
                     if None in (a, c, n1, n2):
                         cat, cit = categoria(tid, [d["e"], d["c"]], False)
-                        if cat.startswith("verificar"):
-                            cat = "insuficiente"
+                        if cat.startswith("verify"):
+                            cat = "insufficient"
                         else:
-                            cat = "insuficiente · " + cat
-                        nosso_txt = "dados-insuficientes"
+                            cat = "insufficient · " + cat
+                        nosso_txt = "insufficient-data"
                     else:
                         r = e2.rr(a, n1, c, n2)
                         ic = e2.ic95_rr(a, n1, c, n2)
@@ -254,7 +261,7 @@ def main():
             else:
                 pub_m, pub_ic = md_pub(cel)
                 if js is None:
-                    nosso_txt, cat, cit = "(ficha pendente)", "pendente", ""
+                    nosso_txt, cat, cit = "(sheet pending)", "pending", ""
                 else:
                     m1, s1 = media_dp(valor(js, d["e"]))
                     m2, s2 = media_dp(valor(js, d["c"]))
@@ -262,11 +269,11 @@ def main():
                     n2 = inteiro(valor(js, "n_randomizados_controle"))
                     if None in (m1, s1, m2, s2, n1, n2):
                         cat, cit = categoria(tid, [d["e"], d["c"]], False)
-                        if cat.startswith("verificar"):
-                            cat = "insuficiente"
+                        if cat.startswith("verify"):
+                            cat = "insufficient"
                         else:
-                            cat = "insuficiente · " + cat
-                        nosso_txt = "dados-insuficientes"
+                            cat = "insufficient · " + cat
+                        nosso_txt = "insufficient-data"
                     else:
                         mdv = e2.md(m1, s1, n1, m2, s2, n2)
                         ic = e2.ic95_md(m1, s1, n1, m2, s2, n2)
@@ -279,8 +286,8 @@ def main():
                 if js else "—"
             L.append(f"| {linha['rotulo']} ({tid}) | {celulas_dele} | {nosso_txt} | {pub_txt} | "
                      f"{cat}{(' · ' + cit) if cit else ''} |")
-            linhas_r.append(dict(estudo=linha["rotulo"], pmcid=tid, nosso=nosso_txt,
-                                 publicado=pub_txt, categoria=cat))
+            linhas_r.append(dict(study=linha["rotulo"], pmcid=tid, ours=nosso_txt,
+                                 published=pub_txt, category=cat))
         pool_nosso = None
         if d["tipo"] == "rr" and len(sextetos) >= 2:
             pool_nosso = dict(MH=e2.pool_rr_mh(sextetos), DL=e2.pool_dl(sextetos))
@@ -291,18 +298,18 @@ def main():
                 bate_p = abs(dl["rr"] - pub_pool[0]) <= 0.01 and \
                     abs(dl["ic95"][0] - pub_pool[1][0]) <= 0.01 and \
                     abs(dl["ic95"][1] - pub_pool[1][1]) <= 0.01
-                comp = (f" **Publicado: RR {pub_pool[0]} {pub_pool[1]} → "
-                        f"{'REPRODUZ sob DL' if bate_p else 'difere (decompor nas linhas acima)'}**.")
-            L.append(f"**Pool (nosso)**: MH {json.dumps(pool_nosso['MH'], ensure_ascii=False)} · "
-                     f"DL {json.dumps(pool_nosso['DL'], ensure_ascii=False)} — comparação sob DL "
-                     f"(errata-15: números DL, legenda MH).{comp}")
+                comp = (f" **Published: RR {pub_pool[0]} {pub_pool[1]} → "
+                        f"{'REPRODUCES under DL' if bate_p else 'differs (decompose in the rows above)'}**.")
+            L.append(f"**Pool (ours)**: MH {json.dumps(pool_nosso['MH'], ensure_ascii=False)} · "
+                     f"DL {json.dumps(pool_nosso['DL'], ensure_ascii=False)} — comparison under DL "
+                     f"(erratum-15: DL numbers, MH caption).{comp}")
         L.append("")
-        resultados[d["nome"]] = dict(linhas=linhas_r, pool=pool_nosso)
+        resultados[d["nome"]] = dict(rows=linhas_r, pool=pool_nosso)
     D6.mkdir(exist_ok=True)
     (D6 / "resultados-por-desfecho.json").write_text(
         json.dumps(resultados, ensure_ascii=False, indent=1), encoding="utf-8")
     (D6 / "comparacao-detalhada.md").write_text("\n".join(L), encoding="utf-8")
-    print("gravado: resultados-por-desfecho.json · comparacao-detalhada.md", flush=True)
+    print("written: resultados-por-desfecho.json · comparacao-detalhada.md", flush=True)
 
 
 if __name__ == "__main__":

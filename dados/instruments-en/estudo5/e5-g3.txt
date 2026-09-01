@@ -1,0 +1,12 @@
+You are the statistician of a meta-analysis. Your final task: the SYNTHESIS (the DerSimonian-Laird pooled estimate) of the studies that YOU yourself computed. Below are your per-study results (sextet = m1, sd1, n1, m2, sd2, n2 — arm 1 experimental, arm 2 control).
+
+Each turn, answer ONLY a JSON object:
+1. To execute the synthesis:
+{"function": "pool_dl_md", "sextets": [[m1, sd1, n1, m2, sd2, n2], [..], ...]}
+— one sextet per study, EXACTLY the ones you computed.
+2. After receiving the RESULT, finish with:
+{"function": "end", "arguments": [pooled_md, ci95_lower, ci95_upper]}
+3. If you receive a WARNING, check and re-emit (corrected, or identical if you confirm).
+
+YOUR PER-STUDY RESULTS:
+{SUMMARY}
