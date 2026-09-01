@@ -8,6 +8,8 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage[hidelinks]{hyperref}
+\usepackage{xurl} % URLs may break at any character, keeping them inside the margins
+\emergencystretch=1.2em % loosen hard lines instead of overflowing the margin
 \usepackage{natbib}
 \bibliographystyle{unsrtnat}
 \usepackage{caption}
@@ -154,10 +156,10 @@ On the original, unperturbed texts, replicate agreement was 96.8\% (Anchor~1) an
 Over the same sheets, the three detection configurations behaved differently against that poisoned cell (Table~\ref{tab:configs}): the bare engine delivered the distorted pool silently; the sheet-versus-source net flagged the experimental arm mechanically, with both source quotations, after a first rule revision (its initial form stayed correctly silent because the trial's own prose prints the $\pm$ form --- the flag rule was extended, as a dated amendment, to fire when a printed $\pm$ equals the printed interval's half-width; the control arm's $\pm$ matches nothing within the pre-registered tolerance and was not flagged); and the conversational ten-net harness raised zero flags on the poisoned cell --- whose downstream calls were well-formed, correctly source-declared and internally coherent --- while catching four live orchestration slips (one arity, three derivation declarations) in the same run. A DerSimonian--Laird weight-share flag ($>$40\%) was blind to the distortion (the poisoned trial's share was 19.3\%; the distortion's product signature was heterogeneity inflation, I\textsuperscript{2} 6\%$\rightarrow$79\%).
 
 \begin{table}[H]
-\centering\small
+\centering\footnotesize
 \caption{P5: three error-detection configurations against the same single-cell defect, same sheets, no answer key in any loop.}
 \label{tab:configs}
-\begin{tabular}{lcc}
+\begin{tabular}{@{}p{5.1cm}p{4.1cm}p{4.7cm}@{}}
 \toprule
 Configuration & Pool delivered & The poisoned cell \\
 \midrule
@@ -175,7 +177,7 @@ Per phase, the campaign's results sat within replicate-level variance of the arc
 \centering\small
 \caption{Instruction-language robustness: the campaign (English instruments) vs the archived instrument-development record (Portuguese drafts), per phase (directly comparable quantities only).}
 \label{tab:ablation}
-\begin{tabular}{lll}
+\begin{tabular}{@{}p{5.6cm}p{4.2cm}p{4.0cm}@{}}
 \toprule
 Phase & Campaign (English) & Development record (Portuguese) \\
 \midrule
