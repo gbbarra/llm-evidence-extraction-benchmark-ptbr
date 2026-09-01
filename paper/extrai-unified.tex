@@ -115,12 +115,12 @@ The factuality classification of the divergent cells (Table~\ref{tab:p1}, middle
 
 \begin{table}[H]
 \centering\footnotesize
-\caption{P1 extraction under English instruments (perturbed Anchor-1 corpus; 124 eligible key cells per model). Two comparators: \emph{stability} grades replicate 1 against replicate 2 (the model against itself, no key); \emph{correct} grades replicate 1 against the source-verified key. The three middle columns decompose the non-matching cells by factuality (omissions + inventions + value/format = 124 $-$ correct); a cell can be stable yet divergent from the key, so stability can exceed the key score. Recitation candidates before/after adjudication. $\dagger$one replicate unparseable (its pair served).}
+\caption{P1 extraction under English instruments (perturbed Anchor-1 corpus; 124 eligible key cells per model). Two comparators: \emph{stability} grades replicate 1 against replicate 2 (the model against itself, no key); \emph{correct} grades replicate 1 against the source-verified key. The three middle columns decompose the non-matching cells by factuality (omissions + inventions + value/format = 124 $-$ correct): \emph{omission} = the model wrote \emph{not reported} where the key holds a value; \emph{invention} = a number absent from the source text and not derivable from it; \emph{value/format} = content that traces to the source but differs from the key by value route (e.g.\ a different population layer) or by format of the same information (e.g.\ percentages for counts, a category summary for an enumeration). A cell can be stable yet divergent from the key, so stability can exceed the key score. Recitation candidates before/after adjudication. $\dagger$one replicate unparseable (its pair served).}
 \label{tab:p1}
 \setlength{\tabcolsep}{4pt}
 \begin{tabular}{lcccccc}
 \toprule
-Model & Stability & Recit. & Omiss. & Invent. & Val./fmt & Correct (vs key) \\
+Model & Stability & Recit. & Omissions & Inventions & Value/format & Correct (vs key) \\
 \midrule
 gemma4:12b & 119/124 (96.0\%) & 1 $\rightarrow$ 0 & 0 & 0 & 21 & 103/124 (83.1\%) \\
 qwen3:14b & 123/124 (99.2\%) & 1 $\rightarrow$ 0 & 6 & 0 & 14 & 104/124 (83.9\%) \\
