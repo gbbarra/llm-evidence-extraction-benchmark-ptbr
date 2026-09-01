@@ -1,0 +1,12 @@
+{
+ "modelo": "gemma12",
+ "trial": "PMC9606840",
+ "replica": 2,
+ "anchor": "ma2",
+ "content": "```json\n{\n \"study\": \"T.H. Wang (implied by context, text provided doesn't list title, but article is the source)\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"USA\",\n \"duration\": \"6 months\",\n \"n_randomized_total\": \"150\",\n \"experimental_arm\": {\n  \"label\": \"Low-carbohydrate diet\",\n  \"intervention_description\": \"Behavioral intervention promoting a healthy, low-carbohydrate diet (Phase 1: <40g net carbs; Phase 2: <60g net carbs) including counseling and supplemental food.\",\n  \"n_randomized\": \"75\",\n  \"n_analyzed\": \"75\",\n  \"hba1c_change_mean\": \"-0.26\",\n  \"hba1c_change_dispersion\": \"CI95: -0.33 to -0.19\",\n  \"hba1c_change_dispersion_type\": \"CI95: -0.33 to -0.19\",\n  \"hba1c_baseline_mean\": \"6.17\",\n  \"hba1c_baseline_sd\": \"0.31\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"Usual diet\",\n  \"intervention_description\": \"Standard dietary advice provided at randomization without ongoing recommendations.\",\n  \"n_randomized\": \"75\",\n  \"n_analyzed\": \"75\",\n  \"hba1c_change_mean\": \"-0.04\",\n  \"hba1c_change_dispersion\": \"CI95: -0.10 to 0.02\",\n  \"hba1c_change_dispersion_type\": \"CI95: -0.10 to 0.02\",\n  \"hba1c_baseline_mean\": \"6.14\",\n  \"hba1c_baseline_sd\": \"0.30\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}\n```",
+ "reasoning": "",
+ "finish": "stop",
+ "tokens": 528,
+ "dt": 72.0107375,
+ "prompt_tokens": 10550
+}

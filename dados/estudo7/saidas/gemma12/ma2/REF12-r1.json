@@ -1,0 +1,12 @@
+{
+ "modelo": "gemma12",
+ "trial": "REF12",
+ "replica": 1,
+ "anchor": "ma2",
+ "content": "```json\n{\n \"study\": \"Visser et al. (or implicitly the authors of the provided text, though the first author's name is not in the snippet, it is usually the first author of the study's publication)\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Denmark\",\n \"duration\": \"6 weeks\",\n \"n_randomized_total\": \"72\",\n \"experimental_arm\": {\n  \"label\": \"CRHP (carbohydrate-reduced high-protein diet)\",\n  \"intervention_description\": \"A 6-week carbohydrate-reduced high-protein diet (E%: CH30/P30/F40) aiming at ~6% weight loss.\",\n  \"n_randomized\": \"36\",\n  \"n_analyzed\": \"34\",\n  \"hba1c_change_mean\": \"-0.83\",\n  \"hba1c_change_dispersion\": \"0.38\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"7.42\",\n  \"hba1c_baseline_sd\": \"0.77\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"CD (conventional diabetes diet)\",\n  \"intervention_description\": \"A 6-week conventional diabetes diet (E%: CH50/P17/F33) aiming at ~6% weight loss.\",\n  \"n_randomized\": \"36\",\n  \"n_analyzed\": \"33\",\n  \"hba1c_change_mean\": \"-0.66\",\n  \"hba1c_change_dispersion\": \"0.37\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"7.40\",\n  \"hba1c_baseline_sd\": \"0.70\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}\n```",
+ "reasoning": "",
+ "finish": "stop",
+ "tokens": 515,
+ "dt": 212.5074042,
+ "prompt_tokens": 12732
+}

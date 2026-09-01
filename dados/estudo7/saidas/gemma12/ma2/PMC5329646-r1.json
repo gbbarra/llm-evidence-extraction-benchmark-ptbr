@@ -1,0 +1,12 @@
+{
+ "modelo": "gemma12",
+ "trial": "PMC5329646",
+ "replica": 1,
+ "anchor": "ma2",
+ "content": "```json\n{\n \"study\": \"Saslow et al. (year not explicitly in text, but based on context of clinical trial report)\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"USA\",\n \"duration\": \"32 weeks\",\n \"n_randomized_total\": \"25\",\n \"experimental_arm\": {\n  \"label\": \"intervention\",\n  \"intervention_description\": \"online intervention based on previously tested recommendations (an ad libitum very low-carbohydrate ketogenic diet with lifestyle factors)\",\n  \"n_randomized\": \"12\",\n  \"n_analyzed\": \"11\",\n  \"hba1c_change_mean\": \"-0.8\",\n  \"hba1c_change_dispersion\": \"-1.1 to -0.6\",\n  \"hba1c_change_dispersion_type\": \"CI95: -1.1 to -0.6\",\n  \"hba1c_baseline_mean\": \"7.1\",\n  \"hba1c_baseline_sd\": \"0.4\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"control\",\n  \"intervention_description\": \"online diet program based on the American Diabetes Associations’ \\\"Create Your Plate\\\" diet\",\n  \"n_randomized\": \"13\",\n  \"n_analyzed\": \"8\",\n  \"hba1c_change_mean\": \"-0.3\",\n  \"hba1c_change_dispersion\": \"-0.6 to 0.0\",\n  \"hba1c_change_dispersion_type\": \"CI95: -0.6 to 0.0\",\n  \"hba1c_baseline_mean\": \"7.2\",\n  \"hba1c_baseline_sd\": \"0.3\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}\n```",
+ "reasoning": "",
+ "finish": "stop",
+ "tokens": 481,
+ "dt": 190.6022404,
+ "prompt_tokens": 11684
+}

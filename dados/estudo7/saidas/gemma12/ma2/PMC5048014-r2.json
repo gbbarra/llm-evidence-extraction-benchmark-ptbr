@@ -1,0 +1,12 @@
+{
+ "modelo": "gemma12",
+ "trial": "PMC5048014",
+ "replica": 2,
+ "anchor": "ma2",
+ "content": "```json\n{\n \"study\": \"Brackground et al. (Year not explicitly provided in snippet, but data is from a multi-center RCT)\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Spain\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": \"89\",\n \"experimental_arm\": {\n  \"label\": \"VLCK diet group\",\n  \"intervention_description\": \"very low-calorie-ketogenic (VLCK) diet (<50g of carbohydrate daily) as part of the Diaprokal Method\",\n  \"n_randomized\": \"45\",\n  \"n_analyzed\": \"45\",\n  \"hba1c_change_mean\": \"NR\",\n  \"hba1c_change_dispersion\": \"NR\",\n  \"hba1c_change_dispersion_type\": \"NR\",\n  \"hba1c_baseline_mean\": \"6.9\",\n  \"hba1c_baseline_sd\": \"1.1\",\n  \"hba1c_final_mean\": \"6.0\",\n  \"hba1c_final_sd\": \"0.7\"\n },\n \"control_arm\": {\n  \"label\": \"LC diet group\",\n  \"intervention_description\": \"standard low-calorie diet based on the ADA (American Diabetes Association) guidelines\",\n  \"n_randomized\": \"44\",\n  \"n_analyzed\": \"40\",\n  \"hba1c_change_mean\": \"NR\",\n  \"hba1c_change_dispersion\": \"NR\",\n  \"hba1c_change_dispersion_type\": \"NR\",\n  \"hba1c_baseline_mean\": \"6.8\",\n  \"hba1c_baseline_sd\": \"1.0\",\n  \"hba1c_final_mean\": \"6.4\",\n  \"hba1c_final_sd\": \"0.8\"\n }\n}\n```",
+ "reasoning": "",
+ "finish": "stop",
+ "tokens": 461,
+ "dt": 62.0835009,
+ "prompt_tokens": 9817
+}
