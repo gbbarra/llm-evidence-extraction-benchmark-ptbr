@@ -1,0 +1,111 @@
+{
+ "n7_1_flags": [
+  {
+   "trial": "PMC7535044",
+   "study": "Chen 2020",
+   "arm": "exp",
+   "declared": "SD",
+   "printed": "-1.63(-1.96 ~ -1.30) and -1.6±0.3",
+   "detail": "printed ± 0.3 equals the printed interval's half-width 0.33 (N7-1b)"
+  }
+ ],
+ "n7_2": [
+  {
+   "pool": "MA-2 HbA1c MD",
+   "n_estudos": 7,
+   "estrutural": false,
+   "shares": [
+    {
+     "study": "Saslow 2017",
+     "pct": 10.0
+    },
+    {
+     "study": "Saslow 2023",
+     "pct": 16.8
+    },
+    {
+     "study": "Dorans 2022",
+     "pct": 20.4
+    },
+    {
+     "study": "Chen 2020",
+     "pct": 19.3
+    },
+    {
+     "study": "Thomsen 2022",
+     "pct": 17.4
+    },
+    {
+     "study": "Wang 2018",
+     "pct": 6.5
+    },
+    {
+     "study": "Goday 2016",
+     "pct": 9.7
+    }
+   ],
+   "flags": []
+  },
+  {
+   "pool": "MA-1 morbidity RR",
+   "n_estudos": 4,
+   "estrutural": false,
+   "shares": [
+    {
+     "study": "Calvo-Vecino et al.",
+     "pct": 18.0
+    },
+    {
+     "study": "Yun et al.",
+     "pct": 29.3
+    },
+    {
+     "study": "Diaper et al.",
+     "pct": 31.9
+    },
+    {
+     "study": "Wu et al.",
+     "pct": 20.8
+    }
+   ],
+   "flags": []
+  },
+  {
+   "pool": "MA-1 mortality RR",
+   "n_estudos": 2,
+   "estrutural": true,
+   "shares": [
+    {
+     "study": "de Waal et al.",
+     "pct": 93.2
+    },
+    {
+     "study": "Sun et al.",
+     "pct": 6.8
+    }
+   ],
+   "flags": [
+    "de Waal et al."
+   ]
+  },
+  {
+   "pool": "MA-1 ileus RR",
+   "n_estudos": 2,
+   "estrutural": true,
+   "shares": [
+    {
+     "study": "Arslan-Carlon et al.",
+     "pct": 54.7
+    },
+    {
+     "study": "Sun et al.",
+     "pct": 45.3
+    }
+   ],
+   "flags": [
+    "Arslan-Carlon et al.",
+    "Sun et al."
+   ]
+  }
+ ]
+}

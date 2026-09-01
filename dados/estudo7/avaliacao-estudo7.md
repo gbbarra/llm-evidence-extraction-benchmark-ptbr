@@ -35,11 +35,11 @@ Castro deserves its own sentence: on the clean text — with the anchor's "ileus
 
 **Every step decomposes to a single cell.** Five of seven per-study rows match the published forest (four exactly); Wang differs only at one CI bound (same sextet our Study-6 formal run produced — a stable dispersion-route difference, not noise). The driver is **Chen 2020**:
 
-- The source prints the change column as **mean (95% CI)**: *"−1.63(−1.96 ~ −1.30)"* (two-layer key: dispersion type IC95, SD derived 1.10 / 1.27 by `dp_de_ic`).
-- The model's sheet — **identically in both replicates** — wrote change −1.6 with dispersion **0.3 declared "SD"**: the interval's half-width ((−1.30)−(−1.96))/2 ≈ 0.33, misdeclared as a standard deviation.
-- The deterministic route trusts the declared type by design; a 4× too-small SD gives Chen an outsized DL weight, inflates heterogeneity (published I² 6% → ours **79%**), and pulls the pool from −0.24 to **−0.34**.
+- Chen's primary prints the HbA1c change in **two layers**: the table as mean (95% CI) — *"−1.63(−1.96 ~ −1.30)"* — and the results prose as *"The 18-month mean change from baseline was statistically significant for the HbA1c (**−1.6±0.3 vs. −1.0±0.3%**)"*. *(Correction, 2026-09-01: this record's first version charged the model with computing the CI's half-width and misdeclaring it. Amendment 1's net run found the half-width **printed in the primary itself** — the quote above. The charge is corrected: the model transcribed a real printed layer verbatim.)*
+- The model's sheet — **identically in both replicates** — transcribed the prose layer: change −1.6, dispersion **0.3, declared "SD"**. The failure is the **type judgment on an ambiguous "±"**: 0.3 equals the table CI's half-width for the experimental arm (0.33), so the paper's ± denotes the CI, not a standard deviation — and for the control arm the printed ±0.3 matches *nothing* (neither the SD 1.27 nor its own half-width 0.39): the primary's prose dispersion layer is internally sloppy.
+- The deterministic route trusts the declared type by design; a 4× too-small SD gives Chen an outsized influence, inflates heterogeneity (published I² 6% → ours **79%**), and pulls the pool from −0.24 to **−0.34**.
 
-This is the failure class Paper 2 named in its limitations, verbatim: *"a model that misdeclares its sheet escapes detection."* The single-cell counterfactual, computed grader-side as decomposition (never substituted into the result):
+This remains the failure class Paper 2 named in its limitations — *"a model that misdeclares its sheet escapes detection"* — now with the refinement that the misdeclaration was seeded by the source's own ambiguous ± convention. The single-cell counterfactual, computed grader-side as decomposition (never substituted into the result):
 
 | pool | MD [CI95] | I² |
 |---|---|---|
@@ -59,6 +59,18 @@ One misdeclared dispersion type is the entire distance between our pool and the 
 | genuine model omission | 0 | — (the perturbed run's Castro blood-loss omission did not recur on the clean text) |
 
 **Zero inventions.** Every model number traces to a printed source layer or an exact arithmetic form of one.
+
+## Amendments 1–2 — the detection nets, run 2026-09-01 (registered before each run)
+
+The author directed a re-run of the analysis **with the detection net armed**, as an advance within the deterministic sequence. Provenance settled on record: the benchmark has **one** detection-net harness (Study 5's frozen ten-net, warn-only harness — the one that flagged Chen in Study 6); it operates on model-emitted calls, so it cannot literally run in a model-free downstream. The amendments therefore **ported the doctrine to the sheet layer** — same principle (detect, warn, never substitute), new deterministic implementation, declared before execution. The primary H7.3 record is untouched by everything below. Full run record: [`redes-deteccao.md`](redes-deteccao.md).
+
+| net | pre-registered claim | measured | verdict |
+|---|---|---|---|
+| N7-1 (declared type vs printed form) | A7-H1: flags exactly Chen's two arms | **zero flags** — and the reason is a finding: Chen's prose *prints* "−1.6±0.3 vs. −1.0±0.3", so a spread form exists at that mean and the rule correctly stays silent | **fails** — exposing the two-layer print |
+| N7-2 (DL weight share > 40%) | A7-H2: flags the MA-2 pool, Chen dominant | Chen's share is **19.3%** (τ² re-equalizes weights); MA-2 max share is Dorans 20.4%, morbidity max 31.9% — no non-structural flags anywhere | **fails** — this distortion's product signature is **heterogeneity inflation** (I² 6%→79%), to which a weight-share flag is blind |
+| N7-1b (Amendment 2: both forms printed and ± equals the interval's half-width) | A7-H3: flags exactly Chen's two arms | **flags Chen-exp** (±0.3 ≡ half-width 0.33, both quotes emitted) — **but not Chen-ctl**: its printed ±0.3 misses its own half-width 0.39 by more than the pre-registered ±0.06 (it matches nothing at all) | **partial, 1/2** — reported as measured, tolerance not widened post-hoc |
+
+What the ladder measured, honestly: the naive port catches nothing (the ambiguity is *printed in the source*); the sharpened rule catches the experimental arm mechanically — one flag is operationally sufficient (any flag sends a human to Chen's table, which resolves both arms) — and the control arm shows the limit of mechanical detection against a primary whose prose dispersion matches nothing. Backlog (registered, **not run**): N7-1c — compare the declared spread against the interval-implied SD (`dp_de_ic`) when both forms are printed; expected to catch both arms; awaits the author's decision, as every rung does. Structural note: two-study pools (mortality, ileus) exceed the 40% share by construction and are reported, never counted.
 
 ## Declared exploratory: clean (E7) vs perturbed (E6) MA-1 sheets — descriptive only
 
