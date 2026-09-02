@@ -113,9 +113,11 @@ The mechanical recitation detector raised 5 candidate cells across 140 sheets, a
 
 The factuality classification of the divergent cells (Table~\ref{tab:p1}, middle columns) found \textbf{zero invention candidates in every model}: each number each model wrote exists in, or is arithmetically derivable from, the perturbed text it read. Most divergences were themselves replicate-stable --- the same non-key answer written in both independent readings: 17/21 for \texttt{gemma4:12b}, 20/20 for \texttt{qwen3:14b}, 13/20 for \texttt{qwen3.5:9b}, 16/26 for \texttt{deepseek-r1:14b}, but only 17/36 for \texttt{llama3.1:8b} --- suggesting that for the stronger readers, divergence from the key is a systematic reading choice rather than sampling noise.
 
+Supplementary Tables~S1--S7 (after the references) give the complete cell-by-cell account of the 124 non-matching cells behind these counts, each re-examined against the perturbed text its model read and classified by mechanism: 12 omissions; 27 equivalent re-encodings whose arithmetic verifies exactly (percentages for counts, rearranged count/percentage pairs); 26 population-layer choices (a different printed participant count of the same trial); 34 case-mix summaries; 12 genuine reading slips (an adjacent row, a transposed pair, a per-kilogram row, a different scope); 9 unmatched ratio-style re-expressions, all from \texttt{llama3.1:8b}; and 4 cells --- one each for four models --- adjudicated \emph{in the models' favor}: the transcription was verbatim-correct, and a seal-pair substring collision in the grader's unperturbation lookup corrupted the comparison (Table~S7). Comparator scores are reported unadjusted throughout.
+
 \begin{table}[H]
 \centering\footnotesize
-\caption{P1 extraction under English instruments (perturbed Anchor-1 corpus; 124 eligible key cells per model). Two comparators: \emph{stability} grades replicate 1 against replicate 2 (the model against itself, no key); \emph{correct} grades replicate 1 against the source-verified key. The three middle columns decompose the non-matching cells by factuality (omissions + inventions + value/format = 124 $-$ correct): \emph{omission} = the model wrote \emph{not reported} where the key holds a value; \emph{invention} = a number absent from the source text and not derivable from it; \emph{value/format} = content that traces to the source but differs from the key by value route (e.g.\ a different population layer) or by format of the same information (e.g.\ percentages for counts, a category summary for an enumeration). A cell can be stable yet divergent from the key, so stability can exceed the key score. Recitation candidates before/after adjudication. $\dagger$one replicate unparseable (its pair served).}
+\caption{P1 extraction under English instruments (perturbed Anchor-1 corpus; 124 eligible key cells per model). Two comparators: \emph{stability} grades replicate 1 against replicate 2 (the model against itself, no key); \emph{correct} grades replicate 1 against the source-verified key. The three middle columns decompose the non-matching cells by factuality (omissions + inventions + value/format = 124 $-$ correct): \emph{omission} = the model wrote \emph{not reported} where the key holds a value; \emph{invention} = a number absent from the source text and not derivable from it; \emph{value/format} = content that traces to the source but differs from the key by value route (e.g.\ a different population layer) or by format of the same information (e.g.\ percentages for counts, a category summary for an enumeration). A cell can be stable yet divergent from the key, so stability can exceed the key score. Recitation candidates before/after adjudication. $\dagger$one replicate unparseable (its pair served). One value/format cell each for \texttt{qwen3:14b}, \texttt{llama3.1:8b}, \texttt{qwen3.5:9b} and \texttt{deepseek-r1:14b} was later adjudicated as a grader-side artifact --- the transcription was verbatim-correct and a seal-pair substring collision in the unperturbation lookup corrupted the comparison (Supplementary Table~S7); scores here are the comparator's, unadjusted.}
 \label{tab:p1}
 \setlength{\tabcolsep}{4pt}
 \begin{tabular}{lcccccc}
@@ -252,5 +254,128 @@ All protocols (pre-registered, with dated amendments committed before each run),
 This campaign was designed and conducted by the author with the assistance of Claude (Anthropic), which translated and froze the English instruments, implemented the phase runners, the English harness build and the graders (all committed before their runs), performed the mechanical adjudications under the quotation rite, and drafted this manuscript under the author's direction and review. The evaluated local models produced only the extraction sheets, the arm-A/B arithmetic answers and the phase-P4 harness calls graded here; every downstream number in this article was produced by the frozen code and verified mechanically. Per the position of the evidence-synthesis organizations \citep{flemyng2025position}, every AI contribution is reported and the author retains responsibility for the work.
 
 \bibliography{references}
+
+\clearpage
+\section*{Supplementary material: the 124 non-matching cells of P1, cell by cell}
+\renewcommand{\thetable}{S\arabic{table}}
+\setcounter{table}{0}
+
+This supplement enumerates every non-matching cell of the READ phase (Table~\ref{tab:p1}): all 124 cells, across the five models, where a sheet value --- after seal reversal --- failed the numeric comparator against the source-verified key. Each cell was re-examined against the perturbed source text its model actually read, and classified by mechanism; the class totals are exhaustive ($12 + 27 + 26 + 34 + 12 + 9 + 4 = 124$). Model abbreviations: G~=~\texttt{gemma4:12b}, Q14~=~\texttt{qwen3:14b}, L~=~\texttt{llama3.1:8b}, Q35~=~\texttt{qwen3.5:9b}, D~=~\texttt{deepseek-r1:14b}; a parenthesized ``(2)'' after a field means both arms' cells. The reading of the whole: no cell is an invention --- every value traces to the text read; 87 cells (Tables S2--S4) are faithful to the source in a different encoding, population layer or resolution; 12 cells (Table~S5) are genuine reading slips --- a real value taken from the wrong row, arm or scope; 9 cells (Table~S6) are ratio-style re-expressions matching no printed layer, all from the cast's weakest reader; and 4 cells (Table~S7) were adjudicated in the models' favor as a grader-side artifact.
+
+\begin{table}[H]
+\centering\footnotesize
+\caption{Omissions (12 cells): the sheet says \emph{not reported} where the source prints a value. The Diaper rows carry a nuance the class name hides: the source prints only a partial datum (the ASA III--IV share), and writing NR for a full-distribution field is defensible conservatism; the key transcribes the partial datum.}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{2.1cm}p{2.3cm}p{7.4cm}p{2.2cm}}
+\toprule
+Trial & Field & Source value (the key) & NR written by \\
+\midrule
+Sun & inotrope use & GDFT 18 (36\%) vs.\ control 27 (54\%) & Q14, Q35 \\
+Wu & inotrope use & norepinephrine 15 (25.9\%) vs.\ 24 (42.9\%); phenylephrine 12 (20.7\%) vs.\ 24 (42.9\%); ephedrine 12 (24.0\%) vs.\ 19 (35.2\%) & Q14, Q35 \\
+Redondo Calvo & ASA (2) & 0:10:6:0 (control); 0:13:6:0 (GDFT) & Q14, D \\
+Diaper & ASA (2) & only the ASA III--IV share is printed: 85 (42.9\%) vs.\ 98 (50.0\%) & Q14, Q35 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\footnotesize
+\caption{Equivalent re-encodings (27 cells): the same printed datum re-expressed in another notation; in every row the arithmetic was verified against the key's counts (e.g.\ Castro control ASA II: $26/42 = 61.9\% \approx 62$). The comparator, which matches digits, cannot see these equivalences --- the limitation Table~\ref{tab:p1}'s caption declares.}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{2.4cm}p{2.5cm}p{4.0cm}p{5.3cm}}
+\toprule
+Trial & Field & Key (source layer) & What was written \\
+\midrule
+Castro & ASA (2) & 11:26:5:0 / 7:31:5:0 & counts as percentages, 26/62/12 and 16/72/12 --- as \% strings (G), as a ratio string (L); all match the counts over the arm totals \\
+de Waal & ASA (2) & 24:123:86:1 / 17:132:95:4 & as percentages 10.3/52.6/36.7/0.4 and 6.9/53.2/38.3/1.6 (Q35, D); exact over the analysis-set totals \\
+FEDORA & ASA (2) & 35:136:40:0 / 14:122:73:0 & as percentages 16.6/64.4/19.0 and 6.7/58.4/34.9 (D); exact \\
+Wu & ASA & 0:22:34:0 (control); 0:25:33:0 (GDFT) & control as percentages 39.3/60.7 (L, D); GDFT as percentages 43.1/56.9 (D); exact \\
+FEDORA & laparoscopy (2) & 109 / 105 & as percentages 51.7\% ($=109/211$) and 50.2\% ($=105/209$) (D) \\
+Yoon & laparoscopy (2) & 0 (open surgery) & ``0\%'' (D) --- same meaning \\
+Sujatha & laparoscopy (2) & 0 (open surgery) & ``excluded'' (G) --- same meaning, no digits for the comparator \\
+Arslan-Carlon & postoperative ileus (2) & 30 (21.3\%) / 36 (25.4\%) & rearranged with denominator and rounded: ``21\% (30/141)'', ``25\% (36/142)'' (G, L, Q35, D) --- counts identical after seal reversal; the raw sheets show the perturbed image (31) that reversal maps back to 36, i.e.\ faithful perturbed-world reading \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\footnotesize
+\caption{Population-layer choices (26 cells): the model filled an \emph{n randomized} cell with a different participant count printed by the same trial. The key anchors each cell on the source-verified layer of the anchor's own cell, so the direction varies by trial --- for de Waal the key holds the randomized counts and models wrote analysis-population numbers; for FEDORA and Hokenek the key (like the anchor) carries the analysis set and models wrote the allocation, the field name's literal layer. The dampening mechanism discussed with Table~\ref{tab:p3ma1} is why none of this moved a pooled estimate: ratio outcomes shift numerator and denominator together.}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{2.0cm}p{2.7cm}p{3.4cm}p{6.1cm}}
+\toprule
+Trial & Field & Key (source layer) & What was written \\
+\midrule
+de Waal & n randomized (2) & 274 / 259 (randomized) & printed analysis populations: 258/244, the complications analysis (``PGDT group (n = 258)'' \ldots ``control group (n = 244)'') (G, L); 248/234, the hypotension analysis denominators (Q14); and mixtures reusing the control arm's 259 (Q35, D) \\
+FEDORA & n randomized (2) & 211 / 209 (analysis set) & 226 / 224 --- the allocation: ``450 patients were randomized to the GDHT group (n=224) or control group (n=226)'' (G, Q14, L, Q35) \\
+Hokenek & n randomized (2) & 39 / 39 (analysis set) & 40 / 40 --- the allocation: ``(control group: 40, PVI group: 40)'' (G, Q14, L) \\
+Sujatha & n randomized, control & 102 randomized & 101 --- the analysed count, the layer the anchor's own cell carries (L) \\
+Diaper & n randomized, control & 201 & 200 --- the other arm's allocation; the power calculation also prints ``200 patients in each group'' (L) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\footnotesize
+\caption{Case-mix summaries (34 cells): the \emph{surgery type} field condensed to a category label where the key transcribes the source's enumerated case mix. Faithful but lossy --- no wrong fact, less resolution than the key's reading.}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{5.6cm}p{2.4cm}p{6.2cm}}
+\toprule
+Trials & Models & Example \\
+\midrule
+Yoon, Sun, Sujatha, Diaper, de Waal, FEDORA & all five & Yoon --- key: ``Eight open radical cystectomies with ileal conduit, 31 open\ldots''; written: ``open radical cystectomy'' \\
+Schmid & G, Q14, L, Q35 & key: ``16 Whipple, 71 oesophageal, three pancreatectomies\ldots''; written: ``major non-cardiac surgery'' (G), ``major abdominal surgery'' (L) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\footnotesize
+\caption{Different row or scope picked (12 cells): genuine reading slips --- the value exists in the source, in the wrong place. These, not fabrications, are the READ phase's real failure inventory.}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{2.4cm}p{2.5cm}p{4.0cm}p{5.3cm}}
+\toprule
+Trial & Field & Key (source layer) & What was written \\
+\midrule
+Castro & blood loss (2) & the ``Intraoperative bleeding'' row: 1283.2 $\pm$ 959.7 / 1100.1 $\pm$ 851.1 & the same table's ``Losses'' row: 5062.9 $\pm$ 3287.5 / 4364.5 $\pm$ 2920.6 (G) \\
+Castro & colloid (2) & Voluven (mL): 737.8 $\pm$ 383.2 / 779.7 $\pm$ 565.1 & the adjacent per-kilogram row, Voluven (mL\,kg$^{-1}$): 10.7 $\pm$ 5.9 / 10.8 $\pm$ 6.6 (L) \\
+Sun & ASA (2) & 8:33:9:0 / 6:36:8:0 & adjacent rows mixed: control ``16 (32\%)'' is the table's Female row; the GDFT ASA-I cell carries the control arm's 8 (D) \\
+Wu & ASA, GDFT & 0:25:33:0 ($=$ 43.1/56.9\%) & the two shares transposed: 56.9/43.1 (L) \\
+FEDORA & morbidity, control & 35 (16.6\%) & 36 --- a nearby printed value (L) \\
+Schmid & ASA, GDFT & NR (source prints eligibility criteria only) & a distribution filled from another scope (L, D) \\
+Arslan-Carlon & ASA, GDFT & NR (no per-arm distribution in the text) & the overall ``30\% II / 70\% III--IV'' placed in the per-arm field (D); placeholder junk ``I:II:III:IV (NR:NR:NR:NR)'' (L) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\footnotesize
+\caption{Unmatched re-expressions (9 cells, all \texttt{llama3.1:8b}): ratio-style strings that match no printed layer as a set. The digits are individually present in or derivable from the text read --- which is why the invention screen does not fire --- but the assembled distributions correspond to nothing the source prints; sheet residue, held for adjudication. The same model is also the cast's least replicate-stable (17/36 of its divergents stable), so part of this residue may be sampling noise rather than a systematic reading.}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{3.2cm}p{4.6cm}p{6.2cm}}
+\toprule
+Trial (ASA field) & Key (source layer) & \texttt{llama3.1:8b} wrote \\
+\midrule
+Yoon (2) & 2:27:7:0 / 4:29:6:0 & 0.75:0.24:0.01 / 0.74:0.25:0.01 \\
+de Waal (2) & 24:123:86:1 / 17:132:95:4 & 1:2.9:3.2:0.6 / 1:2.8:3.2:1.2 \\
+Diaper (2) & only the III--IV share is printed & full I--IV ratios 47:38:22:13 / 50:50:30:10 \\
+Redondo Calvo (2) & 0:10:6:0 / 0:13:6:0 & class-shifted 10:4:2:0 / 13:3:0:0 \\
+FEDORA, GDFT & 14:122:73:0 & partial shift: I:122, II:148, III:73, IV:0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\footnotesize
+\caption{Grader-side lookup collision (4 cells): the models were right. Adjudicated with the source open, in the same quotation-bound rite the key itself is subject to; the comparator scores of Table~\ref{tab:p1} are left unadjusted, with this record as the correction of interpretation. The same mechanics that caught the human anchor's discrepancies caught the grader here.}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{2.0cm}p{2.6cm}p{9.6cm}}
+\toprule
+Trial & Field & What happened \\
+\midrule
+Castro & blood loss, control & Q14, L, Q35 and D transcribed the printed ``Intraoperative bleeding (mL) 1283.2 $\pm$ 959.7'' verbatim --- byte-identical to the key's source value. The unperturbation lookup then applied the trial's seal pair $31 \rightarrow 28$ (an ASA count) as a substring replacement \emph{inside} ``1\underline{28}3.2'', yielding ``1313.2'' and failing the comparison. Correct transcription; comparator artifact. (G alone genuinely diverged on this cell --- the ``Losses'' row; Table~S5.) \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \end{document}
