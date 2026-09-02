@@ -156,21 +156,23 @@ deepseek-r1:14b & 0.775 [0.565, 1.063] & 0.980 [0.428, 2.246] \\
 \end{tabular}
 \end{table}
 
-From the fresh Anchor-2 extractions (70/70 calls, 155.1 minutes), the same engine and sealed lens produced five diamonds (Table~\ref{tab:p3ma2}). \texttt{gemma4:12b}'s lens landed at $-0.27$ [$-0.38$, $-0.17$] (I\textsuperscript{2} 28.6\%), beside the published $-0.24$ [$-0.32$, $-0.16$]. The other four landed between $-0.47$ and $-0.80$ with saturated heterogeneity (I\textsuperscript{2} 90.5--99.1\%), two of them with starved sheets (5/7 and 6/7 trials in the pool). The invention screen over all 1{,}104 Anchor-2 sheet cells (five models, both replicates) found zero invention candidates in any model.
+From the fresh Anchor-2 extractions (70/70 calls, 155.1 minutes), the same engine and sealed lens produced five diamonds (Table~\ref{tab:p3ma2}). \texttt{gemma4:12b}'s lens landed at $-0.27$ [$-0.38$, $-0.17$] (I\textsuperscript{2} 28.6\%), beside the published $-0.24$ [$-0.32$, $-0.16$]. The other four landed between $-0.47$ and $-0.80$ with saturated heterogeneity (I\textsuperscript{2} 90.5--99.1\%), two of them with starved sheets (5/7 and 6/7 trials in the pool). Reversal itself separated the readers the same way: it collapsed \texttt{gemma4:12b}'s pool heterogeneity from I\textsuperscript{2} 91.3\% in the displaced world to 28.6\%, and left the other four models' I\textsuperscript{2} unchanged to within 0.1 points --- the displacement was the dominant source of heterogeneity only in the sheets that had read faithfully, while heterogeneity injected by reading survives the lookup by construction. The invention screen over all 1{,}104 Anchor-2 sheet cells (five models, both replicates) found zero invention candidates in any model.
 
 \begin{table}[H]
 \centering\small
-\caption{P3, Anchor 2: the five diamonds --- pooled HbA1c mean differences through the unperturbation lens, i.e.\ each model's sheet with the graders' sealed number-map reversed by pure table lookup before pooling (Section~2.3); models extracted in the displaced world and never saw the originals, and the lens corrects nothing --- reading errors pass through it intact. Published reference: $-0.24$ [$-0.32$, $-0.16$], I\textsuperscript{2} 6\%.}
+\caption{P3, Anchor 2: heterogeneity anatomy of the five diamonds against the published (human) extraction --- pooled HbA1c mean differences through the unperturbation lens, i.e.\ each model's sheet with the graders' sealed number-map reversed by pure table lookup before pooling (Section~2.3); models extracted in the displaced world and never saw the originals, and the lens corrects nothing --- reading errors pass through it intact. The published row is as the anchor prints it (I\textsuperscript{2} 6\%, $\tau^2$ 0.00). The last column is the same pool \emph{before} reversal, in the displaced world; it demonstrates the correct-nothing property mechanically --- reversal collapses \texttt{gemma4:12b}'s I\textsuperscript{2} from 91.3\% to 28.6\% (in faithful sheets the perturbation displacement \emph{was} most of the heterogeneity) while leaving the other four models' I\textsuperscript{2} unchanged to within 0.1 points (heterogeneity injected by reading survives the lookup by construction).}
 \label{tab:p3ma2}
-\begin{tabular}{lccc}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lccccc}
 \toprule
-Model & Lens MD [95\% CI] & I\textsuperscript{2} & Trials in pool \\
+Extraction & Trials in pool & Lens MD [95\% CI] & $\tau^2$ & I\textsuperscript{2} & I\textsuperscript{2} before reversal \\
 \midrule
-gemma4:12b & $-0.27$ [$-0.38$, $-0.17$] & 28.6\% & 7/7 \\
-deepseek-r1:14b & $-0.47$ [$-1.22$, 0.28] & 99.1\% & 7/7 \\
-llama3.1:8b & $-0.60$ [$-1.02$, $-0.18$] & 90.5\% & 5/7 \\
-qwen3:14b & $-0.63$ [$-1.08$, $-0.17$] & 95.2\% & 6/7 \\
-qwen3.5:9b & $-0.80$ [$-1.67$, 0.07] & 95.0\% & 6/7 \\
+Published (human) & 7/7 & $-0.24$ [$-0.32$, $-0.16$] & 0.00 & 6\% & --- \\
+gemma4:12b & 7/7 & $-0.27$ [$-0.38$, $-0.17$] & 0.005 & 28.6\% & 91.3\% \\
+deepseek-r1:14b & 7/7 & $-0.47$ [$-1.22$, 0.28] & 0.997 & 99.1\% & 99.1\% \\
+llama3.1:8b & 5/7 & $-0.60$ [$-1.02$, $-0.18$] & 0.199 & 90.5\% & 90.4\% \\
+qwen3:14b & 6/7 & $-0.63$ [$-1.08$, $-0.17$] & 0.291 & 95.2\% & 95.2\% \\
+qwen3.5:9b & 6/7 & $-0.80$ [$-1.67$, 0.07] & 0.898 & 95.0\% & 95.1\% \\
 \bottomrule
 \end{tabular}
 \end{table}
