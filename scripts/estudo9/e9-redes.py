@@ -162,10 +162,15 @@ def classe_parse(rec):
         return "parse failure: other malformation"  # unreachable in practice
     except json.JSONDecodeError as e:
         pos = getattr(e, "pos", 0) or 0
-        prefixo, resto = c[:pos], c[pos:pos + 200]
+        prefixo = c[:pos]
+        # The decoder stops *after* the closing quote of the value it was reading,
+        # so the window has to start before `pos` for the closing quote to be in it.
+        janela = c[max(0, pos - 4):pos + 220]
         # a valid-looking JSON prefix, then prose continuing after a closed string
         if prefixo.count("{") > prefixo.count("}") and re.search(
-                r'"\s*[—–-]{1,2}\s*\w|"\s+(but|however|note|the \w+ says)\b', resto, re.I):
+                r'"\s*[—–\-]{1,2}\s*\w'                      # " — commentary
+                r'|"\s+(but|however|note|although|though|the \w+ (says|reports))\b'
+                r'|"\s*[,;]?\s*note\s*:', janela, re.I):
             return "parse failure: leaked deliberation (v2 quote field)"
         return "parse failure: other malformation"
 
