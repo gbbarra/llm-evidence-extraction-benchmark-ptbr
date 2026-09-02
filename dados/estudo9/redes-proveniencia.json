@@ -1,0 +1,180 @@
+{
+ "granite8": [
+  {
+   "net": "N9-1",
+   "model": "granite8",
+   "anchor": "ma2",
+   "trial": "PMC5048014",
+   "replicate": 1,
+   "field": "n_randomized_total",
+   "detail": "quote not found verbatim in the perturbed source",
+   "value": "89",
+   "quote": "Eighty-nine men and women..."
+  },
+  {
+   "net": "N9-2",
+   "model": "granite8",
+   "anchor": "ma2",
+   "trial": "PMC5048014",
+   "replicate": 1,
+   "field": "n_randomized_total",
+   "detail": "value tokens absent from own quote: ['89']",
+   "value": "89",
+   "quote": "Eighty-nine men and women..."
+  },
+  {
+   "net": "N9-2",
+   "model": "granite8",
+   "anchor": "ma2",
+   "trial": "PMC5048014",
+   "replicate": 1,
+   "field": "experimental.n_randomized",
+   "detail": "value tokens absent from own quote: ['45']",
+   "value": "45",
+   "quote": "Forty-five subjects were randomly assigned to the interventional weight loss (VLCK diet),"
+  },
+  {
+   "net": "N9-1",
+   "model": "granite8",
+   "anchor": "ma2",
+   "trial": "PMC5048014",
+   "replicate": 1,
+   "field": "experimental.hba1c_baseline_sd",
+   "detail": "quote not found verbatim in the perturbed source",
+   "value": "1.11",
+   "quote": "HbA1c (%) 6.89 (1.11)"
+  },
+  {
+   "net": "N9-1",
+   "model": "granite8",
+   "anchor": "ma2",
+   "trial": "PMC5048014",
+   "replicate": 1,
+   "field": "control.hba1c_baseline_mean",
+   "detail": "quote not found verbatim in the perturbed source",
+   "value": "6.88",
+   "quote": "HbA1c (%) 6.88 (1.03)"
+  },
+  {
+   "net": "N9-1",
+   "model": "granite8",
+   "anchor": "ma2",
+   "trial": "PMC5048014",
+   "replicate": 1,
+   "field": "control.hba1c_baseline_sd",
+   "detail": "quote not found verbatim in the perturbed source",
+   "value": "1.03",
+   "quote": "HbA1c (%) 6.88 (1.03)"
+  },
+  {
+   "net": "N9-1",
+   "model": "granite8",
+   "anchor": "ma2",
+   "trial": "PMC5048014",
+   "replicate": 1,
+   "field": "control.hba1c_final_mean",
+   "detail": "quote not found verbatim in the perturbed source",
+   "value": "7.1",
+   "quote": "HbA1c (%) 6.8 (1.0) 7.1 (0.8)"
+  },
+  {
+   "net": "N9-1",
+   "model": "granite8",
+   "anchor": "ma2",
+   "trial": "PMC5048014",
+   "replicate": 1,
+   "field": "control.hba1c_final_sd",
+   "detail": "quote not found verbatim in the perturbed source",
+   "value": "0.8",
+   "quote": "HbA1c (%) 6.8 (1.0) 7.1 (0.8)"
+  },
+  {
+   "net": "N9-1",
+   "model": "granite8",
+   "anchor": "ma2",
+   "trial": "PMC5048014",
+   "replicate": 2,
+   "field": "n_randomized_total",
+   "detail": "quote not found verbatim in the perturbed source",
+   "value": "89",
+   "quote": "Eighty-nine men and women... participated in this prospective, open-label, multi-centric randomized clinical trial with a duration of 4 mont"
+  },
+  {
+   "net": "N9-2",
+   "model": "granite8",
+   "anchor": "ma2",
+   "trial": "PMC5048014",
+   "replicate": 2,
+   "field": "n_randomized_total",
+   "detail": "value tokens absent from own quote: ['89']",
+   "value": "89",
+   "quote": "Eighty-nine men and women... participated in this prospective, open-label, multi-centric randomized clinical trial with a duration of 4 mont"
+  },
+  {
+   "net": "N9-2",
+   "model": "granite8",
+   "anchor": "ma2",
+   "trial": "PMC5048014",
+   "replicate": 2,
+   "field": "experimental.n_randomized",
+   "detail": "value tokens absent from own quote: ['45']",
+   "value": "45",
+   "quote": "Forty-five subjects were randomly assigned to the interventional weight loss (VLCK diet), and 44 to the standard low-calorie diet."
+  },
+  {
+   "net": "N9-1",
+   "model": "granite8",
+   "anchor": "ma2",
+   "trial": "PMC5048014",
+   "replicate": 2,
+   "field": "experimental.hba1c_baseline_sd",
+   "detail": "quote not found verbatim in the perturbed source",
+   "value": "1.11",
+   "quote": "HbA1c (%) 6.89 (1.11)"
+  },
+  {
+   "net": "N9-1",
+   "model": "granite8",
+   "anchor": "ma2",
+   "trial": "PMC5048014",
+   "replicate": 2,
+   "field": "control.hba1c_baseline_mean",
+   "detail": "quote not found verbatim in the perturbed source",
+   "value": "6.88",
+   "quote": "HbA1c (%) 6.88 (1.03)"
+  },
+  {
+   "net": "N9-1",
+   "model": "granite8",
+   "anchor": "ma2",
+   "trial": "PMC5048014",
+   "replicate": 2,
+   "field": "control.hba1c_baseline_sd",
+   "detail": "quote not found verbatim in the perturbed source",
+   "value": "1.03",
+   "quote": "HbA1c (%) 6.88 (1.03)"
+  },
+  {
+   "net": "N9-1",
+   "model": "granite8",
+   "anchor": "ma2",
+   "trial": "PMC5048014",
+   "replicate": 2,
+   "field": "control.hba1c_final_mean",
+   "detail": "quote not found verbatim in the perturbed source",
+   "value": "7.1",
+   "quote": "HbA1c (%) 6.8 (1.0) 7.1 (0.8)"
+  },
+  {
+   "net": "N9-1",
+   "model": "granite8",
+   "anchor": "ma2",
+   "trial": "PMC5048014",
+   "replicate": 2,
+   "field": "control.hba1c_final_sd",
+   "detail": "quote not found verbatim in the perturbed source",
+   "value": "0.8",
+   "quote": "HbA1c (%) 6.8 (1.0) 7.1 (0.8)"
+  }
+ ]
+}
