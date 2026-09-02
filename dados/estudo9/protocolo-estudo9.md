@@ -42,4 +42,24 @@ Any change to the v1 instruments, keys, seals or engines; orchestration and harn
 
 ---
 
-*Amendments: (none)*
+## Amendments
+
+Both registered **2026-09-01, before any Study-9 run**, and committed before the runner was built. Neither alters the frozen question, design, cast, instruments or hypotheses; each fixes an ambiguity that would otherwise have to be resolved mid-analysis, which the rite forbids.
+
+### A9-1 — the arm-B baseline for `llama3.1:8b` is the adjudicated figure
+
+Section 4's H9.4 cites the v1 record as "28/28 parseable; **88/124**". That is the comparator's raw output. After this protocol was registered, four cells — one each for `qwen3:14b`, `llama3.1:8b`, `qwen3.5:9b` and `deepseek-r1:14b` — were adjudicated **in the models' favour** under the quotation rite: on Castro's (PMC11061212) blood-loss control cell each transcription was byte-identical to the key's source value (`1283.2 ± 959.7`), and a seal-pair substring collision in the grader's unperturbation lookup (the pair 31→28 applied *inside* `1283.2`, yielding `1313.2`) corrupted the comparison. The record is in `estudo8/avaliacao-p1.md` (section of 2026-09-01) and indexed in `adjudication-record.md`.
+
+**Frozen decision**: arm B's baselines for this study are the **adjudicated** figures — `gemma4:12b` 103/124 (unchanged; its divergence on that cell was a genuine row slip), `llama3.1:8b` **89/124**. H9.4 is read against 89/124, and H9.1's gemma12 baseline is unaffected. The comparator's raw output stays on record in both places. No published v1 number is rewritten by this amendment; it fixes only which figure H9.4's comparison uses.
+
+### A9-2 — the grading lens is held constant across both arms, collision included
+
+The unperturbation lookup described in A9-1 still substitutes seal pairs without word-boundary awareness. A boundary-aware fix is in the instrument backlog for future rulers, and this study is a future ruler — so the choice has to be made explicitly rather than by default.
+
+**Frozen decision: this study does NOT adopt the fix.** Arm B's sheets were graded by the current lens; fixing it for arm A alone would change two variables at once (sheet schema *and* grader) and forfeit exactly the interpretability the A/B exists to buy.
+
+**Declared consequences**, so nothing is discovered mid-analysis:
+- The known collision applies **identically to both arms** — same trial, same cell, same seal pair — so it cancels in the A/B delta, which is this study's estimand.
+- Absolute cell scores in either arm carry the artifact; every table reporting them carries a footnote pointing to this amendment.
+- **The three provenance nets are unaffected**: N9-1 compares the quote against the source text, N9-2 the value against its own quote, and N9-3 inspects the printed form inside the quote. None passes through the reversal lookup, so H9.2 and H9.3 are clean of this artifact.
+- The boundary-aware fix stays queued as its own future measurement, never retroactive.
