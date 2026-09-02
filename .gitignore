@@ -22,3 +22,7 @@ corpus/estudo3/perturbados/
 corpus/estudo3/fechados-staging/
 corpus/estudo3/fechados-texto/
 dados/*/sementes-auditoria.json
+
+# ancora 3 (azul de metileno): XML dos artigos, rebaixaveis do Europe PMC; nao versionar
+dados/estudo11/*.xml
+dados/estudo11/primarios/
