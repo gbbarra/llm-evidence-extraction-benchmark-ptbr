@@ -63,3 +63,20 @@ The unperturbation lookup described in A9-1 still substitutes seal pairs without
 - Absolute cell scores in either arm carry the artifact; every table reporting them carries a footnote pointing to this amendment.
 - **The three provenance nets are unaffected**: N9-1 compares the quote against the source text, N9-2 the value against its own quote, and N9-3 inspects the printed form inside the quote. None passes through the reversal lookup, so H9.2 and H9.3 are clean of this artifact.
 - The boundary-aware fix stays queued as its own future measurement, never retroactive.
+
+### A9-3 — the cast expands from two readers to four, and one of them has no archived arm B
+
+Registered **2026-09-01, before any Study-9 run**, at the author's direction. Section 2 froze a two-model cast (`gemma4:12b`, `llama3.1:8b`). Two readers are added, for reasons stated here rather than after seeing results.
+
+**`qwen3:14b` (added).** It carries the campaign's **highest replicate stability, 123/124 (99.2%)**, and ties `gemma4:12b`'s adjudicated cell score at 105/124 (84.7%). The alternative in the same family, `qwen3.5:9b`, was considered and **rejected on the record**: its v1 replicate stability is 83.1%, below H9.1's own ≥90% bar, so it would enter the study already failing the criterion its results would be read against; its Anchor-2 diamond is also the cast's furthest ($-0.80$ against `qwen3:14b`'s $-0.63$). Arm B for `qwen3:14b` is its archived campaign record (Study-8 P1 and P3-b), like the other two.
+
+**`granite4.2:8b` (added, and structurally different).** It never participated in the campaign, so **no archived arm B exists for it**. It therefore runs **both arms inside this study**: 42 calls under the frozen **v1** instruments and 42 under **v2**, same corpora, same seals, same graders, same two replicates. Consequences declared here:
+- Its A/B is *within-study* rather than against an archived record; the seal, key and grader are identical across both of its arms, so the single-variable property holds for it exactly as it does for the other three.
+- Its v1 arm doubles as a **fresh replication of the campaign's P1 protocol on a reader the project has never tuned anything against** — the only model in this study outside the elenco that Studies 1--8 were developed around. That replication is reported descriptively; no hypothesis is staked on it.
+- No baseline can be pre-registered for it, because none exists. H9.1 and H9.4 are read for `granite4.2:8b` against its own v1 arm, established in the same campaign.
+
+**Run budget** rises from 84 to **210 calls**: 4 models $\times$ (14 Anchor-1 + 7 Anchor-2 primaries) $\times$ 2 replicates = 168 under v2, plus 42 under v1 for `granite4.2:8b`. Estimated 12--15 h, v2 sheets being 2--4$\times$ larger than v1 by construction.
+
+**Scope, restated so the expansion does not drift.** Section 6's exclusion of "the other three cast models" is lifted for `qwen3:14b` only; `deepseek-r1:14b` and `qwen3.5:9b` remain out. The study stays **instrument-level**: the estimand is the per-model **v2 $-$ v1 delta**, and four readers estimate that delta on a broader base rather than turning the study into a model ranking. No between-model inference is attempted, consistent with the series' standing convention.
+
+**Execution order (author's direction)**: `granite4.2:8b` runs first, both arms, so that the one model without an archived baseline is complete before the others begin.
