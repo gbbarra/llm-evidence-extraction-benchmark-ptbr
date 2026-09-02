@@ -1,0 +1,12 @@
+{
+ "modelo": "granite8",
+ "esquema": "v2",
+ "ancora": "ma2",
+ "trial": "PMC5048014",
+ "replica": 1,
+ "content": "{\n \"study\": \"Brackground 2009\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"},\n \"experimental_arm\": {\n  \"label\": \"VLCK diet group\",\n  \"intervention_description\": \"\",\n  \"n_randomized\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"},\n  \"n_analyzed\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_change_mean\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_change_dispersion\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_change_dispersion_type\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_baseline_mean\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_baseline_sd\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_final_mean\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_final_sd\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"}\n },\n \"control_arm\": {\n  \"label\": \"LC diet group\",\n  \"intervention_description\": \"\",\n  \"n_randomized\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"},\n  \"n_analyzed\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_change_mean\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_change_dispersion\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_change_dispersion_type\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_baseline_mean\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_baseline_sd\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_final_mean\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_final_sd\": {\"value\": \"\", \"where\": \"\", \"quote\": \"\"}\n }\n}",
+ "dt": 111.0887104,
+ "tokens": 561,
+ "prompt_tokens": 9790,
+ "finish": "stop"
+}

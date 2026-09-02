@@ -1,0 +1,12 @@
+{
+ "modelo": "qwen14",
+ "esquema": "v2",
+ "ancora": "ma2",
+ "trial": "REF9",
+ "replica": 2,
+ "content": "{\n \"study\": \"Saslow 2023\",\n \"design\": \"2x2 factorial\",\n \"country\": \"USA\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": {\"value\": \"83\", \"where\": \"ABSTRACT\", \"quote\": \"We randomized 83 adults from southeast Michigan\"},\n \"experimental_arm\": {\n  \"label\": \"VLC diet\",\n  \"intervention_description\": \"\",\n  \"n_randomized\": {\"value\": \"23\", \"where\": \"Figure 1\", \"quote\": \"23 VLC 23 Intention-to-treat analysis\"},\n  \"n_analyzed\": {\"value\": \"23\", \"where\": \"Figure 1\", \"quote\": \"23 VLC 23 Intention-to-treat analysis\"},\n  \"hba1c_change_mean\": {\"value\": \"-0.32\", \"where\": \"Table 2\", \"quote\": \"–0.32 (0.07)\"},\n  \"hba1c_change_dispersion\": {\"value\": \"0.07\", \"where\": \"Table 2\", \"quote\": \"–0.32 (0.07)\"},\n  \"hba1c_change_dispersion_type\": {\"value\": \"SE\", \"where\": \"Table 2\", \"quote\": \"–0.32 (0.07)\"},\n  \"hba1c_baseline_mean\": {\"value\": \"6.09\", \"where\": \"Table 2\", \"quote\": \"6.09 (0.07)\"},\n  \"hba1c_baseline_sd\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_final_mean\": {\"value\": \"5.74\", \"where\": \"Table 2\", \"quote\": \"5.74 (0.08)\"},\n  \"hba1c_final_sd\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n },\n \"control_arm\": {\n  \"label\": \"DASH diet\",\n  \"intervention_description\": \"\",\n  \"n_randomized\": {\"value\": \"24\", \"where\": \"Figure 1\", \"quote\": \"24 DASH 24 Intention-to-treat analysis\"},\n  \"n_analyzed\": {\"value\": \"24\", \"where\": \"Figure 1\", \"quote\": \"24 DASH 24 Intention-to-treat analysis\"},\n  \"hba1c_change_mean\": {\"value\": \"-0.14\", \"where\": \"Table 2\", \"quote\": \"–0.14 (0.07)\"},\n  \"hba1c_change_dispersion\": {\"value\": \"0.07\", \"where\": \"Table 2\", \"quote\": \"–0.14 (0.07)\"},\n  \"hba1c_change_dispersion_type\": {\"value\": \"SE\", \"where\": \"Table 2\", \"quote\": \"–0.14 (0.07)\"},\n  \"hba1c_baseline_mean\": {\"value\": \"6.10\", \"where\": \"Table 2\", \"quote\": \"6.10 (0.07)\"},\n  \"hba1c_baseline_sd\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_final_mean\": {\"value\": \"5.97\", \"where\": \"Table 2\", \"quote\": \"5.97 (0.07)\"},\n  \"hba1c_final_sd\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n }\n}",
+ "dt": 114.3004551,
+ "tokens": 768,
+ "prompt_tokens": 10473,
+ "finish": "stop"
+}

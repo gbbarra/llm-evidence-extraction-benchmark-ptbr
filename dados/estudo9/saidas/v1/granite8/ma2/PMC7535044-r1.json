@@ -1,0 +1,12 @@
+{
+ "modelo": "granite8",
+ "esquema": "v1",
+ "ancora": "ma2",
+ "trial": "PMC7535044",
+ "replica": 1,
+ "content": "{\n \"study\": \"not provided in article\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Taiwan\",\n \"duration\": \"18 months\",\n \"n_randomized_total\": \"92\",\n \"experimental_arm\": {\n  \"label\": \"low-carbohydrate diet (LCD)\",\n  \"intervention_description\": \"daily carbohydrate intake ≤ 90 g/d without total energy restriction; includes guidance on food servings (6 servings of carbohydrates), optional reduction of sulfonylurea and insulin to half doses for compliant patients\",\n  \"n_randomized\": \"41\",\n  \"n_analyzed\": \"41\",\n  \"hba1c_change_mean\": \"-1.44\",\n  \"hba1c_change_dispersion\": \"0.30\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"9.95\",\n  \"hba1c_baseline_sd\": \"1.04\",\n  \"hba1c_final_mean\": \"6.84\",\n  \"hba1c_final_sd\": \"0.59\"\n },\n \"control_arm\": {\n  \"label\": \"traditional diabetic diet (TDD)\",\n  \"intervention_description\": \"target total calories calculated as ideal weight × 25 kcal/kg for BMI 18.5–24, 20 kcal/kg for overweight/obese (BMI ≥24), 30 kcal/day for underweight (BMI <18.5); macronutrient percentages 50–60% carbs, 1.0–1.2 g/kg protein, ≤30% fat\",\n  \"n_randomized\": \"42\",\n  \"n_analyzed\": \"42\",\n  \"hba1c_change_mean\": \"-1.01\",\n  \"hba1c_change_dispersion\": \"0.63\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"8.70\",\n  \"hba1c_baseline_sd\": \"1.01\",\n  \"hba1c_final_mean\": \"7.69\",\n  \"hba1c_final_sd\": \"1.06\"\n }\n}",
+ "dt": 121.4428475,
+ "tokens": 527,
+ "prompt_tokens": 11521,
+ "finish": "stop"
+}

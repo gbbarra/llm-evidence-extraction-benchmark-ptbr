@@ -47,11 +47,13 @@ def celula(js, campo_pt):
     return v if isinstance(v, dict) else {"value": v, "where": "", "quote": ""}
 
 
+MODELO = sys.argv[1] if len(sys.argv) > 1 else "gemma12"
+
 linhas = []
 for tid, campos in eleg().items():
     js = None
     for rep in (1, 2):
-        f = ROOT / "dados/estudo9/saidas/v2/gemma12/ma1" / f"{tid}-r{rep}.json"
+        f = ROOT / "dados/estudo9/saidas/v2" / MODELO / "ma1" / f"{tid}-r{rep}.json"
         if f.exists():
             j = d6.h3.acha_json(json.loads(f.read_text(encoding="utf-8"))["content"])
             if isinstance(j, dict):
@@ -76,10 +78,11 @@ for tid, campos in eleg().items():
                            where=str(c.get("where", "") or ""), fonte=fonte,
                            correto=bool(ok), autocheca=na_citacao, tem_quote=bool(quote.strip())))
 
-ROOT.joinpath("dados", "estudo9", "suficiencia-gemma12.json").write_text(
+ROOT.joinpath("dados", "estudo9", f"suficiencia-{MODELO}.json").write_text(
     json.dumps(linhas, ensure_ascii=False, indent=1), encoding="utf-8")
 
 n = len(linhas)
+print(f"=== {MODELO} ===")
 print(f"celulas elegiveis avaliadas: {n}")
 print(f"  corretas vs chave           : {sum(l['correto'] for l in linhas)}")
 print(f"  com citacao preenchida      : {sum(l['tem_quote'] for l in linhas)}")

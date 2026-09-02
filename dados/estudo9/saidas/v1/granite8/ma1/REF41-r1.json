@@ -1,0 +1,12 @@
+{
+ "modelo": "granite8",
+ "esquema": "v1",
+ "ancora": "ma1",
+ "trial": "REF41",
+ "replica": 1,
+ "content": "{\n  \"n_randomized_gdft\": {\"value\": \"49\", \"where\": \"Results\"},\n  \"n_randomized_control\": {\"value\": \"49\", \"where\": \"Results\"},\n  \"surgery_type\": {\"value\": \"major hepatic resection\", \"where\": \"Abstract\", \"where also mentioned in Results and Methods\"},\n  \"laparoscopy_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"laparoscopy_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"asa_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"asa_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"total_fluid_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"total_fluid_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"crystalloid_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"crystalloid_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"colloid_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"colloid_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"blood_loss_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"blood_loss_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"inotrope_use\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"morbidity_events_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"morbidity_events_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"mortality_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"mortality_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"hospital_los_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"hospital_los_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"time_to_flatus_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"time_to_flatus_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"time_to_oral_intake_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"time_to_oral_intake_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"time_to_defecation_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"time_to_defecation_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"postop_ileus_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"postop_ileus_control\": {\"value\": \"NR\", \"where\": \"NR\"}\n}",
+ "dt": 115.0940731,
+ "tokens": 689,
+ "prompt_tokens": 8974,
+ "finish": "stop"
+}

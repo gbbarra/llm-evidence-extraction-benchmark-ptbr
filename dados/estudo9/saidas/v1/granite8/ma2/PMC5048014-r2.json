@@ -1,0 +1,12 @@
+{
+ "modelo": "granite8",
+ "esquema": "v1",
+ "ancora": "ma2",
+ "trial": "PMC5048014",
+ "replica": 2,
+ "content": "{\n \"study\": \"Brackground 2008\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": \"89\",\n \"experimental_arm\": {\n  \"label\": \"VLCK diet group\",\n  \"intervention_description\": \"\",\n  \"n_randomized\": \"45\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"NR\",\n  \"hba1c_change_dispersion\": \"NR\",\n  \"hba1c_change_dispersion_type\": \"NR\",\n  \"hba1c_baseline_mean\": \"6.9\",\n  \"hba1c_baseline_sd\": \"1.1\",\n  \"hba1c_final_mean\": \"5.3\",\n  \"hba1c_final_sd\": \"0.7\"\n },\n \"control_arm\": {\n  \"label\": \"LC diet group\",\n  \"intervention_description\": \"\",\n  \"n_randomized\": \"44\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"NR\",\n  \"hba1c_change_dispersion\": \"NR\",\n  \"hba1c_change_dispersion_type\": \"NR\",\n  \"hba1c_baseline_mean\": \"6.8\",\n  \"hba1c_final_mean\": \"7.1\",\n  \"hba1c_final_sd\": \"0.8\"\n }\n}",
+ "dt": 34.0743709,
+ "tokens": 370,
+ "prompt_tokens": 9471,
+ "finish": "stop"
+}

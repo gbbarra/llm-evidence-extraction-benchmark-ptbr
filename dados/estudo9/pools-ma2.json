@@ -1,0 +1,129 @@
+{
+ "granite8": {
+  "estudos_no_pool": 3,
+  "faltas": [
+   "Saslow 2017",
+   "Saslow 2023",
+   "Thomsen 2022",
+   "Goday 2016"
+  ],
+  "pool_perturbado": {
+   "md": -0.26,
+   "ic95": [
+    -0.77,
+    0.24
+   ],
+   "tau2": 0.1608,
+   "i2_pct": 84.4
+  },
+  "lens": {
+   "md": -0.27,
+   "ic95": [
+    -0.77,
+    0.22
+   ],
+   "tau2": 0.1572,
+   "i2_pct": 84.3
+  },
+  "publicado": {
+   "md": -0.24,
+   "ic95": [
+    -0.32,
+    -0.16
+   ]
+  },
+  "lens_beside_published": false
+ },
+ "gemma12": {
+  "estudos_no_pool": 7,
+  "faltas": [],
+  "pool_perturbado": {
+   "md": -0.52,
+   "ic95": [
+    -0.82,
+    -0.21
+   ],
+   "tau2": 0.1358,
+   "i2_pct": 91.3
+  },
+  "lens": {
+   "md": -0.24,
+   "ic95": [
+    -0.32,
+    -0.16
+   ],
+   "tau2": 0.0011,
+   "i2_pct": 7.6
+  },
+  "publicado": {
+   "md": -0.24,
+   "ic95": [
+    -0.32,
+    -0.16
+   ]
+  },
+  "lens_beside_published": true
+ },
+ "qwen14": {
+  "estudos_no_pool": 6,
+  "faltas": [
+   "Thomsen 2022"
+  ],
+  "pool_perturbado": {
+   "md": -0.49,
+   "ic95": [
+    -0.97,
+    -0.02
+   ],
+   "tau2": 0.3184,
+   "i2_pct": 95.6
+  },
+  "lens": {
+   "md": -0.53,
+   "ic95": [
+    -1.0,
+    -0.06
+   ],
+   "tau2": 0.3167,
+   "i2_pct": 95.6
+  },
+  "publicado": {
+   "md": -0.24,
+   "ic95": [
+    -0.32,
+    -0.16
+   ]
+  },
+  "lens_beside_published": false
+ },
+ "llama8": {
+  "estudos_no_pool": 7,
+  "faltas": [],
+  "pool_perturbado": {
+   "md": -0.59,
+   "ic95": [
+    -1.03,
+    -0.15
+   ],
+   "tau2": 0.2732,
+   "i2_pct": 93.5
+  },
+  "lens": {
+   "md": -0.5,
+   "ic95": [
+    -0.77,
+    -0.22
+   ],
+   "tau2": 0.0905,
+   "i2_pct": 82.6
+  },
+  "publicado": {
+   "md": -0.24,
+   "ic95": [
+    -0.32,
+    -0.16
+   ]
+  },
+  "lens_beside_published": false
+ }
+}

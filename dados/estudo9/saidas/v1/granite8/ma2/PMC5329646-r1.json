@@ -1,0 +1,12 @@
+{
+ "modelo": "granite8",
+ "esquema": "v1",
+ "ancora": "ma2",
+ "trial": "PMC5329646",
+ "replica": 1,
+ "content": "{\n \"study\": \"Saslow et al. 2017\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"USA\",\n \"duration\": \"32 weeks\",\n \"n_randomized_total\": \"25\",\n \"experimental_arm\": {\n  \"label\": \"intervention group (very low-carbohydrate ketogenic diet and lifestyle recommendations)\",\n  \"intervention_description\": \"ad libitum very low-carbohydrate ketogenic diet (targeting nutritional ketosis, restricting nonfiber carbohydrates to 20-50 g/day), plus behavioral adherence strategies including positive affect regulation and mindful eating; online delivery with weekly lessons for first 16 weeks, then every two weeks; urinary ketone test kits provided\",\n  \"n_randomized\": \"12\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"NR\",\n  \"hba1c_change_dispersion\": \"NR\",\n  \"hba1c_change_dispersion_type\": \"NR\",\n  \"hba1c_baseline_mean\": \"5.8\",\n  \"hba1c_baseline_sd\": \"0.4\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"control group (American Diabetes Associations’ \\\"Create Your Plate\\\" diet)\",\n  \"intervention_description\": \"online diet program based on plate method diet (half plate nonstarchy vegetables, quarter protein, quarter carbohydrates); no extra behavioral support\",\n  \"n_randomized\": \"13\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"NR\",\n  \"hba1c_change_dispersion\": \"NR\",\n  \"hba1c_change_dispersion_type\": \"NR\",\n  \"hba1c_baseline_mean\": \"7.6\",\n  \"hba1c_baseline_sd\": \"0.3\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}",
+ "dt": 116.0892376,
+ "tokens": 499,
+ "prompt_tokens": 11315,
+ "finish": "stop"
+}
