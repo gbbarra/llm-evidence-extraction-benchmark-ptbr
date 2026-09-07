@@ -56,6 +56,8 @@ Unaided, the sixth reader shows the cast's signature: 0 exact intervals in 16, p
 
 Both pools within ±0.01 of the published point estimates. The morbidity difference against gemma12 traces to one row: Calvo-Vecino (REF33), where the sixth reader read the literal counts 18/224 and 35/226 and reproduces the published RR 0.519 exactly, while gemma12 read the percentages (8.6% / 16.6%), derived 19/38 and was flagged for verification. The Wu (PMC10912221) morbidity row (RR 0.594 vs 0.573 published) is flagged "verify" for the sixth reader as for the record — a category-system item, not a new one.
 
+**Invention screen over the Anchor-2 sheets** (`p3b-invention-screen.py`, a re-implementation of the P1 factuality rule for the continuous sheet, run over all six models): the sixth reader's 14 sheets hold 224 numeric cells and 196 numbers, 190 printed verbatim in the perturbed text and 6 derivable from printed pairs — **zero invention candidates**; the same screen returns zero for the five cast models (1,100 cells), which is its own check against the record's 1,104-cell result. Output: `invencao-p3b.json`.
+
 **(b) MA-2, from the P3-b sheets** (7 perturbed primaries × 2, English sheet; 7/7 in the pool, no missing sextet):
 
 | model | sealed lens (unperturbed) | τ² | I² | meets the mechanical "beside" test (all three numbers within 0.05 of the published) |

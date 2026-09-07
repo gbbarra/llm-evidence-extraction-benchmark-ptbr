@@ -1,0 +1,50 @@
+{
+ "gemma12": {
+  "sheets": 13,
+  "cells": 208,
+  "numbers": 176,
+  "printed": 176,
+  "derived": 0,
+  "candidates": []
+ },
+ "qwen14": {
+  "sheets": 14,
+  "cells": 224,
+  "numbers": 206,
+  "printed": 204,
+  "derived": 2,
+  "candidates": []
+ },
+ "llama8": {
+  "sheets": 14,
+  "cells": 224,
+  "numbers": 218,
+  "printed": 202,
+  "derived": 16,
+  "candidates": []
+ },
+ "qwen35": {
+  "sheets": 14,
+  "cells": 224,
+  "numbers": 185,
+  "printed": 181,
+  "derived": 4,
+  "candidates": []
+ },
+ "deepseek14": {
+  "sheets": 14,
+  "cells": 220,
+  "numbers": 194,
+  "printed": 185,
+  "derived": 9,
+  "candidates": []
+ },
+ "qwen27q2": {
+  "sheets": 14,
+  "cells": 224,
+  "numbers": 196,
+  "printed": 190,
+  "derived": 6,
+  "candidates": []
+ }
+}
