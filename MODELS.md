@@ -26,8 +26,16 @@ Study-5 Amendment-7 orchestrator arm (recorded 2026-08-30):
 
 **Note on the 27B tag.** All three studies call the 27B through the local tag `qwen3.8:27b-texto`: the same base-weights blob as the stock `qwen3.8:27b` (`sha256-f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d`, verified identical `FROM` on both tags) rebuilt with a raw-prompt template (`TEMPLATE {{ .Prompt }}`), so the frozen Portuguese instruments pass through verbatim with no chat wrapper. Each study's `MODELS` dict in `scripts/estudo*/e*-harness.py` records the tag it ran.
 
-Study-8 Amendment-1 extension arm (recorded 2026-09-07, same machine, per `ollama show`):
+Study-8 Amendment-1 extension arm (recorded 2026-09-07, same machine):
 
-| Paper name | Ollama tag | ID (digest prefix) | Params | Quant | Architecture | Notes |
-|---|---|---|---|---|---|---|
-| qwen3.8:27b low-bit ("Argos") | `smtek/Qwen3.8-27B:Q2_K_XL` | `d67a36b99f60` | 27.3B | manifest reports Q4_K_S (tag says Q2_K_XL); 11 GB | qwen35 | community build; the primary reader of the author's Mnemo review harness; stock chat template, not the raw-prompt rebuild of Studies 1–3 |
+| Paper name | Ollama tag | ID (digest prefix) | Params | Quantization | Architecture |
+|---|---|---|---|---|---|
+| qwen3.8:27b (ext.) | `smtek/Qwen3.8-27B:Q2_K_XL` | `d67a36b99f60` | 27.32B | mixed precision, **3.13 bits per weight** (10.68 GB) | qwen35 |
+
+**Note on this build's quantization.** Three sources disagree, and only one of them describes the weights:
+
+- the **Ollama tag** says `Q2_K_XL` — Unsloth's "dynamic" naming, not a uniform ggml type;
+- the **GGUF header** field `general.file_type` says `14` = `MOSTLY_Q4_K_S`, which is what `ollama show` prints; the field holds a single enum and cannot express a mixed quantization;
+- the **tensors themselves** are mixed: IQ3_XXS on 77.4% of parameters, IQ3_S on 11.7%, Q3_K and Q2_K on 4.7% each, IQ4_XS on 1.5%, IQ1_M on 0.1%, the rest F32.
+
+Measured by reading the GGUF header of the weight blob with `scripts/estudo8/gguf-inspect.py` (full output in `dados/estudo8/gguf-qwen27q2.json`): 866 tensors, 27.32 B parameters, 10.68 GB, **3.13 bits per weight** from the file size and 3.12 from the tensor types — against ~4.5 bits per weight for the cast's Q4_K_M builds. `general.repo_url` names `huggingface.co/unsloth`, so this is an Ollama mirror (namespace `smtek`) of an Unsloth dynamic quantization; the mirror namespace is not the quantizer. It runs with the stock chat template, not the raw-prompt rebuild used by the 27B of the instrument-development phase.
