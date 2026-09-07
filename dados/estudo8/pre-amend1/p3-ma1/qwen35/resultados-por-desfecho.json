@@ -1,0 +1,176 @@
+{
+ "morbidity": {
+  "rows": [
+   {
+    "study": "Calvo-Vecino et al.",
+    "pmcid": "REF33",
+    "ours": "RR 0.504 [0.3, 0.847] (a=19/224, c=38/226) [derived-from-%]",
+    "published": "RR 0.519 [0.304, 0.887]",
+    "category": "verify (rota-do-modelo or erro-do-modelo — adjudicate in the source)"
+   },
+   {
+    "study": "Yun et al.",
+    "pmcid": "PMC10561433",
+    "ours": "RR 0.862 [0.674, 1.101] (a=28/39, c=30/36)",
+    "published": "RR 0.862 [0.674, 1.101]",
+    "category": "reproduz"
+   },
+   {
+    "study": "Diaper et al.",
+    "pmcid": "REF26",
+    "ours": "RR 1.082 [0.904, 1.294] (a=113/200, c=105/201)",
+    "published": "RR 1.087 [0.91, 1.299]",
+    "category": "reproduz"
+   },
+   {
+    "study": "Wu et al.",
+    "pmcid": "PMC10912221",
+    "ours": "RR 0.594 [0.381, 0.925] (a=19/61, c=32/61)",
+    "published": "RR 0.573 [0.372, 0.884]",
+    "category": "verify (rota-do-modelo or erro-do-modelo — adjudicate in the source)"
+   }
+  ],
+  "pool": {
+   "MH": {
+    "rr": 0.866,
+    "ic95": [
+     0.751,
+     0.999
+    ]
+   },
+   "DL": {
+    "rr": 0.779,
+    "ic95": [
+     0.569,
+     1.065
+    ],
+    "tau2": 0.0714,
+    "i2": 75.6
+   }
+  }
+ },
+ "mortality": {
+  "rows": [
+   {
+    "study": "de Waal et al.",
+    "pmcid": "REF29",
+    "ours": "RR 0.942 [0.399, 2.224] (a=10/259, c=10/244) [derived-from-%]",
+    "published": "RR 0.944 [0.4, 2.226]",
+    "category": "reproduz"
+   },
+   {
+    "study": "Sun et al.",
+    "pmcid": "PMC10694978",
+    "ours": "RR 3.0 [0.125, 71.927] (a=1/50, c=0/50)",
+    "published": "RR 3.0 [0.125, 71.927]",
+    "category": "reproduz"
+   }
+  ],
+  "pool": {
+   "MH": {
+    "rr": 1.037,
+    "ic95": [
+     0.457,
+     2.355
+    ]
+   },
+   "DL": {
+    "rr": 1.019,
+    "ic95": [
+     0.445,
+     2.336
+    ],
+    "tau2": 0.0,
+    "i2": 0.0
+   }
+  }
+ },
+ "ileus": {
+  "rows": [
+   {
+    "study": "Arslan-Carlon et al.",
+    "pmcid": "REF30",
+    "ours": "RR 1.192 [0.779, 1.822] (a=36/142, c=30/141)",
+    "published": "RR 1.19 [0.77, 1.83]",
+    "category": "reproduz"
+   },
+   {
+    "study": "Sun et al.",
+    "pmcid": "PMC10694978",
+    "ours": "RR 0.125 [0.03, 0.515] (a=2/50, c=16/50)",
+    "published": "RR 0.13 [0.03, 0.53]",
+    "category": "verify (rota-do-modelo or erro-do-modelo — adjudicate in the source)"
+   },
+   {
+    "study": "Castro et al.",
+    "pmcid": "PMC11061212",
+    "ours": "insufficient-data",
+    "published": "RR 0.31 [0.14, 0.68]",
+    "category": "insufficient"
+   }
+  ],
+  "pool": {
+   "MH": {
+    "rr": 0.821,
+    "ic95": [
+     0.559,
+     1.207
+    ]
+   },
+   "DL": {
+    "rr": 0.429,
+    "ic95": [
+     0.048,
+     3.87
+    ],
+    "tau2": 2.2571,
+    "i2": 88.8
+   }
+  }
+ },
+ "time_to_flatus": {
+  "rows": [
+   {
+    "study": "Sun et al.",
+    "pmcid": "PMC10694978",
+    "ours": "insufficient-data",
+    "published": "MD -11.0 [-16.2, -5.8]",
+    "category": "insufficient · difere-por-escolha-documentada-da-ancora [derivavel-conversao]"
+   },
+   {
+    "study": "Coeckelenbergh et al.",
+    "pmcid": "REF41",
+    "ours": "insufficient-data",
+    "published": "MD -8.0 [-15.1, -0.9]",
+    "category": "insufficient · fonte-indisponivel [nao-sustentada]"
+   },
+   {
+    "study": "Diaper et al.",
+    "pmcid": "REF26",
+    "ours": "insufficient-data",
+    "published": "MD -3.0 [-6.8, 0.8]",
+    "category": "insufficient · fonte-indisponivel [nao-sustentada]"
+   }
+  ],
+  "pool": null
+ },
+ "time_to_oral_intake": {
+  "rows": [
+   {
+    "study": "Sun et al.",
+    "pmcid": "PMC10694978",
+    "ours": "insufficient-data",
+    "published": "MD -24.0 [-34.5, -13.5]",
+    "category": "insufficient · difere-por-errata-da-ancora [errata-ma]"
+   },
+   {
+    "study": "Sujatha et al.",
+    "pmcid": "PMC6907038",
+    "ours": "insufficient-data",
+    "published": "MD -5.0 [-12.1, 2.1]",
+    "category": "insufficient · fonte-indisponivel [dado-fora-do-insumo]"
+   }
+  ],
+  "pool": null
+ }
+}

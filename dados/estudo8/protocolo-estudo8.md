@@ -54,4 +54,25 @@ New anchors; new models beyond the cast; any change to seals, keys, corpora or t
 
 ---
 
-*Amendments: (none)*
+*Amendments:*
+
+## Amendment 1 — 2026-09-07 — extension arm: a sixth reader, the 27B at low-bit quantization ("Argos")
+
+**Author's directive (2026-09-07, verbatim intent)**: redo the two-anchor analyses with the model that the campaign did not test — the 27B Qwen build the author now uses as the primary reader ("Argos") in his Mnemo systematic-review harness — and compare it with the five-model cast.
+
+**What changes**: only the cast. One model is added as an extension arm, exactly as Study 4 Amendment 1 added the three smalls: `qwen27q2` → Ollama tag `smtek/Qwen3.8-27B:Q2_K_XL` (digest prefix `d67a36b99f60`, 11 GB; `ollama show` reports architecture qwen35, 27.3B parameters, manifest quantization Q4_K_S under a tag named Q2_K_XL — recorded as printed, since tag and manifest disagree). Registered in `MODELS.md`. It is called exactly like the five cast models: `/api/generate`, ctx 16 384, `think:false`, 4 000-token allowance, stock chat template (the PT-record 27B of Studies 1–3 ran through a raw-prompt rebuild; this arm does not, so quantization and template are both confounded against that record, and the comparison is made only within Study 8).
+
+**What does not change**: instruments (the frozen English library), corpora, sealed perturbation maps, the corrected two-layer keys, the deterministic engines, the graders, the category system, the adjudication rite. Nothing in the five-model record is edited; the new model's outputs go to `saidas/<phase>/qwen27q2/` and its gradings are appended to the phase evaluation files as a dated section.
+
+**Phases run**: P1 READ (14 perturbed MA-1 primaries × 2 replicates), P2 CALCULATE (arms A and B over its own P1 sheets), P3 CREATE (a: engines over its P1 sheets → MA-1 pools and the erratum-aware comparison; b: fresh extraction of the 7 perturbed MA-2 primaries × 2 → engine + sealed lens vs the published −0.24). P4 stays gemma12-only as pre-designated; an exploratory P4 run of the new model may be added later as a further dated amendment, never retroactively.
+
+**Hypotheses (frozen before the run)**:
+- **H8.6**: the sixth model reproduces the MA-1 dichotomous pools under DL within ±0.01 of the published 0.778 / 1.021, as all five cast models did (the "dichotomous chain is robust across the class" finding extends to a 27B low-bit build, or its failure is a named finding).
+- **H8.7**: its P1 cell accuracy on the eligible key set lands within the cast's measured range (llama8 … gemma12 83.1%), with omission-dominant failures and zero attributable recitations; where it lands relative to gemma12 is the model-choice result the author asked for.
+- **H8.8**: its MA-2 unperturbed lens either lands beside the published −0.24 (as only gemma12 did, at −0.27) or separates like the four others (−0.47 … −0.80); either outcome is reported as the discriminating continuous-chain result.
+- **H8.9**: with the CALC tool (arm B) it reproduces every value its own sheets support; unaided (arm A) its interval error rate stays at the cast's order of magnitude.
+
+**Compute (declared)**: ≈ 54 model calls (P1 28 · P3-b 14 · P2 12 runs), estimated 3–5 h of sequential machine time on the iGPU; resume-safe; log in `dados/estudo8/log-amend1-qwen27q2.txt`.
+
+**Out of scope**: any other new model; any change to seals, keys, corpora or instruments; comparison with the Portuguese 27B record beyond a clearly labeled note.
+

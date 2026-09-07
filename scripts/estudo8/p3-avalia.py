@@ -23,6 +23,10 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 ROOT = Path(__file__).resolve().parents[2]
 E8 = ROOT / "dados" / "estudo8"
 CAST = ["gemma12", "qwen14", "llama8", "qwen35", "deepseek14"]
+_a1 = importlib.util.spec_from_file_location("a1", ROOT / "scripts" / "estudo8" / "e8-amend1-cast.py")
+a1 = importlib.util.module_from_spec(_a1)
+_a1.loader.exec_module(a1)
+CAST = a1.cast_estendido(CAST, E8 / "saidas" / "p3b")  # Amendment 1 (2026-09-07)
 
 
 def carrega(nome, rel):

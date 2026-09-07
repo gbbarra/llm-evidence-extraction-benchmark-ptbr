@@ -17,3 +17,8 @@
 ## Ablation note (H8.5, second column)
 
 Qualitatively identical to the Portuguese record at every load-bearing point: unaided interval arithmetic fails, the text-protocol calculator repairs it, pool assembly remains beyond the iGPU cast, and the deviant behavior classes belong to the same models. No language effect visible at the arithmetic stage.
+
+
+## Amendment 1 (2026-09-07) — the sixth reader, `qwen27q2`
+
+Arm A: 6 exact, 6 direction-right, 3 wrong, **0/16 exact intervals**, pools 2 exact / 10 wrong — the cast's unaided signature. Arm B: **16/16 exact values, 16/16 exact intervals, 12/12 pools exact, no invalid JSON** — the first model-arm of the campaign to close every value, interval and pool its sheets support. The record's sentence "pool assembly remains beyond the iGPU cast in both arms" no longer holds for this build (named finding). Full record: [avaliacao-amend1.md](avaliacao-amend1.md).

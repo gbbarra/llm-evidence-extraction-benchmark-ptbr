@@ -50,3 +50,8 @@ Built for the manuscript's Supplementary Tables S1–S7 (author's directive: a d
 **Scope note (backlog, never retroactive):** the same reversal code served Studies 6–7, so the archived PT records may carry the same collision class on the same cell; checking the PT archives is registered as backlog. The mechanism's fix (word-boundary–aware reversal, mirroring the perturbation operator's own boundary awareness) is an instrument-fix backlog item for future rulers, never applied retroactively to published numbers.
 
 **Update 2026-09-01 (author's decision):** the manuscript's Table 2 now adopts the adjudicated scores — correct 105/124 (qwen14), 89/124 (llama8), 105/124 (qwen35), 98/124 (deepseek14); value/format 13, 35, 15, 24 — with the comparator's raw output quoted in the caption and preserved here and in `avaliacao-p1.json`. The stable-divergents statistics remain counted over the comparator's raw divergent inventories, stated as such in the manuscript.
+
+
+## Amendment 1 (2026-09-07) — the sixth reader, `qwen27q2`
+
+Same instrument, seals, key and grader; outputs in `saidas/p1/qwen27q2/`. **107/124 cells (86.3%) mechanical, 108/124 (87.1%) under the 2026-09-01 adjudication rule** (the Castro blood-loss lookup-collision cell, byte-identical to the key plus "mL"); stability 117/124 (94.4%); **zero recitation candidates, zero invention candidates**; 17 divergents = 7 `tipo_cirurgia` summaries + 2 REF33 `n_randomizados` (224/226 literal allocation, the layer-choice item Study 1 had already adjudicated "exata") + 1 collision + 1 re-encoding (`0 (0)`) + 6 omissions. Top of the cast (gemma12 103/124). Full record: [avaliacao-amend1.md](avaliacao-amend1.md).

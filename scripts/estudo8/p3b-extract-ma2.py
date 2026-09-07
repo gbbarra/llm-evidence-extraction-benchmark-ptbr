@@ -26,6 +26,10 @@ _x = importlib.util.spec_from_file_location("ext", ROOT / "scripts" / "estudo4" 
 ext = importlib.util.module_from_spec(_x)
 _x.loader.exec_module(ext)
 h3 = ext.h3
+_a1 = importlib.util.spec_from_file_location("a1", ROOT / "scripts" / "estudo8" / "e8-amend1-cast.py")
+a1 = importlib.util.module_from_spec(_a1)
+_a1.loader.exec_module(a1)
+a1.registrar(h3)  # Amendment 1 (2026-09-07): sixth reader
 
 
 def descarrega(tag=None):

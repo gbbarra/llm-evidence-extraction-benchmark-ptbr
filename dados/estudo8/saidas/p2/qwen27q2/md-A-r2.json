@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen27q2",
+ "familia": "md",
+ "braco": "A",
+ "replica": 2,
+ "chamadas": 0,
+ "dt": 33.2,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\n  \"time_to_flatus_h\": {\n    \"Sun 2023\": {\n      \"md\": -11.20,\n      \"ci95\": \"NOT-COMPUTABLE\",\n      \"note\": \"CI not computable because SD is not provided (only range given). Values are already in hours.\"\n    },\n    \"Coeckelenbergh 2024\": {\n      \"md\": \"NOT-COMPUTABLE\",\n      \"ci95\": \"NOT-COMPUTABLE\",\n      \"note\": \"Data reported as NR.\"\n    },\n    \"Diaper 2021\": {\n      \"md\": \"NOT-COMPUTABLE\",\n      \"ci95\": \"NOT-COMPUTABLE\",\n      \"note\": \"Data reported as NR.\"\n    }\n  },\n  \"time_to_oral_diet\": {\n    \"Sun 2023\": {\n      \"md\": -2.00,\n      \"ci95\": \"NOT-COMPUTABLE\",\n      \"note\": \"CI not computable because SD is not provided (only range given). Values are already in days.\"\n    },\n    \"Sujatha 2019\": {\n      \"md\": \"NOT-COMPUTABLE\",\n      \"ci95\": \"NOT-COMPUTABLE\",\n      \"note\": \"Data reported as NR.\"\n    }\n  }\n}",
+   "dt": 33.2
+  }
+ ]
+}

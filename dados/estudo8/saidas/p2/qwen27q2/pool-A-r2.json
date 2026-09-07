@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen27q2",
+ "familia": "pool",
+ "braco": "A",
+ "replica": 2,
+ "chamadas": 0,
+ "dt": 47.0,
+ "rodadas": 1,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "{\n  \"morbidity\": {\n    \"mh\": {\n      \"rr\": 0.898,\n      \"ci95\": [\n        0.712,\n        1.131\n      ]\n    },\n    \"dl\": {\n      \"rr\": 0.898,\n      \"ci95\": [\n        0.712,\n        1.131\n      ]\n    }\n  },\n  \"mortality\": {\n    \"mh\": {\n      \"rr\": 0.931,\n      \"ci95\": [\n        0.389,\n        2.222\n      ]\n    },\n    \"dl\": {\n      \"rr\": 0.931,\n      \"ci95\": [\n        0.389,\n        2.222\n      ]\n    }\n  },\n  \"ileus\": {\n    \"mh\": {\n      \"rr\": 0.459,\n      \"ci95\": [\n        0.270,\n        0.782\n      ]\n    },\n    \"dl\": {\n      \"rr\": 0.459,\n      \"ci95\": [\n        0.270,\n        0.782\n      ]\n    }\n  },\n  \"time_to_flatus_h\": {\n    \"iv\": {\n      \"md\": -11.2,\n      \"ci95\": [\n        -15.4,\n        -7.0\n      ]\n    }\n  },\n  \"time_to_oral_diet\": {\n    \"iv\": {\n      \"md\": -2.0,\n      \"ci95\": [\n        -4.1,\n        0.1\n      ]\n    }\n  }\n}",
+   "dt": 47.0
+  }
+ ]
+}

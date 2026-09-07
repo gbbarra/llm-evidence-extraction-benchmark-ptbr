@@ -1,0 +1,26 @@
+{
+ "modelo": "qwen27q2",
+ "familia": "md",
+ "braco": "B",
+ "replica": 1,
+ "chamadas": 2,
+ "dt": 62.0,
+ "rodadas": 3,
+ "transcricao": [
+  {
+   "rodada": 1,
+   "saida": "CALC: md(28.2, 14.4, 50, 39.4, 11.3, 50)",
+   "dt": 12.1
+  },
+  {
+   "rodada": 2,
+   "saida": "CALC: ci95_md(28.2, 14.4, 50, 39.4, 11.3, 50)",
+   "dt": 12.1
+  },
+  {
+   "rodada": 3,
+   "saida": "{\"time_to_flatus_h\": {\"Sun 2023\": {\"md\": -11.2, \"ci95\": [-16.27, -6.13], \"note\": \"SDs approximated from ranges using (max-min)/4; units hours\"}, \"Coeckelenbergh 2024\": {\"md\": \"NOT-COMPUTABLE\", \"ci95\": \"NOT-COMPUTABLE\", \"note\": \"Data reported as NR\"}, \"Diaper 2021\": {\"md\": \"NOT-COMPUTABLE\", \"ci95\": \"NOT-COMPUTABLE\", \"note\": \"Data reported as NR\"}}, \"time_to_oral_diet\": {\"Sun 2023\": {\"md\": -1.0, \"ci95\": [-1.84, -0.16], \"note\": \"SDs approximated from ranges using (max-min)/4; units days\"}, \"Sujatha 2019\": {\"md\": \"NOT-COMPUTABLE\", \"ci95\": \"NOT-COMPUTABLE\", \"note\": \"Data reported as NR\"}}}",
+   "dt": 37.7
+  }
+ ]
+}

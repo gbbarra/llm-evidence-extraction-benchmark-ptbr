@@ -1,0 +1,10 @@
+{
+ "modelo": "qwen27q2",
+ "trial": "REF9",
+ "replica": 1,
+ "content": "{\n \"study\": \"Saslow 2023\",\n \"design\": \"2x2 factorial\",\n \"country\": \"United States\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": \"83\",\n \"experimental_arm\": {\n  \"label\": \"VLC diet (collapsed over support)\",\n  \"intervention_description\": \"Very low-carbohydrate diet (20-35 g nonfiber carbohydrates/day) with or without multicomponent extra support\",\n  \"n_randomized\": \"45\",\n  \"n_analyzed\": \"81\",\n  \"hba1c_change_mean\": \"-0.32\",\n  \"hba1c_change_dispersion\": \"0.07\",\n  \"hba1c_change_dispersion_type\": \"SE\",\n  \"hba1c_baseline_mean\": \"6.09\",\n  \"hba1c_baseline_sd\": \"0.07\",\n  \"hba1c_final_mean\": \"5.74\",\n  \"hba1c_final_sd\": \"0.08\"\n },\n \"control_arm\": {\n  \"label\": \"DASH diet (collapsed over support)\",\n  \"intervention_description\": \"DASH diet (sodium <2300 mg/day, fat 20-30% calories) with or without multicomponent extra support\",\n  \"n_randomized\": \"38\",\n  \"n_analyzed\": \"81\",\n  \"hba1c_change_mean\": \"-0.14\",\n  \"hba1c_change_dispersion\": \"0.07\",\n  \"hba1c_change_dispersion_type\": \"SE\",\n  \"hba1c_baseline_mean\": \"6.10\",\n  \"hba1c_baseline_sd\": \"0.07\",\n  \"hba1c_final_mean\": \"5.97\",\n  \"hba1c_final_sd\": \"0.07\"\n }\n}",
+ "dt": 180.054923,
+ "tokens": 441,
+ "prompt_tokens": 10188,
+ "finish": "stop"
+}

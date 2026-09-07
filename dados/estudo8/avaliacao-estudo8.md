@@ -28,3 +28,8 @@
 ## The article (the campaign's purpose)
 
 The single article's spine, in the phases' order: **READ** (five models, perturbation proof, the human key on trial, the rite) → **CALCULATE** (unaided fails, the tool repairs) → **CREATE** (the engines build both meta-analyses; the erratum-aware comparison corrects the published one — 17 errata; the five diamonds crown one reader) → **ORCHESTRATE** (the best reader runs its own calculations under warn-only nets) → **DEPLOY** (clean texts, no key: Study 7's three-configuration detection comparison). Every claim draws from this study's record plus Study 7's; the PT-vs-EN ablation is the methods-level result that removes instruction language as a confounder.
+
+
+## Amendment 1 (2026-09-07) — extension arm: the sixth reader
+
+At the author's request the campaign's chain was rerun for the model his review harness uses as primary reader, `smtek/Qwen3.8-27B:Q2_K_XL` (`qwen27q2`), pre-registered as Amendment 1 and run the same day (54 calls, 119 min, zero failures). Verdicts: **H8.6 passes** (MA-1 pools 0.787 / 1.023); **H8.7 passes and exceeds** (P1 107/124 mechanical, 108/124 adjudicated — top of the cast; zero recitations, zero inventions; omission-dominant); **H8.8 lands beside** (MA-2 lens −0.25 [−0.33, −0.16], the closest diamond of the six and the only one meeting the mechanical criterion); **H8.9 passes and exceeds** (arm B 16/16 values, 16/16 intervals, 12/12 pools — the first perfect calculator arm including pools). The five-model record is unchanged, field by field. Record: [avaliacao-amend1.md](avaliacao-amend1.md).

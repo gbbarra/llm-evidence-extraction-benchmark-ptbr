@@ -1,0 +1,75 @@
+SHA-256 perturbacoes-estudo1.json: 6193840bb7e654e69bb6e2542386b1eacdae014e023fca8a65200751e9026a6e
+SHA-256 perturbacoes-fechados.json: 75e3aaf8c2fe833460db55329e5a6f78e9441ca0c121b6c2be9d4d77cb23594b
+SHA-256 perturbacoes-manuais.json: f7a4fdc5375bed00bd1b009ca7e9ac4daea3e3d8dcd4c44aa4e01b5c3d34195b
+SHA-256 perturbacoes-fechados-manuais.json: 85fef70b33238313b7f44bcffc67e6211a23e4c5a6a872d693cebb0deac8ef9c
+initial memory sweep:
+
+===== Study 8 · P1 READ · qwen27q2 [smtek/Qwen3.8-27B:Q2_K_XL] · 14 primaries x 2 (EN instrument)
+  qwen27q2 PMC10561433-r1: 253s, 785 tok, fim=stop
+  qwen27q2 PMC10561433-r2: 83s, 785 tok, fim=stop
+  qwen27q2 PMC10694978-r1: 243s, 938 tok, fim=stop
+  qwen27q2 PMC10694978-r2: 102s, 944 tok, fim=stop
+  qwen27q2 PMC10912221-r1: 247s, 914 tok, fim=stop
+  qwen27q2 PMC10912221-r2: 100s, 946 tok, fim=stop
+  qwen27q2 PMC11061212-r1: 207s, 854 tok, fim=stop
+  qwen27q2 PMC11061212-r2: 86s, 826 tok, fim=stop
+  qwen27q2 PMC12565272-r1: 225s, 765 tok, fim=stop
+  qwen27q2 PMC12565272-r2: 80s, 759 tok, fim=stop
+  qwen27q2 PMC4782303-r1: 267s, 892 tok, fim=stop
+  qwen27q2 PMC4782303-r2: 123s, 1135 tok, fim=stop
+  qwen27q2 PMC5589093-r1: 295s, 1138 tok, fim=stop
+  qwen27q2 PMC5589093-r2: 93s, 862 tok, fim=stop
+  qwen27q2 PMC6907038-r1: 172s, 754 tok, fim=stop
+  qwen27q2 PMC6907038-r2: 108s, 1051 tok, fim=stop
+  qwen27q2 REF26-r1: 273s, 1033 tok, fim=stop
+  qwen27q2 REF26-r2: 87s, 819 tok, fim=stop
+  qwen27q2 REF29-r1: 294s, 1141 tok, fim=stop
+  qwen27q2 REF29-r2: 126s, 1175 tok, fim=stop
+  qwen27q2 REF30-r1: 182s, 719 tok, fim=stop
+  qwen27q2 REF30-r2: 74s, 719 tok, fim=stop
+  qwen27q2 REF33-r1: 250s, 895 tok, fim=stop
+  qwen27q2 REF33-r2: 118s, 1098 tok, fim=stop
+  qwen27q2 REF41-r1: 200s, 672 tok, fim=stop
+  qwen27q2 REF41-r2: 95s, 912 tok, fim=stop
+  qwen27q2 REF47-r1: 209s, 784 tok, fim=stop
+  qwen27q2 REF47-r2: 80s, 771 tok, fim=stop
+
+== P1 READ COMPLETE in 77.9 min
+SHA-256 perturbacoes-estudo3.json: a8bc6e1ae2faa8a2b8af75afb6c1fafd354a1d08076ffe2183cc319ecc171b04
+initial memory sweep:
+
+===== Study 8 · P3-b MA-2 · qwen27q2 [smtek/Qwen3.8-27B:Q2_K_XL] · 7 primaries x 2 (EN sheet)
+  qwen27q2 PMC5329646-r1: 211s, 418 tok, fim=stop
+  qwen27q2 PMC5329646-r2: 46s, 436 tok, fim=stop
+  qwen27q2 REF9-r1: 180s, 441 tok, fim=stop
+  qwen27q2 REF9-r2: 42s, 406 tok, fim=stop
+  qwen27q2 PMC9606840-r1: 189s, 477 tok, fim=stop
+  qwen27q2 PMC9606840-r2: 53s, 481 tok, fim=stop
+  qwen27q2 PMC7535044-r1: 210s, 418 tok, fim=stop
+  qwen27q2 PMC7535044-r2: 46s, 424 tok, fim=stop
+  qwen27q2 REF12-r1: 215s, 419 tok, fim=stop
+  qwen27q2 REF12-r2: 47s, 432 tok, fim=stop
+  qwen27q2 PMC6024764-r1: 161s, 425 tok, fim=stop
+  qwen27q2 PMC6024764-r2: 42s, 400 tok, fim=stop
+  qwen27q2 PMC5048014-r1: 171s, 411 tok, fim=stop
+  qwen27q2 PMC5048014-r2: 45s, 419 tok, fim=stop
+
+== P3-B MA-2 EXTRACTION COMPLETE in 27.6 min
+initial memory sweep:
+
+===== Study 8 · P2 CALCULATE · qwen27q2 [smtek/Qwen3.8-27B:Q2_K_XL]
+  qwen27q2 rr-A-r1: 1 round(s), 0 CALC, 70s
+  qwen27q2 rr-A-r2: 1 round(s), 0 CALC, 50s
+  qwen27q2 rr-B-r1: 2 round(s), 16 CALC, 93s
+  qwen27q2 rr-B-r2: 2 round(s), 16 CALC, 93s
+  qwen27q2 md-A-r1: 1 round(s), 0 CALC, 47s
+  qwen27q2 md-A-r2: 1 round(s), 0 CALC, 33s
+  qwen27q2 md-B-r1: 3 round(s), 2 CALC, 62s
+  qwen27q2 md-B-r2: 3 round(s), 2 CALC, 67s
+  qwen27q2 pool-A-r1: 1 round(s), 0 CALC, 55s
+  qwen27q2 pool-A-r2: 1 round(s), 0 CALC, 47s
+  qwen27q2 pool-B-r1: 2 round(s), 6 CALC, 99s
+  qwen27q2 pool-B-r2: 2 round(s), 6 CALC, 98s
+
+== P2 CALCULATE COMPLETE in 13.6 min
+exit=0

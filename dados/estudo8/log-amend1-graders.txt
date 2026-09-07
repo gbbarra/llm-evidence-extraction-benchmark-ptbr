@@ -1,0 +1,419 @@
+model        cells vs key       stability r1-r2    recit.cand.  parse-fail
+gemma12      103/124 (83.1%)    119/124 (96.0%)    1            0
+qwen14       104/124 (83.9%)    123/124 (99.2%)    1            0
+llama8       88/124 (71.0%)     96/124 (77.4%)     2            0
+qwen35       104/124 (83.9%)    103/124 (83.1%)    0            0
+deepseek14   97/124 (78.2%)     96/118 (81.4%)     1            0
+qwen27q2     107/124 (86.3%)    117/124 (94.4%)    0            0
+--- p1-factuality
+model        divergents  omissions  invention cand.  value/format
+gemma12              21          0                0            21
+qwen14               20          6                0            14
+llama8               36          0                0            36
+qwen35               20          4                0            16
+deepseek14           27          2                0            25
+qwen27q2             17          6                0            11
+--- p1-divergentes-classifica
+per-cell class counts (124 total): {'summary': 41, 're-encoding?': 74, 'omission': 18, 'lookup-collision': 5, 'layer-choice': 3}
+
+=== lookup-collision (5) ===
+PMC11061212  perda_sanguinea_controle   Q14 
+    raw: '1283.2 ± 959.7'
+    rev: '1313.2 ± 959.7'
+    key: '1283.2 ± 959.7'
+    ma : '1283.2 ± 959.7'
+PMC11061212  perda_sanguinea_controle   L   
+    raw: '1283.2 ± 959.7'
+    rev: '1313.2 ± 959.7'
+    key: '1283.2 ± 959.7'
+    ma : '1283.2 ± 959.7'
+PMC11061212  perda_sanguinea_controle   Q35 
+    raw: '1283.2 ± 959.7 mL'
+    rev: '1313.2 ± 959.7 mL'
+    key: '1283.2 ± 959.7'
+    ma : '1283.2 ± 959.7'
+PMC11061212  perda_sanguinea_controle   D   
+    raw: '1283.2 ± 959.7 mL'
+    rev: '1313.2 ± 959.7 mL'
+    key: '1283.2 ± 959.7'
+    ma : '1283.2 ± 959.7'
+PMC11061212  perda_sanguinea_controle   Q27 
+    raw: '1283.2 ± 959.7 mL'
+    rev: '1313.2 ± 959.7 mL'
+    key: '1283.2 ± 959.7'
+    ma : '1283.2 ± 959.7'
+
+=== layer-choice (3) ===
+PMC6907038   n_randomizados_controle    L   
+    raw: '101'
+    key: '102 randomizados'
+    ma : '101'
+PMC10561433  laparoscopia_gdft          D   
+    raw: '0%'
+    key: '0 (cirurgia aberta; fonte não enumera laparoscopia)'
+    ma : '0'
+PMC10561433  laparoscopia_controle      D   
+    raw: '0%'
+    key: '0 (cirurgia aberta; fonte não enumera laparoscopia)'
+    ma : '0'
+
+=== layer-choice(raw) (0) ===
+
+=== re-encoding? (74) ===
+PMC11061212  asa_gdft                   G   
+    raw: '16% (ASA I), 72% (ASA II), 12% (ASA III)'
+    key: '7:31:5:0'
+    ma : '7:31:5:0'
+PMC11061212  asa_controle               G   
+    raw: '26% (ASA I), 62% (ASA II), 12% (ASA III)'
+    key: '11:26:5:0'
+    ma : '11:26:5:0'
+PMC11061212  perda_sanguinea_gdft       G   
+    raw: '4364.5 ± 2920.6 mL'
+    key: '1100.1 ± 851.1'
+    ma : '1100.1 ± 851.1'
+PMC11061212  perda_sanguinea_controle   G   
+    raw: '5062.9 ± 3287.5 mL'
+    rev: '5062.9 ± 3317.5 mL'
+    key: '1283.2 ± 959.7'
+    ma : '1283.2 ± 959.7'
+PMC6907038   laparoscopia_gdft          G   
+    raw: 'excluded'
+    key: '0 (cirurgia aberta; fonte não enumera laparoscopia)'
+    ma : '0'
+PMC6907038   laparoscopia_controle      G   
+    raw: 'excluded'
+    key: '0 (cirurgia aberta; fonte não enumera laparoscopia)'
+    ma : '0'
+REF29        n_randomizados_gdft        G   
+    raw: '258'
+    key: '274'
+    ma : '274'
+REF29        n_randomizados_controle    G   
+    raw: '244'
+    key: '259'
+    ma : '259'
+REF30        ileo_pos_op_gdft           G   
+    raw: '25% (31/142)'
+    rev: '25% (36/142)'
+    key: '36 (25.4%)'
+    ma : '36 (25.4%)'
+REF30        ileo_pos_op_controle       G   
+    raw: '21% (30/141)'
+    key: '30 (21.3%)'
+    ma : '30 (21.3%)'
+REF33        n_randomizados_gdft        G   
+    raw: '224'
+    key: '209'
+    ma : '209'
+REF33        n_randomizados_controle    G   
+    raw: '226'
+    key: '211'
+    ma : '211'
+REF47        n_randomizados_gdft        G   
+    raw: '40'
+    key: '39'
+    ma : '39'
+REF47        n_randomizados_controle    G   
+    raw: '40'
+    key: '39'
+    ma : '39'
+REF29        n_randomizados_gdft        Q14 
+    raw: '248'
+    key: '274'
+    ma : '274'
+REF29        n_randomizados_controle    Q14 
+    raw: '234'
+    key: '259'
+    ma : '259'
+REF33        n_randomizados_gdft        Q14 
+    raw: '224'
+    key: '209'
+    ma : '209'
+REF33        n_randomizados_controle    Q14 
+    raw: '226'
+    key: '211'
+    ma : '211'
+REF47        n_randomizados_gdft        Q14 
+    raw: '40'
+    key: '39'
+    ma : '39'
+REF47        n_randomizados_controle    Q14 
+    raw: '40'
+    key: '39'
+    ma : '39'
+PMC10561433  asa_gdft                   L   
+    raw: '0.74:0.25:0.01'
+    key: '4:29:6:0'
+    ma : '4:29:6:0'
+PMC10561433  asa_controle               L   
+    raw: '0.75:0.24:0.01'
+    key: '2:27:7:0'
+    ma : '2:27:7:0'
+PMC10912221  asa_gdft                   L   
+    raw: 'II:56.9, III:43.1'
+    key: '0:25:33:0'
+    ma : '0:25:33:0'
+PMC10912221  asa_controle               L   
+    raw: 'II:39.3, III:60.7'
+    key: '0:22:34:0'
+    ma : '0:22:34:0'
+PMC11061212  asa_gdft                   L   
+    raw: 'I:16, II:72, III:12'
+    key: '7:31:5:0'
+    ma : '7:31:5:0'
+PMC11061212  asa_controle               L   
+    raw: 'I:26, II:62, III:12'
+    key: '11:26:5:0'
+    ma : '11:26:5:0'
+PMC11061212  coloide_gdft               L   
+    raw: '10.8 ± 6.6'
+    key: '779.7 ± 565.1'
+    ma : '779.7 ± 565.1'
+PMC11061212  coloide_controle           L   
+    raw: '10.7 ± 5.9'
+    key: '737.8 ± 383.2'
+    ma : '737.8 ± 383.2'
+PMC12565272  asa_gdft                   L   
+    raw: '13:3:0:0'
+    key: '0:13:6:0'
+    ma : '0:13:6:0'
+PMC12565272  asa_controle               L   
+    raw: '10:4:2:0'
+    key: '0:10:6:0'
+    ma : '0:10:6:0'
+PMC4782303   asa_gdft                   L   
+    raw: 'I:2, II:63, III:27'
+    key: 'NR (elegibilidade ASA 1-3; distribuição não reportada)'
+    ma : 'Not stated'
+REF26        n_randomizados_controle    L   
+    raw: '200'
+    key: '201'
+    ma : '201'
+REF26        asa_gdft                   L   
+    raw: 'I:II:III:IV ratio = 50:50:30:10'
+    key: 'ASA-PS III-IV: 98 (50.0%)'
+    ma : 'Not stated'
+REF26        asa_controle               L   
+    raw: 'I:II:III:IV ratio = 47:38:22:13'
+    key: 'ASA-PS III-IV: 85 (42.9%)'
+    ma : 'Not stated'
+REF29        n_randomizados_gdft        L   
+    raw: '258'
+    key: '274'
+    ma : '274'
+REF29        n_randomizados_controle    L   
+    raw: '244'
+    key: '259'
+    ma : '259'
+REF29        asa_gdft                   L   
+    raw: '1:2.8:3.2:1.2'
+    key: '17:132:95:4'
+    ma : '24:123:86:1'
+REF29        asa_controle               L   
+    raw: '1:2.9:3.2:0.6'
+    key: '24:123:86:1'
+    ma : '17:132:95:4'
+REF30        asa_gdft                   L   
+    raw: 'I:II:III:IV (NR:NR:NR:NR)'
+    key: 'NR (descrição geral ASA 3-4; sem distribuição por braço no texto)'
+    ma : 'Not stated'
+REF30        ileo_pos_op_gdft           L   
+    raw: '25% (31/142)'
+    rev: '25% (36/142)'
+    key: '36 (25.4%)'
+    ma : '36 (25.4%)'
+REF30        ileo_pos_op_controle       L   
+    raw: '21% (30/141)'
+    key: '30 (21.3%)'
+    ma : '30 (21.3%)'
+REF33        n_randomizados_gdft        L   
+    raw: '224'
+    key: '209'
+    ma : '209'
+REF33        n_randomizados_controle    L   
+    raw: '226'
+    key: '211'
+    ma : '211'
+REF33        asa_gdft                   L   
+    raw: 'I:134, II:148, III:73, IV:0'
+    rev: 'I:122, II:148, III:73, IV:0'
+    key: '14:122:73:0'
+    ma : '14:122:73:0'
+REF33        morbidade_eventos_controle L   
+    raw: '36'
+    key: '35 (16.6%)'
+    ma : '35 (16.6%)'
+REF47        n_randomizados_gdft        L   
+    raw: '40'
+    key: '39'
+    ma : '39'
+REF47        n_randomizados_controle    L   
+    raw: '40'
+    key: '39'
+    ma : '39'
+REF29        n_randomizados_gdft        Q35 
+    raw: '259'
+    key: '274'
+    ma : '274'
+REF29        n_randomizados_controle    Q35 
+    raw: '244'
+    key: '259'
+    ma : '259'
+REF29        asa_gdft                   Q35 
+    raw: '6.9%:53.2%:38.3%:1.6%'
+    key: '17:132:95:4'
+    ma : '24:123:86:1'
+REF29        asa_controle               Q35 
+    raw: '10.3%:52.6%:36.7%:0.4%'
+    key: '24:123:86:1'
+    ma : '17:132:95:4'
+REF30        ileo_pos_op_gdft           Q35 
+    raw: '25% (31/142)'
+    rev: '25% (36/142)'
+    key: '36 (25.4%)'
+    ma : '36 (25.4%)'
+REF30        ileo_pos_op_controle       Q35 
+    raw: '21% (30/141)'
+    key: '30 (21.3%)'
+    ma : '30 (21.3%)'
+REF33        n_randomizados_gdft        Q35 
+    raw: '224'
+    key: '209'
+    ma : '209'
+REF33        n_randomizados_controle    Q35 
+    raw: '226'
+    key: '211'
+    ma : '211'
+PMC10694978  asa_gdft                   D   
+    raw: '8 (16%) ASA I, 36 (72%) ASA II, 8 (16%) ASA III'
+    key: '6:36:8:0'
+    ma : '6:36:8:0'
+PMC10694978  asa_controle               D   
+    raw: '16 (32%) ASA I, 33 (66%) ASA II, 11 (22%) ASA III'
+    key: '8:33:9:0'
+    ma : '8:33:9:0'
+PMC10912221  asa_gdft                   D   
+    raw: 'II:43.1%, III:56.9%'
+    key: '0:25:33:0'
+    ma : '0:25:33:0'
+PMC10912221  asa_controle               D   
+    raw: 'II:39.3%, III:60.7%'
+    key: '0:22:34:0'
+    ma : '0:22:34:0'
+PMC4782303   asa_gdft                   D   
+    raw: 'I:16%, II:77%, III:7%'
+    key: 'NR (elegibilidade ASA 1-3; distribuição não reportada)'
+    ma : 'Not stated'
+REF29        n_randomizados_gdft        D   
+    raw: '259'
+    key: '274'
+    ma : '274'
+REF29        n_randomizados_controle    D   
+    raw: '234'
+    key: '259'
+    ma : '259'
+REF29        asa_gdft                   D   
+    raw: 'ASA I: 6.9%, ASA II: 53.2%, ASA III: 38.3%, ASA IV: 1.6%'
+    key: '17:132:95:4'
+    ma : '24:123:86:1'
+REF29        asa_controle               D   
+    raw: 'ASA I: 10.3%, ASA II: 52.6%, ASA III: 36.7%, ASA IV: 0.4%'
+    key: '24:123:86:1'
+    ma : '17:132:95:4'
+REF30        asa_gdft                   D   
+    raw: '30% ASA II | 70% ASA III-IV'
+    key: 'NR (descrição geral ASA 3-4; sem distribuição por braço no texto)'
+    ma : 'Not stated'
+REF30        ileo_pos_op_gdft           D   
+    raw: '25% (31/142)'
+    rev: '25% (36/142)'
+    key: '36 (25.4%)'
+    ma : '36 (25.4%)'
+REF30        ileo_pos_op_controle       D   
+    raw: '21% (30/141)'
+    key: '30 (21.3%)'
+    ma : '30 (21.3%)'
+REF33        laparoscopia_gdft          D   
+    raw: '50.2%'
+    key: '105'
+    ma : '105'
+REF33        laparoscopia_controle      D   
+    raw: '51.7%'
+    key: '109'
+    ma : '109'
+REF33        asa_gdft                   D   
+    raw: 'I: 6.7%, II: 58.4%, III: 34.9%'
+    key: '14:122:73:0'
+    ma : '14:122:73:0'
+REF33        asa_controle               D   
+    raw: 'I: 16.6%, II: 64.4%, III: 19.0%'
+    key: '35:136:40:0'
+    ma : '35:136:40:0'
+PMC10694978  mortalidade_controle       Q27 
+    raw: '0 (0)'
+    key: '0 (0%)'
+    ma : '0 (0%)'
+REF33        n_randomizados_gdft        Q27 
+    raw: '224'
+    key: '209'
+    ma : '209'
+REF33        n_randomizados_controle    Q27 
+    raw: '226'
+    key: '211'
+    ma : '211'
+
+saved: C:\Users\gbbarra\Documents\localtts\extrai\dados\estudo8\divergentes-classificados.json
+--- p3-avalia
+===== gemma12
+sheets available: 14/14
+written: resultados-por-desfecho.json · comparacao-detalhada.md
+  MA-1 morbidity DL: {"rr": 0.779, "ic95": [0.569, 1.065], "tau2": 0.0714, "i2": 75.6}
+  MA-1 mortality DL: {"rr": 1.023, "ic95": [0.447, 2.344], "tau2": 0.0, "i2": 0.0}
+  MA-2 lens: {"md": -0.27, "ic95": [-0.38, -0.17], "tau2": 0.0052, "i2_pct": 28.6} (7/7 in pool; beside published: False)
+===== qwen14
+sheets available: 14/14
+written: resultados-por-desfecho.json · comparacao-detalhada.md
+  MA-1 morbidity DL: {"rr": 0.779, "ic95": [0.569, 1.065], "tau2": 0.0714, "i2": 75.6}
+  MA-1 mortality DL: {"rr": 1.021, "ic95": [0.446, 2.337], "tau2": 0.0, "i2": 0.0}
+  MA-2 lens: {"md": -0.63, "ic95": [-1.08, -0.17], "tau2": 0.2907, "i2_pct": 95.2} (6/7 in pool; beside published: False)
+===== llama8
+sheets available: 14/14
+written: resultados-por-desfecho.json · comparacao-detalhada.md
+  MA-1 morbidity DL: {"rr": 0.771, "ic95": [0.562, 1.059], "tau2": 0.0738, "i2": 76.2}
+  MA-1 mortality DL: {"rr": 1.023, "ic95": [0.447, 2.344], "tau2": 0.0, "i2": 0.0}
+  MA-2 lens: {"md": -0.6, "ic95": [-1.02, -0.18], "tau2": 0.1986, "i2_pct": 90.5} (5/7 in pool; beside published: False)
+===== qwen35
+sheets available: 14/14
+written: resultados-por-desfecho.json · comparacao-detalhada.md
+  MA-1 morbidity DL: {"rr": 0.779, "ic95": [0.569, 1.065], "tau2": 0.0714, "i2": 75.6}
+  MA-1 mortality DL: {"rr": 1.019, "ic95": [0.445, 2.336], "tau2": 0.0, "i2": 0.0}
+  MA-2 lens: {"md": -0.8, "ic95": [-1.67, 0.07], "tau2": 0.8977, "i2_pct": 95.0} (6/7 in pool; beside published: False)
+===== deepseek14
+sheets available: 14/14
+written: resultados-por-desfecho.json · comparacao-detalhada.md
+  MA-1 morbidity DL: {"rr": 0.775, "ic95": [0.565, 1.063], "tau2": 0.0737, "i2": 76.4}
+  MA-1 mortality DL: {"rr": 0.98, "ic95": [0.428, 2.246], "tau2": 0.0, "i2": 0.0}
+  MA-2 lens: {"md": -0.47, "ic95": [-1.22, 0.28], "tau2": 0.9968, "i2_pct": 99.1} (7/7 in pool; beside published: False)
+===== qwen27q2
+sheets available: 14/14
+written: resultados-por-desfecho.json · comparacao-detalhada.md
+  MA-1 morbidity DL: {"rr": 0.787, "ic95": [0.58, 1.068], "tau2": 0.066, "i2": 73.9}
+  MA-1 mortality DL: {"rr": 1.023, "ic95": [0.446, 2.346], "tau2": 0.0, "i2": 0.0}
+  MA-2 lens: {"md": -0.25, "ic95": [-0.33, -0.16], "tau2": 0.001, "i2_pct": 7.1} (7/7 in pool; beside published: True)
+
+published references — MA-1 morbidity 0.778 [0.567, 1.068] · mortality 1.021 [0.446, 2.337] · MA-2 -0.24 [-0.32, -0.16]
+--- p2-avalia
+model-arm                exata direcao-certa        errada      ic-exata     ic-errada    pool-exata   pool-errada       pool-nc    nc-correta     nc-recusa   sem-verdade json-invalido
+gemma12-A                    4            11             0             0            16             0             6             0             0             0            12             1
+gemma12-B                   12             4             0            11             5             0             0             0             0             0             7             1
+qwen14-A                     4             8             4             0            16             0            12             0             0             0            12             0
+qwen14-B                    14             2             0            14             2             0             6             0             0             0            12             1
+llama8-A                     5             3             1             1             8             1            11             0             0             0            10             1
+llama8-B                     8             1             0             8             1             0             0             0             0             0             5             4
+qwen35-A                     5             7             3             0            16             2            10             0             1             0             8             0
+qwen35-B                     8             0             1             8             1             0            10             0             2             6             7             1
+deepseek14-A                 0             0             0             0             0             0             0             0             0             0             5             5
+deepseek14-B                 2             5             1             0             8             1             5             0             0             0            11             2
+qwen27q2-A                   6             6             3             0            16             2            10             0             0             0            12             0
+qwen27q2-B                  16             0             0            16             0            12             0             0             0             0            12             0

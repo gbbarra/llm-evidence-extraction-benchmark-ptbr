@@ -1,0 +1,1242 @@
+[
+ {
+  "trial": "PMC10561433",
+  "field": "tipo_cirurgia",
+  "model": "G",
+  "raw": "open radical cystectomy",
+  "rev": "open radical cystectomy",
+  "fonte": "Eight open radical cystectomies with ileal conduit, 31 open radical cystectomies with neobladder",
+  "ma": "Eight open radical cystectomies with ileal conduit, 31 open radical cystectomies with neobladder",
+  "cls": "summary"
+ },
+ {
+  "trial": "PMC10694978",
+  "field": "tipo_cirurgia",
+  "model": "G",
+  "raw": "major abdominal surgery",
+  "rev": "major abdominal surgery",
+  "fonte": "Seven gastrectomies, two liver surgeries, four Whipple procedures, 17 hemicholectomies, 12 rectum resections, one radicle cystectomy, three radical resections for gynecological cancer, three other oncological resection procedures, nine stomas",
+  "ma": "Seven gastrectomies, two liver surgeries, four Whipple procedures, 17 hemicholectomies, 12 rectum resections, one radicle cystectomy, three radical resections for gynecological cancer, three other oncological resection procedures, nine stomas",
+  "cls": "summary"
+ },
+ {
+  "trial": "PMC11061212",
+  "field": "asa_gdft",
+  "model": "G",
+  "raw": "16% (ASA I), 72% (ASA II), 12% (ASA III)",
+  "rev": "16% (ASA I), 72% (ASA II), 12% (ASA III)",
+  "fonte": "7:31:5:0",
+  "ma": "7:31:5:0",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC11061212",
+  "field": "asa_controle",
+  "model": "G",
+  "raw": "26% (ASA I), 62% (ASA II), 12% (ASA III)",
+  "rev": "26% (ASA I), 62% (ASA II), 12% (ASA III)",
+  "fonte": "11:26:5:0",
+  "ma": "11:26:5:0",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC11061212",
+  "field": "perda_sanguinea_gdft",
+  "model": "G",
+  "raw": "4364.5 ± 2920.6 mL",
+  "rev": "4364.5 ± 2920.6 mL",
+  "fonte": "1100.1 ± 851.1",
+  "ma": "1100.1 ± 851.1",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC11061212",
+  "field": "perda_sanguinea_controle",
+  "model": "G",
+  "raw": "5062.9 ± 3287.5 mL",
+  "rev": "5062.9 ± 3317.5 mL",
+  "fonte": "1283.2 ± 959.7",
+  "ma": "1283.2 ± 959.7",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC4782303",
+  "field": "tipo_cirurgia",
+  "model": "G",
+  "raw": "major non-cardiac surgery",
+  "rev": "major non-cardiac surgery",
+  "fonte": "16 Whipple, 71 oesophageal, three pancreatectomies, two others",
+  "ma": "16 Whipple, 71 oesophageal, three pancreatectomies, two others",
+  "cls": "summary"
+ },
+ {
+  "trial": "PMC6907038",
+  "field": "tipo_cirurgia",
+  "model": "G",
+  "raw": "open major bowel surgery",
+  "rev": "open major bowel surgery",
+  "fonte": "49 Whipple's procedure, 49 abdominoperineal resection, 55 hemicolectomy, 40 total distal gastrectomy, two GIST excision and intestinal anastomosis, 23 GJ+JJ",
+  "ma": "49 Whipple's procedure, 49 abdominoperineal resection, 55 hemicolectomy, 40 total distal gastrectomy, two GIST excision and intestinal anastomosis, 23 GJ+JJ",
+  "cls": "summary"
+ },
+ {
+  "trial": "PMC6907038",
+  "field": "laparoscopia_gdft",
+  "model": "G",
+  "raw": "excluded",
+  "rev": "excluded",
+  "fonte": "0 (cirurgia aberta; fonte não enumera laparoscopia)",
+  "ma": "0",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC6907038",
+  "field": "laparoscopia_controle",
+  "model": "G",
+  "raw": "excluded",
+  "rev": "excluded",
+  "fonte": "0 (cirurgia aberta; fonte não enumera laparoscopia)",
+  "ma": "0",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF26",
+  "field": "tipo_cirurgia",
+  "model": "G",
+  "raw": "major abdominal, urological, or vascular surgery via open laparotomy",
+  "rev": "major abdominal, urological, or vascular surgery via open laparotomy",
+  "fonte": "100 visceral, 43 urologic, 53 vascular",
+  "ma": "100 visceral, 43 urologic, 53 vascular",
+  "cls": "summary"
+ },
+ {
+  "trial": "REF29",
+  "field": "n_randomizados_gdft",
+  "model": "G",
+  "raw": "258",
+  "rev": "258",
+  "fonte": "274",
+  "ma": "274",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF29",
+  "field": "n_randomizados_controle",
+  "model": "G",
+  "raw": "244",
+  "rev": "244",
+  "fonte": "259",
+  "ma": "259",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF29",
+  "field": "tipo_cirurgia",
+  "model": "G",
+  "raw": "high-risk abdominal surgery",
+  "rev": "high-risk abdominal surgery",
+  "fonte": "38 oesophageal resection, 97 Whipple, 35 AAA repair, 11 resection of large soft tissue mass, 12 total gastrectomy, 27 colorectal surgery, 14 other abdominal surgery",
+  "ma": "38 oesophageal resection, 97 Whipple, 35 AAA repair, 11 resection of large soft tissue mass, 12 total gastrectomy, 27 colorectal surgery, 14 other abdominal surgery",
+  "cls": "summary"
+ },
+ {
+  "trial": "REF30",
+  "field": "ileo_pos_op_gdft",
+  "model": "G",
+  "raw": "25% (31/142)",
+  "rev": "25% (36/142)",
+  "fonte": "36 (25.4%)",
+  "ma": "36 (25.4%)",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF30",
+  "field": "ileo_pos_op_controle",
+  "model": "G",
+  "raw": "21% (30/141)",
+  "rev": "21% (30/141)",
+  "fonte": "30 (21.3%)",
+  "ma": "30 (21.3%)",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF33",
+  "field": "n_randomizados_gdft",
+  "model": "G",
+  "raw": "224",
+  "rev": "224",
+  "fonte": "209",
+  "ma": "209",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF33",
+  "field": "n_randomizados_controle",
+  "model": "G",
+  "raw": "226",
+  "rev": "226",
+  "fonte": "211",
+  "ma": "211",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF33",
+  "field": "tipo_cirurgia",
+  "model": "G",
+  "raw": "abdominal, urological, gynaecological, or orthopaedic",
+  "rev": "abdominal, urological, gynaecological, or orthopaedic",
+  "fonte": "150 gastrointestinal, 48 urological, 11 gynecological",
+  "ma": "150 gastrointestinal, 48 urological, 11 gynecological",
+  "cls": "summary"
+ },
+ {
+  "trial": "REF47",
+  "field": "n_randomizados_gdft",
+  "model": "G",
+  "raw": "40",
+  "rev": "40",
+  "fonte": "39",
+  "ma": "39",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF47",
+  "field": "n_randomizados_controle",
+  "model": "G",
+  "raw": "40",
+  "rev": "40",
+  "fonte": "39",
+  "ma": "39",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC10561433",
+  "field": "tipo_cirurgia",
+  "model": "Q14",
+  "raw": "open radical cystectomy",
+  "rev": "open radical cystectomy",
+  "fonte": "Eight open radical cystectomies with ileal conduit, 31 open radical cystectomies with neobladder",
+  "ma": "Eight open radical cystectomies with ileal conduit, 31 open radical cystectomies with neobladder",
+  "cls": "summary"
+ },
+ {
+  "trial": "PMC10694978",
+  "field": "tipo_cirurgia",
+  "model": "Q14",
+  "raw": "Major abdominal oncologic surgery",
+  "rev": "Major abdominal oncologic surgery",
+  "fonte": "Seven gastrectomies, two liver surgeries, four Whipple procedures, 17 hemicholectomies, 12 rectum resections, one radicle cystectomy, three radical resections for gynecological cancer, three other oncological resection procedures, nine stomas",
+  "ma": "Seven gastrectomies, two liver surgeries, four Whipple procedures, 17 hemicholectomies, 12 rectum resections, one radicle cystectomy, three radical resections for gynecological cancer, three other oncological resection procedures, nine stomas",
+  "cls": "summary"
+ },
+ {
+  "trial": "PMC10694978",
+  "field": "uso_inotropico",
+  "model": "Q14",
+  "raw": "NR",
+  "rev": "NR",
+  "fonte": "GDFT 18 (36%) vs controle 27 (54%)",
+  "ma": "Lower in GDFT",
+  "cls": "omission"
+ },
+ {
+  "trial": "PMC10912221",
+  "field": "uso_inotropico",
+  "model": "Q14",
+  "raw": "NR",
+  "rev": "NR",
+  "fonte": "norepinefrina GDFT 15 (25.9%) vs controle 24 (42.9%); fenilefrina 12 (20.7%) vs 24 (42.9%); efedrina 12 (24.0%) vs 19 (35.2%)",
+  "ma": "Lower in GDFT",
+  "cls": "omission"
+ },
+ {
+  "trial": "PMC11061212",
+  "field": "perda_sanguinea_controle",
+  "model": "Q14",
+  "raw": "1283.2 ± 959.7",
+  "rev": "1313.2 ± 959.7",
+  "fonte": "1283.2 ± 959.7",
+  "ma": "1283.2 ± 959.7",
+  "cls": "lookup-collision"
+ },
+ {
+  "trial": "PMC12565272",
+  "field": "asa_gdft",
+  "model": "Q14",
+  "raw": "NR",
+  "rev": "NR",
+  "fonte": "0:13:6:0",
+  "ma": "0:13:6:0",
+  "cls": "omission"
+ },
+ {
+  "trial": "PMC12565272",
+  "field": "asa_controle",
+  "model": "Q14",
+  "raw": "NR",
+  "rev": "NR",
+  "fonte": "0:10:6:0",
+  "ma": "0:10:6:0",
+  "cls": "omission"
+ },
+ {
+  "trial": "PMC4782303",
+  "field": "tipo_cirurgia",
+  "model": "Q14",
+  "raw": "Major abdominal surgery (Whipple, oesophageal, pancreatectomy, other)",
+  "rev": "Major abdominal surgery (Whipple, oesophageal, pancreatectomy, other)",
+  "fonte": "16 Whipple, 71 oesophageal, three pancreatectomies, two others",
+  "ma": "16 Whipple, 71 oesophageal, three pancreatectomies, two others",
+  "cls": "summary"
+ },
+ {
+  "trial": "PMC6907038",
+  "field": "tipo_cirurgia",
+  "model": "Q14",
+  "raw": "open major bowel surgery",
+  "rev": "open major bowel surgery",
+  "fonte": "49 Whipple's procedure, 49 abdominoperineal resection, 55 hemicolectomy, 40 total distal gastrectomy, two GIST excision and intestinal anastomosis, 23 GJ+JJ",
+  "ma": "49 Whipple's procedure, 49 abdominoperineal resection, 55 hemicolectomy, 40 total distal gastrectomy, two GIST excision and intestinal anastomosis, 23 GJ+JJ",
+  "cls": "summary"
+ },
+ {
+  "trial": "REF26",
+  "field": "tipo_cirurgia",
+  "model": "Q14",
+  "raw": "major open abdominal surgery",
+  "rev": "major open abdominal surgery",
+  "fonte": "100 visceral, 43 urologic, 53 vascular",
+  "ma": "100 visceral, 43 urologic, 53 vascular",
+  "cls": "summary"
+ },
+ {
+  "trial": "REF26",
+  "field": "asa_gdft",
+  "model": "Q14",
+  "raw": "NR",
+  "rev": "NR",
+  "fonte": "ASA-PS III-IV: 98 (50.0%)",
+  "ma": "Not stated",
+  "cls": "omission"
+ },
+ {
+  "trial": "REF26",
+  "field": "asa_controle",
+  "model": "Q14",
+  "raw": "NR",
+  "rev": "NR",
+  "fonte": "ASA-PS III-IV: 85 (42.9%)",
+  "ma": "Not stated",
+  "cls": "omission"
+ },
+ {
+  "trial": "REF29",
+  "field": "n_randomizados_gdft",
+  "model": "Q14",
+  "raw": "248",
+  "rev": "248",
+  "fonte": "274",
+  "ma": "274",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF29",
+  "field": "n_randomizados_controle",
+  "model": "Q14",
+  "raw": "234",
+  "rev": "234",
+  "fonte": "259",
+  "ma": "259",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF29",
+  "field": "tipo_cirurgia",
+  "model": "Q14",
+  "raw": "elective, high-risk abdominal surgery",
+  "rev": "elective, high-risk abdominal surgery",
+  "fonte": "38 oesophageal resection, 97 Whipple, 35 AAA repair, 11 resection of large soft tissue mass, 12 total gastrectomy, 27 colorectal surgery, 14 other abdominal surgery",
+  "ma": "38 oesophageal resection, 97 Whipple, 35 AAA repair, 11 resection of large soft tissue mass, 12 total gastrectomy, 27 colorectal surgery, 14 other abdominal surgery",
+  "cls": "summary"
+ },
+ {
+  "trial": "REF33",
+  "field": "n_randomizados_gdft",
+  "model": "Q14",
+  "raw": "224",
+  "rev": "224",
+  "fonte": "209",
+  "ma": "209",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF33",
+  "field": "n_randomizados_controle",
+  "model": "Q14",
+  "raw": "226",
+  "rev": "226",
+  "fonte": "211",
+  "ma": "211",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF33",
+  "field": "tipo_cirurgia",
+  "model": "Q14",
+  "raw": "Major abdominal, urological, gynaecological, or orthopaedic surgery",
+  "rev": "Major abdominal, urological, gynaecological, or orthopaedic surgery",
+  "fonte": "150 gastrointestinal, 48 urological, 11 gynecological",
+  "ma": "150 gastrointestinal, 48 urological, 11 gynecological",
+  "cls": "summary"
+ },
+ {
+  "trial": "REF47",
+  "field": "n_randomizados_gdft",
+  "model": "Q14",
+  "raw": "40",
+  "rev": "40",
+  "fonte": "39",
+  "ma": "39",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF47",
+  "field": "n_randomizados_controle",
+  "model": "Q14",
+  "raw": "40",
+  "rev": "40",
+  "fonte": "39",
+  "ma": "39",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC10561433",
+  "field": "tipo_cirurgia",
+  "model": "L",
+  "raw": "open radical cystectomy",
+  "rev": "open radical cystectomy",
+  "fonte": "Eight open radical cystectomies with ileal conduit, 31 open radical cystectomies with neobladder",
+  "ma": "Eight open radical cystectomies with ileal conduit, 31 open radical cystectomies with neobladder",
+  "cls": "summary"
+ },
+ {
+  "trial": "PMC10561433",
+  "field": "asa_gdft",
+  "model": "L",
+  "raw": "0.74:0.25:0.01",
+  "rev": "0.74:0.25:0.01",
+  "fonte": "4:29:6:0",
+  "ma": "4:29:6:0",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC10561433",
+  "field": "asa_controle",
+  "model": "L",
+  "raw": "0.75:0.24:0.01",
+  "rev": "0.75:0.24:0.01",
+  "fonte": "2:27:7:0",
+  "ma": "2:27:7:0",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC10694978",
+  "field": "tipo_cirurgia",
+  "model": "L",
+  "raw": "major abdominal oncologic surgery",
+  "rev": "major abdominal oncologic surgery",
+  "fonte": "Seven gastrectomies, two liver surgeries, four Whipple procedures, 17 hemicholectomies, 12 rectum resections, one radicle cystectomy, three radical resections for gynecological cancer, three other oncological resection procedures, nine stomas",
+  "ma": "Seven gastrectomies, two liver surgeries, four Whipple procedures, 17 hemicholectomies, 12 rectum resections, one radicle cystectomy, three radical resections for gynecological cancer, three other oncological resection procedures, nine stomas",
+  "cls": "summary"
+ },
+ {
+  "trial": "PMC10912221",
+  "field": "asa_gdft",
+  "model": "L",
+  "raw": "II:56.9, III:43.1",
+  "rev": "II:56.9, III:43.1",
+  "fonte": "0:25:33:0",
+  "ma": "0:25:33:0",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC10912221",
+  "field": "asa_controle",
+  "model": "L",
+  "raw": "II:39.3, III:60.7",
+  "rev": "II:39.3, III:60.7",
+  "fonte": "0:22:34:0",
+  "ma": "0:22:34:0",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC11061212",
+  "field": "asa_gdft",
+  "model": "L",
+  "raw": "I:16, II:72, III:12",
+  "rev": "I:16, II:72, III:12",
+  "fonte": "7:31:5:0",
+  "ma": "7:31:5:0",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC11061212",
+  "field": "asa_controle",
+  "model": "L",
+  "raw": "I:26, II:62, III:12",
+  "rev": "I:26, II:62, III:12",
+  "fonte": "11:26:5:0",
+  "ma": "11:26:5:0",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC11061212",
+  "field": "coloide_gdft",
+  "model": "L",
+  "raw": "10.8 ± 6.6",
+  "rev": "10.8 ± 6.6",
+  "fonte": "779.7 ± 565.1",
+  "ma": "779.7 ± 565.1",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC11061212",
+  "field": "coloide_controle",
+  "model": "L",
+  "raw": "10.7 ± 5.9",
+  "rev": "10.7 ± 5.9",
+  "fonte": "737.8 ± 383.2",
+  "ma": "737.8 ± 383.2",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC11061212",
+  "field": "perda_sanguinea_controle",
+  "model": "L",
+  "raw": "1283.2 ± 959.7",
+  "rev": "1313.2 ± 959.7",
+  "fonte": "1283.2 ± 959.7",
+  "ma": "1283.2 ± 959.7",
+  "cls": "lookup-collision"
+ },
+ {
+  "trial": "PMC12565272",
+  "field": "asa_gdft",
+  "model": "L",
+  "raw": "13:3:0:0",
+  "rev": "13:3:0:0",
+  "fonte": "0:13:6:0",
+  "ma": "0:13:6:0",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC12565272",
+  "field": "asa_controle",
+  "model": "L",
+  "raw": "10:4:2:0",
+  "rev": "10:4:2:0",
+  "fonte": "0:10:6:0",
+  "ma": "0:10:6:0",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC4782303",
+  "field": "tipo_cirurgia",
+  "model": "L",
+  "raw": "major abdominal surgery",
+  "rev": "major abdominal surgery",
+  "fonte": "16 Whipple, 71 oesophageal, three pancreatectomies, two others",
+  "ma": "16 Whipple, 71 oesophageal, three pancreatectomies, two others",
+  "cls": "summary"
+ },
+ {
+  "trial": "PMC4782303",
+  "field": "asa_gdft",
+  "model": "L",
+  "raw": "I:2, II:63, III:27",
+  "rev": "I:2, II:63, III:27",
+  "fonte": "NR (elegibilidade ASA 1-3; distribuição não reportada)",
+  "ma": "Not stated",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC6907038",
+  "field": "n_randomizados_controle",
+  "model": "L",
+  "raw": "101",
+  "rev": "101",
+  "fonte": "102 randomizados",
+  "ma": "101",
+  "cls": "layer-choice"
+ },
+ {
+  "trial": "PMC6907038",
+  "field": "tipo_cirurgia",
+  "model": "L",
+  "raw": "open major bowel surgery",
+  "rev": "open major bowel surgery",
+  "fonte": "49 Whipple's procedure, 49 abdominoperineal resection, 55 hemicolectomy, 40 total distal gastrectomy, two GIST excision and intestinal anastomosis, 23 GJ+JJ",
+  "ma": "49 Whipple's procedure, 49 abdominoperineal resection, 55 hemicolectomy, 40 total distal gastrectomy, two GIST excision and intestinal anastomosis, 23 GJ+JJ",
+  "cls": "summary"
+ },
+ {
+  "trial": "REF26",
+  "field": "n_randomizados_controle",
+  "model": "L",
+  "raw": "200",
+  "rev": "200",
+  "fonte": "201",
+  "ma": "201",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF26",
+  "field": "tipo_cirurgia",
+  "model": "L",
+  "raw": "major open abdominal, urological, or vascular surgery",
+  "rev": "major open abdominal, urological, or vascular surgery",
+  "fonte": "100 visceral, 43 urologic, 53 vascular",
+  "ma": "100 visceral, 43 urologic, 53 vascular",
+  "cls": "summary"
+ },
+ {
+  "trial": "REF26",
+  "field": "asa_gdft",
+  "model": "L",
+  "raw": "I:II:III:IV ratio = 50:50:30:10",
+  "rev": "I:II:III:IV ratio = 50:50:30:10",
+  "fonte": "ASA-PS III-IV: 98 (50.0%)",
+  "ma": "Not stated",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF26",
+  "field": "asa_controle",
+  "model": "L",
+  "raw": "I:II:III:IV ratio = 47:38:22:13",
+  "rev": "I:II:III:IV ratio = 47:38:22:13",
+  "fonte": "ASA-PS III-IV: 85 (42.9%)",
+  "ma": "Not stated",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF29",
+  "field": "n_randomizados_gdft",
+  "model": "L",
+  "raw": "258",
+  "rev": "258",
+  "fonte": "274",
+  "ma": "274",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF29",
+  "field": "n_randomizados_controle",
+  "model": "L",
+  "raw": "244",
+  "rev": "244",
+  "fonte": "259",
+  "ma": "259",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF29",
+  "field": "tipo_cirurgia",
+  "model": "L",
+  "raw": "high-risk abdominal surgery",
+  "rev": "high-risk abdominal surgery",
+  "fonte": "38 oesophageal resection, 97 Whipple, 35 AAA repair, 11 resection of large soft tissue mass, 12 total gastrectomy, 27 colorectal surgery, 14 other abdominal surgery",
+  "ma": "38 oesophageal resection, 97 Whipple, 35 AAA repair, 11 resection of large soft tissue mass, 12 total gastrectomy, 27 colorectal surgery, 14 other abdominal surgery",
+  "cls": "summary"
+ },
+ {
+  "trial": "REF29",
+  "field": "asa_gdft",
+  "model": "L",
+  "raw": "1:2.8:3.2:1.2",
+  "rev": "1:2.8:3.2:1.2",
+  "fonte": "17:132:95:4",
+  "ma": "24:123:86:1",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF29",
+  "field": "asa_controle",
+  "model": "L",
+  "raw": "1:2.9:3.2:0.6",
+  "rev": "1:2.9:3.2:0.6",
+  "fonte": "24:123:86:1",
+  "ma": "17:132:95:4",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF30",
+  "field": "asa_gdft",
+  "model": "L",
+  "raw": "I:II:III:IV (NR:NR:NR:NR)",
+  "rev": "I:II:III:IV (NR:NR:NR:NR)",
+  "fonte": "NR (descrição geral ASA 3-4; sem distribuição por braço no texto)",
+  "ma": "Not stated",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF30",
+  "field": "ileo_pos_op_gdft",
+  "model": "L",
+  "raw": "25% (31/142)",
+  "rev": "25% (36/142)",
+  "fonte": "36 (25.4%)",
+  "ma": "36 (25.4%)",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF30",
+  "field": "ileo_pos_op_controle",
+  "model": "L",
+  "raw": "21% (30/141)",
+  "rev": "21% (30/141)",
+  "fonte": "30 (21.3%)",
+  "ma": "30 (21.3%)",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF33",
+  "field": "n_randomizados_gdft",
+  "model": "L",
+  "raw": "224",
+  "rev": "224",
+  "fonte": "209",
+  "ma": "209",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF33",
+  "field": "n_randomizados_controle",
+  "model": "L",
+  "raw": "226",
+  "rev": "226",
+  "fonte": "211",
+  "ma": "211",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF33",
+  "field": "tipo_cirurgia",
+  "model": "L",
+  "raw": "major abdominal, urological, gynaecological, or orthopaedic surgery",
+  "rev": "major abdominal, urological, gynaecological, or orthopaedic surgery",
+  "fonte": "150 gastrointestinal, 48 urological, 11 gynecological",
+  "ma": "150 gastrointestinal, 48 urological, 11 gynecological",
+  "cls": "summary"
+ },
+ {
+  "trial": "REF33",
+  "field": "asa_gdft",
+  "model": "L",
+  "raw": "I:134, II:148, III:73, IV:0",
+  "rev": "I:122, II:148, III:73, IV:0",
+  "fonte": "14:122:73:0",
+  "ma": "14:122:73:0",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF33",
+  "field": "morbidade_eventos_controle",
+  "model": "L",
+  "raw": "36",
+  "rev": "36",
+  "fonte": "35 (16.6%)",
+  "ma": "35 (16.6%)",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF47",
+  "field": "n_randomizados_gdft",
+  "model": "L",
+  "raw": "40",
+  "rev": "40",
+  "fonte": "39",
+  "ma": "39",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF47",
+  "field": "n_randomizados_controle",
+  "model": "L",
+  "raw": "40",
+  "rev": "40",
+  "fonte": "39",
+  "ma": "39",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC10561433",
+  "field": "tipo_cirurgia",
+  "model": "Q35",
+  "raw": "open radical cystectomy",
+  "rev": "open radical cystectomy",
+  "fonte": "Eight open radical cystectomies with ileal conduit, 31 open radical cystectomies with neobladder",
+  "ma": "Eight open radical cystectomies with ileal conduit, 31 open radical cystectomies with neobladder",
+  "cls": "summary"
+ },
+ {
+  "trial": "PMC10694978",
+  "field": "tipo_cirurgia",
+  "model": "Q35",
+  "raw": "Gastrectomy, Liver resection, Whipple, Hemicolectomy, Rectum resection, Radical cystectomy or prostatectomy, Radical resection for gynecologic cancer, Other oncologic resection procedure",
+  "rev": "Gastrectomy, Liver resection, Whipple, Hemicolectomy, Rectum resection, Radical cystectomy or prostatectomy, Radical resection for gynecologic cancer, Other oncologic resection procedure",
+  "fonte": "Seven gastrectomies, two liver surgeries, four Whipple procedures, 17 hemicholectomies, 12 rectum resections, one radicle cystectomy, three radical resections for gynecological cancer, three other oncological resection procedures, nine stomas",
+  "ma": "Seven gastrectomies, two liver surgeries, four Whipple procedures, 17 hemicholectomies, 12 rectum resections, one radicle cystectomy, three radical resections for gynecological cancer, three other oncological resection procedures, nine stomas",
+  "cls": "summary"
+ },
+ {
+  "trial": "PMC10694978",
+  "field": "uso_inotropico",
+  "model": "Q35",
+  "raw": "NR",
+  "rev": "NR",
+  "fonte": "GDFT 18 (36%) vs controle 27 (54%)",
+  "ma": "Lower in GDFT",
+  "cls": "omission"
+ },
+ {
+  "trial": "PMC10912221",
+  "field": "uso_inotropico",
+  "model": "Q35",
+  "raw": "NR",
+  "rev": "NR",
+  "fonte": "norepinefrina GDFT 15 (25.9%) vs controle 24 (42.9%); fenilefrina 12 (20.7%) vs 24 (42.9%); efedrina 12 (24.0%) vs 19 (35.2%)",
+  "ma": "Lower in GDFT",
+  "cls": "omission"
+ },
+ {
+  "trial": "PMC11061212",
+  "field": "perda_sanguinea_controle",
+  "model": "Q35",
+  "raw": "1283.2 ± 959.7 mL",
+  "rev": "1313.2 ± 959.7 mL",
+  "fonte": "1283.2 ± 959.7",
+  "ma": "1283.2 ± 959.7",
+  "cls": "lookup-collision"
+ },
+ {
+  "trial": "PMC4782303",
+  "field": "tipo_cirurgia",
+  "model": "Q35",
+  "raw": "Major non-cardiac surgery planned to last at least 3 hours",
+  "rev": "Major non-cardiac surgery planned to last at least 3 hours",
+  "fonte": "16 Whipple, 71 oesophageal, three pancreatectomies, two others",
+  "ma": "16 Whipple, 71 oesophageal, three pancreatectomies, two others",
+  "cls": "summary"
+ },
+ {
+  "trial": "PMC6907038",
+  "field": "tipo_cirurgia",
+  "model": "Q35",
+  "raw": "open major bowel surgery (e.g., colonic resection, intestinal resection, anastomosis or gastrectomy)",
+  "rev": "open major bowel surgery (e.g., colonic resection, intestinal resection, anastomosis or gastrectomy)",
+  "fonte": "49 Whipple's procedure, 49 abdominoperineal resection, 55 hemicolectomy, 40 total distal gastrectomy, two GIST excision and intestinal anastomosis, 23 GJ+JJ",
+  "ma": "49 Whipple's procedure, 49 abdominoperineal resection, 55 hemicolectomy, 40 total distal gastrectomy, two GIST excision and intestinal anastomosis, 23 GJ+JJ",
+  "cls": "summary"
+ },
+ {
+  "trial": "REF26",
+  "field": "tipo_cirurgia",
+  "model": "Q35",
+  "raw": "major open abdominal, urological, or vascular surgery via open laparotomy",
+  "rev": "major open abdominal, urological, or vascular surgery via open laparotomy",
+  "fonte": "100 visceral, 43 urologic, 53 vascular",
+  "ma": "100 visceral, 43 urologic, 53 vascular",
+  "cls": "summary"
+ },
+ {
+  "trial": "REF26",
+  "field": "asa_gdft",
+  "model": "Q35",
+  "raw": "NR",
+  "rev": "NR",
+  "fonte": "ASA-PS III-IV: 98 (50.0%)",
+  "ma": "Not stated",
+  "cls": "omission"
+ },
+ {
+  "trial": "REF26",
+  "field": "asa_controle",
+  "model": "Q35",
+  "raw": "NR",
+  "rev": "NR",
+  "fonte": "ASA-PS III-IV: 85 (42.9%)",
+  "ma": "Not stated",
+  "cls": "omission"
+ },
+ {
+  "trial": "REF29",
+  "field": "n_randomizados_gdft",
+  "model": "Q35",
+  "raw": "259",
+  "rev": "259",
+  "fonte": "274",
+  "ma": "274",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF29",
+  "field": "n_randomizados_controle",
+  "model": "Q35",
+  "raw": "244",
+  "rev": "244",
+  "fonte": "259",
+  "ma": "259",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF29",
+  "field": "tipo_cirurgia",
+  "model": "Q35",
+  "raw": "Esophageal resection, Whipple/PPPD, AAA repair, Resection of large soft tissue mass, Total gastrectomy, Colorectal surgery, Other abdominal surgery",
+  "rev": "Esophageal resection, Whipple/PPPD, AAA repair, Resection of large soft tissue mass, Total gastrectomy, Colorectal surgery, Other abdominal surgery",
+  "fonte": "38 oesophageal resection, 97 Whipple, 35 AAA repair, 11 resection of large soft tissue mass, 12 total gastrectomy, 27 colorectal surgery, 14 other abdominal surgery",
+  "ma": "38 oesophageal resection, 97 Whipple, 35 AAA repair, 11 resection of large soft tissue mass, 12 total gastrectomy, 27 colorectal surgery, 14 other abdominal surgery",
+  "cls": "summary"
+ },
+ {
+  "trial": "REF29",
+  "field": "asa_gdft",
+  "model": "Q35",
+  "raw": "6.9%:53.2%:38.3%:1.6%",
+  "rev": "6.9%:53.2%:38.3%:1.6%",
+  "fonte": "17:132:95:4",
+  "ma": "24:123:86:1",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF29",
+  "field": "asa_controle",
+  "model": "Q35",
+  "raw": "10.3%:52.6%:36.7%:0.4%",
+  "rev": "10.3%:52.6%:36.7%:0.4%",
+  "fonte": "24:123:86:1",
+  "ma": "17:132:95:4",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF30",
+  "field": "ileo_pos_op_gdft",
+  "model": "Q35",
+  "raw": "25% (31/142)",
+  "rev": "25% (36/142)",
+  "fonte": "36 (25.4%)",
+  "ma": "36 (25.4%)",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF30",
+  "field": "ileo_pos_op_controle",
+  "model": "Q35",
+  "raw": "21% (30/141)",
+  "rev": "21% (30/141)",
+  "fonte": "30 (21.3%)",
+  "ma": "30 (21.3%)",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF33",
+  "field": "n_randomizados_gdft",
+  "model": "Q35",
+  "raw": "224",
+  "rev": "224",
+  "fonte": "209",
+  "ma": "209",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF33",
+  "field": "n_randomizados_controle",
+  "model": "Q35",
+  "raw": "226",
+  "rev": "226",
+  "fonte": "211",
+  "ma": "211",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF33",
+  "field": "tipo_cirurgia",
+  "model": "Q35",
+  "raw": "abdominal, urological, gynaecological, or orthopaedic (analysis included only abdominal)",
+  "rev": "abdominal, urological, gynaecological, or orthopaedic (analysis included only abdominal)",
+  "fonte": "150 gastrointestinal, 48 urological, 11 gynecological",
+  "ma": "150 gastrointestinal, 48 urological, 11 gynecological",
+  "cls": "summary"
+ },
+ {
+  "trial": "PMC10561433",
+  "field": "tipo_cirurgia",
+  "model": "D",
+  "raw": "open radical cystectomy",
+  "rev": "open radical cystectomy",
+  "fonte": "Eight open radical cystectomies with ileal conduit, 31 open radical cystectomies with neobladder",
+  "ma": "Eight open radical cystectomies with ileal conduit, 31 open radical cystectomies with neobladder",
+  "cls": "summary"
+ },
+ {
+  "trial": "PMC10561433",
+  "field": "laparoscopia_gdft",
+  "model": "D",
+  "raw": "0%",
+  "rev": "0%",
+  "fonte": "0 (cirurgia aberta; fonte não enumera laparoscopia)",
+  "ma": "0",
+  "cls": "layer-choice"
+ },
+ {
+  "trial": "PMC10561433",
+  "field": "laparoscopia_controle",
+  "model": "D",
+  "raw": "0%",
+  "rev": "0%",
+  "fonte": "0 (cirurgia aberta; fonte não enumera laparoscopia)",
+  "ma": "0",
+  "cls": "layer-choice"
+ },
+ {
+  "trial": "PMC10694978",
+  "field": "tipo_cirurgia",
+  "model": "D",
+  "raw": "Major abdominal oncologic surgery (e.g., gastrectomy, liver resection, Whipple procedure, hemicolectomy, rectal resection, radical cystectomy/prostatectomy, radical resection for gynecologic cancer)",
+  "rev": "Major abdominal oncologic surgery (e.g., gastrectomy, liver resection, Whipple procedure, hemicolectomy, rectal resection, radical cystectomy/prostatectomy, radical resection for gynecologic cancer)",
+  "fonte": "Seven gastrectomies, two liver surgeries, four Whipple procedures, 17 hemicholectomies, 12 rectum resections, one radicle cystectomy, three radical resections for gynecological cancer, three other oncological resection procedures, nine stomas",
+  "ma": "Seven gastrectomies, two liver surgeries, four Whipple procedures, 17 hemicholectomies, 12 rectum resections, one radicle cystectomy, three radical resections for gynecological cancer, three other oncological resection procedures, nine stomas",
+  "cls": "summary"
+ },
+ {
+  "trial": "PMC10694978",
+  "field": "asa_gdft",
+  "model": "D",
+  "raw": "8 (16%) ASA I, 36 (72%) ASA II, 8 (16%) ASA III",
+  "rev": "8 (16%) ASA I, 36 (72%) ASA II, 8 (16%) ASA III",
+  "fonte": "6:36:8:0",
+  "ma": "6:36:8:0",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC10694978",
+  "field": "asa_controle",
+  "model": "D",
+  "raw": "16 (32%) ASA I, 33 (66%) ASA II, 11 (22%) ASA III",
+  "rev": "16 (32%) ASA I, 33 (66%) ASA II, 11 (22%) ASA III",
+  "fonte": "8:33:9:0",
+  "ma": "8:33:9:0",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC10912221",
+  "field": "asa_gdft",
+  "model": "D",
+  "raw": "II:43.1%, III:56.9%",
+  "rev": "II:43.1%, III:56.9%",
+  "fonte": "0:25:33:0",
+  "ma": "0:25:33:0",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC10912221",
+  "field": "asa_controle",
+  "model": "D",
+  "raw": "II:39.3%, III:60.7%",
+  "rev": "II:39.3%, III:60.7%",
+  "fonte": "0:22:34:0",
+  "ma": "0:22:34:0",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC11061212",
+  "field": "perda_sanguinea_controle",
+  "model": "D",
+  "raw": "1283.2 ± 959.7 mL",
+  "rev": "1313.2 ± 959.7 mL",
+  "fonte": "1283.2 ± 959.7",
+  "ma": "1283.2 ± 959.7",
+  "cls": "lookup-collision"
+ },
+ {
+  "trial": "PMC12565272",
+  "field": "asa_gdft",
+  "model": "D",
+  "raw": "NR",
+  "rev": "NR",
+  "fonte": "0:13:6:0",
+  "ma": "0:13:6:0",
+  "cls": "omission"
+ },
+ {
+  "trial": "PMC12565272",
+  "field": "asa_controle",
+  "model": "D",
+  "raw": "NR",
+  "rev": "NR",
+  "fonte": "0:10:6:0",
+  "ma": "0:10:6:0",
+  "cls": "omission"
+ },
+ {
+  "trial": "PMC4782303",
+  "field": "asa_gdft",
+  "model": "D",
+  "raw": "I:16%, II:77%, III:7%",
+  "rev": "I:16%, II:77%, III:7%",
+  "fonte": "NR (elegibilidade ASA 1-3; distribuição não reportada)",
+  "ma": "Not stated",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "PMC6907038",
+  "field": "tipo_cirurgia",
+  "model": "D",
+  "raw": "open major bowel surgery",
+  "rev": "open major bowel surgery",
+  "fonte": "49 Whipple's procedure, 49 abdominoperineal resection, 55 hemicolectomy, 40 total distal gastrectomy, two GIST excision and intestinal anastomosis, 23 GJ+JJ",
+  "ma": "49 Whipple's procedure, 49 abdominoperineal resection, 55 hemicolectomy, 40 total distal gastrectomy, two GIST excision and intestinal anastomosis, 23 GJ+JJ",
+  "cls": "summary"
+ },
+ {
+  "trial": "REF26",
+  "field": "tipo_cirurgia",
+  "model": "D",
+  "raw": "major open abdominal surgery",
+  "rev": "major open abdominal surgery",
+  "fonte": "100 visceral, 43 urologic, 53 vascular",
+  "ma": "100 visceral, 43 urologic, 53 vascular",
+  "cls": "summary"
+ },
+ {
+  "trial": "REF29",
+  "field": "n_randomizados_gdft",
+  "model": "D",
+  "raw": "259",
+  "rev": "259",
+  "fonte": "274",
+  "ma": "274",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF29",
+  "field": "n_randomizados_controle",
+  "model": "D",
+  "raw": "234",
+  "rev": "234",
+  "fonte": "259",
+  "ma": "259",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF29",
+  "field": "tipo_cirurgia",
+  "model": "D",
+  "raw": "esophageal resection, Whipple/pancreaticoduodenectomy, abdominal aortic aneurysm repair, resection of large soft tissue mass, total gastrectomy, colorectal surgery, other abdominal surgery",
+  "rev": "esophageal resection, Whipple/pancreaticoduodenectomy, abdominal aortic aneurysm repair, resection of large soft tissue mass, total gastrectomy, colorectal surgery, other abdominal surgery",
+  "fonte": "38 oesophageal resection, 97 Whipple, 35 AAA repair, 11 resection of large soft tissue mass, 12 total gastrectomy, 27 colorectal surgery, 14 other abdominal surgery",
+  "ma": "38 oesophageal resection, 97 Whipple, 35 AAA repair, 11 resection of large soft tissue mass, 12 total gastrectomy, 27 colorectal surgery, 14 other abdominal surgery",
+  "cls": "summary"
+ },
+ {
+  "trial": "REF29",
+  "field": "asa_gdft",
+  "model": "D",
+  "raw": "ASA I: 6.9%, ASA II: 53.2%, ASA III: 38.3%, ASA IV: 1.6%",
+  "rev": "ASA I: 6.9%, ASA II: 53.2%, ASA III: 38.3%, ASA IV: 1.6%",
+  "fonte": "17:132:95:4",
+  "ma": "24:123:86:1",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF29",
+  "field": "asa_controle",
+  "model": "D",
+  "raw": "ASA I: 10.3%, ASA II: 52.6%, ASA III: 36.7%, ASA IV: 0.4%",
+  "rev": "ASA I: 10.3%, ASA II: 52.6%, ASA III: 36.7%, ASA IV: 0.4%",
+  "fonte": "24:123:86:1",
+  "ma": "17:132:95:4",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF30",
+  "field": "asa_gdft",
+  "model": "D",
+  "raw": "30% ASA II | 70% ASA III-IV",
+  "rev": "30% ASA II | 70% ASA III-IV",
+  "fonte": "NR (descrição geral ASA 3-4; sem distribuição por braço no texto)",
+  "ma": "Not stated",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF30",
+  "field": "ileo_pos_op_gdft",
+  "model": "D",
+  "raw": "25% (31/142)",
+  "rev": "25% (36/142)",
+  "fonte": "36 (25.4%)",
+  "ma": "36 (25.4%)",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF30",
+  "field": "ileo_pos_op_controle",
+  "model": "D",
+  "raw": "21% (30/141)",
+  "rev": "21% (30/141)",
+  "fonte": "30 (21.3%)",
+  "ma": "30 (21.3%)",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF33",
+  "field": "tipo_cirurgia",
+  "model": "D",
+  "raw": "Abdominal, urological, gynaecological",
+  "rev": "Abdominal, urological, gynaecological",
+  "fonte": "150 gastrointestinal, 48 urological, 11 gynecological",
+  "ma": "150 gastrointestinal, 48 urological, 11 gynecological",
+  "cls": "summary"
+ },
+ {
+  "trial": "REF33",
+  "field": "laparoscopia_gdft",
+  "model": "D",
+  "raw": "50.2%",
+  "rev": "50.2%",
+  "fonte": "105",
+  "ma": "105",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF33",
+  "field": "laparoscopia_controle",
+  "model": "D",
+  "raw": "51.7%",
+  "rev": "51.7%",
+  "fonte": "109",
+  "ma": "109",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF33",
+  "field": "asa_gdft",
+  "model": "D",
+  "raw": "I: 6.7%, II: 58.4%, III: 34.9%",
+  "rev": "I: 6.7%, II: 58.4%, III: 34.9%",
+  "fonte": "14:122:73:0",
+  "ma": "14:122:73:0",
+  "cls": "re-encoding?"
+ },
+ {
+  "trial": "REF33",
+  "field": "asa_controle",
+  "model": "D",
+  "raw": "I: 16.6%, II: 64.4%, III: 19.0%",
+  "rev": "I: 16.6%, II: 64.4%, III: 19.0%",
+  "fonte": "35:136:40:0",
+  "ma": "35:136:40:0",
+  "cls": "re-encoding?"
+ }
+]

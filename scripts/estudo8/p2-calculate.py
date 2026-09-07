@@ -36,6 +36,10 @@ def carrega(nome, rel):
 e2 = carrega("e2", "scripts/estudo2/e2-harness.py")
 ext = carrega("ext", "scripts/estudo4/e4-extensao.py")
 h3 = ext.h3  # five-model registry
+_a1 = importlib.util.spec_from_file_location("a1", ROOT / "scripts" / "estudo8" / "e8-amend1-cast.py")
+a1 = importlib.util.module_from_spec(_a1)
+_a1.loader.exec_module(a1)
+a1.registrar(h3)  # Amendment 1 (2026-09-07): sixth reader
 
 FN = {"rr": e2.rr, "ci95_rr": e2.ic95_rr, "md": e2.md, "ci95_md": e2.ic95_md,
       "pool_rr_mh": e2.pool_rr_mh, "pool_dl": e2.pool_dl, "pool_md_iv": e2.pool_md_iv}

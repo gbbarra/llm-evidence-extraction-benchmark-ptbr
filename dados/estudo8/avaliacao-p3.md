@@ -29,3 +29,8 @@ The Portuguese round-2 conclusion — *only gemma4:12b reaches the published val
 ## Ablation note (H8.5, third column) and H8.3
 
 H8.3 passes on the Portuguese record's own standard: gemma12's MA-1 pools reproduce under DL, its MA-2 lens lands beside the published value (−0.27, the identical number), and only gemma12 among the five reaches it. No language effect visible at the creation stage — the flagship number did not move by a hundredth across the language change.
+
+
+## Amendment 1 (2026-09-07) — the sixth reader, `qwen27q2`
+
+MA-1 pools under DL: morbidity **0.787 [0.580, 1.068]**, mortality **1.023 [0.446, 2.346]** (published 0.778 / 1.021; both within ±0.01 — H8.6 passes). The morbidity difference against gemma12 (0.779) traces to REF33, where the sixth reader's literal counts 18/224 and 35/226 reproduce the published RR 0.519 exactly. MA-2: 7/7 in the pool; perturbed-world pool −0.52 [−0.83, −0.21] (gemma12 −0.52 [−0.82, −0.22]); **sealed lens −0.25 [−0.33, −0.16]** vs the published −0.24 [−0.32, −0.16] — the only diamond of the six that meets the grader's mechanical "beside" test (all three numbers within 0.05; gemma12's −0.27 missed it on the lower bound), and the closest. Files: `p3-ma1/qwen27q2/`, `saidas/p3b/qwen27q2/`. Full record: [avaliacao-amend1.md](avaliacao-amend1.md).

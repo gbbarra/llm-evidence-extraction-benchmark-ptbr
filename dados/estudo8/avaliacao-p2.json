@@ -85,5 +85,20 @@
   "json-invalido": 2,
   "pool-errada": 5,
   "pool-exata": 1
+ },
+ "qwen27q2-A": {
+  "ic-errada": 16,
+  "exata": 6,
+  "direcao-certa": 6,
+  "errada": 3,
+  "sem-verdade": 12,
+  "pool-errada": 10,
+  "pool-exata": 2
+ },
+ "qwen27q2-B": {
+  "ic-exata": 16,
+  "exata": 16,
+  "sem-verdade": 12,
+  "pool-exata": 12
  }
 }

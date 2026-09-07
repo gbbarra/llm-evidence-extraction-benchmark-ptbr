@@ -34,6 +34,10 @@ d6, compat = e6a.d6, e6a.compat
 PT2EN = {v: k for k, v in e7d.MA1_EN2PT.items()}
 CAST = ["gemma12", "qwen14", "llama8", "qwen35", "deepseek14"]
 SIG = {"gemma12": "G", "qwen14": "Q14", "llama8": "L", "qwen35": "Q35", "deepseek14": "D"}
+_a1 = importlib.util.spec_from_file_location("a1", ROOT / "scripts" / "estudo8" / "e8-amend1-cast.py")
+a1 = importlib.util.module_from_spec(_a1)
+_a1.loader.exec_module(a1)
+CAST = a1.cast_estendido(CAST, ROOT / "dados" / "estudo8" / "saidas" / "p1"); SIG.update(a1.SIG)  # Amendment 1 (2026-09-07)
 E8 = ROOT / "dados" / "estudo8"
 
 def eh_nr(v):

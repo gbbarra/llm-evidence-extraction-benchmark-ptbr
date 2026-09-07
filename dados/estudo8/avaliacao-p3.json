@@ -265,5 +265,57 @@
    },
    "lens_beside_published": false
   }
+ },
+ "qwen27q2": {
+  "ma1_pools": {
+   "morbidity": {
+    "rr": 0.787,
+    "ic95": [
+     0.58,
+     1.068
+    ],
+    "tau2": 0.066,
+    "i2": 73.9
+   },
+   "mortality": {
+    "rr": 1.023,
+    "ic95": [
+     0.446,
+     2.346
+    ],
+    "tau2": 0.0,
+    "i2": 0.0
+   }
+  },
+  "ma2": {
+   "estudos_no_pool": 7,
+   "faltas": [],
+   "pool_perturbado": {
+    "md": -0.52,
+    "ic95": [
+     -0.83,
+     -0.21
+    ],
+    "tau2": 0.1415,
+    "i2_pct": 91.2
+   },
+   "lens": {
+    "md": -0.25,
+    "ic95": [
+     -0.33,
+     -0.16
+    ],
+    "tau2": 0.001,
+    "i2_pct": 7.1
+   },
+   "publicado": {
+    "md": -0.24,
+    "ic95": [
+     -0.32,
+     -0.16
+    ]
+   },
+   "lens_beside_published": true
+  }
  }
 }

@@ -1,0 +1,89 @@
+{
+ "gemma12-A": {
+  "ic-errada": 16,
+  "direcao-certa": 11,
+  "exata": 4,
+  "sem-verdade": 12,
+  "pool-errada": 6,
+  "json-invalido": 1
+ },
+ "gemma12-B": {
+  "ic-errada": 5,
+  "direcao-certa": 4,
+  "ic-exata": 11,
+  "exata": 12,
+  "sem-verdade": 7,
+  "json-invalido": 1
+ },
+ "qwen14-A": {
+  "ic-errada": 16,
+  "direcao-certa": 8,
+  "errada": 4,
+  "exata": 4,
+  "sem-verdade": 12,
+  "pool-errada": 12
+ },
+ "qwen14-B": {
+  "ic-errada": 2,
+  "direcao-certa": 2,
+  "ic-exata": 14,
+  "exata": 14,
+  "sem-verdade": 12,
+  "json-invalido": 1,
+  "pool-errada": 6
+ },
+ "llama8-A": {
+  "json-invalido": 1,
+  "sem-verdade": 10,
+  "pool-errada": 11,
+  "pool-exata": 1,
+  "ic-errada": 8,
+  "exata": 5,
+  "direcao-certa": 3,
+  "errada": 1,
+  "ic-exata": 1
+ },
+ "llama8-B": {
+  "ic-exata": 8,
+  "exata": 8,
+  "ic-errada": 1,
+  "direcao-certa": 1,
+  "sem-verdade": 5,
+  "json-invalido": 4
+ },
+ "qwen35-A": {
+  "ic-errada": 16,
+  "direcao-certa": 7,
+  "errada": 3,
+  "exata": 5,
+  "nc-correta": 1,
+  "sem-verdade": 8,
+  "pool-errada": 10,
+  "pool-exata": 2
+ },
+ "qwen35-B": {
+  "ic-exata": 8,
+  "exata": 8,
+  "sem-verdade": 7,
+  "ic-errada": 1,
+  "errada": 1,
+  "json-invalido": 1,
+  "pool-errada": 10,
+  "nc-recusa": 6,
+  "nc-correta": 2
+ },
+ "deepseek14-A": {
+  "json-invalido": 5,
+  "sem-verdade": 5
+ },
+ "deepseek14-B": {
+  "ic-errada": 8,
+  "direcao-certa": 5,
+  "errada": 1,
+  "exata": 2,
+  "sem-verdade": 11,
+  "json-invalido": 2,
+  "pool-errada": 5,
+  "pool-exata": 1
+ }
+}

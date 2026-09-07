@@ -101,5 +101,44 @@
   "invention_candidates": 0,
   "invention_cells": [],
   "value_or_format": 25
+ },
+ "qwen27q2": {
+  "divergents": 17,
+  "omissions": 6,
+  "omission_cells": [
+   {
+    "trial": "PMC10561433",
+    "field": "fluido_total_gdft",
+    "source": "2700 (2175–3250)"
+   },
+   {
+    "trial": "PMC10561433",
+    "field": "fluido_total_controle",
+    "source": "2900 (1950–3700)"
+   },
+   {
+    "trial": "PMC10694978",
+    "field": "uso_inotropico",
+    "source": "GDFT 18 (36%) vs controle 27 (54%)"
+   },
+   {
+    "trial": "PMC10912221",
+    "field": "uso_inotropico",
+    "source": "norepinefrina GDFT 15 (25.9%) vs controle 24 (42.9%); fenile"
+   },
+   {
+    "trial": "REF26",
+    "field": "asa_gdft",
+    "source": "ASA-PS III-IV: 98 (50.0%)"
+   },
+   {
+    "trial": "REF26",
+    "field": "asa_controle",
+    "source": "ASA-PS III-IV: 85 (42.9%)"
+   }
+  ],
+  "invention_candidates": 0,
+  "invention_cells": [],
+  "value_or_format": 11
  }
 }
