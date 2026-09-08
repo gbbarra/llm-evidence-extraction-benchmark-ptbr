@@ -1,0 +1,447 @@
+{
+  "_metodo": "Chave graduável da âncora 3 (PMC13302755), duas camadas. `ma` é a célula publicada, recuperada da Figura 3 e verificada por reconstrução aritmética (48 de 48 valores impressos previstos a partir de 16 lidos); ela tem procedência mas não tem citação, porque vive num raster. `valor_fonte` é o valor verificado na fonte, com `cit` literal. A correção é sempre contra `valor_fonte`. Produzido por scripts/estudo12/e12-gabarito-a3.py.",
+  "_reducao_multibraco": {
+    "shaker2025": {
+      "mb": [
+        "mb_baixa",
+        "mb_alta"
+      ],
+      "ct": [
+        "ct"
+      ],
+      "regra": "os dois braços ativos somados contra o controle compartilhado: 15/60 contra 14/30"
+    }
+  },
+  "_janelas": "A análise é rotulada 28 a 30 dias. As janelas por ensaio estão em bracos_da_fonte; a do Aguilar é de 21 dias, e a §5 do protocolo (A3-D5) congela o uso dela com a exclusão rodada como sensibilidade pré-registrada.",
+  "celulas": {
+    "luissilva2024": {
+      "eventos_mb": {
+        "ma": "9",
+        "veredito": "literal",
+        "valor_fonte": "9",
+        "cit": "mortality rate in 30 days of 47% versus 61% in the Control group",
+        "nota": ""
+      },
+      "n_mb": {
+        "ma": "19",
+        "veredito": "literal",
+        "valor_fonte": "19",
+        "cit": "mortality rate in 30 days of 47% versus 61% in the Control group",
+        "nota": ""
+      },
+      "eventos_ct": {
+        "ma": "14",
+        "veredito": "literal",
+        "valor_fonte": "14",
+        "cit": "mortality rate in 30 days of 47% versus 61% in the Control group",
+        "nota": ""
+      },
+      "n_ct": {
+        "ma": "23",
+        "veredito": "literal",
+        "valor_fonte": "23",
+        "cit": "mortality rate in 30 days of 47% versus 61% in the Control group",
+        "nota": ""
+      }
+    },
+    "shaker2025": {
+      "eventos_mb": {
+        "ma": "15",
+        "veredito": "literal",
+        "valor_fonte": "15",
+        "cit": "Mortality rate 14 (46.7%) 9 (30.0%) 6 (20.0%)",
+        "nota": ""
+      },
+      "n_mb": {
+        "ma": "30",
+        "veredito": "errata-ma",
+        "valor_fonte": "60",
+        "cit": "Mortality rate 14 (46.7%) 9 (30.0%) 6 (20.0%)",
+        "nota": "os dois braços ativos somados contra o controle compartilhado: 15/60 contra 14/30"
+      },
+      "eventos_ct": {
+        "ma": "14",
+        "veredito": "literal",
+        "valor_fonte": "14",
+        "cit": "Mortality rate 14 (46.7%) 9 (30.0%) 6 (20.0%)",
+        "nota": ""
+      },
+      "n_ct": {
+        "ma": "30",
+        "veredito": "literal",
+        "valor_fonte": "30",
+        "cit": "Mortality rate 14 (46.7%) 9 (30.0%) 6 (20.0%)",
+        "nota": ""
+      }
+    },
+    "ibarra2023": {
+      "eventos_mb": {
+        "ma": "15",
+        "veredito": "literal",
+        "valor_fonte": "15",
+        "cit": "Mortality at 28 days",
+        "nota": ""
+      },
+      "n_mb": {
+        "ma": "45",
+        "veredito": "literal",
+        "valor_fonte": "45",
+        "cit": "Mortality at 28 days",
+        "nota": ""
+      },
+      "eventos_ct": {
+        "ma": "21",
+        "veredito": "literal",
+        "valor_fonte": "21",
+        "cit": "Mortality at 28 days",
+        "nota": ""
+      },
+      "n_ct": {
+        "ma": "46",
+        "veredito": "literal",
+        "valor_fonte": "46",
+        "cit": "Mortality at 28 days",
+        "nota": ""
+      }
+    },
+    "aguilar2016": {
+      "eventos_mb": {
+        "ma": "24",
+        "veredito": "errata-ma",
+        "valor_fonte": "6",
+        "cit": "en el grupo A la mortalidad al egreso fue de 20.0% y no varió a los 21 días, a diferencia del grupo C, donde al egreso la mortalidad fue de 36.6%",
+        "nota": "a revisão divergiu da fonte; a fonte decide"
+      },
+      "n_mb": {
+        "ma": "30",
+        "veredito": "literal",
+        "valor_fonte": "30",
+        "cit": "en el grupo A la mortalidad al egreso fue de 20.0% y no varió a los 21 días, a diferencia del grupo C, donde al egreso la mortalidad fue de 36.6%",
+        "nota": ""
+      },
+      "eventos_ct": {
+        "ma": "19",
+        "veredito": "errata-ma",
+        "valor_fonte": "11",
+        "cit": "en el grupo A la mortalidad al egreso fue de 20.0% y no varió a los 21 días, a diferencia del grupo C, donde al egreso la mortalidad fue de 36.6%",
+        "nota": "a revisão divergiu da fonte; a fonte decide"
+      },
+      "n_ct": {
+        "ma": "30",
+        "veredito": "literal",
+        "valor_fonte": "30",
+        "cit": "en el grupo A la mortalidad al egreso fue de 20.0% y no varió a los 21 días, a diferencia del grupo C, donde al egreso la mortalidad fue de 36.6%",
+        "nota": ""
+      }
+    },
+    "kirov2001": {
+      "eventos_mb": {
+        "ma": "5",
+        "veredito": "literal",
+        "valor_fonte": "5",
+        "cit": "Survivors at day 28",
+        "nota": ""
+      },
+      "n_mb": {
+        "ma": "10",
+        "veredito": "literal",
+        "valor_fonte": "10",
+        "cit": "Survivors at day 28",
+        "nota": ""
+      },
+      "eventos_ct": {
+        "ma": "7",
+        "veredito": "literal",
+        "valor_fonte": "7",
+        "cit": "Survivors at day 28",
+        "nota": ""
+      },
+      "n_ct": {
+        "ma": "10",
+        "veredito": "literal",
+        "valor_fonte": "10",
+        "cit": "Survivors at day 28",
+        "nota": ""
+      }
+    },
+    "levin2004": {
+      "eventos_mb": {
+        "ma": "0",
+        "veredito": "literal",
+        "valor_fonte": "0",
+        "cit": "There were no deaths in those treated with MB; the 6 deceased patients were in the placebo group",
+        "nota": ""
+      },
+      "n_mb": {
+        "ma": "28",
+        "veredito": "literal",
+        "valor_fonte": "28",
+        "cit": "There were no deaths in those treated with MB; the 6 deceased patients were in the placebo group",
+        "nota": ""
+      },
+      "eventos_ct": {
+        "ma": "6",
+        "veredito": "literal",
+        "valor_fonte": "6",
+        "cit": "There were no deaths in those treated with MB; the 6 deceased patients were in the placebo group",
+        "nota": ""
+      },
+      "n_ct": {
+        "ma": "28",
+        "veredito": "literal",
+        "valor_fonte": "28",
+        "cit": "There were no deaths in those treated with MB; the 6 deceased patients were in the placebo group",
+        "nota": ""
+      }
+    },
+    "dong2025": {
+      "eventos_mb": {
+        "ma": "9",
+        "veredito": "literal",
+        "valor_fonte": "9",
+        "cit": "Mortality at 28 days",
+        "nota": ""
+      },
+      "n_mb": {
+        "ma": "36",
+        "veredito": "literal",
+        "valor_fonte": "36",
+        "cit": "Mortality at 28 days",
+        "nota": ""
+      },
+      "eventos_ct": {
+        "ma": "15",
+        "veredito": "literal",
+        "valor_fonte": "15",
+        "cit": "Mortality at 28 days",
+        "nota": ""
+      },
+      "n_ct": {
+        "ma": "36",
+        "veredito": "literal",
+        "valor_fonte": "36",
+        "cit": "Mortality at 28 days",
+        "nota": ""
+      }
+    },
+    "memis2002": {
+      "eventos_mb": {
+        "ma": "4",
+        "veredito": "literal",
+        "valor_fonte": "4",
+        "cit": "The overall hospital mortality rate was similar in both groups",
+        "nota": ""
+      },
+      "n_mb": {
+        "ma": "15",
+        "veredito": "literal",
+        "valor_fonte": "15",
+        "cit": "The overall hospital mortality rate was similar in both groups",
+        "nota": ""
+      },
+      "eventos_ct": {
+        "ma": "4",
+        "veredito": "literal",
+        "valor_fonte": "4",
+        "cit": "The overall hospital mortality rate was similar in both groups",
+        "nota": ""
+      },
+      "n_ct": {
+        "ma": "15",
+        "veredito": "literal",
+        "valor_fonte": "15",
+        "cit": "The overall hospital mortality rate was similar in both groups",
+        "nota": ""
+      }
+    }
+  },
+  "bracos_da_fonte": {
+    "luissilva2024": {
+      "ensaio": "Luis-Silva, 2024",
+      "primario": "PMC11514138.xml",
+      "janela": "30 dias",
+      "cit": "mortality rate in 30 days of 47% versus 61% in the Control group",
+      "bracos": [
+        {
+          "braco": "mb",
+          "papel": "azul",
+          "eventos": 9,
+          "n": 19,
+          "pct": "47"
+        },
+        {
+          "braco": "ct",
+          "papel": "controle",
+          "eventos": 14,
+          "n": 23,
+          "pct": "61"
+        }
+      ]
+    },
+    "shaker2025": {
+      "ensaio": "Shaker, 2025",
+      "primario": "PMC11707904.xml",
+      "janela": "28 dias",
+      "cit": "Mortality rate 14 (46.7%) 9 (30.0%) 6 (20.0%)",
+      "bracos": [
+        {
+          "braco": "ct",
+          "papel": "placebo (grupo A)",
+          "eventos": 14,
+          "n": 30,
+          "pct": "46.7"
+        },
+        {
+          "braco": "mb_baixa",
+          "papel": "azul 1 mg/kg (grupo B)",
+          "eventos": 9,
+          "n": 30,
+          "pct": "30.0"
+        },
+        {
+          "braco": "mb_alta",
+          "papel": "azul 4 mg/kg (grupo C)",
+          "eventos": 6,
+          "n": 30,
+          "pct": "20.0"
+        }
+      ]
+    },
+    "ibarra2023": {
+      "ensaio": "Ibarra-Estrada, 2023",
+      "primario": "PMC10010212.xml",
+      "janela": "28 dias",
+      "cit": "Mortality at 28 days",
+      "bracos": [
+        {
+          "braco": "mb",
+          "papel": "azul",
+          "eventos": 15,
+          "n": 45,
+          "pct": "33"
+        },
+        {
+          "braco": "ct",
+          "papel": "controle",
+          "eventos": 21,
+          "n": 46,
+          "pct": "46"
+        }
+      ]
+    },
+    "aguilar2016": {
+      "ensaio": "Aguilar, 2016",
+      "primario": "aguilar-2016-medcrit.txt",
+      "janela": "alta da UTI e 21 dias",
+      "cit": "en el grupo A la mortalidad al egreso fue de 20.0% y no varió a los 21 días, a diferencia del grupo C, donde al egreso la mortalidad fue de 36.6%",
+      "bracos": [
+        {
+          "braco": "mb",
+          "papel": "azul (grupo A)",
+          "eventos": 6,
+          "n": 30,
+          "pct": "20.0"
+        },
+        {
+          "braco": "ct",
+          "papel": "controle (grupo C)",
+          "eventos": 11,
+          "n": 30,
+          "pct": "36.6"
+        }
+      ]
+    },
+    "kirov2001": {
+      "ensaio": "Kirov, 2001",
+      "primario": "kirov2001.txt",
+      "janela": "28 dias",
+      "cit": "Survivors at day 28",
+      "bracos": [
+        {
+          "braco": "mb",
+          "papel": "azul",
+          "eventos": 5,
+          "n": 10,
+          "pct": null,
+          "nota": "a fonte publica SOBREVIVENTES em 28 dias (5); os mortos são 10-5"
+        },
+        {
+          "braco": "ct",
+          "papel": "controle",
+          "eventos": 7,
+          "n": 10,
+          "pct": null,
+          "nota": "a fonte publica SOBREVIVENTES em 28 dias (3); os mortos são 10-3"
+        }
+      ]
+    },
+    "levin2004": {
+      "ensaio": "Levin, 2004",
+      "primario": "levin2004.txt",
+      "janela": "pós-operatório",
+      "cit": "There were no deaths in those treated with MB; the 6 deceased patients were in the placebo group",
+      "bracos": [
+        {
+          "braco": "mb",
+          "papel": "azul",
+          "eventos": 0,
+          "n": 28,
+          "pct": null
+        },
+        {
+          "braco": "ct",
+          "papel": "placebo",
+          "eventos": 6,
+          "n": 28,
+          "pct": "21.4"
+        }
+      ]
+    },
+    "dong2025": {
+      "ensaio": "Dong, 2025",
+      "primario": "PMC12751372.xml",
+      "janela": "28 dias",
+      "cit": "Mortality at 28 days",
+      "bracos": [
+        {
+          "braco": "mb",
+          "papel": "azul",
+          "eventos": 9,
+          "n": 36,
+          "pct": "25.0"
+        },
+        {
+          "braco": "ct",
+          "papel": "controle",
+          "eventos": 15,
+          "n": 36,
+          "pct": "41.7"
+        }
+      ]
+    },
+    "memis2002": {
+      "ensaio": "Memis, 2002",
+      "primario": "memis2002.txt",
+      "janela": "intra-hospitalar",
+      "cit": "The overall hospital mortality rate was similar in both groups",
+      "bracos": [
+        {
+          "braco": "mb",
+          "papel": "azul",
+          "eventos": 4,
+          "n": 15,
+          "pct": null,
+          "nota": "a fonte não publica contagem por braço; contada na Tabela 1, paciente a paciente"
+        },
+        {
+          "braco": "ct",
+          "papel": "controle",
+          "eventos": 4,
+          "n": 15,
+          "pct": null,
+          "nota": "idem"
+        }
+      ]
+    }
+  }
+}

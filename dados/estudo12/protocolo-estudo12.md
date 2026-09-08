@@ -179,6 +179,25 @@ Any seventh model; any change to the frozen engines, or to anchor 1's and anchor
 
 ---
 
+### Post-registration note, 2026-09-08 (measurement from P0, not an amendment)
+
+§6 says the recomputation "keeps the article internally consistent". Building the instrument measured
+how consistent, and the honest figure is not 100%. A displaced denominator is the denominator of many
+percentages in a trial's baseline tables, not only of the graded outcome row. The instrument therefore
+recomputes **every** percentage in the article that derives from the displaced denominator, inside the
+`a (p)` context it appears in rather than globally — a global substitution of "75" would also hit
+"75 years". Across the five sealed trials, 78 percentages derive from a displaced denominator and
+**63 are recomputed; 15 are not**, each because its recomputed value already occurs in the source and
+would collide with the lens. Those 15 are listed in the seal.
+
+The choice of displacement was then re-examined against this criterion: for every trial, the value
+already frozen in §6's table is the one that leaves the fewest residuals of all admissible
+displacements. No better displacement exists under the frozen 5-to-15% rule, so nothing in §6 changes
+and the residue is irreducible rather than accepted. The first version of the instrument recomputed
+only the graded outcome row and left all 78 inconsistent; that version was never sealed.
+
+---
+
 ### Registration note, 2026-09-08 — what in this document is not the author's
 
 The six Phase-0 decisions recorded in `decisoes-fase0.md`, all dated 2026-09-08 and all taken by the author, fix the cast, the two sheets, the odds-ratio engine, the context and the pursuit of the closed primaries. **Everything else here was drafted by the assistant** — §§5 to 9, 11 and 12 in full, including all six hypotheses and their thresholds, and the nine commissioned instruments. Three of those choices arose from measurements taken while this protocol was being written, and are flagged so the author can overrule them before a single model call, the only moment at which overruling is free:
