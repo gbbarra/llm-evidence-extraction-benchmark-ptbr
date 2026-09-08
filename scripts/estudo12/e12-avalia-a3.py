@@ -83,12 +83,37 @@ def entradas_de(ficha):
 
 
 def escolhe_janela(entradas, tid):
-    """A regra congelada da janela, e o motivo da escolha vai junto."""
-    alvo = [e for e in entradas if JANELA_ALVO.search(e["janela"])]
-    if alvo:
-        return alvo, "janela de 28 a 30 dias, como a análise pede"
-    esperada = GAB["bracos_da_fonte"][tid]["janela"]
-    return entradas, f"o ensaio não publica 28 a 30 dias; janela do gabarito: {esperada}"
+    """A regra congelada da janela. Nunca devolve entradas de janelas diferentes.
+
+    Ordem: descarta a janela recusada; prefere a aceita; se ainda sobrar mais de uma janela distinta,
+    devolve o conflito em vez de somar. A primeira versao devolvia TODAS as entradas quando nenhuma
+    casava a alvo, e reduz() as somava: o Aguilar saia 12/60 em vez de 6/30. Somar atraves de bracos e
+    a regra da §5; somar atraves de janelas nunca foi regra nenhuma.
+    """
+    j = GAB["bracos_da_fonte"][tid]
+    aceita, recusada = j.get("janela_aceita"), j.get("janela_recusada")
+
+    vivas = [e for e in entradas
+             if not (recusada and re.search(recusada, e["janela"], re.I))]
+    descartadas = len(entradas) - len(vivas)
+
+    boas = [e for e in vivas if aceita and re.search(aceita, e["janela"], re.I)]
+    if boas:
+        janelas = {re.sub(r"[^a-z0-9]+", " ", e["janela"].lower()).strip() for e in boas}
+        motivo = f"janela aceita do ensaio ({j['janela']})"
+        if descartadas:
+            motivo += f"; {descartadas} entrada(s) de janela recusada descartada(s)"
+        if len(janelas) > 1:
+            motivo += f"; {len(janelas)} redacoes da mesma janela: {sorted(janelas)}"
+        return boas, motivo, None
+
+    # nenhuma casa a aceita. So da para seguir se TODAS as vivas estiverem na MESMA janela.
+    janelas = {re.sub(r"[^a-z0-9]+", " ", e["janela"].lower()).strip() for e in vivas}
+    if len(janelas) == 1 and vivas:
+        return vivas, (f"nenhuma entrada casa a janela aceita ({aceita}); todas estao em "
+                       f"{sorted(janelas)[0]!r} e foram usadas"), None
+    return [], "", (f"a ficha traz {len(janelas)} janelas distintas e nenhuma casa a aceita do "
+                    f"ensaio: {sorted(janelas)}. Nao se soma atraves de janelas; celula a adjudicar.")
 
 
 def reduz(entradas, tid):
@@ -122,12 +147,21 @@ def reduz(entradas, tid):
             return cands[0] if len(cands) == 1 else None
         return None
 
-    lados, nao_atribuidos = {"mb": [], "ct": []}, []
+    lados, nao_atribuidos, duplicados = {"mb": [], "ct": []}, [], []
+    vistos = {}
     for e in entradas:
         b = lado_de(e)
         if b is None:
             nao_atribuidos.append(e["arm"])
             continue
+        # o mesmo braco duas vezes na mesma janela: mantem o primeiro e registra, nunca soma
+        assinatura = (b, str(e["mortos"]), str(e["n"]))
+        if b in vistos:
+            if vistos[b] != assinatura:
+                duplicados.append(f"{e['arm']}: {vistos[b][1]}/{vistos[b][2]} e depois "
+                                  f"{assinatura[1]}/{assinatura[2]}")
+            continue
+        vistos[b] = assinatura
         destino = ("mb" if b in regra["mb"] else "ct" if b in regra["ct"] else None) if regra             else ("mb" if b.startswith("mb") else "ct" if b.startswith("ct") else None)
         if destino:
             lados[destino].append(e)
@@ -138,8 +172,9 @@ def reduz(entradas, tid):
         vs = [v for v in (_num(x[campo]) for x in itens) if v is not None]
         return None if not vs else sum(vs)
 
-    return {"eventos_mb": soma("mortos", lados["mb"]), "n_mb": soma("n", lados["mb"]),
-            "eventos_ct": soma("mortos", lados["ct"]), "n_ct": soma("n", lados["ct"])}, nao_atribuidos
+    return ({"eventos_mb": soma("mortos", lados["mb"]), "n_mb": soma("n", lados["mb"]),
+             "eventos_ct": soma("mortos", lados["ct"]), "n_ct": soma("n", lados["ct"])},
+            nao_atribuidos, duplicados)
 
 
 def tela_recitacao(ficha_crua, tid):
@@ -192,8 +227,16 @@ def corrige(bruto, tid):
     ents = entradas_de(ficha)
     if not ents:
         return dict(tid=tid, lido=False, motivo="a ficha não traz entradas de mortalidade", celulas={})
-    ents, motivo_janela = escolhe_janela(ents, tid)
-    cel, orfaos = reduz(ents, tid)
+    ents, motivo_janela, conflito = escolhe_janela(ents, tid)
+    if conflito:
+        return dict(tid=tid, lido=True, motivo=conflito, janela="conflito", recitacao=recitacao,
+                    bracos_nao_atribuidos=[], duplicados=[],
+                    celulas={c: dict(modelo="NR", fonte=GAB["celulas"][tid][c]["valor_fonte"],
+                                     ma=GAB["celulas"][tid][c]["ma"], acerta=False,
+                                     acerta_a_revisao=False,
+                                     veredito_gabarito=GAB["celulas"][tid][c]["veredito"],
+                                     cit=GAB["celulas"][tid][c]["cit"]) for c in CAMPOS})
+    cel, orfaos, duplicados = reduz(ents, tid)
     gab = GAB["celulas"][tid]
     saida = {}
     for campo in CAMPOS:
@@ -205,7 +248,8 @@ def corrige(bruto, tid):
                             acerta_a_revisao=e6.compat(m_s, gab[campo]["ma"]),
                             veredito_gabarito=gab[campo]["veredito"], cit=gab[campo]["cit"])
     return dict(tid=tid, lido=True, motivo="", janela=motivo_janela,
-                bracos_nao_atribuidos=orfaos, recitacao=recitacao, celulas=saida)
+                bracos_nao_atribuidos=orfaos, duplicados=duplicados,
+                recitacao=recitacao, celulas=saida)
 
 
 def agrupa(fichas):

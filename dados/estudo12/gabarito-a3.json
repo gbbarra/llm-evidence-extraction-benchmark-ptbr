@@ -260,6 +260,8 @@
       "ensaio": "Luis-Silva, 2024",
       "primario": "PMC11514138.xml",
       "janela": "30 dias",
+      "janela_aceita": "\\b30\\b|30[- ]?day|30 dias",
+      "janela_recusada": null,
       "cit": "mortality rate in 30 days of 47% versus 61% in the Control group",
       "bracos": [
         {
@@ -284,6 +286,8 @@
       "ensaio": "Shaker, 2025",
       "primario": "PMC11707904.xml",
       "janela": "28 dias",
+      "janela_aceita": "\\b28\\b|28[- ]?day|28 dias",
+      "janela_recusada": null,
       "cit": "Mortality rate 14 (46.7%) 9 (30.0%) 6 (20.0%)",
       "bracos": [
         {
@@ -316,6 +320,8 @@
       "ensaio": "Ibarra-Estrada, 2023",
       "primario": "PMC10010212.xml",
       "janela": "28 dias",
+      "janela_aceita": "\\b28\\b|28[- ]?day|28 dias",
+      "janela_recusada": null,
       "cit": "Mortality at 28 days",
       "bracos": [
         {
@@ -340,6 +346,8 @@
       "ensaio": "Aguilar, 2016",
       "primario": "aguilar-2016-medcrit.txt",
       "janela": "alta da UTI e 21 dias",
+      "janela_aceita": "\\b21\\b|21[- ]?day|21 d[ií]as|discharge|egreso|alta",
+      "janela_recusada": "\\b28\\b|\\b90\\b",
       "cit": "en el grupo A la mortalidad al egreso fue de 20.0% y no varió a los 21 días, a diferencia del grupo C, donde al egreso la mortalidad fue de 36.6%",
       "bracos": [
         {
@@ -364,6 +372,8 @@
       "ensaio": "Kirov, 2001",
       "primario": "kirov2001.txt",
       "janela": "28 dias",
+      "janela_aceita": "\\b28\\b|28[- ]?day|28 dias",
+      "janela_recusada": null,
       "cit": "Survivors at day 28",
       "bracos": [
         {
@@ -390,6 +400,8 @@
       "ensaio": "Levin, 2004",
       "primario": "levin2004.txt",
       "janela": "pós-operatório",
+      "janela_aceita": "hospital|post-?op|p[oó]s-?op|in-?hospital|surgery|cirurg|discharge",
+      "janela_recusada": null,
       "cit": "There were no deaths in those treated with MB; the 6 deceased patients were in the placebo group",
       "bracos": [
         {
@@ -414,6 +426,8 @@
       "ensaio": "Dong, 2025",
       "primario": "PMC12751372.xml",
       "janela": "28 dias",
+      "janela_aceita": "\\b28\\b|28[- ]?day|28 dias",
+      "janela_recusada": "\\b90\\b|90[- ]?day",
       "cit": "Mortality at 28 days",
       "bracos": [
         {
@@ -438,6 +452,8 @@
       "ensaio": "Memis, 2002",
       "primario": "memis2002.txt",
       "janela": "intra-hospitalar",
+      "janela_aceita": "hospital|in-?hospital|icu|discharge",
+      "janela_recusada": null,
       "cit": "The overall hospital mortality rate was similar in both groups",
       "bracos": [
         {

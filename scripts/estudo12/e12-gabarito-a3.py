@@ -79,6 +79,22 @@ FONTE = [
 ]
 
 # ------------------------------------------------------------------ redução multi-braço (§5, A3-D1)
+# ---------------------------------------------------------------- janela do desfecho, por ensaio
+# A analise e rotulada 28 a 30 dias, mas nem todo ensaio publica essa janela. A regra sai do
+# reconhecedor generico e vira declaracao congelada, ensaio a ensaio: o que se ACEITA e o que se
+# RECUSA. O Aguilar aceita 21 dias por decisao da §5 (A3-D5), nao por acaso de regex; o Dong
+# recusa 90 dias, que ele tambem publica. Somar atraves de janelas nunca e permitido.
+JANELAS = {
+    "luissilva2024": dict(aceita=r"\b30\b|30[- ]?day|30 dias", recusada=None),
+    "shaker2025": dict(aceita=r"\b28\b|28[- ]?day|28 dias", recusada=None),
+    "ibarra2023": dict(aceita=r"\b28\b|28[- ]?day|28 dias", recusada=None),
+    "aguilar2016": dict(aceita=r"\b21\b|21[- ]?day|21 d[ií]as|discharge|egreso|alta", recusada=r"\b28\b|\b90\b"),
+    "kirov2001": dict(aceita=r"\b28\b|28[- ]?day|28 dias", recusada=None),
+    "levin2004": dict(aceita=r"hospital|post-?op|p[oó]s-?op|in-?hospital|surgery|cirurg|discharge", recusada=None),
+    "dong2025": dict(aceita=r"\b28\b|28[- ]?day|28 dias", recusada=r"\b90\b|90[- ]?day"),
+    "memis2002": dict(aceita=r"hospital|in-?hospital|icu|discharge", recusada=None),
+}
+
 REDUCAO = {"shaker2025": dict(
     mb=["mb_baixa", "mb_alta"], ct=["ct"],
     regra="os dois braços ativos somados contra o controle compartilhado: 15/60 contra 14/30")}
@@ -160,6 +176,8 @@ for f in FONTE:
                               valor_fonte=str(vf), cit=f["cit"], nota=nota)
     celulas[f["tid"]] = cel
     bracos_fonte[f["tid"]] = dict(ensaio=f["ensaio"], primario=f["arq"], janela=f["janela"],
+                                  janela_aceita=JANELAS[f["tid"]]["aceita"],
+                                  janela_recusada=JANELAS[f["tid"]]["recusada"],
                                   cit=f["cit"], bracos=f["bracos"])
     div = sum(1 for k, v in cel.items() if v["veredito"] == "errata-ma")
     print(f"  {f['ensaio']:22s} fonte {a['mb'][0]}/{a['mb'][1]} · {a['ct'][0]}/{a['ct'][1]}"
@@ -172,6 +190,24 @@ if esp != {"mb": (15, 60), "ct": (14, 30)}:
     falhas.append(f"a redução do Shaker deu {esp}, e a §5 congela 15/60 contra 14/30")
 print(f"\n4. regra multi-braço do Shaker: {esp['mb'][0]}/{esp['mb'][1]} contra "
       f"{esp['ct'][0]}/{esp['ct'][1]}  {'ok' if not falhas or esp == {'mb': (15,60), 'ct': (14,30)} else 'ERRO'}")
+
+print("\n4b. janelas declaradas: regex valida, e a janela do ensaio casa a aceita")
+for f in FONTE:
+    j = JANELAS[f["tid"]]
+    try:
+        re.compile(j["aceita"])
+        if j["recusada"]:
+            re.compile(j["recusada"])
+    except re.error as e:
+        falhas.append(f"{f['ensaio']}: regex de janela invalida: {e}")
+        continue
+    casa = bool(re.search(j["aceita"], f["janela"], re.I))
+    choca = bool(j["recusada"] and re.search(j["recusada"], f["janela"], re.I))
+    if not casa or choca:
+        falhas.append(f"{f['ensaio']}: a janela do gabarito {f['janela']!r} nao casa a aceita "
+                      f"ou casa a recusada")
+    print(f"  {'ok  ' if casa and not choca else 'ERRO'} {f['ensaio']:22s} {f['janela']:22s} "
+          f"aceita={j['aceita'][:30]}")
 
 n_cel = sum(len(v) for v in celulas.values())
 print(f"\n5. células graduáveis: {n_cel} (o protocolo congela 32)")
