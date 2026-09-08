@@ -265,6 +265,7 @@
         {
           "braco": "mb",
           "papel": "azul",
+          "rotulo_fonte": "MB group",
           "eventos": 9,
           "n": 19,
           "pct": "47"
@@ -272,6 +273,7 @@
         {
           "braco": "ct",
           "papel": "controle",
+          "rotulo_fonte": "Control group",
           "eventos": 14,
           "n": 23,
           "pct": "61"
@@ -287,6 +289,7 @@
         {
           "braco": "ct",
           "papel": "placebo (grupo A)",
+          "rotulo_fonte": "Group A",
           "eventos": 14,
           "n": 30,
           "pct": "46.7"
@@ -294,6 +297,7 @@
         {
           "braco": "mb_baixa",
           "papel": "azul 1 mg/kg (grupo B)",
+          "rotulo_fonte": "Group B",
           "eventos": 9,
           "n": 30,
           "pct": "30.0"
@@ -301,6 +305,7 @@
         {
           "braco": "mb_alta",
           "papel": "azul 4 mg/kg (grupo C)",
+          "rotulo_fonte": "Group C",
           "eventos": 6,
           "n": 30,
           "pct": "20.0"
@@ -316,6 +321,7 @@
         {
           "braco": "mb",
           "papel": "azul",
+          "rotulo_fonte": "MB",
           "eventos": 15,
           "n": 45,
           "pct": "33"
@@ -323,6 +329,7 @@
         {
           "braco": "ct",
           "papel": "controle",
+          "rotulo_fonte": "Control",
           "eventos": 21,
           "n": 46,
           "pct": "46"
@@ -338,6 +345,7 @@
         {
           "braco": "mb",
           "papel": "azul (grupo A)",
+          "rotulo_fonte": "grupo A",
           "eventos": 6,
           "n": 30,
           "pct": "20.0"
@@ -345,6 +353,7 @@
         {
           "braco": "ct",
           "papel": "controle (grupo C)",
+          "rotulo_fonte": "grupo C",
           "eventos": 11,
           "n": 30,
           "pct": "36.6"
@@ -360,6 +369,7 @@
         {
           "braco": "mb",
           "papel": "azul",
+          "rotulo_fonte": "MB group",
           "eventos": 5,
           "n": 10,
           "pct": null,
@@ -368,6 +378,7 @@
         {
           "braco": "ct",
           "papel": "controle",
+          "rotulo_fonte": "C group",
           "eventos": 7,
           "n": 10,
           "pct": null,
@@ -384,6 +395,7 @@
         {
           "braco": "mb",
           "papel": "azul",
+          "rotulo_fonte": "Methylene Blue",
           "eventos": 0,
           "n": 28,
           "pct": null
@@ -391,6 +403,7 @@
         {
           "braco": "ct",
           "papel": "placebo",
+          "rotulo_fonte": "Control",
           "eventos": 6,
           "n": 28,
           "pct": "21.4"
@@ -406,6 +419,7 @@
         {
           "braco": "mb",
           "papel": "azul",
+          "rotulo_fonte": "MB group",
           "eventos": 9,
           "n": 36,
           "pct": "25.0"
@@ -413,6 +427,7 @@
         {
           "braco": "ct",
           "papel": "controle",
+          "rotulo_fonte": "Control",
           "eventos": 15,
           "n": 36,
           "pct": "41.7"
@@ -428,6 +443,7 @@
         {
           "braco": "mb",
           "papel": "azul",
+          "rotulo_fonte": "MB group",
           "eventos": 4,
           "n": 15,
           "pct": null,
@@ -436,6 +452,7 @@
         {
           "braco": "ct",
           "papel": "controle",
+          "rotulo_fonte": "control group",
           "eventos": 4,
           "n": 15,
           "pct": null,

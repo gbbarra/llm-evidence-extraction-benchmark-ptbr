@@ -37,44 +37,44 @@ D12 = RAIZ / "dados" / "estudo12"
 FONTE = [
     dict(tid="luissilva2024", arq="PMC11514138.xml", ensaio="Luis-Silva, 2024", janela="30 dias",
          cit="mortality rate in 30 days of 47% versus 61% in the Control group",
-         bracos=[dict(braco="mb", papel="azul", eventos=9, n=19, pct="47"),
-                 dict(braco="ct", papel="controle", eventos=14, n=23, pct="61")]),
+         bracos=[dict(braco="mb", papel="azul", rotulo_fonte="MB group", eventos=9, n=19, pct="47"),
+                 dict(braco="ct", papel="controle", rotulo_fonte="Control group", eventos=14, n=23, pct="61")]),
     dict(tid="shaker2025", arq="PMC11707904.xml", ensaio="Shaker, 2025", janela="28 dias",
          cit="Mortality rate 14 (46.7%) 9 (30.0%) 6 (20.0%)",
-         bracos=[dict(braco="ct", papel="placebo (grupo A)", eventos=14, n=30, pct="46.7"),
-                 dict(braco="mb_baixa", papel="azul 1 mg/kg (grupo B)", eventos=9, n=30, pct="30.0"),
-                 dict(braco="mb_alta", papel="azul 4 mg/kg (grupo C)", eventos=6, n=30, pct="20.0")]),
+         bracos=[dict(braco="ct", papel="placebo (grupo A)", rotulo_fonte="Group A", eventos=14, n=30, pct="46.7"),
+                 dict(braco="mb_baixa", papel="azul 1 mg/kg (grupo B)", rotulo_fonte="Group B", eventos=9, n=30, pct="30.0"),
+                 dict(braco="mb_alta", papel="azul 4 mg/kg (grupo C)", rotulo_fonte="Group C", eventos=6, n=30, pct="20.0")]),
     dict(tid="ibarra2023", arq="PMC10010212.xml", ensaio="Ibarra-Estrada, 2023", janela="28 dias",
          cit="Mortality at 28 days",
-         bracos=[dict(braco="mb", papel="azul", eventos=15, n=45, pct="33"),
-                 dict(braco="ct", papel="controle", eventos=21, n=46, pct="46")]),
+         bracos=[dict(braco="mb", papel="azul", rotulo_fonte="MB", eventos=15, n=45, pct="33"),
+                 dict(braco="ct", papel="controle", rotulo_fonte="Control", eventos=21, n=46, pct="46")]),
     dict(tid="aguilar2016", arq="aguilar-2016-medcrit.txt", ensaio="Aguilar, 2016",
          janela="alta da UTI e 21 dias",
          cit="en el grupo A la mortalidad al egreso fue de 20.0% y no varió a los 21 días, "
              "a diferencia del grupo C, donde al egreso la mortalidad fue de 36.6%",
-         bracos=[dict(braco="mb", papel="azul (grupo A)", eventos=6, n=30, pct="20.0"),
-                 dict(braco="ct", papel="controle (grupo C)", eventos=11, n=30, pct="36.6")]),
+         bracos=[dict(braco="mb", papel="azul (grupo A)", rotulo_fonte="grupo A", eventos=6, n=30, pct="20.0"),
+                 dict(braco="ct", papel="controle (grupo C)", rotulo_fonte="grupo C", eventos=11, n=30, pct="36.6")]),
     dict(tid="kirov2001", arq="kirov2001.txt", ensaio="Kirov, 2001", janela="28 dias",
          cit="Survivors at day 28",
-         bracos=[dict(braco="mb", papel="azul", eventos=5, n=10, pct=None,
+         bracos=[dict(braco="mb", papel="azul", rotulo_fonte="MB group", eventos=5, n=10, pct=None,
                       nota="a fonte publica SOBREVIVENTES em 28 dias (5); os mortos são 10-5"),
-                 dict(braco="ct", papel="controle", eventos=7, n=10, pct=None,
+                 dict(braco="ct", papel="controle", rotulo_fonte="C group", eventos=7, n=10, pct=None,
                       nota="a fonte publica SOBREVIVENTES em 28 dias (3); os mortos são 10-3")]),
     dict(tid="levin2004", arq="levin2004.txt", ensaio="Levin, 2004", janela="pós-operatório",
          cit="There were no deaths in those treated with MB; the 6 deceased patients were in the "
              "placebo group",
-         bracos=[dict(braco="mb", papel="azul", eventos=0, n=28, pct=None),
-                 dict(braco="ct", papel="placebo", eventos=6, n=28, pct="21.4")]),
+         bracos=[dict(braco="mb", papel="azul", rotulo_fonte="Methylene Blue", eventos=0, n=28, pct=None),
+                 dict(braco="ct", papel="placebo", rotulo_fonte="Control", eventos=6, n=28, pct="21.4")]),
     dict(tid="dong2025", arq="PMC12751372.xml", ensaio="Dong, 2025", janela="28 dias",
          cit="Mortality at 28 days",
-         bracos=[dict(braco="mb", papel="azul", eventos=9, n=36, pct="25.0"),
-                 dict(braco="ct", papel="controle", eventos=15, n=36, pct="41.7")]),
+         bracos=[dict(braco="mb", papel="azul", rotulo_fonte="MB group", eventos=9, n=36, pct="25.0"),
+                 dict(braco="ct", papel="controle", rotulo_fonte="Control", eventos=15, n=36, pct="41.7")]),
     dict(tid="memis2002", arq="memis2002.txt", ensaio="Memis, 2002", janela="intra-hospitalar",
          cit="The overall hospital mortality rate was similar in both groups",
-         bracos=[dict(braco="mb", papel="azul", eventos=4, n=15, pct=None,
+         bracos=[dict(braco="mb", papel="azul", rotulo_fonte="MB group", eventos=4, n=15, pct=None,
                       nota="a fonte não publica contagem por braço; contada na Tabela 1, "
                            "paciente a paciente"),
-                 dict(braco="ct", papel="controle", eventos=4, n=15, pct=None,
+                 dict(braco="ct", papel="controle", rotulo_fonte="control group", eventos=4, n=15, pct=None,
                       nota="idem")]),
 ]
 
@@ -115,6 +115,19 @@ for f in FONTE:
     if not achou:
         falhas.append(f"citação de {f['ensaio']} não encontrada em {f['arq']}")
     print(f"  {'ok  ' if achou else 'ERRO'} {f['ensaio']:22s} {f['cit'][:58]}")
+
+print("\n1b. rotulos dos bracos, conferidos literalmente no primario")
+for f in FONTE:
+    t = texto(f["arq"])
+    rots = [b["rotulo_fonte"] for b in f["bracos"]]
+    if len(set(r.lower() for r in rots)) != len(rots):
+        falhas.append(f"{f['ensaio']}: rotulos de braco repetidos {rots}")
+    for b in f["bracos"]:
+        pad = re.escape(b["rotulo_fonte"]).replace(chr(92) + chr(92) + " ", r"\s+")
+        achou = re.search(pad, t, re.I) is not None
+        if not achou:
+            falhas.append(f"{f['ensaio']}: rotulo {b['rotulo_fonte']!r} nao esta no primario")
+        print(f"  {'ok  ' if achou else 'ERRO'} {f['ensaio']:22s} {b['papel']:24s} -> {b['rotulo_fonte']!r}")
 
 print("\n2. percentual da fonte contra a contagem, nos braços em que a fonte publica os dois")
 for f in FONTE:
