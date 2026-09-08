@@ -190,6 +190,12 @@ recomputes **every** percentage in the article that derives from the displaced d
 **63 are recomputed; 15 are not**, each because its recomputed value already occurs in the source and
 would collide with the lens. Those 15 are listed in the seal.
 
+§3's context arithmetic used an estimated 900-token sheet. The sheets now exist and were measured:
+823 tokens for v1 and 990 for v2. The worst prompt is Dong's — 19,581 tokens with the v1 allowance,
+leaving 4,995 of headroom, and 23,749 with the v2 allowance, leaving **827** rather than the 935 §3
+estimated. The conclusion is unchanged and the margin is still thin for the same declared reason:
+measured v2 sheets run around 1,500 tokens, far below the 8,000 allowance.
+
 The choice of displacement was then re-examined against this criterion: for every trial, the value
 already frozen in §6's table is the one that leaves the fewest residuals of all admissible
 displacements. No better displacement exists under the frozen 5-to-15% rule, so nothing in §6 changes
