@@ -1,0 +1,7 @@
+# Arquivos cujo SHA-256 é registrado e conferido: o git NÃO pode traduzir a quebra de linha.
+# Com core.autocrlf=true, um checkout converteria LF em CRLF e nenhum selo bateria num clone
+# novo — a verificabilidade externa que o método promete iria embora sem ninguém notar.
+*.sha256        -text
+dados/estudo12/prompts/*.txt    -text
+dados/instruments-en/**/*.txt   -text
+dados/estudo9/prompts/*.txt     -text
