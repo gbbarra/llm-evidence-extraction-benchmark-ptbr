@@ -262,9 +262,18 @@ def roda(so_modelo=None, so_ancora=None, so_ficha=None, seco=False):
             print(f"  [{i}/{len(todas)}] {c['modelo']} {c['ancora']}/{c['ficha']}/{c['ensaio']}-r"
                   f"{c['replica']}: ERRO {type(e).__name__}: {str(e)[:120]}", flush=True)
             try:
-                grava(RECUSADOS / f"erro-{c['modelo']}-{c['ancora']}-{c['ficha']}-{c['ensaio']}-r{c['replica']}.json",
-                      dict(**{k: c[k] for k in ("modelo", "ancora", "ficha", "ensaio", "replica")},
-                           erro=f"{type(e).__name__}: {e}"))
+                # nome único: com nome fixo, a segunda falha da mesma chamada apagava a primeira,
+                # e o método manda registrar o reprovado, não substituí-lo.
+                RECUSADOS.mkdir(parents=True, exist_ok=True)
+                base = (f"erro-{c['modelo']}-{c['ancora']}-{c['ficha']}-{c['ensaio']}"
+                        f"-r{c['replica']}")
+                k = 0
+                alvo = RECUSADOS / f"{base}.json"
+                while alvo.exists():
+                    k += 1
+                    alvo = RECUSADOS / f"{base}.{k}.json"
+                grava(alvo, dict(**{k_: c[k_] for k_ in ("modelo", "ancora", "ficha", "ensaio", "replica")},
+                                 tentativa=k + 1, erro=f"{type(e).__name__}: {e}"))
             except Exception:
                 pass
             # disjuntor: com o servidor fora do ar a corrida gastaria as 696 chamadas em segundos,
@@ -279,6 +288,15 @@ def roda(so_modelo=None, so_ancora=None, so_ficha=None, seco=False):
         seguidos = 0
         try:
             grava(p, r)
+            # a saída acabou de ser escrita: ela passa pelo MESMO portão da retomada, agora. Sem
+            # isso, uma saída truncada pelo teto era contada como feita na própria corrida que a
+            # produziu, e só a segunda passada a refaria -- a primeira terminava dizendo "completa".
+            bom, motivo = integro(p, c, sha)
+            if not bom:
+                print(f"  [{i}/{len(todas)}] RECUSADA ao nascer — {motivo}", flush=True)
+                afasta(p, motivo)
+                erros += 1
+                continue
         except Exception as e:
             # gravar estava fora do try: um PermissionError do Windows -- destino aberto por outro
             # processo -- matava a campanha inteira e perdia a chamada que acabara de custar minutos.

@@ -388,6 +388,57 @@ def corrige(bruto, tid):
                 recitacao=recitacao, celulas=saida)
 
 
+def le_saida(p):
+    """Um arquivo de saída do harness -> (tid, conteúdo cru, registro).
+
+    Esta função é a costura entre a P1 e a P2. Antes dela o harness gravava num formato e o corretor
+    esperava outro, e nada no repositório ligava os dois: a primeira vez que os formatos se
+    encontrariam seria depois de 37 horas de campanha.
+    """
+    j = json.loads(io.open(p, encoding="utf-8").read())
+    if j.get("ancora") != "a3":
+        raise ValueError(f"{p.name}: âncora {j.get('ancora')!r}; este corretor é da âncora 3")
+    return j.get("ensaio"), j.get("conteudo", ""), j
+
+
+def corrige_saida(p):
+    """Lê um arquivo de saída do harness e o corrige. O registro da chamada vai junto."""
+    tid, bruto, reg = le_saida(p)
+    if tid not in GAB["celulas"]:
+        raise ValueError(f"{p.name}: ensaio {tid!r} não é da âncora 3")
+    r = corrige(bruto, tid)
+    r["chamada"] = {k: reg.get(k) for k in ("modelo", "tag", "ficha", "replica", "prompt_tokens",
+                                            "tokens", "finish", "dt", "sha_prompt")}
+    return r
+
+
+def corrige_corrida(dir_saidas, modelo, ficha, replica=None):
+    """Todas as saídas de um modelo numa ficha -> as fichas corrigidas, por ensaio.
+
+    Quando há duas réplicas do mesmo ensaio, a primeira que ler é a usada e a segunda entra como
+    réplica para a medida de estabilidade; nenhuma das duas é descartada em silêncio.
+    """
+    from pathlib import Path as _P
+    d = _P(dir_saidas) / "a3" / ficha / modelo
+    fichas, replicas, problemas = {}, {}, []
+    for p in sorted(d.glob("*.json")):
+        try:
+            r = corrige_saida(p)
+        except Exception as e:
+            problemas.append(f"{p.name}: {type(e).__name__}: {e}")
+            continue
+        tid = r["tid"]
+        if replica is not None and r["chamada"].get("replica") != replica:
+            continue
+        if tid in fichas:
+            replicas.setdefault(tid, []).append(r)
+        else:
+            fichas[tid] = r
+    faltam = [t for t in GAB["celulas"] if t not in fichas]
+    return dict(fichas=fichas, replicas=replicas, problemas=problemas, faltam=faltam,
+                pool=agrupa(fichas) if fichas else None)
+
+
 def agrupa(fichas):
     """As duplas corrigidas -> o diamante, pelas duas rotas que a §5 declara.
 

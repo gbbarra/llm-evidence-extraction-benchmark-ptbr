@@ -34,6 +34,7 @@ ETAPAS = [
     ("as doutrinas do projeto, contra o código", "e12-testa-doutrinas.py", 0),
     ("as patologias reais de saída de modelo", "e12-testa-patologias.py", 0),
     ("o elenco resolve, os seis", "e12-testa-elenco.py", 1),
+    ("a costura P1 -> P2 -> P3, ponta a ponta", "e12-testa-costura.py", 0),
 ]
 
 print(f"FASE 0 DO ESTUDO 12 — {len(ETAPAS)} verificações\n")
