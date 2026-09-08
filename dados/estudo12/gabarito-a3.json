@@ -267,6 +267,9 @@
         {
           "braco": "mb",
           "papel": "azul",
+          "letra": null,
+          "dose": null,
+          "papel_norm": "azul",
           "rotulo_fonte": "MB group",
           "eventos": 9,
           "n": 19,
@@ -275,6 +278,9 @@
         {
           "braco": "ct",
           "papel": "controle",
+          "letra": null,
+          "dose": null,
+          "papel_norm": "controle",
           "rotulo_fonte": "Control group",
           "eventos": 14,
           "n": 23,
@@ -293,6 +299,9 @@
         {
           "braco": "ct",
           "papel": "placebo (grupo A)",
+          "letra": "A",
+          "dose": null,
+          "papel_norm": "controle",
           "rotulo_fonte": "Group A",
           "eventos": 14,
           "n": 30,
@@ -301,6 +310,9 @@
         {
           "braco": "mb_baixa",
           "papel": "azul 1 mg/kg (grupo B)",
+          "letra": "B",
+          "dose": 1.0,
+          "papel_norm": "azul",
           "rotulo_fonte": "Group B",
           "eventos": 9,
           "n": 30,
@@ -309,6 +321,9 @@
         {
           "braco": "mb_alta",
           "papel": "azul 4 mg/kg (grupo C)",
+          "letra": "C",
+          "dose": 4.0,
+          "papel_norm": "azul",
           "rotulo_fonte": "Group C",
           "eventos": 6,
           "n": 30,
@@ -327,6 +342,9 @@
         {
           "braco": "mb",
           "papel": "azul",
+          "letra": null,
+          "dose": null,
+          "papel_norm": "azul",
           "rotulo_fonte": "MB",
           "eventos": 15,
           "n": 45,
@@ -335,6 +353,9 @@
         {
           "braco": "ct",
           "papel": "controle",
+          "letra": null,
+          "dose": null,
+          "papel_norm": "controle",
           "rotulo_fonte": "Control",
           "eventos": 21,
           "n": 46,
@@ -353,6 +374,9 @@
         {
           "braco": "mb",
           "papel": "azul (grupo A)",
+          "letra": "A",
+          "dose": null,
+          "papel_norm": "azul",
           "rotulo_fonte": "grupo A",
           "eventos": 6,
           "n": 30,
@@ -361,6 +385,9 @@
         {
           "braco": "ct",
           "papel": "controle (grupo C)",
+          "letra": "C",
+          "dose": null,
+          "papel_norm": "controle",
           "rotulo_fonte": "grupo C",
           "eventos": 11,
           "n": 30,
@@ -379,6 +406,9 @@
         {
           "braco": "mb",
           "papel": "azul",
+          "letra": null,
+          "dose": null,
+          "papel_norm": "azul",
           "rotulo_fonte": "MB group",
           "eventos": 5,
           "n": 10,
@@ -388,6 +418,9 @@
         {
           "braco": "ct",
           "papel": "controle",
+          "letra": null,
+          "dose": null,
+          "papel_norm": "controle",
           "rotulo_fonte": "C group",
           "eventos": 7,
           "n": 10,
@@ -407,6 +440,9 @@
         {
           "braco": "mb",
           "papel": "azul",
+          "letra": null,
+          "dose": null,
+          "papel_norm": "azul",
           "rotulo_fonte": "Methylene Blue",
           "eventos": 0,
           "n": 28,
@@ -415,6 +451,9 @@
         {
           "braco": "ct",
           "papel": "placebo",
+          "letra": null,
+          "dose": null,
+          "papel_norm": "controle",
           "rotulo_fonte": "Control",
           "eventos": 6,
           "n": 28,
@@ -433,6 +472,9 @@
         {
           "braco": "mb",
           "papel": "azul",
+          "letra": null,
+          "dose": null,
+          "papel_norm": "azul",
           "rotulo_fonte": "MB group",
           "eventos": 9,
           "n": 36,
@@ -441,6 +483,9 @@
         {
           "braco": "ct",
           "papel": "controle",
+          "letra": null,
+          "dose": null,
+          "papel_norm": "controle",
           "rotulo_fonte": "Control",
           "eventos": 15,
           "n": 36,
@@ -459,6 +504,9 @@
         {
           "braco": "mb",
           "papel": "azul",
+          "letra": null,
+          "dose": null,
+          "papel_norm": "azul",
           "rotulo_fonte": "MB group",
           "eventos": 4,
           "n": 15,
@@ -468,6 +516,9 @@
         {
           "braco": "ct",
           "papel": "controle",
+          "letra": null,
+          "dose": null,
+          "papel_norm": "controle",
           "rotulo_fonte": "control group",
           "eventos": 4,
           "n": 15,

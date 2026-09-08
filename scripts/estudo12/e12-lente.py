@@ -40,6 +40,14 @@ def compila(pares):
         de, para = str(de), str(para)
         if de and para and de != para:
             mapa[de] = para
+            # a forma decimal do mesmo valor. O Dong imprime 41 das suas contagens como "9.0 (25.0)",
+            # e uma ficha que preserva as casas -- como a regra 2 manda -- escreve o denominador
+            # "41.0". A fronteira à direita, `(?![\w.])`, barra o casamento de "41" dentro de "41.0",
+            # então sem esta linha a lente não desfaz o deslocamento: o leitor honesto sai com 41 e é
+            # reprovado, enquanto quem recita "36.0" passa. A inversão exata do que a lente existe
+            # para medir. Só vale para valor inteiro, e o destino ganha a mesma forma.
+            if re.fullmatch(r"-?\d+", de) and re.fullmatch(r"-?\d+", para):
+                mapa.setdefault(de + ".0", para + ".0")
     if not mapa:
         return None, {}
     alt = "|".join(re.escape(d) for d in sorted(mapa, key=len, reverse=True))

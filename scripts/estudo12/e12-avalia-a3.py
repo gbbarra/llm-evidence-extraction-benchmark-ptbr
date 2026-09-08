@@ -26,6 +26,7 @@ Nunca o contrário.
 """
 import importlib.util
 import io
+import unicodedata
 import json
 import re
 import sys
@@ -51,6 +52,22 @@ L = _carrega("lente", AQUI / "e12-lente.py")
 D12 = RAIZ / "dados" / "estudo12"
 GAB = json.loads(io.open(D12 / "gabarito-a3.json", encoding="utf-8").read())
 SELO = json.loads(io.open(D12 / "perturbacoes-a3.json", encoding="utf-8").read())
+
+def compara(modelo_s, fonte_s):
+    """Comparacao de celula. Numerica e exata quando os dois lados sao numeros puros.
+
+    O comparador congelado `e6.compat` foi escrito para celulas de TEXTO da ancora 1 e tem um buraco
+    no zero: quando um dos lados nao tem numero nao-nulo, o ramo numerico e pulado e a decisao cai
+    num fallback de SUBSTRING de texto -- e ali "10", "20", "30" e "100" passam como iguais a "0".
+    Sete das 32 celulas da ancora 3 caem nesse buraco, entre elas o 0/28 do Levin e os denominadores
+    10, 30 e 60. As celulas desta ancora sao contagens inteiras, entao a comparacao e numerica e
+    exata; o congelado segue valendo, intocado, para tudo que nao for numero puro.
+    """
+    a_, b_ = str(modelo_s).strip(), str(fonte_s).strip()
+    if re.fullmatch(r"-?\d+(?:\.\d+)?", a_) and re.fullmatch(r"-?\d+(?:\.\d+)?", b_):
+        return abs(float(a_) - float(b_)) < 1e-9
+    return e6.compat(a_, b_)
+
 
 JANELA_ALVO = re.compile(r"\b(28|29|30)\b\s*[-‑–]?\s*(?:day|d[ií]a)", re.I)
 CAMPOS = ("eventos_mb", "n_mb", "eventos_ct", "n_ct")
@@ -116,45 +133,116 @@ def escolhe_janela(entradas, tid):
                     f"ensaio: {sorted(janelas)}. Nao se soma atraves de janelas; celula a adjudicar.")
 
 
+def _numeros(v):
+    """Os números da string, cada um com a informação de vir colado a um sinal de percentual."""
+    t = str(v)
+    fora = []
+    for m in re.finditer(r"-?\d+(?:[.,]\d+)?", t):
+        fora.append((float(m.group(0).replace(",", ".")), bool(re.match(r"\s*%", t[m.end():]))))
+    return fora
+
+
+def _conta(v):
+    """A CONTAGEM que a string carrega, nunca o percentual.
+
+    "22.0% (9/41)" vale 9, e nao 22. A primeira versao lia o primeiro numero e devolvia 22 -- e como
+    a lente traz o 22,0 perturbado de volta a 25,0, a celula saia 25 mortes. Medido pela revisao: com
+    as outras sete fichas perfeitas, isso levava o diamante de OR 0,484 [0,319; 0,735] para
+    0,643 [0,336; 1,23], com I2 de 53% inventado -- de significativo para nao significativo. A forma
+    e real: "0.7% (2/283)" aparece verbatim em dados/estudo8/saidas/p1/llama8/REF30-r1.json.
+
+    Quando TODOS os numeros da string sao percentuais, nao ha contagem: devolve None, e a celula sai
+    NR em vez de sair com o percentual disfarcado de contagem.
+    """
+    if v is None:
+        return None
+    ns = _numeros(v)
+    livres = [x for x, pct in ns if not pct]
+    return livres[0] if livres else None
+
+
+def _denominador(v):
+    """O DENOMINADOR que a string carrega. Em "9/41" e 41; em "41 patients" e 41."""
+    if v is None:
+        return None
+    t = str(v)
+    m = re.search(r"(\d+(?:[.,]\d+)?)\s*/\s*(\d+(?:[.,]\d+)?)", t)
+    if m:
+        return float(m.group(2).replace(",", "."))
+    return _conta(v)
+
+
+def _norm(x):
+    """Minusculas, sem acento, so letras, digitos e espaco."""
+    t = unicodedata.normalize("NFD", str(x).lower())
+    t = "".join(c for c in t if unicodedata.category(c) != "Mn")
+    return re.sub(r"[^a-z0-9./ ]+", " ", t).strip()
+
+
+def identifica_braco(rotulo, bracos):
+    """A qual braco do gabarito pertence o rotulo que o MODELO escreveu.
+
+    Casar por semelhanca de texto era fragil de dois jeitos, e os dois derrubavam justamente as
+    celulas da H12.2: o Shaker perdia os dois bracos ativos se o modelo os rotulasse pela dose --
+    que e o exemplo escrito na propria ficha -- e o Aguilar perdia os quatro se o modelo traduzisse
+    "grupo A" para "Group A", que e o esperado de uma ficha em ingles lendo artigo em espanhol.
+
+    Agora a chave declara a identidade e o casamento vai do mais especifico ao menos: letra do grupo,
+    dose em mg/kg, rotulo literal, papel. Em qualquer eixo, so vale se o vencedor for unico -- braco
+    ambiguo vai para nao atribuido, e nao se adivinha.
+    """
+    r = _norm(rotulo)
+    if not r:
+        return None
+
+    m = re.search(r"\b(?:group|grupo|arm|braco|brazo)\s*([a-d])\b", r) or re.fullmatch(r"([a-d])", r)
+    if m:
+        cands = [b for b in bracos if str(b.get("letra") or "").lower() == m.group(1)]
+        if len(cands) == 1:
+            return cands[0]["braco"]
+
+    m = re.search(r"(\d+(?:[.,]\d+)?)\s*mg\s*/?\s*kg", r)
+    if m:
+        dose = float(m.group(1).replace(",", "."))
+        cands = [b for b in bracos if b.get("dose") == dose]
+        if len(cands) == 1:
+            return cands[0]["braco"]
+
+    cands = [b for b in bracos if _norm(b["rotulo_fonte"])
+             and (_norm(b["rotulo_fonte"]) in r or r in _norm(b["rotulo_fonte"]))]
+    if len(cands) == 1:
+        return cands[0]["braco"]
+
+    if re.search(r"placebo|control|saline|salina|conventional|standard|usual|vasopressin|comparator", r):
+        papel = "controle"
+    elif re.search(r"methylene|methylthioninium|blue|azul|metileno|\bmb\b", r):
+        papel = "azul"
+    else:
+        return None
+    cands = [b for b in bracos if b["papel_norm"] == papel]
+    return cands[0]["braco"] if len(cands) == 1 else None
+
+
 def reduz(entradas, tid):
     """Todos os bracos da ficha viram as duas celulas de analise. §5, A3-D1.
 
-    A atribuicao usa o rotulo que o ARTIGO da ao braco (`rotulo_fonte` no gabarito), porque e esse
-    que o modelo transcreve. A primeira versao casava contra a descricao em portugues do gabarito, e
-    palavras comuns a todos os bracos -- "grupo" -- faziam tudo cair no mesmo lado: os tres bracos do
-    Shaker viravam 29/90.
+    Duas regras que a revisao adversarial obrigou a escrever:
+      · um lado so produz celula se TODOS os seus bracos trouxerem o campo. Somar so os que trouxeram
+        montava celulas quimericas -- numerador de um braco e denominador de dois, como o 9/60 que a
+        revisao produziu com o braco de dose alta em "NR". Nenhuma leitura do modelo corresponde a
+        esse par, e ele mudava o diamante para 0,436 sem aviso nenhum;
+      · o mesmo braco duas vezes nao soma: mantem o primeiro e registra a divergencia.
     """
     regra = GAB["_reducao_multibraco"].get(tid)
     bracos = GAB["bracos_da_fonte"][tid]["bracos"]
 
-    def norm(x):
-        return re.sub(r"[^a-z0-9]+", " ", str(x).lower()).strip()
-
-    def lado_de(e):
-        r = norm(e["arm"])
-        if not r:
-            return None
-        casos = [b["braco"] for b in bracos
-                 if norm(b["rotulo_fonte"]) and (norm(b["rotulo_fonte"]) in r or r in norm(b["rotulo_fonte"]))]
-        if len(casos) == 1:
-            return casos[0]
-        if len(casos) > 1:
-            return None                       # ambiguo: nao se adivinha
-        if re.search(r"placebo|control|saline|conventional|standard|vasopressin", r):
-            return next((b["braco"] for b in bracos if b["braco"].startswith("ct")), None)
-        if re.search(r"methylene|blue|azul|\bmb\b", r):
-            cands = [b["braco"] for b in bracos if b["braco"].startswith("mb")]
-            return cands[0] if len(cands) == 1 else None
-        return None
-
     lados, nao_atribuidos, duplicados = {"mb": [], "ct": []}, [], []
     vistos = {}
     for e in entradas:
-        b = lado_de(e)
+        b = identifica_braco(e["arm"], bracos)
         if b is None:
             nao_atribuidos.append(e["arm"])
             continue
-        # o mesmo braco duas vezes na mesma janela: mantem o primeiro e registra, nunca soma
         assinatura = (b, str(e["mortos"]), str(e["n"]))
         if b in vistos:
             if vistos[b] != assinatura:
@@ -162,19 +250,39 @@ def reduz(entradas, tid):
                                   f"{assinatura[1]}/{assinatura[2]}")
             continue
         vistos[b] = assinatura
-        destino = ("mb" if b in regra["mb"] else "ct" if b in regra["ct"] else None) if regra             else ("mb" if b.startswith("mb") else "ct" if b.startswith("ct") else None)
+        destino = ("mb" if b in regra["mb"] else "ct" if b in regra["ct"] else None) if regra \
+            else ("mb" if b.startswith("mb") else "ct" if b.startswith("ct") else None)
         if destino:
             lados[destino].append(e)
         else:
             nao_atribuidos.append(e["arm"])
 
-    def soma(campo, itens):
-        vs = [v for v in (_num(x[campo]) for x in itens) if v is not None]
-        return None if not vs else sum(vs)
+    incompletos = []
 
-    return ({"eventos_mb": soma("mortos", lados["mb"]), "n_mb": soma("n", lados["mb"]),
-             "eventos_ct": soma("mortos", lados["ct"]), "n_ct": soma("n", lados["ct"])},
-            nao_atribuidos, duplicados)
+    def soma(campo, itens, leitor, rot):
+        if not itens:
+            return None
+        vs = [leitor(x[campo]) for x in itens]
+        if any(v is None for v in vs):
+            faltam = [x["arm"] for x, v in zip(itens, vs) if v is None]
+            incompletos.append(f"{rot}: sem valor utilizavel em {faltam}")
+            return None                       # celula quimerica nunca; NR e a resposta honesta
+        return sum(vs)
+
+    cel = {"eventos_mb": soma("mortos", lados["mb"], _conta, "eventos do azul"),
+           "n_mb": soma("n", lados["mb"], _denominador, "denominador do azul"),
+           "eventos_ct": soma("mortos", lados["ct"], _conta, "eventos do controle"),
+           "n_ct": soma("n", lados["ct"], _denominador, "denominador do controle")}
+    # o par (eventos, denominador) de um lado anda junto ou não anda. Deixar o denominador sair
+    # sozinho produz uma célula que a leitura do modelo não sustenta -- "NR de 60" atribui ao modelo
+    # um denominador que ele não chegou a formar, e o par é o que a metanálise consome.
+    for lado in ("mb", "ct"):
+        if cel[f"eventos_{lado}"] is None or cel[f"n_{lado}"] is None:
+            if cel[f"eventos_{lado}"] is not None or cel[f"n_{lado}"] is not None:
+                incompletos.append(f"lado {lado}: um dos dois campos do par ficou sem valor; "
+                                   f"o par inteiro sai NR")
+            cel[f"eventos_{lado}"] = cel[f"n_{lado}"] = None
+    return cel, nao_atribuidos, duplicados + incompletos
 
 
 def tela_recitacao(ficha_crua, tid):
@@ -244,8 +352,8 @@ def corrige(bruto, tid):
         m_s = "NR" if m is None else (str(int(m)) if float(m).is_integer() else str(m))
         f_s = gab[campo]["valor_fonte"]
         saida[campo] = dict(modelo=m_s, fonte=f_s, ma=gab[campo]["ma"],
-                            acerta=e6.compat(m_s, f_s),
-                            acerta_a_revisao=e6.compat(m_s, gab[campo]["ma"]),
+                            acerta=compara(m_s, f_s),
+                            acerta_a_revisao=compara(m_s, gab[campo]["ma"]),
                             veredito_gabarito=gab[campo]["veredito"], cit=gab[campo]["cit"])
     return dict(tid=tid, lido=True, motivo="", janela=motivo_janela,
                 bracos_nao_atribuidos=orfaos, duplicados=duplicados,
@@ -253,17 +361,35 @@ def corrige(bruto, tid):
 
 
 def agrupa(fichas):
-    """As oito duplas corrigidas -> o diamante, pelas duas rotas que a §5 declara."""
-    est = []
+    """As duplas corrigidas -> o diamante, pelas duas rotas que a §5 declara.
+
+    Valida antes de agrupar, e devolve o que descartou. A primeira versao jogava ensaio fora em
+    silencio -- cap silencioso, que o metodo proibe -- e estourava `math domain error` quando os
+    eventos passavam do denominador, que e o caso natural de um modelo que transcreve o percentual
+    do Aguilar como se fosse contagem.
+    """
+    est, descartados = [], []
     for tid in GAB["celulas"]:
-        c = (fichas.get(tid) or {}).get("celulas") or {}
-        v = [_num(c.get(k, {}).get("modelo")) for k in CAMPOS]
-        if any(x is None for x in v) or v[1] <= 0 or v[3] <= 0:
+        r = fichas.get(tid) or {}
+        c = r.get("celulas") or {}
+        v = [_conta(c.get(k, {}).get("modelo")) for k in CAMPOS]
+        rot = GAB["bracos_da_fonte"][tid]["ensaio"]
+        if any(x is None for x in v):
+            descartados.append(f"{rot}: celula ausente ou nao numerica")
             continue
-        est.append((v[0], v[1], v[2], v[3]))
+        ev1, n1, ev2, n2 = v
+        if n1 <= 0 or n2 <= 0:
+            descartados.append(f"{rot}: denominador zero ou negativo ({n1}, {n2})")
+        elif ev1 < 0 or ev2 < 0:
+            descartados.append(f"{rot}: contagem negativa ({ev1}, {ev2})")
+        elif ev1 > n1 or ev2 > n2:
+            descartados.append(f"{rot}: eventos passam do denominador ({ev1}/{n1}, {ev2}/{n2})")
+        else:
+            est.append((ev1, n1, ev2, n2))
     if len(est) < 2:
-        return None
-    return dict(k=len(est), dl=OR.pool_or_dl(est), mh=OR.pool_or_mh(est))
+        return dict(k=len(est), dl=None, mh=None, descartados=descartados,
+                    motivo="menos de dois ensaios agrupaveis")
+    return dict(k=len(est), dl=OR.pool_or_dl(est), mh=OR.pool_or_mh(est), descartados=descartados)
 
 
 # ------------------------------------------------------------------ autoteste

@@ -32,6 +32,8 @@ ETAPAS = [
     ("portão de retomada e escrita atômica", "e12-testa-retomada.py", 4),
     ("caminho de correção da razão de chances", "e12-avalia-a3.py", 8),
     ("as doutrinas do projeto, contra o código", "e12-testa-doutrinas.py", 0),
+    ("as patologias reais de saída de modelo", "e12-testa-patologias.py", 0),
+    ("o elenco resolve, os seis", "e12-testa-elenco.py", 1),
 ]
 
 print(f"FASE 0 DO ESTUDO 12 — {len(ETAPAS)} verificações\n")

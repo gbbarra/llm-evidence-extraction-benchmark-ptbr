@@ -57,12 +57,25 @@ def _carrega(nome, caminho):
     return m
 
 
-h3 = _carrega("h3", RAIZ / "scripts" / "estudo3" / "e3-harness.py")     # só o transporte
-_ext = _carrega("ext", RAIZ / "scripts" / "estudo4" / "e4-extensao.py")  # injeta llama8/qwen35/deepseek14
-_am1 = _carrega("am1", RAIZ / "scripts" / "estudo8" / "e8-amend1-cast.py")  # injeta qwen27q2
+# O registro de modelos é montado em três camadas, e a ordem importa. `e4-extensao.py` injeta os três
+# modelos do Estudo 4 no h3 QUE ELE MESMO CARREGOU -- um objeto de módulo próprio, porque cada
+# importlib cria um novo. Carregar o e3-harness por conta e esperar que a injeção apareça nele é o
+# defeito que fazia quatro dos seis modelos do elenco sumirem: a campanha rodaria gemma12 e qwen14 e
+# depois gravaria 464 arquivos de erro em segundos, terminando com código zero. O e9-extract, que de
+# fato rodou, faz a coisa certa: pega `ext.h3`. E o sexto modelo não se injeta sozinho -- o
+# e8-amend1-cast só define `registrar(h3)`, que precisa ser chamado.
+_ext = _carrega("ext", RAIZ / "scripts" / "estudo4" / "e4-extensao.py")
+h3 = _ext.h3                                                             # o h3 que a extensão mutou
+_am1 = _carrega("am1", RAIZ / "scripts" / "estudo8" / "e8-amend1-cast.py")
+_am1.registrar(h3)                                                       # e o sexto leitor
 
 # §3 do protocolo: o elenco, e a ordem do elenco é a ordem das corridas
 ELENCO = ["gemma12", "qwen14", "llama8", "qwen35", "deepseek14", "qwen27q2"]
+
+_faltam = [m for m in ELENCO if m not in h3.MODELS]
+if _faltam:
+    raise SystemExit(f"elenco incompleto no registro do harness: {_faltam}. "
+                     f"Registrados: {sorted(h3.MODELS)}. A campanha não pode começar.")
 
 ANCORAS = {
     "a1": dict(corpus=[RAIZ / "corpus" / "perturbados", RAIZ / "corpus" / "perturbados-fechados"],

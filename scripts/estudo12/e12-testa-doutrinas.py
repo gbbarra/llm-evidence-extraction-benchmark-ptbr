@@ -171,7 +171,18 @@ r = A.corrige({"mortality": mort}, "shaker2025")
 diz("braço não atribuível é reportado, não descartado em silêncio",
     bool(r.get("bracos_nao_atribuidos")), str(r.get("bracos_nao_atribuidos")))
 p = A.agrupa({"dong2025": r})
-diz("agrupar com um ensaio só devolve nada em vez de um diamante de um", p is None)
+diz("agrupar com um ensaio só não produz diamante", p["dl"] is None, p.get("motivo", ""))
+diz("e diz QUAIS ensaios ficaram de fora, um a um", len(p["descartados"]) == 8,
+    f"{len(p['descartados'])} descartados, ex.: {p['descartados'][0][:52]}")
+# eventos maiores que o denominador é o caso natural de quem transcreve percentual como contagem
+mau = {t: dict(celulas={c: dict(modelo="99" if c.startswith("eventos") else "30", fonte="",
+                                ma="", acerta=False, acerta_a_revisao=False,
+                                veredito_gabarito="", cit="") for c in A.CAMPOS})
+       for t in list(GAB["celulas"])[:3]}
+p = A.agrupa(mau)
+diz("eventos acima do denominador não estouram, são descartados com o motivo",
+    p["dl"] is None and any("passam do denominador" in x for x in p["descartados"]),
+    p["descartados"][0][:60] if p["descartados"] else "")
 
 # ══════════════════════════════════════════════════════════════════════════
 secao(10, "NUNCA SOMAR ATRAVÉS DE JANELAS", "arms are summed by the frozen rule; timepoints never are")
