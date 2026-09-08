@@ -190,6 +190,20 @@ recomputes **every** percentage in the article that derives from the displaced d
 **63 are recomputed; 15 are not**, each because its recomputed value already occurs in the source and
 would collide with the lens. Those 15 are listed in the seal.
 
+**The displacement reaches the trial's total, and its spelled-out form.** §6 says the recomputation
+keeps the article internally consistent. Building the instrument found that it did not: displacing the
+per-arm denominator while leaving the trial's total intact made the article contradict itself in the
+same sentence — Aguilar reading "Quedaron N: 60 pacientes" with arms of 32 and 32, Dong "Among the 72
+randomized participants" with arms of 41 and 41. Worse than the incoherence: **the recitation net would
+have accused the most careful reader**, the one who reconciles 72 across two arms and writes 36. The
+instrument now moves the total with its arms, and also the total written out in words — "Forty-two
+patients were included" became "Forty-five", "Sixty patients were divided in two groups" became
+"Sixty-four". That last one closes gap #1 of the frozen perturbation operator, registered since Study
+3 and never closed: numbers spelled out. It was harmless on anchors 1 and 2, whose displaced values
+were decimals nobody writes in words, and it is not harmless here. A build-time check now fails the
+instrument if any number in the perturbed text reconstructs an original denominator by a one-line
+division, in figures or in words, in a sentence that speaks of patients.
+
 §3's context arithmetic used an estimated 900-token sheet. The sheets now exist and were measured:
 823 tokens for v1 and 990 for v2. The worst prompt is Dong's — 19,581 tokens with the v1 allowance,
 leaving 4,995 of headroom, and 23,749 with the v2 allowance, leaving **827** rather than the 935 §3

@@ -89,18 +89,73 @@ def contexto_de(txt, valor, pad_tempo):
         txt, re.I)]
 
 
+# ------------------------------------------------------------------ números por extenso
+_UNI_EN = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
+           "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen",
+           "eighteen", "nineteen"]
+_DEZ_EN = {20: "twenty", 30: "thirty", 40: "forty", 50: "fifty", 60: "sixty", 70: "seventy",
+           80: "eighty", 90: "ninety"}
+_UNI_ES = ["cero", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez",
+           "once", "doce", "trece", "catorce", "quince", "dieciséis", "diecisiete", "dieciocho",
+           "diecinueve"]
+_DEZ_ES = {20: "veinte", 30: "treinta", 40: "cuarenta", 50: "cincuenta", 60: "sesenta",
+           70: "setenta", 80: "ochenta", 90: "noventa"}
+
+
+def por_extenso(n):
+    """As formas escritas de um inteiro de 0 a 99, por ESTILO.
+
+    O estilo é a chave, e não a posição: "sixty" e "sixty-four" são ambos `en`, "sesenta" e
+    "sesenta y cuatro" são ambos `es`. Casar por posição fez "Sixty" virar "sesenta y cuatro".
+    """
+    n = int(n)
+    if not 0 <= n <= 99:
+        return {}
+    if n < 20:
+        return {"en": _UNI_EN[n], "es": _UNI_ES[n]}
+    d, u = (n // 10) * 10, n % 10
+    if u == 0:
+        return {"en": _DEZ_EN[d], "es": _DEZ_ES[d]}
+    return {"en": f"{_DEZ_EN[d]}-{_UNI_EN[u]}", "en_espaco": f"{_DEZ_EN[d]} {_UNI_EN[u]}",
+            "es": f"{_DEZ_ES[d]} y {_UNI_ES[u]}"}
+
+
+def _formas_todas(n):
+    """Toda forma escrita do valor, nas duas capitalizações — para a conferência dos delatores."""
+    f = list(por_extenso(n).values())
+    return f + [x[0].upper() + x[1:] for x in f]
+
+
+def pares_por_extenso(txt, n_orig, n_novo):
+    """Pares (forma antiga -> nova) que ocorrem no texto e cuja forma nova está ausente.
+
+    Casamento por estilo, com o inglês com hífen servindo de reserva para o inglês com espaço.
+    Cada par entra também na forma capitalizada, porque o artigo abre frase com ela.
+    """
+    velhas, novas = por_extenso(n_orig), por_extenso(n_novo)
+    fora = []
+    for estilo, forma in velhas.items():
+        alvo = novas.get(estilo) or (novas.get("en") if estilo.startswith("en") else novas.get("es"))
+        if not alvo:
+            continue
+        for a, b in ((forma, alvo), (forma[0].upper() + forma[1:], alvo[0].upper() + alvo[1:])):
+            if not re.search(L.FRONTEIRA_ESQ + re.escape(a) + r"(?![\w-])", txt):
+                continue
+            if re.search(L.FRONTEIRA_ESQ + re.escape(b) + r"(?![\w-])", txt):
+                continue
+            fora.append((a, b))
+    return fora
+
+
 # ------------------------------------------------------------------ o gabarito manda
 G = json.loads(io.open(D12 / "gabarito-a3.json", encoding="utf-8").read())
-selo, resumo = {}, []
+selo, resumo, textos = {}, [], {}
 
 print(f"{'ensaio':22s} {'n':>4s} {'n′':>5s}  deslocamento e percentuais recomputados")
 print("-" * 100)
 
 for tid, f in G["bracos_da_fonte"].items():
     txt = texto_de(f["primario"])
-    ORIG.mkdir(parents=True, exist_ok=True)
-    PERT.mkdir(parents=True, exist_ok=True)
-    io.open(ORIG / f"{tid}.txt", "w", encoding="utf-8").write(txt)
 
     grupos = {}
     for b in f["bracos"]:
@@ -165,6 +220,12 @@ for tid, f in G["bracos_da_fonte"].items():
                 continue
             derivados.setdefault((a_s, p_s), novo_p)
 
+        for forma, alvo in pares_por_extenso(txt, n, novo_n):
+            registros.append(dict(campo=f"n_por_braco_{n}_por_extenso", papel="denominador escrito",
+                                  original=forma, perturbado=alvo,
+                                  contextos=[m.group(0) for m in re.finditer(
+                                      r".{0,40}" + L.FRONTEIRA_ESQ + re.escape(forma)
+                                      + r"(?![\w-]).{0,40}", txt)][:2]))
         registros.append(dict(campo=f"n_por_braco_{n}", papel="denominador",
                               original=str(n), perturbado=str(novo_n),
                               contextos=[m.group(0) for m in re.finditer(
@@ -195,6 +256,63 @@ for tid, f in G["bracos_da_fonte"].items():
                          for b in membros)
         resumo.append((f["ensaio"], n, novo_n, ""))
         print(f"{f['ensaio']:22s} {n:4d} {novo_n:5d}  {det}")
+
+    # ── o TOTAL do ensaio anda com os braços ──────────────────────────────────────────────
+    # Deixar o total intacto torna o artigo contraditório na mesma frase e, pior, faz a rede de
+    # recitação acusar quem RECONCILIOU: um modelo que vê "72 randomized" em dois braços e escreve
+    # 36 estaria lendo bem e seria tratado como recitador.
+    desloc = {int(r["original"]): int(r["perturbado"])
+              for r in registros if r["papel"] == "denominador"}
+    if desloc:
+        tot_o = sum(b_["n"] for b_ in f["bracos"])
+        tot_p = sum(desloc.get(b_["n"], b_["n"]) for b_ in f["bracos"])
+        ocorre = len(re.findall(L.FRONTEIRA_ESQ + str(tot_o) + L.FRONTEIRA_DIR, txt))
+        if tot_o == tot_p:
+            pass                                  # nada a fazer: os braços somam o mesmo
+        elif not ocorre:
+            avisos.append(f"{f['ensaio']}: o total {tot_o} não é impresso; nada a deslocar")
+        elif str(tot_o) in {r["original"] for r in registros}:
+            avisos.append(f"{f['ensaio']}: o total {tot_o} já é um denominador de braço; já deslocado")
+        elif not ausente(txt, tot_p):
+            falhas.append(f"{f['ensaio']}: o total coerente {tot_p} já ocorre no texto; o total "
+                          f"{tot_o} ficaria denunciando o denominador original")
+        else:
+            registros.append(dict(campo="total_do_ensaio", papel="total",
+                                  original=str(tot_o), perturbado=str(tot_p),
+                                  derivado_de="soma dos denominadores por braço",
+                                  ocorrencias=ocorre,
+                                  contextos=[m.group(0) for m in re.finditer(
+                                      r".{0,42}" + L.FRONTEIRA_ESQ + str(tot_o) + L.FRONTEIRA_DIR
+                                      + r".{0,26}", txt)][:4]))
+            for forma, alvo in pares_por_extenso(txt, tot_o, tot_p):
+                registros.append(dict(campo="total_do_ensaio_por_extenso", papel="total escrito",
+                                      original=forma, perturbado=alvo,
+                                      contextos=[m.group(0) for m in re.finditer(
+                                          r".{0,40}" + L.FRONTEIRA_ESQ + re.escape(forma)
+                                          + r"(?![\w-]).{0,40}", txt)][:2]))
+            # e os percentuais que derivam do total também
+            for m in re.finditer(r"(?<![\w.])(\d{1,3}(?:\.0)?)\s*\(\s*(\d{1,3}(?:\.\d+)?)\s*%?\s*\)", txt):
+                a_s, p_s = m.group(1), m.group(2)
+                a_v = float(a_s)
+                if a_v > tot_o:
+                    continue
+                casas = len(p_s.split(".")[1]) if "." in p_s else 0
+                if abs(round(100 * a_v / tot_o, casas) - float(p_s)) > 0.06:
+                    continue
+                if any(r["original"] == p_s for r in registros):
+                    continue                      # já tratado como derivado de um braço
+                novo_p = f"{100 * a_v / tot_p:.{casas}f}"
+                if novo_p == p_s or not ausente(txt, novo_p):
+                    avisos.append(f"{f['ensaio']}: {a_s} ({p_s}) deriva do total {tot_o} mas o "
+                                  f"recomputado {novo_p} colide; fica incoerente e vai registrado")
+                    continue
+                ctx = (r"(?<![\w.])" + re.escape(a_s) + r"\s*\(\s*" + re.escape(p_s) + r"\s*%?\s*\)")
+                registros.append(dict(campo=f"pct_derivado_{a_s}_do_total", papel="percentual derivado",
+                                      original=p_s, perturbado=novo_p,
+                                      derivado_de=f"{a_s}/{tot_p}", contexto_restrito=ctx,
+                                      contextos=[mm.group(0) for mm in re.finditer(
+                                          r".{0,24}" + ctx + r".{0,18}", txt)][:2],
+                                      vazamento_residual=[]))
 
     # conferência 3: colisões dentro do selo do ensaio
     pares = [(r["original"], r["perturbado"]) for r in registros]
@@ -230,7 +348,7 @@ for tid, f in G["bracos_da_fonte"].items():
         falhas.append(f"{f['ensaio']}: a ida e volta não fecha; o selo atropela a si mesmo")
     if registros and n_sub == 0:
         falhas.append(f"{f['ensaio']}: o selo tem pares mas nenhuma substituição foi feita")
-    io.open(PERT / f"{tid}.txt", "w", encoding="utf-8").write(pert)
+    textos[tid] = (txt, pert)
     selo[tid] = registros
 
 print("-" * 100)
@@ -246,12 +364,57 @@ if avisos:
     for a in avisos:
         print("  ·", a)
 
+# conferência 6: nenhum número do texto perturbado reconstrói um denominador ORIGINAL por divisão
+print("\nconferência: o texto perturbado não devolve nenhum denominador original por aritmética")
+for tid, (txt0, pert) in textos.items():
+    f = G["bracos_da_fonte"][tid]
+    desloc = {int(r["original"]): int(r["perturbado"])
+              for r in (selo.get(tid) or []) if r["papel"] == "denominador"}
+    if not desloc:
+        continue
+    k = len(f["bracos"])
+    delatores = []
+    for n_o, n_p in desloc.items():
+        for mult in range(2, k + 1):
+            alvo = n_o * mult
+            if alvo == n_p * mult:
+                continue
+            for m in re.finditer(L.FRONTEIRA_ESQ + str(alvo) + L.FRONTEIRA_DIR + r"[^.]{0,60}", pert):
+                if re.search(r"patient|pacient|randomi|aleatoriz|enroll|includ|incluid|subject|"
+                             r"divided|allocat|asign", m.group(0), re.I):
+                    delatores.append(f"{alvo} (= {n_o}×{mult}) em: …{' '.join(m.group(0).split())[:64]}…")
+    for n_o, n_p in desloc.items():
+        for mult in range(1, k + 1):
+            alvo_n = n_o * mult
+            if alvo_n == n_p * mult:
+                continue
+            for forma in _formas_todas(alvo_n):
+                for m in re.finditer(L.FRONTEIRA_ESQ + re.escape(forma) + r"(?![\w-])[^.]{0,60}", pert):
+                    if re.search(r"patient|pacient|randomi|aleatoriz|enroll|includ|incluid|subject|"
+                                 r"divided|allocat|asign|fulfil|fulﬁl", m.group(0), re.I):
+                        delatores.append(f"{forma!r} (= {alvo_n}) em: "
+                                         f"…{' '.join(m.group(0).split())[:60]}…")
+    if delatores:
+        falhas.append(f"{f['ensaio']}: o texto perturbado ainda contém um total que devolve o "
+                      f"denominador original — " + delatores[0])
+    print(f"  {'ok  ' if not delatores else 'ERRO'} {f['ensaio']:22s} "
+          f"{'nenhum delator' if not delatores else delatores[0][:70]}")
+
 print("\n" + "=" * 100)
 if falhas:
     print("NÃO GRAVADO. Falhas:")
     for x in falhas:
         print("  -", x)
     sys.exit(1)
+
+# nada tocou o disco até aqui: um corpus meio perturbado que uma falha deixasse para trás seria
+# aceito pelo teste de doutrina, e metade da campanha poderia ser extraída de um corpus e corrigida
+# contra outro.
+ORIG.mkdir(parents=True, exist_ok=True)
+PERT.mkdir(parents=True, exist_ok=True)
+for tid, (txt0, pert) in textos.items():
+    io.open(ORIG / f"{tid}.txt", "w", encoding="utf-8").write(txt0)
+    io.open(PERT / f"{tid}.txt", "w", encoding="utf-8").write(pert)
 
 corpo = json.dumps(selo, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
 io.open(D12 / "perturbacoes-a3.json", "w", encoding="utf-8").write(corpo)

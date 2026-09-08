@@ -156,6 +156,29 @@ for tid in GAB["bracos_da_fonte"]:
     if volta != orig:
         divergem.append(tid)
 diz("a lente devolve o perturbado ao original, byte a byte", not divergem, str(divergem))
+# o corpus perturbado não pode devolver o denominador original por aritmética de uma linha. Deixar o
+# TOTAL intacto fazia o Aguilar dizer "Quedaron N: 60 pacientes" com braços de 32 e 32 — e a rede de
+# recitação acusaria justamente quem reconciliasse os dois números.
+delatores = []
+for tid in GAB["bracos_da_fonte"]:
+    desloc = {int(r["original"]): int(r["perturbado"])
+              for r in (SELO.get(tid) or []) if r["papel"] == "denominador"}
+    if not desloc:
+        continue
+    txt = io.open(RAIZ / "corpus" / "estudo12" / "perturbados" / f"{tid}.txt", encoding="utf-8").read()
+    txt = re.sub(r"\s+", " ", txt)
+    k = len(GAB["bracos_da_fonte"][tid]["bracos"])
+    for n_o, n_p in desloc.items():
+        for mult in range(1, k + 1):
+            alvo = n_o * mult
+            if alvo == n_p * mult:
+                continue
+            for m in re.finditer(r"(?<![\w.,\-–])" + str(alvo) + r"(?![\w.])[^.]{0,60}", txt):
+                if re.search(r"patient|pacient|randomi|enroll|includ|incluid|divided|allocat",
+                             m.group(0), re.I):
+                    delatores.append(f"{tid}: {alvo} = {n_o}×{mult}")
+diz("nenhum total do corpus devolve o denominador original", not delatores, str(delatores[:2]))
+
 sem_selo = [t for t in GAB["bracos_da_fonte"] if not SELO.get(t)]
 identicos = [t for t in sem_selo
              if io.open(RAIZ / "corpus" / "estudo12" / "original" / f"{t}.txt", encoding="utf-8").read()
