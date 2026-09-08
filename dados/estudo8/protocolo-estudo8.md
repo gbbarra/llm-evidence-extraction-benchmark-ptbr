@@ -76,6 +76,10 @@ New anchors; new models beyond the cast; any change to seals, keys, corpora or t
 
 **Out of scope**: any other new model; any change to seals, keys, corpora or instruments; comparison with the Portuguese 27B record beyond a clearly labeled note.
 
+### Post-run note, 2026-09-08 (correction to the registered text)
+
+The registration below states that this arm runs "stock chat template (the PT-record 27B of Studies 1-3 ran through a raw-prompt rebuild; this arm does not, so quantization and template are both confounded against that record)". **That is wrong, and the error is the author's, not the model's.** `ollama show --modelfile` on 2026-09-08 shows the build carrying `TEMPLATE {{ .Prompt }}` — the raw-prompt template itself. Only the quantization is confounded against the Portuguese record. Nothing in the run or in the results changes; the registered text is left as written and this note carries the correction, per the project's rule that the record is never rewritten retroactively.
+
 ### Post-run note, 2026-09-07 (measurement, not an amendment to the registration)
 
 The registration above recorded the build's quantization as the two sources printed it, which disagreed. After the phases ran, the question was settled by reading the GGUF header of the weight blob directly (`scripts/estudo8/gguf-inspect.py`; output in `gguf-qwen27q2.json`): the tag's `Q2_K_XL` and the header's `general.file_type = 14` (`MOSTLY_Q4_K_S`, the value `ollama show` prints) both fail to describe the weights, which are mixed — IQ3_XXS on 77.4% of parameters, IQ3_S on 11.7%, Q3_K and Q2_K on 4.7% each, IQ4_XS on 1.5%, IQ1_M on 0.1%, the rest F32 — averaging **3.13 bits per weight** over 27.32 B parameters in 10.68 GB, against ~4.5 bits per weight for the cast's Q4_K_M builds. Nothing in the run changes; this note replaces a hedge with a measurement, and the registered text above is left as it was written.
