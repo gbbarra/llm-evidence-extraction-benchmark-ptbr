@@ -47,6 +47,31 @@ Nenhuma verificação usa o 0,73 publicado como valor esperado. Ele vira o caso 
 metade do motor quando a chave estiver completa, e reproduzi-lo será **resultado da campanha**, não
 pré-condição do instrumento.
 
+**DECIDIDO em 2026-09-08 pelo pesquisador: opção 2 — entra o agrupador de razão de chances, e ganha-se a
+comparação dígito a dígito com o diamante publicado.** A razão de risco vai reportada ao lado, pelo motor
+congelado, em toda tabela de resultado da âncora 3.
+
+**Descoberta que muda o alcance desta decisão, medida em 2026-09-08.** Recuperada a Figura 3 (ver Decisão
+4), foi possível testar o agrupador contra o diamante publicado antes de rodar qualquer modelo. O
+resultado: **o `pool_or_dl` não reproduz o 0,73.** Devolve 0,737 [0,449; 1,208] com tau² 0,1065. O que
+reproduz, dígito a dígito, é o estimador de **Paule-Mandel** com o ajuste de **Hartung-Knapp**: tau²
+0,1334, os oito pesos idênticos aos impressos, intervalo [0,40; 1,36]. Isso não é defeito do instrumento
+nem da leitura; é a revisão ter usado outro estimador — que é o padrão do pacote `meta` do R nas versões
+recentes, e que ela não declara nos métodos.
+
+Consequência prática, e ela é boa: a comparação dígito a dígito continua possível, mas passa a ter **dois
+alvos declarados em vez de um**, e o protocolo tem de dizer qual é qual antes de rodar.
+
+| Caminho | Quem o roda | Contra o quê é comparado |
+|---|---|---|
+| DerSimonian-Laird sobre log OR | o motor do banco, `e12-or.py` | o mesmo caminho aplicado às células do gabarito — mede o modelo, não a revisão |
+| Paule-Mandel com Hartung-Knapp | só o conferidor, `verificar-figura3.py` | o diamante publicado — mede a revisão, não o modelo |
+
+Sem essa separação, um modelo que extraísse as dezesseis células **corretamente** seria reprovado por não
+chegar a 0,73, quando a distância inteira vem do estimador. O erro teria sido atribuído ao modelo. Este é
+exatamente o tipo de contaminação que o portão de generalização existe para não deixar passar, e ele foi
+apanhado antes do primeiro token, porque a chave foi construída antes do protocolo ser congelado.
+
 ---
 
 ## Decisão 2 — ficha v1 ou ficha com citação obrigatória (v2)
@@ -114,19 +139,139 @@ não for possível, (b) com a restrição declarada no protocolo antes de rodar,
 
 **Este é o item que governa o cronograma.** Sem ele resolvido, a Fase 1 não fecha.
 
+**DECIDIDO em 2026-09-08 pelo pesquisador: opção (a) — vai tentar obter os quatro faltantes.**
+
+**A lista dos quatro mudou, e ficou mais fácil.** A recuperação da Figura 3 (Decisão 4) mostrou quais são
+de fato os oito ensaios da análise primária, e não são os que a Tabela 1 sugeria:
+
+| Ensaio | No gráfico de floresta | Primário | Situação |
+|---|---|---|---|
+| Luis-Silva, 2024 | sim | PMC11514138 | aberto, baixado, **camada 2 confere** |
+| Shaker, 2025 | sim | PMC11707904 | aberto, baixado, **camada 2 diverge** (ver A3-D1) |
+| Ibarra-Estrada, 2023 | sim | PMC10010212 | aberto, baixado, **camada 2 confere** |
+| Dong, 2025 | sim | PMC12751372 | aberto, baixado, **camada 2 confere** |
+| Aguilar, 2016 | sim | — | **falta** |
+| Kirov, 2001 | sim | — | **falta** |
+| Levin, 2004 | sim | — | **falta** |
+| Memis, 2002 | sim | — | **falta** |
+| Kuri, 2025 | **não** | PMC11915450 | aberto, baixado, **fora da análise de mortalidade** |
+
+Três correções ao que este arquivo dizia antes:
+
+1. O Kuri 2025 está baixado mas **não entra na análise primária**. Não é um dos nove: a Tabela 1 lista
+   nove ensaios, o agrupamento usa oito, e o que sai é o Kuri, não o Levin.
+2. O Levin 2004 **entra**, ao contrário do que a seção 3.5 da revisão afirma em texto. E o par que este
+   arquivo dizia ser recuperável da Tabela 1 — 0/28 contra 6/28 — está confirmado pela figura.
+3. A preocupação com a janela de seguimento era pertinente mas não é fatal: a Tabela 1 registra
+   seguimento de 24 a 96 horas, e ainda assim o Luis-Silva publica mortalidade em **30 dias** e o Dong em
+   **28 dias**. A coluna de seguimento da Tabela 1 descreve a janela hemodinâmica, não a do desfecho
+   agrupado. Fica como discrepância pendente (A3-D5) para os quatro fechados.
+
+**A camada 1 já está completa e verificada para os oito.** O que os quatro fechados fazem é fechar a
+**camada 2** — a verificação na fonte, com citação — de quatro ensaios entre oito, e resolver a
+discrepância A3-D2 do Aguilar. A Fase 1 já não está bloqueada por eles: está bloqueada apenas a metade
+de auditoria da chave, e o que ela custa está escrito em `ancora3-camada1.json`.
+
 ---
 
-## Decisão 4 — a chave da âncora 3 tem uma camada, não duas
+## Decisão 4 — a chave da âncora 3 tinha uma camada, não duas
 
-**O problema.** As âncoras 1 e 2 têm chave de duas camadas: o que a revisão publicou e o que a fonte diz.
-A âncora 3 **publica uma única estimativa em texto**: o OR 0,73 (IC 95% 0,40 a 1,36), que aparece na
-seção 3.5 e na tabela GRADE. As estimativas por estudo, os pesos e o I² existem apenas na Figura 3, que
-é uma imagem rasterizada. Conferido no XML em 2026-09-08.
+### Primeiro, o que é uma chave de duas camadas
 
-**Recomendação: declarar que a chave da âncora 3 tem camada da fonte completa e camada da revisão com um
-único valor, e tratar isso como resultado, não como limitação.** É a primeira âncora em que o registro
-humano não é conferível célula a célula, e isso diz algo sobre prática editorial que o artigo deve dizer
-com todas as letras.
+Isto foi mal explicado antes e é o que a decisão inteira depende de entender.
+
+Quando um modelo lê os artigos primários e devolve uma tabela de células — mortos e total em cada braço
+de cada ensaio —, é preciso ter contra o que conferir. A campanha confere contra **duas coisas
+diferentes**, e elas respondem a perguntas diferentes:
+
+| | O que é | De onde vem | Que pergunta responde |
+|---|---|---|---|
+| **Camada 1** | o que a revisão publicou | a tabela da própria revisão | o modelo chega ao mesmo lugar que os extratores humanos chegaram? |
+| **Camada 2** | o que a fonte diz | o artigo primário, com a frase transcrita | o modelo chega ao lugar **certo**? |
+
+Ter as duas é o que separa este banco de um exercício de cópia. Quando as duas concordam, medir contra
+qualquer uma dá no mesmo. **Quando discordam, a discordância é o resultado**: significa que os humanos
+erraram, e o modelo que acertou a fonte estaria sendo reprovado por acertar. Foi assim que a âncora 1
+produziu a errata de dezessete entradas — dezessete células em que a revisão publicada não bate com o que
+os ensaios dizem.
+
+**O problema da âncora 3 era este:** a camada 2 estava disponível como sempre, mas a camada 1 quase não
+existia. A revisão imprime em texto **um único número agrupado** — o OR 0,73 (IC 95% 0,40 a 1,36), na
+seção 3.5 e na tabela GRADE — e nenhuma célula por ensaio. As dezesseis células, os oito intervalos e os
+oito pesos existiam só dentro da **Figura 3**, um gráfico de floresta em imagem. Sem eles, a âncora 3
+mediria os modelos mas não poderia auditar os humanos, e o portão de generalização perderia metade do que
+o torna interessante.
+
+### O que foi feito
+
+**RESOLVIDA em 2026-09-08. A camada 1 existe, está completa e está verificada.** Três passos:
+
+**1. O pacote suplementar foi baixado e não tinha os dados.** `jcm-15-04481-s001.zip`, no Europe PMC,
+contém três páginas: estratégias de busca por base e a lista de excluídos com motivo. Nenhuma célula.
+Essa porta estava fechada e agora está fechada por medição, não por suposição.
+
+**2. A Figura 3 foi lida.** O gráfico é do tipo produzido pelo pacote `meta` do R, que **imprime as
+colunas de eventos e totais como texto dentro da imagem**. Não é um gráfico do qual se estima valor
+medindo pixel: os números estão escritos. Foram lidos por visão em 2026-09-08.
+
+**3. A leitura foi verificada por reconstrução, e é isso que a torna utilizável.** Ler imagem por visão
+não produz citação — não há frase para transcrever —, e a regra do projeto é que veredito sem citação não
+entra em gabarito. A saída não foi flexibilizar a regra; foi submeter a leitura a um teste que uma
+leitura errada não passaria. Se as dezesseis células lidas forem as verdadeiras, então elas têm de
+prever, por caminhos que não são o da leitura, tudo o mais que está impresso:
+
+| O que foi previsto | Confere com |
+|---|---|
+| os denominadores por braço dos 7 ensaios de dois braços | a Tabela 1, que é texto XML de verdade, não imagem |
+| as somas 213 e 218 | as linhas de total da própria figura |
+| 8 razões de chances e 16 limites de intervalo | recalculados pelo motor do banco |
+| qui-quadrado 8,89, 7 graus de liberdade, I² 21,3% | a linha de heterogeneidade da figura |
+| os 8 pesos do modelo aleatório | a coluna de peso da figura, ao décimo |
+| o diamante 0,73 [0,40; 1,36] | a linha de total da figura |
+
+**48 de 48 valores impressos previstos a partir de 16 células lidas.** O script é
+`scripts/estudo12/verificar-figura3.py` e roda em segundos. A chave está em
+`dados/estudo12/ancora3-camada1.json`, com a procedência declarada: coordenada na figura mais
+verificação aritmética, **e não citação**. O protocolo dirá isso com todas as letras.
+
+### O que a verificação encontrou de quebra
+
+Reproduzir a figura exigiu descobrir **como** ela foi calculada, e o caminho óbvio não era o certo. Está
+registrado na Decisão 1: a revisão usou Paule-Mandel com Hartung-Knapp, não DerSimonian-Laird, e não
+declara isso nos métodos. Sem essa descoberta, um modelo que extraísse as dezesseis células
+**corretamente** seria reprovado por não chegar a 0,73.
+
+E a camada 2, conferida nos quatro primários abertos que estão na análise, já devolveu **um erro duro na
+revisão publicada**:
+
+> **Shaker 2025.** A revisão registra 15/30 no braço de azul de metileno. O ensaio tem **três** braços:
+> placebo 14/30, azul 1 mg/kg 9/30, azul 4 mg/kg 6/30. A revisão **somou os eventos dos dois braços de
+> azul (9 + 6 = 15) e manteve o denominador de um braço só** — 30 onde deveriam ser 60.
+>
+> Sozinho, o Shaker vai de OR 1,14 [0,41; 3,15] para **0,38 [0,15; 0,96]**: de discretamente contra o
+> azul para significativamente a favor. No diamante, com peso de 16,9%, o agrupado vai de 0,73 [0,40;
+> 1,36] para **0,60 [0,33; 1,12]**.
+>
+> A conclusão da revisão sobrevive — continua sem significância —, mas o número publicado muda.
+
+Os outros três abertos conferem célula a célula, com citação. Faltam quatro, todos fechados (Decisão 3),
+e um deles carrega uma discrepância **interna à própria revisão**, ainda por resolver: a Figura 3 dá o
+Aguilar 2016 como 24/30 contra 19/30, OR 2,32, **a favor do controle**, enquanto a Tabela 1 da mesma
+revisão registra redução de mortalidade para o mesmo ensaio. As cinco discrepâncias candidatas estão
+catalogadas em `ancora3-camada1.json`, duas já confirmadas dentro da própria revisão sem precisar de
+fonte nenhuma: a seção 3.5 descreve uma composição de oito ensaios que não é a da figura, e o `n = 479`
+da tabela GRADE não é o 431 que a figura soma.
+
+### O que isso muda no desenho
+
+A âncora 3 deixa de ser a âncora fraca. Entra com **camada 1 completa e verificada, camada 2 já em
+construção com um erro confirmado, e cinco discrepâncias catalogadas antes do primeiro token**. É a
+primeira âncora em que o gabarito foi fechado antes de qualquer modelo rodar, e não depois — o que é
+exatamente a ordem que o pré-registro exige e que as âncoras 1 e 2 só conseguiram em parte.
+
+Uma coisa não muda e vale dizer: **nada disso é acessível aos modelos.** Eles leem os primários e
+devolvem células. A figura, o suplementar e este arquivo são material de correção, e ficam do lado do
+conferidor, como a lente de desperturbação sempre ficou.
 
 **Correção ao reconhecimento de 2026-09-02.** Aquele arquivo afirma que a revisão "prints no numbers in
 its Results prose". Isso vale para as estimativas por estudo, não para o diamante: a frase "The pooled
@@ -152,6 +297,10 @@ especulativa, que muda velocidade e não leitura.
 configuração de execução, não leitura, e devolveria um quase duplicado do sexto modelo. O que ela
 responde é uma pergunta de implantação, e essa merece **uma medição de pegada de memória no contexto de
 16.384**, de meia hora, entrando no artigo como nota de hardware.
+
+**DECIDIDO em 2026-09-08 pelo pesquisador: fica o elenco de seis, com o Argos, que é o que já estamos
+usando. A segunda tag não entra.** A nota de hardware muda de contexto: a medição de pegada de memória
+passa a ser feita em **24.576**, não em 16.384, para acompanhar a Decisão 6.
 
 **Erro corrigido no caminho.** Ao medir isso descobri que o artigo e o registro afirmavam que o braço de
 extensão rodou com "template de chat padrão". Está errado: o build carrega o template de prompt cru, o
@@ -198,6 +347,28 @@ Cobre o pior primário aberto da âncora 3 com quase 5.000 de folga e dá margem
 ainda desconhecidos. A uniformidade evita que o contexto vire variável confundida entre âncoras. A
 mudança quebra a comparabilidade direta com o registro atual, que rodou em 16.384, e o protocolo deve
 declarar que a motivação foi esta medição.
+
+---
+
+## Instrução de operação — retomada obrigatória
+
+**Dada pelo pesquisador em 2026-09-08:** *"Não temos problemas de horas, pode rodar tranquilo, faça de
+forma que se for interrompido possamos continuar de onde parou."*
+
+Isso é uma restrição de projeto, não uma preferência, e vale para as Fases 3 a 5 inteiras. Traduzida em
+requisito verificável, e o orçamento de 43 horas de máquina a torna inegociável:
+
+| Requisito | Como se cumpre |
+|---|---|
+| Toda chamada gravada assim que volta | uma saída por arquivo, nomeada por âncora, ficha, modelo e ensaio; nada acumulado em memória até o fim |
+| Retomar é pular o que existe | antes de chamar, verificar se o arquivo de saída já existe e está íntegro; se estiver, seguir |
+| Interrupção não corrompe | escrever em arquivo temporário e renomear ao fim; renomeação é atômica, escrita não é |
+| Trocar de modelo é ponto de parada seguro | um modelo residente por vez, `ollama stop` entre eles, e a fronteira entre modelos é onde a retomada custa menos |
+| Saber onde parou sem adivinhar | um inventário que conta o que existe contra o que o protocolo prevê, rodável a qualquer momento |
+| Reprovado é registrado, não apagado | vale a regra de sempre: saída ruim fica gravada com o motivo |
+
+O harness já grava por chamada. O que falta é o **portão de retomada** e o **inventário**, e os dois
+entram na Fase 2, junto com o congelamento do protocolo — não como conserto depois da primeira queda.
 
 ---
 

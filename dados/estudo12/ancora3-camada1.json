@@ -1,0 +1,87 @@
+{
+  "ancora": 3,
+  "revisao": "PMC13302755",
+  "desfecho": "mortalidade em 28 a 30 dias, todas as causas",
+  "camada": 1,
+  "o_que_e": "o que a revisao publicou, celula a celula, como os proprios extratores humanos registraram",
+  "procedencia": "Figura 3 (jcm-15-04481-g003.jpg), grafico de floresta rasterizado, obtido do pacote suplementar do Europe PMC. Lido por visao em 2026-09-08 e verificado por reconstrucao aritmetica: scripts/estudo12/verificar-figura3.py, 48 de 48 valores impressos previstos a partir das 16 celulas lidas.",
+  "sem_citacao": "Nenhuma celula desta camada tem frase para transcrever. A procedencia e a coordenada na figura mais a verificacao aritmetica, e o protocolo declara isso.",
+  "metodo_da_revisao": {
+    "medida": "razao de chances",
+    "estimador_tau2": "Paule-Mandel",
+    "intervalo": "Hartung-Knapp com t de Student, 7 graus de liberdade",
+    "continuidade": "0,5 em todas as quatro casas quando ha casa zero (Levin)",
+    "nota": "NAO e DerSimonian-Laird. O motor do banco roda DL e devolve 0,737 [0,449; 1,208] com tau2 0,1065. A diferenca e de estimador, nao de leitura nem de aritmetica."
+  },
+  "estudos": [
+    {"estudo": "Luis-Silva, 2024",      "eventos_mb":  9, "n_mb": 19, "eventos_st": 14, "n_st": 23, "or": 0.58, "ic95": [0.17, 1.98], "peso": 12.9, "primario": "PMC11514138", "aberto": true},
+    {"estudo": "Shaker, 2025",          "eventos_mb": 15, "n_mb": 30, "eventos_st": 14, "n_st": 30, "or": 1.14, "ic95": [0.41, 3.15], "peso": 16.9, "primario": "PMC11707904", "aberto": true},
+    {"estudo": "Ibarra-Estrada, 2023",  "eventos_mb": 15, "n_mb": 45, "eventos_st": 21, "n_st": 46, "or": 0.60, "ic95": [0.25, 1.39], "peso": 21.1, "primario": "PMC10010212", "aberto": true},
+    {"estudo": "Aguilar, 2016",         "eventos_mb": 24, "n_mb": 30, "eventos_st": 19, "n_st": 30, "or": 2.32, "ic95": [0.72, 7.41], "peso": 14.0, "primario": null, "aberto": false},
+    {"estudo": "Kirov, 2001",           "eventos_mb":  5, "n_mb": 10, "eventos_st":  7, "n_st": 10, "or": 0.43, "ic95": [0.07, 2.68], "peso":  6.7, "primario": null, "aberto": false},
+    {"estudo": "Levin, 2004",           "eventos_mb":  0, "n_mb": 28, "eventos_st":  6, "n_st": 28, "or": 0.06, "ic95": [0.00, 1.14], "peso":  2.9, "primario": null, "aberto": false},
+    {"estudo": "Dong, 2025",            "eventos_mb":  9, "n_mb": 36, "eventos_st": 15, "n_st": 36, "or": 0.47, "ic95": [0.17, 1.27], "peso": 17.1, "primario": "PMC12751372", "aberto": true},
+    {"estudo": "Memis, 2002",           "eventos_mb":  4, "n_mb": 15, "eventos_st":  4, "n_st": 15, "or": 1.00, "ic95": [0.20, 5.04], "peso":  8.3, "primario": null, "aberto": false}
+  ],
+  "agrupado": {"or": 0.73, "ic95": [0.40, 1.36], "tau2": 0.1334, "chi2": 8.89, "gl": 7, "i2": 21.3,
+               "total_mb": 213, "total_st": 218},
+  "fora_desta_analise": {
+    "estudo": "Kuri, 2025", "primario": "PMC11915450", "aberto": true,
+    "motivo": "esta na Tabela 1 da revisao (74 pacientes, azul contra vasopressina) e NAO esta no grafico de floresta da mortalidade"
+  },
+  "discrepancias_candidatas": [
+    {
+      "id": "A3-D1",
+      "estudo": "Shaker, 2025",
+      "status": "CONFIRMADA contra a fonte",
+      "camada1": "15/30 no braco de azul",
+      "camada2": "o ensaio tem tres bracos: A placebo 14/30 (46,7%), B azul 1 mg/kg 9/30 (30,0%), C azul 4 mg/kg 6/30 (20,0%)",
+      "citacao": "Mortality rate | 14 (46.7%) | 9 (30.0%) | 6 (20.0%) | 0.083",
+      "leitura": "a revisao somou os eventos dos dois bracos de azul (9 + 6 = 15) e manteve o denominador de um braco so (30 em vez de 60)",
+      "efeito": "Shaker sozinho vai de OR 1,14 [0,41; 3,15] para 0,38 [0,15; 0,96]; o diamante vai de 0,73 [0,40; 1,36] para 0,60 [0,33; 1,12]",
+      "conclusao_da_revisao": "sobrevive: continua sem significancia estatistica"
+    },
+    {
+      "id": "A3-D2",
+      "estudo": "Aguilar, 2016",
+      "status": "PENDENTE do primario fechado",
+      "camada1": "24/30 no azul contra 19/30 no controle, OR 2,32, a favor do controle",
+      "conflito": "a coluna Key Results da Tabela 1 da mesma revisao registra reducao de mortalidade para este ensaio",
+      "leitura": "a figura e a tabela da mesma revisao discordam de sinal"
+    },
+    {
+      "id": "A3-D3",
+      "escopo": "composicao da analise primaria",
+      "status": "CONFIRMADA dentro da propria revisao",
+      "texto": "a secao 3.5 afirma que a analise foi restrita aos oito ensaios de choque septico, excluindo Levin 2004",
+      "figura": "os oito do grafico de floresta INCLUEM Levin 2004 e EXCLUEM Kuri 2025",
+      "leitura": "o texto descreve uma composicao que nao e a da figura"
+    },
+    {
+      "id": "A3-D4",
+      "escopo": "denominador da tabela GRADE",
+      "status": "CONFIRMADA dentro da propria revisao",
+      "grade": "8 estudos, n = 479",
+      "figura": "213 + 218 = 431",
+      "leitura": "479 e a soma dos N da Tabela 1 dos oito ensaios septicos, com Kuri dentro, Shaker inteiro (90) e Levin fora: outra composicao ainda"
+    },
+    {
+      "id": "A3-D5",
+      "escopo": "janela do desfecho",
+      "status": "PENDENTE dos primarios fechados",
+      "leitura": "a Tabela 1 registra seguimento de 24 h (Kirov, Dong), 48 h (Memis), 72 h (Aguilar, Luis-Silva, Shaker) e 96 h (Levin), mas a analise e rotulada mortalidade em 28 a 30 dias",
+      "ja_conferido": "Luis-Silva publica mortalidade em 30 dias e Dong em 28 dias, apesar do que a Tabela 1 registra na coluna de seguimento"
+    }
+  ],
+  "camada2_ja_verificada": [
+    {"estudo": "Ibarra-Estrada, 2023", "confere": true,
+     "citacao": "Mortality at 28 days-no. (%) | 15/45 (33) | 21/46 (46) | 0.76 (0.55-1.05) | 0.23"},
+    {"estudo": "Luis-Silva, 2024", "confere": true,
+     "citacao": "However, patients in the MB group used fewer days of vasopressors and had a mortality rate in 30 days of 47% versus 61% in the Control group.",
+     "nota": "9/19 = 47,4% e 14/23 = 60,9%; a fonte publica so o percentual, e ele bate com as celulas da figura"},
+    {"estudo": "Dong, 2025", "confere": true,
+     "citacao": "Mortality at 28 days-no. (%) | 9.0 (25.0) | 15.0 (41.7) | 0.200"},
+    {"estudo": "Shaker, 2025", "confere": false, "ver": "A3-D1"}
+  ],
+  "faltam": ["Aguilar 2016", "Kirov 2001", "Levin 2004", "Memis 2002"]
+}
