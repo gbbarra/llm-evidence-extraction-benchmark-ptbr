@@ -120,7 +120,7 @@ The perturbation doctrine is constitutive of the method: it is what turns "the m
 - **P2 — grading.** The sealed lens is applied to the model's sheet by the grader; the resulting cells are compared to layer 2 by the frozen magnitude comparator; unmatched cells go to adjudication.
 - **P3 — arithmetic.** The frozen engine over each model's graded cells: RR and MD for anchors 1 and 2; for anchor 3 both the odds ratio and the risk ratio, side by side.
 - **P4 — adjudication and errata.** Divergences between layers, replicates and models are adjudicated with the quotation shown before the verdict; every rejected output is recorded with its reason and nothing is deleted.
-- **P5 — writing.** One article. No phase is added after results are seen except by dated amendment.
+- **P5 — writing.** One article. No phase is added after results are seen except by dated amendment. **The Discussion carries, in its own words and without hedging, the three design choices flagged in the registration note below** — why anchor 3's reading proof was built the way it was and what it does not cover, why the forest plot governs among the review's three descriptions of itself, and why Aguilar's 21-day figure is pooled with its exclusion reported beside it. A reader must be able to disagree with each of the three without having to reconstruct it from the data.
 
 ## 8. Instrument work commissioned by this protocol (built and committed BEFORE the phases that use them)
 
@@ -167,7 +167,7 @@ Phase 0 budgeted 720 calls and ≈43 h. Two things changed: anchor 3's mortality
 
 ## 11. Outputs
 
-This protocol · the two anchor-3 sheets in `prompts/`, sealed · the anchor-3 gradable key · the sealed anchor-3 perturbation map and its SHA-256 · the perturbed anchor-3 corpus · per-call outputs under `saidas/<anchor>/<sheet>/<model>/` · the inventory script and its report · grading and adjudication records per anchor · `erratas-ancora-3.md` · the campaign report · one article.
+This protocol · the two anchor-3 sheets in `prompts/`, sealed · the anchor-3 gradable key · the sealed anchor-3 perturbation map and its SHA-256 · the perturbed anchor-3 corpus · per-call outputs under `saidas/<anchor>/<sheet>/<model>/` · the inventory script and its report · grading and adjudication records per anchor · [`erratas-ancora-3.md`](erratas-ancora-3.md), in the shape of anchor 1's record — every item with the quotation that decides it, the categories separated, and the verified-and-correct trials listed so the list is read against its denominator · [`errata-alert-table-ancora3.md`](errata-alert-table-ancora3.md), the alert table for the journal and the authors, drafted and **held**: sending it is the author's act, not the harness's · the campaign report · one article.
 
 ## 12. Out of scope
 
@@ -186,5 +186,11 @@ The six Phase-0 decisions recorded in `decisoes-fase0.md`, all dated 2026-09-08 
 1. **§6, the anchor-3 perturbation design** — displacing the denominator with coherent recomputation, and grading anchor 3 through a boundary-aware lens, rather than displacing the percentage alone or declaring the anchor unperturbed.
 2. **§4, the target set** — the forest plot's eight trials, among the review's three incompatible descriptions of its own analysis.
 3. **§5, A3-D5** — Aguilar's 21-day figure with exclusion as a registered sensitivity analysis, rather than excluding it outright.
+
+**Author's decision, 2026-09-08**: the three choices above were put to the author with their
+alternatives and their costs, and the author kept all three, adding that the article's Discussion must
+explain them and that anchor 3 needs an errata table in the shape of anchor 1's. Both are now
+requirements of this protocol — the first in §7 (P5), the second in §11 — and the errata record and its
+alert table were written the same day, before any model call, from material that was already complete.
 
 This document was reviewed before registration by five independent lenses, each finding verified by a skeptic instructed to refute it: 77 raised, 34 refuted, 43 confirmed and applied here. The refuted set includes four separate claims that H12.2 registers a target the frozen engine cannot produce; each fell on the ground that the hypothesis names its estimator and §5 defines it.
