@@ -187,6 +187,27 @@ diz("os ensaios sem selo têm corpus idêntico ao original",
     sorted(identicos) == sorted(sem_selo), f"sem prova de leitura: {sorted(sem_selo)}")
 
 # ══════════════════════════════════════════════════════════════════════════
+secao(8.5, "O SELO NÃO PODE SER RECONSTRUÍDO DO QUE SE PUBLICA",
+      "the sealed map is the instrument; publishing both sides of it publishes the map")
+# Esta doutrina não estava testada, e eu a quebrei: versionei o corpus original AO LADO do
+# perturbado. Um `git diff` entre os dois reconstrói o selo inteiro, e a prova de leitura vira
+# decoração. As âncoras 1 e 2 nunca versionaram nem o perturbado nem o texto plano dos primários.
+rastreados = subprocess.run(["git", "ls-files", "corpus/estudo12", "dados/estudo12"],
+                            capture_output=True, text=True, cwd=str(RAIZ)).stdout.split()
+vaza_corpus = [f for f in rastreados if "/original/" in f or "/perturbados/" in f]
+diz("nem o corpus original nem o perturbado são versionados", not vaza_corpus, str(vaza_corpus[:2]))
+diz("o mapa selado não é versionado", "dados/estudo12/perturbacoes-a3.json" not in rastreados)
+diz("mas o SHA-256 dele é", "dados/estudo12/perturbacoes-a3.sha256" in rastreados)
+# o estrato fechado: texto plano de artigo de assinatura nunca é versionado, em lugar nenhum
+todos = subprocess.run(["git", "ls-files"], capture_output=True, text=True, cwd=str(RAIZ)).stdout.split()
+fechados = ("kirov2001", "memis2002", "levin2004")
+vaza_fechado = [f for f in todos if any(k in f.lower() for k in fechados)]
+diz("nenhum arquivo dos primários de acesso fechado é versionado", not vaza_fechado,
+    str(vaza_fechado[:2]))
+# e o corpus tem de continuar existindo em disco, senão a campanha não roda
+em_disco = len(list((RAIZ / "corpus" / "estudo12" / "perturbados").glob("*.txt")))
+diz("e o corpus perturbado continua em disco, para a campanha rodar", em_disco == 8, f"{em_disco}/8")
+
 secao(9, "NADA DE CAP SILENCIOSO", "no silent caps: what is dropped is logged")
 mort = [{"arm_label": {"value": "grupo inexistente"}, "timepoint": {"value": "28 days"},
          "deaths": {"value": "3"}, "n": {"value": "33"}, "deaths_percent": {"value": "NR"}}]
