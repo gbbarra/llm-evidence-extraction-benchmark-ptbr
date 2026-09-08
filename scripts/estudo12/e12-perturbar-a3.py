@@ -400,6 +400,39 @@ for tid, (txt0, pert) in textos.items():
     print(f"  {'ok  ' if not delatores else 'ERRO'} {f['ensaio']:22s} "
           f"{'nenhum delator' if not delatores else delatores[0][:70]}")
 
+# conferência 7: nenhuma frase citável é falsificada pela lente.
+# A ficha v2 pede uma frase verbatim de até 240 caracteres contendo o valor. Se a lente devolver
+# alguma delas para uma forma que o artigo original não tem, a citação foi adulterada e a rede de
+# proveniência julgaria um texto que o modelo não escreveu.
+print()
+print("conferência: a lente não falsifica nenhuma frase que a ficha v2 citaria")
+_FRASE = re.compile(r"[^.]*?(?:\.(?!\d)|$)")          # ponto que não é separador decimal
+for tid, (txt0, pert) in textos.items():
+    regs = selo.get(tid) or []
+    if not regs:
+        continue
+    pares = [(r["perturbado"], r["original"]) for r in regs]
+    plano_o = re.sub(r"\s+", " ", txt0)
+    plano_p = re.sub(r"\s+", " ", pert)
+    em_risco, falsas = 0, []
+    for m in _FRASE.finditer(plano_p):
+        fr = m.group(0).strip()
+        if not (20 <= len(fr) <= 240):
+            continue
+        if not any(re.search(L.FRONTEIRA_ESQ + re.escape(str(p)) + L.FRONTEIRA_DIR, fr)
+                   for p, _ in pares):
+            continue
+        em_risco += 1
+        volta, _ = L.aplica(fr, pares)
+        if volta not in plano_o:
+            falsas.append((fr, volta))
+    if falsas:
+        falhas.append(f"{G['bracos_da_fonte'][tid]['ensaio']}: a lente falsifica "
+                      f"{len(falsas)} frase(s) citável(is); a primeira devolve "
+                      f"…{falsas[0][1][-70:]}")
+    print(f"  {'ok  ' if not falsas else 'ERRO'} {G['bracos_da_fonte'][tid]['ensaio']:22s} "
+          f"{em_risco:3d} frases em risco · {len(falsas)} falsificadas")
+
 print("\n" + "=" * 100)
 if falhas:
     print("NÃO GRAVADO. Falhas:")
