@@ -1,0 +1,274 @@
+[
+  {
+    "ensaio": "Luis-Silva, 2024",
+    "campo": "azul %",
+    "valor": "47",
+    "papel": "evento",
+    "ocorrencias": 2,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Luis-Silva, 2024",
+    "campo": "controle %",
+    "valor": "61",
+    "papel": "evento",
+    "ocorrencias": 3,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Luis-Silva, 2024",
+    "campo": "n azul",
+    "valor": "19",
+    "papel": "denominador",
+    "ocorrencias": 8,
+    "perturbavel": false
+  },
+  {
+    "ensaio": "Luis-Silva, 2024",
+    "campo": "n controle",
+    "valor": "23",
+    "papel": "denominador",
+    "ocorrencias": 6,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Shaker, 2025",
+    "campo": "placebo n",
+    "valor": "14",
+    "papel": "evento",
+    "ocorrencias": 5,
+    "perturbavel": false
+  },
+  {
+    "ensaio": "Shaker, 2025",
+    "campo": "placebo %",
+    "valor": "46.7",
+    "papel": "evento",
+    "ocorrencias": 3,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Shaker, 2025",
+    "campo": "1 mg/kg n",
+    "valor": "9",
+    "papel": "evento",
+    "ocorrencias": 11,
+    "perturbavel": false
+  },
+  {
+    "ensaio": "Shaker, 2025",
+    "campo": "1 mg/kg %",
+    "valor": "30.0",
+    "papel": "evento",
+    "ocorrencias": 4,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Shaker, 2025",
+    "campo": "4 mg/kg n",
+    "valor": "6",
+    "papel": "evento",
+    "ocorrencias": 14,
+    "perturbavel": false
+  },
+  {
+    "ensaio": "Shaker, 2025",
+    "campo": "4 mg/kg %",
+    "valor": "20.0",
+    "papel": "evento",
+    "ocorrencias": 3,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Shaker, 2025",
+    "campo": "n por braço",
+    "valor": "30",
+    "papel": "denominador",
+    "ocorrencias": 20,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Ibarra-Estrada, 2023",
+    "campo": "azul n",
+    "valor": "15",
+    "papel": "evento",
+    "ocorrencias": 5,
+    "perturbavel": false
+  },
+  {
+    "ensaio": "Ibarra-Estrada, 2023",
+    "campo": "azul %",
+    "valor": "33",
+    "papel": "evento",
+    "ocorrencias": 2,
+    "perturbavel": false
+  },
+  {
+    "ensaio": "Ibarra-Estrada, 2023",
+    "campo": "controle n",
+    "valor": "21",
+    "papel": "evento",
+    "ocorrencias": 4,
+    "perturbavel": false
+  },
+  {
+    "ensaio": "Ibarra-Estrada, 2023",
+    "campo": "controle %",
+    "valor": "46",
+    "papel": "evento",
+    "ocorrencias": 12,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Ibarra-Estrada, 2023",
+    "campo": "n azul",
+    "valor": "45",
+    "papel": "denominador",
+    "ocorrencias": 9,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Ibarra-Estrada, 2023",
+    "campo": "n controle",
+    "valor": "46",
+    "papel": "denominador",
+    "ocorrencias": 12,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Aguilar, 2016",
+    "campo": "azul %",
+    "valor": "20.0",
+    "papel": "evento",
+    "ocorrencias": 3,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Aguilar, 2016",
+    "campo": "controle %",
+    "valor": "36.6",
+    "papel": "evento",
+    "ocorrencias": 3,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Aguilar, 2016",
+    "campo": "n por braço",
+    "valor": "30",
+    "papel": "denominador",
+    "ocorrencias": 13,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Kirov, 2001",
+    "campo": "sobrev. azul",
+    "valor": "5",
+    "papel": "evento",
+    "ocorrencias": 21,
+    "perturbavel": false
+  },
+  {
+    "ensaio": "Kirov, 2001",
+    "campo": "sobrev. controle",
+    "valor": "3",
+    "papel": "evento",
+    "ocorrencias": 13,
+    "perturbavel": false
+  },
+  {
+    "ensaio": "Kirov, 2001",
+    "campo": "n por braço",
+    "valor": "10",
+    "papel": "denominador",
+    "ocorrencias": 31,
+    "perturbavel": false
+  },
+  {
+    "ensaio": "Levin, 2004",
+    "campo": "azul n",
+    "valor": "0",
+    "papel": "evento",
+    "ocorrencias": 15,
+    "perturbavel": false
+  },
+  {
+    "ensaio": "Levin, 2004",
+    "campo": "controle n",
+    "valor": "6",
+    "papel": "evento",
+    "ocorrencias": 12,
+    "perturbavel": false
+  },
+  {
+    "ensaio": "Levin, 2004",
+    "campo": "controle %",
+    "valor": "21.4",
+    "papel": "evento",
+    "ocorrencias": 4,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Levin, 2004",
+    "campo": "n por braço",
+    "valor": "28",
+    "papel": "denominador",
+    "ocorrencias": 12,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Dong, 2025",
+    "campo": "azul n",
+    "valor": "9",
+    "papel": "evento",
+    "ocorrencias": 7,
+    "perturbavel": false
+  },
+  {
+    "ensaio": "Dong, 2025",
+    "campo": "azul %",
+    "valor": "25.0",
+    "papel": "evento",
+    "ocorrencias": 4,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Dong, 2025",
+    "campo": "controle n",
+    "valor": "15",
+    "papel": "evento",
+    "ocorrencias": 8,
+    "perturbavel": false
+  },
+  {
+    "ensaio": "Dong, 2025",
+    "campo": "controle %",
+    "valor": "41.7",
+    "papel": "evento",
+    "ocorrencias": 3,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Dong, 2025",
+    "campo": "n por braço",
+    "valor": "36",
+    "papel": "denominador",
+    "ocorrencias": 12,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Memis, 2002",
+    "campo": "mortalidade %",
+    "valor": "26.6",
+    "papel": "evento",
+    "ocorrencias": 1,
+    "perturbavel": true
+  },
+  {
+    "ensaio": "Memis, 2002",
+    "campo": "n por braço",
+    "valor": "15",
+    "papel": "denominador",
+    "ocorrencias": 9,
+    "perturbavel": false
+  }
+]
