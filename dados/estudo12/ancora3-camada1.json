@@ -266,95 +266,131 @@
   "peso_ainda_fechado_pct": 0.0,
   "peso_verificavel_na_fonte_pct": 100.0,
   "cenarios_de_correcao": {
-    "nota": "todos por Paule-Mandel com Hartung-Knapp, o caminho da revisao. O caminho do motor do banco (DerSimonian-Laird, normal) esta ao lado e concorda em sinal e significancia.",
+    "produzido_por": "scripts/estudo12/cenarios-ancora3.py",
+    "nota": "PM+HK e a rota da propria revisao (Paule-Mandel, Hartung-Knapp, t de Student com k-1 graus) e so o conferidor a usa; DL e o motor do banco, aplicado a celula de modelo. Corrigido em 2026-09-08: o cenario sem o Aguilar tem 7 estudos e 6 graus de liberdade, e estava usando t de 7 graus -- o limite superior era 0,73 e o correto e 0,74.",
     "cenarios": [
       {
         "rotulo": "como a revisao publicou",
-        "or": 0.73,
-        "ic95": [
-          0.4,
-          1.36
-        ],
-        "i2_pct": 21,
-        "significativo": false,
+        "k": 8,
+        "gl": 7,
+        "t_student": 2.364624,
+        "pm_hk": {
+          "or": 0.735,
+          "ic95": [
+            0.397,
+            1.361
+          ],
+          "tau2": 0.1334,
+          "i2": 21.3
+        },
         "dl": {
           "or": 0.737,
           "ic95": [
             0.449,
             1.208
-          ]
+          ],
+          "tau2": 0.1065,
+          "i2": 21.3
         }
       },
       {
         "rotulo": "so o Shaker corrigido (15/60)",
-        "or": 0.6,
-        "ic95": [
-          0.33,
-          1.12
-        ],
-        "i2_pct": 24,
-        "significativo": false,
+        "k": 8,
+        "gl": 7,
+        "t_student": 2.364624,
+        "pm_hk": {
+          "or": 0.604,
+          "ic95": [
+            0.325,
+            1.122
+          ],
+          "tau2": 0.147,
+          "i2": 24.0
+        },
         "dl": {
           "or": 0.604,
           "ic95": [
             0.367,
             0.994
-          ]
+          ],
+          "tau2": 0.1205,
+          "i2": 24.0
         }
       },
       {
         "rotulo": "so o Aguilar corrigido (6/30 contra 11/30)",
-        "or": 0.59,
-        "ic95": [
-          0.38,
-          0.91
-        ],
-        "i2_pct": 0,
-        "significativo": true,
+        "k": 8,
+        "gl": 7,
+        "t_student": 2.364624,
+        "pm_hk": {
+          "or": 0.592,
+          "ic95": [
+            0.385,
+            0.912
+          ],
+          "tau2": 0.0,
+          "i2": 0.0
+        },
         "dl": {
           "or": 0.592,
           "ic95": [
             0.387,
             0.905
-          ]
+          ],
+          "tau2": 0.0,
+          "i2": 0.0
         }
       },
       {
         "rotulo": "os dois corrigidos",
-        "or": 0.48,
-        "ic95": [
-          0.34,
-          0.69
-        ],
-        "i2_pct": 0,
-        "significativo": true,
+        "k": 8,
+        "gl": 7,
+        "t_student": 2.364624,
+        "pm_hk": {
+          "or": 0.484,
+          "ic95": [
+            0.342,
+            0.685
+          ],
+          "tau2": 0.0,
+          "i2": 0.0
+        },
         "dl": {
           "or": 0.484,
           "ic95": [
             0.319,
             0.735
-          ]
+          ],
+          "tau2": 0.0,
+          "i2": 0.0
         }
       },
       {
         "rotulo": "Shaker corrigido, Aguilar excluido",
-        "or": 0.49,
-        "ic95": [
-          0.33,
-          0.73
-        ],
-        "i2_pct": 0,
-        "significativo": true,
+        "k": 7,
+        "gl": 6,
+        "t_student": 2.446912,
+        "pm_hk": {
+          "or": 0.493,
+          "ic95": [
+            0.326,
+            0.744
+          ],
+          "tau2": 0.0,
+          "i2": 0.0
+        },
         "dl": {
           "or": 0.493,
           "ic95": [
             0.315,
             0.77
-          ]
+          ],
+          "tau2": 0.0,
+          "i2": 0.0
         }
       }
     ],
-    "leitura": "a conclusao publicada -- de que nao ha beneficio de mortalidade -- nao sobrevive a correcao, e nao sobrevive por nenhum dos caminhos, inclusive excluindo o Aguilar. Isto e resultado da campanha e vai declarado como tal, nao como achado incidental."
+    "leitura": "a conclusao publicada nao sobrevive a correcao por nenhuma rota nem por nenhum tratamento do Aguilar. Isto e resultado da campanha e vai declarado como tal."
   },
   "camada2_estado": {
     "fechada": true,
