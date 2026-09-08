@@ -198,6 +198,21 @@ vaza_corpus = [f for f in rastreados if "/original/" in f or "/perturbados/" in 
 diz("nem o corpus original nem o perturbado são versionados", not vaza_corpus, str(vaza_corpus[:2]))
 diz("o mapa selado não é versionado", "dados/estudo12/perturbacoes-a3.json" not in rastreados)
 diz("mas o SHA-256 dele é", "dados/estudo12/perturbacoes-a3.sha256" in rastreados)
+# um selo que o git traduz na saída não é um selo. Com core.autocrlf, um checkout converteria LF em
+# CRLF nos arquivos selados e nenhum SHA bateria num clone novo -- e o sintoma seria indistinguível
+# de selo violado.
+attrs = io.open(RAIZ / ".gitattributes", encoding="utf-8").read() if (RAIZ / ".gitattributes").exists() else ""
+diz("os arquivos selados estão protegidos de tradução de quebra de linha",
+    "*.sha256" in attrs and "-text" in attrs)
+for rel in ("dados/estudo12/fichas.sha256", "dados/estudo12/perturbacoes-a3.sha256"):
+    saida = subprocess.run(["git", "check-attr", "text", "--", rel],
+                           capture_output=True, text=True, cwd=str(RAIZ)).stdout.strip()
+    diz(f"{rel.split('/')[-1]} marcado como não-texto", "unset" in saida, saida[-22:])
+diz("e as seis fichas seladas conferem contra os selos",
+    all(hashlib.sha256(io.open(RAIZ / l.split(None, 2)[2].strip(), "rb").read()).hexdigest()
+        == l.split(None, 2)[0]
+        for l in io.open(RAIZ / "dados" / "estudo12" / "fichas.sha256", encoding="utf-8")
+        .read().splitlines() if l.strip() and not l.startswith("#")))
 # o estrato fechado: texto plano de artigo de assinatura nunca é versionado, em lugar nenhum
 todos = subprocess.run(["git", "ls-files"], capture_output=True, text=True, cwd=str(RAIZ)).stdout.split()
 fechados = ("kirov2001", "memis2002", "levin2004")
