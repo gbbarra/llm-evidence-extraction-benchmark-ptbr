@@ -87,8 +87,10 @@
         2.68
       ],
       "peso": 6.7,
-      "primario": null,
-      "aberto": false
+      "primario": "kirov2001.pdf",
+      "aberto": true,
+      "citacao_bibliografica": "Crit Care Med 2001;29(9):1860-7, PMID 11588440",
+      "nota_acesso": "fechado na editora; obtido pelo pesquisador em 2026-09-08 e adicionado ao corpus"
     },
     {
       "estudo": "Levin, 2004",
@@ -102,8 +104,10 @@
         1.14
       ],
       "peso": 2.9,
-      "primario": null,
-      "aberto": false
+      "primario": "levin2004.pdf",
+      "aberto": true,
+      "citacao_bibliografica": "Ann Thorac Surg 2004;77(2):496-9, PMID 14759425",
+      "nota_acesso": "fechado na editora; obtido pelo pesquisador em 2026-09-08 e adicionado ao corpus"
     },
     {
       "estudo": "Dong, 2025",
@@ -132,8 +136,10 @@
         5.04
       ],
       "peso": 8.3,
-      "primario": null,
-      "aberto": false
+      "primario": "memis2002.pdf",
+      "aberto": true,
+      "citacao_bibliografica": "Anaesth Intensive Care 2002;30(6):755-62, PMID 12500513",
+      "nota_acesso": "fechado na editora; obtido pelo pesquisador em 2026-09-08 e adicionado ao corpus"
     }
   ],
   "agrupado": {
@@ -211,15 +217,38 @@
   ],
   "camada2_ja_verificada": [
     {
+      "estudo": "Luis-Silva, 2024",
+      "confere": true,
+      "citacao": "mortality rate in 30 days of 47% versus 61% in the Control group",
+      "nota": "a fonte publica percentual; 9/19 = 47,4% e 14/23 = 60,9%"
+    },
+    {
+      "estudo": "Shaker, 2025",
+      "confere": false,
+      "ver": "A3-D1",
+      "citacao": "Mortality rate | 14 (46.7%) | 9 (30.0%) | 6 (20.0%) | 0.083"
+    },
+    {
       "estudo": "Ibarra-Estrada, 2023",
       "confere": true,
       "citacao": "Mortality at 28 days-no. (%) | 15/45 (33) | 21/46 (46) | 0.76 (0.55-1.05) | 0.23"
     },
     {
-      "estudo": "Luis-Silva, 2024",
+      "estudo": "Aguilar, 2016",
+      "confere": false,
+      "ver": "A3-D2",
+      "citacao": "en el grupo A la mortalidad al egreso fue de 20.0% ... del grupo C, donde al egreso la mortalidad fue de 36.6%"
+    },
+    {
+      "estudo": "Kirov, 2001",
       "confere": true,
-      "citacao": "However, patients in the MB group used fewer days of vasopressors and had a mortality rate in 30 days of 47% versus 61% in the Control group.",
-      "nota": "9/19 = 47,4% e 14/23 = 60,9%; a fonte publica so o percentual, e ele bate com as celulas da figura"
+      "citacao": "Tabela 5: Survivors at day 28 | 5 | 3",
+      "nota": "a fonte publica SOBREVIVENTES em 28 dias; os mortos sao 10-5=5 e 10-3=7. A revisao converteu CERTO aqui."
+    },
+    {
+      "estudo": "Levin, 2004",
+      "confere": true,
+      "citacao": "There were no deaths in those treated with MB; the 6 deceased patients were in the placebo group (21.4%)"
     },
     {
       "estudo": "Dong, 2025",
@@ -227,24 +256,15 @@
       "citacao": "Mortality at 28 days-no. (%) | 9.0 (25.0) | 15.0 (41.7) | 0.200"
     },
     {
-      "estudo": "Shaker, 2025",
-      "confere": false,
-      "ver": "A3-D1"
-    },
-    {
-      "estudo": "Aguilar, 2016",
-      "confere": false,
-      "ver": "A3-D2",
-      "citacao": "se pudo observar que en el grupo A la mortalidad al egreso fue de 20.0% y no vario a los 21 dias, a diferencia del grupo C, donde al egreso la mortalidad fue de 36.6%"
+      "estudo": "Memis, 2002",
+      "confere": true,
+      "citacao": "The overall hospital mortality rate was similar in both groups (26.6%)",
+      "nota": "a Tabela 1 lista o desfecho paciente a paciente: 4 mortos em cada braco, contados no script"
     }
   ],
-  "faltam": [
-    "Kirov 2001",
-    "Levin 2004",
-    "Memis 2002"
-  ],
-  "peso_ainda_fechado_pct": 17.9,
-  "peso_verificavel_na_fonte_pct": 82.1,
+  "faltam": [],
+  "peso_ainda_fechado_pct": 0.0,
+  "peso_verificavel_na_fonte_pct": 100.0,
   "cenarios_de_correcao": {
     "nota": "todos por Paule-Mandel com Hartung-Knapp, o caminho da revisao. O caminho do motor do banco (DerSimonian-Laird, normal) esta ao lado e concorda em sinal e significancia.",
     "cenarios": [
@@ -335,5 +355,15 @@
       }
     ],
     "leitura": "a conclusao publicada -- de que nao ha beneficio de mortalidade -- nao sobrevive a correcao, e nao sobrevive por nenhum dos caminhos, inclusive excluindo o Aguilar. Isto e resultado da campanha e vai declarado como tal, nao como achado incidental."
-  }
+  },
+  "camada2_estado": {
+    "fechada": true,
+    "data": "2026-09-08",
+    "conferem": 6,
+    "divergem": 2,
+    "script": "scripts/estudo12/verificar-camada2.py",
+    "corpus_completo": "os 8 primarios da analise de mortalidade estao em dados/estudo11/primarios/",
+    "contraste_que_fecha_o_argumento": "no Kirov a fonte tambem publica sobreviventes e a revisao converteu certo (5 e 3 viraram 5 e 7 mortos); no Aguilar, com a mesma estrutura, converteu errado. O mesmo time, o mesmo tipo de dado, resultados opostos -- o que descarta 'convencao de relato' como explicacao."
+  },
+  "corpus_advertencia": "o Aguilar 2016 esta em ESPANHOL e os instrumentos estao em ingles. Os outros sete estao em ingles. Cinco sao XML do Europe PMC; tres sao PDF convertido em texto (kirov, memis, levin) e um e PDF em espanhol (aguilar). O protocolo tem de declarar isso: e uma variavel nova que nenhuma ancora anterior teve, e pode confundir desempenho de leitura com idioma e com qualidade de conversao de PDF."
 }
