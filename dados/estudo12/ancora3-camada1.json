@@ -14,19 +14,145 @@
     "nota": "NAO e DerSimonian-Laird. O motor do banco roda DL e devolve 0,737 [0,449; 1,208] com tau2 0,1065. A diferenca e de estimador, nao de leitura nem de aritmetica."
   },
   "estudos": [
-    {"estudo": "Luis-Silva, 2024",      "eventos_mb":  9, "n_mb": 19, "eventos_st": 14, "n_st": 23, "or": 0.58, "ic95": [0.17, 1.98], "peso": 12.9, "primario": "PMC11514138", "aberto": true},
-    {"estudo": "Shaker, 2025",          "eventos_mb": 15, "n_mb": 30, "eventos_st": 14, "n_st": 30, "or": 1.14, "ic95": [0.41, 3.15], "peso": 16.9, "primario": "PMC11707904", "aberto": true},
-    {"estudo": "Ibarra-Estrada, 2023",  "eventos_mb": 15, "n_mb": 45, "eventos_st": 21, "n_st": 46, "or": 0.60, "ic95": [0.25, 1.39], "peso": 21.1, "primario": "PMC10010212", "aberto": true},
-    {"estudo": "Aguilar, 2016",         "eventos_mb": 24, "n_mb": 30, "eventos_st": 19, "n_st": 30, "or": 2.32, "ic95": [0.72, 7.41], "peso": 14.0, "primario": null, "aberto": false},
-    {"estudo": "Kirov, 2001",           "eventos_mb":  5, "n_mb": 10, "eventos_st":  7, "n_st": 10, "or": 0.43, "ic95": [0.07, 2.68], "peso":  6.7, "primario": null, "aberto": false},
-    {"estudo": "Levin, 2004",           "eventos_mb":  0, "n_mb": 28, "eventos_st":  6, "n_st": 28, "or": 0.06, "ic95": [0.00, 1.14], "peso":  2.9, "primario": null, "aberto": false},
-    {"estudo": "Dong, 2025",            "eventos_mb":  9, "n_mb": 36, "eventos_st": 15, "n_st": 36, "or": 0.47, "ic95": [0.17, 1.27], "peso": 17.1, "primario": "PMC12751372", "aberto": true},
-    {"estudo": "Memis, 2002",           "eventos_mb":  4, "n_mb": 15, "eventos_st":  4, "n_st": 15, "or": 1.00, "ic95": [0.20, 5.04], "peso":  8.3, "primario": null, "aberto": false}
+    {
+      "estudo": "Luis-Silva, 2024",
+      "eventos_mb": 9,
+      "n_mb": 19,
+      "eventos_st": 14,
+      "n_st": 23,
+      "or": 0.58,
+      "ic95": [
+        0.17,
+        1.98
+      ],
+      "peso": 12.9,
+      "primario": "PMC11514138",
+      "aberto": true
+    },
+    {
+      "estudo": "Shaker, 2025",
+      "eventos_mb": 15,
+      "n_mb": 30,
+      "eventos_st": 14,
+      "n_st": 30,
+      "or": 1.14,
+      "ic95": [
+        0.41,
+        3.15
+      ],
+      "peso": 16.9,
+      "primario": "PMC11707904",
+      "aberto": true
+    },
+    {
+      "estudo": "Ibarra-Estrada, 2023",
+      "eventos_mb": 15,
+      "n_mb": 45,
+      "eventos_st": 21,
+      "n_st": 46,
+      "or": 0.6,
+      "ic95": [
+        0.25,
+        1.39
+      ],
+      "peso": 21.1,
+      "primario": "PMC10010212",
+      "aberto": true
+    },
+    {
+      "estudo": "Aguilar, 2016",
+      "eventos_mb": 24,
+      "n_mb": 30,
+      "eventos_st": 19,
+      "n_st": 30,
+      "or": 2.32,
+      "ic95": [
+        0.72,
+        7.41
+      ],
+      "peso": 14.0,
+      "primario": "aguilar-2016-medcrit.pdf",
+      "aberto": true,
+      "nota_acesso": "sem PMID: Medicina Critica (Colegio Mexicano de Medicina Critica) nao e indexada no PubMed. Livre no Medigraphic e no SciELO Mexico. A pagina do SciELO declara Creative Commons BY-NC; o PDF em si nao carrega a declaracao no texto extraivel."
+    },
+    {
+      "estudo": "Kirov, 2001",
+      "eventos_mb": 5,
+      "n_mb": 10,
+      "eventos_st": 7,
+      "n_st": 10,
+      "or": 0.43,
+      "ic95": [
+        0.07,
+        2.68
+      ],
+      "peso": 6.7,
+      "primario": null,
+      "aberto": false
+    },
+    {
+      "estudo": "Levin, 2004",
+      "eventos_mb": 0,
+      "n_mb": 28,
+      "eventos_st": 6,
+      "n_st": 28,
+      "or": 0.06,
+      "ic95": [
+        0.0,
+        1.14
+      ],
+      "peso": 2.9,
+      "primario": null,
+      "aberto": false
+    },
+    {
+      "estudo": "Dong, 2025",
+      "eventos_mb": 9,
+      "n_mb": 36,
+      "eventos_st": 15,
+      "n_st": 36,
+      "or": 0.47,
+      "ic95": [
+        0.17,
+        1.27
+      ],
+      "peso": 17.1,
+      "primario": "PMC12751372",
+      "aberto": true
+    },
+    {
+      "estudo": "Memis, 2002",
+      "eventos_mb": 4,
+      "n_mb": 15,
+      "eventos_st": 4,
+      "n_st": 15,
+      "or": 1.0,
+      "ic95": [
+        0.2,
+        5.04
+      ],
+      "peso": 8.3,
+      "primario": null,
+      "aberto": false
+    }
   ],
-  "agrupado": {"or": 0.73, "ic95": [0.40, 1.36], "tau2": 0.1334, "chi2": 8.89, "gl": 7, "i2": 21.3,
-               "total_mb": 213, "total_st": 218},
+  "agrupado": {
+    "or": 0.73,
+    "ic95": [
+      0.4,
+      1.36
+    ],
+    "tau2": 0.1334,
+    "chi2": 8.89,
+    "gl": 7,
+    "i2": 21.3,
+    "total_mb": 213,
+    "total_st": 218
+  },
   "fora_desta_analise": {
-    "estudo": "Kuri, 2025", "primario": "PMC11915450", "aberto": true,
+    "estudo": "Kuri, 2025",
+    "primario": "PMC11915450",
+    "aberto": true,
     "motivo": "esta na Tabela 1 da revisao (74 pacientes, azul contra vasopressina) e NAO esta no grafico de floresta da mortalidade"
   },
   "discrepancias_candidatas": [
@@ -44,10 +170,15 @@
     {
       "id": "A3-D2",
       "estudo": "Aguilar, 2016",
-      "status": "PENDENTE do primario fechado",
-      "camada1": "24/30 no azul contra 19/30 no controle, OR 2,32, a favor do controle",
+      "status": "CONFIRMADA contra a fonte",
+      "camada1": "24/30 no azul de metileno contra 19/30 no controle, OR 2,32, a favor do controle",
       "conflito": "a coluna Key Results da Tabela 1 da mesma revisao registra reducao de mortalidade para este ensaio",
-      "leitura": "a figura e a tabela da mesma revisao discordam de sinal"
+      "leitura": "a revisao registrou os SOBREVIVENTES na coluna de eventos: 30-6=24 e 30-11=19. Inversao completa, nao arredondamento.",
+      "camada2": "grupo A (azul de metileno) 20,0% de 30 = 6 mortos; grupo C (controle) 36,6% de 30 = 11 mortos",
+      "citacao": "se pudo observar que en el grupo A la mortalidad al egreso fue de 20.0% y no vario a los 21 dias, a diferencia del grupo C, donde al egreso la mortalidad fue de 36.6% y a los 21 dias, de igual forma, no vario.",
+      "citacao_grupos": "Figura 4/5: grupo A (azul de metileno), grupo C (grupo control)",
+      "efeito": "Aguilar sozinho vai de OR 2,32 [0,72; 7,41] para 0,43 [0,14; 1,38]; o diamante vai de 0,73 [0,40; 1,36] para 0,59 [0,38; 0,91], que ja e significativo",
+      "fonte": "dados/estudo11/primarios/aguilar-2016-medcrit.pdf e .txt"
     },
     {
       "id": "A3-D3",
@@ -68,20 +199,141 @@
     {
       "id": "A3-D5",
       "escopo": "janela do desfecho",
-      "status": "PENDENTE dos primarios fechados",
+      "status": "PARCIALMENTE CONFIRMADA",
       "leitura": "a Tabela 1 registra seguimento de 24 h (Kirov, Dong), 48 h (Memis), 72 h (Aguilar, Luis-Silva, Shaker) e 96 h (Levin), mas a analise e rotulada mortalidade em 28 a 30 dias",
-      "ja_conferido": "Luis-Silva publica mortalidade em 30 dias e Dong em 28 dias, apesar do que a Tabela 1 registra na coluna de seguimento"
+      "ja_conferido": "Luis-Silva publica mortalidade em 30 dias e Dong em 28 dias, apesar do que a Tabela 1 registra na coluna de seguimento",
+      "caso_confirmado_aguilar": {
+        "leitura": "o Aguilar nao publica mortalidade em 28 dias. Publica na alta da UTI (cerca de sete dias) e aos 21, e afirma em texto que aos 28 dias nao houve diferenca, sem dar numeros. A revisao agrupou o ensaio sob o rotulo de mortalidade em 28 a 30 dias.",
+        "citacao": "aunque se debe notar que esta mortalidad fue al alta de la UCI y que a los 28 dias no se obtuvieron diferencias en la mortalidad.",
+        "consequencia": "qualquer celula do Aguilar usada nesta analise e de 21 dias, nao de 28. O protocolo tem de declarar o que fazer: usar o numero de 21 dias, ou excluir o ensaio. As duas saidas estao calculadas."
+      }
     }
   ],
   "camada2_ja_verificada": [
-    {"estudo": "Ibarra-Estrada, 2023", "confere": true,
-     "citacao": "Mortality at 28 days-no. (%) | 15/45 (33) | 21/46 (46) | 0.76 (0.55-1.05) | 0.23"},
-    {"estudo": "Luis-Silva, 2024", "confere": true,
-     "citacao": "However, patients in the MB group used fewer days of vasopressors and had a mortality rate in 30 days of 47% versus 61% in the Control group.",
-     "nota": "9/19 = 47,4% e 14/23 = 60,9%; a fonte publica so o percentual, e ele bate com as celulas da figura"},
-    {"estudo": "Dong, 2025", "confere": true,
-     "citacao": "Mortality at 28 days-no. (%) | 9.0 (25.0) | 15.0 (41.7) | 0.200"},
-    {"estudo": "Shaker, 2025", "confere": false, "ver": "A3-D1"}
+    {
+      "estudo": "Ibarra-Estrada, 2023",
+      "confere": true,
+      "citacao": "Mortality at 28 days-no. (%) | 15/45 (33) | 21/46 (46) | 0.76 (0.55-1.05) | 0.23"
+    },
+    {
+      "estudo": "Luis-Silva, 2024",
+      "confere": true,
+      "citacao": "However, patients in the MB group used fewer days of vasopressors and had a mortality rate in 30 days of 47% versus 61% in the Control group.",
+      "nota": "9/19 = 47,4% e 14/23 = 60,9%; a fonte publica so o percentual, e ele bate com as celulas da figura"
+    },
+    {
+      "estudo": "Dong, 2025",
+      "confere": true,
+      "citacao": "Mortality at 28 days-no. (%) | 9.0 (25.0) | 15.0 (41.7) | 0.200"
+    },
+    {
+      "estudo": "Shaker, 2025",
+      "confere": false,
+      "ver": "A3-D1"
+    },
+    {
+      "estudo": "Aguilar, 2016",
+      "confere": false,
+      "ver": "A3-D2",
+      "citacao": "se pudo observar que en el grupo A la mortalidad al egreso fue de 20.0% y no vario a los 21 dias, a diferencia del grupo C, donde al egreso la mortalidad fue de 36.6%"
+    }
   ],
-  "faltam": ["Aguilar 2016", "Kirov 2001", "Levin 2004", "Memis 2002"]
+  "faltam": [
+    "Kirov 2001",
+    "Levin 2004",
+    "Memis 2002"
+  ],
+  "peso_ainda_fechado_pct": 17.9,
+  "peso_verificavel_na_fonte_pct": 82.1,
+  "cenarios_de_correcao": {
+    "nota": "todos por Paule-Mandel com Hartung-Knapp, o caminho da revisao. O caminho do motor do banco (DerSimonian-Laird, normal) esta ao lado e concorda em sinal e significancia.",
+    "cenarios": [
+      {
+        "rotulo": "como a revisao publicou",
+        "or": 0.73,
+        "ic95": [
+          0.4,
+          1.36
+        ],
+        "i2_pct": 21,
+        "significativo": false,
+        "dl": {
+          "or": 0.737,
+          "ic95": [
+            0.449,
+            1.208
+          ]
+        }
+      },
+      {
+        "rotulo": "so o Shaker corrigido (15/60)",
+        "or": 0.6,
+        "ic95": [
+          0.33,
+          1.12
+        ],
+        "i2_pct": 24,
+        "significativo": false,
+        "dl": {
+          "or": 0.604,
+          "ic95": [
+            0.367,
+            0.994
+          ]
+        }
+      },
+      {
+        "rotulo": "so o Aguilar corrigido (6/30 contra 11/30)",
+        "or": 0.59,
+        "ic95": [
+          0.38,
+          0.91
+        ],
+        "i2_pct": 0,
+        "significativo": true,
+        "dl": {
+          "or": 0.592,
+          "ic95": [
+            0.387,
+            0.905
+          ]
+        }
+      },
+      {
+        "rotulo": "os dois corrigidos",
+        "or": 0.48,
+        "ic95": [
+          0.34,
+          0.69
+        ],
+        "i2_pct": 0,
+        "significativo": true,
+        "dl": {
+          "or": 0.484,
+          "ic95": [
+            0.319,
+            0.735
+          ]
+        }
+      },
+      {
+        "rotulo": "Shaker corrigido, Aguilar excluido",
+        "or": 0.49,
+        "ic95": [
+          0.33,
+          0.73
+        ],
+        "i2_pct": 0,
+        "significativo": true,
+        "dl": {
+          "or": 0.493,
+          "ic95": [
+            0.315,
+            0.77
+          ]
+        }
+      }
+    ],
+    "leitura": "a conclusao publicada -- de que nao ha beneficio de mortalidade -- nao sobrevive a correcao, e nao sobrevive por nenhum dos caminhos, inclusive excluindo o Aguilar. Isto e resultado da campanha e vai declarado como tal, nao como achado incidental."
+  }
 }
