@@ -1,6 +1,6 @@
 # EXTRAI — Pre-registered protocol, Study 12: the three-anchor, six-model campaign, with both sheets registered from the start
 
-**Registered 2026-09-08, before any run.** Amendments only as dated sections. General method: [`METHOD.md`](../../METHOD.md). Frozen against commit `PENDING-SEAL`; the corpora, keys and instruments named here are the versions in that tree, not the working directory.
+**Registered 2026-09-08, before any run.** Amendments only as dated sections. General method: [`METHOD.md`](../../METHOD.md). Frozen against commit `674e427`; the corpora, keys and instruments named here are the versions in that tree, not the working directory.
 
 **Author's directive (2026-09-08, verbatim intent)**: redo the EXTRAI meta-analysis reproductions with all six models running at once, registered from the start rather than as an addendum, so the article reads better; add the methylene-blue meta-analysis as a third anchor, begun from the beginning and with the harness in its current state. Hours are not a problem — run it calmly, but build it so that an interruption can be continued from where it stopped.
 
