@@ -218,6 +218,29 @@ only the graded outcome row and left all 78 inconsistent; that version was never
 
 ---
 
+### Post-registration note, 2026-09-08 — the local history was rewritten, and the anchor held
+
+Building the instruments put two things into the repository that the project's own regime forbids:
+the plain text of the anchor-3 primaries — three of which are subscription articles the closed-stratum
+rule says never to version — and, worse for the method, the original corpus **beside** the perturbed
+one, which is the sealed map itself: a diff between the two reconstructs it completely and the reading
+proof becomes decoration.
+
+Nothing had been pushed. The unpushed local history was rewritten to remove `corpus/estudo12` from the
+eight commits that carried it; the files stay on disk and regenerate from the instrument. Verified
+after: zero references to the corpus and zero to the three closed primaries anywhere in the local
+history, all 32 commits preserved, and the nineteen Phase-0 checks still passing.
+
+**This document's freeze pointer is unaffected.** `674e427` predates the commit that first added the
+corpus, so the rewrite never touched it, and it remains an ancestor of the branch. The registration's
+anchor is the same one it was registered against — which is the property that mattered, and the reason
+the rewrite was worth doing carefully rather than quickly.
+
+A doctrine test now guards both halves: the freeze commit must stay reachable, and no closed-stratum
+file may appear in any commit of the unpushed history.
+
+---
+
 ### Registration note, 2026-09-08 — what in this document is not the author's
 
 The six Phase-0 decisions recorded in `decisoes-fase0.md`, all dated 2026-09-08 and all taken by the author, fix the cast, the two sheets, the odds-ratio engine, the context and the pursuit of the closed primaries. **Everything else here was drafted by the assistant** — §§5 to 9, 11 and 12 in full, including all six hypotheses and their thresholds, and the nine commissioned instruments. Three of those choices arose from measurements taken while this protocol was being written, and are flagged so the author can overrule them before a single model call, the only moment at which overruling is free:

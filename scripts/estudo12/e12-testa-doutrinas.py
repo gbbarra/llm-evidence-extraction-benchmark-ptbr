@@ -222,6 +222,26 @@ diz("nenhum arquivo dos primários de acesso fechado é versionado", not vaza_fe
 # e o corpus tem de continuar existindo em disco, senão a campanha não roda
 em_disco = len(list((RAIZ / "corpus" / "estudo12" / "perturbados").glob("*.txt")))
 diz("e o corpus perturbado continua em disco, para a campanha rodar", em_disco == 8, f"{em_disco}/8")
+# o histórico também é publicação: um arquivo removido do índice continua nos commits em que entrou,
+# e um push o leva junto. Isto aconteceu, e a limpeza do histórico local foi a correção.
+prot = io.open(D12 / "protocolo-estudo12.md", encoding="utf-8").read()
+import re as _re
+_m = _re.search(r"Frozen against commit `([0-9a-f]{7,40})`", prot)
+diz("o protocolo declara um commit de congelamento", bool(_m), _m.group(1) if _m else "")
+if _m:
+    anc = subprocess.run(["git", "merge-base", "--is-ancestor", _m.group(1), "HEAD"],
+                         capture_output=True, cwd=str(RAIZ)).returncode == 0
+    diz("e esse commit continua alcançável a partir do HEAD", anc, _m.group(1))
+locais = subprocess.run(["git", "rev-list", "origin/main..HEAD"],
+                        capture_output=True, text=True, cwd=str(RAIZ)).stdout.split()
+sujos = []
+for c in locais:
+    arqs = subprocess.run(["git", "ls-tree", "-r", "--name-only", c],
+                          capture_output=True, text=True, cwd=str(RAIZ)).stdout
+    if _re.search(r"kirov|memis|levin|corpus/estudo12", arqs, _re.I):
+        sujos.append(c[:8])
+diz("nenhum commit do histórico local carrega corpus ou primário fechado",
+    not sujos, f"{len(sujos)} commits sujos: {sujos[:3]}")
 
 secao(9, "NADA DE CAP SILENCIOSO", "no silent caps: what is dropped is logged")
 mort = [{"arm_label": {"value": "grupo inexistente"}, "timepoint": {"value": "28 days"},
