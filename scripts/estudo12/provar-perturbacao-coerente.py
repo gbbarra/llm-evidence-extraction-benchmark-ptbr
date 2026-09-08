@@ -53,8 +53,12 @@ ALVOS = [
      [("azul", 0, 28, None), ("controle", 6, 28, "21.4")]),
     ("Dong, 2025", "PMC12751372.xml",
      [("azul", 9, 36, "25.0"), ("controle", 15, 36, "41.7")]),
+    # dois braços, sem percentual por braço: a fonte publica 26,6% como taxa GLOBAL dos dois grupos
+    # ("The overall hospital mortality rate was similar in both groups (26.6%)"), e as contagens por
+    # braço só existem na tabela de pacientes. A primeira versão desta lista modelava o ensaio como
+    # um braço só com aquele percentual, o que divergia da régua -- apanhado por e12-testa-coerencia.
     ("Memis, 2002", "memis2002.txt",
-     [("ambos", 4, 15, "26.6")]),
+     [("azul", 4, 15, None), ("controle", 4, 15, None)]),
 ]
 
 

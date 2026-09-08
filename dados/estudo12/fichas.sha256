@@ -1,0 +1,12 @@
+# Selos das seis fichas da campanha do Estudo 12 (§3 e §8.6 do protocolo).
+# As das âncoras 1 e 2 são as CONGELADAS, que produziram o registro publicado: elas são o
+# controle da H12.5, e uma edição nelas confundiria o efeito do contexto com o do instrumento.
+# O harness confere estes selos antes da primeira chamada e se recusa a começar se algum
+# divergir. Gerado por scripts/estudo12/e12-sela-fichas.py.
+
+9735628dc325f3a36ded017d6fe00b94589638ef6af089bbc7712caf9109242f  a1/v1  dados/instruments-en/estudo1/t1-extraction.txt
+689c3a582576c245c5ce38ec4e336e0eff19a50c85fe7449322656feb80759a7  a1/v2  dados/estudo9/prompts/t1-extraction-v2.txt
+316276bfc76abc7696140044242a79a8ce31619634d389f6223d4b37041f481e  a2/v1  dados/instruments-en/estudo3/e3-extraction.txt
+7421aedf1e8e7f1eb56c8e9471020f08f8a686c1d02a43eaaf4124dac32df7e6  a2/v2  dados/estudo9/prompts/e3-extraction-v2.txt
+b86706fb8f39ae7f794396300688efa45cb93d8133622da020396d147340c34e  a3/v1  dados/estudo12/prompts/a3-extraction.txt
+2a88f20ebb4a297f242f2b220d54f6a4c4a1c8fdf45f353c7ec2d14c1b772015  a3/v2  dados/estudo12/prompts/a3-extraction-v2.txt

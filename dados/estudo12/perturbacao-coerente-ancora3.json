@@ -184,10 +184,21 @@
     },
     {
       "ensaio": "Memis, 2002",
-      "braco": "ambos",
+      "braco": "azul",
       "eventos": 4,
       "n": 15,
-      "pct_fonte": "26.6",
+      "pct_fonte": null,
+      "novo_n": null,
+      "novo_pct": null,
+      "viavel": false,
+      "motivo": "todo n' admissível já ocorre no texto"
+    },
+    {
+      "ensaio": "Memis, 2002",
+      "braco": "controle",
+      "eventos": 4,
+      "n": 15,
+      "pct_fonte": null,
       "novo_n": null,
       "novo_pct": null,
       "viavel": false,

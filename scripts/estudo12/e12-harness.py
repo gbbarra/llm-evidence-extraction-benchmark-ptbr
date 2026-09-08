@@ -89,8 +89,37 @@ ANCORAS = {
                fichas={"v1": RAIZ / "dados" / "estudo12" / "prompts" / "a3-extraction.txt",
                        "v2": RAIZ / "dados" / "estudo12" / "prompts" / "a3-extraction-v2.txt"}),
 }
-SAIDAS = RAIZ / "dados" / "estudo12" / "saidas"
-RECUSADOS = RAIZ / "dados" / "estudo12" / "recusados"
+# ------------------------------------------------------------------ as fichas, seladas
+# O vínculo com as fichas era por CAMINHO. Uma edição em qualquer uma delas trocaria o instrumento
+# sem que nada acusasse -- e as das âncoras 1 e 2 são as congeladas que produziram o registro
+# publicado, o controle da H12.5. Agora o vínculo é por SHA-256, conferido antes da primeira chamada.
+def confere_fichas():
+    reg = {}
+    p = RAIZ / "dados" / "estudo12" / "fichas.sha256"
+    for linha in io.open(p, encoding="utf-8").read().splitlines():
+        if linha.startswith("#") or not linha.strip():
+            continue
+        sha, rot, rel = linha.split(None, 2)
+        reg[rot] = (sha, rel.strip())
+    ruins = []
+    for rot, (sha, rel) in sorted(reg.items()):
+        agora = hashlib.sha256(io.open(RAIZ / rel, "rb").read()).hexdigest()
+        if agora != sha:
+            ruins.append(f"{rot} ({rel}): selado {sha[:12]}…, agora {agora[:12]}…")
+    if ruins:
+        raise SystemExit("as fichas da campanha não batem com os selos registrados:\n  "
+                         + "\n  ".join(ruins)
+                         + "\nSe a mudança é deliberada, regenere com e12-sela-fichas.py e "
+                           "registre a decisão; se não é, desfaça-a antes de rodar.")
+    return len(reg)
+
+
+TIMEOUT = 1800   # dez vezes a chamada mais lenta medida; o transporte herdado usava 7.200
+
+# E12_SAIDAS redireciona o diretorio de saidas. Serve ao teste do inventario, que precisa montar
+# corridas parciais em disco sem tocar na campanha de verdade, e a uma corrida de ensaio.
+SAIDAS = Path(os.environ.get("E12_SAIDAS") or (RAIZ / "dados" / "estudo12" / "saidas"))
+RECUSADOS = Path(os.environ.get("E12_RECUSADOS") or (RAIZ / "dados" / "estudo12" / "recusados"))
 
 
 # ------------------------------------------------------------------ o plano, enumerado
@@ -206,7 +235,7 @@ def chama(c, prompt):
     if m["cpu"]:
         opts["num_gpu"] = 0
     body = dict(model=m["ollama"], prompt=prompt, stream=False, think=False, options=opts)
-    r, dt = h3.post_json(h3.OLLAMA + "/api/generate", body)
+    r, dt = h3.post_json(h3.OLLAMA + "/api/generate", body, timeout=TIMEOUT)
     if r.get("error"):
         raise RuntimeError(r["error"])
     return dict(modelo=c["modelo"], tag=m["ollama"], ancora=c["ancora"], ficha=c["ficha"],
@@ -224,7 +253,9 @@ def roda(so_modelo=None, so_ancora=None, so_ficha=None, seco=False):
              if (not so_modelo or c["modelo"] == so_modelo)
              and (not so_ancora or c["ancora"] == so_ancora)
              and (not so_ficha or c["ficha"] == so_ficha)]
-    print(f"plano: {len(todas)} chamadas · contexto {CTX} · saída {SAIDA}")
+    n_fichas = confere_fichas()
+    print(f"plano: {len(todas)} chamadas · contexto {CTX} · saída {SAIDA} · tempo limite {TIMEOUT}s")
+    print(f"fichas conferidas contra os selos: {n_fichas} de {n_fichas}")
     residente, feitas, puladas, refeitas, erros = None, 0, 0, 0, 0
     t0 = time.time()
     seguidos = 0

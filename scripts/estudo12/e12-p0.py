@@ -35,6 +35,8 @@ ETAPAS = [
     ("as patologias reais de saída de modelo", "e12-testa-patologias.py", 0),
     ("o elenco resolve, os seis", "e12-testa-elenco.py", 1),
     ("a costura P1 -> P2 -> P3, ponta a ponta", "e12-testa-costura.py", 0),
+    ("as sete copias das celulas concordam", "e12-testa-coerencia.py", 0),
+    ("o inventario conta certo", "e12-testa-inventario.py", 5),
 ]
 
 print(f"FASE 0 DO ESTUDO 12 — {len(ETAPAS)} verificações\n")
