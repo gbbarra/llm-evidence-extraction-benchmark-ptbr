@@ -26,3 +26,11 @@ dados/*/sementes-auditoria.json
 # ancora 3 (azul de metileno): XML dos artigos, rebaixaveis do Europe PMC; nao versionar
 dados/estudo11/*.xml
 dados/estudo11/primarios/
+
+# estudo12 / ancora 3: mesmo regime das ancoras 1 e 2, e pela mesma razao. Publicar o corpus
+# ORIGINAL ao lado do PERTURBADO e publicar o mapa selado: um diff reconstroi o selo inteiro e a
+# prova de leitura vira decoracao. Alem disso o texto plano de kirov, memis e levin e artigo de
+# acesso fechado, que o regime do estrato fechado manda nunca versionar. So o SHA-256 do selo e
+# publico; corpus e mapa vivem locais e se regeneram com e12-perturbar-a3.py.
+corpus/estudo12/original/
+corpus/estudo12/perturbados/
