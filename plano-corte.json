@@ -1,0 +1,711 @@
+{
+ "assessment": "114 surviving cuts from five blind lenses merged into 85 ordered, conflict-free edits. Twenty-nine nested or intersecting anchor groups collapsed into single edits; two edits were dropped by the cascade check; one was superseded by a stronger sibling; one was narrowed to protect a unique number. Every anchor was verified against C:/Users/gbbarra/Documents/localtts/extrai/paper/extrai-unified.tex: all 85 occur verbatim exactly once, no two intersect, so plain top-to-bottom string replacement is safe in the order given (E01 to E85, which is file order).\n\nMEASURED WORD COUNTS (LaTeX stripped; table environments and captions excluded from the body count). Body, Introduction through the end of the Discussion: 7,254 words before, 5,974 after, -1,280 (-17.6%). By section: Introduction 485 to 422 (-13.0%), Methods 2,500 to 2,196 (-12.2%), Results 1,715 to 1,365 (-20.4%), Discussion 2,554 to 1,991 (-22.0%). Abstract 343 to 273 (-20.4%), which brings it under the usual 300-word cap. 9,657 characters removed overall; line count unchanged at 421.\n\nAUDIT OF THE APPLIED COPY (written to C:/Users/gbbarra/AppData/Local/Temp/claude/C--Users-gbbarra-Documents-localtts/71715940-01c4-44ad-b3cb-0e4645cf0cd1/scratchpad/extrai-cut.tex): all 20 citation keys still cited, none lost (six keys lose a duplicate site but each survives in the Introduction; barra2026extrai goes 6 to 5). Zero dangling \\ref, zero orphaned \\label, zero \\ref targets lost. All 14 tables byte-identical, 89 table rows unchanged, every caption byte-identical. The Limitations paragraph byte-identical. Brace and math-mode balance unchanged. Exactly two numeric tokens vanish document-wide, \"77\" and \"99\" from the abstract's \"replicate stability 77--99%\", and both survive with more precision as 77.4% and 99.2% in Results 3.1 and in Table 3's stability column; no other number in the manuscript is lost. Forty-two targeted survival probes for facts, definitions, caveats and unique figures all pass.\n\nWHAT THE PACKAGE ACHIEVES: it removes the manuscript's four structural duplications. (1) Prose that narrates the caption or the rows of the table printed beside it — the P1 mechanism inventory, the P2 pooling ceiling, the P3 reversal-collapse sentence, the Anchor-2 diamond digits, the three-configuration walk-through, the Discussion's re-printing of I-squared and footprint figures. (2) Methods facts restated per instrument that 2.1 establishes once for all instruments: frozen-before-the-campaign, committed-to-the-repository, built-during-instrument-development, registered-as-a-dated-amendment. (3) The Introduction/abstract/Discussion triple-telling of the literature framing, the five-phase story and the perturbation mechanics. (4) The Discussion re-reporting Results figures before drawing its inference, which is where the largest single saving sits (-563 words). No claim, caveat, limitation or number is removed from the paper; only second and third statements of them.\n\nWHAT IT DELIBERATELY DID NOT TOUCH: every table, every table row and every caption; the entire supplement (its introduction and Tables S1 to S7); the Limitations paragraph; the concluding paragraph; Data and code availability; the Declarations; the Acknowledgments; the errata table and every element of the study's self-disclosure that lives outside the three deleted restatements; the harness net inventory in 2.10; the plausibility-bias evidence in 2.4 and 2.10; and the paper's argumentative moves everywhere — each cut Discussion sentence keeps its inference and loses only the Results figures it borrowed.",
+ "edits": [
+  {
+   "id": "E01",
+   "section": "Abstract",
+   "kind": "concision",
+   "anchor": "\\noindent Language models are entering systematic-review workflows, but most evaluations use cloud models, cannot separate reading from training-data recall, and treat the human answer key as infallible. EXTRAI is a pre-registered, five-phase benchmark of five quantized open-weight models (8--14.8B parameters, one consumer mini-PC, integrated GPU, no cloud calls) --- plus a 27B mixed-precision build, measured at 3.13 bits per weight, added afterwards as a pre-registered extension arm --- as meta-analysis workers over two published meta-analyses and their 21 trials, under two controls: a \\emph{perturbation reading proof} (load-bearing numbers displaced under sealed maps, making recitation detectable) and a \\emph{two-layer, source-verified answer key} whose quotation-backed rite puts the human key itself on trial, documenting eleven source-confirmed discrepancies in one anchor and correcting its own cells twice. Reading: 168 perturbed sheets, zero attributable recitations, zero invention candidates, replicate stability 77--99\\%. Arithmetic: 1 of 73 unaided confidence intervals exact, rising to 86\\% through a trivial text-protocol calculator; pooling stayed out of reach for the 8--14.8B cast and was closed, 12 of 12, only by the 27B extension arm. Creation: \\emph{all six} models' sheets reproduced the published dichotomous pools (morbidity 0.771--0.787 vs.\\ 0.778), while the continuous diamond separated them --- in the cast exactly one model, \\texttt{gemma4:12b}, landed beside the published $-0.24$, at $-0.27$, the rest at $-0.47$ to $-0.80$, and the extension arm landed closer still, at $-0.25$ $[-0.33, -0.16]$ --- never through arithmetic and never through fabrication --- the invention screen found none. Orchestration: under a warn-only ten-net harness, confirm-or-correct resolved every warning and the model's pooling call closed digit-consistent with its executed results. Deployment, on clean texts with no answer key: the model sided with the sources at all seven discrepancies reaching a single extractable cell, its one failed tolerance decomposed to one mislabeled-dispersion cell, and conversational and sheet-level nets proved complements, not substitutes. An instruction-language robustness check (instruments drafted in Portuguese, frozen in English, identical materials) found every phase within replicate-level variance and the flagship diamond identical in both ($-0.27$ $[-0.38, -0.17]$): no conclusion is an artifact of instruction language. All protocols, seals, sheets and raw outputs are public.",
+   "replacement": "\\noindent Language models are entering systematic-review workflows, but most evaluations use cloud models, cannot separate reading from training-data recall, and treat the human answer key as infallible. EXTRAI is a pre-registered, five-phase benchmark of five quantized open-weight models (8--14.8B parameters, one consumer mini-PC, integrated GPU, no cloud calls) --- plus a 27B build at 3.13 bits per weight, added as a pre-registered extension arm --- as meta-analysis workers over two published meta-analyses and their 21 trials, under two controls: a \\emph{perturbation reading proof} (load-bearing numbers displaced under sealed maps, making recitation detectable) and a \\emph{two-layer, source-verified answer key} that puts the human key on trial, documenting eleven source-confirmed discrepancies in one anchor and correcting its own cells twice. Reading: 168 perturbed sheets, zero attributable recitations, zero invention candidates. Arithmetic: 1 of 73 unaided confidence intervals exact, rising to 86\\% through a trivial text-protocol calculator; pooling stayed beyond the cast and was closed, 12 of 12, only by the extension arm. Creation: \\emph{all six} models' sheets reproduced the published dichotomous pools (morbidity 0.771--0.787 vs.\\ 0.778), while the continuous diamond separated them: only \\texttt{gemma4:12b} ($-0.27$) and the extension arm ($-0.25$ $[-0.33, -0.16]$) landed beside the published $-0.24$. Orchestration: under a warn-only ten-net harness, confirm-or-correct resolved every warning and the pooling call closed digit-consistent with the executed results. Deployment (clean texts, no answer key): the model sided with the sources at all seven discrepancies reaching a single extractable cell; its one failed tolerance decomposed to one mislabeled-dispersion cell. An instruction-language check (Portuguese drafts, identical materials) left every phase within replicate-level variance: no conclusion is an artifact of instruction language. All protocols, seals, sheets and raw outputs are public.",
+   "rationale": "abstract:abs-01 verbatim. 343 words to 273, inside the usual cap. Drops only restatement: replicate stability (Results 3.1 and Table 3), the four-model spread (Results 3.3 and Table 6), the doubled fabrication clause (kept as 'zero invention candidates'), the Discussion's complements verdict, the repeated ablation interval (Results 3.6 and Table 8), and adjectival padding. Every mandated element stays, including the eleven discrepancies and the key's two self-corrections."
+  },
+  {
+   "id": "E02",
+   "section": "Introduction, paragraph 1",
+   "kind": "concision",
+   "anchor": "Systematic reviews and meta-analyses are the reference standard of clinical evidence synthesis, and they are labor-bound: registered reviews take a mean of 67 weeks from registration to publication \\citep{borah2017time}, and extraction, checking and pooling consume most of a review team's hours. Large language models are entering exactly this workflow. Feasibility studies report",
+   "replacement": "Systematic reviews and meta-analyses are the reference standard of clinical evidence synthesis and are labor-bound: registered reviews take 67 weeks on average from registration to publication \\citep{borah2017time}, with extraction, checking and pooling consuming most of a team's hours. Large language models are entering exactly this workflow: feasibility studies report",
+   "rationale": "abstract:intro-01 verbatim. Pure rewrite; 67 weeks, borah2017time (cited only here) and the whole literature list are retained."
+  },
+  {
+   "id": "E03",
+   "section": "Introduction, paragraph 1",
+   "kind": "concision",
+   "anchor": "and end-to-end platforms now report complete systematic reviews in hours \\citep{bakker2026minutes}",
+   "replacement": "and end-to-end platforms now report complete reviews in hours \\citep{bakker2026minutes}",
+   "rationale": "abstract:intro-02 verbatim. 'systematic' is redundant inside a sentence whose subject is systematic reviews; the citation and the claim are unchanged."
+  },
+  {
+   "id": "E04",
+   "section": "Introduction, paragraph 2 (the three gaps)",
+   "kind": "concision",
+   "anchor": "First, most evaluations use commercial cloud models, while clinical text pushes the other way: locally run open-weight models keep sensitive material on-premises and have shown extraction performance approaching expert annotation \\citep{wiest2024privacy,spaanderman2025openweight}. Second, benchmarks that score agreement with a published review cannot distinguish a model that \\emph{read} the primary trial from one that \\emph{remembers} the review: both the anchor and its primaries are plausibly in training corpora",
+   "replacement": "First, most evaluations use commercial cloud models, while clinical text pushes the other way: local open-weight models keep sensitive material on-premises and have shown extraction performance approaching expert annotation \\citep{wiest2024privacy,spaanderman2025openweight}. Second, benchmarks that score agreement with a published review cannot distinguish a model that \\emph{read} the primary trial from one that \\emph{remembers} the review: the anchor and its primaries are plausibly in training corpora",
+   "rationale": "abstract:intro-03 verbatim. Four dead words in two sentences; both citation keys, the contamination argument and the emphasis macros intact. This paragraph is the surviving home of the privacy pair after E78 drops it from the Discussion."
+  },
+  {
+   "id": "E05",
+   "section": "Introduction, paragraph 2 (the three gaps)",
+   "kind": "concision",
+   "anchor": "and a later methodological review found the evidence base for established extraction standards weak despite that prevalence \\citep{mathes2017frequency}. A benchmark that cannot notice when the published value is the one that is wrong will misgrade its best readers.",
+   "replacement": "and a later methodological review found the evidence base for established extraction standards weak despite that prevalence \\citep{mathes2017frequency}. A benchmark that cannot notice when the published value is wrong will misgrade its best readers.",
+   "rationale": "abstract:intro-04 verbatim. The audit figures (27 meta-analyses, 17, 63%, negate or reverse a finding) stay in the untouched half of the sentence, and they are now the only full statement of that prevalence since E79 reduces the Discussion copy to its two citations."
+  },
+  {
+   "id": "E06",
+   "section": "Introduction, paragraph 3 (what EXTRAI does)",
+   "kind": "duplication",
+   "anchor": "EXTRAI closes those three gaps at once: quantized open-weight models on a consumer machine with no cloud calls; a perturbation reading proof, which displaces load-bearing numbers in every source text under sealed maps so that recitation of published values is detectable; and a two-layer, source-verified answer key whose quotation-backed adjudication rite puts the human key itself on trial. That verification produced a seventeen-entry record on one published anchor, eleven of them discrepancies confirmed against the primary sources, and logged the adjudicators' own mistakes in the same record --- all of it in this study's public archive \\citep{barra2026extrai}. Because the instruments were drafted in the research team's working language before being frozen in English, the study also carries a built-in robustness check on instruction language, reported with the results.",
+   "replacement": "EXTRAI closes those three gaps at once: quantized open-weight models on a consumer machine with no cloud calls; a perturbation reading proof that makes recitation of published values detectable; and a two-layer, source-verified answer key whose quotation-backed rite puts the human key itself on trial. That verification produced a seventeen-entry record on one published anchor, eleven of them discrepancies confirmed against the primary sources, all of it in this study's public archive \\citep{barra2026extrai}. Because the instruments were drafted in the team's working language before being frozen in English, the study also carries a built-in robustness check on instruction language.",
+   "rationale": "MERGE of abstract:intro-05 (containing anchor) with duplication:F2 and duplication:F3, whose anchors nest inside it. Takes F2's tighter perturbation clause (the operator's mechanics are fully specified in Methods 2.3 and summarised in the abstract) and F3's deletion of the adjudicators'-mistakes clause (which survives at Methods 2.4 and in the errata caption). Seventeen-entry record, eleven confirmed discrepancies, the public archive and barra2026extrai are all kept."
+  },
+  {
+   "id": "E07",
+   "section": "Introduction, closing paragraph",
+   "kind": "duplication",
+   "anchor": "This article reports a pre-registered, five-phase benchmark of local language models as meta-analysis workers --- reading, arithmetic, creation of two published meta-analyses, orchestration under a warn-only detection harness, and deployment on clean texts with no answer key in any loop --- comparing five integrated-GPU models plus a sixth added after the campaign as a pre-registered extension arm, under contamination-controlled, source-verified grading against the published values.",
+   "replacement": "This article reports a pre-registered, five-phase benchmark of local language models as meta-analysis workers, comparing five integrated-GPU models plus a sixth added after the campaign as a pre-registered extension arm, under contamination-controlled, source-verified grading against the published values.",
+   "rationale": "MERGE of abstract:intro-06 (containing anchor) with duplication:F1 (nested). Both delete the same dash-list of the five phases; F1's replacement is used because it keeps the article's self-description, which intro-06 had dropped. CASCADE: methods:M01 would have deleted the Methods 2.1 roadmap this deletion leans on, so M01 is dropped and the roadmap stands."
+  },
+  {
+   "id": "E08",
+   "section": "Methods 2.1 (Study design and pre-registration)",
+   "kind": "duplication",
+   "anchor": ", whose complete record sits in the same public archive \\citep{barra2026extrai}; Section~\\ref{sec:lang} describes the robustness analysis that phase enables.",
+   "replacement": ".",
+   "rationale": "MERGE of methods:M02 (containing anchor) with duplication:F4 (nested). One forward pointer to sec:lang instead of two: the pointer stays at 2.5, beside the Portuguese-drafts fact it depends on, so \\ref{sec:lang} is still cited and \\label{sec:lang} still resolves. The archived instrument-development record survives at 2.13 ('that archived record provides a natural comparison arm') and in Data and code availability; barra2026extrai stays cited at five other sites."
+  },
+  {
+   "id": "E09",
+   "section": "Methods 2.2 (Anchor meta-analyses and corpora)",
+   "kind": "duplication",
+   "anchor": "6 paywalled, legally obtained and never redistributed --- repository scripts rebuild that stratum from a reader's own copies",
+   "replacement": "6 paywalled",
+   "rationale": "methods:M03 verbatim. The redistribution policy and the rebuild instruction are stated again, almost word for word, in Data and code availability, which is the section a reader acts on."
+  },
+  {
+   "id": "E10",
+   "section": "Methods 2.2 (Anchor meta-analyses and corpora)",
+   "kind": "duplication",
+   "anchor": " As in any meta-analysis, each outcome pools only the trials that report it: the anchor's own",
+   "replacement": " The anchor's own",
+   "rationale": "methods:M04 verbatim. The textbook aside is restated where it does work, in Table~\\ref{tab:p3ma1}'s caption ('a meta-analysis pools, per outcome, only the trials reporting it; Section~2.2'); the roster counts that follow carry the point, and they remain in 2.2 for the caption's cross-reference to land on."
+  },
+  {
+   "id": "E11",
+   "section": "Methods 2.2 (Anchor meta-analyses and corpora)",
+   "kind": "duplication",
+   "anchor": "; no outcome in the anchor is reported by more than 4 of its 14 trials; and the 14 meet",
+   "replacement": ", and the 14 meet",
+   "rationale": "methods:M05, anchor extended by four words so the surviving two-item list is joined by ', and' rather than the orphaned '; and' a bare deletion would leave. The clause arithmetically restates the one before it ('roster 4, 2 and 3 of the 14 trials'); no number is lost."
+  },
+  {
+   "id": "E12",
+   "section": "Methods 2.2 (Anchor meta-analyses and corpora)",
+   "kind": "duplication",
+   "anchor": "the extraction-level analyses (cell grading, stability, recitation and invention screens, and the per-trial three-way tables) span all 14",
+   "replacement": "the extraction-level analyses span all 14",
+   "rationale": "methods:M06 verbatim. Each named analysis is defined in its own subsection (2.7 for grading, stability, recitation and invention screens; 2.11 for the three-way tables, which E29 and E30 leave intact); the load-bearing scope claim is kept."
+  },
+  {
+   "id": "E13",
+   "section": "Methods 2.3 (The perturbation reading proof)",
+   "kind": "duplication",
+   "anchor": " Without this control, agreement with a published meta-analysis cannot be distinguished from memory of it.",
+   "replacement": "",
+   "rationale": "MERGE of methods:M07 and duplication:F6, which target the same sentence with off-by-one whitespace; deleted once. The motive is the Introduction's second gap, stated there at greater length with xu2024contamination; the operational test (displaced value equals read, published value equals recited) survives in the two sentences above it."
+  },
+  {
+   "id": "E14",
+   "section": "Methods 2.3 (The perturbation reading proof)",
+   "kind": "duplication",
+   "anchor": "The sealed maps were produced once, before any model run, and reused unchanged",
+   "replacement": "The sealed maps were reused unchanged",
+   "rationale": "methods:M08 verbatim. Third statement in four sentences that the seals predate the runs (2.3's opening sentence, and 2.1's 'built and frozen before the campaign'). Reuse unchanged across all phases and the SHA-256 fingerprints survive."
+  },
+  {
+   "id": "E15",
+   "section": "Methods 2.4 (Answer keys and the adjudication rite)",
+   "kind": "duplication",
+   "anchor": "answer key built during this study's instrument-development phase: layer~1",
+   "replacement": "answer key: layer~1",
+   "rationale": "methods:M10 verbatim. Instrument provenance is established once in 2.1 ('built and frozen before the campaign, during this study's own instrument-development phase'), which E08 leaves standing; repeating it per instrument is what makes the Methods sprawl."
+  },
+  {
+   "id": "E16",
+   "section": "Methods 2.4 (Answer keys and the adjudication rite)",
+   "kind": "duplication",
+   "anchor": " (Table~\\ref{tab:errata}; the same record keeps the adjudicators' withdrawn accusations and its pending items)",
+   "replacement": " (Table~\\ref{tab:errata})",
+   "rationale": "MERGE of duplication:F7 (containing anchor) with methods:M11 (nested); identical net effect. Prose narrating the caption of the table it points to, one line above that caption. The caption still names the withdrawn accusations and the pending items, and the rite paragraph still says the adjudicators' errors are published."
+  },
+  {
+   "id": "E17",
+   "section": "Methods 2.4 (Answer keys and the adjudication rite)",
+   "kind": "duplication",
+   "anchor": "the author working with a cloud-based frontier assistant that implements the graders and drafts verdicts under the rite (disclosed in the Declarations)",
+   "replacement": "the author working with a cloud-based frontier assistant (disclosed in the Declarations)",
+   "rationale": "duplication:F8 verbatim. The assistant's exact role is enumerated in full in the Declarations, which the sentence already cross-references. The load-bearing scoping claim -- local-only applies to the evaluated pipelines, never to grading and review -- is untouched."
+  },
+  {
+   "id": "E18",
+   "section": "Methods 2.4 (Answer keys and the adjudication rite)",
+   "kind": "duplication",
+   "anchor": "; every adjudication it produced is recorded with its deciding quotation",
+   "replacement": "",
+   "rationale": "methods:M12 verbatim. Closes the paragraph by restating the rule it opens with ('no cell changes category without the source quotation that decides it'); Data and code availability also lists 'adjudications with source quotations ... and every flag resolution', which E77 depends on."
+  },
+  {
+   "id": "E19",
+   "section": "Methods 2.5 (Instruments)",
+   "kind": "duplication",
+   "anchor": " (JSON forms with per-cell \\texttt{\\{\"value\", \"where\"\\}} objects)",
+   "replacement": "",
+   "rationale": "methods:M13 verbatim. The sheet schema is given in full two subsections later in 2.7, with the field count and the meaning of \\texttt{where}, and E24 leaves that specification intact."
+  },
+  {
+   "id": "E20",
+   "section": "Methods 2.6 (Models and hardware)",
+   "kind": "duplication",
+   "anchor": ", each pinned by its Ollama build digest in the repository's model manifest",
+   "replacement": "",
+   "rationale": "methods:M15 verbatim. Data and code availability carries the same pointer ('the exact quantized builds (pinned by Ollama digest) are public'), which is where a reader goes to resolve a digest."
+  },
+  {
+   "id": "E21",
+   "section": "Methods 2.6 (Models and hardware)",
+   "kind": "duplication",
+   "anchor": " (the grading and adjudication layer is human--AI and cloud-assisted; Section~2.4)",
+   "replacement": " (the grading and adjudication layer is cloud-assisted; Section~2.4)",
+   "rationale": "methods:M16 verbatim. A mutual cross-reference in which both halves restate the same scoping caveat; the pointer is kept so the disclosure is one click away, and 'human--AI' survives at 2.4, in the Declarations and in Limitations."
+  },
+  {
+   "id": "E22",
+   "section": "Methods 2.6 (Models and hardware, extension arm)",
+   "kind": "duplication",
+   "anchor": "; P4 remained \\texttt{gemma4:12b}'s by pre-designation",
+   "replacement": "",
+   "rationale": "MERGE of duplication:F9 and methods:M17, NARROWED. Both would also have deleted '54 calls in 119 minutes', but 119 minutes occurs nowhere else in the manuscript (2.12 gives only the rounded 'approx 2.0 h'), so the anchor was cut back to the P4 clause alone. That clause is a third statement: 2.6 already says P4 used only gemma4:12b by pre-designation, the preceding clause says the arm ran P1--P3, and Limitations says it was 'not taken through P4'."
+  },
+  {
+   "id": "E23",
+   "section": "Methods 2.6 (Models and hardware, extension arm)",
+   "kind": "duplication",
+   "anchor": "Its results are reported beside the cast's and labeled as the extension arm throughout; after the graders",
+   "replacement": "After the graders",
+   "rationale": "methods:M18 verbatim. A promise about presentation that all four result tables keep visibly, each with a labelled '(ext.)' row below a rule. The substantive half of the sentence -- the field-by-field re-verification of the five-model record -- is preserved intact."
+  },
+  {
+   "id": "E24",
+   "section": "Methods 2.7 (Phase P1 --- structured extraction)",
+   "kind": "duplication",
+   "anchor": " --- archived with every sheet and load-bearing in adjudication",
+   "replacement": "",
+   "rationale": "methods:M19 verbatim. The archiving is stated in Data and code availability; the adjudication weight is stated in the Discussion paragraph that argues for extending provenance fields, which E74 keeps."
+  },
+  {
+   "id": "E25",
+   "section": "Methods 2.7 (Phase P1 --- structured extraction)",
+   "kind": "duplication",
+   "anchor": "the full ruler: it cannot see summarization equivalence or population-layer choices, so every",
+   "replacement": "the full ruler, so every",
+   "rationale": "methods:M20 verbatim. The comparator's blind spot is declared in five places. The caveat itself stays here ('a declared approximation of the full ruler'), and the enumerated blind spots survive in Results 3.1, in Table~\\ref{tab:p1}'s caption, in Table~S2's caption and in Limitations, so no limitation is softened."
+  },
+  {
+   "id": "E26",
+   "section": "Methods 2.7 (Phase P1 --- structured extraction)",
+   "kind": "duplication",
+   "anchor": "Divergent cells were classified by factuality: \\emph{omission} (the model wrote \\emph{not reported} where the source-verified key holds a value), \\emph{invention candidate} (a number absent from the perturbed text and not derivable from it by percentage, sum, difference or mean), or \\emph{value/format divergence};",
+   "replacement": "Divergent cells were classified by factuality (Table~\\ref{tab:p1} defines the three classes) as \\emph{omission}, \\emph{invention candidate} --- a number absent from the perturbed text and not derivable from it by percentage, sum, difference or mean --- or \\emph{value/format divergence};",
+   "rationale": "methods:M21 verbatim. The three definitions are given twice, here and in the caption of the table that reports them. The invention rule defines correctness for the paper's central negative finding, so its derivation clause (which the caption does not carry) is kept -- and E38 relies on it surviving here."
+  },
+  {
+   "id": "E27",
+   "section": "Methods 2.7 (Phase P1 --- structured extraction)",
+   "kind": "duplication",
+   "anchor": "classified by mechanism --- equivalent re-encoding, population-layer choice, case-mix summary, row- or scope-level slip, unmatched re-expression, or grader-side artifact --- with residues",
+   "replacement": "classified by mechanism, with residues",
+   "rationale": "methods:M22 verbatim. The same six-item list appears here, in Results 3.1 with counts (kept by E41) and in the seven supplementary captions. The pointer to Tables~S1--S7 is kept; no table or caption is touched."
+  },
+  {
+   "id": "E28",
+   "section": "Methods 2.11 (Phase P5 --- deployment on clean texts)",
+   "kind": "duplication",
+   "anchor": "On clean texts, agreement cannot distinguish reading from recall, so this phase makes no reading-proof claim --- the perturbed phases carry that burden. ",
+   "replacement": "",
+   "rationale": "duplication:F10 verbatim. CASCADE: methods:M09 would have deleted the other Methods copy of this caveat (in 2.3) at the same time, leaving it only in Limitations, so M09 is dropped. The caveat therefore survives in Methods 2.3, where the reading proof is defined and where the forward pointer keeps the manuscript's only \\ref{sec:p5} alive, and again in Limitations."
+  },
+  {
+   "id": "E29",
+   "section": "Methods 2.11 (Phase P5 --- deployment on clean texts)",
+   "kind": "duplication",
+   "anchor": ", enumerated in the protocol before the run --- testing whether the model's cell sides with the source or with the anchor's published value;",
+   "replacement": " --- testing whether the model's cell sides with the source or with the anchor's published value;",
+   "rationale": "methods:M24 verbatim. The pre-registration claim is made in 2.1 for exactly these extensions and again by the surviving word 'frozen'. The panel's definition -- seven of eleven discrepancies resolving to a single extractable cell with a decided source value -- is kept in full, and E68 depends on it staying here."
+  },
+  {
+   "id": "E30",
+   "section": "Methods 2.11 (Phase P5 --- deployment on clean texts)",
+   "kind": "duplication",
+   "anchor": " --- (a) the deterministic engine with no nets, (b) the engine plus deterministic sheet-versus-source nets, and (c) the model orchestrating under the conversational ten-net harness --- each registered as a dated amendment before its run.",
+   "replacement": " (Table~\\ref{tab:configs}).",
+   "rationale": "methods:M26 verbatim. A three-item list whose items are the row labels of the table that reports them, plus a pre-registration clause 2.1 already makes for these extensions. Table~\\ref{tab:configs} is untouched and now carries the definition. See notes: this is the one edit that moves a design definition out of the Methods."
+  },
+  {
+   "id": "E31",
+   "section": "Methods 2.12 (Comparison conventions and software)",
+   "kind": "duplication",
+   "anchor": " (risk ratio and its log-scale interval; mean difference and its interval; SD conversions; Mantel--Haenszel, DerSimonian--Laird and inverse-variance pooling), each frozen before the campaign;",
+   "replacement": " (risk ratio and its log-scale interval; mean difference and its interval; SD conversions; Mantel--Haenszel, DerSimonian--Laird and inverse-variance pooling);",
+   "rationale": "methods:M27 verbatim. Fourth statement that the engines were frozen before the campaign (2.1 makes it for engines, graders and harness together). The function inventory and the standing test case are kept; dersimonian1986meta stays cited in 2.9."
+  },
+  {
+   "id": "E32",
+   "section": "Methods 2.12 (Comparison conventions and software)",
+   "kind": "duplication",
+   "anchor": "; with one corpus per anchor no formal between-model inference was attempted, the model comparisons are descriptive, and every superlative in this article is scoped to these corpora.",
+   "replacement": "; with one corpus per anchor the model comparisons are descriptive.",
+   "rationale": "methods:M28 verbatim. Both caveats stand verbatim in the Limitations paragraph, which this package leaves byte-identical: 'every superlative is scoped to these corpora, and no formal between-model inference is attempted.'"
+  },
+  {
+   "id": "E33",
+   "section": "Methods 2.12 (Comparison conventions and software)",
+   "kind": "duplication",
+   "anchor": " and every phase committed to the public repository before it ran.",
+   "replacement": ".",
+   "rationale": "methods:M29 verbatim. The Methods would otherwise close with the sentence it opens with (2.1: 'registered and committed to the public repository before any run'). The distinct fact in the clause, 'every queue resume-safe', is kept."
+  },
+  {
+   "id": "E34",
+   "section": "Results 3.1 (P1 --- extraction), paragraph 1",
+   "kind": "duplication",
+   "anchor": "ranged from 89/124 (71.8\\%) for \\texttt{llama3.1:8b} to 105/124 (84.7\\%) for \\texttt{qwen3:14b} and \\texttt{qwen3.5:9b}, with \\texttt{gemma4:12b} at 103/124 (83.1\\%); replicate stability ranged from 77.4\\% to 99.2\\% (Table~\\ref{tab:p1}).",
+   "replacement": "ranged from 89/124 (71.8\\%) to 105/124 (84.7\\%), and replicate stability from 77.4\\% to 99.2\\% (Table~\\ref{tab:p1}).",
+   "rationale": "MERGE of results:R01 (containing anchor, includes the full stop) with duplication:F11 (nested). F11's replacement is used because it keeps the fractions, so the prose still gives the finding; the per-model roll call is Table~\\ref{tab:p1}'s job and every score is printed in its rows. This clause is also the surviving home of the 77.4--99.2 stability range after E01."
+  },
+  {
+   "id": "E35",
+   "section": "Results 3.1 (P1 --- extraction), extension arm",
+   "kind": "duplication",
+   "anchor": "graded by the same comparator and the same one-cell adjudication, it scored 108/124 (87.1\\%) --- the highest of the six --- with replicate stability 117/124 (94.4\\%), six omissions and ten value/format cells (Table~\\ref{tab:p1}, last row).",
+   "replacement": "graded identically, it scored 108/124 (87.1\\%) --- the highest of the six (Table~\\ref{tab:p1}, last row).",
+   "rationale": "MERGE of duplication:F12 and results:R02, whose anchors intersect (F12 starts earlier, R02 ends later); the union is the anchor. Stability, omissions and value/format are read off the row the sentence cites, and the caption already says the arm was graded identically with the same one-cell adjudication. F12's keeping of the headline score and the ranking claim wins, since they are the paragraph's point."
+  },
+  {
+   "id": "E36",
+   "section": "Results 3.1 (P1 --- extraction), paragraph 1",
+   "kind": "duplication",
+   "anchor": " The point matters concretely and is visible in the table itself: \\texttt{qwen3:14b}'s two-cell edge over \\texttt{gemma4:12b} dissolves in the decomposition columns (six omissions against zero --- and omissions are real misses where value/format variants are largely equivalence the comparator cannot see) and reverses decisively at the value level in P3.",
+   "replacement": "",
+   "rationale": "results:R03 verbatim; supersedes duplication:F13, whose anchor intersects it. A whole sentence narrating two cells of the adjacent table and re-announcing a P3 result the preceding clause has just announced. The surviving clause keeps the comparator caveat and the P3 pointer: 'cross-model ranking by this score alone is provisional; the value-level separation appears in P3.'"
+  },
+  {
+   "id": "E37",
+   "section": "Results 3.1 (P1 --- extraction), paragraph 2",
+   "kind": "duplication",
+   "anchor": "raised 5 candidate cells across the cast's 140 sheets (and none across the extension arm's 28), and adjudication",
+   "replacement": "raised 5 candidate cells across the cast's 140 sheets, and adjudication",
+   "rationale": "results:R04 verbatim. The extension arm's zero is the Recit. cell of the row this paragraph points at; its 28 sheets are stated in paragraph 1, which E35 leaves standing."
+  },
+  {
+   "id": "E38",
+   "section": "Results 3.1 (P1 --- extraction), paragraph 3",
+   "kind": "duplication",
+   "anchor": ", the extension arm included: each number each model wrote exists in, or is arithmetically derivable from, the perturbed text it read.",
+   "replacement": ", the extension arm included.",
+   "rationale": "results:R05 verbatim. The colon clause restates the Methods definition of an invention candidate at the moment the count is reported; E26 deliberately keeps that definition in 2.7, and Table~\\ref{tab:p1}'s caption and the supplement carry it too. The finding -- zero, in every model including the extension arm -- is untouched."
+  },
+  {
+   "id": "E39",
+   "section": "Results 3.1 (P1 --- extraction), paragraph 3",
+   "kind": "duplication",
+   "anchor": "Most divergences were themselves replicate-stable --- the same non-key answer written in both independent readings: 17/21",
+   "replacement": "Most divergences were themselves replicate-stable: 17/21",
+   "rationale": "results:R06 verbatim. The em-dash gloss defines stable-but-divergent, which Table~\\ref{tab:p1}'s caption defines on the same page. All six stability inventories are kept -- they appear in no table."
+  },
+  {
+   "id": "E40",
+   "section": "Results 3.1 (P1 --- extraction), paragraph 3",
+   "kind": "concision",
+   "anchor": "(counted over the comparator's raw divergent inventories, before the four-cell adjudication; \\texttt{deepseek-r1:14b}'s denominator excludes one divergent cell in the trial whose second replicate was unparseable, leaving no pair to compare).",
+   "replacement": "(counted over the comparator's raw divergent inventories, before the four-cell adjudication; \\texttt{deepseek-r1:14b}'s denominator excludes the divergent cell in its unparseable-replicate trial).",
+   "rationale": "results:R07 verbatim. Same caveat, same exclusion, fewer words: 'leaving no pair to compare' is what 'unparseable-replicate' already means, and the unparseable replicate is stated in paragraph 1 and in the table's dagger note."
+  },
+  {
+   "id": "E41",
+   "section": "Results 3.1 (P1 --- mechanism classification of the 124 failures)",
+   "kind": "duplication",
+   "anchor": "classified by mechanism: 12 omissions; 27 equivalent re-encodings whose arithmetic verifies exactly (percentages for counts, rearranged count/percentage pairs); 26 population-layer choices (a different printed participant count of the same trial); 34 case-mix summaries; 12 genuine reading slips (an adjacent row, a transposed pair, a per-kilogram row, a different scope); 9 unmatched ratio-style re-expressions, all from \\texttt{llama3.1:8b}; and 4 cells --- one each for four models --- adjudicated \\emph{in the models' favor}: the transcription was verbatim-correct, and a seal-pair substring collision in the grader's unperturbation lookup corrupted the comparison (Table~S7). Table~\\ref{tab:p1} carries the adjudicated scores; the comparator's raw output stands in the archived record.",
+   "replacement": "classified by mechanism: 12 omissions; 27 equivalent re-encodings; 26 population-layer choices; 34 case-mix summaries; 12 genuine reading slips; 9 unmatched ratio-style re-expressions; and 4 cells adjudicated \\emph{in the models' favor} as a grader-side lookup collision (Table~S7).",
+   "rationale": "MERGE of duplication:F14 and results:R08, which share one anchor and differ only in whether the counts stay. F14's replacement is used: the seven glosses (each the wording of the supplementary caption it introduces) and the two sentences lifted from Table~\\ref{tab:p1}'s caption go, but the seven class counts stay, so 12+27+26+34+12+9+4=124 remains checkable in the body against the supplement's own exhaustiveness statement."
+  },
+  {
+   "id": "E42",
+   "section": "Results 3.1 (P1 --- extension arm's divergent cells)",
+   "kind": "duplication",
+   "anchor": "The extension arm's 17 divergent cells fall into the same mechanisms --- the seven case-mix summaries every reader produces, the two FEDORA population-layer cells, one re-encoding (\\texttt{0 (0)} for \\texttt{0 (0\\%)}), six omissions and the same Castro collision cell, adjudicated in its favor by the same rule --- and are enumerated in the repository's Amendment-1 record.",
+   "replacement": "The extension arm's 17 divergent cells fall into the same mechanisms: the seven case-mix summaries every reader produces, the two FEDORA population-layer cells, one re-encoding (\\texttt{0 (0)} for \\texttt{0 (0\\%)}), six omissions and the same Castro collision cell.",
+   "rationale": "results:R09 verbatim. The Amendment-1 pointer is in the supplement's opening paragraph and the 'same rule' adjudication in Table~\\ref{tab:p1}'s caption. The per-class breakdown, which appears nowhere else in the manuscript, is kept in full; the dash pair becomes a colon so the sentence still parses."
+  },
+  {
+   "id": "E43",
+   "section": "Results 3.2 (P2 --- arithmetic)",
+   "kind": "duplication",
+   "anchor": " Pooled estimates remained at or near zero exact in both arms for every model in the cast.",
+   "replacement": "",
+   "rationale": "MERGE of results:R10 and duplication:F16, the same sentence with off-by-one whitespace; deleted once. Table~\\ref{tab:p2}'s caption two lines below makes the identical claim in almost identical words, and the next sentence carries the contrast with the extension arm."
+  },
+  {
+   "id": "E44",
+   "section": "Results 3.2 (P2 --- arithmetic)",
+   "kind": "duplication",
+   "anchor": "closed every quantity its sheets support: 16/16 exact points, 16/16 exact intervals and --- uniquely among the six --- 12/12 exact pooled estimates, with no malformed output.",
+   "replacement": "closed every quantity its sheets support --- points, intervals and, uniquely among the six, the pooled estimates --- with no malformed output (Table~\\ref{tab:p2}).",
+   "rationale": "results:R11 verbatim. The three fractions are the row and the caption of the table immediately below; 12/12 also survives in the abstract. The unaided 0/16, which is in no table, is kept."
+  },
+  {
+   "id": "E45",
+   "section": "Results 3.3 (P3 --- creation), Anchor 1",
+   "kind": "duplication",
+   "anchor": "pooled morbidity 0.771--0.787 against the published 0.778 [0.567, 1.068], and pooled mortality 0.980--1.023 against the published 1.021 [0.446, 2.337], every value",
+   "replacement": "pooled morbidity 0.771--0.787 and mortality 0.980--1.023, every value",
+   "rationale": "results:R12 verbatim. The two published reference values are printed in the caption of the table this sentence cites. CASCADE: E58 also drops 'against the published 0.778' from the Discussion, so 0.778 now stands in Table~\\ref{tab:p3ma1}'s caption and in the abstract -- two copies, both verified present."
+  },
+  {
+   "id": "E46",
+   "section": "Results 3.3 (P3 --- creation), Anchor 1",
+   "kind": "duplication",
+   "anchor": "The extension arm's morbidity pool sits farthest from the cast's (0.787): on FEDORA it read the literal event counts (18/224 and 35/226) and reproduced the published per-study risk ratio 0.519 exactly, where \\texttt{gemma4:12b} read the percentages and derived 19/38 --- a route difference the ratio structure dampened to $\\Delta$0.008 at the pool.",
+   "replacement": "The extension arm's morbidity pool sits farthest from the cast's: on FEDORA it read the literal event counts (18/224 and 35/226) and reproduced the published per-study risk ratio 0.519 exactly, where \\texttt{gemma4:12b} read the percentages and derived 19/38 --- a route difference worth $\\Delta$0.008 at the pool.",
+   "rationale": "results:R13 verbatim. 0.787 is the arm's row in Table~\\ref{tab:p3ma1}; the dampening mechanism is developed at length in the Discussion's division-of-difficulty paragraph and in Table~S3's caption. All four route numbers are kept."
+  },
+  {
+   "id": "E47",
+   "section": "Results 3.3 (P3 --- creation), Anchor 1",
+   "kind": "duplication",
+   "anchor": "(documented discrepancy \\#16: one published row is a different outcome)",
+   "replacement": "(documented discrepancy \\#16)",
+   "rationale": "results:R14 verbatim. The gloss re-tells the numbered errata row it is citing by number; row 16 of Table~\\ref{tab:errata} states it, and the Discussion expands it."
+  },
+  {
+   "id": "E48",
+   "section": "Results 3.3 (P3 --- creation), Anchor 2",
+   "kind": "duplication",
+   "anchor": "\\texttt{gemma4:12b}'s lens landed at $-0.27$ [$-0.38$, $-0.17$] (I\\textsuperscript{2} 28.6\\%), beside the published $-0.24$ [$-0.32$, $-0.16$]; the extension arm's landed at $-0.25$ [$-0.33$, $-0.16$] (I\\textsuperscript{2} 7.1\\%, $\\tau^2$ 0.001), the closest of the six --- both fall within the pre-registered $\\pm$0.1 tolerance at the point estimate and at both bounds, and the extension arm's reconstructs the anchor's own homogeneity (published I\\textsuperscript{2} 6\\%).",
+   "replacement": "\\texttt{gemma4:12b}'s lens landed beside the published diamond and the extension arm's closer still, the closest of the six; both fall within the pre-registered $\\pm$0.1 tolerance at the point estimate and at both bounds, and the extension arm's reconstructs the anchor's own homogeneity (Table~\\ref{tab:p3ma2}).",
+   "rationale": "results:R15 verbatim. Nine numbers, every one a cell of the table two lines below. What the table cannot say -- that both clear the pre-registered tolerance at the point estimate and at both bounds, and that the arm reproduces the anchor's homogeneity -- is exactly what the sentence keeps."
+  },
+  {
+   "id": "E49",
+   "section": "Results 3.3 (P3 --- creation), Anchor 2",
+   "kind": "duplication",
+   "anchor": "The other four landed between $-0.47$ and $-0.80$ with saturated heterogeneity (I\\textsuperscript{2} 90.5--99.1\\%), three of them with starved sheets (5/7, 6/7 and 6/7 trials in the pool).",
+   "replacement": "The other four landed between $-0.47$ and $-0.80$ with saturated heterogeneity, three of them from starved sheets.",
+   "rationale": "results:R16 verbatim. The I-squared range and the three starved denominators are read directly off two columns of the adjacent table; the effect-size spread is kept because it is the finding, and it becomes the only prose statement of the four-model spread once E63 removes the Discussion's."
+  },
+  {
+   "id": "E50",
+   "section": "Results 3.3 (P3 --- creation), Anchor 2",
+   "kind": "duplication",
+   "anchor": " Reversal separated the readers the same way: it collapsed the two closest sheets' heterogeneity (\\texttt{gemma4:12b} I\\textsuperscript{2} 91.3\\%$\\rightarrow$28.6\\%; extension arm 91.2\\%$\\rightarrow$7.1\\%) and left the other four models' I\\textsuperscript{2} unchanged to within 0.1 points (Table~\\ref{tab:p3ma2}).",
+   "replacement": "",
+   "rationale": "MERGE of results:R17 and duplication:F17, the same sentence with off-by-one whitespace; deleted once. CASCADE: E61 removes the Discussion's copy of the same four figures, so the reversal collapse now stands in Table~\\ref{tab:p3ma2}'s caption -- which restates it almost verbatim and explains the column it prints -- and in the 'I-squared before reversal' column itself."
+  },
+  {
+   "id": "E51",
+   "section": "Results 3.4 (P4), subsection heading",
+   "kind": "concision",
+   "anchor": "\\subsection{P4 --- orchestration under the English harness: confirm-or-correct resolved both warnings, and the pooling call closed digit-consistent with the executed result}",
+   "replacement": "\\subsection{P4 --- orchestration: confirm-or-correct resolved both warnings, and the pooling call closed digit-consistent with the executed result}",
+   "rationale": "results:R18 verbatim. 'under the English harness' is repeated in the first sentence of the very paragraph the heading introduces and specified in Methods 2.10; the heading keeps both findings, and remains a prose statement of the two warnings after E76."
+  },
+  {
+   "id": "E52",
+   "section": "Results 3.4 (P4)",
+   "kind": "duplication",
+   "anchor": " The grader-side lens over the same sheets was $-0.27$ [$-0.38$, $-0.17$].",
+   "replacement": " The grader-side lens over the same sheets returns \\texttt{gemma4:12b}'s P3 diamond (Table~\\ref{tab:p3ma2}).",
+   "rationale": "results:R19 verbatim. The digits are a row of Table~\\ref{tab:p3ma2}. Kept as a pointer rather than deleted, because it is the bridge telling the reader why the model's perturbed-world pool ($-0.50$) is not the lensed diamond."
+  },
+  {
+   "id": "E53",
+   "section": "Results 3.5 (P5), paragraph 1",
+   "kind": "duplication",
+   "anchor": "on the trial whose published ileus row reproduces its pulmonary-complication counts (discrepancy \\#16), the model wrote",
+   "replacement": "on the trial of discrepancy \\#16, the model wrote",
+   "rationale": "results:R20 verbatim. Second gloss of the same errata row within the Results (see E47); row 16 of Table~\\ref{tab:errata} states it, and the Discussion's conclusion-level paragraph keeps 'the mislabeled pulmonary-complication row'. The finding -- not reported in both replicates rather than the published numbers -- is untouched, and E68 depends on it staying here."
+  },
+  {
+   "id": "E54",
+   "section": "Results 3.5 (P5), paragraph 1",
+   "kind": "duplication",
+   "anchor": "the Anchor-2 pool missed its tolerance at $-0.34$ [$-0.51$, $-0.18$] against the published $-0.24$ [$-0.32$, $-0.16$], and the residue",
+   "replacement": "the Anchor-2 pool missed its tolerance at $-0.34$ [$-0.51$, $-0.18$], and the residue",
+   "rationale": "results:R21 verbatim. The published diamond is printed twice inside one sentence; the second occurrence, where correcting the single cell recovers it, is the load-bearing one and is kept, as are Methods 2.2, Methods 2.9 and the table row."
+  },
+  {
+   "id": "E55",
+   "section": "Results 3.5 (P5), paragraph 2",
+   "kind": "duplication",
+   "anchor": "The bare engine delivered the distorted pool silently. The sheet-versus-source net flagged the experimental arm mechanically, with both source quotations, but only after a first rule revision:",
+   "replacement": "The sheet-versus-source net flagged the experimental arm only after a first rule revision:",
+   "rationale": "results:R22 verbatim. Rows (a) and (b) of Table~\\ref{tab:configs} carry 'silent' and 'flagged (exp. arm, with quotes)'. What only the prose can say -- the dated rule revision, the half-width rule, the unflagged control arm -- is kept in full, as is the row-(c) sentence that follows."
+  },
+  {
+   "id": "E56",
+   "section": "Results 3.6 (instruction-language robustness)",
+   "kind": "duplication",
+   "anchor": "the creation-stage flagship lens was identical in point estimate \\emph{and} interval ($-0.27$ [$-0.38$, $-0.17$] in both records); and",
+   "replacement": "the creation-stage flagship lens was identical in point estimate \\emph{and} interval; and",
+   "rationale": "results:R23, narrowed to the clause it actually changes (its full-sentence anchor and replacement differ only here), so it cannot intersect anything else. The repeated diamond is the 'Create' row of Table~\\ref{tab:ablation}, printed twice in that row. The two comparisons the table cannot express in a cell -- +3 cells of 124 with identical stability, and the orchestration delta inside the route-variability band -- are kept."
+  },
+  {
+   "id": "E57",
+   "section": "Discussion, opening paragraph",
+   "kind": "duplication",
+   "anchor": " The models read clinical trials reliably enough to rebuild two published meta-analyses; they cannot do the interval arithmetic unaided but do it almost perfectly through a trivial text-protocol tool; a deterministic architecture turns their sheets into pooled estimates that match the published ones; and, within the pre-registered cast, exactly one model produces a continuous-outcome diamond beside the published value --- a 27B low-bit extension arm added afterwards reproduced it more closely still. Under the perturbation control, none of this is attributable to memory of the published review.",
+   "replacement": " Under the perturbation control, none of these results is attributable to memory of the published review.",
+   "rationale": "discussion:D1 verbatim, anchor extended by the leading space so the join is clean. A four-clause recap of the three Results subsections the reader has just finished, each of which is itself a section heading; the only sentence carrying Discussion-level meaning is the perturbation-control disclaimer, which is kept."
+  },
+  {
+   "id": "E58",
+   "section": "Discussion, division-of-difficulty paragraph",
+   "kind": "duplication",
+   "anchor": "still landed at 0.771--0.787 against the published 0.778.",
+   "replacement": "still landed within a hundredth of the published morbidity pool.",
+   "rationale": "duplication:F19 verbatim. The Discussion may name the result; the figures belong to Results and to Table~\\ref{tab:p3ma1}, which the sentence already cites. CASCADE: E45 removes the Results copy of 'published 0.778', which therefore survives in that table's caption and in the abstract."
+  },
+  {
+   "id": "E59",
+   "section": "Discussion, division-of-difficulty paragraph",
+   "kind": "duplication",
+   "anchor": "one dispersion four-fold too small dominated a pool and inflated I\\textsuperscript{2} from 6\\% to 79\\% in the deployment phase",
+   "replacement": "one dispersion four-fold too small dominated a pool and inflated its heterogeneity in the deployment phase",
+   "rationale": "MERGE of discussion:D3 (containing anchor) with duplication:F20 (nested); identical net effect. Results 3.5 prints the 6%-to-79% inflation for the poisoned cell. The mechanism (weight scales with 1/SD-squared) and the 'four-fold too small' characterisation, which occurs only here, are kept."
+  },
+  {
+   "id": "E60",
+   "section": "Discussion, division-of-difficulty paragraph",
+   "kind": "duplication",
+   "anchor": ", and what lies downstream of the sheet, not the reader alone, decides whether a reading error reaches the pooled estimate.",
+   "replacement": ".",
+   "rationale": "discussion:D29 verbatim. The clause paraphrases its own sentence's opening claim (error-dampening for counts, error-amplifying for continuous outcomes) after the citation aside; the new contribution -- that the unevenness tracks outcome type at least as much as the model -- is kept."
+  },
+  {
+   "id": "E61",
+   "section": "Discussion, neutrality-of-the-chain paragraph",
+   "kind": "duplication",
+   "anchor": "and the unperturbation lens is a pure table lookup that maps displaced numbers back without touching errors. Table~\\ref{tab:p3ma2}'s before-reversal column shows that neutrality mechanically --- reversal collapsed the displacement-injected heterogeneity of the two faithful sheets (\\texttt{gemma4:12b} I\\textsuperscript{2} 91.3\\% to 28.6\\%, the extension arm 91.2\\% to 7.1\\%) and left the other four models' reading-injected heterogeneity unchanged; by the same neutrality those four diamonds passed through the lens and stayed far.",
+   "replacement": "and the unperturbation lens is a pure table lookup. Table~\\ref{tab:p3ma2}'s before-reversal column shows that neutrality mechanically: the four distant diamonds passed through the lens and stayed distant.",
+   "rationale": "MERGE of discussion:D4 (containing anchor) with duplication:F21 (nested). The prose narrates, clause by clause, the caption of the table it cites. CASCADE: with E50 also applied, the reversal collapse now lives in that caption and its column -- the audit copy -- and the lens's correct-nothing property additionally in Methods 2.3 and the same caption. The neutrality argument and its consequence survive."
+  },
+  {
+   "id": "E62",
+   "section": "Discussion, neutrality-of-the-chain paragraph",
+   "kind": "duplication",
+   "anchor": "The pools still match the published ones because the divergent cells of Table~\\ref{tab:p1} concentrate in baseline descriptor fields the engines never consume --- the pooled quantities draw only on the event and denominator cells, which were correct --- and in population-layer choices the ratio structure dampens.",
+   "replacement": "The pools still match the published ones because the divergent cells of Table~\\ref{tab:p1} concentrate in baseline descriptor fields the engines never consume, and in population-layer choices the ratio structure dampens.",
+   "rationale": "discussion:D5 verbatim. The em-dash aside restates the dampening mechanism explained one paragraph earlier and in Table~S3's caption, and is implied by the surviving clause; the distinct point -- divergences sit in fields the engines never read -- is kept."
+  },
+  {
+   "id": "E63",
+   "section": "Discussion, neutrality-of-the-chain paragraph",
+   "kind": "duplication",
+   "anchor": "The six diamonds spread from $-0.25$ to $-0.80$ through reading-class differences alone: one engine computed all six.",
+   "replacement": "The six diamonds spread widely through reading-class differences alone: one engine computed all six.",
+   "rationale": "MERGE of discussion:D6 (containing anchor) with duplication:F22 (nested). The endpoints are the first and last rows of Table~\\ref{tab:p3ma2} and, for the four-model range, Results 3.3 (kept by E49). The claim -- one engine produced the whole spread -- is what survives."
+  },
+  {
+   "id": "E64",
+   "section": "Discussion, neutrality-of-the-chain paragraph (extension-arm reading)",
+   "kind": "duplication",
+   "anchor": "The extension arm sharpens what \\emph{well-chosen} means: at a comparable memory footprint (10.7~GB against 4.9--9.3~GB for the cast) it carried roughly twice the parameters at about seven-tenths the precision --- 27.3~billion weights at 3.13 bits against 8--14.8 billion at 4.5 --- and read better than every model in the cast on both anchors. In this record the parameter count, not the bit depth, tracked reading quality; with one build per model the two cannot be separated, and the observation is a lead for the next campaign rather than a result of this one.",
+   "replacement": "The extension arm sharpens what \\emph{well-chosen} means: at a comparable footprint it carried roughly twice the parameters at about seven-tenths the precision (Section~2.6) and read better than every model in the cast on both anchors. In this record the parameter count, not the bit depth, tracked reading quality --- a lead for the next campaign rather than a result of this one.",
+   "rationale": "MERGE of discussion:D7 (containing anchor) with duplication:F23 (nested). Four Methods 2.6 build facts re-printed inside a sentence whose actual claim is the ratio; the ratios, the reading claim and the not-a-result hedge survive, and the non-separability caveat stands verbatim in Limitations ('precision and parameter count are not separable here')."
+  },
+  {
+   "id": "E65",
+   "section": "Discussion, neutrality-of-the-chain paragraph (homogeneity shortfall)",
+   "kind": "duplication",
+   "anchor": "Even the cast's best diamond falls short of the anchor's homogeneity: \\texttt{gemma4:12b}'s lens carries I\\textsuperscript{2} 28.6\\% against the published 6\\% --- the same effect, direction and significance over a noisier reconstructed evidence body, the residue plausibly injected by route-level differences (population layers, dispersion conversions) rather than by any single wrong cell --- while the extension arm's 7.1\\% shows that homogeneity to be reachable by reading alone.",
+   "replacement": "Even the cast's best diamond, \\texttt{gemma4:12b}'s, falls short of the anchor's homogeneity (Table~\\ref{tab:p3ma2}) --- the same effect, direction and significance over a noisier reconstructed evidence body, the residue plausibly injected by route-level differences (population layers, dispersion conversions) rather than by any single wrong cell --- while the extension arm's I\\textsuperscript{2} shows that homogeneity to be reachable by reading alone.",
+   "rationale": "MERGE of discussion:D8 (containing anchor) with duplication:F24 and duplication:F25 (both nested). D8's replacement is used, with F24's table pointer added since the digits go. The three figures (28.6%, 6%, 7.1%) are adjacent cells of the cited table; the interpretation the paragraph exists for -- same effect over a noisier evidence body, the wider interval a practitioner inherits -- is untouched."
+  },
+  {
+   "id": "E66",
+   "section": "Discussion, honesty-profile paragraph",
+   "kind": "duplication",
+   "anchor": "None of those reading failures was a fabrication. Across both corpora and all six models the invention screen found no cell whose numbers cannot be traced to the text read; the inventory is omissions, population-layer choices, format variants and mislabeled quantities, most reproduced identically across replicates in the stronger readers --- systematic and auditable, not stochastic.",
+   "replacement": "None of those reading failures was a fabrication: the invention screen found no cell whose numbers cannot be traced to the text read, and the inventory --- omissions, population-layer choices, format variants, mislabeled quantities, replicate-stable in the stronger readers --- is systematic and auditable, not stochastic.",
+   "rationale": "discussion:D9 verbatim. Concision only; the scope qualifiers are stated with their counts in Results 3.1 and 3.3, and no claim is strengthened. This sentence is also the surviving statement of the models' zero-fabrication profile that E84 leans on."
+  },
+  {
+   "id": "E67",
+   "section": "Discussion, honesty-profile paragraph",
+   "kind": "duplication",
+   "anchor": "The pooled-arithmetic ceiling agrees: even with the calculator, the list-valued pooling calls stayed beyond every model of the 8--14.8B cast, while the 27B extension arm closed all twelve --- which is why",
+   "replacement": "The pooled-arithmetic ceiling agrees: even with the calculator, the list-valued pooling calls stayed beyond the whole 8--14.8B cast --- which is why",
+   "rationale": "discussion:D10 verbatim. The 12/12 result is given in Results 3.2, in Table~\\ref{tab:p2}'s caption and in the abstract; here it interrupts an argument that is about the ceiling justifying pooling-in-code."
+  },
+  {
+   "id": "E68",
+   "section": "Discussion, deployment paragraph",
+   "kind": "duplication",
+   "anchor": "At all seven of the eleven source-confirmed discrepancies that resolve to a single extractable cell with a decided source value, the model sided with the \\emph{source} against the published value, refusing in both replicates to supply the ileus counts the anchor publishes but its source never reports (the other four:",
+   "replacement": "At all seven cells of the frozen discrepancy panel the model sided with the \\emph{source} against the published value (the other four of the eleven fall outside it:",
+   "rationale": "MERGE of duplication:F26 and discussion:D11, which share one anchor and offer two near-identical rewrites; the merged replacement keeps F26's explicit 'all seven cells' and D11's 'fall outside it', which is what makes the following parenthetical parse. The panel's definition stays in Methods 2.11 (E29) and the ileus refusal in Results 3.5 (E53). The accounting of the other four, unique to this passage, is kept in full."
+  },
+  {
+   "id": "E69",
+   "section": "Discussion, deployment paragraph",
+   "kind": "duplication",
+   "anchor": "A local reader plus a three-way table --- source quotation, human cell, model cell --- makes such discrepancies \\emph{visible} instead of requiring trust in either extractor.",
+   "replacement": "A local reader plus a three-way table makes such discrepancies \\emph{visible} instead of requiring trust in either extractor.",
+   "rationale": "discussion:D12 verbatim. The table's composition is specified in Methods 2.11 item (iii), which no edit touches; the Discussion's job here is the claim that it makes discrepancies visible."
+  },
+  {
+   "id": "E70",
+   "section": "Discussion, deployment paragraph (conclusion-level weight)",
+   "kind": "duplication",
+   "anchor": "and over the two genuinely-ileus trials the pool crosses 1 under either method (0.821 [0.559, 1.207] MH; 0.429 [0.048, 3.87] DL); its no-difference conclusions",
+   "replacement": "and over the two genuinely-ileus trials the pool crosses 1 under either method; its no-difference conclusions",
+   "rationale": "MERGE of discussion:D13 (containing anchor) with duplication:F27 (nested). Results 3.3 gives both pools with both methods; the load-bearing consequence is already stated in words here. The anchor's abstract RR 0.48, which occurs only here, is untouched."
+  },
+  {
+   "id": "E71",
+   "section": "Discussion, deployment paragraph",
+   "kind": "duplication",
+   "anchor": "the same source-verification process corrected this study's own key twice during development, and the public record carries the adjudicators' own published mistakes.",
+   "replacement": "the same source-verification process corrected this study's own key twice during development.",
+   "rationale": "discussion:D14 verbatim. CASCADE: this is one of three deletions of the adjudicators'-own-mistakes disclosure (with E06 and E81). The copy at Methods 2.4 -- 'the adjudicators' own errors are published in the same record as everyone else's' -- is untouched, as are the errata caption's withdrawn accusations, the plausibility-bias paragraph's dated self-correction and the adjudication-record index in Data and code availability."
+  },
+  {
+   "id": "E72",
+   "section": "Discussion, failed-tolerance paragraph",
+   "kind": "duplication",
+   "anchor": "The phase's one failed tolerance decomposed to a single cell. The primary prints the same quantity twice --- a table interval and a prose ``$\\pm$'' equal to its half-width --- and the model transcribed the prose layer and declared the $\\pm$ a standard deviation, identically in both replicates. The source's own ambiguous notation seeds the defect, which defines",
+   "replacement": "The phase's one failed tolerance decomposed to a single cell, where the source prints the same quantity twice --- a table interval and a prose ``$\\pm$'' --- and the model transcribed one layer under the wrong label. That ambiguity in the source's own notation seeds the defect, which defines",
+   "rationale": "MERGE of duplication:F28 and discussion:D15, which share one anchor and offer two rewrites; the merged replacement keeps F28's concrete notation contrast and D15's mislabel action while dropping what Results 3.5 narrates in full (the printed -1.6 plus-or-minus 0.3, the half-width identity, the replicate identity). The causal claim and the hand-off to the residual failure class survive."
+  },
+  {
+   "id": "E73",
+   "section": "Discussion, failed-tolerance paragraph",
+   "kind": "concision",
+   "anchor": "The one poisoned cell in this record distorted a pool by the same mechanism, so the class deserves a dedicated sheet-versus-source dispersion net rather than a better model, in any pipeline, human or machine.",
+   "replacement": "The class therefore deserves a dedicated sheet-versus-source dispersion net rather than a better model, in any pipeline, human or machine.",
+   "rationale": "discussion:D16 verbatim. The clause restates this paragraph's own first sentence before drawing its conclusion; the recommendation, which is the load-bearing content, is unchanged."
+  },
+  {
+   "id": "E74",
+   "section": "Discussion, failed-tolerance paragraph",
+   "kind": "concision",
+   "anchor": "The instrument asymmetry likely mattered: the continuous sheet carries no provenance field and could not say \\emph{which} printed layer the 0.3 came from, whereas the dichotomous sheet's mandatory \\texttt{where} locator repeatedly disambiguated population layers during adjudication. Extending provenance fields to every sheet is the corresponding instrument work, queued for future versions and never retroactive.",
+   "replacement": "The instrument asymmetry likely mattered: the continuous sheet carries no provenance field, whereas the dichotomous sheet's mandatory \\texttt{where} locator repeatedly disambiguated population layers during adjudication; extending provenance to every sheet is the corresponding instrument work, never retroactive.",
+   "rationale": "discussion:D17 verbatim. The 0.3 is in Results 3.5 and the sheet asymmetry in Methods 2.9; 'never retroactive', the archive-integrity commitment, is kept."
+  },
+  {
+   "id": "E75",
+   "section": "Discussion, complements-not-substitutes paragraph",
+   "kind": "duplication",
+   "anchor": "Conversational nets catch conversation-layer defects --- four live orchestration slips in one run --- but are structurally blind to a well-formed poisoned cell, which only the sheet-versus-source net saw; the weight-share product flag was blind too, because random-effects weighting re-equalizes shares while the distortion surfaced as heterogeneity inflation.",
+   "replacement": "Conversational nets catch conversation-layer defects but are structurally blind to a well-formed poisoned cell, which only the sheet-versus-source net saw; the weight-share product flag was blind too, because random-effects weighting re-equalizes shares.",
+   "rationale": "discussion:D18 verbatim. The slip count is in Results 3.5 and in row (c) of Table~\\ref{tab:configs}; the heterogeneity inflation is in Results 3.5. The complementarity claim and the re-equalised-shares mechanism survive."
+  },
+  {
+   "id": "E76",
+   "section": "Discussion, complements-not-substitutes paragraph",
+   "kind": "duplication",
+   "anchor": "P4 supplies the complementary case: two declared-derivation warnings fired across seven per-study sequences and confirm-or-correct resolved both --- the net states what it saw, the model confirms or revises, no value is ever overwritten --- after which the model's own pooling call closed digit-consistent with its executed results ($\\Delta$MD 0.02 against the mechanical truth over the same sheets).",
+   "replacement": "P4 supplies the complementary case: confirm-or-correct resolved every warning that fired --- the net states what it saw, the model confirms or revises, no value is ever overwritten --- after which the model's own pooling call closed digit-consistent with its executed results.",
+   "rationale": "MERGE of discussion:D19 and duplication:F29, which share one anchor; D19's replacement is used, since F29's kept the warning count that Results 3.4 and the P4 heading (E51) both state. The counts, the seven sequences and the delta are Results figures, the delta also a row of Table~\\ref{tab:ablation}. The warn-only doctrine in the em-dash aside is kept word for word."
+  },
+  {
+   "id": "E77",
+   "section": "Discussion, complements-not-substitutes paragraph",
+   "kind": "duplication",
+   "anchor": "and a reviewer dispatched to the primary's table whenever any flag fires: here the human--AI adjudication pair, whose flag resolutions are themselves quotation-bound and on record.",
+   "replacement": "and a reviewer dispatched to the primary's table whenever any flag fires.",
+   "rationale": "discussion:D20 verbatim. The identity and quotation-binding of the adjudication pair are disclosed in Methods 2.4, in the Declarations and in Data and code availability ('adjudications with source quotations ... and every flag resolution'), which is untouched. The architectural recommendation is unchanged."
+  },
+  {
+   "id": "E78",
+   "section": "Discussion, literature-context paragraph",
+   "kind": "duplication",
+   "anchor": "These results sit within a fast-moving literature: promising but uneven extraction accuracy for cloud models \\citep{schmidt2024exploring}, screening assistance approaching routine \\citep{xie2026screening}, end-to-end platforms reporting complete reviews in hours \\citep{bakker2026minutes,mclaughlin2026fully}. Everything measured here instead runs locally, at zero marginal cost, on hardware compatible with the privacy constraints of clinical text \\citep{wiest2024privacy,spaanderman2025openweight} and under the evidence-synthesis organizations' stated conditions of demonstrated rigor and transparent reporting \\citep{flemyng2025position}, which the perturbation proof, the public seals and the adjudication rite are designed to operationalize. That reading-versus-recall control matters more, not less, as anchors and primaries enter training corpora \\citep{xu2024contamination}: in 168 perturbed sheets, the extension arm included, the campaign found zero attributable recitations, and the five mechanical candidates it raised traced to two survivable gaps of the perturbation operator itself, now demonstrated across architectures and queued as instrument fixes.",
+   "replacement": "Unlike most of the literature it joins, everything measured here runs locally, at zero marginal cost, on hardware that keeps clinical text on-premises; the perturbation proof, the public seals and the adjudication rite operationalize the conditions the evidence-synthesis organizations attach to such use \\citep{flemyng2025position}. That reading-versus-recall control matters more, not less, as anchors and primaries enter training corpora \\citep{xu2024contamination}, and the two operator gaps behind this campaign's five mechanical candidates are now demonstrated across architectures and queued as instrument fixes.",
+   "rationale": "discussion:D21 verbatim. The first sentence duplicates Introduction paragraph 1 citation for citation and the third re-prints Results 3.1's recitation counts. CITATION AUDIT (machine-checked on the applied copy): schmidt2024exploring survives in the Introduction and in the division-of-difficulty paragraph; xie2026screening, bakker2026minutes, mclaughlin2026fully, wiest2024privacy and spaanderman2025openweight survive in the Introduction (E04 keeps the privacy pair); flemyng2025position and xu2024contamination are retained here. Zero attributable recitations survives in the 3.1 heading, in 'Zero attributable recitations remained.' and in the abstract; the figure 168 survives in the abstract."
+  },
+  {
+   "id": "E79",
+   "section": "Discussion, human-side-of-extraction paragraph",
+   "kind": "duplication",
+   "anchor": "That the human column carries errors at all is consistent with the methodological literature rather than remarkable within it: 63\\% of a sample of published meta-analyses that used standardized mean differences contained an extraction error in at least one of the two trials audited \\citep{gotzsche2007extraction}, and the standards meant to prevent it remain weakly evidenced \\citep{mathes2017frequency}.",
+   "replacement": "That the human column carries errors at all is consistent with the methodological literature rather than remarkable within it \\citep{gotzsche2007extraction,mathes2017frequency}.",
+   "rationale": "MERGE of discussion:D22 (containing anchor) with duplication:F30 (nested). A second printing of the Introduction's own framing statistic, which E05 keeps in fuller form (27 meta-analyses, 17 of them, some findings reversed). Both citation keys are retained here, so the appeal to the literature still stands."
+  },
+  {
+   "id": "E80",
+   "section": "Discussion, human-side-of-extraction paragraph",
+   "kind": "duplication",
+   "anchor": "The anchor's eleven source-confirmed discrepancies (Table~\\ref{tab:errata}) are transcription and labeling slips --- swapped arms, ``not stated'' where the primaries state, a conversion contradicting its own source, a method caption naming the wrong estimator, an outcome published under the wrong heading --- and, like the models, the human extractors fabricated nothing; the model profile concentrates instead in omissions, layer choices and format variants.",
+   "replacement": "The anchor's eleven source-confirmed discrepancies (Table~\\ref{tab:errata}) are transcription and labeling slips, and, like the models, the human extractors fabricated nothing; the model profile concentrates instead in omissions, layer choices and format variants.",
+   "rationale": "MERGE of discussion:D23 (containing anchor) with duplication:F31 (nested). The em-dash list walks the rows of the table cited in the same clause -- rows 1/10/17 (swapped arms), 3 and 11 ('Not stated'), 10 (the conversion), 15 (the method caption), 16 (the outcome heading). The taxonomic claim and the paragraph's payload -- both extractor kinds fabricated nothing -- are untouched."
+  },
+  {
+   "id": "E81",
+   "section": "Discussion, human-side-of-extraction paragraph",
+   "kind": "duplication",
+   "anchor": "where verification effort should concentrate. The human errors were found by the same quotation rite that graded the models and that published the adjudicators' own mistakes.",
+   "replacement": "where verification effort should concentrate.",
+   "rationale": "discussion:D24 verbatim. CASCADE: third and last deletion of the adjudicators'-mistakes disclosure; it stands at Methods 2.4, and the same-rite-for-both-columns claim stands in Methods 2.4 and in Table~S7's caption ('The same mechanics that caught the human anchor's discrepancies caught the grader here')."
+  },
+  {
+   "id": "E82",
+   "section": "Discussion, plausibility-bias paragraph",
+   "kind": "duplication",
+   "anchor": "It shaped this study twice before a single campaign run: the adjudication rite exists because the benchmark's own judge was reversed six times during key construction, twice while wrongly accusing models of fabrication, and the warn-only doctrine exists because checkers given write-power repaired correct values into wrong ones.",
+   "replacement": "It shaped the instruments before a single campaign run: both the adjudication rite and the warn-only doctrine exist because of it (Sections~2.4 and~2.10).",
+   "rationale": "discussion:D25 verbatim. Both origin stories are told with their numbers and worked examples in Methods 2.4 (six reversals, two withdrawn fabrication accusations) and Methods 2.10 (the imputed 24.5, the flipped sign, the quality gate that did six times more damage), neither of which any edit touches. The thread -- bias shaped the instruments, then was measured in the campaign -- is kept, and the campaign-era measurement that follows is untouched."
+  },
+  {
+   "id": "E83",
+   "section": "Discussion, plausibility-bias paragraph",
+   "kind": "duplication",
+   "anchor": "The same containment caught the grading layer again, mechanically rather than judgmentally: four byte-perfect transcriptions of one trial's blood-loss cell were charged as divergences because the reversal lookup applied a two-digit seal pair inside an unrelated longer number; they were adjudicated in the models' favor and Table~\\ref{tab:p1} carries the corrected scores (Supplementary Table~S7).",
+   "replacement": "The same containment caught the grading layer again, mechanically rather than judgmentally, in the four verbatim-correct transcriptions that a seal-pair lookup collision had charged as divergences and that were adjudicated in the models' favor (Supplementary Table~S7).",
+   "rationale": "MERGE of discussion:D26 (containing anchor) with duplication:F32 (nested); D26's replacement, keeping the manuscript's 'Supplementary Table~S7' wording at this site rather than D26's shortened form. The mechanism is spelled out in Table~S7 with the actual seal pair and the actual string, and 'Table 1 carries the corrected scores' is stated in both the S7 and the Table~\\ref{tab:p1} captions. The self-catch -- the grading layer erring against the models -- is fully preserved."
+  },
+  {
+   "id": "E84",
+   "section": "Discussion, plausibility-bias paragraph",
+   "kind": "duplication",
+   "anchor": " --- a factuality profile opposite to the judges' (zero fabrications; failures traceable to the text).",
+   "replacement": " --- a factuality profile opposite to the judges'.",
+   "rationale": "discussion:D27 verbatim. The parenthetical gloss restates, in four words, the honesty-profile paragraph the reader met two paragraphs earlier, which E66 leaves saying exactly this."
+  },
+  {
+   "id": "E85",
+   "section": "Discussion, instruction-language paragraph",
+   "kind": "duplication",
+   "anchor": "A referee could ask whether drafting the instruments in Portuguese and freezing them in English, over otherwise identical materials, handicapped --- or peculiarly helped --- models trained predominantly on English; the comparison answers by measurement. Per phase the two records agree within replicate-level variance: the one directly comparable reading score moved three cells in 124, the arithmetic signature matched point for point, and the flagship diamond was $-0.27$ [$-0.38$, $-0.17$] in both, interval included.",
+   "replacement": "A referee could ask whether drafting the instruments in Portuguese and freezing them in English handicapped --- or peculiarly helped --- models trained predominantly on English; per phase the two records agree within replicate-level variance (Table~\\ref{tab:ablation}).",
+   "rationale": "MERGE of discussion:D28 (containing anchor) with duplication:F33 (nested). A clause-by-clause restatement of Results 3.6 and its table, in the same order; the identical-materials condition is stated in Methods 2.13 and in the table's caption. The conclusion that follows -- multilingual instruction-following effectively solved at these sizes, no conclusion an artifact of instruction language -- is untouched."
+  }
+ ],
+ "notes": [
+  "CASCADE CAUGHT (1) -- the five-phase enumeration. methods:M01 deletes the Methods 2.1 roadmap ('The campaign ran five phases ... P1 Read, P2 Calculate, P3 Create, P4 Orchestrate, P5 Deploy') justifying itself by the Introduction's closing dash-list; abstract:intro-06 and duplication:F1 delete that same Introduction dash-list justifying themselves by the Methods roadmap. Applying both would leave the verb mnemonic only in Table 8's four rows, which have no 'Deploy' row at all, and would leave a thirteen-subsection Methods with no roadmap. M01 is DROPPED; the Methods roadmap stands and E07 makes the Introduction cut.",
+  "CASCADE CAUGHT (2) -- 'P5 makes no reading-proof claim'. duplication:F10 deletes the copy in Methods 2.11 citing the copy in 2.3; methods:M09 deletes the copy in 2.3 citing the copy in 2.11. Both cite Limitations as a third copy. Applying both would remove this scoping caveat from the Methods entirely, and would additionally orphan \\label{sec:p5}, since M09's target contains the manuscript's only \\ref{sec:p5}. M09 is DROPPED; the caveat and the cross-reference stand in 2.3, where the reading proof is defined, and again in Limitations.",
+  "CASCADE CAUGHT (3) -- '119 minutes'. duplication:F9 and methods:M17 both delete ', 54 calls in 119 minutes; P4 remained gemma4:12b's by pre-designation', justifying the compute figure by Methods 2.12's '54 calls (approx 2.0 h)'. 119 minutes appears nowhere else in the manuscript, so a bare application would remove a number that occurs exactly once. E22 narrows the anchor to the P4 clause and keeps '54 calls in 119 minutes'.",
+  "CASCADE CLEARED, but named here because each of these facts lost two of its copies and now rests on the one stated: (a) the adjudicators publish their own mistakes -- cut at the Introduction (E06), the deployment paragraph (E71) and the human-side paragraph (E81); stands at Methods 2.4 and in the errata caption, with the campaign-era self-correction and its dated note untouched. (b) published morbidity 0.778 -- cut at Results (E45) and Discussion (E58); stands in Table 5's caption and the abstract. (c) the reversal collapse 91.3 to 28.6 and 91.2 to 7.1 -- cut at Results (E50) and Discussion (E61); stands in Table 6's caption and its before-reversal column. (d) I-squared 28.6 / 6 / 7.1 -- cut at Results (E48) and Discussion (E65); stands in Table 6's rows and caption. (e) 12 of 12 pooled estimates -- cut at Results (E44) and Discussion (E67); stands in Table 4's caption and the abstract. (f) the pre-registration of the P5 extensions -- cut twice inside 2.11 (E29, E30); stands at 2.1.",
+  "NUMBER AUDIT, one interpreted result: the only numeric tokens that disappear document-wide are '77' and '99', both from the abstract's 'replicate stability 77--99%'. The fact survives with more precision as 'replicate stability from 77.4% to 99.2%' in Results 3.1 (E34 deliberately keeps it) and in Table 3's stability column, so no number is actually lost -- only a rounded abstract restatement of one that is printed twice elsewhere. Every other numeric token in the manuscript still occurs after the edits.",
+  "HUMAN DECISION -- E30 is the one edit that moves a design definition out of the Methods: item (iv) of 2.11 now names the three detection configurations only by a forward pointer to Table 7 in the Results. LaTeX resolves the reference and the table's row labels are complete ('(a) deterministic engine, no nets', '(b) engine + sheet-vs-source nets', '(c) model + conversational ten-net harness'), but if you want the Methods to stand alone for a methods-focused referee, restore the (a)/(b)/(c) list and drop only the trailing 'each registered as a dated amendment before its run', which 2.1 already covers.",
+  "HUMAN POLISH -- Results 3.3's Anchor-2 paragraph now cites Table 6 in two consecutive sentences: the untouched sentence that introduces the six diamonds, and E48's replacement, which adds a pointer where the nine digits were. Delete the second pointer if the echo bothers you; the digits are in the table either way. The same mild echo exists in Results 3.2, where E44 adds a Table 4 pointer to a paragraph that already carries one.",
+  "HUMAN CHECK -- the flagship result now lives mostly in the tables. After E48, E52, E56 and E85, the diamond -0.27 [-0.38, -0.17] appears in prose only in the abstract (as '-0.27'); in full it is in Table 6 and twice in Table 8. The extension arm's -0.25 [-0.33, -0.16] is in the abstract and Table 6. This is the intended consequence of removing table narration, but it is the single largest change in how a skimming reader meets the headline number, so confirm you are comfortable with it before submitting.",
+  "E11's anchor was extended by four words beyond methods:M05 so that the surviving two-item list reads 'roster 4, 2 and 3 of the 14 trials ..., and the 14 meet together only in ...'. A bare deletion of M05's clause would have left an orphaned '; and'. This is the only place where a lens's anchor was widened for grammar rather than for a merge.",
+  "E56 narrows results:R23 to the single clause its replacement actually changes; R23's stated anchor was the whole four-clause sentence, whose other three clauses were unchanged. The effect is identical and the narrower anchor cannot collide with anything.",
+  "Application order is file order, E01 through E85, and this is what was run. Because every anchor was verified to occur exactly once in the source and no two anchors intersect, order is in fact not load-bearing -- but applying in file order keeps any manual diff readable.",
+  "The applied copy used for the audit is at C:/Users/gbbarra/AppData/Local/Temp/claude/C--Users-gbbarra-Documents-localtts/71715940-01c4-44ad-b3cb-0e4645cf0cd1/scratchpad/extrai-cut.tex (70,364 bytes against the source's 80,021; 421 lines in both). The source manuscript was NOT modified. The verification and audit script is at .../scratchpad/apply.py with the edit tables in edits_a.py, edits_b.py and edits_c.py, and the survival probes in probes.py, if you want to re-run or extend the checks.",
+  "Not attempted, and worth a human pass after these land: the Discussion's opening paragraph is now two sentences (E57 removes a 70-word recap), which is thin for a section opener even though nothing is lost -- a one-line bridge into the division-of-difficulty paragraph may be wanted. Similarly, Results 3.5's second paragraph no longer narrates configuration (a) in prose (E55), so the sentence 'the three detection configurations behaved differently' is now followed by prose on two of them and a table row for the third."
+ ],
+ "dropped": [
+  "methods:M01 -- DROPPED ENTIRELY by the cascade check. It deletes the Methods 2.1 five-phase roadmap on the strength of the Introduction's closing dash-list, which abstract:intro-06 and duplication:F1 delete on the strength of the Methods roadmap. Keeping M01 would leave the P1-Read through P5-Deploy mapping only in Table 8's four rows (no Deploy row) and strand a thirteen-subsection Methods without a roadmap. The Methods sentence stands unchanged.",
+  "methods:M09 -- DROPPED ENTIRELY by the cascade check. It deletes the 'Phase P5 deliberately runs on clean texts and therefore makes no reading-proof claim (Section~\\ref{sec:p5})' sentence from Methods 2.3, while duplication:F10 (applied as E28) deletes the same caveat from Methods 2.11. Applying both would remove the caveat from the Methods entirely, leaving it only in Limitations, and would orphan \\label{sec:p5} by deleting the manuscript's only \\ref{sec:p5}. F10's own reasoning -- that 2.3, where the reading proof is defined, is the caveat's home -- decided which of the two to keep.",
+  "duplication:F9 and methods:M17 -- PARTIALLY DROPPED. Their shared deletion of '54 calls in 119 minutes' is not applied: 119 minutes occurs exactly once in the manuscript and Methods 2.12 carries only the rounded 'approx 2.0 h'. E22 applies the rest (the redundant P4 pre-designation clause).",
+  "duplication:F13 -- SUPERSEDED by results:R03 (emitted as E36), whose anchor intersects it. F13 would merge two sentences into one; R03 deletes the second sentence outright, which achieves F13's de-duplication intent more completely and leaves the caveat and the P3 pointer standing in the untouched first clause. F13's own replacement text is not used.",
+  "results:R08 -- VARIANT NOT USED. R08 and duplication:F14 share one anchor (emitted as E41); F14's replacement was chosen because it keeps the seven class counts in the Results, so the 12+27+26+34+12+9+4=124 arithmetic stays checkable in the body against the supplement's exhaustiveness statement. Both lenses' shared intent -- removing the seven caption glosses and the two sentences lifted from Table 3's caption -- is fully realized.",
+  "results:R01 -- VARIANT NOT USED. R01 and duplication:F11 share the same target (emitted as E34); F11's replacement was chosen because it keeps the fractions 89/124 and 105/124 rather than reducing them to bare percentages. The shared intent -- removing the per-model roll call that Table 3's rows carry -- is fully realized.",
+  "results:R02 -- VARIANT NOT USED. R02 and duplication:F12 intersect on the extension-arm sentence (emitted as E35); F12's replacement was chosen because it keeps the headline 108/124 (87.1%), which is the paragraph's point, while still dropping stability, omissions and value/format. The shared intent is fully realized.",
+  "duplication:F29 -- VARIANT NOT USED. F29 and discussion:D19 share one anchor (emitted as E76); D19's replacement was chosen because F29's kept the 'two declared-derivation warnings' count that Results 3.4 states and the P4 section heading repeats. The shared intent -- removing the seven-sequence count and the delta-MD figure -- is fully realized.",
+  "No other input id was dropped. All 114 surviving cuts are accounted for: 111 are realized in the 85 emitted edits (30 of them as components of merged edits), 2 are dropped by the cascade check, and 1 is superseded."
+ ]
+}
