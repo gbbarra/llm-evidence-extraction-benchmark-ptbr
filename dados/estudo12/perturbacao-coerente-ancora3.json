@@ -1,0 +1,197 @@
+{
+  "criterio": "n' e %' recomputado ambos ausentes do texto original; deslocamento 5-15%",
+  "cobertura_ensaios": 4.5,
+  "total_ensaios": 8,
+  "completos": [
+    "Shaker, 2025",
+    "Aguilar, 2016",
+    "Levin, 2004",
+    "Dong, 2025"
+  ],
+  "parciais": [
+    "Luis-Silva, 2024"
+  ],
+  "sem_prova": [
+    "Ibarra-Estrada, 2023",
+    "Kirov, 2001",
+    "Memis, 2002"
+  ],
+  "bracos": [
+    {
+      "ensaio": "Luis-Silva, 2024",
+      "braco": "azul",
+      "eventos": 9,
+      "n": 19,
+      "pct_fonte": "47",
+      "novo_n": null,
+      "novo_pct": null,
+      "viavel": false,
+      "motivo": "todo n' admissível já ocorre no texto"
+    },
+    {
+      "ensaio": "Luis-Silva, 2024",
+      "braco": "controle",
+      "eventos": 14,
+      "n": 23,
+      "pct_fonte": "61",
+      "novo_n": 26,
+      "novo_pct": "54",
+      "viavel": true,
+      "motivo": ""
+    },
+    {
+      "ensaio": "Shaker, 2025",
+      "braco": "placebo",
+      "eventos": 14,
+      "n": 30,
+      "pct_fonte": "46.7",
+      "novo_n": 33,
+      "novo_pct": "42.4",
+      "viavel": true,
+      "motivo": ""
+    },
+    {
+      "ensaio": "Shaker, 2025",
+      "braco": "1 mg/kg",
+      "eventos": 9,
+      "n": 30,
+      "pct_fonte": "30.0",
+      "novo_n": 33,
+      "novo_pct": "27.3",
+      "viavel": true,
+      "motivo": ""
+    },
+    {
+      "ensaio": "Shaker, 2025",
+      "braco": "4 mg/kg",
+      "eventos": 6,
+      "n": 30,
+      "pct_fonte": "20.0",
+      "novo_n": 33,
+      "novo_pct": "18.2",
+      "viavel": true,
+      "motivo": ""
+    },
+    {
+      "ensaio": "Ibarra-Estrada, 2023",
+      "braco": "azul",
+      "eventos": 15,
+      "n": 45,
+      "pct_fonte": "33",
+      "novo_n": null,
+      "novo_pct": null,
+      "viavel": false,
+      "motivo": "n' livre, mas um %' recomputado colide com o texto"
+    },
+    {
+      "ensaio": "Ibarra-Estrada, 2023",
+      "braco": "controle",
+      "eventos": 21,
+      "n": 46,
+      "pct_fonte": "46",
+      "novo_n": null,
+      "novo_pct": null,
+      "viavel": false,
+      "motivo": "n' livre, mas um %' recomputado colide com o texto"
+    },
+    {
+      "ensaio": "Aguilar, 2016",
+      "braco": "azul",
+      "eventos": 6,
+      "n": 30,
+      "pct_fonte": "20.0",
+      "novo_n": 32,
+      "novo_pct": "18.8",
+      "viavel": true,
+      "motivo": ""
+    },
+    {
+      "ensaio": "Aguilar, 2016",
+      "braco": "controle",
+      "eventos": 11,
+      "n": 30,
+      "pct_fonte": "36.6",
+      "novo_n": 32,
+      "novo_pct": "34.4",
+      "viavel": true,
+      "motivo": ""
+    },
+    {
+      "ensaio": "Kirov, 2001",
+      "braco": "azul",
+      "eventos": 5,
+      "n": 10,
+      "pct_fonte": null,
+      "novo_n": null,
+      "novo_pct": null,
+      "viavel": false,
+      "motivo": "todo n' admissível já ocorre no texto"
+    },
+    {
+      "ensaio": "Kirov, 2001",
+      "braco": "controle",
+      "eventos": 7,
+      "n": 10,
+      "pct_fonte": null,
+      "novo_n": null,
+      "novo_pct": null,
+      "viavel": false,
+      "motivo": "todo n' admissível já ocorre no texto"
+    },
+    {
+      "ensaio": "Levin, 2004",
+      "braco": "azul",
+      "eventos": 0,
+      "n": 28,
+      "pct_fonte": null,
+      "novo_n": 31,
+      "novo_pct": null,
+      "viavel": true,
+      "motivo": ""
+    },
+    {
+      "ensaio": "Levin, 2004",
+      "braco": "controle",
+      "eventos": 6,
+      "n": 28,
+      "pct_fonte": "21.4",
+      "novo_n": 31,
+      "novo_pct": "19.4",
+      "viavel": true,
+      "motivo": ""
+    },
+    {
+      "ensaio": "Dong, 2025",
+      "braco": "azul",
+      "eventos": 9,
+      "n": 36,
+      "pct_fonte": "25.0",
+      "novo_n": 41,
+      "novo_pct": "22.0",
+      "viavel": true,
+      "motivo": ""
+    },
+    {
+      "ensaio": "Dong, 2025",
+      "braco": "controle",
+      "eventos": 15,
+      "n": 36,
+      "pct_fonte": "41.7",
+      "novo_n": 41,
+      "novo_pct": "36.6",
+      "viavel": true,
+      "motivo": ""
+    },
+    {
+      "ensaio": "Memis, 2002",
+      "braco": "ambos",
+      "eventos": 4,
+      "n": 15,
+      "pct_fonte": "26.6",
+      "novo_n": null,
+      "novo_pct": null,
+      "viavel": false,
+      "motivo": "todo n' admissível já ocorre no texto"
+    }
+  ]
+}
