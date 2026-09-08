@@ -338,6 +338,23 @@ quebrou porque as fichas da âncora 2 saíram curtas.
 
 Quatro dos cinco estouram, o pior por 3.265 tokens, e os quatro fechados ainda não foram medidos.
 
+**Medidos em 2026-09-08, depois que o corpus fechou.** Os oito primários da análise de mortalidade
+estão no repositório, e a decisão sobrevive à medição completa:
+
+| Primário | Formato | Tokens estimados | Mais ficha e saída | Folga em 24.576 |
+|---|---|---|---|---|
+| Dong 2025 | XML | 14.741 | 19.641 | 4.935 |
+| Kirov 2001 | PDF em texto | 14.260 | 19.160 | 5.416 |
+| Luis-Silva 2024 | XML | 13.787 | 18.687 | 5.889 |
+| Ibarra-Estrada 2023 | XML | 13.225 | 18.125 | 6.451 |
+| Aguilar 2016 | PDF em texto | 13.083 | 17.983 | 6.593 |
+| Shaker 2025 | XML | 11.630 | 16.530 | 8.046 |
+| Memis 2002 | PDF em texto | 10.349 | 15.249 | 9.327 |
+| Levin 2004 | PDF em texto | 5.566 | 10.466 | 14.110 |
+
+Nenhum estoura. O pior caso continua sendo o Dong, que já estava medido; nenhum dos quatro recém-obtidos
+o supera. **24.576 fica, e agora por medição do corpus inteiro e não por extrapolação de cinco nonos.**
+
 **Testado na máquina em 2026-09-08, com o maior modelo (o 27B, 11 GB):** carrega e responde em 24.576,
 em 32.768 e em 40.960 de contexto, sempre **100% na GPU integrada**, sem cair para a CPU. O custo é
 tempo de processamento do prompt, proporcional ao tamanho do prompt e não ao teto declarado.
