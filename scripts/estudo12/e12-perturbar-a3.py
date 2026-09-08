@@ -416,10 +416,15 @@ for tid, (txt0, pert) in textos.items():
     io.open(ORIG / f"{tid}.txt", "w", encoding="utf-8").write(txt0)
     io.open(PERT / f"{tid}.txt", "w", encoding="utf-8").write(pert)
 
-corpo = json.dumps(selo, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
-io.open(D12 / "perturbacoes-a3.json", "w", encoding="utf-8").write(corpo)
-sha = hashlib.sha256(corpo.encode("utf-8")).hexdigest()
-io.open(D12 / "perturbacoes-a3.sha256", "w", encoding="utf-8").write(sha + "\n")
+# newline LF e o selo sobre os BYTES do arquivo, nao sobre a string. No Windows a escrita
+# padrao traduz a quebra de linha, e o SHA da string nao batia com o do arquivo: quem
+# conferisse de fora acharia selo violado num selo intacto.
+alvo_selo = D12 / "perturbacoes-a3.json"
+corpo = json.dumps(selo, ensure_ascii=False, indent=2, sort_keys=True) + chr(10)
+io.open(alvo_selo, "w", encoding="utf-8", newline=chr(10)).write(corpo)
+sha = hashlib.sha256(io.open(alvo_selo, "rb").read()).hexdigest()
+io.open(D12 / "perturbacoes-a3.sha256", "w", encoding="utf-8",
+        newline=chr(10)).write(sha + chr(10))
 print("GRAVADO")
 print(f"  corpus original    corpus/estudo12/original/       {len(G['bracos_da_fonte'])} arquivos")
 print(f"  corpus perturbado  corpus/estudo12/perturbados/    {len(G['bracos_da_fonte'])} arquivos")

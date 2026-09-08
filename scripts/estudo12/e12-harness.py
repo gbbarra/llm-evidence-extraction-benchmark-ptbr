@@ -46,6 +46,7 @@ AQUI = Path(__file__).resolve().parent
 CTX = 24576                     # §3 do protocolo, congelado
 SAIDA = {"v1": 4000, "v2": 8000}
 REPLICAS = 2
+LIMITE_ERROS_SEGUIDOS = 5      # o servidor caiu; não faz sentido gastar o resto do plano
 CAMPOS_OBRIGATORIOS = ("modelo", "tag", "ancora", "ficha", "ensaio", "replica",
                        "conteudo", "prompt_tokens", "tokens", "finish", "dt", "sha_prompt")
 
@@ -93,10 +94,19 @@ RECUSADOS = RAIZ / "dados" / "estudo12" / "recusados"
 
 
 # ------------------------------------------------------------------ o plano, enumerado
+# §4 do protocolo: quantos ensaios cada âncora tem. O plano era um glob de disco, e um diretório
+# que sumisse encolhia a campanha em silêncio -- a corrida terminaria "completa" com menos chamadas.
+ENSAIOS_ESPERADOS = {"a1": 14, "a2": 7, "a3": 8}
+
+
 def ensaios(ancora):
     fora = []
     for d in ANCORAS[ancora]["corpus"]:
         fora += [(p.stem, p) for p in sorted(d.glob("*.txt"))]
+    esperado = ENSAIOS_ESPERADOS[ancora]
+    if len(fora) != esperado:
+        raise SystemExit(f"âncora {ancora}: {len(fora)} ensaios em disco, e o protocolo declara "
+                         f"{esperado}. A campanha não pode começar com o corpus incompleto.")
     return fora
 
 
@@ -116,19 +126,38 @@ def destino(c):
 
 
 # ------------------------------------------------------------------ instrumento 2: portão por integridade
-def integro(p):
-    """(ok, motivo). Existir não basta: tem de abrir, ter os campos e não ter sido truncado."""
+def integro(p, c=None, sha_esperado=None):
+    """(ok, motivo). Existir não basta.
+
+    Cinco perguntas, e a última é a que a revisão adversarial obrigou a acrescentar: o arquivo abre?
+    tem os campos? não foi truncado pelo teto? não está vazio? e -- decisiva numa campanha de dois
+    dias -- **foi produzido pelo mesmo prompt que rodaríamos agora**? O harness já gravava o SHA do
+    prompt enviado e ninguém o conferia: uma ficha ou um corpus editados no meio produziriam um
+    conjunto meio antigo e meio novo, com nada acusando. Também confere a identidade e a
+    configuração, porque um arquivo no lugar errado é indistinguível de um arquivo certo sem isso.
+    """
     try:
         j = json.loads(io.open(p, encoding="utf-8").read())
     except Exception as e:
         return False, f"não abre como JSON: {type(e).__name__}"
-    faltam = [c for c in CAMPOS_OBRIGATORIOS if c not in j]
+    faltam = [k for k in CAMPOS_OBRIGATORIOS if k not in j]
     if faltam:
         return False, "faltam campos: " + ", ".join(faltam)
     if j.get("finish") == "length":
         return False, "saída truncada pelo teto (done_reason=length)"
     if not str(j.get("conteudo", "")).strip():
         return False, "conteúdo vazio"
+    if c:
+        for campo in ("modelo", "ancora", "ficha", "ensaio", "replica"):
+            if str(j.get(campo)) != str(c[campo]):
+                return False, f"identidade não bate: {campo} gravado {j.get(campo)!r}, esperado {c[campo]!r}"
+        if j.get("num_ctx") != CTX:
+            return False, f"contexto gravado {j.get('num_ctx')}, e o protocolo congela {CTX}"
+        if j.get("num_predict") != SAIDA[c["ficha"]]:
+            return False, f"teto de saída gravado {j.get('num_predict')}, esperado {SAIDA[c['ficha']]}"
+    if sha_esperado and j.get("sha_prompt") != sha_esperado:
+        return False, ("produzido por outro prompt: a ficha ou o corpus mudaram desde esta chamada "
+                       f"({str(j.get('sha_prompt'))[:12]}… contra {sha_esperado[:12]}…)")
     return True, ""
 
 
@@ -198,10 +227,15 @@ def roda(so_modelo=None, so_ancora=None, so_ficha=None, seco=False):
     print(f"plano: {len(todas)} chamadas · contexto {CTX} · saída {SAIDA}")
     residente, feitas, puladas, refeitas, erros = None, 0, 0, 0, 0
     t0 = time.time()
+    seguidos = 0
     for i, c in enumerate(todas, 1):
         p = destino(c)
+        # o prompt é montado ANTES do portão, porque o portão precisa do selo dele
+        tpl = io.open(ANCORAS[c["ancora"]]["fichas"][c["ficha"]], encoding="utf-8").read()
+        prompt = monta(tpl, io.open(c["caminho"], encoding="utf-8").read())
+        sha = hashlib.sha256(prompt.encode("utf-8")).hexdigest()
         if p.exists():
-            ok, motivo = integro(p)
+            ok, motivo = integro(p, c, sha)
             if ok:
                 puladas += 1
                 continue
@@ -212,26 +246,46 @@ def roda(so_modelo=None, so_ancora=None, so_ficha=None, seco=False):
             feitas += 1
             continue
         if residente != c["modelo"]:
-            if residente:
-                descarrega(h3.MODELS[residente]["ollama"])
+            # descarrega TUDO antes do primeiro, porque pode haver modelo residente de outra corrida
+            descarrega(h3.MODELS[residente]["ollama"] if residente else None)
             residente = c["modelo"]
             print(f"\n=== modelo residente: {residente} ({h3.MODELS[residente]['ollama']})", flush=True)
-        tpl = io.open(ANCORAS[c["ancora"]]["fichas"][c["ficha"]], encoding="utf-8").read()
-        prompt = monta(tpl, io.open(c["caminho"], encoding="utf-8").read())
         try:
             r = chama(c, prompt)
         except KeyboardInterrupt:
             print("\ninterrompido. Nada a meio: a chamada em curso não foi gravada.", flush=True)
+            descarrega(h3.MODELS[residente]["ollama"])
             raise
         except Exception as e:
             erros += 1
+            seguidos += 1
             print(f"  [{i}/{len(todas)}] {c['modelo']} {c['ancora']}/{c['ficha']}/{c['ensaio']}-r"
                   f"{c['replica']}: ERRO {type(e).__name__}: {str(e)[:120]}", flush=True)
-            grava(RECUSADOS / f"erro-{c['modelo']}-{c['ancora']}-{c['ficha']}-{c['ensaio']}-r{c['replica']}.json",
-                  dict(**{k: c[k] for k in ("modelo", "ancora", "ficha", "ensaio", "replica")},
-                       erro=f"{type(e).__name__}: {e}"))
+            try:
+                grava(RECUSADOS / f"erro-{c['modelo']}-{c['ancora']}-{c['ficha']}-{c['ensaio']}-r{c['replica']}.json",
+                      dict(**{k: c[k] for k in ("modelo", "ancora", "ficha", "ensaio", "replica")},
+                           erro=f"{type(e).__name__}: {e}"))
+            except Exception:
+                pass
+            # disjuntor: com o servidor fora do ar a corrida gastaria as 696 chamadas em segundos,
+            # gravaria 696 arquivos de erro e sairia com código zero, parecendo ter terminado.
+            if seguidos >= LIMITE_ERROS_SEGUIDOS:
+                if residente:
+                    descarrega(h3.MODELS[residente]["ollama"])
+                raise SystemExit(f"\n{seguidos} erros seguidos: o servidor parece fora do ar. "
+                                 f"A corrida para aqui, e o que já ficou pronto é aproveitado na "
+                                 f"próxima. Veja: python scripts/estudo12/e12-inventario.py")
             continue
-        grava(p, r)
+        seguidos = 0
+        try:
+            grava(p, r)
+        except Exception as e:
+            # gravar estava fora do try: um PermissionError do Windows -- destino aberto por outro
+            # processo -- matava a campanha inteira e perdia a chamada que acabara de custar minutos.
+            erros += 1
+            print(f"  [{i}/{len(todas)}] FALHA AO GRAVAR {p.name}: {type(e).__name__}: {str(e)[:90]}",
+                  flush=True)
+            continue
         feitas += 1
         print(f"  [{i}/{len(todas)}] {c['modelo']:11s} {c['ancora']}/{c['ficha']} {c['ensaio']}-r{c['replica']}"
               f"  {r['prompt_tokens']:6d}+{r['tokens']:5d} tok  {r['dt']:6.1f}s  fim={r['finish']}", flush=True)

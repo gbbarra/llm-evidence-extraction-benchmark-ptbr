@@ -24,6 +24,7 @@ que é onde moram as três regras congeladas da §5 e da §8:
 Ordem, que a §7 do protocolo congela: a lente PRIMEIRO, sobre a ficha crua; a comparação depois.
 Nunca o contrário.
 """
+import hashlib
 import importlib.util
 import io
 import unicodedata
@@ -51,7 +52,16 @@ L = _carrega("lente", AQUI / "e12-lente.py")
 
 D12 = RAIZ / "dados" / "estudo12"
 GAB = json.loads(io.open(D12 / "gabarito-a3.json", encoding="utf-8").read())
-SELO = json.loads(io.open(D12 / "perturbacoes-a3.json", encoding="utf-8").read())
+_selo_p = D12 / "perturbacoes-a3.json"
+SELO = json.loads(io.open(_selo_p, encoding="utf-8").read())
+# O selo e conferido AQUI, no ponto de uso, e nao apenas no ponto de criacao. Um mapa alterado
+# depois de selado inverteria a lente e reprovaria transcricoes corretas sem que nada acusasse.
+_sha_reg = io.open(D12 / "perturbacoes-a3.sha256", encoding="utf-8").read().strip()
+_sha_ora = hashlib.sha256(io.open(_selo_p, "rb").read()).hexdigest()
+if _sha_ora != _sha_reg:
+    raise SystemExit("o selo da ancora 3 nao bate com o SHA registrado.\n"
+                     "  registrado " + _sha_reg + "\n  agora      " + _sha_ora + "\n"
+                     "Regenere com e12-perturbar-a3.py ou investigue a alteracao.")
 
 def compara(modelo_s, fonte_s):
     """Comparacao de celula. Numerica e exata quando os dois lados sao numeros puros.
@@ -285,44 +295,62 @@ def reduz(entradas, tid):
     return cel, nao_atribuidos, duplicados + incompletos
 
 
+CAMPOS_DE_DADO = ("deaths", "n", "deaths_percent", "n_randomized", "n_analyzed")
+
+
+def _valores_de_dado(ficha):
+    """Todo valor de campo de DADO da ficha, com o caminho onde ele estava.
+
+    Campos de dado só: o ponto no tempo, o rótulo e a citação ficam de fora, porque um número selado
+    pode aparecer legitimamente neles -- "30 days" não é o denominador 30 do Shaker.
+    """
+    fora = []
+
+    def anda(no, caminho):
+        if isinstance(no, dict):
+            for k, v in no.items():
+                if k in CAMPOS_DE_DADO:
+                    fora.append((f"{caminho}.{k}" if caminho else k, valor(v)))
+                elif k in ("value", "where", "quote"):
+                    continue
+                else:
+                    anda(v, f"{caminho}.{k}" if caminho else k)
+        elif isinstance(no, list):
+            for i, v in enumerate(no):
+                anda(v, f"{caminho}[{i}]")
+
+    anda(ficha, "")
+    return [(c, v) for c, v in fora if v is not None and str(v).strip()]
+
+
 def tela_recitacao(ficha_crua, tid):
     """Rede de recitacao, sobre a ficha CRUA -- antes da lente, que e o unico momento em que da.
 
     Depois da lente a recitacao fica invisivel: o modelo que le devolve 41 e a lente o traz a 36; o
     que recita ja devolve 36, e a lente nao mexe. As duas celulas chegam identicas ao comparador. A
-    unica assinatura esta no que o modelo ESCREVEU: um valor igual ao original de um par selado, num
-    corpus onde aquele valor nao existe mais.
+    assinatura so existe no que o modelo ESCREVEU: um valor que o corpus que ele leu nao contem mais.
+
+    Ve TODO valor selado -- denominador, percentual, total e a forma por extenso -- em TODO campo de
+    dado, inclusive dentro de uma string com companhia ("n=36", "9/36", "36 patients").
 
     Doutrina de so avisar: a rede acusa, nunca substitui. Cada candidato vai a adjudicacao.
     """
     regs = SELO.get(tid) or []
-    originais = {str(r["original"]): r for r in regs if r["papel"] == "denominador"}
-    if not originais:
+    if not regs:
         return []
     achados = []
-    for e in entradas_de(ficha_crua):
-        for campo in ("n", "mortos", "pct"):
-            v = e.get(campo)
-            if v is None:
-                continue
-            m = re.fullmatch(r"\s*(-?\d+(?:\.\d+)?)\s*%?\s*", str(v))
-            if not m:
-                continue
-            chave = m.group(1)
-            if chave.endswith(".0"):
-                chave = chave[:-2]
-            if chave in originais:
-                achados.append(dict(braco=e["arm"], campo=campo, valor=str(v),
-                                    perturbado=originais[chave]["perturbado"],
-                                    aviso="valor igual ao original selado; nao existe no corpus lido"))
+    for caminho, v in _valores_de_dado(ficha_crua):
+        t = str(v)
+        for r in regs:
+            orig = str(r["original"])
+            pad = (L.FRONTEIRA_ESQ + re.escape(orig) + (r"(?![\w-])" if orig[0].isalpha()
+                                                        else L.FRONTEIRA_DIR))
+            if re.search(pad, t, re.I if orig[0].isalpha() else 0):
+                achados.append(dict(campo=caminho, valor=t, papel=r["papel"],
+                                    original=orig, perturbado=r["perturbado"],
+                                    aviso="valor igual ao original selado; o corpus lido nao o contem"))
+                break
     return achados
-
-
-def _num(v):
-    if v is None:
-        return None
-    m = re.search(r"-?\d+(?:\.\d+)?", str(v))
-    return float(m.group(0)) if m else None
 
 
 def corrige(bruto, tid):
