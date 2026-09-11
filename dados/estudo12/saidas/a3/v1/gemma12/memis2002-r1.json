@@ -1,0 +1,16 @@
+{
+ "modelo": "gemma12",
+ "tag": "gemma4:12b",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "memis2002",
+ "replica": 1,
+ "conteudo": "```json\n{\n  \"study\": {\n    \"value\": \"The Influence of Methylene Blue Infusion on Cytokine Levels During Severe Sepsis\",\n    \"where\": \"Title\"\n  },\n  \"design\": {\n    \"value\": \"prospective, randomized, double-blind, placebo-controlled study\",\n    \"where\": \"SUMMARY\"\n  },\n  \"arms\": [\n    {\n      \"label\": {\n        \"value\": \"MB group\",\n        \"where\": \"SUMMARY\"\n      },\n      \"intervention\": {\n        \"value\": \"methylene blue 0.5 mg.kg–1.h–1\",\n        \"where\": \"SUMMARY\"\n      },\n      \"n_randomized\": {\n        \"value\": \"15\",\n        \"where\": \"SUMMARY\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"15\",\n        \"where\": \"RESULTS\"\n      }\n    },\n    {\n      \"label\": {\n        \"value\": \"control group\",\n        \"where\": \"SUMMARY\"\n      },\n      \"intervention\": {\n        \"value\": \"similar volume of isotonic saline\",\n        \"where\": \"SUMMARY\"\n      },\n      \"n_randomized\": {\n        \"value\": \"15\",\n        \"where\": \"SUMMARY\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"15\",\n        \"where\": \"RESULTS\"\n      }\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\n        \"value\": \"MB group\",\n        \"where\": \"SUMMARY\"\n      },\n      \"timepoint\": {\n        \"value\": \"overall hospital mortality\",\n        \"where\": \"RESULTS\"\n      },\n      \"deaths\": {\n        \"value\": \"NR\",\n        \"where\": \"RESULTS\"\n      },\n      \"n\": {\n        \"value\": \"15\",\n        \"where\": \"RESULTS\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"26.6%\",\n        \"where\": \"RESULTS\"\n      }\n    },\n    {\n      \"arm_label\": {\n        \"value\": \"control group\",\n        \"where\": \"SUMMARY\"\n      },\n      \"timepoint\": {\n        \"value\": \"overall hospital mortality\",\n        \"where\": \"RESULTS\"\n      },\n      \"deaths\": {\n        \"value\": \"NR\",\n        \"where\": \"RESULTS\"\n      },\n      \"n\": {\n        \"value\": \"15\",\n        \"where\": \"RESULTS\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"26.6%\",\n        \"where\": \"RESULTS\"\n      }\n    }\n  ]\n}\n```",
+ "prompt_tokens": 11487,
+ "tokens": 638,
+ "finish": "stop",
+ "dt": 240.81,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "418ad86f0c2b5fd6c688e7e93ec8887e125ed51234c732412566950ed0a5a970"
+}

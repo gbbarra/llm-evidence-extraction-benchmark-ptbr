@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen14",
+ "tag": "qwen3:14b",
+ "ancora": "a3",
+ "ficha": "v2",
+ "ensaio": "memis2002",
+ "replica": 1,
+ "conteudo": "{\n  \"study\": {\"value\": \"The Influence of Methylene Blue Infusion on Cytokine Levels During Severe Sepsis\", \"where\": \"Title\"},\n  \"design\": {\"value\": \"prospective, randomized, double-blind, placebo-controlled study\", \"where\": \"Summary\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"MB group\", \"where\": \"Summary\"},\n      \"intervention\": {\"value\": \"methylene blue 0.5 mg.kg–1.h–1 IV for 6 hours\", \"where\": \"Summary\"},\n      \"n_randomized\": {\"value\": \"15\", \"where\": \"Summary\", \"quote\": \"patients received either methylene blue 0.5 mg.kg–1.h–1 (MB group, n=15) or similar volume of isotonic saline (control group, n=15)\"},\n      \"n_analyzed\": {\"value\": \"15\", \"where\": \"Summary\", \"quote\": \"patients received either methylene blue 0.5 mg.kg–1.h–1 (MB group, n=15) or similar volume of isotonic saline (control group, n=15)\"}\n    },\n    {\n      \"label\": {\"value\": \"control group\", \"where\": \"Summary\"},\n      \"intervention\": {\"value\": \"similar volume of isotonic saline IV for 6 hours\", \"where\": \"Summary\"},\n      \"n_randomized\": {\"value\": \"15\", \"where\": \"Summary\", \"quote\": \"patients received either methylene blue 0.5 mg.kg–1.h–1 (MB group, n=15) or similar volume of isotonic saline (control group, n=15)\"},\n      \"n_analyzed\": {\"value\": \"15\", \"where\": \"Summary\", \"quote\": \"patients received either methylene blue 0.5 mg.kg–1.h–1 (MB group, n=15) or similar volume of isotonic saline (control group, n=15)\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"Results\"},\n      \"timepoint\": {\"value\": \"overall hospital mortality rate\", \"where\": \"Results\", \"quote\": \"The overall hospital mortality rate was similar in both groups (26.6%).\"},\n      \"deaths\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n      \"n\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n      \"deaths_percent\": {\"value\": \"26.6%\", \"where\": \"Results\", \"quote\": \"The overall hospital mortality rate was similar in both groups (26.6%).\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"control group\", \"where\": \"Results\"},\n      \"timepoint\": {\"value\": \"overall hospital mortality rate\", \"where\": \"Results\", \"quote\": \"The overall hospital mortality rate was similar in both groups (26.6%).\"},\n      \"deaths\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n      \"n\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n      \"deaths_percent\": {\"value\": \"26.6%\", \"where\": \"Results\", \"quote\": \"The overall hospital mortality rate was similar in both groups (26.6%).\"}\n    }\n  ]\n}",
+ "prompt_tokens": 11946,
+ "tokens": 737,
+ "finish": "stop",
+ "dt": 301.03,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "85dc273482da99c693206f2c054a3ffd1fe0d6fe4d82e6b65a8c20b53eb833a9"
+}

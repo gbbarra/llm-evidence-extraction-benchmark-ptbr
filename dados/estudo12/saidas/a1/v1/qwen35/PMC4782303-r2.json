@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "tag": "qwen3.5:9b",
+ "ancora": "a1",
+ "ficha": "v1",
+ "ensaio": "PMC4782303",
+ "replica": 2,
+ "conteudo": "{\n  \"n_randomized_gdft\": {\"value\": \"92\", \"where\": \"Results -> Patient characteristics, anaesthesia, and haemodynamic therapy\"},\n  \"n_randomized_control\": {\"value\": \"88\", \"where\": \"Results -> Patient characteristics, anaesthesia, and haemodynamic therapy\"},\n  \"surgery_type\": {\"value\": \"major abdominal surgery (Whipple, Oesophageal, Pancreatectomy, Other)\", \"where\": \"Methods -> Study population\"},\n  \"laparoscopy_gdft\": {\"value\": \"NR\", \"where\": \"\"},\n  \"laparoscopy_control\": {\"value\": \"NR\", \"where\": \"\"},\n  \"asa_gdft\": {\"value\": \"NR\", \"where\": \"\"},\n  \"asa_control\": {\"value\": \"NR\", \"where\": \"\"},\n  \"total_fluid_gdft\": {\"value\": \"10952 ± 3672 ml\", \"where\": \"Table 2\"},\n  \"total_fluid_control\": {\"value\": \"11284 ± 3857 ml\", \"where\": \"Table 2\"},\n  \"crystalloid_gdft\": {\"value\": \"3209 ± 1615 ml (OP) | 9526 ± 3765 ml (ICU)\", \"where\": \"Table 2\"},\n  \"crystalloid_control\": {\"value\": \"3231 ± 1864 ml (OP) | 9065 ± 3403 ml (ICU)\", \"where\": \"Table 2\"},\n  \"colloid_gdft\": {\"value\": \"801 ± 1080 ml (OP) | 514 ± 1083 ml (ICU)\", \"where\": \"Table 2\"},\n  \"colloid_control\": {\"value\": \"847 ± 1045 ml (OP) | 701 ± 1188 ml (ICU)\", \"where\": \"Table 2\"},\n  \"blood_loss_gdft\": {\"value\": \"NR\", \"where\": \"\"},\n  \"blood_loss_control\": {\"value\": \"NR\", \"where\": \"\"},\n  \"inotrope_use\": {\"value\": \"Dobutamine (OP: 0.74 ± 2.61 μg/kg/min; ICU: 0.39 ± 1.56 μg/kg/min)\", \"where\": \"Table 2\"},\n  \"morbidity_events_gdft\": {\"value\": \"NR\", \"where\": \"\"},\n  \"morbidity_events_control\": {\"value\": \"NR\", \"where\": \"\"},\n  \"mortality_gdft\": {\"value\": \"22/77 (29%) (1-year)\", \"where\": \"Table 3\"},\n  \"mortality_control\": {\"value\": \"16/77 (21%) (1-year)\", \"where\": \"Table 3\"},\n  \"hospital_los_gdft\": {\"value\": \"NR\", \"where\": \"\"},\n  \"hospital_los_control\": {\"value\": \"NR\", \"where\": \"\"},\n  \"time_to_flatus_gdft\": {\"value\": \"NR\", \"where\": \"\"},\n  \"time_to_flatus_control\": {\"value\": \"NR\", \"where\": \"\"},\n  \"time_to_oral_intake_gdft\": {\"value\": \"NR\", \"where\": \"\"},\n  \"time_to_oral_intake_control\": {\"value\": \"NR\", \"where\": \"\"},\n  \"time_to_defecation_gdft\": {\"value\": \"NR\", \"where\": \"\"},\n  \"time_to_defecation_control\": {\"value\": \"NR\", \"where\": \"\"},\n  \"postop_ileus_gdft\": {\"value\": \"NR\", \"where\": \"\"},\n  \"postop_ileus_control\": {\"value\": \"NR\", \"where\": \"\"}\n}",
+ "prompt_tokens": 11475,
+ "tokens": 881,
+ "finish": "stop",
+ "dt": 69.68,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "2dfb30120497342ec41c576d15ccd5d86d9740e2aee13db29b6d87f88647dbbb"
+}

@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen14",
+ "tag": "qwen3:14b",
+ "ancora": "a1",
+ "ficha": "v2",
+ "ensaio": "PMC10561433",
+ "replica": 1,
+ "conteudo": "{\n  \"n_randomized_gdft\": {\"value\": \"39\", \"where\": \"Abstract\", \"quote\": \"The GDHT group (n = 39)\"},\n  \"n_randomized_control\": {\"value\": \"36\", \"where\": \"Abstract\", \"quote\": \"the control group (n = 36)\"},\n  \"surgery_type\": {\"value\": \"open radical cystectomy\", \"where\": \"Abstract\", \"quote\": \"patients undergoing open radical cystectomy\"},\n  \"laparoscopy_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"laparoscopy_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"asa_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"asa_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"total_fluid_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"total_fluid_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"crystalloid_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"crystalloid_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"colloid_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"colloid_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"blood_loss_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"blood_loss_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"inotrope_use\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"morbidity_events_gdft\": {\"value\": \"28\", \"where\": \"Table 4\", \"quote\": \"Total complication, n (%) 28 (67.4)\"},\n  \"morbidity_events_control\": {\"value\": \"30\", \"where\": \"Table 4\", \"quote\": \"Total complication, n (%) 30 (73.0)\"},\n  \"mortality_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"mortality_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"hospital_los_gdft\": {\"value\": \"26.0 (18.0–32.0)\", \"where\": \"Table 4\", \"quote\": \"Total length of hospital stays (days) 26.0 (18.0–32.0)\"},\n  \"hospital_los_control\": {\"value\": \"24.5 (19.0–30.0)\", \"where\": \"Table 4\", \"quote\": \"Total length of hospital stays (days) 24.5 (19.0–30.0)\"},\n  \"time_to_flatus_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"time_to_flatus_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"time_to_oral_intake_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"time_to_oral_intake_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"time_to_defecation_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"time_to_defecation_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"postop_ileus_gdft\": {\"value\": \"1\", \"where\": \"Table 4\", \"quote\": \"Ileus 1 (2.6)\"},\n  \"postop_ileus_control\": {\"value\": \"1\", \"where\": \"Table 4\", \"quote\": \"Ileus 1 (2.8)\"}\n}",
+ "prompt_tokens": 10790,
+ "tokens": 907,
+ "finish": "stop",
+ "dt": 296.2,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "24afc30d165100e26b4637afbb9c2af36330a8485a9baa01cc0e71021e81c387"
+}

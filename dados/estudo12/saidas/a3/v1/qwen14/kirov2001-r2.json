@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen14",
+ "tag": "qwen3:14b",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "kirov2001",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"Infusion of methylene blue in human septic shock: A pilot, randomized, controlled study\", \"where\": \"Abstract\"},\n  \"design\": {\"value\": \"Prospective, randomized, controlled, open-label, pilot study\", \"where\": \"Abstract\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"MB group\", \"where\": \"Materials and Methods\"},\n      \"intervention\": {\"value\": \"methylene blue (MB)\", \"where\": \"Materials and Methods\"},\n      \"n_randomized\": {\"value\": \"10\", \"where\": \"Materials and Methods\"},\n      \"n_analyzed\": {\"value\": \"10\", \"where\": \"Materials and Methods\"}\n    },\n    {\n      \"label\": {\"value\": \"control group\", \"where\": \"Materials and Methods\"},\n      \"intervention\": {\"value\": \"isotonic saline\", \"where\": \"Materials and Methods\"},\n      \"n_randomized\": {\"value\": \"10\", \"where\": \"Materials and Methods\"},\n      \"n_analyzed\": {\"value\": \"10\", \"where\": \"Materials and Methods\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"Results\"},\n      \"timepoint\": {\"value\": \"day 28\", \"where\": \"Results\"},\n      \"deaths\": {\"value\": \"5\", \"where\": \"Results\"},\n      \"n\": {\"value\": \"10\", \"where\": \"Results\"},\n      \"deaths_percent\": {\"value\": \"50%\", \"where\": \"Results\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"control group\", \"where\": \"Results\"},\n      \"timepoint\": {\"value\": \"day 28\", \"where\": \"Results\"},\n      \"deaths\": {\"value\": \"7\", \"where\": \"Results\"},\n      \"n\": {\"value\": \"10\", \"where\": \"Results\"},\n      \"deaths_percent\": {\"value\": \"70%\", \"where\": \"Results\"}\n    }\n  ]\n}",
+ "prompt_tokens": 17406,
+ "tokens": 444,
+ "finish": "stop",
+ "dt": 75.83,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "f041924959c1f3cf4ce7aff01c1ec48b1f42709f9a02b7016c205a44f388760e"
+}

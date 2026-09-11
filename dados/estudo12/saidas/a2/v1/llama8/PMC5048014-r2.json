@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "tag": "llama3.1:8b",
+ "ancora": "a2",
+ "ficha": "v1",
+ "ensaio": "PMC5048014",
+ "replica": 2,
+ "conteudo": "{\n \"study\": \"Diagnosis and Treatment of Type 2 Diabetes Mellitus: A Prospective, Open-Label, Multi-Centric Randomized Clinical Trial (2015)\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Spain\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": \"89\",\n \"experimental_arm\": {\n  \"label\": \"VLCK diet\",\n  \"intervention_description\": \"low-calorie-ketogenic diet (<50 g of carbohydrate daily) as part of an interventional weight loss program including lifestyle and behavioral modification support (Diaprokal Method)\",\n  \"n_randomized\": \"45\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"-1.6\",\n  \"hba1c_change_dispersion\": \"0.7\",\n  \"hba1c_change_dispersion_type\": \"SE\",\n  \"hba1c_baseline_mean\": \"6.89\",\n  \"hba1c_baseline_sd\": \"1.06\",\n  \"hba1c_final_mean\": \"5.3\",\n  \"hba1c_final_sd\": \"0.7\"\n },\n \"control_arm\": {\n  \"label\": \"LC diet\",\n  \"intervention_description\": \"standard low-calorie diet\",\n  \"n_randomized\": \"44\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"NR\",\n  \"hba1c_change_dispersion\": \"NR\",\n  \"hba1c_change_dispersion_type\": \"NR\",\n  \"hba1c_baseline_mean\": \"6.88\",\n  \"hba1c_baseline_sd\": \"1.03\",\n  \"hba1c_final_mean\": \"7.1\",\n  \"hba1c_final_sd\": \"0.8\"\n }\n}",
+ "prompt_tokens": 9164,
+ "tokens": 384,
+ "finish": "stop",
+ "dt": 30.39,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "5acfd084fab2f307635228610e1d98b36bd9ab2bca2cd5ecbb20a644a606b3d7"
+}

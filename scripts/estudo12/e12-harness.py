@@ -122,6 +122,127 @@ SAIDAS = Path(os.environ.get("E12_SAIDAS") or (RAIZ / "dados" / "estudo12" / "sa
 RECUSADOS = Path(os.environ.get("E12_RECUSADOS") or (RAIZ / "dados" / "estudo12" / "recusados"))
 
 
+# ------------------------------------------------------------------ trava de instancia unica
+# Dois harness na mesma maquina nao dobram a vazao: disputam a mesma GPU, e o ollama so mantem um
+# modelo residente. Medido em 10/09/2026 com dois processos: a chamada passou de 3,3 para 7,0 min e
+# parte das chamadas foi refeita. Escrita atomica e portao de integridade impediram estrago, mas o
+# custo foi de horas -- e o harness aceitou o segundo lancamento em silencio.
+#
+# A trava e um CADEADO do sistema operacional sobre um byte do arquivo, nao um PID anotado. O SO o
+# solta em qualquer morte do processo -- Ctrl-C, kill, janela fechada, queda de energia -- e um
+# segundo processo que tente o mesmo byte falha na hora. Nao ha adivinhacao de PID, nao ha trava
+# orfa, nao ha janela entre "olhei" e "escrevi". O JSON no comeco do arquivo e so para o humano saber
+# de quem e; o cadeado fica num byte alto, para que esse JSON continue legivel por quem perdeu. O
+# arquivo nunca e apagado: ao soltar, o dono anota "encerrado" e vai embora.
+#
+# A chave e a MAQUINA, nao o diretorio de saida: o que se disputa e a GPU. E12_SAIDAS continua
+# isolando as saidas dos testes; a trava so muda com E12_TRAVA, que existe para os testes e para
+# mais nada. Uma corrida de ensaio com E12_SAIDAS redirecionado disputa a mesma GPU e tem de ser
+# barrada como qualquer outra.
+TRAVA = Path(os.environ.get("E12_TRAVA") or (RAIZ / "dados" / "estudo12" / "harness.trava"))
+NL = chr(10)
+_BYTE_DO_CADEADO = 1 << 20      # 1 MiB adiante do JSON: quem perdeu ainda le quem ganhou
+_fd_trava = None
+
+
+def _tranca(fd):
+    if os.name == "nt":
+        import msvcrt
+        os.lseek(fd, _BYTE_DO_CADEADO, 0)
+        msvcrt.locking(fd, msvcrt.LK_NBLCK, 1)
+    else:
+        import fcntl
+        fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+
+
+def _destranca(fd):
+    if os.name == "nt":
+        import msvcrt
+        os.lseek(fd, _BYTE_DO_CADEADO, 0)
+        msvcrt.locking(fd, msvcrt.LK_UNLCK, 1)
+    else:
+        import fcntl
+        fcntl.flock(fd, fcntl.LOCK_UN)
+
+
+def _le_dono():
+    """O JSON dos primeiros bytes, ou None se nao houver ou nao for legivel."""
+    try:
+        with io.open(TRAVA, encoding="utf-8", errors="replace") as f:
+            return json.loads(f.read(8192))
+    except Exception:
+        return None
+
+
+def _idade(inicio):
+    try:
+        t = time.mktime(time.strptime(inicio, "%Y-%m-%d %H:%M:%S"))
+        m = int((time.time() - t) // 60)
+        return f"{m // 60} h {m % 60} min" if m >= 60 else f"{m} min"
+    except Exception:
+        return "?"
+
+
+def toma_trava():
+    """Tranca, ou recusa em voz alta. Devolve um aviso para imprimir, ou vazio."""
+    global _fd_trava
+    if _fd_trava is not None:
+        # o cadeado do Windows e por handle, nao por processo: uma segunda tomada no mesmo
+        # processo falharia acusando o proprio PID. Melhor dizer o que e.
+        raise RuntimeError("toma_trava chamada duas vezes no mesmo processo")
+    TRAVA.parent.mkdir(parents=True, exist_ok=True)
+    existia = TRAVA.exists()          # ANTES do os.open, que cria o arquivo
+    anterior = _le_dono() if existia else None
+    fd = os.open(str(TRAVA), os.O_RDWR | os.O_CREAT, 0o644)
+    try:
+        _tranca(fd)
+    except OSError:
+        os.close(fd)
+        dono = _le_dono() or {}
+        pid, inicio = dono.get("pid", "?"), dono.get("inicio", "?")
+        argv = " ".join(dono.get("argv") or []) or "(sem argumentos)"
+        raise SystemExit(
+            f"ja ha um harness rodando: PID {pid}, desde {inicio} ({_idade(inicio)}), com: {argv}"
+            f"{NL}Dois harness competem pela mesma GPU e refazem trabalho."
+            f"{NL}Para ver onde a campanha esta:  python scripts/estudo12/e12-inventario.py"
+            f"{NL}Para conferir aquele processo:   tasklist /FI \"PID eq {pid}\"")
+    _fd_trava = fd
+    os.lseek(fd, 0, 0)
+    os.ftruncate(fd, 0)
+    os.write(fd, json.dumps({"pid": os.getpid(), "inicio": time.strftime("%Y-%m-%d %H:%M:%S"),
+                             "argv": sys.argv[1:]}, ensure_ascii=False).encode("utf-8"))
+    if not existia:
+        return ""
+    if anterior is None:
+        return "trava anterior ilegivel, e ninguem a segurava — assumindo"
+    if anterior.get("encerrado"):
+        return ""
+    return (f"trava anterior do PID {anterior.get('pid', '?')} ficou sem encerrar "
+            f"(morreu sem soltar), e ninguem a segurava — assumindo")
+
+
+def solta_trava():
+    """Anota o encerramento e solta o cadeado. Nao apaga: reprovado e registrado, e trava tambem."""
+    global _fd_trava
+    fd, _fd_trava = _fd_trava, None
+    if fd is None:
+        return
+    try:
+        os.lseek(fd, 0, 0)
+        os.ftruncate(fd, 0)
+        os.write(fd, json.dumps({"pid": os.getpid(),
+                                 "encerrado": time.strftime("%Y-%m-%d %H:%M:%S")}).encode("utf-8"))
+        _destranca(fd)
+    except Exception:
+        pass
+    finally:
+        try:
+            os.close(fd)
+        except Exception:
+            pass
+
+
+
 # ------------------------------------------------------------------ o plano, enumerado
 # §4 do protocolo: quantos ensaios cada âncora tem. O plano era um glob de disco, e um diretório
 # que sumisse encolhia a campanha em silêncio -- a corrida terminaria "completa" com menos chamadas.
@@ -249,6 +370,19 @@ def chama(c, prompt):
 
 # ------------------------------------------------------------------ a corrida
 def roda(so_modelo=None, so_ancora=None, so_ficha=None, seco=False):
+    """Toma a trava se for chamar modelo; corrida seca nao disputa GPU e nao a toma."""
+    if seco:
+        return _roda(so_modelo, so_ancora, so_ficha, seco)
+    aviso = toma_trava()
+    if aviso:
+        print(aviso, flush=True)
+    try:
+        return _roda(so_modelo, so_ancora, so_ficha, seco)
+    finally:
+        solta_trava()
+
+
+def _roda(so_modelo=None, so_ancora=None, so_ficha=None, seco=False):
     todas = [c for c in plano()
              if (not so_modelo or c["modelo"] == so_modelo)
              and (not so_ancora or c["ancora"] == so_ancora)
@@ -270,8 +404,18 @@ def roda(so_modelo=None, so_ancora=None, so_ficha=None, seco=False):
             if ok:
                 puladas += 1
                 continue
-            print(f"  [{i}/{len(todas)}] {p.name}: RECUSADO — {motivo}", flush=True)
-            afasta(p, motivo)
+            if seco:
+                # corrida seca RELATA o que faria; mover e decisao de corrida de verdade. A
+                # revisao de 11/09/2026 provou que --seco movia saidas da campanha em curso.
+                print(f"  [{i}/{len(todas)}] {p.name}: SERIA RECUSADO — {motivo}", flush=True)
+            else:
+                print(f"  [{i}/{len(todas)}] {p.name}: RECUSADO — {motivo}", flush=True)
+                try:
+                    afasta(p, motivo)
+                except OSError as e:
+                    # alguem mexeu no arquivo entre o portao e o afastamento: a proxima
+                    # passada decide; nao e motivo para derrubar uma corrida de 40 h
+                    print(f"      nao consegui afastar ({type(e).__name__}); sigo", flush=True)
             refeitas += 1
         if seco:
             feitas += 1

@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen14",
+ "tag": "qwen3:14b",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "dong2025",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"The Effect of Methylene Blue on Sublingual Microcirculation in Patients with Septic Shock: A Randomized Controlled Trial\", \"where\": \"Abstract\"},\n  \"design\": {\"value\": \"Single-center, prospective, randomized controlled trial\", \"where\": \"Methods\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"MB group\", \"where\": \"Results\"},\n      \"intervention\": {\"value\": \"2 mg/kg methylene blue intravenous bolus over 15 minutes, followed by 1 mg/kg methylene blue diluted in 500 mL of 0.9% saline via a central venous catheter for 12 hours\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"41\", \"where\": \"Results\"},\n      \"n_analyzed\": {\"value\": \"41\", \"where\": \"Results\"}\n    },\n    {\n      \"label\": {\"value\": \"Control group\", \"where\": \"Results\"},\n      \"intervention\": {\"value\": \"Equivalent volume of 500 mL of 0.9% sodium chloride solution infused over the same 12-hour period\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"41\", \"where\": \"Results\"},\n      \"n_analyzed\": {\"value\": \"41\", \"where\": \"Results\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"Results\"},\n      \"timepoint\": {\"value\": \"28 days\", \"where\": \"Results\"},\n      \"deaths\": {\"value\": \"9\", \"where\": \"Table 2\"},\n      \"n\": {\"value\": \"41\", \"where\": \"Table 2\"},\n      \"deaths_percent\": {\"value\": \"22.0%\", \"where\": \"Table 2\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"Results\"},\n      \"timepoint\": {\"value\": \"90 days\", \"where\": \"Results\"},\n      \"deaths\": {\"value\": \"12\", \"where\": \"Table 2\"},\n      \"n\": {\"value\": \"41\", \"where\": \"Table 2\"},\n      \"deaths_percent\": {\"value\": \"29.3%\", \"where\": \"Table 2\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"Control group\", \"where\": \"Results\"},\n      \"timepoint\": {\"value\": \"28 days\", \"where\": \"Results\"},\n      \"deaths\": {\"value\": \"15\", \"where\": \"Table 2\"},\n      \"n\": {\"value\": \"41\", \"where\": \"Table 2\"},\n      \"deaths_percent\": {\"value\": \"36.6%\", \"where\": \"Table 2\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"Control group\", \"where\": \"Results\"},\n      \"timepoint\": {\"value\": \"90 days\", \"where\": \"Results\"},\n      \"deaths\": {\"value\": \"17\", \"where\": \"Table 2\"},\n      \"n\": {\"value\": \"41\", \"where\": \"Table 2\"},\n      \"deaths_percent\": {\"value\": \"41.5%\", \"where\": \"Table 2\"}\n    }\n  ]\n}",
+ "prompt_tokens": 14591,
+ "tokens": 719,
+ "finish": "stop",
+ "dt": 116.98,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "bc3780630049187db24c8561e354204631be7501261c022435a3c8f0105ac92e"
+}

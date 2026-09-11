@@ -1,0 +1,16 @@
+{
+ "modelo": "gemma12",
+ "tag": "gemma4:12b",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "ibarra2023",
+ "replica": 2,
+ "conteudo": "```json\n{\n  \"study\": {\n    \"value\": \"Early adjunctive methylene blue in patients with septic shock: a randomized controlled trial\",\n    \"where\": \"Title\"\n  },\n  \"design\": {\n    \"value\": \"single-center randomized controlled trial\",\n    \"where\": \"Methods\"\n  },\n  \"arms\": [\n    {\n      \"label\": {\n        \"value\": \"MB\",\n        \"where\": \"Results\"\n      },\n      \"intervention\": {\n        \"value\": \"an intravenous (IV) infusion of 100 mg of MB in 500 ml of 0.9% sodium chloride solution over 6 h once daily for a total of 3 doses\",\n        \"where\": \"Methods\"\n      },\n      \"n_randomized\": {\n        \"value\": \"45\",\n        \"where\": \"Results\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"45\",\n        \"where\": \"Results\"\n      }\n    },\n    {\n      \"label\": {\n        \"value\": \"control\",\n        \"where\": \"Results\"\n      },\n      \"intervention\": {\n        \"value\": \"the same dose of 500 ml of 0.9% sodium chloride without MB\",\n        \"where\": \"Methods\"\n      },\n      \"n_randomized\": {\n        \"value\": \"46\",\n        \"where\": \"Results\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"46\",\n        \"where\": \"Results\"\n      }\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\n        \"value\": \"MB\",\n        \"where\": \"Results\"\n      },\n      \"timepoint\": {\n        \"value\": \"28 days\",\n        \"where\": \"Results\"\n      },\n      \"deaths\": {\n        \"value\": \"15\",\n        \"where\": \"Table 2\"\n      },\n      \"n\": {\n        \"value\": \"45\",\n        \"where\": \"Table 2\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"33\",\n        \"where\": \"Table 2\"\n      }\n    },\n    {\n      \"arm_label\": {\n        \"value\": \"control\",\n        \"where\": \"Results\"\n      },\n      \"timepoint\": {\n        \"value\": \"28 days\",\n        \"where\": \"Results\"\n      },\n      \"deaths\": {\n        \"value\": \"21\",\n        \"where\": \"Table 2\"\n      },\n      \"n\": {\n        \"value\": \"46\",\n        \"where\": \"Table 2\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"46\",\n        \"where\": \"Table 2\"\n      }\n    }\n  ]\n}\n```",
+ "prompt_tokens": 13356,
+ "tokens": 676,
+ "finish": "stop",
+ "dt": 92.4,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "304c039a3043a5bb46e6c5ff565042b3af67cfd79ce06dd6628d20c1d3e72373"
+}

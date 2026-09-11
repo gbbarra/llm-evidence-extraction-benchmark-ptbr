@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "tag": "qwen3.5:9b",
+ "ancora": "a3",
+ "ficha": "v2",
+ "ensaio": "luissilva2024",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"Methylene blue therapy in addition to standard treatment for acute-phase septic shock: a pilot randomized controlled trial\", \"where\": \"\"},\n  \"design\": {\"value\": \"pilot randomized clinical trial\", \"where\": \"Abstract\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"MB group\", \"where\": \"Abstract\"},\n      \"intervention\": {\"value\": \"loading dose of MB (3 mg/kg) and maintenance (0.5 mg/kg/h) for 48 h\", \"where\": \"Abstract\"},\n      \"n_randomized\": {\"value\": \"19\", \"where\": \"Abstract\", \"quote\": \"26 patients were allocated to the Control group, and 19 were randomized to the MB group.\"},\n      \"n_analyzed\": {\"value\": \"19\", \"where\": \"\", \"quote\": \"\"}\n    },\n    {\n      \"label\": {\"value\": \"Control group\", \"where\": \"Abstract\"},\n      \"intervention\": {\"value\": \"standard treatment, consisting of fluid replacement, vasopressors, and antibiotic therapy\", \"where\": \"Abstract\"},\n      \"n_randomized\": {\"value\": \"26\", \"where\": \"Abstract\", \"quote\": \"26 patients were allocated to the Control group, and 19 were randomized to the MB group.\"},\n      \"n_analyzed\": {\"value\": \"26\", \"where\": \"\", \"quote\": \"\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"Control group\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"30 days\", \"where\": \"Table 1\", \"quote\": \"30 days outcome (Death)—n (%)\"},\n      \"deaths\": {\"value\": \"14\", \"where\": \"Table 1\", \"quote\": \"( n = 26) 14 (54)\"},\n      \"n\": {\"value\": \"26\", \"where\": \"Table 1\", \"quote\": \"Control ( n = 26)\"},\n      \"deaths_percent\": {\"value\": \"54\", \"where\": \"Table 1\", \"quote\": \"(54)\"},\n      \"note\": \"Percentage printed in table lacks decimal point.\"\n    },\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"30 days\", \"where\": \"Table 1\", \"quote\": \"30 days outcome (Death)—n (%)\"},\n      \"deaths\": {\"value\": \"9\", \"where\": \"Table 1\", \"quote\": \"( n = 19) 9 (47)\"},\n      \"n\": {\"value\": \"19\", \"where\": \"Table 1\", \"quote\": \"MB ( n = 19)\"},\n      \"deaths_percent\": {\"value\": \"47\", \"where\": \"Table 1\", \"quote\": \"(47)\"},\n      \"note\": \"Percentage printed in table lacks decimal point.\"\n    }\n  ]\n}",
+ "prompt_tokens": 12640,
+ "tokens": 690,
+ "finish": "stop",
+ "dt": 55.37,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "e5719b5b6e969d5d365a8f54fd275d0e8ce7af413a213d48c331788d7b881dca"
+}

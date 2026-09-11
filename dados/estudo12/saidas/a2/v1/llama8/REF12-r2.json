@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "tag": "llama3.1:8b",
+ "ancora": "a2",
+ "ficha": "v1",
+ "ensaio": "REF12",
+ "replica": 2,
+ "conteudo": "{\n \"study\": \"N/A\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Denmark\",\n \"duration\": \"6 weeks\",\n \"n_randomized_total\": \"72\",\n \"experimental_arm\": {\n  \"label\": \"Carbohydrate-reduced high-protein diet (CRHP)\",\n  \"intervention_description\": \"30% of total energy intake from carbohydrates, 30% from protein, and 40% from fat\",\n  \"n_randomized\": \"36\",\n  \"n_analyzed\": \"34\",\n  \"hba1c_change_mean\": \"-9.1 ± 4.2 mmol/mol\",\n  \"hba1c_change_dispersion\": \"4.2\",\n  \"hba1c_change_dispersion_type\": \"SE\",\n  \"hba1c_baseline_mean\": \"57.6 ± 8.4 mmol/mol\",\n  \"hba1c_baseline_sd\": \"NR\",\n  \"hba1c_final_mean\": \"48.5 ± 7.2 mmol/mol\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"Conventional diabetes diet (CD)\",\n  \"intervention_description\": \"50% of total energy intake from carbohydrates, 17% from protein, and 33% from fat\",\n  \"n_randomized\": \"36\",\n  \"n_analyzed\": \"33\",\n  \"hba1c_change_mean\": \"-7.2 ± 4.0 mmol/mol\",\n  \"hba1c_change_dispersion\": \"4.0\",\n  \"hba1c_change_dispersion_type\": \"SE\",\n  \"hba1c_baseline_mean\": \"57.4 ± 7.7 mmol/mol\",\n  \"hba1c_baseline_sd\": \"NR\",\n  \"hba1c_final_mean\": \"50.2 ± 6.3 mmol/mol\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}",
+ "prompt_tokens": 11816,
+ "tokens": 416,
+ "finish": "stop",
+ "dt": 34.94,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "43a2a5f57d7466c9966d3754848590434c5f6fb6c55a1c2c288c791dc8615cea"
+}

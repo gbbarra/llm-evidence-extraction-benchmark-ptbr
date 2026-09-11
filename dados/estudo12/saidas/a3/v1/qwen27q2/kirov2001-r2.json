@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen27q2",
+ "tag": "smtek/Qwen3.8-27B:Q2_K_XL",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "kirov2001",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\n    \"value\": \"Infusion of methylene blue in human septic shock: A pilot, randomized, controlled study\",\n    \"where\": \"Title\"\n  },\n  \"design\": {\n    \"value\": \"Prospective, randomized, controlled, open-label, pilot study\",\n    \"where\": \"Abstract\"\n  },\n  \"arms\": [\n    {\n      \"label\": {\n        \"value\": \"MB group\",\n        \"where\": \"Abstract\"\n      },\n      \"intervention\": {\n        \"value\": \"MB (methylthionine; Nycomed, Oslo, Norway)\",\n        \"where\": \"Abstract\"\n      },\n      \"n_randomized\": {\n        \"value\": \"10\",\n        \"where\": \"Abstract\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"10\",\n        \"where\": \"Abstract\"\n      }\n    },\n    {\n      \"label\": {\n        \"value\": \"control group\",\n        \"where\": \"Abstract\"\n      },\n      \"intervention\": {\n        \"value\": \"isotonic saline\",\n        \"where\": \"Abstract\"\n      },\n      \"n_randomized\": {\n        \"value\": \"10\",\n        \"where\": \"Abstract\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"10\",\n        \"where\": \"Abstract\"\n      }\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\n        \"value\": \"MB group\",\n        \"where\": \"Abstract\"\n      },\n      \"timepoint\": {\n        \"value\": \"day 28\",\n        \"where\": \"Abstract\"\n      },\n      \"deaths\": {\n        \"value\": \"5\",\n        \"where\": \"Abstract\"\n      },\n      \"n\": {\n        \"value\": \"10\",\n        \"where\": \"Abstract\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"NR\",\n        \"where\": \"Abstract\"\n      }\n    },\n    {\n      \"arm_label\": {\n        \"value\": \"control group\",\n        \"where\": \"Abstract\"\n      },\n      \"timepoint\": {\n        \"value\": \"day 28\",\n        \"where\": \"Abstract\"\n      },\n      \"deaths\": {\n        \"value\": \"7\",\n        \"where\": \"Abstract\"\n      },\n      \"n\": {\n        \"value\": \"10\",\n        \"where\": \"Abstract\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"NR\",\n        \"where\": \"Abstract\"\n      }\n    }\n  ]\n}",
+ "prompt_tokens": 17760,
+ "tokens": 626,
+ "finish": "stop",
+ "dt": 71.84,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "f041924959c1f3cf4ce7aff01c1ec48b1f42709f9a02b7016c205a44f388760e"
+}

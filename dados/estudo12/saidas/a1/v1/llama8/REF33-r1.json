@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "tag": "llama3.1:8b",
+ "ancora": "a1",
+ "ficha": "v1",
+ "ensaio": "REF33",
+ "replica": 1,
+ "conteudo": "{\n  \"n_randomized_gdft\": {\"value\": \"209\", \"where\": \"Table 2\"},\n  \"n_randomized_control\": {\"value\": \"211\", \"where\": \"Table 2\"},\n  \"surgery_type\": {\"value\": \"abdominal, urological, gynaecological\", \"where\": \"Table 2\"},\n  \"laparoscopy_gdft\": {\"value\": \"50.2\", \"where\": \"Table 2\"},\n  \"laparoscopy_control\": {\"value\": \"51.7\", \"where\": \"Table 2\"},\n  \"asa_gdft\": {\"value\": \"I: 34 (16.3) | II: 148 (70.8) | III: 27 (12.9)\", \"where\": \"Table 1\"},\n  \"asa_control\": {\"value\": \"I: 25 (11.8) | II: 148 (70.1) | III: 38 (18.0)\", \"where\": \"Table 1\"},\n  \"total_fluid_gdft\": {\"value\": \"2500 (1500e3000)\", \"where\": \"Table 3\"},\n  \"total_fluid_control\": {\"value\": \"2900 (2200e3200)\", \"where\": \"Table 3\"},\n  \"crystalloid_gdft\": {\"value\": \"1480 (1000e2000)\", \"where\": \"Table 3\"},\n  \"crystalloid_control\": {\"value\": \"1440 (900e2000)\", \"where\": \"Table 3\"},\n  \"colloid_gdft\": {\"value\": \"500 (0e800)\", \"where\": \"Table 3\"},\n  \"colloid_control\": {\"value\": \"500 (0e950)\", \"where\": \"Table 3\"},\n  \"blood_loss_gdft\": {\"value\": \"200 (72e300)\", \"where\": \"Table 3\"},\n  \"blood_loss_control\": {\"value\": \"300 (196e500)\", \"where\": \"Table 3\"},\n  \"inotrope_use\": {\"value\": \"2 (0.9)\", \"where\": \"Table 2\"},\n  \"morbidity_events_gdft\": {\"value\": \"18\", \"where\": \"Fig 3\"},\n  \"morbidity_events_control\": {\"value\": \"35\", \"where\": \"Fig 3\"},\n  \"mortality_gdft\": {\"value\": \"10\", \"where\": \"Table 2\"},\n  \"mortality_control\": {\"value\": \"9\", \"where\": \"Table 2\"},\n  \"hospital_los_gdft\": {\"value\": \"5 (4e10)\", \"where\": \"Table 3\"},\n  \"hospital_los_control\": {\"value\": \"7 (5e12)\", \"where\": \"Table 3\"},\n  \"time_to_flatus_gdft\": {\"value\": \"1 (1e3)\", \"where\": \"Table 3\"},\n  \"time_to_flatus_control\": {\"value\": \"2 (1e4)\", \"where\": \"Table 3\"},\n  \"time_to_oral_intake_gdft\": {\"value\": \"1\", \"where\": \"Table 3\"},\n  \"time_to_oral_intake_control\": {\"value\": \"2\", \"where\": \"Table 3\"},\n  \"time_to_defecation_gdft\": {\"value\": \"2 (1e3)\", \"where\": \"Table 3\"},\n  \"time_to_defecation_control\": {\"value\": \"3 (1e4)\", \"where\": \"Table 3\"},\n  \"postop_ileus_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"postop_ileus_control\": {\"value\": \"NR\", \"where\": \"NR\"}\n}",
+ "prompt_tokens": 9819,
+ "tokens": 807,
+ "finish": "stop",
+ "dt": 118.21,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "8b7217b9f2fc7ddd94af742703faade47e9f461fcef1a4e44e59498ac2dd71a2"
+}

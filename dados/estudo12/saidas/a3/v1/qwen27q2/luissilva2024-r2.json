@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen27q2",
+ "tag": "smtek/Qwen3.8-27B:Q2_K_XL",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "luissilva2024",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\n    \"value\": \"Methylene blue therapy in addition to standard treatment for acute-phase septic shock: a pilot randomized controlled trial\",\n    \"where\": \"Title\"\n  },\n  \"design\": {\n    \"value\": \"pilot randomized clinical trial\",\n    \"where\": \"Abstract, Methods\"\n  },\n  \"arms\": [\n    {\n      \"label\": {\n        \"value\": \"Control\",\n        \"where\": \"Abstract, Table 1\"\n      },\n      \"intervention\": {\n        \"value\": \"conventional treatment\",\n        \"where\": \"Methods\"\n      },\n      \"n_randomized\": {\n        \"value\": \"26\",\n        \"where\": \"Abstract, Table 1\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"26\",\n        \"where\": \"Table 1\"\n      }\n    },\n    {\n      \"label\": {\n        \"value\": \"MB\",\n        \"where\": \"Abstract, Table 1\"\n      },\n      \"intervention\": {\n        \"value\": \"conventional treatment and MB at a dose of 3 mg/kg in 20 min and then 0.5 mg/kg/h for 48 h\",\n        \"where\": \"Methods\"\n      },\n      \"n_randomized\": {\n        \"value\": \"19\",\n        \"where\": \"Abstract, Table 1\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"19\",\n        \"where\": \"Table 1\"\n      }\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\n        \"value\": \"Control\",\n        \"where\": \"Table 1\"\n      },\n      \"timepoint\": {\n        \"value\": \"30 days\",\n        \"where\": \"Table 1, Discussion\"\n      },\n      \"deaths\": {\n        \"value\": \"14\",\n        \"where\": \"Table 1\"\n      },\n      \"n\": {\n        \"value\": \"26\",\n        \"where\": \"Table 1\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"54\",\n        \"where\": \"Table 1\"\n      }\n    },\n    {\n      \"arm_label\": {\n        \"value\": \"MB\",\n        \"where\": \"Table 1\"\n      },\n      \"timepoint\": {\n        \"value\": \"30 days\",\n        \"where\": \"Table 1, Discussion\"\n      },\n      \"deaths\": {\n        \"value\": \"9\",\n        \"where\": \"Table 1\"\n      },\n      \"n\": {\n        \"value\": \"19\",\n        \"where\": \"Table 1\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"47\",\n        \"where\": \"Table 1\"\n      }\n    }\n  ]\n}",
+ "prompt_tokens": 12502,
+ "tokens": 681,
+ "finish": "stop",
+ "dt": 73.98,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "e4e9a69ffea16deabc62c7cedeb2486d967a83bccfbee6986d4a40adeaf52845"
+}

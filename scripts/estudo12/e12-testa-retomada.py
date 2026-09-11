@@ -137,6 +137,7 @@ import tempfile as _tf
 with _tf.TemporaryDirectory() as td2:
     H.RECUSADOS = Path(td2) / "rec"
     H.SAIDAS = Path(td2) / "saidas"
+    H.TRAVA = Path(td2) / "harness.trava"    # roda() toma a trava; a do teste e a sua
     try:
         H.roda(so_modelo="gemma12", so_ancora="a3", so_ficha="v1")
         parou = False

@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen14",
+ "tag": "qwen3:14b",
+ "ancora": "a2",
+ "ficha": "v2",
+ "ensaio": "REF9",
+ "replica": 2,
+ "conteudo": "{\n \"study\": \"Saslow 2023\",\n \"design\": \"2x2 factorial\",\n \"country\": \"USA\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": {\"value\": \"83\", \"where\": \"ABSTRACT\", \"quote\": \"We randomized 83 adults from southeast Michigan\"},\n \"experimental_arm\": {\n  \"label\": \"VLC diet\",\n  \"intervention_description\": \"\",\n  \"n_randomized\": {\"value\": \"23\", \"where\": \"Figure 1\", \"quote\": \"23 VLC 23 Intention-to-treat analysis\"},\n  \"n_analyzed\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_change_mean\": {\"value\": \"-0.32\", \"where\": \"Table 2\", \"quote\": \"HbA1c, % 6.09 (0.07) 5.74 (0.08) –0.32 (0.07)\"},\n  \"hba1c_change_dispersion\": {\"value\": \"0.07\", \"where\": \"Table 2\", \"quote\": \"HbA1c, % 6.09 (0.07) 5.74 (0.08) –0.32 (0.07)\"},\n  \"hba1c_change_dispersion_type\": {\"value\": \"SE\", \"where\": \"Table 2\", \"quote\": \"Estimated Mean (SE) of Outcomes\"},\n  \"hba1c_baseline_mean\": {\"value\": \"6.09\", \"where\": \"Table 2\", \"quote\": \"HbA1c, % 6.09 (0.07) 5.74 (0.08) –0.32 (0.07)\"},\n  \"hba1c_baseline_sd\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_final_mean\": {\"value\": \"5.74\", \"where\": \"Table 2\", \"quote\": \"HbA1c, % 6.09 (0.07) 5.74 (0.08) –0.32 (0.07)\"},\n  \"hba1c_final_sd\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n },\n \"control_arm\": {\n  \"label\": \"DASH diet\",\n  \"intervention_description\": \"\",\n  \"n_randomized\": {\"value\": \"24\", \"where\": \"Figure 1\", \"quote\": \"24 DASH 24 Intention-to-treat analysis\"},\n  \"n_analyzed\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_change_mean\": {\"value\": \"-0.14\", \"where\": \"Table 2\", \"quote\": \"HbA1c, % 6.10 (0.07) 5.97 (0.07) –0.14 (0.07)\"},\n  \"hba1c_change_dispersion\": {\"value\": \"0.07\", \"where\": \"Table 2\", \"quote\": \"HbA1c, % 6.10 (0.07) 5.97 (0.07) –0.14 (0.07)\"},\n  \"hba1c_change_dispersion_type\": {\"value\": \"SE\", \"where\": \"Table 2\", \"quote\": \"Estimated Mean (SE) of Outcomes\"},\n  \"hba1c_baseline_mean\": {\"value\": \"6.10\", \"where\": \"Table 2\", \"quote\": \"HbA1c, % 6.10 (0.07) 5.97 (0.07) –0.14 (0.07)\"},\n  \"hba1c_baseline_sd\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_final_mean\": {\"value\": \"5.97\", \"where\": \"Table 2\", \"quote\": \"HbA1c, % 6.10 (0.07) 5.97 (0.07) –0.14 (0.07)\"},\n  \"hba1c_final_sd\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n }\n}",
+ "prompt_tokens": 10473,
+ "tokens": 963,
+ "finish": "stop",
+ "dt": 144.76,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "5f834773c6e93a8bf25f0ac1bbbd04c949ee68cf157f8d6a3e353f35116c614c"
+}

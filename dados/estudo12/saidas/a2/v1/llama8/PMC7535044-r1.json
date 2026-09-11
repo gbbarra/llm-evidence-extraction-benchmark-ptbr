@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "tag": "llama3.1:8b",
+ "ancora": "a2",
+ "ficha": "v1",
+ "ensaio": "PMC7535044",
+ "replica": 1,
+ "conteudo": "{\n \"study\": \"Huang et al. (2018)\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Taiwan\",\n \"duration\": \"18 months\",\n \"n_randomized_total\": \"92\",\n \"experimental_arm\": {\n  \"label\": \"Low-carbohydrate diet (LCD)\",\n  \"intervention_description\": \"Daily carbohydrate intake limited to less than 90 g without any restriction to the total energy\",\n  \"n_randomized\": \"41\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"-1.44\",\n  \"hba1c_change_dispersion\": \"0.3\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"9.95\",\n  \"hba1c_baseline_sd\": \"1.04\",\n  \"hba1c_final_mean\": \"6.84\",\n  \"hba1c_final_sd\": \"0.59\"\n },\n \"control_arm\": {\n  \"label\": \"Traditional diabetic diet (TDD)\",\n  \"intervention_description\": \"Target total calorie intake calculated by multiplying ideal weight by 25 kcal/kg for those with a BMI between 18.5 and 24, 20 kcal/kg for overweight/obese subjects (BMI > 24) and 30 kcal/d for underweight subjects with a BMI < 18.5\",\n  \"n_randomized\": \"42\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"-1.01\",\n  \"hba1c_change_dispersion\": \"0.3\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"8.70\",\n  \"hba1c_baseline_sd\": \"1.01\",\n  \"hba1c_final_mean\": \"7.69\",\n  \"hba1c_final_sd\": \"1.06\"\n }\n}",
+ "prompt_tokens": 11233,
+ "tokens": 413,
+ "finish": "stop",
+ "dt": 94.94,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "c7e0429e65526f56b74c8fb91c0e0cdf124b34bacd8d6ed32d84f4d16c991eb6"
+}

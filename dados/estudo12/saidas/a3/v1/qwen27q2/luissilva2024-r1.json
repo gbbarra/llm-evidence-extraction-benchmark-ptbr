@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen27q2",
+ "tag": "smtek/Qwen3.8-27B:Q2_K_XL",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "luissilva2024",
+ "replica": 1,
+ "conteudo": "{\n  \"study\": {\"value\": \"Luis-Silva et al. 2024\", \"where\": \"Title/Authors\"},\n  \"design\": {\"value\": \"pilot randomized controlled trial\", \"where\": \"Abstract/Methods\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"Control\", \"where\": \"Abstract/Results\"},\n      \"intervention\": {\"value\": \"standard treatment, consisting of fluid replacement, vasopressors, and antibiotic therapy\", \"where\": \"Abstract\"},\n      \"n_randomized\": {\"value\": \"26\", \"where\": \"Abstract\"},\n      \"n_analyzed\": {\"value\": \"26\", \"where\": \"Table 1\"}\n    },\n    {\n      \"label\": {\"value\": \"MB\", \"where\": \"Abstract/Results\"},\n      \"intervention\": {\"value\": \"standard treatment, consisting of fluid replacement, vasopressors, and antibiotic therapy; Patients received a loading dose of MB (3 mg/kg) and maintenance (0.5 mg/kg/h) for 48 h\", \"where\": \"Abstract\"},\n      \"n_randomized\": {\"value\": \"19\", \"where\": \"Abstract\"},\n      \"n_analyzed\": {\"value\": \"19\", \"where\": \"Table 1\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"Control\", \"where\": \"Table 1\"},\n      \"timepoint\": {\"value\": \"30 days\", \"where\": \"Table 1\"},\n      \"deaths\": {\"value\": \"14\", \"where\": \"Table 1\"},\n      \"n\": {\"value\": \"26\", \"where\": \"Table 1\"},\n      \"deaths_percent\": {\"value\": \"54\", \"where\": \"Table 1\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"MB\", \"where\": \"Table 1\"},\n      \"timepoint\": {\"value\": \"30 days\", \"where\": \"Table 1\"},\n      \"deaths\": {\"value\": \"9\", \"where\": \"Table 1\"},\n      \"n\": {\"value\": \"19\", \"where\": \"Table 1\"},\n      \"deaths_percent\": {\"value\": \"47\", \"where\": \"Table 1\"}\n    }\n  ]\n}",
+ "prompt_tokens": 12502,
+ "tokens": 524,
+ "finish": "stop",
+ "dt": 245.08,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "e4e9a69ffea16deabc62c7cedeb2486d967a83bccfbee6986d4a40adeaf52845"
+}

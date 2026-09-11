@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "tag": "llama3.1:8b",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "memis2002",
+ "replica": 1,
+ "conteudo": "{\n  \"study\": {\"value\": \"The Influence of Methylene Blue Infusion on Cytokine Levels During Severe Sepsis\", \"where\": \"Abstract\"},\n  \"design\": {\"value\": \"Randomized, double-blind, placebo-controlled\", \"where\": \"Abstract\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"MB group\", \"where\": \"Patient Characteristics\"},\n      \"intervention\": {\"value\": \"Methylene blue 0.5 mg.kg–1.h–1\", \"where\": \"Abstract\"},\n      \"n_randomized\": {\"value\": \"15\", \"where\": \"Patient Characteristics\"},\n      \"n_analyzed\": {\"value\": \"NR\", \"where\": \"\"}\n    },\n    {\n      \"label\": {\"value\": \"Control group\", \"where\": \"Patient Characteristics\"},\n      \"intervention\": {\"value\": \"Isotonic saline 0.5 mg.kg–1.h–1\", \"where\": \"Abstract\"},\n      \"n_randomized\": {\"value\": \"15\", \"where\": \"Patient Characteristics\"},\n      \"n_analyzed\": {\"value\": \"NR\", \"where\": \"\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"Outcome\"},\n      \"timepoint\": {\"value\": \"in-hospital\", \"where\": \"Outcome\"},\n      \"deaths\": {\"value\": \"4\", \"where\": \"Outcome\"},\n      \"n\": {\"value\": \"15\", \"where\": \"Outcome\"},\n      \"deaths_percent\": {\"value\": \"26.6%\", \"where\": \"Outcome\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"Control group\", \"where\": \"Outcome\"},\n      \"timepoint\": {\"value\": \"in-hospital\", \"where\": \"Outcome\"},\n      \"deaths\": {\"value\": \"4\", \"where\": \"Outcome\"},\n      \"n\": {\"value\": \"15\", \"where\": \"Outcome\"},\n      \"deaths_percent\": {\"value\": \"26.6%\", \"where\": \"Outcome\"}\n    }\n  ]\n}",
+ "prompt_tokens": 10919,
+ "tokens": 441,
+ "finish": "stop",
+ "dt": 96.91,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "418ad86f0c2b5fd6c688e7e93ec8887e125ed51234c732412566950ed0a5a970"
+}

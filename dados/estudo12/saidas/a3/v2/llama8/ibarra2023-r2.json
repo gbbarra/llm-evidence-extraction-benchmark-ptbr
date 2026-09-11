@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "tag": "llama3.1:8b",
+ "ancora": "a3",
+ "ficha": "v2",
+ "ensaio": "ibarra2023",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"Early adjunctive methylene blue in patients with septic shock: a randomized controlled trial\", \"where\": \"Abstract\"},\n  \"design\": {\"value\": \"Randomized Controlled Trial\", \"where\": \"Abstract\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"Methylene Blue\", \"where\": \"Table 1\"},\n      \"intervention\": {\"value\": \"methylene blue\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"45\", \"where\": \"Table 1\", \"quote\": \"45 patients assigned to MB and 46 to control group.\"},\n      \"n_analyzed\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n    },\n    {\n      \"label\": {\"value\": \"Placebo\", \"where\": \"Table 1\"},\n      \"intervention\": {\"value\": \"placebo\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"46\", \"where\": \"Table 1\", \"quote\": \"45 patients assigned to MB and 46 to control group.\"},\n      \"n_analyzed\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"Methylene Blue\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"28 days\", \"where\": \"Table 2\", \"quote\": \"Mortality at 28 days—no. (%): 15/45 (33) 21/46 (46)\"},\n      \"deaths\": {\"value\": \"15\", \"where\": \"Table 2\", \"quote\": \"15/45 (33)\"},\n      \"n\": {\"value\": \"45\", \"where\": \"Table 1\", \"quote\": \"45 patients assigned to MB and 46 to control group.\"},\n      \"deaths_percent\": {\"value\": \"33\", \"where\": \"Table 2\", \"quote\": \"15/45 (33)\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"Placebo\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"28 days\", \"where\": \"Table 2\", \"quote\": \"Mortality at 28 days—no. (%): 21/46 (46)\"},\n      \"deaths\": {\"value\": \"21\", \"where\": \"Table 2\", \"quote\": \"21/46 (46)\"},\n      \"n\": {\"value\": \"46\", \"where\": \"Table 1\", \"quote\": \"45 patients assigned to MB and 46 to control group.\"},\n      \"deaths_percent\": {\"value\": \"46\", \"where\": \"Table 2\", \"quote\": \"21/46 (46)\"}\n    }\n  ]\n}",
+ "prompt_tokens": 12502,
+ "tokens": 585,
+ "finish": "stop",
+ "dt": 49.92,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "733bee78501404c22336b1ebeebf8355f6aeaaaa6ec369b302541c1b40d872e8"
+}

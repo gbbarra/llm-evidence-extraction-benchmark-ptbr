@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "tag": "qwen3.5:9b",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "aguilar2016",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"Rev Asoc Mex Med Crit Ter Int 2016;32(2):102-110\", \"where\": \"Title/Header\"},\n  \"design\": {\"value\": \"Ensayo clínico controlado, aleatorizado, doble ciego\", \"where\": \"Material y métodos / Design\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"Grupo A\", \"where\": \"Material y métodos\"},\n      \"intervention\": {\"value\": \"azul de metileno en dosis única de 2 mg/kg de peso en 100 cm3 de solución glucosada al 5% infundida en 64 minutos\", \"where\": \"Material y métodos\"},\n      \"n_randomized\": {\"value\": \"32\", \"where\": \"Material y métodos / Resultados\"},\n      \"n_analyzed\": {\"value\": \"32\", \"where\": \"Resultados\"}\n    },\n    {\n      \"label\": {\"value\": \"Grupo C\", \"where\": \"Material y métodos\"},\n      \"intervention\": {\"value\": \"100 cm3 de solución glucosada al 5% infundida en 64 minutos\", \"where\": \"Material y métodos\"},\n      \"n_randomized\": {\"value\": \"32\", \"where\": \"Material y métodos / Resultados\"},\n      \"n_analyzed\": {\"value\": \"32\", \"where\": \"Resultados\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"Grupo A\", \"where\": \"Resultados\"},\n      \"timepoint\": {\"value\": \"al egreso de la unidad de cuidados intensivos\", \"where\": \"Resumen / Resultados\"},\n      \"deaths\": {\"value\": \"6\", \"where\": \"Resultados (calculado como 18.8% of 32)\"},\n      \"n\": {\"value\": \"32\", \"where\": \"Resultados\"},\n      \"deaths_percent\": {\"value\": \"18.8%\", \"where\": \"Resumen / Resultados\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"Grupo A\", \"where\": \"Resultados\"},\n      \"timepoint\": {\"value\": \"a los 21 días\", \"where\": \"Resumen / Resultados\"},\n      \"deaths\": {\"value\": \"NR\", \"where\": \"Resultados\"},\n      \"n\": {\"value\": \"32\", \"where\": \"Resultados\"},\n      \"deaths_percent\": {\"value\": \"NR\", \"where\": \"Resumen\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"Grupo C\", \"where\": \"Resultados\"},\n      \"timepoint\": {\"value\": \"al egreso de la unidad de cuidados intensivos\", \"where\": \"Resumen / Resultados\"},\n      \"deaths\": {\"value\": \"11\", \"where\": \"Resultados (calculado como 34.4% of 32)\"},\n      \"n\": {\"value\": \"32\", \"where\": \"Resultados\"},\n      \"deaths_percent\": {\"value\": \"34.4%\", \"where\": \"Resumen / Resultados\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"Grupo C\", \"where\": \"Resultados\"},\n      \"timepoint\": {\"value\": \"a los 21 días\", \"where\": \"Resumen / Resultados\"},\n      \"deaths\": {\"value\": \"NR\", \"where\": \"Resultados\"},\n      \"n\": {\"value\": \"32\", \"where\": \"Resultados\"},\n      \"deaths_percent\": {\"value\": \"NR\", \"where\": \"Resumen\"}\n    }\n  ]\n}",
+ "prompt_tokens": 13930,
+ "tokens": 829,
+ "finish": "stop",
+ "dt": 66.73,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "11a09ac21912458960efae95656b1804d250b3d12e618f8b36a9deb8cd71340c"
+}

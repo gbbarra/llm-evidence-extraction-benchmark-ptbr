@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen14",
+ "tag": "qwen3:14b",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "ibarra2023",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"Early adjunctive methylene blue in patients with septic shock: a randomized controlled trial\", \"where\": \"Abstract\"},\n  \"design\": {\"value\": \"single-center randomized controlled trial\", \"where\": \"Methods\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"MB\", \"where\": \"Results\"},\n      \"intervention\": {\"value\": \"100 mg of MB in 500 ml of 0.9% sodium chloride solution over 6 h once daily for a total of 3 doses\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"45\", \"where\": \"Results\"},\n      \"n_analyzed\": {\"value\": \"45\", \"where\": \"Results\"}\n    },\n    {\n      \"label\": {\"value\": \"placebo\", \"where\": \"Results\"},\n      \"intervention\": {\"value\": \"500 ml of 0.9% sodium chloride without MB\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"46\", \"where\": \"Results\"},\n      \"n_analyzed\": {\"value\": \"46\", \"where\": \"Results\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"MB\", \"where\": \"Results\"},\n      \"timepoint\": {\"value\": \"28 days\", \"where\": \"Results\"},\n      \"deaths\": {\"value\": \"15\", \"where\": \"Table 2\"},\n      \"n\": {\"value\": \"45\", \"where\": \"Table 2\"},\n      \"deaths_percent\": {\"value\": \"33\", \"where\": \"Table 2\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"placebo\", \"where\": \"Results\"},\n      \"timepoint\": {\"value\": \"28 days\", \"where\": \"Results\"},\n      \"deaths\": {\"value\": \"21\", \"where\": \"Table 2\"},\n      \"n\": {\"value\": \"46\", \"where\": \"Table 2\"},\n      \"deaths_percent\": {\"value\": \"46\", \"where\": \"Table 2\"}\n    }\n  ]\n}",
+ "prompt_tokens": 13730,
+ "tokens": 468,
+ "finish": "stop",
+ "dt": 74.89,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "304c039a3043a5bb46e6c5ff565042b3af67cfd79ce06dd6628d20c1d3e72373"
+}

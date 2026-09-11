@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "tag": "llama3.1:8b",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "ibarra2023",
+ "replica": 1,
+ "conteudo": "{\n  \"study\": {\"value\": \"Early adjunctive methylene blue in patients with septic shock: a randomized controlled trial\", \"where\": \"Abstract\"},\n  \"design\": {\"value\": \"randomized controlled trial\", \"where\": \"Abstract\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"MB\", \"where\": \"Table 1\"},\n      \"intervention\": {\"value\": \"methylene blue\", \"where\": \"Abstract\"},\n      \"n_randomized\": {\"value\": \"45\", \"where\": \"Table 1\"},\n      \"n_analyzed\": {\"value\": \"45\", \"where\": \"Table 2\"}\n    },\n    {\n      \"label\": {\"value\": \"Control\", \"where\": \"Table 1\"},\n      \"intervention\": {\"value\": \"placebo\", \"where\": \"Abstract\"},\n      \"n_randomized\": {\"value\": \"46\", \"where\": \"Table 1\"},\n      \"n_analyzed\": {\"value\": \"46\", \"where\": \"Table 2\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"MB\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"at 28 days\", \"where\": \"Table 2\"},\n      \"deaths\": {\"value\": \"15\", \"where\": \"Table 2\"},\n      \"n\": {\"value\": \"45\", \"where\": \"Table 2\"},\n      \"deaths_percent\": {\"value\": \"33\", \"where\": \"Table 2\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"Control\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"at 28 days\", \"where\": \"Table 2\"},\n      \"deaths\": {\"value\": \"21\", \"where\": \"Table 2\"},\n      \"n\": {\"value\": \"46\", \"where\": \"Table 2\"},\n      \"deaths_percent\": {\"value\": \"46\", \"where\": \"Table 2\"}\n    }\n  ]\n}",
+ "prompt_tokens": 12366,
+ "tokens": 426,
+ "finish": "stop",
+ "dt": 109.44,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "304c039a3043a5bb46e6c5ff565042b3af67cfd79ce06dd6628d20c1d3e72373"
+}

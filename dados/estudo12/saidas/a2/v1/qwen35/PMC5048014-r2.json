@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "tag": "qwen3.5:9b",
+ "ancora": "a2",
+ "ficha": "v1",
+ "ensaio": "PMC5048014",
+ "replica": 2,
+ "conteudo": "{\n \"study\": \"Gonzalez-Gross et al. (Year inferred from text context, but exact year not explicitly stated in snippet; assuming citation style implies authors listed first)\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Spain\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": \"89\",\n \"experimental_arm\": {\n  \"label\": \"VLCK diet group\",\n  \"intervention_description\": \"Very low-calorie-ketogenic diet (<50 g carbohydrate daily) with lifestyle and behavioral modification support (Diaprokal Method)\",\n  \"n_randomized\": \"45\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"NR\",\n  \"hba1c_change_dispersion\": \"NR\",\n  \"hba1c_change_dispersion_type\": \"NR\",\n  \"hba1c_baseline_mean\": \"6.9\",\n  \"hba1c_baseline_sd\": \"1.1\",\n  \"hba1c_final_mean\": \"5.3\",\n  \"hba1c_final_sd\": \"0.7\"\n },\n \"control_arm\": {\n  \"label\": \"LC diet group\",\n  \"intervention_description\": \"Low-calorie diet based on ADA guidelines with lifestyle and behavioral modification support\",\n  \"n_randomized\": \"44\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"NR\",\n  \"hba1c_change_dispersion\": \"NR\",\n  \"hba1c_change_dispersion_type\": \"NR\",\n  \"hba1c_baseline_mean\": \"6.8\",\n  \"hba1c_baseline_sd\": \"1.0\",\n  \"hba1c_final_mean\": \"7.1\",\n  \"hba1c_final_sd\": \"0.8\"\n }\n}",
+ "prompt_tokens": 9892,
+ "tokens": 416,
+ "finish": "stop",
+ "dt": 33.66,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "5acfd084fab2f307635228610e1d98b36bd9ab2bca2cd5ecbb20a644a606b3d7"
+}

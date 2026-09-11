@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "tag": "qwen3.5:9b",
+ "ancora": "a3",
+ "ficha": "v2",
+ "ensaio": "levin2004",
+ "replica": 1,
+ "conteudo": "{\n  \"study\": {\"value\": \"Methylene Blue Reduces Mortality and Morbidity in Vasoplegic Patients After Cardiac Surgery\", \"where\": \"\"},\n  \"design\": {\"value\": \"randomized trial\", \"where\": \"\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"methylene blue\", \"where\": \"\"},\n      \"intervention\": {\"value\": \"1.5 mg/Kg of methylene blue\", \"where\": \"\"},\n      \"n_randomized\": {\"value\": \"31\", \"where\": \"Results\", \"quote\": \"Vasoplegic patients were randomized to MB (1.5 mg/Kg intravenously in 1 hour) for 31 patients\"},\n      \"n_analyzed\": {\"value\": \"31\", \"where\": \"Results\", \"quote\": \"\"}\n    },\n    {\n      \"label\": {\"value\": \"placebo\", \"where\": \"\"},\n      \"intervention\": {\"value\": \"placebo\", \"where\": \"\"},\n      \"n_randomized\": {\"value\": \"31\", \"where\": \"Results\", \"quote\": \"31 patients were given the placebo\"},\n      \"n_analyzed\": {\"value\": \"31\", \"where\": \"Table 3\", \"quote\": \"\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"vasoplegia methylene blue\", \"where\": \"\", \"quote\": \"\"},\n      \"timepoint\": {\"value\": \"during the study period\", \"where\": \"\", \"quote\": \"\"},\n      \"deaths\": {\"value\": \"0\", \"where\": \"Results\", \"quote\": \"There were no deaths in those treated with MB\"},\n      \"n\": {\"value\": \"31\", \"where\": \"\", \"quote\": \"\"},\n      \"deaths_percent\": {\"value\": \"0%\", \"where\": \"\", \"quote\": \"\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"vasoplegia placebo\", \"where\": \"\", \"quote\": \"\"},\n      \"timepoint\": {\"value\": \"during the study period\", \"where\": \"\", \"quote\": \"\"},\n      \"deaths\": {\"value\": \"6\", \"where\": \"Results\", \"quote\": \"the 6 deceased patients were in the placebo group (19.4%)\"},\n      \"n\": {\"value\": \"31\", \"where\": \"\", \"quote\": \"\"},\n      \"deaths_percent\": {\"value\": \"19.4%\", \"where\": \"\", \"quote\": \"\"}\n    }\n  ]\n}",
+ "prompt_tokens": 6824,
+ "tokens": 576,
+ "finish": "stop",
+ "dt": 54.03,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "b7bbd19fff105fe51612350ad5f88e8d97324210a5efebab2dca812d331e7f36"
+}

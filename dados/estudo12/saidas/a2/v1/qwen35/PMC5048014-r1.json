@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "tag": "qwen3.5:9b",
+ "ancora": "a2",
+ "ficha": "v1",
+ "ensaio": "PMC5048014",
+ "replica": 1,
+ "conteudo": "{\n \"study\": \"Diaprokal Method / et al.\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Spain\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": \"89\",\n \"experimental_arm\": {\n  \"label\": \"VLCK diet group\",\n  \"intervention_description\": \"Very low-calorie-ketogenic diet (<50 g of carbohydrate daily) with protein preparations, vegetables, and specific active ingredients (Diaprokal Method), including lifestyle and behavioral modification support.\",\n  \"n_randomized\": \"45\",\n  \"n_analyzed\": \"45\",\n  \"hba1c_change_mean\": \"-1.6\",\n  \"hba1c_change_dispersion\": \"0.7\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"6.9\",\n  \"hba1c_baseline_sd\": \"1.1\",\n  \"hba1c_final_mean\": \"5.3\",\n  \"hba1c_final_sd\": \"0.7\"\n },\n \"control_arm\": {\n  \"label\": \"LC diet group\",\n  \"intervention_description\": \"Low-calorie diet based on ADA guidelines (target: <30% calories from fat, 10–20% protein, 45–60% carbs), including lifestyle and behavioral modification support.\",\n  \"n_randomized\": \"44\",\n  \"n_analyzed\": \"40\",\n  \"hba1c_change_mean\": \"0.3\",\n  \"hba1c_change_dispersion\": \"2.5\",\n  \"hba1c_change_dispersion_type\": \"NR\",\n  \"hba1c_baseline_mean\": \"6.8\",\n  \"hba1c_baseline_sd\": \"1.0\",\n  \"hba1c_final_mean\": \"7.1\",\n  \"hba1c_final_sd\": \"0.8\"\n }\n}",
+ "prompt_tokens": 9892,
+ "tokens": 443,
+ "finish": "stop",
+ "dt": 78.62,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "5acfd084fab2f307635228610e1d98b36bd9ab2bca2cd5ecbb20a644a606b3d7"
+}

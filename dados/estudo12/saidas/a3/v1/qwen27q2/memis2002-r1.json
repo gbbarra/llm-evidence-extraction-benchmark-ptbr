@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen27q2",
+ "tag": "smtek/Qwen3.8-27B:Q2_K_XL",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "memis2002",
+ "replica": 1,
+ "conteudo": "{\n  \"study\": {\"value\": \"Memis D, et al. The Influence of Methylene Blue Infusion on Cytokine Levels During Severe Sepsis. Anaesth Intensive Care 2002; 30: 755-762.\", \"where\": \"Title page\"},\n  \"design\": {\"value\": \"prospective, randomized, double-blind, placebo-controlled study\", \"where\": \"Abstract\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"MB group\", \"where\": \"Abstract\"},\n      \"intervention\": {\"value\": \"methylene blue 0.5 mg.kg–1.h–1 IV for 6 hours\", \"where\": \"Abstract\"},\n      \"n_randomized\": {\"value\": \"15\", \"where\": \"Abstract\"},\n      \"n_analyzed\": {\"value\": \"15\", \"where\": \"Results\"}\n    },\n    {\n      \"label\": {\"value\": \"control group\", \"where\": \"Abstract\"},\n      \"intervention\": {\"value\": \"similar volume of isotonic saline IV for 6 hours\", \"where\": \"Abstract\"},\n      \"n_randomized\": {\"value\": \"15\", \"where\": \"Abstract\"},\n      \"n_analyzed\": {\"value\": \"15\", \"where\": \"Results\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"Table 1\"},\n      \"timepoint\": {\"value\": \"hospitalized in the ICU\", \"where\": \"Results\"},\n      \"deaths\": {\"value\": \"4\", \"where\": \"Table 1\"},\n      \"n\": {\"value\": \"15\", \"where\": \"Abstract\"},\n      \"deaths_percent\": {\"value\": \"NR\", \"where\": \"NR\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"control group\", \"where\": \"Table 1\"},\n      \"timepoint\": {\"value\": \"hospitalized in the ICU\", \"where\": \"Results\"},\n      \"deaths\": {\"value\": \"4\", \"where\": \"Table 1\"},\n      \"n\": {\"value\": \"15\", \"where\": \"Abstract\"},\n      \"deaths_percent\": {\"value\": \"NR\", \"where\": \"NR\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"Table 1\"},\n      \"timepoint\": {\"value\": \"overall hospital\", \"where\": \"Results\"},\n      \"deaths\": {\"value\": \"4\", \"where\": \"Table 1\"},\n      \"n\": {\"value\": \"15\", \"where\": \"Abstract\"},\n      \"deaths_percent\": {\"value\": \"26.6%\", \"where\": \"Results\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"control group\", \"where\": \"Table 1\"},\n      \"timepoint\": {\"value\": \"overall hospital\", \"where\": \"Results\"},\n      \"deaths\": {\"value\": \"4\", \"where\": \"Table 1\"},\n      \"n\": {\"value\": \"15\", \"where\": \"Abstract\"},\n      \"deaths_percent\": {\"value\": \"26.6%\", \"where\": \"Results\"}\n    }\n  ]\n}",
+ "prompt_tokens": 11973,
+ "tokens": 734,
+ "finish": "stop",
+ "dt": 260.13,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "418ad86f0c2b5fd6c688e7e93ec8887e125ed51234c732412566950ed0a5a970"
+}

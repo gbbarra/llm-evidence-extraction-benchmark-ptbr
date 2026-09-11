@@ -1,0 +1,16 @@
+{
+ "modelo": "gemma12",
+ "tag": "gemma4:12b",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "levin2004",
+ "replica": 1,
+ "conteudo": "```json\n{\n  \"study\": {\n    \"value\": \"Methylene Blue Reduces Mortality and Morbidity in Vasoplegic Patients After Cardiac Surgery\",\n    \"where\": \"Title\"\n  },\n  \"design\": {\n    \"value\": \"multicenter analysis, randomized\",\n    \"where\": \"Material and Methods\"\n  },\n  \"arms\": [\n    {\n      \"label\": {\n        \"value\": \"methylene blue\",\n        \"where\": \"Results\"\n      },\n      \"intervention\": {\n        \"value\": \"methylene blue (MB) (1.5 mg/Kg intravenously in 1 hour)\",\n        \"where\": \"Material and Methods\"\n      },\n      \"n_randomized\": {\n        \"value\": \"31\",\n        \"where\": \"Results\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"31\",\n        \"where\": \"Table 3\"\n      }\n    },\n    {\n      \"label\": {\n        \"value\": \"placebo\",\n        \"where\": \"Results\"\n      },\n      \"intervention\": {\n        \"value\": \"placebo\",\n        \"where\": \"Material and Methods\"\n      },\n      \"n_randomized\": {\n        \"value\": \"31\",\n        \"where\": \"Results\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"31\",\n        \"where\": \"Table 3\"\n      }\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\n        \"value\": \"methylene blue\",\n        \"where\": \"Results\"\n      },\n      \"timepoint\": {\n        \"value\": \"perioperative mortality\",\n        \"where\": \"Material and Methods\"\n      },\n      \"deaths\": {\n        \"value\": \"0\",\n        \"where\": \"Table 3\"\n      },\n      \"n\": {\n        \"value\": \"31\",\n        \"where\": \"Table 3\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"0%\",\n        \"where\": \"Table 3\"\n      }\n    },\n    {\n      \"arm_label\": {\n        \"value\": \"placebo\",\n        \"where\": \"Results\"\n      },\n      \"timepoint\": {\n        \"value\": \"perioperative mortality\",\n        \"where\": \"Material and Methods\"\n      },\n      \"deaths\": {\n        \"value\": \"6\",\n        \"where\": \"Table 3\"\n      },\n      \"n\": {\n        \"value\": \"31\",\n        \"where\": \"Table 3\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"19.4%\",\n        \"where\": \"Table 3\"\n      }\n    }\n  ]\n}\n```",
+ "prompt_tokens": 6407,
+ "tokens": 653,
+ "finish": "stop",
+ "dt": 157.66,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "04eac74d7d701a315d9f534c4664af741998ec5247e49110f353552a83bb7024"
+}

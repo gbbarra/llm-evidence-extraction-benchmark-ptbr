@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen27q2",
+ "tag": "smtek/Qwen3.8-27B:Q2_K_XL",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "levin2004",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"Levin et al 2004\", \"where\": \"Title/Authors\"},\n  \"design\": {\"value\": \"randomized\", \"where\": \"Methods\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"Methylene Blue\", \"where\": \"Table 3\"},\n      \"intervention\": {\"value\": \"1.5 mg/Kg of methylene blue\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"31\", \"where\": \"Results\"},\n      \"n_analyzed\": {\"value\": \"31\", \"where\": \"Table 3\"}\n    },\n    {\n      \"label\": {\"value\": \"Control\", \"where\": \"Table 3\"},\n      \"intervention\": {\"value\": \"placebo\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"31\", \"where\": \"Results\"},\n      \"n_analyzed\": {\"value\": \"31\", \"where\": \"Table 3\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"Methylene Blue\", \"where\": \"Table 3\"},\n      \"timepoint\": {\"value\": \"perioperative\", \"where\": \"Methods\"},\n      \"deaths\": {\"value\": \"0\", \"where\": \"Table 3\"},\n      \"n\": {\"value\": \"31\", \"where\": \"Table 3\"},\n      \"deaths_percent\": {\"value\": \"0%\", \"where\": \"Results\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"Control\", \"where\": \"Table 3\"},\n      \"timepoint\": {\"value\": \"perioperative\", \"where\": \"Methods\"},\n      \"deaths\": {\"value\": \"6\", \"where\": \"Table 3\"},\n      \"n\": {\"value\": \"31\", \"where\": \"Table 3\"},\n      \"deaths_percent\": {\"value\": \"19.4%\", \"where\": \"Table 3\"}\n    }\n  ]\n}",
+ "prompt_tokens": 6686,
+ "tokens": 463,
+ "finish": "stop",
+ "dt": 48.24,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "04eac74d7d701a315d9f534c4664af741998ec5247e49110f353552a83bb7024"
+}

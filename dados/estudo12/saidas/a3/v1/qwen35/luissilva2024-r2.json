@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "tag": "qwen3.5:9b",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "luissilva2024",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"Methylene blue therapy in addition to standard treatment for acute-phase septic shock\", \"where\": \"Title\"},\n  \"design\": {\"value\": \"pilot randomized controlled trial\", \"where\": \"Abstract Methods\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"MB group\", \"where\": \"Abstract Results\"},\n      \"intervention\": {\"value\": \"Standard treatment + Methylene blue (loading dose of 3 mg/kg and maintenance 0.5 mg/kg/h for 48 h)\", \"where\": \"Abstract Methods\"},\n      \"n_randomized\": {\"value\": \"19\", \"where\": \"Abstract Methods\"},\n      \"n_analyzed\": {\"value\": \"NR\", \"where\": \"Results\"}}\n    ],\n    {\n      \"label\": {\"value\": \"Control group\", \"where\": \"Abstract Results\"},\n      \"intervention\": {\"value\": \"Standard treatment (fluid replacement, vasopressors, and antibiotic therapy)\", \"where\": \"Abstract Methods\"},\n      \"n_randomized\": {\"value\": \"26\", \"where\": \"Abstract Methods\"},\n      \"n_analyzed\": {\"value\": \"NR\", \"where\": \"Results\"}}\n    ]\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"Table 1\"},\n      \"timepoint\": {\"value\": \"30 days\", \"where\": \"Table 1\"},\n      \"deaths\": {\"value\": \"9\", \"where\": \"Table 1\"},\n      \"n\": {\"value\": \"19\", \"where\": \"Table 1\"},\n      \"deaths_percent\": {\"value\": \"47\", \"where\": \"Table 1\"}}\n    ],\n    {\n      \"arm_label\": {\"value\": \"Control group\", \"where\": \"Table 1\"},\n      \"timepoint\": {\"value\": \"30 days\", \"where\": \"Table 1\"},\n      \"deaths\": {\"value\": \"14\", \"where\": \"Table 1\"},\n      \"n\": {\"value\": \"26\", \"where\": \"Table 1\"},\n      \"deaths_percent\": {\"value\": \"54\", \"where\": \"Table 1\"}}\n    ]\n  ]\n}",
+ "prompt_tokens": 12502,
+ "tokens": 505,
+ "finish": "stop",
+ "dt": 41.37,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "e4e9a69ffea16deabc62c7cedeb2486d967a83bccfbee6986d4a40adeaf52845"
+}

@@ -1,0 +1,16 @@
+{
+ "modelo": "gemma12",
+ "tag": "gemma4:12b",
+ "ancora": "a3",
+ "ficha": "v2",
+ "ensaio": "kirov2001",
+ "replica": 2,
+ "conteudo": "```json\n{\n  \"study\": {\n    \"value\": \"Infusion of methylene blue in human septic shock: A pilot, randomized, controlled study\",\n    \"where\": \"\"\n  },\n  \"design\": {\n    \"value\": \"Prospective, randomized, controlled, open-label, pilot study\",\n    \"where\": \"Design\"\n  },\n  \"arms\": [\n    {\n      \"label\": {\n        \"value\": \"MB group\",\n        \"where\": \"Materials and Methods\"\n      },\n      \"intervention\": {\n        \"value\": \"methylene blue (MB)\",\n        \"where\": \"Materials and Methods\"\n      },\n      \"n_randomized\": {\n        \"value\": \"10\",\n        \"where\": \"Materials and Methods\",\n        \"quote\": \"MB group, n = 10\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"10\",\n        \"where\": \"Materials and Methods\",\n        \"quote\": \"MB group, n = 10\"\n      }\n    },\n    {\n      \"label\": {\n        \"value\": \"control group\",\n        \"where\": \"Materials and Methods\"\n      },\n      \"intervention\": {\n        \"value\": \"isotonic saline\",\n        \"where\": \"Materials and Methods\"\n      },\n      \"n_randomized\": {\n        \"value\": \"10\",\n        \"where\": \"Materials and Methods\",\n        \"quote\": \"control group, n = 10\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"10\",\n        \"where\": \"Materials and Methods\",\n        \"quote\": \"control group, n = 10\"\n      }\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\n        \"value\": \"MB group\",\n        \"where\": \"\"\n      },\n      \"timepoint\": {\n        \"value\": \"day 28\",\n        \"where\": \"Abstract\"\n      },\n      \"deaths\": {\n        \"value\": \"5\",\n        \"where\": \"Clinical Characteristics\",\n        \"quote\": \"Five patients treated with MB survived\"\n      },\n      \"n\": {\n        \"value\": \"10\",\n        \"where\": \"Materials and Methods\",\n        \"quote\": \"MB group, n = 10\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"NR\",\n        \"where\": \"\"\n      }\n    },\n    {\n      \"arm_label\": {\n        \"value\": \"control group\",\n        \"where\": \"\"\n      },\n      \"timepoint\": {\n        \"value\": \"day 28\",\n        \"where\": \"Abstract\"\n      },\n      \"deaths\": {\n        \"value\": \"7\",\n        \"where\": \"Clinical Characteristics\",\n        \"quote\": \"Seven patients in the control group and three in the MB group died\"\n      },\n      \"n\": {\n        \"value\": \"10\",\n        \"where\": \"Materials and Methods\",\n        \"quote\": \"control group, n = 10\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"NR\",\n        \"where\": \"\"\n      }\n    }\n  ]\n}\n```",
+ "prompt_tokens": 17255,
+ "tokens": 756,
+ "finish": "stop",
+ "dt": 106.13,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "e0e81c334d27f7731f489cc7e7a387bc6c2dc6056ea3cac9a87d08a4dc3cd8ba"
+}

@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen27q2",
+ "tag": "smtek/Qwen3.8-27B:Q2_K_XL",
+ "ancora": "a3",
+ "ficha": "v2",
+ "ensaio": "luissilva2024",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"Luis-Silva et al. 2024\", \"where\": \"\"},\n  \"design\": {\"value\": \"pilot randomized controlled trial\", \"where\": \"\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"Control\", \"where\": \"\"},\n      \"intervention\": {\"value\": \"conventional treatment\", \"where\": \"\"},\n      \"n_randomized\": {\"value\": \"26\", \"where\": \"Results\", \"quote\": \"a total of 45 patients were included in the present study; 26 patients were allocated to the Control group, and 19 were randomized to the MB group.\"},\n      \"n_analyzed\": {\"value\": \"26\", \"where\": \"Table 1\", \"quote\": \"Control ( n  =  26)\"}\n    },\n    {\n      \"label\": {\"value\": \"MB\", \"where\": \"\"},\n      \"intervention\": {\"value\": \"conventional treatment and MB at a dose of 3 mg/kg in 20 min and then 0.5 mg/kg/h for 48 h\", \"where\": \"\"},\n      \"n_randomized\": {\"value\": \"19\", \"where\": \"Results\", \"quote\": \"a total of 45 patients were included in the present study; 26 patients were allocated to the Control group, and 19 were randomized to the MB group.\"},\n      \"n_analyzed\": {\"value\": \"19\", \"where\": \"Table 1\", \"quote\": \"MB ( n  =  19)\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"Control\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"30 days\", \"where\": \"Table 1\", \"quote\": \"30 days outcome (Death)—n (%) 14 (54) 9 (47) 0.38\"},\n      \"deaths\": {\"value\": \"14\", \"where\": \"Table 1\", \"quote\": \"30 days outcome (Death)—n (%) 14 (54) 9 (47) 0.38\"},\n      \"n\": {\"value\": \"26\", \"where\": \"Table 1\", \"quote\": \"Control ( n  =  26)\"},\n      \"deaths_percent\": {\"value\": \"54\", \"where\": \"Table 1\", \"quote\": \"30 days outcome (Death)—n (%) 14 (54) 9 (47) 0.38\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"MB\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"30 days\", \"where\": \"Table 1\", \"quote\": \"30 days outcome (Death)—n (%) 14 (54) 9 (47) 0.38\"},\n      \"deaths\": {\"value\": \"9\", \"where\": \"Table 1\", \"quote\": \"30 days outcome (Death)—n (%) 14 (54) 9 (47) 0.38\"},\n      \"n\": {\"value\": \"19\", \"where\": \"Table 1\", \"quote\": \"MB ( n  =  19)\"},\n      \"deaths_percent\": {\"value\": \"47\", \"where\": \"Table 1\", \"quote\": \"30 days outcome (Death)—n (%) 14 (54) 9 (47) 0.38\"}\n    }\n  ]\n}",
+ "prompt_tokens": 12640,
+ "tokens": 813,
+ "finish": "stop",
+ "dt": 87.69,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "e5719b5b6e969d5d365a8f54fd275d0e8ce7af413a213d48c331788d7b881dca"
+}

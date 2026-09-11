@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen27q2",
+ "tag": "smtek/Qwen3.8-27B:Q2_K_XL",
+ "ancora": "a2",
+ "ficha": "v1",
+ "ensaio": "REF9",
+ "replica": 2,
+ "conteudo": "{\n \"study\": \"Saslow 2023\",\n \"design\": \"2x2 factorial\",\n \"country\": \"United States\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": \"83\",\n \"experimental_arm\": {\n  \"label\": \"VLC Diet (collapsed over support)\",\n  \"intervention_description\": \"Very low-carbohydrate diet (20 to 35 nonfiber g of carbohydrates a day)\",\n  \"n_randomized\": \"45\",\n  \"n_analyzed\": \"83\",\n  \"hba1c_change_mean\": \"-0.32\",\n  \"hba1c_change_dispersion\": \"0.07\",\n  \"hba1c_change_dispersion_type\": \"SE\",\n  \"hba1c_baseline_mean\": \"6.09\",\n  \"hba1c_baseline_sd\": \"NR\",\n  \"hba1c_final_mean\": \"5.74\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"DASH Diet (collapsed over support)\",\n  \"intervention_description\": \"Dietary Approaches to Stop Hypertension (DASH) diet\",\n  \"n_randomized\": \"38\",\n  \"n_analyzed\": \"83\",\n  \"hba1c_change_mean\": \"-0.14\",\n  \"hba1c_change_dispersion\": \"0.07\",\n  \"hba1c_change_dispersion_type\": \"SE\",\n  \"hba1c_baseline_mean\": \"6.10\",\n  \"hba1c_baseline_sd\": \"NR\",\n  \"hba1c_final_mean\": \"5.97\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}",
+ "prompt_tokens": 10188,
+ "tokens": 406,
+ "finish": "stop",
+ "dt": 43.27,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "d1f05bba459b3d70ae1d85fc6d7f30a44137ba90074ad15dcec9f3d2a7e72034"
+}

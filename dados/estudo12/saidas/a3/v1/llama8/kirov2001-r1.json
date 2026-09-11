@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "tag": "llama3.1:8b",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "kirov2001",
+ "replica": 1,
+ "conteudo": "{\n  \"study\": {\"value\": \"Infusion of methylene blue in human septic shock: A pilot, randomized, controlled study\", \"where\": \"Abstract\"},\n  \"design\": {\"value\": \"Prospective, randomized, controlled, open-label, pilot study\", \"where\": \"Abstract\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"MB group\", \"where\": \"Table 1\"},\n      \"intervention\": {\"value\": \"methylene blue (MB)\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"10\", \"where\": \"Methods\"},\n      \"n_analyzed\": {\"value\": \"NR\", \"where\": \"NR\"}\n    },\n    {\n      \"label\": {\"value\": \"C group\", \"where\": \"Table 1\"},\n      \"intervention\": {\"value\": \"isotonic saline\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"10\", \"where\": \"Methods\"},\n      \"n_analyzed\": {\"value\": \"NR\", \"where\": \"NR\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"Table 5\"},\n      \"timepoint\": {\"value\": \"Survivors at day 28\", \"where\": \"Table 5\"},\n      \"deaths\": {\"value\": \"3\", \"where\": \"Table 5\"},\n      \"n\": {\"value\": \"10\", \"where\": \"Table 5\"},\n      \"deaths_percent\": {\"value\": \"30.0\", \"where\": \"Table 5\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"Table 5\"},\n      \"timepoint\": {\"value\": \"Resolution of shock\", \"where\": \"Table 5\"},\n      \"deaths\": {\"value\": \"1\", \"where\": \"Table 5\"},\n      \"n\": {\"value\": \"7\", \"where\": \"Table 5\"},\n      \"deaths_percent\": {\"value\": \"14.3\", \"where\": \"Table 5\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"C group\", \"where\": \"Table 5\"},\n      \"timepoint\": {\"value\": \"Survivors at day 28\", \"where\": \"Table 5\"},\n      \"deaths\": {\"value\": \"3\", \"where\": \"Table 5\"},\n      \"n\": {\"value\": \"10\", \"where\": \"Table 5\"},\n      \"deaths_percent\": {\"value\": \"30.0\", \"where\": \"Table 5\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"C group\", \"where\": \"Table 5\"},\n      \"timepoint\": {\"value\": \"Resolution of shock\", \"where\": \"Table 5\"},\n      \"deaths\": {\"value\": \"7\", \"where\": \"Table 5\"},\n      \"n\": {\"value\": \"10\", \"where\": \"Table 5\"},\n      \"deaths_percent\": {\"value\": \"70.0\", \"where\": \"Table 5\"}\n    }\n  ]\n}",
+ "prompt_tokens": 15994,
+ "tokens": 660,
+ "finish": "stop",
+ "dt": 167.03,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "f041924959c1f3cf4ce7aff01c1ec48b1f42709f9a02b7016c205a44f388760e"
+}

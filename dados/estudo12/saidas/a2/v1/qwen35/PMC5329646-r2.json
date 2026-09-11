@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "tag": "qwen3.5:9b",
+ "ancora": "a2",
+ "ficha": "v1",
+ "ensaio": "PMC5329646",
+ "replica": 2,
+ "conteudo": "{\n \"study\": \"Saslow et al. (implied)\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"United States\",\n \"duration\": \"32 weeks\",\n \"n_randomized_total\": \"25\",\n \"experimental_arm\": {\n  \"label\": \"intervention group\",\n  \"intervention_description\": \"very low-carbohydrate ketogenic diet and lifestyle recommendations\",\n  \"n_randomized\": \"12\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"-0.8\",\n  \"hba1c_change_dispersion\": \"0.5\",\n  \"hba1c_change_dispersion_type\": \"CI95: -1.1 to -0.6\",\n  \"hba1c_baseline_mean\": \"NR\",\n  \"hba1c_baseline_sd\": \"NR\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"control group\",\n  \"intervention_description\": \"American Diabetes Associations' Create Your Plate diet\",\n  \"n_randomized\": \"13\",\n  \"n_analyzed\": \"NR\",\n  \"hba1c_change_mean\": \"-0.3\",\n  \"hba1c_change_dispersion\": \"0.5\",\n  \"hba1c_change_dispersion_type\": \"CI95: -0.6 to 0.0\",\n  \"hba1c_baseline_mean\": \"NR\",\n  \"hba1c_baseline_sd\": \"NR\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}",
+ "prompt_tokens": 11755,
+ "tokens": 387,
+ "finish": "stop",
+ "dt": 31.85,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "bc1c79fa1019af8ea5451428eeb1dd5bacbc28ce3ea268ab940bb4f7cb69c866"
+}

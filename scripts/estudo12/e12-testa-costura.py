@@ -95,6 +95,7 @@ def roda_p1(destino, modo):
     H.h3.post_json = falso_post
     H.subprocess.run = lambda *a, **k: None
     H.SAIDAS, H.RECUSADOS = destino / "saidas", destino / "recusados"
+    H.TRAVA = destino / "harness.trava"      # roda() toma a trava; a do teste e a sua
     try:
         H.roda(so_modelo="gemma12", so_ancora="a3", so_ficha="v1")
     finally:

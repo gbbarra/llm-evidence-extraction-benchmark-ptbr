@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "tag": "llama3.1:8b",
+ "ancora": "a2",
+ "ficha": "v2",
+ "ensaio": "REF9",
+ "replica": 1,
+ "conteudo": "{\n \"study\": \"Saslow et al., 2023\",\n \"design\": \"2x2 factorial\",\n \"country\": \"\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": {\"value\": \"83\", \"where\": \"Table 1\", \"quote\": \"The MHERO randomized trial in the United States (NCT03729479); this study was approved by the University of Michigan Institutional Review Board (HUM00146610).\"},\n \"experimental_arm\": {\n  \"label\": \"VLC\",\n  \"intervention_description\": \"very low-carbohydrate (VLC) diet, decreasing their carbohydrate intake to 20 to 35 nonfiber g of carbohydrates a day, with the goal of achieving nutritional ketosis\",\n  \"n_randomized\": {\"value\": \"22\", \"where\": \"Figure 1\", \"quote\": \"22 VLC\"},\n  \"n_analyzed\": {\"value\": \"22\", \"where\": \"Table 2\", \"quote\": \"n = 22 VLC\"},\n  \"hba1c_change_mean\": {\"value\": \"-0.32%\", \"where\": \"Table 2\", \"quote\": \"–0.32%\"},\n  \"hba1c_change_dispersion\": {\"value\": \"0.07\", \"where\": \"Table 2\", \"quote\": \"–0.32 (0.07)\"},\n  \"hba1c_change_dispersion_type\": {\"value\": \"SE\", \"where\": \"Table 2\", \"quote\": \"–0.32 (0.07)\"},\n  \"hba1c_baseline_mean\": {\"value\": \"6.09%\", \"where\": \"Table 1\", \"quote\": \"6.09 (0.45)\"},\n  \"hba1c_baseline_sd\": {\"value\": \"0.45\", \"where\": \"Table 1\", \"quote\": \"6.09 (0.45)\"},\n  \"hba1c_final_mean\": {\"value\": \"5.74%\", \"where\": \"Table 2\", \"quote\": \"5.74 (0.08)\"},\n  \"hba1c_final_sd\": {\"value\": \"0.08\", \"where\": \"Table 2\", \"quote\": \"5.74 (0.08)\"}\n },\n \"control_arm\": {\n  \"label\": \"DASH\",\n  \"intervention_description\": \"Dietary Approaches to Stop Hypertension (DASH) diet\",\n  \"n_randomized\": {\"value\": \"25\", \"where\": \"Figure 1\", \"quote\": \"25 DASH\"},\n  \"n_analyzed\": {\"value\": \"25\", \"where\": \"Table 2\", \"quote\": \"n = 25 DASH\"},\n  \"hba1c_change_mean\": {\"value\": \"-0.14%\", \"where\": \"Table 2\", \"quote\": \"–0.14 (0.07)\"},\n  \"hba1c_change_dispersion\": {\"value\": \"0.07\", \"where\": \"Table 2\", \"quote\": \"–0.14 (0.07)\"},\n  \"hba1c_change_dispersion_type\": {\"value\": \"SE\", \"where\": \"Table 2\", \"quote\": \"–0.14 (0.07)\"},\n  \"hba1c_baseline_mean\": {\"value\": \"6.10%\", \"where\": \"Table 1\", \"quote\": \"6.10 (0.07)\"},\n  \"hba1c_baseline_sd\": {\"value\": \"0.07\", \"where\": \"Table 1\", \"quote\": \"6.10 (0.07)\"},\n  \"hba1c_final_mean\": {\"value\": \"5.97%\", \"where\": \"Table 2\", \"quote\": \"5.97 (0.07)\"},\n  \"hba1c_final_sd\": {\"value\": \"0.07\", \"where\": \"Table 2\", \"quote\": \"5.97 (0.07)\"}\n}",
+ "prompt_tokens": 9646,
+ "tokens": 834,
+ "finish": "stop",
+ "dt": 115.35,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "5f834773c6e93a8bf25f0ac1bbbd04c949ee68cf157f8d6a3e353f35116c614c"
+}

@@ -1,0 +1,16 @@
+{
+ "modelo": "gemma12",
+ "tag": "gemma4:12b",
+ "ancora": "a1",
+ "ficha": "v1",
+ "ensaio": "PMC5589093",
+ "replica": 2,
+ "conteudo": "```json\n{\n  \"n_randomized_gdft\": {\n    \"value\": \"26\",\n    \"where\": \"Results\"\n  },\n  \"n_randomized_control\": {\n    \"value\": \"26\",\n    \"where\": \"Results\"\n  },\n  \"surgery_type\": {\n    \"value\": \"pancreaticoduodenectomy\",\n    \"where\": \"Introduction\"\n  },\n  \"laparoscopy_gdft\": {\n    \"value\": \"NR\",\n    \"where\": \"NR\"\n  },\n  \"laparoscopy_control\": {\n    \"value\": \"NR\",\n    \"where\": \"NR\"\n  },\n  \"asa_gdft\": {\n    \"value\": \"Class I-II 7 (27%); Class \\u2264 III 19 (73%)\",\n    \"where\": \"Table 1\"\n  },\n  \"asa_control\": {\n    \"value\": \"Class I-II 7 (27%); Class \\u2264 III 19 (73%)\",\n    \"where\": \"Table 1\"\n  },\n  \"total_fluid_gdft\": {\n    \"value\": \"2050mL (1199:2700)\",\n    \"where\": \"Results\"\n  },\n  \"total_fluid_control\": {\n    \"value\": \"4620 (3400:4525)\",\n    \"where\": \"Table 2\"\n  },\n  \"crystalloid_gdft\": {\n    \"value\": \"1750 (1000:2100)\",\n    \"where\": \"Table 2\"\n  },\n  \"crystalloid_control\": {\n    \"value\": \"4000 (2313:4206)\",\n    \"where\": \"Table 2\"\n  },\n  \"colloid_gdft\": {\n    \"value\": \"200 (0:500)\",\n    \"where\": \"Table 2\"\n  },\n  \"colloid_control\": {\n    \"value\": \"200 (0:500)\",\n    \"where\": \"Table 2\"\n  },\n  \"blood_loss_gdft\": {\n    \"value\": \"200 (138:363)\",\n    \"where\": \"Table 2\"\n  },\n  \"blood_loss_control\": {\n    \"value\": \"400 (200:550)\",\n    \"where\": \"Table 2\"\n  },\n  \"inotrope_use\": {\n    \"value\": \"metaraminol 3 (12%); ephedrine 11 (42%); noradrenaline 24 (92%); dopamine/dobutamine 12 (46%)\",\n    \"where\": \"Table 2\"\n  },\n  \"morbidity_events_gdft\": {\n    \"value\": \"19 (73%)\",\n    \"where\": \"Table 4\"\n  },\n  \"morbidity_events_control\": {\n    \"value\": \"21 (81%)\",\n    \"where\": \"Table 4\"\n  },\n  \"mortality_gdft\": {\n    \"value\": \"NR\",\n    \"where\": \"NR\"\n  },\n  \"mortality_control\": {\n    \"value\": \"NR\",\n    \"where\": \"NR\"\n  },\n  \"hospital_los_gdft\": {\n    \"value\": \"9.5 days (IQR: 7.0, 14.3)\",\n    \"where\": \"Results\"\n  },\n  \"hospital_los_control\": {\n    \"value\": \"12.5 days (IQR: 9.0, 22.3)\",\n    \"where\": \"Results\"\n  },\n  \"time_to_flatus_gdft\": {\n    \"value\": \"NR\",\n    \"where\": \"NR\"\n  },\n  \"time_to_flatus_control\": {\n    \"value\": \"NR\",\n    \"where\": \"NR\"\n  },\n  \"time_to_oral_intake_gdft\": {\n    \"value\": \"NR\",\n    \"where\": \"NR\"\n  },\n  \"time_to_oral_intake_control\": {\n    \"value\": \"NR\",\n    \"where\": \"NR\"\n  },\n  \"time_to_defecation_gdft\": {\n    \"value\": \"NR\",\n    \"where\": \"NR\"\n  },\n  \"time_to_defecation_control\": {\n    \"value\": \"NR\",\n    \"where\": \"NR\"\n  },\n  \"postop_ileus_gdft\": {\n    \"value\": \"3 (12%)\",\n    \"where\": \"Table 4\"\n  },\n  \"postop_ileus_control\": {\n    \"value\": \"6 (23%)\",\n    \"where\": \"Table 4\"\n  }\n}\n```",
+ "prompt_tokens": 11312,
+ "tokens": 1174,
+ "finish": "stop",
+ "dt": 157.3,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "5433bea4a03a700115d4e5ec45d6830dc4c44d6932dc0ee1faa68477fc3a4ea2"
+}

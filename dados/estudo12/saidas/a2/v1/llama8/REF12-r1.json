@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "tag": "llama3.1:8b",
+ "ancora": "a2",
+ "ficha": "v1",
+ "ensaio": "REF12",
+ "replica": 1,
+ "conteudo": "{\n  \"study\": \"A. A. Hansen, et al., 2021\",\n  \"design\": \"parallel 2-arm\",\n  \"country\": \"\",\n  \"duration\": \"6 weeks\",\n  \"n_randomized_total\": \"72\",\n  \"experimental_arm\": {\n    \"label\": \"CRHP (carbohydrate-reduced high-protein diet)\",\n    \"intervention_description\": \"30% of total energy intake as carbohydrate, 30% as protein, 40% as fat\",\n    \"n_randomized\": \"36\",\n    \"n_analyzed\": \"34\",\n    \"hba1c_change_mean\": \"-9.1 ± 4.2\",\n    \"hba1c_change_dispersion\": \"4.2\",\n    \"hba1c_change_dispersion_type\": \"SE\",\n    \"hba1c_baseline_mean\": \"57.6 ± 8.4\",\n    \"hba1c_baseline_sd\": \"NR\",\n    \"hba1c_final_mean\": \"8.09 ± 0.77\",\n    \"hba1c_final_sd\": \"NR\"\n  },\n  \"control_arm\": {\n    \"label\": \"CD (conventional diabetes diet)\",\n    \"intervention_description\": \"50% of total energy intake as carbohydrate, 17% as protein, 33% as fat\",\n    \"n_randomized\": \"36\",\n    \"n_analyzed\": \"33\",\n    \"hba1c_change_mean\": \"-7.2 ± 4.0\",\n    \"hba1c_change_dispersion\": \"4.0\",\n    \"hba1c_change_dispersion_type\": \"SE\",\n    \"hba1c_baseline_mean\": \"57.4 ± 7.7\",\n    \"hba1c_baseline_sd\": \"NR\",\n    \"hba1c_final_mean\": \"7.40 ± 0.70\",\n    \"hba1c_final_sd\": \"NR\"\n  }\n}",
+ "prompt_tokens": 11816,
+ "tokens": 412,
+ "finish": "stop",
+ "dt": 100.44,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "43a2a5f57d7466c9966d3754848590434c5f6fb6c55a1c2c288c791dc8615cea"
+}

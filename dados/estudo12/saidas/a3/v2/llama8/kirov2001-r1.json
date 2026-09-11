@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "tag": "llama3.1:8b",
+ "ancora": "a3",
+ "ficha": "v2",
+ "ensaio": "kirov2001",
+ "replica": 1,
+ "conteudo": "{\n  \"study\": {\"value\": \"Infusion of methylene blue in human septic shock: A pilot, randomized, controlled study\", \"where\": \"Abstract\"},\n  \"design\": {\"value\": \"Prospective, randomized, controlled, open-label, pilot study\", \"where\": \"Abstract\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"MB group\", \"where\": \"Table 1\"},\n      \"intervention\": {\"value\": \"methylene blue\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"10\", \"where\": \"Methods\", \"quote\": \"Twenty patients admitted to the intensive care unit of the City Hospital #1 of Arkhangelsk during 1998–2000 were enrolled.\"},\n      \"n_analyzed\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n    },\n    {\n      \"label\": {\"value\": \"C group\", \"where\": \"Table 1\"},\n      \"intervention\": {\"value\": \"isotonic saline\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"10\", \"where\": \"Methods\", \"quote\": \"Twenty patients admitted to the intensive care unit of the City Hospital #1 of Arkhangelsk during 1998–2000 were enrolled.\"},\n      \"n_analyzed\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"day 28\", \"where\": \"Clinical Characteristics\", \"quote\": \"Survivors at day 28\"},\n      \"deaths\": {\"value\": \"3\", \"where\": \"Clinical Characteristics\", \"quote\": \"Survivors at day 28\"},\n      \"n\": {\"value\": \"10\", \"where\": \"Clinical Characteristics\", \"quote\": \"Survivors at day 28\"},\n      \"deaths_percent\": {\"value\": \"30.0\", \"where\": \"Clinical Characteristics\", \"quote\": \"Survivors at day 28\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"C group\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"day 28\", \"where\": \"Clinical Characteristics\", \"quote\": \"Survivors at day 28\"},\n      \"deaths\": {\"value\": \"7\", \"where\": \"Clinical Characteristics\", \"quote\": \"Survivors at day 28\"},\n      \"n\": {\"value\": \"10\", \"where\": \"Clinical Characteristics\", \"quote\": \"Survivors at day 28\"},\n      \"deaths_percent\": {\"value\": \"70.0\", \"where\": \"Clinical Characteristics\", \"quote\": \"Survivors at day 28\"}\n    }\n  ]\n}",
+ "prompt_tokens": 16130,
+ "tokens": 586,
+ "finish": "stop",
+ "dt": 160.92,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "e0e81c334d27f7731f489cc7e7a387bc6c2dc6056ea3cac9a87d08a4dc3cd8ba"
+}

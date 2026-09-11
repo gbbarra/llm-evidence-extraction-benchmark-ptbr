@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "tag": "qwen3.5:9b",
+ "ancora": "a3",
+ "ficha": "v2",
+ "ensaio": "ibarra2023",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"Early adjunctive methylene blue in patients with septic shock: a randomized controlled trial\", \"where\": \"\"},\n  \"design\": {\"value\": \"single-center randomized controlled trial\", \"where\": \"Abstract\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"MB\", \"where\": \"Results\"},\n      \"intervention\": {\"value\": \"IV infusion of 100 mg of MB in 500 ml of 0.9% sodium chloride solution over 6 h once daily for a total of 3 doses\", \"where\": \"Materials and methods\"},\n      \"n_randomized\": {\"value\": \"45\", \"where\": \"Results\", \"quote\": \"forty-five were assigned to MB and 46 to placebo.\"},\n      \"n_analyzed\": {\"value\": \"45\", \"where\": \"Results\", \"quote\": \"with 45 patients assigned to MB and 46 to control group.\"}\n    },\n    {\n      \"label\": {\"value\": \"control group\", \"where\": \"Results\"},\n      \"intervention\": {\"value\": \"same dose of 500 ml of 0.9% sodium chloride without MB\", \"where\": \"Materials and methods\"},\n      \"n_randomized\": {\"value\": \"46\", \"where\": \"Results\", \"quote\": \"forty-five were assigned to MB and 46 to placebo.\"},\n      \"n_analyzed\": {\"value\": \"46\", \"where\": \"Results\", \"quote\": \"with 45 patients assigned to MB and 46 to control group.\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"MB\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"28 days\", \"where\": \"Results\", \"quote\": \"all-cause mortality at 28 days\"},\n      \"deaths\": {\"value\": \"15\", \"where\": \"Table 2\", \"quote\": \"15/45 (33)\"},\n      \"n\": {\"value\": \"45\", \"where\": \"Table 2\", \"quote\": \"15/45\"},\n      \"deaths_percent\": {\"value\": \"33\", \"where\": \"Table 2\", \"quote\": \"(33)\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"control group\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"28 days\", \"where\": \"Results\", \"quote\": \"all-cause mortality at 28 days\"},\n      \"deaths\": {\"value\": \"21\", \"where\": \"Table 2\", \"quote\": \"21/46 (46)\"},\n      \"n\": {\"value\": \"46\", \"where\": \"Table 2\", \"quote\": \"21/46\"},\n      \"deaths_percent\": {\"value\": \"46\", \"where\": \"Table 2\", \"quote\": \"(46)\"}\n    }\n  ]\n}",
+ "prompt_tokens": 13792,
+ "tokens": 680,
+ "finish": "stop",
+ "dt": 55.04,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "733bee78501404c22336b1ebeebf8355f6aeaaaa6ec369b302541c1b40d872e8"
+}

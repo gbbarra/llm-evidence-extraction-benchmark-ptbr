@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "tag": "qwen3.5:9b",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "kirov2001",
+ "replica": 1,
+ "conteudo": "{\n  \"study\": {\n    \"value\": \"Infusion of methylene blue in human septic shock: A pilot, randomized, controlled study\",\n    \"where\": \"Title\"\n  },\n  \"design\": {\n    \"value\": \"Prospective, randomized, controlled, open-label, pilot study\",\n    \"where\": \"Objective section\"\n  },\n  \"arms\": [\n    {\n      \"label\": {\n        \"value\": \"MB group\",\n        \"where\": \"Results section (Abstract and Text)\"\n      },\n      \"intervention\": {\n        \"value\": \"MB administered as an intravenous bolus injection (2 mg/kg), followed 2 hrs later by infusion at stepwise increasing rates of 0.25, 0.5, 1, and 2 mg/kg/hr\",\n        \"where\": \"Interventions section\"\n      },\n      \"n_randomized\": {\n        \"value\": \"10\",\n        \"where\": \"Objective section\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"10\",\n        \"where\": \"Abstract and Table 5 (implied by n=5 survived vs 5 died)\"\n      }\n    },\n    {\n      \"label\": {\n        \"value\": \"control group\",\n        \"where\": \"Results section (Abstract and Text)\"\n      },\n      \"intervention\": {\n        \"value\": \"isotonic saline\",\n        \"where\": \"Interventions section\"\n      },\n      \"n_randomized\": {\n        \"value\": \"10\",\n        \"where\": \"Objective section\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"10\",\n        \"where\": \"Abstract and Table 5 (implied by n=3 survived vs 7 died)\"\n      }\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\n        \"value\": \"MB group\",\n        \"where\": \"Table 5\"\n      },\n      \"timepoint\": {\n        \"value\": \"day 28\",\n        \"where\": \"Abstract and Table 5\"\n      },\n      \"deaths\": {\n        \"value\": \"5\",\n        \"where\": \"Abstract and Table 5 (calculated: 10 patients - 5 survivors)\"\n      },\n      \"n\": {\n        \"value\": \"10\",\n        \"where\": \"Abstract and Table 5\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"NR\",\n        \"where\": \"Table 5 (Percentage not explicitly printed, only counts)\"\n      }\n    },\n    {\n      \"arm_label\": {\n        \"value\": \"control group\",\n        \"where\": \"Table 5\"\n      },\n      \"timepoint\": {\n        \"value\": \"day 28\",\n        \"where\": \"Abstract and Table 5\"\n      },\n      \"deaths\": {\n        \"value\": \"7\",\n        \"where\": \"Results section\"\n      },\n      \"n\": {\n        \"value\": \"10\",\n        \"where\": \"Table 5 (calculated: 3 survivors + 7 deaths, though Table 5 only lists 'Survivors' count)\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"NR\",\n        \"where\": \"Table 5\"\n      }\n    }\n  ]\n}",
+ "prompt_tokens": 17760,
+ "tokens": 780,
+ "finish": "stop",
+ "dt": 142.92,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "f041924959c1f3cf4ce7aff01c1ec48b1f42709f9a02b7016c205a44f388760e"
+}

@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "tag": "qwen3.5:9b",
+ "ancora": "a2",
+ "ficha": "v1",
+ "ensaio": "PMC6024764",
+ "replica": 2,
+ "conteudo": "{\n \"study\": \"Zhou et al.\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"China\",\n \"duration\": \"3 months\",\n \"n_randomized_total\": \"56\",\n \"experimental_arm\": {\n  \"label\": \"LCD group (low-carbohydrate diet)\",\n  \"intervention_description\": \"Six-point formula diet, restriction of staple food/meal and replacement with nuts.\",\n  \"n_randomized\": \"28\",\n  \"n_analyzed\": \"24\",\n  \"hba1c_change_mean\": \"-0.63\",\n  \"hba1c_change_dispersion\": \"1.18\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"7.43\",\n  \"hba1c_baseline_sd\": \"1.39\",\n  \"hba1c_final_mean\": \"6.80\",\n  \"hba1c_final_sd\": \"0.83\"\n },\n \"control_arm\": {\n  \"label\": \"LFD group (low-fat diet)\",\n  \"intervention_description\": \"Six-point formula low-fat diet.\",\n  \"n_randomized\": \"28\",\n  \"n_analyzed\": \"25\",\n  \"hba1c_change_mean\": \"-0.31\",\n  \"hba1c_change_dispersion\": \"0.70\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"7.79\",\n  \"hba1c_baseline_sd\": \"1.20\",\n  \"hba1c_final_mean\": \"7.48\",\n  \"hba1c_final_sd\": \"1.15\"\n }\n}",
+ "prompt_tokens": 9097,
+ "tokens": 400,
+ "finish": "stop",
+ "dt": 32.26,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "3be1adeeb244526f7119fdbcba6f5d4d38418b7a2b534025eb52d20886ede178"
+}

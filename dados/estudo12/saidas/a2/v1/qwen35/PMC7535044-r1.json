@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "tag": "qwen3.5:9b",
+ "ancora": "a2",
+ "ficha": "v1",
+ "ensaio": "PMC7535044",
+ "replica": 1,
+ "conteudo": "{\n \"study\": \"Wang et al.\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Taiwan\",\n \"duration\": \"18 months\",\n \"n_randomized_total\": \"92\",\n \"experimental_arm\": {\n  \"label\": \"LCD group (moderate low-carbohydrate diet)\",\n  \"intervention_description\": \"Daily carbohydrate intake limited to less than 90 g/d without restriction to total energy; patients received dietary instruction and surveillance.\",\n  \"n_randomized\": \"41\",\n  \"n_analyzed\": \"41\",\n  \"hba1c_change_mean\": \"-1.44\",\n  \"hba1c_change_dispersion\": \"0.3\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"9.95\",\n  \"hba1c_baseline_sd\": \"1.04\",\n  \"hba1c_final_mean\": \"6.84\",\n  \"hba1c_final_sd\": \"0.59\"\n },\n \"control_arm\": {\n  \"label\": \"TDD group (traditional diabetic diet)\",\n  \"intervention_description\": \"Macronutrient percentage: 50–60% carbohydrates, 1.0–1.2 g/kg protein, ≤30% fat; target total calorie calculated based on ideal weight and BMI.\",\n  \"n_randomized\": \"42\",\n  \"n_analyzed\": \"42\",\n  \"hba1c_change_mean\": \"-1.01\",\n  \"hba1c_change_dispersion\": \"1.06\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"8.70\",\n  \"hba1c_baseline_sd\": \"1.01\",\n  \"hba1c_final_mean\": \"7.69\",\n  \"hba1c_final_sd\": \"1.06\"\n }\n}",
+ "prompt_tokens": 12439,
+ "tokens": 449,
+ "finish": "stop",
+ "dt": 90.82,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "c7e0429e65526f56b74c8fb91c0e0cdf124b34bacd8d6ed32d84f4d16c991eb6"
+}

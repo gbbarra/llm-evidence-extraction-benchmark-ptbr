@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen14",
+ "tag": "qwen3:14b",
+ "ancora": "a1",
+ "ficha": "v2",
+ "ensaio": "REF41",
+ "replica": 1,
+ "conteudo": "{\n  \"n_randomized_gdft\": {\"value\": \"49\", \"where\": \"Results\", \"quote\": \"49 patients were randomized to each group (fig. 1).\"},\n  \"n_randomized_control\": {\"value\": \"49\", \"where\": \"Results\", \"quote\": \"49 patients were randomized to each group (fig. 1).\"},\n  \"surgery_type\": {\"value\": \"major hepatic resection\", \"where\": \"Abstract\", \"quote\": \"major hepatic resection surgery.\"},\n  \"laparoscopy_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"laparoscopy_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"asa_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"asa_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"total_fluid_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"total_fluid_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"crystalloid_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"crystalloid_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"colloid_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"colloid_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"blood_loss_gdft\": {\"value\": \"475 [300 to 600] ml\", \"where\": \"Results\", \"quote\": \"median [quartile 1 to quartile 3], 475 [300 to 600] ml vs. 500 [300 to 884] ml; P = 0.727\"),\n  \"blood_loss_control\": {\"value\": \"500 [300 to 884] ml\", \"where\": \"Results\", \"quote\": \"median [quartile 1 to quartile 3], 475 [300 to 600] ml vs. 500 [300 to 884] ml; P = 0.727\"),\n  \"inotrope_use\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"morbidity_events_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"morbidity_events_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"mortality_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"mortality_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"hospital_los_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"hospital_los_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"time_to_flatus_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"time_to_flatus_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"time_to_oral_intake_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"time_to_oral_intake_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"time_to_defecation_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"time_to_defecation_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"postop_ileus_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"postop_ileus_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"}\n}",
+ "prompt_tokens": 9103,
+ "tokens": 910,
+ "finish": "stop",
+ "dt": 255.13,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "15c0402f1dfb2437b62d1ee496a91602a0b0a152a00876aa7b5497cb0858fd4b"
+}

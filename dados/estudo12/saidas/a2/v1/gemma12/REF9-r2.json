@@ -1,0 +1,16 @@
+{
+ "modelo": "gemma12",
+ "tag": "gemma4:12b",
+ "ancora": "a2",
+ "ficha": "v1",
+ "ensaio": "REF9",
+ "replica": 2,
+ "conteudo": "```json\n{\n \"study\": \"Saslow 2023\",\n \"design\": \"2x2 factorial\",\n \"country\": \"USA\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": \"83\",\n \"experimental_arm\": {\n  \"label\": \"very low-carbohydrate (VLC) diet\",\n  \"intervention_description\": \"a very low-carbohydrate, moderate protein, higher-fat diet (20 to 35 nonfiber g of carbohydrates a day)\",\n  \"n_randomized\": \"23\",\n  \"n_analyzed\": \"23\",\n  \"hba1c_change_mean\": \"-0.32\",\n  \"hba1c_change_dispersion\": \"0.07\",\n  \"hba1c_change_dispersion_type\": \"SE\",\n  \"hba1c_baseline_mean\": \"6.09\",\n  \"hba1c_baseline_sd\": \"0.45\",\n  \"hba1c_final_mean\": \"5.74\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"Dietary Approaches to Stop Hypertension (DASH) diet\",\n  \"intervention_description\": \"rich in fruits, vegetables, whole grains, and low-fat dairy foods, restricts saturated and total fat, and is lower in sodium\",\n  \"n_randomized\": \"25\",\n  \"n_analyzed\": \"23\",\n  \"hba1c_change_mean\": \"-0.14\",\n  \"hba1c_change_dispersion\": \"0.07\",\n  \"hba1c_change_dispersion_type\": \"SE\",\n  \"hba1c_baseline_mean\": \"6.10\",\n  \"hba1c_baseline_sd\": \"0.07\",\n  \"hba1c_final_mean\": \"5.97\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}\n```",
+ "prompt_tokens": 10081,
+ "tokens": 484,
+ "finish": "stop",
+ "dt": 63.87,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "d1f05bba459b3d70ae1d85fc6d7f30a44137ba90074ad15dcec9f3d2a7e72034"
+}

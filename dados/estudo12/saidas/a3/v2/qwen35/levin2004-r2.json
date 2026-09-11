@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "tag": "qwen3.5:9b",
+ "ancora": "a3",
+ "ficha": "v2",
+ "ensaio": "levin2004",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"Methylene Blue Reduces Mortality and Morbidity in Vasoplegic Patients After Cardiac Surgery\", \"where\": \"\"},\n  \"design\": {\"value\": \"Randomized controlled trial\", \"where\": \"\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"Vasoplegia MB\", \"where\": \"\", \"quote\": \"\"},\n      \"intervention\": {\"value\": \"1.5 mg/Kg of methylene blue\", \"where\": \"\", \"quote\": \"Those treated with methylene blue showed morbidity and mortality reductions\"},\n      \"n_randomized\": {\"value\": \"31\", \"where\": \"\", \"quote\": \"Those with vasoplegia were randomized to receive 1.5 mg/Kg of methylene blue or a placebo.\"},\n      \"n_analyzed\": {\"value\": \"31\", \"where\": \"\", \"quote\": \"\"}\n    },\n    {\n      \"label\": {\"value\": \"Vasoplegia Placebo\", \"where\": \"\", \"quote\": \"\"},\n      \"intervention\": {\"value\": \"Placebo\", \"where\": \"\", \"quote\": \"Those with vasoplegia were randomized to receive 1.5 mg/Kg of methylene blue or a placebo.\"},\n      \"n_randomized\": {\"value\": \"31\", \"where\": \"\", \"quote\": \"Those with vasoplegia were randomized to receive 1.5 mg/Kg of methylene blue or a placebo.\"},\n      \"n_analyzed\": {\"value\": \"31\", \"where\": \"\", \"quote\": \"\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"Vasoplegia MB\", \"where\": \"\", \"quote\": \"\"},\n      \"timepoint\": {\"value\": \"in-hospital\", \"where\": \"\", \"quote\": \"\"},\n      \"deaths\": {\"value\": \"0\", \"where\": \"\", \"quote\": \"There were no deaths in those treated with MB\"},\n      \"n\": {\"value\": \"31\", \"where\": \"\", \"quote\": \"\"},\n      \"deaths_percent\": {\"value\": \"0%\", \"where\": \"\", \"quote\": \"0% versus 19.4%\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"Vasoplegia Placebo\", \"where\": \"\", \"quote\": \"\"},\n      \"timepoint\": {\"value\": \"in-hospital\", \"where\": \"\", \"quote\": \"\"},\n      \"deaths\": {\"value\": \"6\", \"where\": \"\", \"quote\": \"6 of these patients were in the VS population\"},\n      \"n\": {\"value\": \"31\", \"where\": \"\", \"quote\": \"\"},\n      \"deaths_percent\": {\"value\": \"19.4%\", \"where\": \"\", \"quote\": \"0% versus 19.4% or 6 of 31 patients\"}\n    }\n  ]\n}",
+ "prompt_tokens": 6824,
+ "tokens": 649,
+ "finish": "stop",
+ "dt": 50.54,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "b7bbd19fff105fe51612350ad5f88e8d97324210a5efebab2dca812d331e7f36"
+}

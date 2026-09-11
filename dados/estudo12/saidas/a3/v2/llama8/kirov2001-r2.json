@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "tag": "llama3.1:8b",
+ "ancora": "a3",
+ "ficha": "v2",
+ "ensaio": "kirov2001",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"Infusion of methylene blue in human septic shock: A pilot, randomized, controlled study\", \"where\": \"Abstract\"},\n  \"design\": {\"value\": \"Prospective, randomized, controlled, open-label, pilot study\", \"where\": \"Abstract\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"MB group\", \"where\": \"Table 1\"},\n      \"intervention\": {\"value\": \"methylene blue (MB)\", \"where\": \"Abstract\"},\n      \"n_randomized\": {\"value\": \"10\", \"where\": \"Table 1\", \"quote\": \"MB Group\"},\n      \"n_analyzed\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n    },\n    {\n      \"label\": {\"value\": \"C group\", \"where\": \"Table 1\"},\n      \"intervention\": {\"value\": \"isotonic saline\", \"where\": \"Abstract\"},\n      \"n_randomized\": {\"value\": \"10\", \"where\": \"Table 1\", \"quote\": \"C Group\"},\n      \"n_analyzed\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"day 28\", \"where\": \"Results\", \"quote\": \"Survivors at day 28\"},\n      \"deaths\": {\"value\": \"3\", \"where\": \"Results\", \"quote\": \"Survivors at day 28\"},\n      \"n\": {\"value\": \"10\", \"where\": \"Table 1\", \"quote\": \"MB Group\"},\n      \"deaths_percent\": {\"value\": \"30%\", \"where\": \"Results\", \"quote\": \"Survivors at day 28\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"C group\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"day 28\", \"where\": \"Results\", \"quote\": \"Survivors at day 28\"},\n      \"deaths\": {\"value\": \"7\", \"where\": \"Results\", \"quote\": \"Survivors at day 28\"},\n      \"n\": {\"value\": \"10\", \"where\": \"Table 1\", \"quote\": \"C Group\"},\n      \"deaths_percent\": {\"value\": \"70%\", \"where\": \"Results\", \"quote\": \"Survivors at day 28\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"day 28\", \"where\": \"Results\", \"quote\": \"Survivors at day 28\"},\n      \"deaths\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n      \"n\": {\"value\": \"10\", \"where\": \"Table 1\", \"quote\": \"MB Group\"},\n      \"deaths_percent\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"C group\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"day 28\", \"where\": \"Results\", \"quote\": \"Survivors at day 28\"},\n      \"deaths\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n      \"n\": {\"value\": \"10\", \"where\": \"Table 1\", \"quote\": \"C Group\"},\n      \"deaths_percent\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n    }\n  ]\n}",
+ "prompt_tokens": 16130,
+ "tokens": 752,
+ "finish": "stop",
+ "dt": 69.37,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "e0e81c334d27f7731f489cc7e7a387bc6c2dc6056ea3cac9a87d08a4dc3cd8ba"
+}

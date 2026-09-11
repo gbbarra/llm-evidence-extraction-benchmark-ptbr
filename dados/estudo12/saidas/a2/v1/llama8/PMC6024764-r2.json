@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "tag": "llama3.1:8b",
+ "ancora": "a2",
+ "ficha": "v1",
+ "ensaio": "PMC6024764",
+ "replica": 2,
+ "conteudo": "{\n \"study\": \"Wang et al., 2019\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"China\",\n \"duration\": \"3 months\",\n \"n_randomized_total\": \"56\",\n \"experimental_arm\": {\n  \"label\": \"Low-carbohydrate diet (LCD)\",\n  \"intervention_description\": \"received education about LCD's six-point formula, and instructed to restrict intake of staple food/meal (1 Liang) per day, replaced by 60 g/day nuts for males and 50 g/day for females\",\n  \"n_randomized\": \"28\",\n  \"n_analyzed\": \"24\",\n  \"hba1c_change_mean\": \"-0.63%\",\n  \"hba1c_change_dispersion\": \"1.18%\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"7.43%\",\n  \"hba1c_baseline_sd\": \"1.39%\",\n  \"hba1c_final_mean\": \"6.80%\",\n  \"hba1c_final_sd\": \"0.83%\"\n },\n \"control_arm\": {\n  \"label\": \"Low-fat diet (LFD)\",\n  \"intervention_description\": \"received education about LFD's six-point formula\",\n  \"n_randomized\": \"28\",\n  \"n_analyzed\": \"25\",\n  \"hba1c_change_mean\": \"-0.31%\",\n  \"hba1c_change_dispersion\": \"0.70%\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"7.79%\",\n  \"hba1c_baseline_sd\": \"1.20%\",\n  \"hba1c_final_mean\": \"7.48%\",\n  \"hba1c_final_sd\": \"1.15%\"\n }\n}",
+ "prompt_tokens": 8514,
+ "tokens": 386,
+ "finish": "stop",
+ "dt": 30.03,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "3be1adeeb244526f7119fdbcba6f5d4d38418b7a2b534025eb52d20886ede178"
+}

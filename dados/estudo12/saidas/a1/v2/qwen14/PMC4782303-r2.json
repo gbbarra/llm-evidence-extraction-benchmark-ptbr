@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen14",
+ "tag": "qwen3:14b",
+ "ancora": "a1",
+ "ficha": "v2",
+ "ensaio": "PMC4782303",
+ "replica": 2,
+ "conteudo": "{\n  \"n_randomized_gdft\": {\"value\": \"92\", \"where\": \"Results\", \"quote\": \"Ninety-two patients in the GDT group received the allocated intervention and 88 in the control group.\"},\n  \"n_randomized_control\": {\"value\": \"88\", \"where\": \"Results\", \"quote\": \"Ninety-two patients in the GDT group received the allocated intervention and 88 in the control group.\"},\n  \"surgery_type\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"laparoscopy_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"laparoscopy_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"asa_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"asa_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"total_fluid_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"total_fluid_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"crystalloid_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"crystalloid_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"colloid_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"colloid_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"blood_loss_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"blood_loss_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"inotrope_use\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"morbidity_events_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"morbidity_events_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"mortality_gdft\": {\"value\": \"4\", \"where\": \"Table 3\", \"quote\": \"In-hospital mortality 4/88 (5 %) 4/92 (4 %)\"},\n  \"mortality_control\": {\"value\": \"4\", \"where\": \"Table 3\", \"quote\": \"In-hospital mortality 4/88 (5 %) 4/92 (4 %)\"},\n  \"hospital_los_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"hospital_los_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"time_to_flatus_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"time_to_flatus_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"time_to_oral_intake_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"time_to_oral_intake_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"time_to_defecation_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"time_to_defecation_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"postop_ileus_gdft\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"},\n  \"postop_ileus_control\": {\"value\": \"NR\", \"where\": \"NR\", \"quote\": \"\"}\n}",
+ "prompt_tokens": 11702,
+ "tokens": 827,
+ "finish": "stop",
+ "dt": 127.35,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "42080b664d2dd2056f0c99b1fd3ea31044ed65cc9552e8c3142cbdd2ffac1a9c"
+}

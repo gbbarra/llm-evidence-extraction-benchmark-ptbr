@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "tag": "qwen3.5:9b",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "luissilva2024",
+ "replica": 1,
+ "conteudo": "{\n  \"study\": {\"value\": \"Methylene blue therapy in addition to standard treatment for acute-phase septic shock: a pilot randomized controlled trial\", \"where\": \"\"},\n  \"design\": {\"value\": \"1:1 randomized clinical trial of two groups (MB and Control)\", \"where\": \"Abstract, Methods\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"Control group\", \"where\": \"Abstract, Results Table 1\"},\n      \"intervention\": {\"value\": \"standard treatment (fluid replacement, vasopressors, and antibiotic therapy)\", \"where\": \"Methods, Abstract\"},\n      \"n_randomized\": {\"value\": \"26\", \"where\": \"Abstract, Materials and methods\"},\n      \"n_analyzed\": {\"value\": \"26\", \"where\": \"Results Table 1\"}\n    },\n    {\n      \"label\": {\"value\": \"MB group\", \"where\": \"Abstract, Results Table 1\"},\n      \"intervention\": {\"value\": \"standard treatment plus methylene blue (loading dose of MB (3 mg/kg) and maintenance (0.5 mg/kg/h) for 48 h)\", \"where\": \"Methods, Abstract\"},\n      \"n_randomized\": {\"value\": \"19\", \"where\": \"Abstract, Materials and methods\"},\n      \"n_analyzed\": {\"value\": \"19\", \"where\": \"Results Table 1\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"Control group\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"30 days outcome (Death)\", \"where\": \"Results Table 1\"},\n      \"deaths\": {\"value\": \"14\", \"where\": \"Results Table 1\"},\n      \"n\": {\"value\": \"26\", \"where\": \"Results Table 1\"},\n      \"deaths_percent\": {\"value\": \"54%\", \"where\": \"Results Table 1\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"30 days outcome (Death)\", \"where\": \"Results Table 1\"},\n      \"deaths\": {\"value\": \"9\", \"where\": \"Results Table 1\"},\n      \"n\": {\"value\": \"19\", \"where\": \"Results Table 1\"},\n      \"deaths_percent\": {\"value\": \"47%\", \"where\": \"Results Table 1\"}\n    }\n  ]\n}",
+ "prompt_tokens": 12502,
+ "tokens": 554,
+ "finish": "stop",
+ "dt": 99.24,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "e4e9a69ffea16deabc62c7cedeb2486d967a83bccfbee6986d4a40adeaf52845"
+}

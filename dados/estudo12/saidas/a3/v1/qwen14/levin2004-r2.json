@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen14",
+ "tag": "qwen3:14b",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "levin2004",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"Methylene Blue Reduces Mortality and Morbidity in Vasoplegic Patients After Cardiac Surgery\", \"where\": \"Title\"},\n  \"design\": {\"value\": \"Randomized controlled trial\", \"where\": \"Methods\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"Methylene Blue (MB)\", \"where\": \"Results\"},\n      \"intervention\": {\"value\": \"1.5 mg/Kg of methylene blue intravenously over 1 hour\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"31\", \"where\": \"Results\"},\n      \"n_analyzed\": {\"value\": \"31\", \"where\": \"Results\"}\n    },\n    {\n      \"label\": {\"value\": \"Placebo\", \"where\": \"Results\"},\n      \"intervention\": {\"value\": \"Placebo\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"31\", \"where\": \"Results\"},\n      \"n_analyzed\": {\"value\": \"31\", \"where\": \"Results\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"Methylene Blue (MB)\", \"where\": \"Results\"},\n      \"timepoint\": {\"value\": \"Overall\", \"where\": \"Results\"},\n      \"deaths\": {\"value\": \"0\", \"where\": \"Results\"},\n      \"n\": {\"value\": \"31\", \"where\": \"Results\"},\n      \"deaths_percent\": {\"value\": \"0%\", \"where\": \"Results\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"Placebo\", \"where\": \"Results\"},\n      \"timepoint\": {\"value\": \"Overall\", \"where\": \"Results\"},\n      \"deaths\": {\"value\": \"6\", \"where\": \"Results\"},\n      \"n\": {\"value\": \"31\", \"where\": \"Results\"},\n      \"deaths_percent\": {\"value\": \"19.4%\", \"where\": \"Results\"}\n    }\n  ]\n}",
+ "prompt_tokens": 6532,
+ "tokens": 433,
+ "finish": "stop",
+ "dt": 59.51,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "04eac74d7d701a315d9f534c4664af741998ec5247e49110f353552a83bb7024"
+}

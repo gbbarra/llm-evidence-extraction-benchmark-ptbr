@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen14",
+ "tag": "qwen3:14b",
+ "ancora": "a3",
+ "ficha": "v2",
+ "ensaio": "luissilva2024",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"Methylene blue therapy in addition to standard treatment for acute-phase septic shock: a pilot randomized controlled trial\", \"where\": \"Abstract\"},\n  \"design\": {\"value\": \"1:1 randomized clinical trial of two groups (MB and Control)\", \"where\": \"Methods\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"Control group\", \"where\": \"Methods\"},\n      \"intervention\": {\"value\": \"Standard treatment consisting of fluid replacement, vasopressors, and antibiotic therapy\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"26\", \"where\": \"Methods\", \"quote\": \"Forty-five patients were included in the present study; 26 patients were allocated to the Control group, and 19 were randomized to the MB group.\"},\n      \"n_analyzed\": {\"value\": \"26\", \"where\": \"Results\", \"quote\": \"The 30 days outcome (Death)—n (%) 14 (54) 9 (47) 0.38\"}\n    },\n    {\n      \"label\": {\"value\": \"MB group\", \"where\": \"Methods\"},\n      \"intervention\": {\"value\": \"Standard treatment plus methylene blue (3 mg/kg loading dose and 0.5 mg/kg/h maintenance for 48 h)\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"19\", \"where\": \"Methods\", \"quote\": \"Forty-five patients were included in the present study; 26 patients were allocated to the Control group, and 19 were randomized to the MB group.\"},\n      \"n_analyzed\": {\"value\": \"19\", \"where\": \"Results\", \"quote\": \"The 30 days outcome (Death)—n (%) 14 (54) 9 (47) 0.38\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"Control group\", \"where\": \"Results\"},\n      \"timepoint\": {\"value\": \"30 days\", \"where\": \"Results\", \"quote\": \"30 days outcome (Death)—n (%) 14 (54) 9 (47) 0.38\"},\n      \"deaths\": {\"value\": \"14\", \"where\": \"Results\", \"quote\": \"30 days outcome (Death)—n (%) 14 (54) 9 (47) 0.38\"},\n      \"n\": {\"value\": \"26\", \"where\": \"Results\", \"quote\": \"30 days outcome (Death)—n (%) 14 (54) 9 (47) 0.38\"},\n      \"deaths_percent\": {\"value\": \"54\", \"where\": \"Results\", \"quote\": \"30 days outcome (Death)—n (%) 14 (54) 9 (47) 0.38\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"Results\"},\n      \"timepoint\": {\"value\": \"30 days\", \"where\": \"Results\", \"quote\": \"30 days outcome (Death)—n (%) 14 (54) 9 (47) 0.38\"},\n      \"deaths\": {\"value\": \"9\", \"where\": \"Results\", \"quote\": \"30 days outcome (Death)—n (%) 14 (54) 9 (47) 0.38\"},\n      \"n\": {\"value\": \"19\", \"where\": \"Results\", \"quote\": \"30 days outcome (Death)—n (%) 14 (54) 9 (47) 0.38\"},\n      \"deaths_percent\": {\"value\": \"47\", \"where\": \"Results\", \"quote\": \"30 days outcome (Death)—n (%) 14 (54) 9 (47) 0.38\"}\n    }\n  ]\n}",
+ "prompt_tokens": 12716,
+ "tokens": 890,
+ "finish": "stop",
+ "dt": 139.74,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "e5719b5b6e969d5d365a8f54fd275d0e8ce7af413a213d48c331788d7b881dca"
+}

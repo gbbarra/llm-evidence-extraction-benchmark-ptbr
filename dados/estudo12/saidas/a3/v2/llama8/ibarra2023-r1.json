@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "tag": "llama3.1:8b",
+ "ancora": "a3",
+ "ficha": "v2",
+ "ensaio": "ibarra2023",
+ "replica": 1,
+ "conteudo": "{\n  \"study\": {\"value\": \"Methylene blue in septic shock: a randomized controlled trial\", \"where\": \"Abstract\"},\n  \"design\": {\"value\": \"randomized controlled trial\", \"where\": \"Abstract\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"methylene blue\", \"where\": \"Results\"},\n      \"intervention\": {\"value\": \"Methylene blue (MB) was administered within 24 hours of septic shock diagnosis.\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"45\", \"where\": \"Table 1\", \"quote\": \"45 patients assigned to MB\"},\n      \"n_analyzed\": {\"value\": \"45\", \"where\": \"Table 1\", \"quote\": \"all patients received the complete scheme\"}\n    },\n    {\n      \"label\": {\"value\": \"placebo\", \"where\": \"Results\"},\n      \"intervention\": {\"value\": \"Placebo was administered within 24 hours of septic shock diagnosis.\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"46\", \"where\": \"Table 1\", \"quote\": \"46 patients assigned to control group\"},\n      \"n_analyzed\": {\"value\": \"46\", \"where\": \"Table 1\", \"quote\": \"all patients received the complete scheme\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"methylene blue\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"28 days\", \"where\": \"Table 2\", \"quote\": \"Mortality at 28 days—no. (%) 15/45 (33)\"},\n      \"deaths\": {\"value\": \"15\", \"where\": \"Table 2\", \"quote\": \"15/45 (33)\"},\n      \"n\": {\"value\": \"45\", \"where\": \"Table 2\", \"quote\": \"45\"},\n      \"deaths_percent\": {\"value\": \"33\", \"where\": \"Table 2\", \"quote\": \"(33)\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"placebo\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"28 days\", \"where\": \"Table 2\", \"quote\": \"Mortality at 28 days—no. (%) 21/46 (46)\"},\n      \"deaths\": {\"value\": \"21\", \"where\": \"Table 2\", \"quote\": \"21/46 (46)\"},\n      \"n\": {\"value\": \"46\", \"where\": \"Table 2\", \"quote\": \"46\"},\n      \"deaths_percent\": {\"value\": \"46\", \"where\": \"Table 2\", \"quote\": \"(46)\"}\n    }\n  ]\n}",
+ "prompt_tokens": 12502,
+ "tokens": 575,
+ "finish": "stop",
+ "dt": 123.14,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "733bee78501404c22336b1ebeebf8355f6aeaaaa6ec369b302541c1b40d872e8"
+}

@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen27q2",
+ "tag": "smtek/Qwen3.8-27B:Q2_K_XL",
+ "ancora": "a3",
+ "ficha": "v2",
+ "ensaio": "kirov2001",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"Infusion of methylene blue in human septic shock: A pilot, randomized, controlled study\", \"where\": \"\"},\n  \"design\": {\"value\": \"Prospective, randomized, controlled, open-label, pilot study\", \"where\": \"\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"MB group\", \"where\": \"\"},\n      \"intervention\": {\"value\": \"MB (methylthionine; Nycomed, Oslo, Norway)\", \"where\": \"\"},\n      \"n_randomized\": {\"value\": \"10\", \"where\": \"Abstract\", \"quote\": \"MB (MB group, n 10)\"},\n      \"n_analyzed\": {\"value\": \"10\", \"where\": \"Table 5\", \"quote\": \"Survivors at day 28 5 3 .65\"}\n    },\n    {\n      \"label\": {\"value\": \"control group\", \"where\": \"\"},\n      \"intervention\": {\"value\": \"isotonic saline\", \"where\": \"\"},\n      \"n_randomized\": {\"value\": \"10\", \"where\": \"Abstract\", \"quote\": \"isotonic saline (control group, n 10)\"},\n      \"n_analyzed\": {\"value\": \"10\", \"where\": \"Table 5\", \"quote\": \"Survivors at day 28 5 3 .65\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"day 28\", \"where\": \"Table 5\", \"quote\": \"Survivors at day 28 5 3 .65\"},\n      \"deaths\": {\"value\": \"5\", \"where\": \"Results\", \"quote\": \"Five patients treated with MB survived vs. three patients receiving conventional treatment.\"},\n      \"n\": {\"value\": \"10\", \"where\": \"Abstract\", \"quote\": \"MB (MB group, n 10)\"},\n      \"deaths_percent\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"control group\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"day 28\", \"where\": \"Table 5\", \"quote\": \"Survivors at day 28 5 3 .65\"},\n      \"deaths\": {\"value\": \"7\", \"where\": \"Results\", \"quote\": \"Seven patients in the control group and three in the MB group died of irreversible shock and multiple organ failure.\"},\n      \"n\": {\"value\": \"10\", \"where\": \"Abstract\", \"quote\": \"isotonic saline (control group, n 10)\"},\n      \"deaths_percent\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n    }\n  ]\n}",
+ "prompt_tokens": 17898,
+ "tokens": 659,
+ "finish": "stop",
+ "dt": 77.38,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "e0e81c334d27f7731f489cc7e7a387bc6c2dc6056ea3cac9a87d08a4dc3cd8ba"
+}

@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "tag": "llama3.1:8b",
+ "ancora": "a1",
+ "ficha": "v1",
+ "ensaio": "REF41",
+ "replica": 2,
+ "conteudo": "{\n  \"n_randomized_gdft\": {\"value\": \"49\", \"where\": \"Methods\"},\n  \"n_randomized_control\": {\"value\": \"49\", \"where\": \"Methods\"},\n  \"surgery_type\": {\"value\": \"Major hepatic resection\", \"where\": \"Abstract\"},\n  \"laparoscopy_gdft\": {\"value\": \"NR\", \"where\": \"Results\"},\n  \"laparoscopy_control\": {\"value\": \"NR\", \"where\": \"Results\"},\n  \"asa_gdft\": {\"value\": \"I:II:III:IV ratio not reported\", \"where\": \"Methods\"},\n  \"asa_control\": {\"value\": \"I:II:III:IV ratio not reported\", \"where\": \"Methods\"},\n  \"total_fluid_gdft\": {\"value\": \"NR\", \"where\": \"Results\"},\n  \"total_fluid_control\": {\"value\": \"NR\", \"where\": \"Results\"},\n  \"crystalloid_gdft\": {\"value\": \"250-ml boluses\", \"where\": \"Fluid and Hemodynamic Management\"},\n  \"crystalloid_control\": {\"value\": \"250-ml boluses\", \"where\": \"Fluid and Hemodynamic Management\"},\n  \"colloid_gdft\": {\"value\": \"Albumin 5% solutions used at discretion\", \"where\": \"Fluid and Hemodynamic Management\"},\n  \"colloid_control\": {\"value\": \"Albumin 5% solutions used at discretion\", \"where\": \"Fluid and Hemodynamic Management\"},\n  \"blood_loss_gdft\": {\"value\": \"475 [300 to 600] ml\", \"where\": \"Results\"},\n  \"blood_loss_control\": {\"value\": \"500 [300 to 884] ml\", \"where\": \"Results\"},\n  \"inotrope_use\": {\"value\": \"Norepinephrine (standardized dilution at 100 μg · ml−1)\", \"where\": \"Fluid and Hemodynamic Management\"},\n  \"morbidity_events_gdft\": {\"value\": \"Not reported\", \"where\": \"Results\"},\n  \"morbidity_events_control\": {\"value\": \"Not reported\", \"where\": \"Results\"},\n  \"mortality_gdft\": {\"value\": \"NR\", \"where\": \"Results\"},\n  \"mortality_control\": {\"value\": \"NR\", \"where\": \"Results\"},\n  \"hospital_los_gdft\": {\"value\": \"Slightly shorter in the decision support group\", \"where\": \"Discussion\"},\n  \"hospital_los_control\": {\"value\": \"Slightly longer in the control group\", \"where\": \"Discussion\"},\n  \"time_to_flatus_gdft\": {\"value\": \"NR\", \"where\": \"Results\"},\n  \"time_to_flatus_control\": {\"value\": \"NR\", \"where\": \"Results\"},\n  \"time_to_oral_intake_gdft\": {\"value\": \"NR\", \"where\": \"Results\"},\n  \"time_to_oral_intake_control\": {\"value\": \"NR\", \"where\": \"Results\"},\n  \"time_to_defecation_gdft\": {\"value\": \"NR\", \"where\": \"Results\"},\n  \"time_to_defecation_control\": {\"value\": \"NR\", \"where\": \"Results\"},\n  \"postop_ileus_gdft\": {\"value\": \"NR\", \"where\": \"Results\"},\n  \"postop_ileus_control\": {\"value\": \"NR\", \"where\": \"Results\"}\n}",
+ "prompt_tokens": 8694,
+ "tokens": 724,
+ "finish": "stop",
+ "dt": 57.77,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "16a28c4b5d757285c945216d31712f99fc2ce0963a52b4907ae100011a4dee2a"
+}

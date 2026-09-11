@@ -37,6 +37,7 @@ ETAPAS = [
     ("a costura P1 -> P2 -> P3, ponta a ponta", "e12-testa-costura.py", 0),
     ("as sete copias das celulas concordam", "e12-testa-coerencia.py", 0),
     ("o inventario conta certo", "e12-testa-inventario.py", 5),
+    ("a trava de instância única, sob corrida", "e12-testa-trava.py", 0),
 ]
 
 print(f"FASE 0 DO ESTUDO 12 — {len(ETAPAS)} verificações\n")

@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "tag": "llama3.1:8b",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "luissilva2024",
+ "replica": 1,
+ "conteudo": "{\n  \"study\": {\"value\": \"Methylene blue therapy in addition to standard treatment for acute-phase septic shock: a pilot randomized controlled trial\", \"where\": \"Abstract\"},\n  \"design\": {\"value\": \"pilot randomized clinical trial\", \"where\": \"Materials and methods\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"Control group\", \"where\": \"Results\"},\n      \"intervention\": {\"value\": \"standard treatment\", \"where\": \"Results\"},\n      \"n_randomized\": {\"value\": \"26\", \"where\": \"Table 1\"},\n      \"n_analyzed\": {\"value\": \"NR\", \"where\": \"NR\"}\n    },\n    {\n      \"label\": {\"value\": \"Methylene blue group\", \"where\": \"Results\"},\n      \"intervention\": {\"value\": \"methylene blue\", \"where\": \"Results\"},\n      \"n_randomized\": {\"value\": \"19\", \"where\": \"Table 1\"},\n      \"n_analyzed\": {\"value\": \"NR\", \"where\": \"NR\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"Control group\", \"where\": \"Results\"},\n      \"timepoint\": {\"value\": \"30 days\", \"where\": \"Results\"},\n      \"deaths\": {\"value\": \"14\", \"where\": \"Results\"},\n      \"n\": {\"value\": \"NR\", \"where\": \"NR\"},\n      \"deaths_percent\": {\"value\": \"54%\", \"where\": \"Results\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"Methylene blue group\", \"where\": \"Results\"},\n      \"timepoint\": {\"value\": \"30 days\", \"where\": \"Results\"},\n      \"deaths\": {\"value\": \"9\", \"where\": \"Results\"},\n      \"n\": {\"value\": \"NR\", \"where\": \"NR\"},\n      \"deaths_percent\": {\"value\": \"47%\", \"where\": \"Results\"}\n    }\n  ]\n}",
+ "prompt_tokens": 11715,
+ "tokens": 417,
+ "finish": "stop",
+ "dt": 101.42,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "e4e9a69ffea16deabc62c7cedeb2486d967a83bccfbee6986d4a40adeaf52845"
+}

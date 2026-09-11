@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "tag": "llama3.1:8b",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "luissilva2024",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"Luis-Silva et al. 2024\", \"where\": \"Abstract\"},\n  \"design\": {\"value\": \"Randomized controlled trial\", \"where\": \"Abstract\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"Control group\", \"where\": \"Table 1\"},\n      \"intervention\": {\"value\": \"Standard treatment alone\", \"where\": \"Abstract\"},\n      \"n_randomized\": {\"value\": \"26\", \"where\": \"Table 1\"},\n      \"n_analyzed\": {\"value\": \"26\", \"where\": \"Table 1\"}\n    },\n    {\n      \"label\": {\"value\": \"Methylene blue group\", \"where\": \"Table 1\"},\n      \"intervention\": {\"value\": \"Methylene blue + standard treatment\", \"where\": \"Abstract\"},\n      \"n_randomized\": {\"value\": \"19\", \"where\": \"Table 1\"},\n      \"n_analyzed\": {\"value\": \"19\", \"where\": \"Table 1\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"Control group\", \"where\": \"Table 1\"},\n      \"timepoint\": {\"value\": \"30 days\", \"where\": \"Results\"},\n      \"deaths\": {\"value\": \"14\", \"where\": \"Results\"},\n      \"n\": {\"value\": \"26\", \"where\": \"Table 1\"},\n      \"deaths_percent\": {\"value\": \"53.8%\", \"where\": \"Results\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"Methylene blue group\", \"where\": \"Table 1\"},\n      \"timepoint\": {\"value\": \"30 days\", \"where\": \"Results\"},\n      \"deaths\": {\"value\": \"9\", \"where\": \"Results\"},\n      \"n\": {\"value\": \"19\", \"where\": \"Table 1\"},\n      \"deaths_percent\": {\"value\": \"47.4%\", \"where\": \"Results\"}\n    }\n  ]\n}",
+ "prompt_tokens": 11715,
+ "tokens": 428,
+ "finish": "stop",
+ "dt": 35.85,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "e4e9a69ffea16deabc62c7cedeb2486d967a83bccfbee6986d4a40adeaf52845"
+}

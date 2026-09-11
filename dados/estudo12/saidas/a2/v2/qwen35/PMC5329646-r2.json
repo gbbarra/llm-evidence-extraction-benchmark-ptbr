@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "tag": "qwen3.5:9b",
+ "ancora": "a2",
+ "ficha": "v2",
+ "ensaio": "PMC5329646",
+ "replica": 2,
+ "conteudo": "{\n \"study\": \"Saslow et al. (implied by text context, e.g., 'first author')\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"United States\",\n \"duration\": \"32 weeks\",\n \"n_randomized_total\": {\"value\": \"25\", \"where\": \"\", \"quote\": \"\"},\n \"experimental_arm\": {\n  \"label\": \"Very Low-Carbohydrate Ketogenic Diet and Lifestyle Recommendations (Intervention group)\",\n  \"intervention_description\": \"Online ad libitum very low-carbohydrate ketogenic diet with lifestyle factors including physical activity, sleep, positive affect, and mindfulness.\",\n  \"n_randomized\": {\"value\": \"12\", \"where\": \"\", \"quote\": \"\"},\n  \"n_analyzed\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_change_mean\": {\"value\": \"-0.8\", \"where\": \"\", \"quote\": \"EMM –0.8% at 32 weeks\"},\n  \"hba1c_change_dispersion\": {\"value\": \"–1.1 to –0.6\", \"where\": \"\", \"quote\": \"95% CI –1.1% to –0.6%\"},\n  \"hba1c_change_dispersion_type\": {\"value\": \"CI95: -1.1 to -0.6\", \"where\": \"\", \"quote\": \"95% CI –1.1% to –0.6%\"},\n  \"hba1c_baseline_mean\": {\"value\": \"7.6\", \"where\": \"Table 1\", \"quote\": \"HbA 1c (%), mean (SD) ... Control group (n=13) 7.6 (0.3)\"},\n  \"hba1c_baseline_sd\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_final_mean\": {\"value\": \"6.8\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_final_sd\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n },\n \"control_arm\": {\n  \"label\": \"American Diabetes Associations' 'Create Your Plate' Diet (Control group)\",\n  \"intervention_description\": \"Online diet program based on a plate method diet (low-fat).\",\n  \"n_randomized\": {\"value\": \"13\", \"where\": \"\", \"quote\": \"\"},\n  \"n_analyzed\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_change_mean\": {\"value\": \"-0.3\", \"where\": \"\", \"quote\": \"EMM –0.3% at 32 weeks\"},\n  \"hba1c_change_dispersion\": {\"value\": \"–0.6 to 0.0\", \"where\": \"\", \"quote\": \"95% CI –0.6% to 0.0%\"},\n  \"hba1c_change_dispersion_type\": {\"value\": \"CI95: -0.6 to 0.0\", \"where\": \"\", \"quote\": \"95% CI –0.6% to 0.0%\"},\n  \"hba1c_baseline_mean\": {\"value\": \"7.6\", \"where\": \"Table 1\", \"quote\": \"HbA 1c (%), mean (SD) ... Control group (n=13) 7.6 (0.3)\"},\n  \"hba1c_baseline_sd\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_final_mean\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_final_sd\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n }\n}",
+ "prompt_tokens": 12076,
+ "tokens": 842,
+ "finish": "stop",
+ "dt": 66.96,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "4764272771ab3ad6704d67856e739c6c877509e972dc3cbfb3f3061a2256a85c"
+}

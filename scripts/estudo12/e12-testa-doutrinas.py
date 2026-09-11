@@ -125,8 +125,17 @@ diz("e NÃO trocou o valor que o modelo escreveu", r["celulas"]["n_mb"]["modelo"
 # ══════════════════════════════════════════════════════════════════════════
 secao(6, "REPROVADO É REGISTRADO, NÃO APAGADO", "record the rejected; never delete")
 fonte = io.open(AQUI / "e12-harness.py", encoding="utf-8").read()
+# Uma única exclusão é legítima, e fica nomeada: o temporário da escrita atômica. A trava de
+# instância única (11/09/2026) não apaga nada -- ao soltar, o dono anota "encerrado" no arquivo e
+# vai embora. Qualquer outra exclusão no harness reprova, e o portão olha rmtree, os.remove e rmdir
+# também, que antes passariam batido.
+_limpo = fonte.replace("os.unlink(tmp)", "")
 diz("o harness não apaga saída em lugar nenhum",
-    "unlink" not in fonte.replace("os.unlink(tmp)", ""), "só o temporário de escrita é apagado")
+    not any(v in _limpo for v in ("unlink", "os.remove", "rmtree", "rmdir")),
+    "só o temporário da escrita é apagado")
+diz("a trava mora fora do diretório de saídas e não muda com E12_SAIDAS",
+    H.SAIDAS not in H.TRAVA.parents and H.TRAVA.name == "harness.trava",
+    f"{H.TRAVA.name} em {H.TRAVA.parent.name}/")
 with tempfile.TemporaryDirectory() as td:
     d = Path(td)
     p = d / "a" / "b" / "c" / "x-r1.json"
@@ -213,11 +222,23 @@ diz("e as seis fichas seladas conferem contra os selos",
         == l.split(None, 2)[0]
         for l in io.open(RAIZ / "dados" / "estudo12" / "fichas.sha256", encoding="utf-8")
         .read().splitlines() if l.strip() and not l.startswith("#")))
-# o estrato fechado: texto plano de artigo de assinatura nunca é versionado, em lugar nenhum
+# o estrato fechado: texto plano de artigo de assinatura nunca é versionado, em lugar nenhum.
+# A regra confere pelo nome do ensaio, então tem de dizer o que é "texto plano": arquivo .txt, ou
+# qualquer coisa sob corpus/. As FICHAS de modelo com esses nomes (dados/estudo12/saidas/) são saída
+# da campanha, não o artigo -- valores e citações curtas -- e a casa já as versiona desde os Estudos
+# 8 e 9 para os seis primários fechados da âncora 1 (120 fichas v2, públicas). Estreitada em
+# 11/09/2026 por decisão do pesquisador, quando as 72 fichas da âncora 3 reprovaram pelo nome.
 todos = subprocess.run(["git", "ls-files"], capture_output=True, text=True, cwd=str(RAIZ)).stdout.split()
 fechados = ("kirov2001", "memis2002", "levin2004")
-vaza_fechado = [f for f in todos if any(k in f.lower() for k in fechados)]
-diz("nenhum arquivo dos primários de acesso fechado é versionado", not vaza_fechado,
+
+
+def texto_plano_fechado(f):
+    f = f.lower().replace("\\", "/")
+    return any(k in f for k in fechados) and (f.endswith(".txt") or f.startswith("corpus/"))
+
+
+vaza_fechado = [f for f in todos if texto_plano_fechado(f)]
+diz("nenhum texto plano dos primários de acesso fechado é versionado", not vaza_fechado,
     str(vaza_fechado[:2]))
 # e o corpus tem de continuar existindo em disco, senão a campanha não roda
 em_disco = len(list((RAIZ / "corpus" / "estudo12" / "perturbados").glob("*.txt")))
@@ -237,10 +258,11 @@ locais = subprocess.run(["git", "rev-list", "origin/main..HEAD"],
 sujos = []
 for c in locais:
     arqs = subprocess.run(["git", "ls-tree", "-r", "--name-only", c],
-                          capture_output=True, text=True, cwd=str(RAIZ)).stdout
-    if _re.search(r"kirov|memis|levin|corpus/estudo12", arqs, _re.I):
+                          capture_output=True, text=True, cwd=str(RAIZ)).stdout.split()
+    # a mesma régua da verificação do índice: texto plano dos fechados, ou o corpus da âncora 3
+    if any(texto_plano_fechado(f) or f.replace("\\", "/").startswith("corpus/estudo12/") for f in arqs):
         sujos.append(c[:8])
-diz("nenhum commit do histórico local carrega corpus ou primário fechado",
+diz("nenhum commit do histórico local carrega corpus ou texto plano de primário fechado",
     not sujos, f"{len(sujos)} commits sujos: {sujos[:3]}")
 
 secao(9, "NADA DE CAP SILENCIOSO", "no silent caps: what is dropped is logged")

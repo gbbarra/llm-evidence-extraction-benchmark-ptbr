@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "tag": "qwen3.5:9b",
+ "ancora": "a3",
+ "ficha": "v2",
+ "ensaio": "kirov2001",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"Infusion of methylene blue in human septic shock: A pilot, randomized, controlled study\", \"where\": \"\"},\n  \"design\": {\"value\": \"Prospective, randomized, controlled, open-label, pilot study\", \"where\": \"\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"MB group\", \"where\": \"\"},\n      \"intervention\": {\"value\": \"Methylene blue (MB)\", \"where\": \"\"},\n      \"n_randomized\": {\"value\": \"10\", \"where\": \"\", \"quote\": \"Patients were randomized 1:1 to receive either MB (MB group, n = 10) or isotonic saline (control group, n = 10)\"},\n      \"n_analyzed\": {\"value\": \"10\", \"where\": \"\", \"quote\": \"\"}\n    },\n    {\n      \"label\": {\"value\": \"C group\", \"where\": \"\"},\n      \"intervention\": {\"value\": \"isotonic saline\", \"where\": \"\"},\n      \"n_randomized\": {\"value\": \"10\", \"where\": \"\", \"quote\": \"Patients were randomized 1:1 to receive either MB (MB group, n = 10) or isotonic saline (control group, n = 10)\"},\n      \"n_analyzed\": {\"value\": \"10\", \"where\": \"\", \"quote\": \"\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"day 28\", \"where\": \"\", \"quote\": \"survival rate at day 28 was noted\"},\n      \"deaths\": {\"value\": \"5\", \"where\": \"\", \"quote\": \"Five patients treated with MB survived vs. three patients receiving conventional treatment.\"},\n      \"n\": {\"value\": \"10\", \"where\": \"\", \"quote\": \"\"},\n      \"deaths_percent\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"C group\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"day 28\", \"where\": \"\", \"quote\": \"survival rate at day 28 was noted\"},\n      \"deaths\": {\"value\": \"3\", \"where\": \"\", \"quote\": \"Five patients treated with MB survived vs. three patients receiving conventional treatment.\"},\n      \"n\": {\"value\": \"10\", \"where\": \"\", \"quote\": \"\"},\n      \"deaths_percent\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"C group\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"day 28\", \"where\": \"\", \"quote\": \"Seven patients in the control group and three in the MB group died of irreversible shock and multiple organ failure.\"},\n      \"deaths\": {\"value\": \"3\", \"where\": \"\", \"quote\": \"\"},\n      \"n\": {\"value\": \"10\", \"where\": \"\", \"quote\": \"\"},\n      \"deaths_percent\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n    }\n  ]\n}",
+ "prompt_tokens": 17898,
+ "tokens": 738,
+ "finish": "stop",
+ "dt": 60.95,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "e0e81c334d27f7731f489cc7e7a387bc6c2dc6056ea3cac9a87d08a4dc3cd8ba"
+}

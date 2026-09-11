@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen27q2",
+ "tag": "smtek/Qwen3.8-27B:Q2_K_XL",
+ "ancora": "a3",
+ "ficha": "v2",
+ "ensaio": "ibarra2023",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\n    \"value\": \"Ibarra-Estrada Miguel et al. 2023\",\n    \"where\": \"\"\n  },\n  \"design\": {\n    \"value\": \"randomized controlled trial\",\n    \"where\": \"\"\n  },\n  \"arms\": [\n    {\n      \"label\": {\n        \"value\": \"MB\",\n        \"where\": \"\"\n      },\n      \"intervention\": {\n        \"value\": \"methylene blue\",\n        \"where\": \"\"\n      },\n      \"n_randomized\": {\n        \"value\": \"45\",\n        \"where\": \"Results\",\n        \"quote\": \"therefore, 91 patients were included in the analysis, with 45 patients assigned to MB and 46 to control group.\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"45\",\n        \"where\": \"Table 2\",\n        \"quote\": \"Mortality at 28 days—no. (%) 15/45 (33)\"\n      }\n    },\n    {\n      \"label\": {\n        \"value\": \"Control\",\n        \"where\": \"\"\n      },\n      \"intervention\": {\n        \"value\": \"placebo\",\n        \"where\": \"\"\n      },\n      \"n_randomized\": {\n        \"value\": \"46\",\n        \"where\": \"Results\",\n        \"quote\": \"therefore, 91 patients were included in the analysis, with 45 patients assigned to MB and 46 to control group.\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"46\",\n        \"where\": \"Table 2\",\n        \"quote\": \"Mortality at 28 days—no. (%) 15/45 (33) 21/46 (46)\"\n      }\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\n        \"value\": \"MB\",\n        \"where\": \"\"\n      },\n      \"timepoint\": {\n        \"value\": \"28 days\",\n        \"where\": \"Table 2\",\n        \"quote\": \"Mortality at 28 days—no. (%)\"\n      },\n      \"deaths\": {\n        \"value\": \"15\",\n        \"where\": \"Table 2\",\n        \"quote\": \"Mortality at 28 days—no. (%) 15/45 (33)\"\n      },\n      \"n\": {\n        \"value\": \"45\",\n        \"where\": \"Table 2\",\n        \"quote\": \"Mortality at 28 days—no. (%) 15/45 (33)\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"33\",\n        \"where\": \"Table 2\",\n        \"quote\": \"Mortality at 28 days—no. (%) 15/45 (33)\"\n      }\n    },\n    {\n      \"arm_label\": {\n        \"value\": \"Control\",\n        \"where\": \"\"\n      },\n      \"timepoint\": {\n        \"value\": \"28 days\",\n        \"where\": \"Table 2\",\n        \"quote\": \"Mortality at 28 days—no. (%)\"\n      },\n      \"deaths\": {\n        \"value\": \"21\",\n        \"where\": \"Table 2\",\n        \"quote\": \"Mortality at 28 days—no. (%) 15/45 (33) 21/46 (46)\"\n      },\n      \"n\": {\n        \"value\": \"46\",\n        \"where\": \"Table 2\",\n        \"quote\": \"Mortality at 28 days—no. (%) 15/45 (33) 21/46 (46)\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"46\",\n        \"where\": \"Table 2\",\n        \"quote\": \"Mortality at 28 days—no. (%) 15/45 (33) 21/46 (46)\"\n      }\n    }\n  ]\n}",
+ "prompt_tokens": 13792,
+ "tokens": 965,
+ "finish": "stop",
+ "dt": 106.53,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "733bee78501404c22336b1ebeebf8355f6aeaaaa6ec369b302541c1b40d872e8"
+}

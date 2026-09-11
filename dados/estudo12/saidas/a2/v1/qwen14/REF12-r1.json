@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen14",
+ "tag": "qwen3:14b",
+ "ancora": "a2",
+ "ficha": "v1",
+ "ensaio": "REF12",
+ "replica": 1,
+ "conteudo": "{\n  \"study\": \"Larsen et al. 2021\",\n  \"design\": \"parallel 2-arm\",\n  \"country\": \"Denmark\",\n  \"duration\": \"6 weeks\",\n  \"n_randomized_total\": \"72\",\n  \"experimental_arm\": {\n    \"label\": \"carbohydrate-reduced high-protein diet (CRHP)\",\n    \"intervention_description\": \"percentage of total energy intake [E%]: CH30/P30/F40\",\n    \"n_randomized\": \"36\",\n    \"n_analyzed\": \"34\",\n    \"hba1c_change_mean\": \"-1.9\",\n    \"hba1c_change_dispersion\": \"3.5 to -0.3\",\n    \"hba1c_change_dispersion_type\": \"CI95: -3.5 to -0.3\",\n    \"hba1c_baseline_mean\": \"57.6\",\n    \"hba1c_baseline_sd\": \"8.4\",\n    \"hba1c_final_mean\": \"NR\",\n    \"hba1c_final_sd\": \"NR\"\n  },\n  \"control_arm\": {\n    \"label\": \"conventional diabetes diet (CD)\",\n    \"intervention_description\": \"percentage of total energy intake [E%]: CH50/P17/F33\",\n    \"n_randomized\": \"36\",\n    \"n_analyzed\": \"33\",\n    \"hba1c_change_mean\": \"-7.2\",\n    \"hba1c_change_dispersion\": \"4.0\",\n    \"hba1c_change_dispersion_type\": \"SD\",\n    \"hba1c_baseline_mean\": \"57.4\",\n    \"hba1c_baseline_sd\": \"7.7\",\n    \"hba1c_final_mean\": \"NR\",\n    \"hba1c_final_sd\": \"NR\"\n  }\n}",
+ "prompt_tokens": 12748,
+ "tokens": 404,
+ "finish": "stop",
+ "dt": 263.23,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "43a2a5f57d7466c9966d3754848590434c5f6fb6c55a1c2c288c791dc8615cea"
+}

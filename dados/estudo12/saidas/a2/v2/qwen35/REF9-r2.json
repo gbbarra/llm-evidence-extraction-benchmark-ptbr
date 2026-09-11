@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "tag": "qwen3.5:9b",
+ "ancora": "a2",
+ "ficha": "v2",
+ "ensaio": "REF9",
+ "replica": 2,
+ "conteudo": "{\n \"study\": \"Saslow et al. (2023)\",\n \"design\": \"2x2 factorial\",\n \"country\": \"United States\",\n \"duration\": \"4 months\",\n \"n_randomized_total\": {\"value\": \"83\", \"where\": \"Abstract; Methods; Results\", \"quote\": \"We randomized 83 adults from southeast Michigan...\"},\n \"experimental_arm\": {\n  \"label\": \"VLC diet\",\n  \"intervention_description\": \"Very low-carbohydrate diet (20-35 nonfiber g of carbohydrates a day)\",\n  \"n_randomized\": {\"value\": \"41\", \"where\": \"Results section, completers analysis paragraph\", \"quote\": \"...weight decreased by 19.90 (SE, 1.63) lb (n = 41) in the VLC group...\"},\n  \"n_analyzed\": {\"value\": \"81\", \"where\": \"Results section\", \"quote\": \"n = 81 for HbA1c\"},\n  \"hba1c_change_mean\": {\"value\": \"-0.32\", \"where\": \"Table 2; Abstract; Results\", \"quote\": \"HbA 1c decreased by 0.34 (SE, 0.08) % in the VLC group\" },\n  \"hba1c_change_dispersion\": {\"value\": \"0.07\", \"where\": \"Table 2\", \"quote\": \"-0.32 (0.07)\"},\n  \"hba1c_change_dispersion_type\": {\"value\": \"SE\", \"where\": \"Table 2 note\", \"quote\": \"Outcomes were analyzed using a linear mixed model... and the associated SE values reported in the table.\"},\n  \"hba1c_baseline_mean\": {\"value\": \"6.09\", \"where\": \"Table 2; Table 1\", \"quote\": \"6.09 (0.07)\"},\n  \"hba1c_baseline_sd\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_final_mean\": {\"value\": \"5.74\", \"where\": \"Table 2\", \"quote\": \"5.74 (0.08)\"},\n  \"hba1c_final_sd\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n },\n \"control_arm\": {\n  \"label\": \"DASH diet\",\n  \"intervention_description\": \"Dietary Approaches to Stop Hypertension (DASH) diet\",\n  \"n_randomized\": {\"value\": \"42\", \"where\": \"Results section, completers analysis paragraph\", \"quote\": \"...by 0.14 (0.07) % (n = 42) in the DASH group...\"},\n  \"n_analyzed\": {\"value\": \"83\", \"where\": \"Abstract\", \"quote\": \"Using intention-to-treat analyses... P = .034\"},\n  \"hba1c_change_mean\": {\"value\": \"-0.14\", \"where\": \"Table 2; Abstract\", \"quote\": \"-0.14; P = .034\"},\n  \"hba1c_change_dispersion\": {\"value\": \"0.07\", \"where\": \"Table 2\", \"quote\": \"-0.14 (0.07)\"},\n  \"hba1c_change_dispersion_type\": {\"value\": \"SE\", \"where\": \"Table 2 note\", \"quote\": \"...and the associated SE values reported in the table.\"},\n  \"hba1c_baseline_mean\": {\"value\": \"6.10\", \"where\": \"Table 2\", \"quote\": \"6.10 (0.07)\"},\n  \"hba1c_baseline_sd\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"},\n  \"hba1c_final_mean\": {\"value\": \"5.97\", \"where\": \"Table 2\", \"quote\": \"5.97 (0.07)\"},\n  \"hba1c_final_sd\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n }\n}",
+ "prompt_tokens": 10509,
+ "tokens": 927,
+ "finish": "stop",
+ "dt": 72.83,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "5f834773c6e93a8bf25f0ac1bbbd04c949ee68cf157f8d6a3e353f35116c614c"
+}

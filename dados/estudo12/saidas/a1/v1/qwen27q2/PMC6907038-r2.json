@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen27q2",
+ "tag": "smtek/Qwen3.8-27B:Q2_K_XL",
+ "ancora": "a1",
+ "ficha": "v1",
+ "ensaio": "PMC6907038",
+ "replica": 2,
+ "conteudo": "{\n  \"n_randomized_gdft\": {\"value\": \"FloTrac: 102 | PVI: 102\", \"where\": \"Results\"},\n  \"n_randomized_control\": {\"value\": \"102\", \"where\": \"Results\"},\n  \"surgery_type\": {\"value\": \"elective open major bowel surgery\", \"where\": \"Introduction\"},\n  \"laparoscopy_gdft\": {\"value\": \"0\", \"where\": \"Materials and Methods\"},\n  \"laparoscopy_control\": {\"value\": \"0\", \"where\": \"Materials and Methods\"},\n  \"asa_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"asa_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"total_fluid_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"total_fluid_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"crystalloid_gdft\": {\"value\": \"FloTrac: 1842 ml | PVI: 1715 ml\", \"where\": \"Abstract\"},\n  \"crystalloid_control\": {\"value\": \"3200 ml\", \"where\": \"Abstract\"},\n  \"colloid_gdft\": {\"value\": \"FloTrac: 400–700 ml | PVI: 200–500 ml\", \"where\": \"Abstract\"},\n  \"colloid_control\": {\"value\": \"0–500 ml\", \"where\": \"Abstract\"},\n  \"blood_loss_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"blood_loss_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"inotrope_use\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"morbidity_events_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"morbidity_events_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"mortality_gdft\": {\"value\": \"FloTrac: 0 | PVI: 3\", \"where\": \"Results\"},\n  \"mortality_control\": {\"value\": \"5\", \"where\": \"Results\"},\n  \"hospital_los_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"hospital_los_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"time_to_flatus_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"time_to_flatus_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"time_to_oral_intake_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"time_to_oral_intake_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"time_to_defecation_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"time_to_defecation_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"postop_ileus_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"postop_ileus_control\": {\"value\": \"NR\", \"where\": \"NR\"}\n}",
+ "prompt_tokens": 6537,
+ "tokens": 730,
+ "finish": "stop",
+ "dt": 74.55,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "52fe49f35c6a1847b4c0608a528ffe36c83b383669e90721016721ef08906fad"
+}

@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen27q2",
+ "tag": "smtek/Qwen3.8-27B:Q2_K_XL",
+ "ancora": "a2",
+ "ficha": "v1",
+ "ensaio": "PMC5329646",
+ "replica": 2,
+ "conteudo": "{\n \"study\": \"Saslow et al 2021\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"United States\",\n \"duration\": \"32 weeks\",\n \"n_randomized_total\": \"25\",\n \"experimental_arm\": {\n  \"label\": \"Intervention group (very low-carbohydrate ketogenic diet and lifestyle recommendations)\",\n  \"intervention_description\": \"Online intervention based on ad libitum very low-carbohydrate ketogenic diet with lifestyle factors (physical activity, sleep, positive affect, mindfulness)\",\n  \"n_randomized\": \"12\",\n  \"n_analyzed\": \"11\",\n  \"hba1c_change_mean\": \"-0.8\",\n  \"hba1c_change_dispersion\": \"-1.1 to -0.6\",\n  \"hba1c_change_dispersion_type\": \"CI95: -1.1 to -0.6\",\n  \"hba1c_baseline_mean\": \"5.8\",\n  \"hba1c_baseline_sd\": \"0.4\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"Control group (American Diabetes Associations’ “Create Your Plate” diet)\",\n  \"intervention_description\": \"Online diet program based around a plate method diet (low-fat, emphasizes green vegetables, lean protein, limited starchy/sweet foods)\",\n  \"n_randomized\": \"13\",\n  \"n_analyzed\": \"8\",\n  \"hba1c_change_mean\": \"-0.3\",\n  \"hba1c_change_dispersion\": \"-0.6 to 0.0\",\n  \"hba1c_change_dispersion_type\": \"CI95: -0.6 to 0.0\",\n  \"hba1c_baseline_mean\": \"7.6\",\n  \"hba1c_baseline_sd\": \"0.3\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}",
+ "prompt_tokens": 11755,
+ "tokens": 466,
+ "finish": "stop",
+ "dt": 52.17,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "bc1c79fa1019af8ea5451428eeb1dd5bacbc28ce3ea268ab940bb4f7cb69c866"
+}

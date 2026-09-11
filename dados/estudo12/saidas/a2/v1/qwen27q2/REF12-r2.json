@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen27q2",
+ "tag": "smtek/Qwen3.8-27B:Q2_K_XL",
+ "ancora": "a2",
+ "ficha": "v1",
+ "ensaio": "REF12",
+ "replica": 2,
+ "conteudo": "{\n \"study\": \"Krogh et al 2021\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Denmark\",\n \"duration\": \"6 weeks\",\n \"n_randomized_total\": \"63\",\n \"experimental_arm\": {\n  \"label\": \"CRHP diet\",\n  \"intervention_description\": \"Carbohydrate-reduced high-protein diet (E%: CH30/P30/F40) with energy restriction aiming at ~6% weight loss\",\n  \"n_randomized\": \"34\",\n  \"n_analyzed\": \"34\",\n  \"hba1c_change_mean\": \"-0.83\",\n  \"hba1c_change_dispersion\": \"0.38\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"8.09\",\n  \"hba1c_baseline_sd\": \"0.77\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"CD diet\",\n  \"intervention_description\": \"Conventional diabetes diet (E%: CH50/P17/F33) with energy restriction aiming at ~6% weight loss\",\n  \"n_randomized\": \"33\",\n  \"n_analyzed\": \"33\",\n  \"hba1c_change_mean\": \"-0.56\",\n  \"hba1c_change_dispersion\": \"0.37\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"7.40\",\n  \"hba1c_baseline_sd\": \"0.70\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}",
+ "prompt_tokens": 12770,
+ "tokens": 425,
+ "finish": "stop",
+ "dt": 47.38,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "43a2a5f57d7466c9966d3754848590434c5f6fb6c55a1c2c288c791dc8615cea"
+}

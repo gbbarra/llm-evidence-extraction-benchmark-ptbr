@@ -1,0 +1,16 @@
+{
+ "modelo": "gemma12",
+ "tag": "gemma4:12b",
+ "ancora": "a2",
+ "ficha": "v1",
+ "ensaio": "REF12",
+ "replica": 1,
+ "conteudo": "```json\n{\n \"study\": \"Vriese et al. (Note: The text provided does not state the first author's name, but the study is titled regarding CRHP vs CD in type 2 diabetes. Based on the provided text content, a placeholder or search would normally identify the author. Based strictly on the provided text, author is not explicitly named in the header, but the study is identified as a 6-week CRHP vs CD trial.)\",\n \"design\": \"parallel 2-arm\",\n \"country\": \"Denmark\",\n \"duration\": \"6 weeks\",\n \"n_randomized_total\": \"72\",\n \"experimental_arm\": {\n  \"label\": \"CRHP\",\n  \"intervention_description\": \"carbohydrate-reduced high-protein diet (CRHP, percentage of total energy intake [E%]: CH30/P30/F40)\",\n  \"n_randomized\": \"36\",\n  \"n_analyzed\": \"34\",\n  \"hba1c_change_mean\": \"-0.83\",\n  \"hba1c_change_dispersion\": \"0.38\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"8.09\",\n  \"hba1c_baseline_sd\": \"0.77\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n },\n \"control_arm\": {\n  \"label\": \"CD\",\n  \"intervention_description\": \"conventional diabetes diet (CD, E%: CH50/P17/F33)\",\n  \"n_randomized\": \"36\",\n  \"n_analyzed\": \"33\",\n  \"hba1c_change_mean\": \"-0.56\",\n  \"hba1c_change_dispersion\": \"0.37\",\n  \"hba1c_change_dispersion_type\": \"SD\",\n  \"hba1c_baseline_mean\": \"7.40\",\n  \"hba1c_baseline_sd\": \"0.70\",\n  \"hba1c_final_mean\": \"NR\",\n  \"hba1c_final_sd\": \"NR\"\n }\n}\n```",
+ "prompt_tokens": 12732,
+ "tokens": 537,
+ "finish": "stop",
+ "dt": 250.9,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "43a2a5f57d7466c9966d3754848590434c5f6fb6c55a1c2c288c791dc8615cea"
+}

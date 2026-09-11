@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen35",
+ "tag": "qwen3.5:9b",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "kirov2001",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"Infusion of methylene blue in human septic shock: A pilot, randomized, controlled study\", \"where\": \"Title\"},\n  \"design\": {\"value\": \"Prospective, randomized, controlled, open-label, pilot study\", \"where\": \"Objective\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"MB group\", \"where\": \"Design\"},\n      \"intervention\": {\"value\": \"Methylene blue (MB)\", \"where\": \"Design\"},\n      \"n_randomized\": {\"value\": \"10\", \"where\": \"Design\"},\n      \"n_analyzed\": {\"value\": \"NR\", \"where\": \"Results\"}\n    },\n    {\n      \"label\": {\"value\": \"Control group\", \"where\": \"Design\"},\n      \"intervention\": {\"value\": \"Isotonic saline\", \"where\": \"Design\"},\n      \"n_randomized\": {\"value\": \"10\", \"where\": \"Design\"},\n      \"n_analyzed\": {\"value\": \"NR\", \"where\": \"Results\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"MB group\", \"where\": \"Table 5\"},\n      \"timepoint\": {\"value\": \"day 28\", \"where\": \"MATERIALS AND METHODS\"},\n      \"deaths\": {\"value\": \"NR\", \"where\": \"Table 5\"},\n      \"n\": {\"value\": \"NR\", \"where\": \"Table 5\"},\n      \"deaths_percent\": {\"value\": \"NR\", \"where\": \"Table 5\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"Control group\", \"where\": \"Table 5\"},\n      \"timepoint\": {\"value\": \"day 28\", \"where\": \"MATERIALS AND METHODS\"},\n      \"deaths\": {\"value\": \"NR\", \"where\": \"Table 5\"},\n      \"n\": {\"value\": \"NR\", \"where\": \"Table 5\"},\n      \"deaths_percent\": {\"value\": \"NR\", \"where\": \"Table 5\"}\n    }\n  ]\n}",
+ "prompt_tokens": 17760,
+ "tokens": 477,
+ "finish": "stop",
+ "dt": 40.1,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "f041924959c1f3cf4ce7aff01c1ec48b1f42709f9a02b7016c205a44f388760e"
+}

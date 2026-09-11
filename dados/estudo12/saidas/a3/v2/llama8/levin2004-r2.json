@@ -1,0 +1,16 @@
+{
+ "modelo": "llama8",
+ "tag": "llama3.1:8b",
+ "ancora": "a3",
+ "ficha": "v2",
+ "ensaio": "levin2004",
+ "replica": 2,
+ "conteudo": "{\n  \"study\": {\"value\": \"Methylene Blue Reduces Mortality and Morbidity in Vasoplegic Patients After Cardiac Surgery\", \"where\": \"Abstract\"},\n  \"design\": {\"value\": \"Randomized controlled trial\", \"where\": \"Abstract\"},\n  \"arms\": [\n    {\n      \"label\": {\"value\": \"Control\", \"where\": \"Results\"},\n      \"intervention\": {\"value\": \"Placebo\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"31\", \"where\": \"Methods\", \"quote\": \"31 patients were given the placebo\"},\n      \"n_analyzed\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n    },\n    {\n      \"label\": {\"value\": \"Methylene Blue\", \"where\": \"Results\"},\n      \"intervention\": {\"value\": \"1.5 mg/kg methylene blue\", \"where\": \"Methods\"},\n      \"n_randomized\": {\"value\": \"31\", \"where\": \"Methods\", \"quote\": \"31 patients were given the placebo\"},\n      \"n_analyzed\": {\"value\": \"NR\", \"where\": \"\", \"quote\": \"\"}\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\"value\": \"Control\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"At hospital\", \"where\": \"Results\", \"quote\": \"6 of these patients were in the VS population (10.7%) versus 21 patients in the nonvasoplegic group (3.6%; p value < 0.02)\"},\n      \"deaths\": {\"value\": \"21\", \"where\": \"Results\", \"quote\": \"21 patients in the nonvasoplegic group\"},\n      \"n\": {\"value\": \"582\", \"where\": \"Results\", \"quote\": \"582 patients\"},\n      \"deaths_percent\": {\"value\": \"3.6%\", \"where\": \"Results\", \"quote\": \"3.6% or 21 of 582 patients\"}\n    },\n    {\n      \"arm_label\": {\"value\": \"Methylene Blue\", \"where\": \"\"},\n      \"timepoint\": {\"value\": \"At hospital\", \"where\": \"Results\", \"quote\": \"The 6 deceased patients were in the placebo group (19.4%)\"},\n      \"deaths\": {\"value\": \"0\", \"where\": \"Results\", \"quote\": \"There were no deaths in those treated with MB\"},\n      \"n\": {\"value\": \"31\", \"where\": \"Results\", \"quote\": \"31 patients\"},\n      \"deaths_percent\": {\"value\": \"0%\", \"where\": \"Results\", \"quote\": \"0% or 0 of 31 patients\"}\n    }\n  ]\n}",
+ "prompt_tokens": 6223,
+ "tokens": 571,
+ "finish": "stop",
+ "dt": 42.08,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "b7bbd19fff105fe51612350ad5f88e8d97324210a5efebab2dca812d331e7f36"
+}

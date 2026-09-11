@@ -1,0 +1,16 @@
+{
+ "modelo": "gemma12",
+ "tag": "gemma4:12b",
+ "ancora": "a3",
+ "ficha": "v1",
+ "ensaio": "luissilva2024",
+ "replica": 1,
+ "conteudo": "```json\n{\n  \"study\": {\n    \"value\": \"Methylene blue therapy in addition to standard treatment for acute-phase septic shock: a pilot randomized controlled trial\",\n    \"where\": \"Title\"\n  },\n  \"design\": {\n    \"value\": \"pilot randomized clinical trial\",\n    \"where\": \"Methods\"\n  },\n  \"arms\": [\n    {\n      \"label\": {\n        \"value\": \"Control group\",\n        \"where\": \"Methods\"\n      },\n      \"intervention\": {\n        \"value\": \"standard treatment, consisting of fluid replacement, vasopressors, and antibiotic therapy\",\n        \"where\": \"Methods\"\n      },\n      \"n_randomized\": {\n        \"value\": \"26\",\n        \"where\": \"Methods\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"26\",\n        \"where\": \"Results\"\n      }\n    },\n    {\n      \"label\": {\n        \"value\": \"MB group\",\n        \"where\": \"Methods\"\n      },\n      \"intervention\": {\n        \"value\": \"standard treatment, including fluid replacement, vasopressor drugs (noradrenaline and vasopressin), hydrocortisone (200 mg/day) and antibiotics within the first hour; and MB at a dose of 3 mg/kg in 20 min and then 0.5 mg/kg/h for 48 h\",\n        \"where\": \"Methods\"\n      },\n      \"n_randomized\": {\n        \"value\": \"19\",\n        \"where\": \"Methods\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"19\",\n        \"where\": \"Results\"\n      }\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\n        \"value\": \"Control group\",\n        \"where\": \"Methods\"\n      },\n      \"timepoint\": {\n        \"value\": \"30_days\",\n        \"where\": \"Table 1\"\n      },\n      \"deaths\": {\n        \"value\": \"14\",\n        \"where\": \"Table 1\"\n      },\n      \"n\": {\n        \"value\": \"26\",\n        \"where\": \"Table 1\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"54%\",\n        \"where\": \"Table 1\"\n      }\n    },\n    {\n      \"arm_label\": {\n        \"value\": \"MB group\",\n        \"where\": \"Methods\"\n      },\n      \"timepoint\": {\n        \"value\": \"30_days\",\n        \"where\": \"Table 1\"\n      },\n      \"deaths\": {\n        \"value\": \"9\",\n        \"where\": \"Table 1\"\n      },\n      \"n\": {\n        \"value\": \"19\",\n        \"where\": \"Table 1\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"47%\",\n        \"where\": \"Table 1\"\n      }\n    }\n  ]\n}\n```",
+ "prompt_tokens": 12308,
+ "tokens": 712,
+ "finish": "stop",
+ "dt": 266.29,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "e4e9a69ffea16deabc62c7cedeb2486d967a83bccfbee6986d4a40adeaf52845"
+}

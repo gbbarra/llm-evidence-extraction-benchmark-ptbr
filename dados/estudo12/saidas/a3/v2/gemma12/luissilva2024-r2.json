@@ -1,0 +1,16 @@
+{
+ "modelo": "gemma12",
+ "tag": "gemma4:12b",
+ "ancora": "a3",
+ "ficha": "v2",
+ "ensaio": "luissilva2024",
+ "replica": 2,
+ "conteudo": "```json\n{\n  \"study\": {\n    \"value\": \"Methylene blue therapy in addition to standard treatment for acute-phase septic shock: a pilot randomized controlled trial\",\n    \"where\": \"\"\n  },\n  \"design\": {\n    \"value\": \"pilot randomized clinical trial\",\n    \"where\": \"Materials and methods\"\n  },\n  \"arms\": [\n    {\n      \"label\": {\n        \"value\": \"Control group\",\n        \"where\": \"Results\"\n      },\n      \"intervention\": {\n        \"value\": \"standard treatment\",\n        \"where\": \"Abstract\"\n      },\n      \"n_randomized\": {\n        \"value\": \"26\",\n        \"where\": \"Results\",\n        \"quote\": \"26 patients were allocated to the Control group\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"26\",\n        \"where\": \"Results\",\n        \"quote\": \"26 patients were allocated to the Control group\"\n      }\n    },\n    {\n      \"label\": {\n        \"value\": \"MB group\",\n        \"where\": \"Results\"\n      },\n      \"intervention\": {\n        \"value\": \"MB therapy\",\n        \"where\": \"Results\"\n      },\n      \"n_randomized\": {\n        \"value\": \"19\",\n        \"where\": \"Results\",\n        \"quote\": \"19 were randomized to the MB group\"\n      },\n      \"n_analyzed\": {\n        \"value\": \"19\",\n        \"where\": \"Results\",\n        \"quote\": \"19 were randomized to the MB group\"\n      }\n    }\n  ],\n  \"mortality\": [\n    {\n      \"arm_label\": {\n        \"value\": \"Control group\",\n        \"where\": \"\"\n      },\n      \"timepoint\": {\n        \"value\": \"30_days\",\n        \"where\": \"Table 1\",\n        \"quote\": \"30_days outcome (Death)\"\n      },\n      \"deaths\": {\n        \"value\": \"14\",\n        \"where\": \"Table 1\",\n        \"quote\": \"14 (54)\"\n      },\n      \"n\": {\n        \"value\": \"26\",\n        \"where\": \"Table 1\",\n        \"quote\": \"Control (n = 26)\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"54\",\n        \"where\": \"Table 1\",\n        \"quote\": \"14 (54)\"\n      }\n    },\n    {\n      \"arm_label\": {\n        \"value\": \"MB group\",\n        \"where\": \"\"\n      },\n      \"timepoint\": {\n        \"value\": \"30_days\",\n        \"where\": \"Table 1\",\n        \"quote\": \"30_days outcome (Death)\"\n      },\n      \"deaths\": {\n        \"value\": \"9\",\n        \"where\": \"Table 1\",\n        \"quote\": \"9 (47)\"\n      },\n      \"n\": {\n        \"value\": \"19\",\n        \"where\": \"Table 1\",\n        \"quote\": \"MB (n = 19)\"\n      },\n      \"deaths_percent\": {\n        \"value\": \"47\",\n        \"where\": \"Table 1\",\n        \"quote\": \"9 (47)\"\n      }\n    }\n  ]\n}\n```",
+ "prompt_tokens": 12447,
+ "tokens": 792,
+ "finish": "stop",
+ "dt": 107.55,
+ "num_ctx": 24576,
+ "num_predict": 8000,
+ "sha_prompt": "e5719b5b6e969d5d365a8f54fd275d0e8ce7af413a213d48c331788d7b881dca"
+}

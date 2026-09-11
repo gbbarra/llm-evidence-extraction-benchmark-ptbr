@@ -34,3 +34,6 @@ dados/estudo11/primarios/
 # publico; corpus e mapa vivem locais e se regeneram com e12-perturbar-a3.py.
 corpus/estudo12/original/
 corpus/estudo12/perturbados/
+
+# a trava de instancia unica do harness e estado da maquina, nao registro da campanha
+dados/*/harness.trava

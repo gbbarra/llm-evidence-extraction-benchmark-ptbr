@@ -1,0 +1,16 @@
+{
+ "modelo": "qwen27q2",
+ "tag": "smtek/Qwen3.8-27B:Q2_K_XL",
+ "ancora": "a1",
+ "ficha": "v1",
+ "ensaio": "REF33",
+ "replica": 1,
+ "conteudo": "{\n  \"n_randomized_gdft\": {\"value\": \"224\", \"where\": \"Results\"},\n  \"n_randomized_control\": {\"value\": \"226\", \"where\": \"Results\"},\n  \"surgery_type\": {\"value\": \"major abdominal, urological, gynaecological, or orthopaedic surgery\", \"where\": \"Methods\"},\n  \"laparoscopy_gdft\": {\"value\": \"105 (50.2%)\", \"where\": \"Table 2\"},\n  \"laparoscopy_control\": {\"value\": \"99 (51.7%)\", \"where\": \"Table 2\"},\n  \"asa_gdft\": {\"value\": \"1: 14 (6.7%), 2: 134 (58.4%), 3: 73 (34.9%)\", \"where\": \"Table 1\"},\n  \"asa_control\": {\"value\": \"1: 35 (16.6%), 2: 116 (64.4%), 3: 40 (19.0%)\", \"where\": \"Table 1\"},\n  \"total_fluid_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"total_fluid_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"crystalloid_gdft\": {\"value\": \"1480 (1000e2000) ml intraoperative; 1800 (0 e2790) ml postoperative\", \"where\": \"Table 3\"},\n  \"crystalloid_control\": {\"value\": \"1440 (900e2000) ml intraoperative; 1020 (0 e2810) ml postoperative\", \"where\": \"Table 3\"},\n  \"colloid_gdft\": {\"value\": \"500 (0 e800) ml intraoperative; 0 (0 e0) ml postoperative\", \"where\": \"Table 3\"},\n  \"colloid_control\": {\"value\": \"500 (0 e950) ml intraoperative; 0 (0 e0) ml postoperative\", \"where\": \"Table 3\"},\n  \"blood_loss_gdft\": {\"value\": \"200 (72 e300) ml\", \"where\": \"Table 3\"},\n  \"blood_loss_control\": {\"value\": \"300 (196 e500) ml\", \"where\": \"Table 3\"},\n  \"inotrope_use\": {\"value\": \"GDHT: 2 (0.9%); Control: 1 (0.5%)\", \"where\": \"Table 2\"},\n  \"morbidity_events_gdft\": {\"value\": \"18 (8.6%)\", \"where\": \"Results\"},\n  \"morbidity_events_control\": {\"value\": \"35 (16.6%)\", \"where\": \"Results\"},\n  \"mortality_gdft\": {\"value\": \"10 (4.8%)\", \"where\": \"Table 2\"},\n  \"mortality_control\": {\"value\": \"9 (4.5%)\", \"where\": \"Table 2\"},\n  \"hospital_los_gdft\": {\"value\": \"5 (4 e10) days\", \"where\": \"Table 3\"},\n  \"hospital_los_control\": {\"value\": \"7 (5 e12) days\", \"where\": \"Table 3\"},\n  \"time_to_flatus_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"time_to_flatus_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"time_to_oral_intake_gdft\": {\"value\": \"1 (1 e3) days\", \"where\": \"Table 3\"},\n  \"time_to_oral_intake_control\": {\"value\": \"2 (1 e4) days\", \"where\": \"Table 3\"},\n  \"time_to_defecation_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"time_to_defecation_control\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"postop_ileus_gdft\": {\"value\": \"NR\", \"where\": \"NR\"},\n  \"postop_ileus_control\": {\"value\": \"NR\", \"where\": \"NR\"}\n}",
+ "prompt_tokens": 10450,
+ "tokens": 983,
+ "finish": "stop",
+ "dt": 258.11,
+ "num_ctx": 24576,
+ "num_predict": 4000,
+ "sha_prompt": "8b7217b9f2fc7ddd94af742703faade47e9f461fcef1a4e44e59498ac2dd71a2"
+}
