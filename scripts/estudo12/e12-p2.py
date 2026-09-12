@@ -291,9 +291,29 @@ def lente_a2(ficha_pt, tid):
     return json.loads(txt)
 
 
+def desembrulha_v2(js):
+    """A ficha v2 com cada objeto {value, where, quote} reduzido ao seu valor, nos braços e no topo.
+    2026-09-12: a ordem importa. O conversor congelado (`e7d.braco_pt`) normaliza o TIPO de dispersão
+    com str() antes de qualquer desembrulho; com o objeto da v2 o rótulo virava "{'value': 'CI95…'}",
+    a rota determinística nunca via "IC95"/"SE", a dispersão de tipo IC saía None (contada como
+    omissão do modelo) e a de tipo EP era usada como DP (contada como deslize do modelo). Registro e
+    medida: dados/estudo12/p2/artefato-v2-tipo.md. O desembrulho agora precede a conversão; a v1,
+    que entrega strings, passa intacta."""
+    out = {}
+    for k, v in (js or {}).items():
+        if isinstance(v, dict) and "value" in v:
+            out[k] = v.get("value")
+        elif isinstance(v, dict):
+            out[k] = {kk: (vv.get("value") if isinstance(vv, dict) and "value" in vv else vv)
+                      for kk, vv in v.items()}
+        else:
+            out[k] = v
+    return out
+
+
 def celulas_a2(js, tid, com_lente):
     """As 7 células do modelo: seis roteadas pela rota determinística, e o n total lido direto."""
-    f = e7d.ficha_ma2_pt(js)
+    f = e7d.ficha_ma2_pt(desembrulha_v2(js))
     # A ficha v2 traz cada célula de braço como {value, where, quote}, e o conversor congelado
     # (`braco_pt`) copia o dicionário inteiro -- a rota determinística recebe um dict e devolve
     # None nas seis células. Medido em 11/09/2026: 7/49 em cinco modelos, uniforme, que era o

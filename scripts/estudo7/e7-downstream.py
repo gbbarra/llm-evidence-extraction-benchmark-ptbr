@@ -104,7 +104,14 @@ def braco_pt(b):
     out = {}
     for en, pt in MA2_ARM_EN2PT.items():
         if en in (b or {}):
-            out[pt] = b[en]
+            v = b[en]
+            # 2026-09-12: a v2 sheet delivers every data field as {"value","where","quote"}. Copying
+            # the object whole, and stringifying the dispersion-type object in particular, hid the
+            # "CI95"/"SE" label from the deterministic route (Study 12 grader artifact,
+            # dados/estudo12/p2/artefato-v2-tipo.md). Unwrap to the value; v1 strings pass through.
+            if isinstance(v, dict) and ("value" in v or "valor" in v):
+                v = v.get("value", v.get("valor", ""))
+            out[pt] = v
     if "hba1c_mudanca_tipo_dispersao" in out:
         out["hba1c_mudanca_tipo_dispersao"] = tipo_pt(out["hba1c_mudanca_tipo_dispersao"])
     return out
