@@ -42,12 +42,31 @@ def eh_nr(x):
     return x is None or str(x).strip().upper() in ("NR", "NA", "N/A", "", "NONE")
 
 
+def _numeros_ic(s):
+    """Numbers of a CI field: Unicode minus and dashes normalized to '-', the 'IC95'/'CI95'/'95% CI' token
+    removed first (the '95' must never be a bound — the judges' lesson)."""
+    s = str(s or "").replace("−", "-").replace("–", "-").replace("—", "-")
+    s = re.sub(r"\b(IC|CI)\s*95\b", " ", s, flags=re.I)
+    s = re.sub(r"95\s*%\s*(IC|CI)\b", " ", s, flags=re.I)
+    return [float(x) for x in re.findall(r"-?\d+(?:\.\d+)?", s)]
+
+
 def bounds_ic(braco):
-    """CI bounds = the LAST TWO numbers across tipo+dispersao (the '95' of
-    'IC95' must never be a bound — the judges' lesson)."""
-    fonte = str(braco.get("hba1c_mudanca_tipo_dispersao", "")) + " " + str(braco.get("hba1c_mudanca_dispersao", ""))
-    ms = re.findall(r"-?\d+(?:\.\d+)?", fonte)
-    return (float(ms[-2]), float(ms[-1])) if len(ms) >= 2 else None
+    """CI bounds: the pair in the dispersion field when it carries two numbers, else the pair in the type
+    field; returned in ascending order. 2026-09-12: the former rule ('the last two numbers across
+    tipo+dispersao', sign-sensitive) failed on a Unicode minus (the sign was dropped and the width came
+    out negative) and on a type field that repeats the value (the last two numbers were the upper bound
+    and the repeated value) — grader-side artifacts of Study 12, dados/estudo12/p2/artefato-v2-tipo.md."""
+    d = _numeros_ic(braco.get("hba1c_mudanca_dispersao", ""))
+    t = _numeros_ic(braco.get("hba1c_mudanca_tipo_dispersao", ""))
+    par = d[-2:] if len(d) >= 2 else (t[-2:] if len(t) >= 2 else None)
+    if par is None:
+        juntos = t + d
+        par = juntos[-2:] if len(juntos) >= 2 else None
+    if par is None:
+        return None
+    a, b = par
+    return (min(a, b), max(a, b))
 
 
 def braco_deterministico(braco, julgamentos, chave_braco):

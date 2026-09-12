@@ -1,6 +1,6 @@
 # Estudo 12 — Fases 2 e 3, o resumo
 
-Gerado em 2026-09-11 02:58 sobre dados\estudo12\saidas. Nenhum modelo chamado. Cada célula divergente está em `adjudicacao-pendente.md`.
+Gerado em 2026-09-12 12:01 sobre dados\estudo12\saidas. Nenhum modelo chamado. Cada célula divergente está em `adjudicacao-pendente.md`.
 
 ## Camada 2 (as constantes de referência, reproduzidas aqui)
 
@@ -30,17 +30,17 @@ Gerado em 2026-09-11 02:58 sobre dados\estudo12\saidas. Nenhum modelo chamado. C
 | modelo | ficha | células | estabilidade r1·r2 | ilegíveis | recitação | pool |
 |---|---|---|---|---|---|---|
 | gemma12 | v1 | 33/49 (67.3%) | 41/49 (83.7%) | 0 | — | lente MD -0.27 [-0.38, -0.17] · 7/7 |
-| gemma12 | v2 | 31/49 (63.3%) | 41/49 (83.7%) | 0 | — | lente MD -0.21 [-0.23, -0.19] · 4/7 |
+| gemma12 | v2 | 34/49 (69.4%) | 45/49 (91.8%) | 0 | — | lente MD -0.24 [-0.32, -0.17] · 7/7 |
 | qwen14 | v1 | 22/49 (44.9%) | 46/49 (93.9%) | 0 | — | lente MD -0.42 [-0.91, 0.06] · 7/7 |
-| qwen14 | v2 | 20/49 (40.8%) | 37/49 (75.5%) | 0 | — | lente MD -0.22 [-0.59, 0.15] · 3/7 |
-| llama8 | v1 | 23/49 (46.9%) | 34/49 (69.4%) | 0 | — | lente MD -0.63 [-1.03, -0.24] · 5/7 |
-| llama8 | v2 | 15/42 (35.7%) | 12/14 (85.7%) | 1 | — | lente MD -0.58 [-0.85, -0.31] · 5/7 |
-| qwen35 | v1 | 28/49 (57.1%) | 35/49 (71.4%) | 0 | — | lente MD -0.63 [-1.07, -0.19] · 5/7 |
-| qwen35 | v2 | 23/49 (46.9%) | 25/42 (59.5%) | 0 | — | lente MD -0.88 [-2.14, 0.39] · 3/7 |
+| qwen14 | v2 | 21/49 (42.9%) | 40/49 (81.6%) | 0 | — | lente MD -0.27 [-0.45, -0.09] · 5/7 |
+| llama8 | v1 | 23/49 (46.9%) | 34/49 (69.4%) | 0 | — | lente MD -0.63 [-1.02, -0.25] · 5/7 |
+| llama8 | v2 | 15/42 (35.7%) | 11/14 (78.6%) | 1 | — | lente MD -0.51 [-0.89, -0.12] · 6/7 |
+| qwen35 | v1 | 28/49 (57.1%) | 36/49 (73.5%) | 0 | — | lente MD -0.63 [-1.07, -0.19] · 5/7 |
+| qwen35 | v2 | 28/49 (57.1%) | 30/42 (71.4%) | 0 | — | lente MD -0.68 [-1.22, -0.14] · 5/7 |
 | deepseek14 | v1 | 24/49 (49.0%) | 35/49 (71.4%) | 0 | — | lente MD -0.46 [-0.66, -0.25] · 5/7 |
-| deepseek14 | v2 | 23/49 (46.9%) | 30/49 (61.2%) | 0 | — | lente MD -0.52 [-0.83, -0.21] · 2/7 |
+| deepseek14 | v2 | 23/49 (46.9%) | 32/49 (65.3%) | 0 | — | lente MD -0.22 [-0.57, 0.13] · 5/7 |
 | qwen27q2 | v1 | 35/49 (71.4%) | 49/49 (100.0%) | 0 | — | lente MD -0.25 [-0.37, -0.12] · 7/7 |
-| qwen27q2 | v2 | 31/49 (63.3%) | 40/49 (81.6%) | 0 | — | lente MD -0.2 [-0.34, -0.05] · 4/7 |
+| qwen27q2 | v2 | 36/49 (73.5%) | 43/49 (87.8%) | 0 | — | lente MD -0.25 [-0.37, -0.13] · 7/7 |
 
 ## Âncora 3 — células contra a camada 2 (32)
 
@@ -81,10 +81,10 @@ Falha na leitura primária em: qwen14/v2, qwen35/v2, deepseek14/v2 — em todos 
 ### H12.3 — a ficha v2, na escala do elenco
 
 - delta médio v2−v1 nas 124 células da âncora 1: **-6.5** (critério ≥ −4 → falha); por modelo: gemma12 -2, qwen14 -19, llama8 -6, qwen35 -4, deepseek14 -7, qwen27q2 -1
-- v2 mais perto da camada 2 em ≥4 de 6 modelos: 0 de 3 âncoras (critério ≥ 2 → falha)
+- v2 mais perto da camada 2 em ≥4 de 6 modelos: 1 de 3 âncoras (critério ≥ 2 → falha)
 
   - a1: gemma12 v1 0.779 · v2 0.779, qwen14 v1 0.779 · v2 0.779, llama8 v1 0.738 · v2 0.767 ✓, qwen35 v1 0.779 · v2 0.779, deepseek14 v1 0.788 · v2 0.769, qwen27q2 v1 0.787 · v2 0.779 · alvo 0.787
-  - a2: gemma12 v1 -0.27 · v2 -0.21, qwen14 v1 -0.42 · v2 -0.22 ✓, llama8 v1 -0.63 · v2 -0.58 ✓, qwen35 v1 -0.63 · v2 -0.88, deepseek14 v1 -0.46 · v2 -0.52, qwen27q2 v1 -0.25 · v2 -0.2 · alvo -0.24
+  - a2: gemma12 v1 -0.27 · v2 -0.24 ✓, qwen14 v1 -0.42 · v2 -0.27 ✓, llama8 v1 -0.63 · v2 -0.51 ✓, qwen35 v1 -0.63 · v2 -0.68, deepseek14 v1 -0.46 · v2 -0.22 ✓, qwen27q2 v1 -0.25 · v2 -0.25 · alvo -0.24
   - a3: gemma12 v1 0.519 · v2 0.418, qwen14 v1 0.484 · v2 0.481, llama8 v1 0.496 · v2 0.517, qwen35 v1 0.46 · v2 0.45, deepseek14 v1 0.484 · v2 0.548, qwen27q2 v1 0.493 · v2 0.493 · alvo 0.484
 
 ### H12.5 — o controle de contexto

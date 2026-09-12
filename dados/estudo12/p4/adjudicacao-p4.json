@@ -1,10 +1,20 @@
 {
- "gerado": "2026-09-11 21:49:29",
+ "gerado": "2026-09-12 12:04:10",
  "fase": "P4",
  "fonte_p2": "C:\\Users\\gbbarra\\Documents\\localtts\\extrai\\dados\\estudo12\\p2\\avaliacao-p2.json",
  "leitor": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
- "vereditos_do_leitor": 85,
+ "vereditos_do_leitor": 89,
  "vereditos_nao_usados": [
+  {
+   "anchor": "a2",
+   "trial": "PMC5329646",
+   "field": "exp_dispersao",
+   "model_value": "0.8",
+   "class": "row-slip",
+   "verdict": "reading-slip",
+   "evidence": "0.8 is the arm's 32-week change mean (EMM −0.8%), written in the dispersion slot.",
+   "quote": "intervention group reduced their HbA1c levels more (estimated marginal mean [EMM] –0.8%, 95% CI –1.1% to –0.6%)"
+  },
   {
    "anchor": "a2",
    "trial": "PMC6024764",
@@ -261,20 +271,19 @@
    }
   },
   "a2·gemma12·v2": {
-   "mechanical": 31,
+   "mechanical": 34,
    "graded": 49,
-   "adjudicated": 31,
+   "adjudicated": 34,
    "flips": 0,
-   "divergents": 18,
-   "omissions": 6,
-   "faithful": 8,
-   "slips": 4,
+   "divergents": 15,
+   "omissions": 0,
+   "faithful": 12,
+   "slips": 3,
    "residue": 0,
    "classes": {
-    "omission": 6,
+    "derived-own-n": 4,
     "layer-choice": 8,
-    "dispersion-type": 2,
-    "row-slip": 2
+    "row-slip": 3
    }
   },
   "a2·qwen14·v1": {
@@ -298,21 +307,21 @@
    }
   },
   "a2·qwen14·v2": {
-   "mechanical": 20,
+   "mechanical": 21,
    "graded": 49,
-   "adjudicated": 21,
+   "adjudicated": 22,
    "flips": 1,
-   "divergents": 29,
-   "omissions": 8,
-   "faithful": 13,
-   "slips": 7,
+   "divergents": 28,
+   "omissions": 3,
+   "faithful": 18,
+   "slips": 6,
    "residue": 0,
    "classes": {
-    "omission": 8,
+    "derived-own-n": 5,
     "layer-choice": 13,
-    "dispersion-type": 2,
     "arm-swap": 1,
-    "row-slip": 3,
+    "row-slip": 4,
+    "omission": 3,
     "derived-through-seal": 1,
     "unmatched": 1
    }
@@ -343,18 +352,17 @@
    "adjudicated": 16,
    "flips": 1,
    "divergents": 27,
-   "omissions": 2,
-   "faithful": 14,
-   "slips": 10,
+   "omissions": 0,
+   "faithful": 12,
+   "slips": 14,
    "residue": 0,
    "classes": {
     "row-slip": 5,
-    "dispersion-type": 4,
+    "unmatched": 3,
+    "dispersion-type": 6,
     "layer-choice": 10,
-    "omission": 2,
-    "unit": 4,
-    "derived-through-seal": 1,
-    "unmatched": 1
+    "unit": 2,
+    "derived-through-seal": 1
    }
   },
   "a2·qwen35·v1": {
@@ -368,31 +376,31 @@
    "slips": 10,
    "residue": 0,
    "classes": {
-    "row-slip": 7,
+    "row-slip": 8,
     "omission": 3,
-    "unmatched": 1,
     "dispersion-type": 2,
     "layer-choice": 6,
     "derived-through-seal": 2
    }
   },
   "a2·qwen35·v2": {
-   "mechanical": 23,
+   "mechanical": 28,
    "graded": 49,
-   "adjudicated": 25,
+   "adjudicated": 30,
    "flips": 2,
-   "divergents": 26,
-   "omissions": 8,
-   "faithful": 8,
-   "slips": 8,
+   "divergents": 21,
+   "omissions": 4,
+   "faithful": 11,
+   "slips": 4,
    "residue": 0,
    "classes": {
-    "dispersion-type": 6,
+    "derived-own-n": 3,
     "layer-choice": 6,
     "row-slip": 2,
-    "omission": 8,
     "unit": 2,
-    "derived-through-seal": 2
+    "omission": 4,
+    "derived-through-seal": 2,
+    "dispersion-type": 2
    }
   },
   "a2·deepseek14·v1": {
@@ -421,14 +429,15 @@
    "adjudicated": 24,
    "flips": 1,
    "divergents": 26,
-   "omissions": 11,
-   "faithful": 10,
-   "slips": 4,
+   "omissions": 6,
+   "faithful": 12,
+   "slips": 7,
    "residue": 0,
    "classes": {
-    "omission": 11,
+    "derived-own-n": 2,
     "layer-choice": 10,
-    "row-slip": 2,
+    "omission": 6,
+    "row-slip": 5,
     "unmatched": 2,
     "lookup-collision": 1
    }
@@ -450,19 +459,18 @@
    }
   },
   "a2·qwen27q2·v2": {
-   "mechanical": 31,
+   "mechanical": 36,
    "graded": 49,
-   "adjudicated": 31,
+   "adjudicated": 36,
    "flips": 0,
-   "divergents": 18,
-   "omissions": 6,
-   "faithful": 9,
-   "slips": 3,
+   "divergents": 13,
+   "omissions": 0,
+   "faithful": 12,
+   "slips": 1,
    "residue": 0,
    "classes": {
-    "omission": 6,
+    "derived-own-n": 3,
     "layer-choice": 9,
-    "dispersion-type": 2,
     "unmatched": 1
    }
   },
@@ -661,25 +669,25 @@
   },
   "gemma12·v2": {
    "p3": {
-    "md": -0.21,
+    "md": -0.24,
     "ic95": [
-     -0.23,
-     -0.19
+     -0.32,
+     -0.17
     ],
-    "tau2": 0.0,
-    "i2_pct": 0.0
+    "tau2": 0.0011,
+    "i2_pct": 7.7
    },
    "adjudicado": {
-    "md": -0.21,
+    "md": -0.24,
     "ic95": [
-     -0.23,
-     -0.19
+     -0.32,
+     -0.17
     ],
-    "tau2": 0.0,
-    "i2_pct": 0.0
+    "tau2": 0.0011,
+    "i2_pct": 7.7
    },
    "celulas_trocadas": 0,
-   "estudos": 4
+   "estudos": 7
   },
   "qwen14·v1": {
    "p3": {
@@ -705,43 +713,43 @@
   },
   "qwen14·v2": {
    "p3": {
-    "md": -0.22,
+    "md": -0.27,
     "ic95": [
-     -0.59,
-     0.15
+     -0.45,
+     -0.09
     ],
-    "tau2": 0.0784,
-    "i2_pct": 76.3
+    "tau2": 0.0229,
+    "i2_pct": 60.7
    },
    "adjudicado": {
-    "md": -0.22,
+    "md": -0.27,
     "ic95": [
-     -0.59,
-     0.15
+     -0.45,
+     -0.09
     ],
-    "tau2": 0.0784,
-    "i2_pct": 76.3
+    "tau2": 0.0229,
+    "i2_pct": 60.7
    },
    "celulas_trocadas": 1,
-   "estudos": 3
+   "estudos": 5
   },
   "llama8·v1": {
    "p3": {
     "md": -0.63,
     "ic95": [
-     -1.03,
-     -0.24
+     -1.02,
+     -0.25
     ],
-    "tau2": 0.1634,
+    "tau2": 0.1595,
     "i2_pct": 90.1
    },
    "adjudicado": {
     "md": -0.49,
     "ic95": [
-     -0.74,
+     -0.73,
      -0.25
     ],
-    "tau2": 0.0495,
+    "tau2": 0.0483,
     "i2_pct": 73.4
    },
    "celulas_trocadas": 1,
@@ -749,25 +757,25 @@
   },
   "llama8·v2": {
    "p3": {
-    "md": -0.58,
+    "md": -0.51,
     "ic95": [
-     -0.85,
-     -0.31
+     -0.89,
+     -0.12
     ],
-    "tau2": 0.0605,
-    "i2_pct": 94.7
+    "tau2": 0.1687,
+    "i2_pct": 91.2
    },
    "adjudicado": {
-    "md": -0.39,
+    "md": -0.34,
     "ic95": [
-     -0.57,
-     -0.21
+     -0.51,
+     -0.17
     ],
-    "tau2": 0.0228,
-    "i2_pct": 87.1
+    "tau2": 0.0203,
+    "i2_pct": 55.6
    },
    "celulas_trocadas": 1,
-   "estudos": 5
+   "estudos": 6
   },
   "qwen35·v1": {
    "p3": {
@@ -793,25 +801,25 @@
   },
   "qwen35·v2": {
    "p3": {
-    "md": -0.88,
+    "md": -0.68,
     "ic95": [
-     -2.14,
-     0.39
+     -1.22,
+     -0.14
     ],
-    "tau2": 1.2003,
-    "i2_pct": 98.2
+    "tau2": 0.3502,
+    "i2_pct": 96.2
    },
    "adjudicado": {
-    "md": -0.32,
+    "md": -0.31,
     "ic95": [
-     -0.54,
-     -0.09
+     -0.45,
+     -0.17
     ],
-    "tau2": 0.0203,
-    "i2_pct": 48.2
+    "tau2": 0.0091,
+    "i2_pct": 39.7
    },
    "celulas_trocadas": 2,
-   "estudos": 3
+   "estudos": 5
   },
   "deepseek14·v1": {
    "p3": {
@@ -837,25 +845,25 @@
   },
   "deepseek14·v2": {
    "p3": {
-    "md": -0.52,
+    "md": -0.22,
     "ic95": [
-     -0.83,
-     -0.21
+     -0.57,
+     0.13
     ],
-    "tau2": 0.0,
-    "i2_pct": 0.0
+    "tau2": 0.1313,
+    "i2_pct": 89.7
    },
    "adjudicado": {
-    "md": -0.52,
+    "md": -0.2,
     "ic95": [
-     -0.83,
-     -0.21
+     -0.6,
+     0.19
     ],
-    "tau2": 0.0,
-    "i2_pct": 0.0
+    "tau2": 0.174,
+    "i2_pct": 92.0
    },
    "celulas_trocadas": 1,
-   "estudos": 2
+   "estudos": 5
   },
   "qwen27q2·v1": {
    "p3": {
@@ -881,60 +889,60 @@
   },
   "qwen27q2·v2": {
    "p3": {
-    "md": -0.2,
+    "md": -0.25,
     "ic95": [
-     -0.34,
-     -0.05
+     -0.37,
+     -0.13
     ],
-    "tau2": 0.0096,
-    "i2_pct": 49.3
+    "tau2": 0.0099,
+    "i2_pct": 42.3
    },
    "adjudicado": {
-    "md": -0.2,
+    "md": -0.25,
     "ic95": [
-     -0.34,
-     -0.05
+     -0.37,
+     -0.13
     ],
-    "tau2": 0.0096,
-    "i2_pct": 49.3
+    "tau2": 0.0099,
+    "i2_pct": 42.3
    },
    "celulas_trocadas": 0,
-   "estudos": 4
+   "estudos": 7
   }
  },
  "hipoteses_releitura": [
   "- **H12.5** (context control): gemma12 anchor-1 v1 = 108/124 mechanical, 109/124 adjudicated, against the band 103 ± 4 → still outside (above); the Phase-2 reading stands: the context is declared a confounder.",
   "- **H12.3**, accuracy criterion under adjudicated scores: mean v2 − v1 on anchor 1 = **-6.8** cells (criterion ≥ −4): gemma12 -3, qwen14 -20, llama8 -6, qwen35 -4, deepseek14 -7, qwen27q2 -1 → fails, as in Phase 2.",
-  "- **H12.3**, estimate criterion on anchor 2 under adjudicated pools (v2 closer to −0.24 than v1): 4 of 6 models (gemma12 v1 -0.27 · v2 -0.21 ✓; qwen14 v1 -0.32 · v2 -0.22 ✓; llama8 v1 -0.49 · v2 -0.39 ✓; qwen35 v1 -0.38 · v2 -0.32 ✓; deepseek14 v1 -0.27 · v2 -0.52; qwen27q2 v1 -0.25 · v2 -0.2); the criterion needs ≥ 4 on ≥ 2 anchors, and anchors 1 and 3 are unchanged by adjudication → fails, as in Phase 2.",
+  "- **H12.3**, estimate criterion on anchor 2 under adjudicated pools (v2 closer to −0.24 than v1): 4 of 6 models (gemma12 v1 -0.27 · v2 -0.24 ✓; qwen14 v1 -0.32 · v2 -0.27 ✓; llama8 v1 -0.49 · v2 -0.34 ✓; qwen35 v1 -0.38 · v2 -0.31 ✓; deepseek14 v1 -0.27 · v2 -0.2; qwen27q2 v1 -0.25 · v2 -0.25); the criterion needs ≥ 4 on ≥ 2 anchors, and anchors 1 and 3 are unchanged by adjudication → fails, as in Phase 2.",
   "- **H12.1, H12.2, H12.4, H12.6**: no adjudicated cell touches anchor 3 or the parse gate; the Phase-2 readings stand (H12.2: no model reproduced an erratum; 4 of 6 read Aguilar 6/30 and 6 of 6 reduced Shaker to 15/60 on the v1 sheet)."
  ],
  "totais": {
-  "celulas": 633,
+  "celulas": 619,
   "residuos": 0,
   "chave_sob_julgamento": 39,
   "por_veredito": {
-   "faithful-different-encoding": 331,
+   "faithful-different-encoding": 346,
    "model-correct": 21,
-   "omission": 175,
-   "reading-slip": 106
+   "omission": 147,
+   "reading-slip": 105
   },
   "por_classe": {
    "summary": 78,
    "lookup-collision": 11,
    "layer-choice": 165,
    "re-encoding": 54,
-   "omission": 167,
+   "omission": 139,
    "self-contradiction": 6,
    "labels-only": 8,
    "arm-swap": 6,
-   "row-slip": 52,
-   "unmatched": 16,
+   "row-slip": 58,
+   "unmatched": 17,
    "nr-restated": 1,
    "re-encoding-partial": 3,
-   "derived-own-n": 16,
-   "dispersion-type": 28,
-   "unit": 8,
+   "derived-own-n": 33,
+   "unit": 6,
    "derived-through-seal": 10,
+   "dispersion-type": 20,
    "polarity": 2,
    "field-mix": 2
   }
@@ -6938,17 +6946,18 @@
    "sheet": "v2",
    "trial": "PMC5329646",
    "field": "exp_dispersao",
-   "model_value": null,
+   "model_value": "0.42",
    "source_value": "0.44",
    "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
+   "class": "derived-own-n",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.42 = SE from CI 0.1276 × √11: the key's rule applied with the n the model itself read (key uses n=12)",
    "quote": "–0.8 (–1.1, –0.6)",
    "decided_by": "mechanical rule",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
-   "key_quote": "–0.8 (–1.1, –0.6)"
+   "key_quote": "–0.8 (–1.1, –0.6)",
+   "model_own_n": 11.0
   },
   {
    "anchor": "a2",
@@ -6975,17 +6984,18 @@
    "sheet": "v2",
    "trial": "PMC5329646",
    "field": "ctl_dispersao",
-   "model_value": null,
+   "model_value": "0.43",
    "source_value": "0.55",
    "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (0.0−(−0.6))/2/1.96×sqrt(13)=0.55)",
+   "class": "derived-own-n",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.43 = SE from CI 0.1531 × √8: the key's rule applied with the n the model itself read (key uses n=13)",
+   "quote": "–0.3 (–0.6, 0.0)",
    "decided_by": "mechanical rule",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
-   "key_quote": ""
+   "key_quote": "",
+   "model_own_n": 8.0
   },
   {
    "anchor": "a2",
@@ -7012,12 +7022,12 @@
    "sheet": "v2",
    "trial": "REF9",
    "field": "exp_dispersao",
-   "model_value": "0.07",
+   "model_value": "0.63",
    "source_value": "0.47",
    "key_provenance": "derivada",
-   "class": "dispersion-type",
-   "verdict": "reading-slip",
-   "evidence": "the standard error printed by the source (0.07) transcribed as the SD; the key's SD is 0.07×sqrt(45)=0.47",
+   "class": "derived-own-n",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.63 = SE 0.07 × √81: the key's rule applied with the n the model itself read (key uses n=45)",
    "quote": "–0.35 (0.07)",
    "decided_by": "mechanical rule",
    "key_on_trial": false,
@@ -7050,12 +7060,12 @@
    "sheet": "v2",
    "trial": "REF9",
    "field": "ctl_dispersao",
-   "model_value": "0.07",
+   "model_value": "0.63",
    "source_value": "0.49",
    "key_provenance": "derivada",
-   "class": "dispersion-type",
-   "verdict": "reading-slip",
-   "evidence": "the standard error printed by the source (0.07) transcribed as the SD; the key's SD is 0.07×sqrt(49)=0.49",
+   "class": "derived-own-n",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.63 = SE 0.07 × √81: the key's rule applied with the n the model itself read (key uses n=49)",
    "quote": "6.10 (0.07) 5.97 (0.07) –0.14 (0.07) .06",
    "decided_by": "mechanical rule",
    "key_on_trial": false,
@@ -7087,72 +7097,20 @@
    "model": "gemma12",
    "sheet": "v2",
    "trial": "PMC9606840",
-   "field": "exp_dispersao",
-   "model_value": null,
-   "source_value": "0.31",
-   "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (−0.19−(−0.33))/2/1.96×sqrt(75)=0.31)",
-   "decided_by": "mechanical rule",
-   "key_on_trial": false,
-   "key_rule": "dp_de_ic",
-   "key_quote": ""
-  },
-  {
-   "anchor": "a2",
-   "model": "gemma12",
-   "sheet": "v2",
-   "trial": "PMC9606840",
    "field": "ctl_dispersao",
-   "model_value": null,
+   "model_value": "0.18",
    "source_value": "0.27",
    "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (0.02−(−0.10))/2/1.96×sqrt(75)=0.27)",
-   "decided_by": "mechanical rule",
+   "class": "row-slip",
+   "verdict": "reading-slip",
+   "evidence": "The control change is printed as −0.04 (−0.10 to 0.02); both sheets (gemma12 v2, deepseek14 v2) wrote the upper bound as −0.02, so the width fell from 0.12 to 0.08 and the SD from the key's 0.27 to 0.18 at n = 75. A sign slip on one bound, shared by two models.",
+   "quote": "6 mo a –0.24 (–0.33 to –0.19) –0.04 (–0.10 to 0.02) –0.23 (–0.32 to –0.14)",
+   "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
-   "key_quote": ""
-  },
-  {
-   "anchor": "a2",
-   "model": "gemma12",
-   "sheet": "v2",
-   "trial": "PMC7535044",
-   "field": "exp_dispersao",
-   "model_value": null,
-   "source_value": "1.1",
-   "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (−1.30−(−1.96))/2/1.96×sqrt(43)=1.10)",
-   "decided_by": "mechanical rule",
-   "key_on_trial": false,
-   "key_rule": "dp_de_ic",
-   "key_quote": ""
-  },
-  {
-   "anchor": "a2",
-   "model": "gemma12",
-   "sheet": "v2",
-   "trial": "PMC7535044",
-   "field": "ctl_dispersao",
-   "model_value": null,
-   "source_value": "1.27",
-   "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (−0.63−(−1.40))/2/1.96×sqrt(42)=1.27)",
-   "decided_by": "mechanical rule",
-   "key_on_trial": false,
-   "key_rule": "dp_de_ic",
-   "key_quote": ""
+   "key_quote": "",
+   "model_own_n": 75.0,
+   "note": "Re-issued 2026-09-12 after the grader corrections (the v2 type object and the CI parser, dados/estudo12/p2/artefato-v2-tipo.md): the routed value changed, the reading did not."
   },
   {
    "anchor": "a2",
@@ -7545,18 +7503,19 @@
    "sheet": "v1",
    "trial": "REF12",
    "field": "exp_dispersao",
-   "model_value": "-5.65",
+   "model_value": "5.65",
    "source_value": "0.38",
    "key_provenance": "literal",
    "class": "row-slip",
    "verdict": "reading-slip",
-   "evidence": "The sheet's dispersion cell was the between-diet CI in mmol/mol written as '3.5 to -0.3' (the minus of −3.5 lost); the frozen route converts a CI to an SD, (−0.3 − 3.5)/(2·1.96)·√34 = −5.65. A transcription slip on a foreign quantity.",
-   "quote": "−1.9 [−3.5, −0.3] mmol/mol [−0.18 (−0.32, −0.03)%]",
+   "evidence": "The between-diet difference interval (−3.5 to −0.3 mmol/mol) written as the arm's dispersion, with the lower bound's sign dropped in the value field ('3.5 to -0.3'); width 3.8, SD 5.65 at n = 34. The arm's own SD is printed as 0.38 (−0.83 ± 0.38). Both sheets of qwen14.",
+   "quote": "HbA 1c , mmol/mol 57.4 ± 7.7 −7.2 ± 4.0 ‡ 33 57.6 ± 8.4 −9.1 ± 4.2 ‡ 34 −1.9 (−3.5, −0.3) 0.018",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "−0.83 ± 0.38",
-   "model_own_n": 34.0
+   "model_own_n": 34.0,
+   "note": "Re-issued 2026-09-12 after the grader corrections (the v2 type object and the CI parser, dados/estudo12/p2/artefato-v2-tipo.md): the routed value changed, the reading did not."
   },
   {
    "anchor": "a2",
@@ -7796,17 +7755,18 @@
    "sheet": "v2",
    "trial": "PMC5329646",
    "field": "exp_dispersao",
-   "model_value": null,
+   "model_value": "0.42",
    "source_value": "0.44",
    "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
+   "class": "derived-own-n",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.42 = SE from CI 0.1276 × √11: the key's rule applied with the n the model itself read (key uses n=12)",
    "quote": "–0.8 (–1.1, –0.6)",
    "decided_by": "mechanical rule",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
-   "key_quote": "–0.8 (–1.1, –0.6)"
+   "key_quote": "–0.8 (–1.1, –0.6)",
+   "model_own_n": 11.0
   },
   {
    "anchor": "a2",
@@ -7833,17 +7793,18 @@
    "sheet": "v2",
    "trial": "PMC5329646",
    "field": "ctl_dispersao",
-   "model_value": null,
+   "model_value": "0.43",
    "source_value": "0.55",
    "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (0.0−(−0.6))/2/1.96×sqrt(13)=0.55)",
+   "class": "derived-own-n",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.43 = SE from CI 0.1531 × √8: the key's rule applied with the n the model itself read (key uses n=13)",
+   "quote": "–0.3 (–0.6, 0.0)",
    "decided_by": "mechanical rule",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
-   "key_quote": ""
+   "key_quote": "",
+   "model_own_n": 8.0
   },
   {
    "anchor": "a2",
@@ -7870,12 +7831,12 @@
    "sheet": "v2",
    "trial": "REF9",
    "field": "exp_dispersao",
-   "model_value": "0.07",
+   "model_value": "0.34",
    "source_value": "0.47",
    "key_provenance": "derivada",
-   "class": "dispersion-type",
-   "verdict": "reading-slip",
-   "evidence": "the standard error printed by the source (0.07) transcribed as the SD; the key's SD is 0.07×sqrt(45)=0.47",
+   "class": "derived-own-n",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.34 = SE 0.07 × √23: the key's rule applied with the n the model itself read (key uses n=45)",
    "quote": "–0.35 (0.07)",
    "decided_by": "mechanical rule",
    "key_on_trial": false,
@@ -7908,12 +7869,12 @@
    "sheet": "v2",
    "trial": "REF9",
    "field": "ctl_dispersao",
-   "model_value": "0.07",
+   "model_value": "0.34",
    "source_value": "0.49",
    "key_provenance": "derivada",
-   "class": "dispersion-type",
-   "verdict": "reading-slip",
-   "evidence": "the standard error printed by the source (0.07) transcribed as the SD; the key's SD is 0.07×sqrt(49)=0.49",
+   "class": "derived-own-n",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.34 = SE 0.07 × √23: the key's rule applied with the n the model itself read (key uses n=49)",
    "quote": "6.10 (0.07) 5.97 (0.07) –0.14 (0.07) .06",
    "decided_by": "mechanical rule",
    "key_on_trial": false,
@@ -7946,24 +7907,6 @@
    "model": "qwen14",
    "sheet": "v2",
    "trial": "PMC9606840",
-   "field": "exp_dispersao",
-   "model_value": null,
-   "source_value": "0.31",
-   "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (−0.19−(−0.33))/2/1.96×sqrt(75)=0.31)",
-   "decided_by": "mechanical rule",
-   "key_on_trial": false,
-   "key_rule": "dp_de_ic",
-   "key_quote": ""
-  },
-  {
-   "anchor": "a2",
-   "model": "qwen14",
-   "sheet": "v2",
-   "trial": "PMC9606840",
    "field": "exp_n",
    "model_value": "73.0",
    "source_value": "75",
@@ -7984,17 +7927,18 @@
    "sheet": "v2",
    "trial": "PMC9606840",
    "field": "ctl_dispersao",
-   "model_value": null,
+   "model_value": "0.25",
    "source_value": "0.27",
    "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (0.02−(−0.10))/2/1.96×sqrt(75)=0.27)",
+   "class": "derived-own-n",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.25 = SE from CI 0.03061 × √69: the key's rule applied with the n the model itself read (key uses n=75)",
+   "quote": "–0.04 (–0.10 to 0.02)",
    "decided_by": "mechanical rule",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
-   "key_quote": ""
+   "key_quote": "",
+   "model_own_n": 69.0
   },
   {
    "anchor": "a2",
@@ -8078,17 +8022,19 @@
    "sheet": "v2",
    "trial": "REF12",
    "field": "exp_dispersao",
-   "model_value": null,
+   "model_value": "5.65",
    "source_value": "0.38",
    "key_provenance": "literal",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value",
-   "quote": "−0.83 ± 0.38",
-   "decided_by": "mechanical rule",
+   "class": "row-slip",
+   "verdict": "reading-slip",
+   "evidence": "The between-diet difference interval (−3.5 to −0.3 mmol/mol) written as the arm's dispersion, with the lower bound's sign dropped in the value field ('3.5 to -0.3'); width 3.8, SD 5.65 at n = 34. The arm's own SD is printed as 0.38 (−0.83 ± 0.38). Both sheets of qwen14.",
+   "quote": "HbA 1c , mmol/mol 57.4 ± 7.7 −7.2 ± 4.0 ‡ 33 57.6 ± 8.4 −9.1 ± 4.2 ‡ 34 −1.9 (−3.5, −0.3) 0.018",
+   "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
-   "key_quote": "−0.83 ± 0.38"
+   "key_quote": "−0.83 ± 0.38",
+   "model_own_n": 34.0,
+   "note": "Re-issued 2026-09-12 after the grader corrections (the v2 type object and the CI parser, dados/estudo12/p2/artefato-v2-tipo.md): the routed value changed, the reading did not."
   },
   {
    "anchor": "a2",
@@ -8344,19 +8290,20 @@
    "model": "llama8",
    "sheet": "v1",
    "trial": "PMC5329646",
-   "field": "exp_dispersao",
-   "model_value": "0.8",
-   "source_value": "0.44",
+   "field": "ctl_dispersao",
+   "model_value": "0.74",
+   "source_value": "0.55",
    "key_provenance": "derivada",
    "class": "row-slip",
    "verdict": "reading-slip",
-   "evidence": "0.8 is the arm's 32-week change mean (EMM −0.8%), written in the dispersion slot.",
-   "quote": "intervention group reduced their HbA1c levels more (estimated marginal mean [EMM] –0.8%, 95% CI –1.1% to –0.6%)",
+   "evidence": "The type field reads 'CI95: -0.8% to 0%': −0.8 is the 16-week lower bound and 0.0 the 32-week upper bound (the source prints −0.5 (–0.8, –0.2) at 16 weeks and −0.3 (–0.6, 0.0) at 32 weeks); mixed bounds, width 0.8, SD 0.74 at n = 13 against the key's 0.55.",
+   "quote": "16 weeks –0.9 (–1.1, –0.6) –0.5 (–0.8, –0.2) … 32 weeks –0.8 (–1.1, –0.6) –0.3 (–0.6, 0.0)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
-   "key_quote": "–0.8 (–1.1, –0.6)",
-   "model_own_n": 12.0
+   "key_quote": "",
+   "model_own_n": 13.0,
+   "note": "Re-issued 2026-09-12 after the grader corrections (the v2 type object and the CI parser, dados/estudo12/p2/artefato-v2-tipo.md): the routed value changed, the reading did not."
   },
   {
    "anchor": "a2",
@@ -8861,18 +8808,19 @@
    "sheet": "v2",
    "trial": "PMC5329646",
    "field": "exp_dispersao",
-   "model_value": "0.1",
+   "model_value": "0.35",
    "source_value": "0.44",
    "key_provenance": "derivada",
-   "class": "row-slip",
+   "class": "unmatched",
    "verdict": "reading-slip",
-   "evidence": "0.1 matches no dispersion; it is a CI bound digit in the table row (–0.4 (–0.7, –0.1)). The key's SD is derived from the 32-week CI: 0.44.",
-   "quote": "HbA1c (%) 16 weeks –0.9 (–1.1, –0.6) –0.5 (–0.8, –0.2) –0.4 (–0.7, –0.1) .01 32 weeks –0.8 (–1.1, –0.6) –0.3 (–0.6, 0.0)",
+   "evidence": "The sheet declares SE = 0.1 for the intervention change; 0.1 is printed nowhere as a dispersion (the SE implied by the printed 32-week CI is 0.128), and the route converts it with the model's n = 12 to 0.35. A dispersion the source does not print.",
+   "quote": "HbA 1c (%) 16 weeks –0.9 (–1.1, –0.6) –0.5 (–0.8, –0.2) … 32 weeks –0.8 (–1.1, –0.6) –0.3 (–0.6, 0.0)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
    "key_quote": "–0.8 (–1.1, –0.6)",
-   "model_own_n": 12.0
+   "model_own_n": 12.0,
+   "note": "Re-issued 2026-09-12 after the grader corrections (the v2 type object and the CI parser, dados/estudo12/p2/artefato-v2-tipo.md): the routed value changed, the reading did not."
   },
   {
    "anchor": "a2",
@@ -8899,18 +8847,19 @@
    "sheet": "v2",
    "trial": "PMC5329646",
    "field": "ctl_dispersao",
-   "model_value": "0.1",
+   "model_value": "0.36",
    "source_value": "0.55",
    "key_provenance": "derivada",
-   "class": "row-slip",
+   "class": "unmatched",
    "verdict": "reading-slip",
-   "evidence": "0.1 is a CI bound digit, not a dispersion; the key's SD from the 32-week CI is 0.55.",
-   "quote": "32 weeks –0.8 (–1.1, –0.6) –0.3 (–0.6, 0.0) –0.5 (–0.8, –0.2) .002",
+   "evidence": "The sheet declares SE = 0.1 for the control change; 0.1 is printed nowhere as a dispersion (the SE implied by the printed 32-week CI is 0.153), converted with the model's n = 13 to 0.36. Not printed.",
+   "quote": "32 weeks –0.8 (–1.1, –0.6) –0.3 (–0.6, 0.0)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
    "key_quote": "",
-   "model_own_n": 13.0
+   "model_own_n": 13.0,
+   "note": "Re-issued 2026-09-12 after the grader corrections (the v2 type object and the CI parser, dados/estudo12/p2/artefato-v2-tipo.md): the routed value changed, the reading did not."
   },
   {
    "anchor": "a2",
@@ -8994,17 +8943,19 @@
    "sheet": "v2",
    "trial": "PMC9606840",
    "field": "exp_dispersao",
-   "model_value": null,
+   "model_value": "1.13",
    "source_value": "0.31",
    "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (−0.19−(−0.33))/2/1.96×sqrt(75)=0.31)",
-   "decided_by": "mechanical rule",
+   "class": "row-slip",
+   "verdict": "reading-slip",
+   "evidence": "The dispersion field reads '0.33 to –0.19' (the lower bound's sign dropped) while the type field and the quotation carry the printed interval (–0.33 to –0.19), whose SD at the model's n = 73 would be 0.33 (key 0.31 at n = 75); the route reads the value field: width 0.52, SD 1.13. A transcription slip in the value field.",
+   "quote": "Primary and secondary outcomes Hemoglobin A 1c, % 6 mo a –0.24 (–0.33 to –0.19)",
+   "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
-   "key_quote": ""
+   "key_quote": "",
+   "model_own_n": 73.0,
+   "note": "Re-issued 2026-09-12 after the grader corrections (the v2 type object and the CI parser, dados/estudo12/p2/artefato-v2-tipo.md): the routed value changed, the reading did not."
   },
   {
    "anchor": "a2",
@@ -9031,17 +8982,18 @@
    "sheet": "v2",
    "trial": "PMC9606840",
    "field": "ctl_dispersao",
-   "model_value": null,
+   "model_value": "0.17",
    "source_value": "0.27",
    "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (0.02−(−0.10))/2/1.96×sqrt(75)=0.27)",
-   "decided_by": "mechanical rule",
+   "class": "row-slip",
+   "verdict": "reading-slip",
+   "evidence": "0.17% is the sample-size assumption (the net reduction deemed clinically meaningful), not a dispersion.",
+   "quote": "we deemed a 0.17% net reduction in HbA1c over 6 months as clinically meaningful",
+   "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
-   "key_quote": ""
+   "key_quote": "",
+   "model_own_n": 69.0
   },
   {
    "anchor": "a2",
@@ -9087,14 +9039,14 @@
    "sheet": "v2",
    "trial": "REF12",
    "field": "exp_dispersao",
-   "model_value": "4.2",
+   "model_value": "24.49",
    "source_value": "0.38",
    "key_provenance": "literal",
-   "class": "unit",
-   "verdict": "faithful-different-encoding",
-   "evidence": "4.2 ≈ 0.38 × 10.929: the same dispersion in mmol/mol",
-   "quote": "−0.83 ± 0.38",
-   "decided_by": "mechanical rule",
+   "class": "dispersion-type",
+   "verdict": "reading-slip",
+   "evidence": "24.49 = 4.2 × √34: the arm's SD in mmol/mol (4.2, the printed unit twin of 0.38%) treated as a standard error and scaled by √n.",
+   "quote": "−0.83 ± 0.38 [unit twin printed by the source in mmol/mol: −9.1 ± 4.2]",
+   "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "−0.83 ± 0.38",
@@ -9125,14 +9077,14 @@
    "sheet": "v2",
    "trial": "REF12",
    "field": "ctl_dispersao",
-   "model_value": "4.0",
+   "model_value": "22.98",
    "source_value": "0.37",
    "key_provenance": "literal",
-   "class": "unit",
-   "verdict": "faithful-different-encoding",
-   "evidence": "4 ≈ 0.37 × 10.929: the same dispersion in mmol/mol",
-   "quote": "−0.66 ± 0.37",
-   "decided_by": "mechanical rule",
+   "class": "dispersion-type",
+   "verdict": "reading-slip",
+   "evidence": "22.98 = 4.0 × √33: the control SD in mmol/mol (4.0, the unit twin of 0.37%) treated as a standard error and scaled by √n.",
+   "quote": "−0.66 ± 0.37 [unit twin: −7.2 ± 4.0 mmol/mol]",
+   "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "−0.66 ± 0.37",
@@ -9358,18 +9310,19 @@
    "sheet": "v1",
    "trial": "PMC5329646",
    "field": "exp_dispersao",
-   "model_value": "-1.5",
+   "model_value": "1.5",
    "source_value": "0.44",
    "key_provenance": "derivada",
    "class": "row-slip",
    "verdict": "reading-slip",
-   "evidence": "−1.5 is not an HbA1c figure; it belongs to another table (psychometric scales), and a negative SD is impossible.",
-   "quote": "DES Positive Affect, mean (SD) 6.5 (1.1) 6.2 (1.5) Vitality (SF-36 subscale), mean (SD) 53.3 (16.4) 49.2 (20.1)",
+   "evidence": "The dispersion field reads '1.1 to -0.6' (the lower bound's sign dropped) while the type field carries the printed interval 'CI95: -1.1 to -0.6'; the route reads the value field: width 1.7, SD 1.5 at n = 12. The printed interval (–1.1, –0.6) gives the key's 0.44. A transcription slip in the value field.",
+   "quote": "32 weeks –0.8 (–1.1, –0.6)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
    "key_quote": "–0.8 (–1.1, –0.6)",
-   "model_own_n": 12.0
+   "model_own_n": 12.0,
+   "note": "Re-issued 2026-09-12 after the grader corrections (the v2 type object and the CI parser, dados/estudo12/p2/artefato-v2-tipo.md): the routed value changed, the reading did not."
   },
   {
    "anchor": "a2",
@@ -9451,18 +9404,19 @@
    "sheet": "v1",
    "trial": "PMC9606840",
    "field": "exp_dispersao",
-   "model_value": "-1.15",
+   "model_value": "1.15",
    "source_value": "0.31",
    "key_provenance": "derivada",
-   "class": "unmatched",
+   "class": "row-slip",
    "verdict": "reading-slip",
-   "evidence": "−1.15 is printed nowhere in the original or in the text the model read; the nearest figures are the −1.1 confidence bounds of the HOMA-IR and HDL rows of Table 3, and a negative dispersion is impossible. Class corrected on 2026-09-11 after the independent review (earlier: row-slip, with the quotation mislabelled as a blood-pressure row — it is the HOMA-IR row).",
-   "quote": "Homeostasis model assessment of insulin resistance 3 mo –1.2 (–2.1 to –0.2) 0.9 (0 to 1.8) –2.0 (–3.3 to –0.7) .002 6 mo –1.6 (–2.6 to –0.7) 0.8 (–0.2 to 1.7) –2.4 (–3.7 to –1.1) <.001 Diastolic blood pressure",
+   "evidence": "The dispersion field reads '0.33 to -0.19' (the lower bound's sign dropped) while the type field carries 'CI95: -0.33 to -0.19'; the route reads the value field: width 0.52, SD 1.15 at n = 75. The printed interval (–0.33 to –0.19) gives the key's 0.31. A transcription slip in the value field.",
+   "quote": "6 mo a –0.24 (–0.33 to –0.19) –0.04 (–0.10 to 0.02) –0.23 (–0.32 to –0.14)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
    "key_quote": "",
-   "model_own_n": 75.0
+   "model_own_n": 75.0,
+   "note": "Re-issued 2026-09-12 after the grader corrections (the v2 type object and the CI parser, dados/estudo12/p2/artefato-v2-tipo.md): the routed value changed, the reading did not."
   },
   {
    "anchor": "a2",
@@ -9758,32 +9712,13 @@
    "model": "qwen35",
    "sheet": "v2",
    "trial": "PMC5329646",
-   "field": "exp_dispersao",
-   "model_value": "-1.1",
-   "source_value": "0.44",
-   "key_provenance": "derivada",
-   "class": "dispersion-type",
-   "verdict": "reading-slip",
-   "evidence": "a literal SD from the quotation (baseline or final visit) instead of the change SD; key (−0.6−(−1.1))/2/1.96×sqrt(12)=0.44",
-   "quote": "–0.8 (–1.1, –0.6)",
-   "decided_by": "mechanical rule",
-   "key_on_trial": false,
-   "key_rule": "dp_de_ic",
-   "key_quote": "–0.8 (–1.1, –0.6)",
-   "model_own_n": 12.0
-  },
-  {
-   "anchor": "a2",
-   "model": "qwen35",
-   "sheet": "v2",
-   "trial": "PMC5329646",
    "field": "ctl_dispersao",
-   "model_value": "-0.6",
+   "model_value": "0.43",
    "source_value": "0.55",
    "key_provenance": "derivada",
-   "class": "dispersion-type",
-   "verdict": "reading-slip",
-   "evidence": "a literal SD from the quotation (baseline or final visit) instead of the change SD; key (0.0−(−0.6))/2/1.96×sqrt(13)=0.55",
+   "class": "derived-own-n",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.43 = SE from CI 0.1531 × √8: the key's rule applied with the n the model itself read (key uses n=13)",
    "quote": "–0.3 (–0.6, 0.0)",
    "decided_by": "mechanical rule",
    "key_on_trial": false,
@@ -9816,12 +9751,12 @@
    "sheet": "v2",
    "trial": "REF9",
    "field": "exp_dispersao",
-   "model_value": "0.07",
+   "model_value": "0.63",
    "source_value": "0.47",
    "key_provenance": "derivada",
-   "class": "dispersion-type",
-   "verdict": "reading-slip",
-   "evidence": "the standard error printed by the source (0.07) transcribed as the SD; the key's SD is 0.07×sqrt(45)=0.47",
+   "class": "derived-own-n",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.63 = SE 0.07 × √81: the key's rule applied with the n the model itself read (key uses n=45)",
    "quote": "–0.35 (0.07)",
    "decided_by": "mechanical rule",
    "key_on_trial": false,
@@ -9854,12 +9789,12 @@
    "sheet": "v2",
    "trial": "REF9",
    "field": "ctl_dispersao",
-   "model_value": "0.07",
+   "model_value": "0.68",
    "source_value": "0.49",
    "key_provenance": "derivada",
-   "class": "dispersion-type",
-   "verdict": "reading-slip",
-   "evidence": "the standard error printed by the source (0.07) transcribed as the SD; the key's SD is 0.07×sqrt(49)=0.49",
+   "class": "derived-own-n",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.68 = SE 0.07 × √94: the key's rule applied with the n the model itself read (key uses n=49)",
    "quote": "6.10 (0.07) 5.97 (0.07) –0.14 (0.07) .06",
    "decided_by": "mechanical rule",
    "key_on_trial": false,
@@ -9885,78 +9820,6 @@
    "key_rule": "margem DASH do fatorial",
    "key_quote": "",
    "model_own_n": 94.0
-  },
-  {
-   "anchor": "a2",
-   "model": "qwen35",
-   "sheet": "v2",
-   "trial": "PMC9606840",
-   "field": "exp_dispersao",
-   "model_value": null,
-   "source_value": "0.31",
-   "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (−0.19−(−0.33))/2/1.96×sqrt(75)=0.31)",
-   "decided_by": "mechanical rule",
-   "key_on_trial": false,
-   "key_rule": "dp_de_ic",
-   "key_quote": ""
-  },
-  {
-   "anchor": "a2",
-   "model": "qwen35",
-   "sheet": "v2",
-   "trial": "PMC9606840",
-   "field": "ctl_dispersao",
-   "model_value": null,
-   "source_value": "0.27",
-   "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (0.02−(−0.10))/2/1.96×sqrt(75)=0.27)",
-   "decided_by": "mechanical rule",
-   "key_on_trial": false,
-   "key_rule": "dp_de_ic",
-   "key_quote": ""
-  },
-  {
-   "anchor": "a2",
-   "model": "qwen35",
-   "sheet": "v2",
-   "trial": "PMC7535044",
-   "field": "exp_dispersao",
-   "model_value": null,
-   "source_value": "1.1",
-   "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (−1.30−(−1.96))/2/1.96×sqrt(43)=1.10)",
-   "decided_by": "mechanical rule",
-   "key_on_trial": false,
-   "key_rule": "dp_de_ic",
-   "key_quote": ""
-  },
-  {
-   "anchor": "a2",
-   "model": "qwen35",
-   "sheet": "v2",
-   "trial": "PMC7535044",
-   "field": "ctl_dispersao",
-   "model_value": null,
-   "source_value": "1.27",
-   "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (−0.63−(−1.40))/2/1.96×sqrt(42)=1.27)",
-   "decided_by": "mechanical rule",
-   "key_on_trial": false,
-   "key_rule": "dp_de_ic",
-   "key_quote": ""
   },
   {
    "anchor": "a2",
@@ -10719,17 +10582,18 @@
    "sheet": "v2",
    "trial": "PMC5329646",
    "field": "exp_dispersao",
-   "model_value": null,
+   "model_value": "0.42",
    "source_value": "0.44",
    "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
+   "class": "derived-own-n",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.42 = SE from CI 0.1276 × √11: the key's rule applied with the n the model itself read (key uses n=12)",
    "quote": "–0.8 (–1.1, –0.6)",
    "decided_by": "mechanical rule",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
-   "key_quote": "–0.8 (–1.1, –0.6)"
+   "key_quote": "–0.8 (–1.1, –0.6)",
+   "model_own_n": 11.0
   },
   {
    "anchor": "a2",
@@ -10756,17 +10620,18 @@
    "sheet": "v2",
    "trial": "PMC5329646",
    "field": "ctl_dispersao",
-   "model_value": null,
+   "model_value": "0.43",
    "source_value": "0.55",
    "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (0.0−(−0.6))/2/1.96×sqrt(13)=0.55)",
+   "class": "derived-own-n",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.43 = SE from CI 0.1531 × √8: the key's rule applied with the n the model itself read (key uses n=13)",
+   "quote": "–0.3 (–0.6, 0.0)",
    "decided_by": "mechanical rule",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
-   "key_quote": ""
+   "key_quote": "",
+   "model_own_n": 8.0
   },
   {
    "anchor": "a2",
@@ -10886,17 +10751,19 @@
    "sheet": "v2",
    "trial": "PMC9606840",
    "field": "exp_dispersao",
-   "model_value": null,
+   "model_value": "0.4",
    "source_value": "0.31",
    "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (−0.19−(−0.33))/2/1.96×sqrt(75)=0.31)",
-   "decided_by": "mechanical rule",
+   "class": "row-slip",
+   "verdict": "reading-slip",
+   "evidence": "The sheet's dispersion is the between-group net difference interval (–0.32 to –0.14) — and its mean −0.23 is the net difference — written as the intervention arm's; width 0.18, SD 0.40 at n = 75. The arm's change is −0.24 (−0.33 to −0.19), SD 0.31.",
+   "quote": "net difference in change of –0.23% (95% CI, –0.32 to –0.14)",
+   "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
-   "key_quote": ""
+   "key_quote": "",
+   "model_own_n": 75.0,
+   "note": "Re-issued 2026-09-12 after the grader corrections (the v2 type object and the CI parser, dados/estudo12/p2/artefato-v2-tipo.md): the routed value changed, the reading did not."
   },
   {
    "anchor": "a2",
@@ -10904,17 +10771,19 @@
    "sheet": "v2",
    "trial": "PMC9606840",
    "field": "ctl_dispersao",
-   "model_value": null,
+   "model_value": "0.18",
    "source_value": "0.27",
    "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (0.02−(−0.10))/2/1.96×sqrt(75)=0.27)",
-   "decided_by": "mechanical rule",
+   "class": "row-slip",
+   "verdict": "reading-slip",
+   "evidence": "The control change is printed as −0.04 (−0.10 to 0.02); both sheets (gemma12 v2, deepseek14 v2) wrote the upper bound as −0.02, so the width fell from 0.12 to 0.08 and the SD from the key's 0.27 to 0.18 at n = 75. A sign slip on one bound, shared by two models.",
+   "quote": "6 mo a –0.24 (–0.33 to –0.19) –0.04 (–0.10 to 0.02) –0.23 (–0.32 to –0.14)",
+   "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
-   "key_quote": ""
+   "key_quote": "",
+   "model_own_n": 75.0,
+   "note": "Re-issued 2026-09-12 after the grader corrections (the v2 type object and the CI parser, dados/estudo12/p2/artefato-v2-tipo.md): the routed value changed, the reading did not."
   },
   {
    "anchor": "a2",
@@ -10979,17 +10848,18 @@
    "sheet": "v2",
    "trial": "REF12",
    "field": "exp_dispersao",
-   "model_value": null,
+   "model_value": "0.43",
    "source_value": "0.38",
    "key_provenance": "literal",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value",
-   "quote": "−0.83 ± 0.38",
-   "decided_by": "mechanical rule",
+   "class": "row-slip",
+   "verdict": "reading-slip",
+   "evidence": "The sheet gave the between-diet difference's CI (−0.32, −0.03)% as the arm's dispersion; the route's SD from it is 0.29/(2·1.96)·√34 = 0.43. The arm's printed SD is 0.38.",
+   "quote": "−0.18 (−0.32, −0.03)% […] HbA1c, % 7.40 ± 0.70 −0.66 ± 0.37 33 7.42 ± 0.77 −0.83 ± 0.38 34",
+   "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
-   "key_quote": "−0.83 ± 0.38"
+   "key_quote": "−0.83 ± 0.38",
+   "model_own_n": 34.0
   },
   {
    "anchor": "a2",
@@ -11476,17 +11346,18 @@
    "sheet": "v2",
    "trial": "PMC5329646",
    "field": "exp_dispersao",
-   "model_value": null,
+   "model_value": "0.42",
    "source_value": "0.44",
    "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
+   "class": "derived-own-n",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.42 = SE from CI 0.1276 × √11: the key's rule applied with the n the model itself read (key uses n=12)",
    "quote": "–0.8 (–1.1, –0.6)",
    "decided_by": "mechanical rule",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
-   "key_quote": "–0.8 (–1.1, –0.6)"
+   "key_quote": "–0.8 (–1.1, –0.6)",
+   "model_own_n": 11.0
   },
   {
    "anchor": "a2",
@@ -11513,17 +11384,18 @@
    "sheet": "v2",
    "trial": "PMC5329646",
    "field": "ctl_dispersao",
-   "model_value": null,
+   "model_value": "0.43",
    "source_value": "0.55",
    "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (0.0−(−0.6))/2/1.96×sqrt(13)=0.55)",
+   "class": "derived-own-n",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.43 = SE from CI 0.1531 × √8: the key's rule applied with the n the model itself read (key uses n=13)",
+   "quote": "–0.3 (–0.6, 0.0)",
    "decided_by": "mechanical rule",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
-   "key_quote": ""
+   "key_quote": "",
+   "model_own_n": 8.0
   },
   {
    "anchor": "a2",
@@ -11549,32 +11421,13 @@
    "model": "qwen27q2",
    "sheet": "v2",
    "trial": "REF9",
-   "field": "exp_dispersao",
-   "model_value": "0.07",
-   "source_value": "0.47",
-   "key_provenance": "derivada",
-   "class": "dispersion-type",
-   "verdict": "reading-slip",
-   "evidence": "the standard error printed by the source (0.07) transcribed as the SD; the key's SD is 0.07×sqrt(45)=0.47",
-   "quote": "–0.35 (0.07)",
-   "decided_by": "mechanical rule",
-   "key_on_trial": false,
-   "key_rule": "dp_de_se",
-   "key_quote": "–0.35 (0.07)",
-   "model_own_n": 45.0
-  },
-  {
-   "anchor": "a2",
-   "model": "qwen27q2",
-   "sheet": "v2",
-   "trial": "REF9",
    "field": "ctl_dispersao",
-   "model_value": "0.07",
+   "model_value": "0.43",
    "source_value": "0.49",
    "key_provenance": "derivada",
-   "class": "dispersion-type",
-   "verdict": "reading-slip",
-   "evidence": "the standard error printed by the source (0.07) transcribed as the SD; the key's SD is 0.07×sqrt(49)=0.49",
+   "class": "derived-own-n",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.43 = SE 0.07 × √38: the key's rule applied with the n the model itself read (key uses n=49)",
    "quote": "6.10 (0.07) 5.97 (0.07) –0.14 (0.07) .06",
    "decided_by": "mechanical rule",
    "key_on_trial": false,
@@ -11600,78 +11453,6 @@
    "key_rule": "margem DASH do fatorial",
    "key_quote": "",
    "model_own_n": 38.0
-  },
-  {
-   "anchor": "a2",
-   "model": "qwen27q2",
-   "sheet": "v2",
-   "trial": "PMC9606840",
-   "field": "exp_dispersao",
-   "model_value": null,
-   "source_value": "0.31",
-   "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (−0.19−(−0.33))/2/1.96×sqrt(75)=0.31)",
-   "decided_by": "mechanical rule",
-   "key_on_trial": false,
-   "key_rule": "dp_de_ic",
-   "key_quote": ""
-  },
-  {
-   "anchor": "a2",
-   "model": "qwen27q2",
-   "sheet": "v2",
-   "trial": "PMC9606840",
-   "field": "ctl_dispersao",
-   "model_value": null,
-   "source_value": "0.27",
-   "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (0.02−(−0.10))/2/1.96×sqrt(75)=0.27)",
-   "decided_by": "mechanical rule",
-   "key_on_trial": false,
-   "key_rule": "dp_de_ic",
-   "key_quote": ""
-  },
-  {
-   "anchor": "a2",
-   "model": "qwen27q2",
-   "sheet": "v2",
-   "trial": "PMC7535044",
-   "field": "exp_dispersao",
-   "model_value": null,
-   "source_value": "1.1",
-   "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (−1.30−(−1.96))/2/1.96×sqrt(43)=1.10)",
-   "decided_by": "mechanical rule",
-   "key_on_trial": false,
-   "key_rule": "dp_de_ic",
-   "key_quote": ""
-  },
-  {
-   "anchor": "a2",
-   "model": "qwen27q2",
-   "sheet": "v2",
-   "trial": "PMC7535044",
-   "field": "ctl_dispersao",
-   "model_value": null,
-   "source_value": "1.27",
-   "key_provenance": "derivada",
-   "class": "omission",
-   "verdict": "omission",
-   "evidence": "NR where the key holds a value (derived: dp_de_ic)",
-   "quote": "(derived: (−0.63−(−1.40))/2/1.96×sqrt(42)=1.27)",
-   "decided_by": "mechanical rule",
-   "key_on_trial": false,
-   "key_rule": "dp_de_ic",
-   "key_quote": ""
   },
   {
    "anchor": "a2",

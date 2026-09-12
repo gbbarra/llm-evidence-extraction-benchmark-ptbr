@@ -380,22 +380,19 @@ Doutrina: o valor do modelo e o da fonte, lado a lado; a citação decide, na ad
 | PMC6024764 | ctl_dispersao | 0.7 | 0.67 | literal |
 | PMC6024764 | ctl_n | 25.0 | 28 | literal |
 
-## a2 · gemma12 · v2 — 18 células
+## a2 · gemma12 · v2 — 15 células
 
 | ensaio | campo | modelo | fonte | nota |
 |---|---|---|---|---|
-| PMC5329646 | exp_dispersao | None | 0.44 | derivada |
+| PMC5329646 | exp_dispersao | 0.42 | 0.44 | derivada |
 | PMC5329646 | exp_n | 11.0 | 12 | literal |
-| PMC5329646 | ctl_dispersao | None | 0.55 | derivada |
+| PMC5329646 | ctl_dispersao | 0.43 | 0.55 | derivada |
 | PMC5329646 | ctl_n | 8.0 | 13 | literal |
-| REF9 | exp_dispersao | 0.07 | 0.47 | derivada |
+| REF9 | exp_dispersao | 0.63 | 0.47 | derivada |
 | REF9 | exp_n | 81.0 | 45 | derivada |
-| REF9 | ctl_dispersao | 0.07 | 0.49 | derivada |
+| REF9 | ctl_dispersao | 0.63 | 0.49 | derivada |
 | REF9 | ctl_n | 81.0 | 49 | derivada |
-| PMC9606840 | exp_dispersao | None | 0.31 | derivada |
-| PMC9606840 | ctl_dispersao | None | 0.27 | derivada |
-| PMC7535044 | exp_dispersao | None | 1.1 | derivada |
-| PMC7535044 | ctl_dispersao | None | 1.27 | derivada |
+| PMC9606840 | ctl_dispersao | 0.18 | 0.27 | derivada |
 | PMC6024764 | exp_media | -0.63 | -0.54 | literal-com-sinal-invertido |
 | PMC6024764 | exp_dispersao | 1.18 | 1.12 | literal |
 | PMC6024764 | exp_n | 24.0 | 28 | literal |
@@ -421,7 +418,7 @@ Doutrina: o valor do modelo e o da fonte, lado a lado; a citação decide, na ad
 | PMC7535044 | exp_dispersao | 0.59 | 1.1 | derivada |
 | PMC7535044 | ctl_dispersao | 1.06 | 1.27 | derivada |
 | REF12 | exp_media | -1.9 | -0.83 | literal |
-| REF12 | exp_dispersao | -5.65 | 0.38 | literal |
+| REF12 | exp_dispersao | 5.65 | 0.38 | literal |
 | REF12 | ctl_media | -7.2 | -0.66 | literal |
 | REF12 | ctl_dispersao | 4.0 | 0.37 | literal |
 | PMC6024764 | exp_media | -0.63 | -0.54 | literal-com-sinal-invertido |
@@ -435,26 +432,25 @@ Doutrina: o valor do modelo e o da fonte, lado a lado; a citação decide, na ad
 | PMC5048014 | ctl_media | 0.3 | -0.4 | derivada |
 | PMC5048014 | ctl_dispersao | 0.8 | 0.92 | derivada |
 
-## a2 · qwen14 · v2 — 29 células
+## a2 · qwen14 · v2 — 28 células
 
 | ensaio | campo | modelo | fonte | nota |
 |---|---|---|---|---|
-| PMC5329646 | exp_dispersao | None | 0.44 | derivada |
+| PMC5329646 | exp_dispersao | 0.42 | 0.44 | derivada |
 | PMC5329646 | exp_n | 11.0 | 12 | literal |
-| PMC5329646 | ctl_dispersao | None | 0.55 | derivada |
+| PMC5329646 | ctl_dispersao | 0.43 | 0.55 | derivada |
 | PMC5329646 | ctl_n | 8.0 | 13 | literal |
-| REF9 | exp_dispersao | 0.07 | 0.47 | derivada |
+| REF9 | exp_dispersao | 0.34 | 0.47 | derivada |
 | REF9 | exp_n | 23.0 | 45 | derivada |
-| REF9 | ctl_dispersao | 0.07 | 0.49 | derivada |
+| REF9 | ctl_dispersao | 0.34 | 0.49 | derivada |
 | REF9 | ctl_n | 23.0 | 49 | derivada |
-| PMC9606840 | exp_dispersao | None | 0.31 | derivada |
 | PMC9606840 | exp_n | 73.0 | 75 | literal |
-| PMC9606840 | ctl_dispersao | None | 0.27 | derivada |
+| PMC9606840 | ctl_dispersao | 0.25 | 0.27 | derivada |
 | PMC9606840 | ctl_n | 69.0 | 75 | literal |
 | PMC7535044 | exp_dispersao | 0.59 | 1.1 | derivada |
 | PMC7535044 | ctl_dispersao | 1.06 | 1.27 | derivada |
 | REF12 | exp_media | -1.9 | -0.83 | literal |
-| REF12 | exp_dispersao | None | 0.38 | literal |
+| REF12 | exp_dispersao | 5.65 | 0.38 | literal |
 | REF12 | ctl_media | None | -0.66 | literal |
 | REF12 | ctl_dispersao | None | 0.37 | literal |
 | PMC6024764 | exp_media | 0.63 | -0.54 | literal-com-sinal-invertido |
@@ -473,7 +469,7 @@ Doutrina: o valor do modelo e o da fonte, lado a lado; a citação decide, na ad
 
 | ensaio | campo | modelo | fonte | nota |
 |---|---|---|---|---|
-| PMC5329646 | exp_dispersao | 0.8 | 0.44 | derivada |
+| PMC5329646 | ctl_dispersao | 0.74 | 0.55 | derivada |
 | REF9 | exp_dispersao | 0.45 | 0.47 | derivada |
 | REF9 | exp_n | 41.0 | 45 | derivada |
 | REF9 | ctl_dispersao | 0.45 | 0.49 | derivada |
@@ -505,21 +501,21 @@ Doutrina: o valor do modelo e o da fonte, lado a lado; a citação decide, na ad
 | ensaio | campo | modelo | fonte | nota |
 |---|---|---|---|---|
 | PMC5329646 | exp_media | -0.9 | -0.8 | literal |
-| PMC5329646 | exp_dispersao | 0.1 | 0.44 | derivada |
+| PMC5329646 | exp_dispersao | 0.35 | 0.44 | derivada |
 | PMC5329646 | ctl_media | -0.5 | -0.3 | literal |
-| PMC5329646 | ctl_dispersao | 0.1 | 0.55 | derivada |
+| PMC5329646 | ctl_dispersao | 0.36 | 0.55 | derivada |
 | REF9 | exp_dispersao | 0.07 | 0.47 | derivada |
 | REF9 | exp_n | 41.0 | 45 | derivada |
 | REF9 | ctl_dispersao | 0.07 | 0.49 | derivada |
 | REF9 | ctl_n | 42.0 | 49 | derivada |
-| PMC9606840 | exp_dispersao | None | 0.31 | derivada |
+| PMC9606840 | exp_dispersao | 1.13 | 0.31 | derivada |
 | PMC9606840 | exp_n | 73.0 | 75 | literal |
-| PMC9606840 | ctl_dispersao | None | 0.27 | derivada |
+| PMC9606840 | ctl_dispersao | 0.17 | 0.27 | derivada |
 | PMC9606840 | ctl_n | 69.0 | 75 | literal |
 | REF12 | exp_media | -9.1 | -0.83 | literal |
-| REF12 | exp_dispersao | 4.2 | 0.38 | literal |
+| REF12 | exp_dispersao | 24.49 | 0.38 | literal |
 | REF12 | ctl_media | -7.2 | -0.66 | literal |
-| REF12 | ctl_dispersao | 4.0 | 0.37 | literal |
+| REF12 | ctl_dispersao | 22.98 | 0.37 | literal |
 | PMC6024764 | exp_media | -0.63 | -0.54 | literal-com-sinal-invertido |
 | PMC6024764 | exp_dispersao | 1.18 | 1.12 | literal |
 | PMC6024764 | exp_n | 24.0 | 28 | literal |
@@ -536,12 +532,12 @@ Doutrina: o valor do modelo e o da fonte, lado a lado; a citação decide, na ad
 
 | ensaio | campo | modelo | fonte | nota |
 |---|---|---|---|---|
-| PMC5329646 | exp_dispersao | -1.5 | 0.44 | derivada |
+| PMC5329646 | exp_dispersao | 1.5 | 0.44 | derivada |
 | REF9 | exp_dispersao | 1.73 | 0.47 | derivada |
 | REF9 | exp_n | None | 45 | derivada |
 | REF9 | ctl_dispersao | 1.59 | 0.49 | derivada |
 | REF9 | ctl_n | None | 49 | derivada |
-| PMC9606840 | exp_dispersao | -1.15 | 0.31 | derivada |
+| PMC9606840 | exp_dispersao | 1.15 | 0.31 | derivada |
 | PMC7535044 | exp_dispersao | 0.3 | 1.1 | derivada |
 | PMC7535044 | ctl_dispersao | 1.06 | 1.27 | derivada |
 | REF12 | exp_media | -0.18 | -0.83 | literal |
@@ -558,21 +554,16 @@ Doutrina: o valor do modelo e o da fonte, lado a lado; a citação decide, na ad
 | PMC5048014 | ctl_media | 0.3 | -0.4 | derivada |
 | PMC5048014 | ctl_dispersao | 2.5 | 0.92 | derivada |
 
-## a2 · qwen35 · v2 — 26 células
+## a2 · qwen35 · v2 — 21 células
 
 | ensaio | campo | modelo | fonte | nota |
 |---|---|---|---|---|
-| PMC5329646 | exp_dispersao | -1.1 | 0.44 | derivada |
-| PMC5329646 | ctl_dispersao | -0.6 | 0.55 | derivada |
+| PMC5329646 | ctl_dispersao | 0.43 | 0.55 | derivada |
 | PMC5329646 | ctl_n | 8.0 | 13 | literal |
-| REF9 | exp_dispersao | 0.07 | 0.47 | derivada |
+| REF9 | exp_dispersao | 0.63 | 0.47 | derivada |
 | REF9 | exp_n | 81.0 | 45 | derivada |
-| REF9 | ctl_dispersao | 0.07 | 0.49 | derivada |
+| REF9 | ctl_dispersao | 0.68 | 0.49 | derivada |
 | REF9 | ctl_n | 94.0 | 49 | derivada |
-| PMC9606840 | exp_dispersao | None | 0.31 | derivada |
-| PMC9606840 | ctl_dispersao | None | 0.27 | derivada |
-| PMC7535044 | exp_dispersao | None | 1.1 | derivada |
-| PMC7535044 | ctl_dispersao | None | 1.27 | derivada |
 | REF12 | exp_media | -9.1 | -0.83 | literal |
 | REF12 | exp_dispersao | None | 0.38 | literal |
 | REF12 | ctl_media | -7.2 | -0.66 | literal |
@@ -623,21 +614,21 @@ Doutrina: o valor do modelo e o da fonte, lado a lado; a citação decide, na ad
 
 | ensaio | campo | modelo | fonte | nota |
 |---|---|---|---|---|
-| PMC5329646 | exp_dispersao | None | 0.44 | derivada |
+| PMC5329646 | exp_dispersao | 0.42 | 0.44 | derivada |
 | PMC5329646 | exp_n | 11.0 | 12 | literal |
-| PMC5329646 | ctl_dispersao | None | 0.55 | derivada |
+| PMC5329646 | ctl_dispersao | 0.43 | 0.55 | derivada |
 | PMC5329646 | ctl_n | 8.0 | 13 | literal |
 | REF9 | exp_dispersao | None | 0.47 | derivada |
 | REF9 | exp_n | 23.0 | 45 | derivada |
 | REF9 | ctl_dispersao | None | 0.49 | derivada |
 | REF9 | ctl_n | 25.0 | 49 | derivada |
 | PMC9606840 | exp_media | -0.23 | -0.26 | literal |
-| PMC9606840 | exp_dispersao | None | 0.31 | derivada |
-| PMC9606840 | ctl_dispersao | None | 0.27 | derivada |
+| PMC9606840 | exp_dispersao | 0.4 | 0.31 | derivada |
+| PMC9606840 | ctl_dispersao | 0.18 | 0.27 | derivada |
 | PMC7535044 | exp_dispersao | 0.96 | 1.1 | derivada |
 | PMC7535044 | ctl_dispersao | 0.83 | 1.27 | derivada |
 | REF12 | exp_media | -0.18 | -0.83 | literal |
-| REF12 | exp_dispersao | None | 0.38 | literal |
+| REF12 | exp_dispersao | 0.43 | 0.38 | literal |
 | REF12 | ctl_media | -0.56 | -0.66 | literal |
 | PMC6024764 | exp_media | -0.63 | -0.54 | literal-com-sinal-invertido |
 | PMC6024764 | exp_dispersao | 1.18 | 1.12 | literal |
@@ -669,21 +660,16 @@ Doutrina: o valor do modelo e o da fonte, lado a lado; a citação decide, na ad
 | PMC6024764 | ctl_dispersao | 0.7 | 0.67 | literal |
 | PMC6024764 | ctl_n | 25.0 | 28 | literal |
 
-## a2 · qwen27q2 · v2 — 18 células
+## a2 · qwen27q2 · v2 — 13 células
 
 | ensaio | campo | modelo | fonte | nota |
 |---|---|---|---|---|
-| PMC5329646 | exp_dispersao | None | 0.44 | derivada |
+| PMC5329646 | exp_dispersao | 0.42 | 0.44 | derivada |
 | PMC5329646 | exp_n | 11.0 | 12 | literal |
-| PMC5329646 | ctl_dispersao | None | 0.55 | derivada |
+| PMC5329646 | ctl_dispersao | 0.43 | 0.55 | derivada |
 | PMC5329646 | ctl_n | 8.0 | 13 | literal |
-| REF9 | exp_dispersao | 0.07 | 0.47 | derivada |
-| REF9 | ctl_dispersao | 0.07 | 0.49 | derivada |
+| REF9 | ctl_dispersao | 0.43 | 0.49 | derivada |
 | REF9 | ctl_n | 38.0 | 49 | derivada |
-| PMC9606840 | exp_dispersao | None | 0.31 | derivada |
-| PMC9606840 | ctl_dispersao | None | 0.27 | derivada |
-| PMC7535044 | exp_dispersao | None | 1.1 | derivada |
-| PMC7535044 | ctl_dispersao | None | 1.27 | derivada |
 | PMC6024764 | exp_media | 0.63 | -0.54 | literal-com-sinal-invertido |
 | PMC6024764 | exp_dispersao | 1.18 | 1.12 | literal |
 | PMC6024764 | exp_n | 24.0 | 28 | literal |

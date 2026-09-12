@@ -43,6 +43,16 @@ print("v2 type field: the object must route exactly like the v1 string")
 confere("CI95 → SD derived from the interval (0.42 at n=11)", V1, V2)
 confere("SE → SD derived from the standard error (0.47 at n=45)", V1_SE, V2_SE)
 
+print("CI parser: Unicode minus, type-only label, repeated value, percent signs — same SD as the plain string")
+V_DASH = dict(V1, hba1c_change_dispersion="–1.1 to –0.6", hba1c_change_dispersion_type="CI95")          # en dash (U+2013)
+V_MINUS = dict(V1, hba1c_change_dispersion="95% CI −1.1% to −0.6%", hba1c_change_dispersion_type="CI95")  # minus (U+2212)
+V_REPEAT = dict(V1, hba1c_change_dispersion="-1.1", hba1c_change_dispersion_type="CI95: -1.1 to -0.6")   # value repeated
+V_PCT = dict(V1, hba1c_change_dispersion="(-1.1% to -0.6%)", hba1c_change_dispersion_type="CI95")
+V_REV = dict(V1, hba1c_change_dispersion="-0.6 to -1.1", hba1c_change_dispersion_type="CI95")            # bounds reversed
+for nome, v in (("en dash", V_DASH), ("Unicode minus + '95% CI'", V_MINUS), ("value repeated in the type", V_REPEAT),
+                ("percent signs", V_PCT), ("bounds reversed", V_REV)):
+    confere(nome, V1, v)
+
 # the Study 12 grader path itself, when the campaign module is importable
 try:
     M2 = carrega("p2m", "scripts/estudo12/e12-p2.py")
