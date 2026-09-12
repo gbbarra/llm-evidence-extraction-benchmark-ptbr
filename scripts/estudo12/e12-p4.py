@@ -702,7 +702,10 @@ def registro_md(reg, placar, cels, kot, residuos, R, pools_adj, hip):
          "the rule that produced it. Mechanical rules are the classes of Study 8's Supplementary Tables S1–S7, "
          "extended to anchors 2 and 3; whatever no rule decides is a *residue*, adjudicated by the reader with the "
          "source open and recorded in `vereditos-leitor.json` with its quotation. "
-         f"Reader: {QUEM_LEITOR}. The adjudication is reversible: every verdict is a row the author can overturn.", "",
+         f"Reader: {QUEM_LEITOR}. The adjudication is reversible: every verdict is a row the author can overturn. "
+         "On 2026-09-11 the 85 reader verdicts and the 39 key-on-trial cells were re-read by three independent "
+         "adversarial reviewers with the source texts open; the ten disputed verdicts, their resolution and the cells "
+         "that changed are in `p4/revisao-vereditos.md`.", "",
          "**Scores.** The *mechanical* score is the frozen comparator's (Phase 2). The *adjudicated* score adds only the "
          "cells in which the model was right and the grader wrong — the seal-pair lookup collision adjudicated in the "
          "models' favor on 2026-09-01 — and nothing else: faithful re-encodings, population-layer choices and "

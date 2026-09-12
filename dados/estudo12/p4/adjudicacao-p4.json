@@ -1,20 +1,10 @@
 {
- "gerado": "2026-09-11 19:59:31",
+ "gerado": "2026-09-11 21:49:29",
  "fase": "P4",
  "fonte_p2": "C:\\Users\\gbbarra\\Documents\\localtts\\extrai\\dados\\estudo12\\p2\\avaliacao-p2.json",
  "leitor": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
  "vereditos_do_leitor": 85,
  "vereditos_nao_usados": [
-  {
-   "anchor": "a2",
-   "trial": "REF9",
-   "field": "exp_n",
-   "model_value": "41.0",
-   "class": "layer-choice",
-   "verdict": "faithful-different-encoding",
-   "evidence": "41 is the VLC group's analysed n for the weight outcome; the key's margin is the randomized 45.",
-   "quote": "Percent weight decreased by 8.94 (SE, 0.67; n = 41) in the VLC group and by 4.94 (0.69; n = 41) in the DASH group"
-  },
   {
    "anchor": "a2",
    "trial": "PMC6024764",
@@ -261,13 +251,13 @@
    "flips": 0,
    "divergents": 16,
    "omissions": 0,
-   "faithful": 10,
-   "slips": 6,
+   "faithful": 14,
+   "slips": 2,
    "residue": 0,
    "classes": {
     "derived-own-n": 4,
-    "layer-choice": 6,
-    "row-slip": 6
+    "layer-choice": 10,
+    "row-slip": 2
    }
   },
   "a2·gemma12·v2": {
@@ -277,14 +267,14 @@
    "flips": 0,
    "divergents": 18,
    "omissions": 6,
-   "faithful": 4,
-   "slips": 8,
+   "faithful": 8,
+   "slips": 4,
    "residue": 0,
    "classes": {
     "omission": 6,
-    "layer-choice": 4,
+    "layer-choice": 8,
     "dispersion-type": 2,
-    "row-slip": 6
+    "row-slip": 2
    }
   },
   "a2·qwen14·v1": {
@@ -294,14 +284,14 @@
    "flips": 2,
    "divergents": 27,
    "omissions": 0,
-   "faithful": 13,
-   "slips": 12,
+   "faithful": 17,
+   "slips": 8,
    "residue": 0,
    "classes": {
     "derived-own-n": 4,
-    "layer-choice": 7,
+    "layer-choice": 11,
     "arm-swap": 1,
-    "row-slip": 9,
+    "row-slip": 5,
     "unit": 2,
     "derived-through-seal": 2,
     "dispersion-type": 2
@@ -314,17 +304,17 @@
    "flips": 1,
    "divergents": 29,
    "omissions": 8,
-   "faithful": 8,
-   "slips": 12,
+   "faithful": 13,
+   "slips": 7,
    "residue": 0,
    "classes": {
     "omission": 8,
-    "layer-choice": 8,
+    "layer-choice": 13,
     "dispersion-type": 2,
     "arm-swap": 1,
-    "row-slip": 7,
+    "row-slip": 3,
     "derived-through-seal": 1,
-    "unmatched": 2
+    "unmatched": 1
    }
   },
   "a2·llama8·v1": {
@@ -334,13 +324,13 @@
    "flips": 1,
    "divergents": 26,
    "omissions": 4,
-   "faithful": 9,
-   "slips": 12,
+   "faithful": 12,
+   "slips": 9,
    "residue": 0,
    "classes": {
-    "row-slip": 5,
+    "row-slip": 2,
     "derived-own-n": 2,
-    "layer-choice": 7,
+    "layer-choice": 10,
     "omission": 4,
     "dispersion-type": 6,
     "derived-through-seal": 1,
@@ -354,13 +344,13 @@
    "flips": 1,
    "divergents": 27,
    "omissions": 2,
-   "faithful": 11,
-   "slips": 13,
+   "faithful": 14,
+   "slips": 10,
    "residue": 0,
    "classes": {
-    "row-slip": 8,
+    "row-slip": 5,
     "dispersion-type": 4,
-    "layer-choice": 7,
+    "layer-choice": 10,
     "omission": 2,
     "unit": 4,
     "derived-through-seal": 1,
@@ -374,14 +364,15 @@
    "flips": 2,
    "divergents": 21,
    "omissions": 3,
-   "faithful": 2,
-   "slips": 14,
+   "faithful": 6,
+   "slips": 10,
    "residue": 0,
    "classes": {
-    "row-slip": 12,
+    "row-slip": 7,
     "omission": 3,
+    "unmatched": 1,
     "dispersion-type": 2,
-    "layer-choice": 2,
+    "layer-choice": 6,
     "derived-through-seal": 2
    }
   },
@@ -392,13 +383,13 @@
    "flips": 2,
    "divergents": 26,
    "omissions": 8,
-   "faithful": 6,
-   "slips": 10,
+   "faithful": 8,
+   "slips": 8,
    "residue": 0,
    "classes": {
     "dispersion-type": 6,
-    "layer-choice": 4,
-    "row-slip": 4,
+    "layer-choice": 6,
+    "row-slip": 2,
     "omission": 8,
     "unit": 2,
     "derived-through-seal": 2
@@ -411,13 +402,13 @@
    "flips": 1,
    "divergents": 25,
    "omissions": 6,
-   "faithful": 9,
-   "slips": 9,
+   "faithful": 11,
+   "slips": 7,
    "residue": 0,
    "classes": {
     "derived-own-n": 2,
-    "layer-choice": 7,
-    "row-slip": 6,
+    "layer-choice": 9,
+    "row-slip": 4,
     "dispersion-type": 2,
     "omission": 6,
     "derived-through-seal": 1,
@@ -431,13 +422,13 @@
    "flips": 1,
    "divergents": 26,
    "omissions": 11,
-   "faithful": 6,
-   "slips": 8,
+   "faithful": 10,
+   "slips": 4,
    "residue": 0,
    "classes": {
     "omission": 11,
-    "layer-choice": 6,
-    "row-slip": 6,
+    "layer-choice": 10,
+    "row-slip": 2,
     "unmatched": 2,
     "lookup-collision": 1
    }
@@ -449,13 +440,13 @@
    "flips": 0,
    "divergents": 14,
    "omissions": 0,
-   "faithful": 8,
-   "slips": 6,
+   "faithful": 12,
+   "slips": 2,
    "residue": 0,
    "classes": {
     "derived-own-n": 4,
-    "layer-choice": 4,
-    "row-slip": 6
+    "layer-choice": 8,
+    "row-slip": 2
    }
   },
   "a2·qwen27q2·v2": {
@@ -465,15 +456,14 @@
    "flips": 0,
    "divergents": 18,
    "omissions": 6,
-   "faithful": 5,
-   "slips": 7,
+   "faithful": 9,
+   "slips": 3,
    "residue": 0,
    "classes": {
     "omission": 6,
-    "layer-choice": 5,
+    "layer-choice": 9,
     "dispersion-type": 2,
-    "unmatched": 1,
-    "row-slip": 4
+    "unmatched": 1
    }
   },
   "a3·gemma12·v1": {
@@ -923,21 +913,21 @@
   "residuos": 0,
   "chave_sob_julgamento": 39,
   "por_veredito": {
-   "faithful-different-encoding": 288,
+   "faithful-different-encoding": 331,
    "model-correct": 21,
    "omission": 175,
-   "reading-slip": 149
+   "reading-slip": 106
   },
   "por_classe": {
    "summary": 78,
    "lookup-collision": 11,
-   "layer-choice": 122,
+   "layer-choice": 165,
    "re-encoding": 54,
    "omission": 167,
    "self-contradiction": 6,
    "labels-only": 8,
    "arm-swap": 6,
-   "row-slip": 95,
+   "row-slip": 52,
    "unmatched": 16,
    "nr-restated": 1,
    "re-encoding-partial": 3,
@@ -1176,7 +1166,8 @@
    "published_value": "209",
    "key_verdict": "literal",
    "key_quote": "e orthopaedic patients from the outcome analysis after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical p",
-   "reversed_value": "224"
+   "reversed_value": "224",
+   "note": "Reviewed 2026-09-11: verdict and key_on_trial confirmed. The source is internally inconsistent about the randomized total — abstract '450 patients were randomized', Results 'A total of 450 subjects were enrolled, and 428 were randomised … with 224 allocated to the GDHT algorithm and 226 to standard care' (224 + 226 = 450). Recommendation to the author: keep the key's analysed layer (209/211), which is what the review pooled; errata #13 already documents analysed-as-randomized."
   },
   {
    "anchor": "a1",
@@ -1195,7 +1186,8 @@
    "published_value": "211",
    "key_verdict": "literal",
    "key_quote": "after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical procedures. Baseline subject characteristics were ",
-   "reversed_value": "226"
+   "reversed_value": "226",
+   "note": "Reviewed 2026-09-11: as for the GDHT arm (source-internal 450 vs 428; recommendation: keep the key's layer)."
   },
   {
    "anchor": "a1",
@@ -1233,7 +1225,8 @@
    "published_value": "39",
    "key_verdict": "literal",
    "key_quote": " omitted and another patient was lost to follow-up. As a consequence, a total of 78 individuals were studied; 39 patients were assigned to each group. Patient ages ranged widely with an average age of 48.78±5.76 years. T",
-   "reversed_value": "40"
+   "reversed_value": "40",
+   "note": "Reviewed 2026-09-11: verdict and key_on_trial confirmed. The source reuses the word 'assigned' for the 39 studied ('39 patients were assigned to each group'), which is how the analysed count entered the key. Recommendation to the author: keep the key's layer (the count the review pooled); the models' 40 is the Methods' randomized count."
   },
   {
    "anchor": "a1",
@@ -1252,7 +1245,8 @@
    "published_value": "39",
    "key_verdict": "literal",
    "key_quote": " omitted and another patient was lost to follow-up. As a consequence, a total of 78 individuals were studied; 39 patients were assigned to each group. Patient ages ranged widely with an average age of 48.78±5.76 years. T",
-   "reversed_value": "40"
+   "reversed_value": "40",
+   "note": "Reviewed 2026-09-11: as for the PVI arm (recommendation: keep the key's layer)."
   },
   {
    "anchor": "a1",
@@ -1556,7 +1550,8 @@
    "published_value": "209",
    "key_verdict": "literal",
    "key_quote": "e orthopaedic patients from the outcome analysis after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical p",
-   "reversed_value": "224"
+   "reversed_value": "224",
+   "note": "Reviewed 2026-09-11: verdict and key_on_trial confirmed. The source is internally inconsistent about the randomized total — abstract '450 patients were randomized', Results 'A total of 450 subjects were enrolled, and 428 were randomised … with 224 allocated to the GDHT algorithm and 226 to standard care' (224 + 226 = 450). Recommendation to the author: keep the key's analysed layer (209/211), which is what the review pooled; errata #13 already documents analysed-as-randomized."
   },
   {
    "anchor": "a1",
@@ -1575,7 +1570,8 @@
    "published_value": "211",
    "key_verdict": "literal",
    "key_quote": "after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical procedures. Baseline subject characteristics were ",
-   "reversed_value": "226"
+   "reversed_value": "226",
+   "note": "Reviewed 2026-09-11: as for the GDHT arm (source-internal 450 vs 428; recommendation: keep the key's layer)."
   },
   {
    "anchor": "a1",
@@ -1898,7 +1894,8 @@
    "published_value": "209",
    "key_verdict": "literal",
    "key_quote": "e orthopaedic patients from the outcome analysis after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical p",
-   "reversed_value": "224"
+   "reversed_value": "224",
+   "note": "Reviewed 2026-09-11: verdict and key_on_trial confirmed. The source is internally inconsistent about the randomized total — abstract '450 patients were randomized', Results 'A total of 450 subjects were enrolled, and 428 were randomised … with 224 allocated to the GDHT algorithm and 226 to standard care' (224 + 226 = 450). Recommendation to the author: keep the key's analysed layer (209/211), which is what the review pooled; errata #13 already documents analysed-as-randomized."
   },
   {
    "anchor": "a1",
@@ -1917,7 +1914,8 @@
    "published_value": "211",
    "key_verdict": "literal",
    "key_quote": "after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical procedures. Baseline subject characteristics were ",
-   "reversed_value": "226"
+   "reversed_value": "226",
+   "note": "Reviewed 2026-09-11: as for the GDHT arm (source-internal 450 vs 428; recommendation: keep the key's layer)."
   },
   {
    "anchor": "a1",
@@ -1955,7 +1953,8 @@
    "published_value": "39",
    "key_verdict": "literal",
    "key_quote": " omitted and another patient was lost to follow-up. As a consequence, a total of 78 individuals were studied; 39 patients were assigned to each group. Patient ages ranged widely with an average age of 48.78±5.76 years. T",
-   "reversed_value": "40"
+   "reversed_value": "40",
+   "note": "Reviewed 2026-09-11: verdict and key_on_trial confirmed. The source reuses the word 'assigned' for the 39 studied ('39 patients were assigned to each group'), which is how the analysed count entered the key. Recommendation to the author: keep the key's layer (the count the review pooled); the models' 40 is the Methods' randomized count."
   },
   {
    "anchor": "a1",
@@ -1974,7 +1973,8 @@
    "published_value": "39",
    "key_verdict": "literal",
    "key_quote": " omitted and another patient was lost to follow-up. As a consequence, a total of 78 individuals were studied; 39 patients were assigned to each group. Patient ages ranged widely with an average age of 48.78±5.76 years. T",
-   "reversed_value": "40"
+   "reversed_value": "40",
+   "note": "Reviewed 2026-09-11: as for the PVI arm (recommendation: keep the key's layer)."
   },
   {
    "anchor": "a1",
@@ -2601,7 +2601,8 @@
    "published_value": "209",
    "key_verdict": "literal",
    "key_quote": "e orthopaedic patients from the outcome analysis after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical p",
-   "reversed_value": "224"
+   "reversed_value": "224",
+   "note": "Reviewed 2026-09-11: verdict and key_on_trial confirmed. The source is internally inconsistent about the randomized total — abstract '450 patients were randomized', Results 'A total of 450 subjects were enrolled, and 428 were randomised … with 224 allocated to the GDHT algorithm and 226 to standard care' (224 + 226 = 450). Recommendation to the author: keep the key's analysed layer (209/211), which is what the review pooled; errata #13 already documents analysed-as-randomized."
   },
   {
    "anchor": "a1",
@@ -2620,7 +2621,8 @@
    "published_value": "211",
    "key_verdict": "literal",
    "key_quote": "after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical procedures. Baseline subject characteristics were ",
-   "reversed_value": "226"
+   "reversed_value": "226",
+   "note": "Reviewed 2026-09-11: as for the GDHT arm (source-internal 450 vs 428; recommendation: keep the key's layer)."
   },
   {
    "anchor": "a1",
@@ -2696,7 +2698,8 @@
    "published_value": "39",
    "key_verdict": "literal",
    "key_quote": " omitted and another patient was lost to follow-up. As a consequence, a total of 78 individuals were studied; 39 patients were assigned to each group. Patient ages ranged widely with an average age of 48.78±5.76 years. T",
-   "reversed_value": "40"
+   "reversed_value": "40",
+   "note": "Reviewed 2026-09-11: verdict and key_on_trial confirmed. The source reuses the word 'assigned' for the 39 studied ('39 patients were assigned to each group'), which is how the analysed count entered the key. Recommendation to the author: keep the key's layer (the count the review pooled); the models' 40 is the Methods' randomized count."
   },
   {
    "anchor": "a1",
@@ -2715,7 +2718,8 @@
    "published_value": "39",
    "key_verdict": "literal",
    "key_quote": " omitted and another patient was lost to follow-up. As a consequence, a total of 78 individuals were studied; 39 patients were assigned to each group. Patient ages ranged widely with an average age of 48.78±5.76 years. T",
-   "reversed_value": "40"
+   "reversed_value": "40",
+   "note": "Reviewed 2026-09-11: as for the PVI arm (recommendation: keep the key's layer)."
   },
   {
    "anchor": "a1",
@@ -3544,8 +3548,8 @@
    "source_value": "7:31:5:0",
    "class": "row-slip",
    "verdict": "reading-slip",
-   "evidence": "16 is the GDFT ASA I percentage (7 (16)); 21 is the sex row's control count (Male 22 (52) 21 (49)); 6 matches no ASA figure (GDFT prints 7:31:5).",
-   "quote": "Sex b Male 22 (52) 21 (49) 0.91 ASA I b 11 (26) 7 (16) 0.39 II b 26 (62) 31 (72) 0.44 III c 5 (12) 5 (12) 1.00",
+   "evidence": "16 is the GDFT ASA I percentage (7 (16)); 21 is the GDFT male count of the sex row (Male 22 (52) 21 (49), header 'SOC (n = 42) GDFT (n = 43)'); 6 is the GDFT diabetes count (Diabetes Mellitus 5 (12%) 6 (14%)). None is a GDFT ASA count (the arm prints 7:31:5; 7:28:5 in the text read). Evidence corrected on 2026-09-11 (21 had been attributed to the control arm).",
+   "quote": "Sex b Male 22 (52) 21 (49) 0.91 ASA I b 11 (26) 7 (16) 0.39 II b 26 (62) 31 (72) 0.44 III c 5 (12) 5 (12) 1.00 Morbidities n (%) n (%) p- value Diabetes Mellitus b 5 (12%) 6 (14%) 0.97",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "published_value": "7:31:5:0",
@@ -3772,8 +3776,8 @@
    "source_value": "113 (57.7%)",
    "class": "unmatched",
    "verdict": "reading-slip",
-   "evidence": "114 is printed nowhere; 57.7% × 198 (the RNT arm's n) = 114.2 — a reconstruction with the wrong denominator. The GDHT count is 113 (57.7% of 196), displaced to 101 in the text the model read.",
-   "quote": "postoperative mortality-morbidity end point: 113 patients (57.7%) in the GDHT group and 117 (53.0%) in the RNT group [perturbed image read by the model: 101 (57.7)]",
+   "evidence": "114 is printed nowhere: the source prints 113 (57.7%) for the GDHT composite (101 (57.7) in the text the model read). 57.7% × 198 = 114.2, where 198 is the GDHT analysed n the Results sentence gives ('data from 198 and 196 patients were analyzed in the GDHT and RNT groups') while Table III's header assigns 196 to GDHT — a count reconstructed from the percentage with a printed but inconsistent n. By the V29/V31 distinction a count reconstructed by arithmetic, not printed, is a slip. Evidence corrected on 2026-09-11 (the earlier text quoted the perturbed 117 as source and called 198 'the RNT arm's n').",
+   "quote": "data from 198 and 196 patients were analyzed in the GDHT and RNT groups, respectively […] 113 patients (57.7%) in the GDHT group and 105 (53.0%) in the RNT group […] Table III … GDHT group RNT group (n = 196) (n = 198) Composite index of major complications 113 (57.7) 105 (53.0) [text read: 101 (57.7)]",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "published_value": "113 (57.7%)",
@@ -3912,7 +3916,8 @@
    "published_value": "36 (25.4%)",
    "key_verdict": "derivavel",
    "key_quote": "d therapy and 141 standard fluid therapy) were included in the analysis. Postoperative ileus occurred in 25% (36/142) of patients in the goal-directed fluid therapy arm and 21% (30/141) of patients in the standard arm (d",
-   "reversed_value": "36/142 (22%)"
+   "reversed_value": "36/142 (22%)",
+   "note": "Reviewed 2026-09-11: the count is the displaced image (31 → 36 under the lens) and 22% its recomputation (31/142 = 21.8%); faithful to the text read. Distinction from REF29's ASA cell: there a count was invented, here only a percentage was recomputed from a printed count."
   },
   {
    "anchor": "a1",
@@ -3950,7 +3955,8 @@
    "published_value": "209",
    "key_verdict": "literal",
    "key_quote": "e orthopaedic patients from the outcome analysis after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical p",
-   "reversed_value": "224"
+   "reversed_value": "224",
+   "note": "Reviewed 2026-09-11: verdict and key_on_trial confirmed. The source is internally inconsistent about the randomized total — abstract '450 patients were randomized', Results 'A total of 450 subjects were enrolled, and 428 were randomised … with 224 allocated to the GDHT algorithm and 226 to standard care' (224 + 226 = 450). Recommendation to the author: keep the key's analysed layer (209/211), which is what the review pooled; errata #13 already documents analysed-as-randomized."
   },
   {
    "anchor": "a1",
@@ -3969,7 +3975,8 @@
    "published_value": "211",
    "key_verdict": "literal",
    "key_quote": "after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical procedures. Baseline subject characteristics were ",
-   "reversed_value": "226"
+   "reversed_value": "226",
+   "note": "Reviewed 2026-09-11: as for the GDHT arm (source-internal 450 vs 428; recommendation: keep the key's layer)."
   },
   {
    "anchor": "a1",
@@ -4045,7 +4052,8 @@
    "published_value": "35 (16.6%)",
    "key_verdict": "literal",
    "key_quote": "014, the definition of postoperative complications in the study were updated to align with the new standards, 35 a change that was made before unblinding and data analysis. Secondary end points were: length of hospital s",
-   "reversed_value": "37 (16.6)"
+   "reversed_value": "37 (16.6)",
+   "note": "Reviewed 2026-09-11, note on the KEY for the author: the key's value 35 (16.6%) is derivable (16.6% × 211 = 35.0), not literal — the outcome is printed only as '8.6% vs 16.6%', the two printed '35 (16.6)' cells are the ASA-1 and vasopressor rows, and the key's citation ('new standards, 35 a change…') is a reference marker. Verdict on the model unchanged (37 is a reference marker too)."
   },
   {
    "anchor": "a1",
@@ -4064,7 +4072,8 @@
    "published_value": "39",
    "key_verdict": "literal",
    "key_quote": " omitted and another patient was lost to follow-up. As a consequence, a total of 78 individuals were studied; 39 patients were assigned to each group. Patient ages ranged widely with an average age of 48.78±5.76 years. T",
-   "reversed_value": "40"
+   "reversed_value": "40",
+   "note": "Reviewed 2026-09-11: verdict and key_on_trial confirmed. The source reuses the word 'assigned' for the 39 studied ('39 patients were assigned to each group'), which is how the analysed count entered the key. Recommendation to the author: keep the key's layer (the count the review pooled); the models' 40 is the Methods' randomized count."
   },
   {
    "anchor": "a1",
@@ -4083,7 +4092,8 @@
    "published_value": "39",
    "key_verdict": "literal",
    "key_quote": " omitted and another patient was lost to follow-up. As a consequence, a total of 78 individuals were studied; 39 patients were assigned to each group. Patient ages ranged widely with an average age of 48.78±5.76 years. T",
-   "reversed_value": "40"
+   "reversed_value": "40",
+   "note": "Reviewed 2026-09-11: as for the PVI arm (recommendation: keep the key's layer)."
   },
   {
    "anchor": "a1",
@@ -4235,7 +4245,8 @@
    "published_value": "0 (0%)",
    "key_verdict": "derivavel",
    "key_quote": "0 * Lower limb venous thrombosis 6 (12) 1 (2) 0.054 Wound infection 5 (10) 2 (4) 0.242 Anastomotic fistula 0 (0) 0 (0) 1.000 Hemorrhage 0 (0) 1 (2) 1.000 30 days mortality, n (%) 0 (0) 1 (2) 1.000 Data are presented a",
-   "reversed_value": "0 (0)"
+   "reversed_value": "0 (0)",
+   "note": "Reviewed 2026-09-11: an independent re-read argued model-correct — the model's '0 (0)' is the verbatim source cell and the key's '0 (0%)' the re-encoded one; the comparator's zero rule (bare 0, NR or NA only) rejected it. Kept as re-encoding / faithful, not flipped: the 2026-09-01 rule covers only the seal-pair lookup collision, and the published record kept the same cell class for the extension arm (Sun, mortality). Listed for the author as a candidate extension of the grader-side rule (three cells: qwen35 v1, qwen35 v2, qwen27q2 v2; +1 cell each if flipped)."
   },
   {
    "anchor": "a1",
@@ -4482,7 +4493,8 @@
    "published_value": "24:123:86:1",
    "key_verdict": "errata-ma",
    "key_quote": "letal pathology 10 (4.3%) 9 (3.6%) Increased bleeding tendency 82 (35.0%) 81 (32.7%) ASA classification ASA I 24 (10.3%) 17 (6.9%) ASA II 123 (52.6%) 132 (53.2%) ASA III 86 (36.7%) 95 (38.3%) ASA IV 1 (0.4%) 4 (1.6%) Imm",
-   "reversed_value": "ASA I: 6 (2.4%) | ASA II: 132 (58.1%) | ASA III: 95 (38.3%) | ASA IV: 4 (1.6%)"
+   "reversed_value": "ASA I: 6 (2.4%) | ASA II: 132 (58.1%) | ASA III: 95 (38.3%) | ASA IV: 4 (1.6%)",
+   "note": "Reviewed 2026-09-11: 58.1% is 144/248 recomputed from the displaced ASA II image the model read (the same reconciliation credited as faithful in the ileus cell of REF30); the slip is the ASA I cell, 6 (2.4%), a count the source does not print (17 (6.9%); 248 − 144 − 95 − 4 = 5). Distinction stated: a percentage recomputed from the text read is faithful; a count invented by arithmetic is a slip."
   },
   {
    "anchor": "a1",
@@ -4539,7 +4551,8 @@
    "published_value": "209",
    "key_verdict": "literal",
    "key_quote": "e orthopaedic patients from the outcome analysis after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical p",
-   "reversed_value": "224"
+   "reversed_value": "224",
+   "note": "Reviewed 2026-09-11: verdict and key_on_trial confirmed. The source is internally inconsistent about the randomized total — abstract '450 patients were randomized', Results 'A total of 450 subjects were enrolled, and 428 were randomised … with 224 allocated to the GDHT algorithm and 226 to standard care' (224 + 226 = 450). Recommendation to the author: keep the key's analysed layer (209/211), which is what the review pooled; errata #13 already documents analysed-as-randomized."
   },
   {
    "anchor": "a1",
@@ -4558,7 +4571,8 @@
    "published_value": "211",
    "key_verdict": "literal",
    "key_quote": "after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical procedures. Baseline subject characteristics were ",
-   "reversed_value": "226"
+   "reversed_value": "226",
+   "note": "Reviewed 2026-09-11: as for the GDHT arm (source-internal 450 vs 428; recommendation: keep the key's layer)."
   },
   {
    "anchor": "a1",
@@ -4570,7 +4584,7 @@
    "source_value": "150 gastrointestinal, 48 urological, 11 gynecological",
    "class": "summary",
    "verdict": "faithful-different-encoding",
-   "evidence": "A category-level summary carrying the printed gastrointestinal shares (150/209 = 77.8%, 154/211 = 73.0%); the key holds the enumerated case mix (150 gastrointestinal, 48 urological, 11 gynecological).",
+   "evidence": "A category-level summary carrying the shares the source prints for the gastrointestinal row (77.8 and 73.0); the key holds the enumerated case mix (150 gastrointestinal, 48 urological, 11 gynecological). The printed 77.8 is a source-internal inconsistency (150/209 = 71.8%; 154/211 = 73.0% checks) that the model copied as printed. Evidence corrected on 2026-09-11 (it had asserted 150/209 = 77.8%).",
    "quote": "Surgical procedure, n (%) Gastrointestinal 150 (77.8) 154 (73.0) 0.188 Urological 48 (23.0) 38 (18.0) Gynaecological 11 (5.3) 19 (9.0)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
@@ -4634,7 +4648,8 @@
    "published_value": "39",
    "key_verdict": "literal",
    "key_quote": " omitted and another patient was lost to follow-up. As a consequence, a total of 78 individuals were studied; 39 patients were assigned to each group. Patient ages ranged widely with an average age of 48.78±5.76 years. T",
-   "reversed_value": "40"
+   "reversed_value": "40",
+   "note": "Reviewed 2026-09-11: verdict and key_on_trial confirmed. The source reuses the word 'assigned' for the 39 studied ('39 patients were assigned to each group'), which is how the analysed count entered the key. Recommendation to the author: keep the key's layer (the count the review pooled); the models' 40 is the Methods' randomized count."
   },
   {
    "anchor": "a1",
@@ -4653,7 +4668,8 @@
    "published_value": "39",
    "key_verdict": "literal",
    "key_quote": " omitted and another patient was lost to follow-up. As a consequence, a total of 78 individuals were studied; 39 patients were assigned to each group. Patient ages ranged widely with an average age of 48.78±5.76 years. T",
-   "reversed_value": "40"
+   "reversed_value": "40",
+   "note": "Reviewed 2026-09-11: as for the PVI arm (recommendation: keep the key's layer)."
   },
   {
    "anchor": "a1",
@@ -4805,7 +4821,8 @@
    "published_value": "0 (0%)",
    "key_verdict": "derivavel",
    "key_quote": "0 * Lower limb venous thrombosis 6 (12) 1 (2) 0.054 Wound infection 5 (10) 2 (4) 0.242 Anastomotic fistula 0 (0) 0 (0) 1.000 Hemorrhage 0 (0) 1 (2) 1.000 30 days mortality, n (%) 0 (0) 1 (2) 1.000 Data are presented a",
-   "reversed_value": "0 (0)"
+   "reversed_value": "0 (0)",
+   "note": "Reviewed 2026-09-11: an independent re-read argued model-correct — the model's '0 (0)' is the verbatim source cell and the key's '0 (0%)' the re-encoded one; the comparator's zero rule (bare 0, NR or NA only) rejected it. Kept as re-encoding / faithful, not flipped: the 2026-09-01 rule covers only the seal-pair lookup collision, and the published record kept the same cell class for the extension arm (Sun, mortality). Listed for the author as a candidate extension of the grader-side rule (three cells: qwen35 v1, qwen35 v2, qwen27q2 v2; +1 cell each if flipped)."
   },
   {
    "anchor": "a1",
@@ -4976,7 +4993,8 @@
    "published_value": "16 Whipple, 71 oesophageal, three pancreatectomies, two others",
    "key_verdict": "literal",
    "key_quote": "or-tipped catheter in the femoral artery. Before surgical incision, an epidural bolus of 10 μg sufentanil and 16 mg ropivacaine was applied. For pain therapy, a continuous epidural infusion of 3 μg sufentanil and 4.8 mg ",
-   "reversed_value": "Whipple 14 (16 %) | Oesophageal 65 (74 %) | Pancreatectomy 5 (6 %) | Other 4 (4 %) - Control"
+   "reversed_value": "Whipple 14 (16 %) | Oesophageal 65 (74 %) | Pancreatectomy 5 (6 %) | Other 4 (4 %) - Control",
+   "note": "Reviewed 2026-09-11: the field is trial-level and the key itself enumerates one arm (the GDT column 16/71/3/2; the trial's totals would be 30/136/8/6); the model transcribed the control column correctly and labelled it. Verdict kept; the one-arm key is noted for the author."
   },
   {
    "anchor": "a1",
@@ -5185,7 +5203,8 @@
    "published_value": "209",
    "key_verdict": "literal",
    "key_quote": "e orthopaedic patients from the outcome analysis after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical p",
-   "reversed_value": "224"
+   "reversed_value": "224",
+   "note": "Reviewed 2026-09-11: verdict and key_on_trial confirmed. The source is internally inconsistent about the randomized total — abstract '450 patients were randomized', Results 'A total of 450 subjects were enrolled, and 428 were randomised … with 224 allocated to the GDHT algorithm and 226 to standard care' (224 + 226 = 450). Recommendation to the author: keep the key's analysed layer (209/211), which is what the review pooled; errata #13 already documents analysed-as-randomized."
   },
   {
    "anchor": "a1",
@@ -5204,7 +5223,8 @@
    "published_value": "211",
    "key_verdict": "literal",
    "key_quote": "after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical procedures. Baseline subject characteristics were ",
-   "reversed_value": "226"
+   "reversed_value": "226",
+   "note": "Reviewed 2026-09-11: as for the GDHT arm (source-internal 450 vs 428; recommendation: keep the key's layer)."
   },
   {
    "anchor": "a1",
@@ -5280,7 +5300,8 @@
    "published_value": "39",
    "key_verdict": "literal",
    "key_quote": " omitted and another patient was lost to follow-up. As a consequence, a total of 78 individuals were studied; 39 patients were assigned to each group. Patient ages ranged widely with an average age of 48.78±5.76 years. T",
-   "reversed_value": "40"
+   "reversed_value": "40",
+   "note": "Reviewed 2026-09-11: verdict and key_on_trial confirmed. The source reuses the word 'assigned' for the 39 studied ('39 patients were assigned to each group'), which is how the analysed count entered the key. Recommendation to the author: keep the key's layer (the count the review pooled); the models' 40 is the Methods' randomized count."
   },
   {
    "anchor": "a1",
@@ -5299,7 +5320,8 @@
    "published_value": "39",
    "key_verdict": "literal",
    "key_quote": " omitted and another patient was lost to follow-up. As a consequence, a total of 78 individuals were studied; 39 patients were assigned to each group. Patient ages ranged widely with an average age of 48.78±5.76 years. T",
-   "reversed_value": "40"
+   "reversed_value": "40",
+   "note": "Reviewed 2026-09-11: as for the PVI arm (recommendation: keep the key's layer)."
   },
   {
    "anchor": "a1",
@@ -5888,7 +5910,8 @@
    "published_value": "209",
    "key_verdict": "literal",
    "key_quote": "e orthopaedic patients from the outcome analysis after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical p",
-   "reversed_value": "224"
+   "reversed_value": "224",
+   "note": "Reviewed 2026-09-11: verdict and key_on_trial confirmed. The source is internally inconsistent about the randomized total — abstract '450 patients were randomized', Results 'A total of 450 subjects were enrolled, and 428 were randomised … with 224 allocated to the GDHT algorithm and 226 to standard care' (224 + 226 = 450). Recommendation to the author: keep the key's analysed layer (209/211), which is what the review pooled; errata #13 already documents analysed-as-randomized."
   },
   {
    "anchor": "a1",
@@ -5907,7 +5930,8 @@
    "published_value": "211",
    "key_verdict": "literal",
    "key_quote": "after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical procedures. Baseline subject characteristics were ",
-   "reversed_value": "226"
+   "reversed_value": "226",
+   "note": "Reviewed 2026-09-11: as for the GDHT arm (source-internal 450 vs 428; recommendation: keep the key's layer)."
   },
   {
    "anchor": "a1",
@@ -6230,7 +6254,8 @@
    "published_value": "209",
    "key_verdict": "literal",
    "key_quote": "e orthopaedic patients from the outcome analysis after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical p",
-   "reversed_value": "224"
+   "reversed_value": "224",
+   "note": "Reviewed 2026-09-11: verdict and key_on_trial confirmed. The source is internally inconsistent about the randomized total — abstract '450 patients were randomized', Results 'A total of 450 subjects were enrolled, and 428 were randomised … with 224 allocated to the GDHT algorithm and 226 to standard care' (224 + 226 = 450). Recommendation to the author: keep the key's analysed layer (209/211), which is what the review pooled; errata #13 already documents analysed-as-randomized."
   },
   {
    "anchor": "a1",
@@ -6249,7 +6274,8 @@
    "published_value": "211",
    "key_verdict": "literal",
    "key_quote": "after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical procedures. Baseline subject characteristics were ",
-   "reversed_value": "226"
+   "reversed_value": "226",
+   "note": "Reviewed 2026-09-11: as for the GDHT arm (source-internal 450 vs 428; recommendation: keep the key's layer)."
   },
   {
    "anchor": "a1",
@@ -6287,7 +6313,8 @@
    "published_value": "39",
    "key_verdict": "literal",
    "key_quote": " omitted and another patient was lost to follow-up. As a consequence, a total of 78 individuals were studied; 39 patients were assigned to each group. Patient ages ranged widely with an average age of 48.78±5.76 years. T",
-   "reversed_value": "40"
+   "reversed_value": "40",
+   "note": "Reviewed 2026-09-11: verdict and key_on_trial confirmed. The source reuses the word 'assigned' for the 39 studied ('39 patients were assigned to each group'), which is how the analysed count entered the key. Recommendation to the author: keep the key's layer (the count the review pooled); the models' 40 is the Methods' randomized count."
   },
   {
    "anchor": "a1",
@@ -6306,7 +6333,8 @@
    "published_value": "39",
    "key_verdict": "literal",
    "key_quote": " omitted and another patient was lost to follow-up. As a consequence, a total of 78 individuals were studied; 39 patients were assigned to each group. Patient ages ranged widely with an average age of 48.78±5.76 years. T",
-   "reversed_value": "40"
+   "reversed_value": "40",
+   "note": "Reviewed 2026-09-11: as for the PVI arm (recommendation: keep the key's layer)."
   },
   {
    "anchor": "a1",
@@ -6382,7 +6410,8 @@
    "published_value": "0 (0%)",
    "key_verdict": "derivavel",
    "key_quote": "0 * Lower limb venous thrombosis 6 (12) 1 (2) 0.054 Wound infection 5 (10) 2 (4) 0.242 Anastomotic fistula 0 (0) 0 (0) 1.000 Hemorrhage 0 (0) 1 (2) 1.000 30 days mortality, n (%) 0 (0) 1 (2) 1.000 Data are presented a",
-   "reversed_value": "0 (0)"
+   "reversed_value": "0 (0)",
+   "note": "Reviewed 2026-09-11: an independent re-read argued model-correct — the model's '0 (0)' is the verbatim source cell and the key's '0 (0%)' the re-encoded one; the comparator's zero rule (bare 0, NR or NA only) rejected it. Kept as re-encoding / faithful, not flipped: the 2026-09-01 rule covers only the seal-pair lookup collision, and the published record kept the same cell class for the extension arm (Sun, mortality). Listed for the author as a candidate extension of the grader-side rule (three cells: qwen35 v1, qwen35 v2, qwen27q2 v2; +1 cell each if flipped)."
   },
   {
    "anchor": "a1",
@@ -6553,7 +6582,8 @@
    "published_value": "209",
    "key_verdict": "literal",
    "key_quote": "e orthopaedic patients from the outcome analysis after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical p",
-   "reversed_value": "224"
+   "reversed_value": "224",
+   "note": "Reviewed 2026-09-11: verdict and key_on_trial confirmed. The source is internally inconsistent about the randomized total — abstract '450 patients were randomized', Results 'A total of 450 subjects were enrolled, and 428 were randomised … with 224 allocated to the GDHT algorithm and 226 to standard care' (224 + 226 = 450). Recommendation to the author: keep the key's analysed layer (209/211), which is what the review pooled; errata #13 already documents analysed-as-randomized."
   },
   {
    "anchor": "a1",
@@ -6572,7 +6602,8 @@
    "published_value": "211",
    "key_verdict": "literal",
    "key_quote": "after recruiting only eight patients in this subgroup. Thus, 209 patients were included in the GDHT group and 211 in the control group, including only abdominal surgical procedures. Baseline subject characteristics were ",
-   "reversed_value": "226"
+   "reversed_value": "226",
+   "note": "Reviewed 2026-09-11: as for the GDHT arm (source-internal 450 vs 428; recommendation: keep the key's layer)."
   },
   {
    "anchor": "a1",
@@ -6792,15 +6823,16 @@
    "model_value": "-0.63",
    "source_value": "-0.54",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "−0.63 is the 3rd-month change (table: 3rd month … MD 0.63 ± 1.18); the review pooled the study-end change 0.54 ± 1.12 (the key's cell). Other timepoint, sign in the meta-analysis convention.",
-   "quote": "3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "−0.63 is the LCD arm's HbA1c change at the trial's only follow-up (3rd month) in the completers layer (Table 4, n = 24; the abstract's headline '−0.63% vs. −0.31%'), in the meta-analysis sign convention; the key holds the ITT layer the review pooled (Table 5, n = 28: 0.54 ± 1.12). The same sheets wrote n = 24/25: one coherent population layer, not another visit.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "MD 0.54 ± 1.12 0.28 ± 0.67",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -6811,15 +6843,16 @@
    "model_value": "1.18",
    "source_value": "1.12",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "1.18 is the SD of the 3rd-month change; the pooled cell's SD is 1.12 (study end). Other timepoint, consistent with the same sheets' −0.63.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "1.18 is the SD of the LCD completers-layer change (Table 4, n = 24), the untouched twin of the sealed ITT SD (1.12 → 0.94 in the perturbed text); consistent with the same sheets' 0.63 and n = 24 — one coherent layer.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.54 ± 1.12",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -6849,15 +6882,16 @@
    "model_value": "-0.31",
    "source_value": "-0.28",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "−0.31 is the control 3rd-month change; the pooled cell is the study-end 0.28. Other timepoint.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70 […] (−0.63% vs. −0.31%, p < 0.05)",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "−0.31 is the LFD arm's completers-layer change (Table 4, n = 25; abstract '−0.31%') at the trial's only follow-up; the key holds the ITT layer (0.28 ± 0.67, n = 28). Same sheets wrote n = 24/25.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -6868,15 +6902,16 @@
    "model_value": "0.7",
    "source_value": "0.67",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "0.70 is the SD of the control 3rd-month change (the same sheets wrote 1.18 for the LCD arm); the pooled cell's SD is 0.67 (study end). Read as the other timepoint rather than as a rounding of 0.67.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.70 is the SD of the LFD completers-layer change (Table 4, n = 25), consistent with the same sheets' 1.18, 0.31 and n = 25; the key's 0.67 is the ITT SD. (It is also 0.67 at one decimal, the mechanical rounding reading — faithful either way; the layer reading is kept because the whole triple is the completers row.)",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -7128,15 +7163,16 @@
    "model_value": "-0.63",
    "source_value": "-0.54",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "−0.63 is the 3rd-month change (table: 3rd month … MD 0.63 ± 1.18); the review pooled the study-end change 0.54 ± 1.12 (the key's cell). Other timepoint, sign in the meta-analysis convention.",
-   "quote": "3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "−0.63 is the LCD arm's HbA1c change at the trial's only follow-up (3rd month) in the completers layer (Table 4, n = 24; the abstract's headline '−0.63% vs. −0.31%'), in the meta-analysis sign convention; the key holds the ITT layer the review pooled (Table 5, n = 28: 0.54 ± 1.12). The same sheets wrote n = 24/25: one coherent population layer, not another visit.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "MD 0.54 ± 1.12 0.28 ± 0.67",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -7147,15 +7183,16 @@
    "model_value": "1.18",
    "source_value": "1.12",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "1.18 is the SD of the 3rd-month change; the pooled cell's SD is 1.12 (study end). Other timepoint, consistent with the same sheets' −0.63.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "1.18 is the SD of the LCD completers-layer change (Table 4, n = 24), the untouched twin of the sealed ITT SD (1.12 → 0.94 in the perturbed text); consistent with the same sheets' 0.63 and n = 24 — one coherent layer.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.54 ± 1.12",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -7185,15 +7222,16 @@
    "model_value": "-0.31",
    "source_value": "-0.28",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "−0.31 is the control 3rd-month change; the pooled cell is the study-end 0.28. Other timepoint.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70 […] (−0.63% vs. −0.31%, p < 0.05)",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "−0.31 is the LFD arm's completers-layer change (Table 4, n = 25; abstract '−0.31%') at the trial's only follow-up; the key holds the ITT layer (0.28 ± 0.67, n = 28). Same sheets wrote n = 24/25.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -7204,15 +7242,16 @@
    "model_value": "0.7",
    "source_value": "0.67",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "0.70 is the SD of the control 3rd-month change (the same sheets wrote 1.18 for the LCD arm); the pooled cell's SD is 0.67 (study end). Read as the other timepoint rather than as a rounding of 0.67.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.70 is the SD of the LFD completers-layer change (Table 4, n = 25), consistent with the same sheets' 1.18, 0.31 and n = 25; the key's 0.67 is the ITT SD. (It is also 0.67 at one decimal, the mechanical rounding reading — faithful either way; the layer reading is kept because the whole triple is the completers row.)",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -7383,7 +7422,8 @@
    "key_on_trial": false,
    "key_rule": "margem DASH do fatorial",
    "key_quote": "",
-   "model_own_n": 23.0
+   "model_own_n": 23.0,
+   "note": "Reviewed 2026-09-11: 23 is also printed for the DASH group as the dietary-adherence denominator (18/23) and in the BP-drug subgroup column of Table 5 (3/23, 15/23, 2/23) — sub-samples, not the arm's randomized (49) or HbA1c-analysed (42) count. The same sheets wrote 23 for both arms, so the duplicated VLC cell remains the most parsimonious reading; verdict kept, ambiguity recorded."
   },
   {
    "anchor": "a2",
@@ -7396,8 +7436,8 @@
    "key_provenance": "literal",
    "class": "layer-choice",
    "verdict": "faithful-different-encoding",
-   "evidence": "73 is the low-carbohydrate arm's analysed n at follow-up (table header); the key holds the randomized 75.",
-   "quote": "Low-carbohydrate (n = 75) Usual diet (n = 75) Low-carbohydrate (n = 73) Usual diet (n = 69)",
+   "evidence": "73 is the low-carbohydrate arm's n in the 3- and 6-month headers of Table 2 (dietary composition), the layer of participants with follow-up dietary records (73 + 69 = 142, the '142 participants (95%) completed 6-month data collection'); the key holds the randomized 75, which is also the header of the outcomes table (Table 3). A printed population layer of the same arm. Evidence reworded on 2026-09-11 (earlier: 'analysed n at follow-up').",
+   "quote": "A total of 142 participants (95%) completed 6-month data collection […] Table 2. Daily Dietary Composition […] Baseline 3 mo 6 mo Low-carbohydrate (n = 75) Usual diet (n = 75) Low-carbohydrate (n = 73) Usual diet (n = 69) Low-carbohydrate (n = 73) Usual diet (n = 69) […] Table 3. Change in Metabolic Risk Factors From Baseline […] Low-carbohydrate diet (n = 75) Usual diet (n = 75)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
@@ -7434,8 +7474,8 @@
    "key_provenance": "literal",
    "class": "layer-choice",
    "verdict": "faithful-different-encoding",
-   "evidence": "69 is the usual-diet arm's analysed n at follow-up; the key holds the randomized 75.",
-   "quote": "Low-carbohydrate (n = 75) Usual diet (n = 75) Low-carbohydrate (n = 73) Usual diet (n = 69)",
+   "evidence": "69 is the usual-diet arm's n in the 3- and 6-month headers of Table 2 (dietary composition; 73 + 69 = 142 completers); the key holds the randomized 75, also the header of the outcomes table (Table 3). A printed population layer of the same arm. Evidence reworded on 2026-09-11.",
+   "quote": "Low-carbohydrate (n = 73) Usual diet (n = 69) […] Table 3. Change in Metabolic Risk Factors From Baseline […] Low-carbohydrate diet (n = 75) Usual diet (n = 75)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
@@ -7565,15 +7605,16 @@
    "model_value": "-0.63",
    "source_value": "-0.54",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "−0.63 is the 3rd-month change (table: 3rd month … MD 0.63 ± 1.18); the review pooled the study-end change 0.54 ± 1.12 (the key's cell). Other timepoint, sign in the meta-analysis convention.",
-   "quote": "3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "−0.63 is the LCD arm's HbA1c change at the trial's only follow-up (3rd month) in the completers layer (Table 4, n = 24; the abstract's headline '−0.63% vs. −0.31%'), in the meta-analysis sign convention; the key holds the ITT layer the review pooled (Table 5, n = 28: 0.54 ± 1.12). The same sheets wrote n = 24/25: one coherent population layer, not another visit.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "MD 0.54 ± 1.12 0.28 ± 0.67",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -7584,15 +7625,16 @@
    "model_value": "1.18",
    "source_value": "1.12",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "1.18 is the SD of the 3rd-month change; the pooled cell's SD is 1.12 (study end). Other timepoint, consistent with the same sheets' −0.63.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "1.18 is the SD of the LCD completers-layer change (Table 4, n = 24), the untouched twin of the sealed ITT SD (1.12 → 0.94 in the perturbed text); consistent with the same sheets' 0.63 and n = 24 — one coherent layer.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.54 ± 1.12",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -7622,15 +7664,16 @@
    "model_value": "-0.31",
    "source_value": "-0.28",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "−0.31 is the control 3rd-month change; the pooled cell is the study-end 0.28. Other timepoint.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70 […] (−0.63% vs. −0.31%, p < 0.05)",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "−0.31 is the LFD arm's completers-layer change (Table 4, n = 25; abstract '−0.31%') at the trial's only follow-up; the key holds the ITT layer (0.28 ± 0.67, n = 28). Same sheets wrote n = 24/25.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -7641,15 +7684,16 @@
    "model_value": "0.7",
    "source_value": "0.67",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "0.70 is the SD of the control 3rd-month change (the same sheets wrote 1.18 for the LCD arm); the pooled cell's SD is 0.67 (study end). Read as the other timepoint rather than as a rounding of 0.67.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.70 is the SD of the LFD completers-layer change (Table 4, n = 25), consistent with the same sheets' 1.18, 0.31 and n = 25; the key's 0.67 is the ITT SD. (It is also 0.67 at one decimal, the mechanical rounding reading — faithful either way; the layer reading is kept because the whole triple is the completers row.)",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -7894,7 +7938,8 @@
    "key_on_trial": false,
    "key_rule": "margem DASH do fatorial",
    "key_quote": "",
-   "model_own_n": 23.0
+   "model_own_n": 23.0,
+   "note": "Reviewed 2026-09-11: 23 is also printed for the DASH group as the dietary-adherence denominator (18/23) and in the BP-drug subgroup column of Table 5 (3/23, 15/23, 2/23) — sub-samples, not the arm's randomized (49) or HbA1c-analysed (42) count. The same sheets wrote 23 for both arms, so the duplicated VLC cell remains the most parsimonious reading; verdict kept, ambiguity recorded."
   },
   {
    "anchor": "a2",
@@ -7925,8 +7970,8 @@
    "key_provenance": "literal",
    "class": "layer-choice",
    "verdict": "faithful-different-encoding",
-   "evidence": "73 is the low-carbohydrate arm's analysed n at follow-up (table header); the key holds the randomized 75.",
-   "quote": "Low-carbohydrate (n = 75) Usual diet (n = 75) Low-carbohydrate (n = 73) Usual diet (n = 69)",
+   "evidence": "73 is the low-carbohydrate arm's n in the 3- and 6-month headers of Table 2 (dietary composition), the layer of participants with follow-up dietary records (73 + 69 = 142, the '142 participants (95%) completed 6-month data collection'); the key holds the randomized 75, which is also the header of the outcomes table (Table 3). A printed population layer of the same arm. Evidence reworded on 2026-09-11 (earlier: 'analysed n at follow-up').",
+   "quote": "A total of 142 participants (95%) completed 6-month data collection […] Table 2. Daily Dietary Composition […] Baseline 3 mo 6 mo Low-carbohydrate (n = 75) Usual diet (n = 75) Low-carbohydrate (n = 73) Usual diet (n = 69) Low-carbohydrate (n = 73) Usual diet (n = 69) […] Table 3. Change in Metabolic Risk Factors From Baseline […] Low-carbohydrate diet (n = 75) Usual diet (n = 75)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
@@ -7962,8 +8007,8 @@
    "key_provenance": "literal",
    "class": "layer-choice",
    "verdict": "faithful-different-encoding",
-   "evidence": "69 is the usual-diet arm's analysed n at follow-up; the key holds the randomized 75.",
-   "quote": "Low-carbohydrate (n = 75) Usual diet (n = 75) Low-carbohydrate (n = 73) Usual diet (n = 69)",
+   "evidence": "69 is the usual-diet arm's n in the 3- and 6-month headers of Table 2 (dietary composition; 73 + 69 = 142 completers); the key holds the randomized 75, also the header of the outcomes table (Table 3). A printed population layer of the same arm. Evidence reworded on 2026-09-11.",
+   "quote": "Low-carbohydrate (n = 73) Usual diet (n = 69) […] Table 3. Change in Metabolic Risk Factors From Baseline […] Low-carbohydrate diet (n = 75) Usual diet (n = 75)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
@@ -8090,15 +8135,16 @@
    "model_value": "0.63",
    "source_value": "-0.54",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "The 3rd-month change as printed (0.63); the pooled cell is the study-end 0.54. Other timepoint.",
-   "quote": "3rd month […] MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.63 is the LCD arm's completers-layer change (Table 4, n = 24) at the trial's only follow-up, with the sign as printed (the source reports the fall as a positive MD; the key inverted it to the meta-analysis convention); the key holds the ITT layer (0.54). Same sheets wrote n = 24/25.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "MD 0.54 ± 1.12 0.28 ± 0.67",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -8109,15 +8155,16 @@
    "model_value": "1.18",
    "source_value": "1.12",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "1.18 is the SD of the 3rd-month change; the pooled cell's SD is 1.12 (study end). Other timepoint, consistent with the same sheets' −0.63.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "1.18 is the SD of the LCD completers-layer change (Table 4, n = 24), the untouched twin of the sealed ITT SD (1.12 → 0.94 in the perturbed text); consistent with the same sheets' 0.63 and n = 24 — one coherent layer.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.54 ± 1.12",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -8147,15 +8194,16 @@
    "model_value": "0.31",
    "source_value": "-0.28",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "The control 3rd-month change as printed; the pooled cell is the study-end 0.28.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.31 is the LFD arm's completers-layer change as printed (Table 4, n = 25; positive MD for a fall) at the trial's only follow-up; the key holds the ITT layer (0.28). Same sheets wrote n = 24/25.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -8166,15 +8214,16 @@
    "model_value": "0.7",
    "source_value": "0.67",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "0.70 is the SD of the control 3rd-month change (the same sheets wrote 1.18 for the LCD arm); the pooled cell's SD is 0.67 (study end). Read as the other timepoint rather than as a rounding of 0.67.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.70 is the SD of the LFD completers-layer change (Table 4, n = 25), consistent with the same sheets' 1.18, 0.31 and n = 25; the key's 0.67 is the ITT SD. (It is also 0.67 at one decimal, the mechanical rounding reading — faithful either way; the layer reading is kept because the whole triple is the completers row.)",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -8260,10 +8309,10 @@
    "model_value": "0.94",
    "source_value": "0.92",
    "key_provenance": "derivada",
-   "class": "unmatched",
-   "verdict": "reading-slip",
-   "evidence": "Not printed and not the key's imputation (√(1.0² + 0.8² − 2·0.5·1.0·0.8) = 0.92); a computed value with no reconstructible rule.",
-   "quote": "HbA1c (%) 6.9 (1.1) 6.0 (0.7) <0.0001 6.8 (1.0) 6.4 (0.8) 0.1453",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.94 = √(1.03² + 0.8² − 2·0.5·1.03·0.8) = 0.936: the key's own imputation rule (sd_change_r05, given to the models by the instrument) with the LC arm's baseline SD of Table 1 (6.88 (1.03), the randomized layer, N = 44) instead of Table 3's (6.8 (1.0), the analysed layer, n = 40); the key's 0.92 uses Table 3. The rule applied with a printed population layer — the same sheet's −0.48 also rests on the Table-1 baseline (see the ctl_media verdict). Corrected on 2026-09-11 after the independent review (earlier: unmatched, 'no reconstructible rule').",
+   "quote": "Table 1 Baseline characteristics of patients All patients VLCK diet group LC diet group P-value N =89 N =45 N =44 […] HbA1c (%) 6.89 (1.06) 6.89 (1.11) 6.88 (1.03) 0.9743 […] Table 3 Efficacy outcomes VLCK diet group ( n =45) LC diet group ( n =40) […] HbA1c (%) 6.9 (1.1) 6.0 (0.7) <0.0001 6.8 (1.0) 6.4 (0.8) 0.1453",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "dp_imputada_r05",
@@ -8287,7 +8336,8 @@
    "key_on_trial": true,
    "key_rule": "",
    "key_quote": "LC diet group ( n =40)",
-   "model_own_n": 44.0
+   "model_own_n": 44.0,
+   "note": "Reviewed 2026-09-11: the key's 40 is the header of Table 3, the same table that supplies the key's baseline and final means (6.8 → 6.4), so the key's n and means share one layer; 44 (abstract, Table 1) is the randomized layer and is also a coherent choice for an 'arm n' field. Listed for the author; recommendation: keep the key's layer."
   },
   {
    "anchor": "a2",
@@ -8336,11 +8386,11 @@
    "model_value": "41.0",
    "source_value": "45",
    "key_provenance": "derivada",
-   "class": "layer-choice",
-   "verdict": "faithful-different-encoding",
-   "evidence": "41 is printed in a participant-flow context (completers/analysed) where the key holds the randomized 45",
-   "quote": "…the completers analysis; weight decreased by 19.90 (SE, 1.63) lb (n = 41) in the VLC group and by 11.80 (1.66) lb (n = 41) in the DASH group…",
-   "decided_by": "mechanical rule",
+   "class": "row-slip",
+   "verdict": "reading-slip",
+   "evidence": "41 is the VLC arm's completers n for the WEIGHT outcome (the DASH arm's too); the HbA1c completers n for VLC is 39, printed in the same paragraph, and the same sheets wrote 42 for DASH — the HbA1c completers n. The pair (41, 42) belongs to no single analysis set: the arm's count was taken from another outcome's row. Corrected on 2026-09-11 after the independent review (earlier verdict: layer-choice; the mechanical flow-context rule had accepted the value because it sits in a 'completers analysis' sentence — overridden).",
+   "quote": "HbA1c decreased by 0.34 (SE, 0.08) % (n = 39) in the VLC group and by 0.14 (0.07) % (n = 42) in the DASH group […] weight decreased by 19.90 (SE, 1.63) lb (n = 41) in the VLC group and by 11.80 (1.66) lb (n = 41) in the DASH group",
+   "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "soma das células fatoriais VLC no fluxograma/tabela 1 (margem de dieta); não aparece literal como 'n=45'",
    "key_quote": "",
@@ -8413,8 +8463,8 @@
    "key_provenance": "literal",
    "class": "layer-choice",
    "verdict": "faithful-different-encoding",
-   "evidence": "73 is the low-carbohydrate arm's analysed n at follow-up (table header); the key holds the randomized 75.",
-   "quote": "Low-carbohydrate (n = 75) Usual diet (n = 75) Low-carbohydrate (n = 73) Usual diet (n = 69)",
+   "evidence": "73 is the low-carbohydrate arm's n in the 3- and 6-month headers of Table 2 (dietary composition), the layer of participants with follow-up dietary records (73 + 69 = 142, the '142 participants (95%) completed 6-month data collection'); the key holds the randomized 75, which is also the header of the outcomes table (Table 3). A printed population layer of the same arm. Evidence reworded on 2026-09-11 (earlier: 'analysed n at follow-up').",
+   "quote": "A total of 142 participants (95%) completed 6-month data collection […] Table 2. Daily Dietary Composition […] Baseline 3 mo 6 mo Low-carbohydrate (n = 75) Usual diet (n = 75) Low-carbohydrate (n = 73) Usual diet (n = 69) Low-carbohydrate (n = 73) Usual diet (n = 69) […] Table 3. Change in Metabolic Risk Factors From Baseline […] Low-carbohydrate diet (n = 75) Usual diet (n = 75)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
@@ -8450,8 +8500,8 @@
    "key_provenance": "literal",
    "class": "layer-choice",
    "verdict": "faithful-different-encoding",
-   "evidence": "69 is the usual-diet arm's analysed n at follow-up; the key holds the randomized 75.",
-   "quote": "Low-carbohydrate (n = 75) Usual diet (n = 75) Low-carbohydrate (n = 73) Usual diet (n = 69)",
+   "evidence": "69 is the usual-diet arm's n in the 3- and 6-month headers of Table 2 (dietary composition; 73 + 69 = 142 completers); the key holds the randomized 75, also the header of the outcomes table (Table 3). A printed population layer of the same arm. Evidence reworded on 2026-09-11.",
+   "quote": "Low-carbohydrate (n = 73) Usual diet (n = 69) […] Table 3. Change in Metabolic Risk Factors From Baseline […] Low-carbohydrate diet (n = 75) Usual diet (n = 75)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
@@ -8475,7 +8525,8 @@
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
    "key_quote": "",
-   "model_own_n": 43.0
+   "model_own_n": 43.0,
+   "note": "Reviewed 2026-09-11 (doctrine edge, verdict kept): the source prints ±0.3 without saying what it is; the table's CI gives an SD of 1.10 (0.66/3.92 × √43) against a baseline SD of 1.04, so ±0.3 cannot be an SD. A printed but unlabelled figure transcribed as the dispersion: dispersion-type by the definitions."
   },
   {
    "anchor": "a2",
@@ -8494,7 +8545,8 @@
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
    "key_quote": "",
-   "model_own_n": 42.0
+   "model_own_n": 42.0,
+   "note": "Reviewed 2026-09-11 (doctrine edge, verdict kept): ±0.3 is unlabelled in the prose; the table's CI gives 1.27 (0.77/3.92 × √42), and ±0.3 is not even the CI half-width (0.385)."
   },
   {
    "anchor": "a2",
@@ -8579,15 +8631,16 @@
    "model_value": "-0.63",
    "source_value": "-0.54",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "−0.63 is the 3rd-month change (table: 3rd month … MD 0.63 ± 1.18); the review pooled the study-end change 0.54 ± 1.12 (the key's cell). Other timepoint, sign in the meta-analysis convention.",
-   "quote": "3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "−0.63 is the LCD arm's HbA1c change at the trial's only follow-up (3rd month) in the completers layer (Table 4, n = 24; the abstract's headline '−0.63% vs. −0.31%'), in the meta-analysis sign convention; the key holds the ITT layer the review pooled (Table 5, n = 28: 0.54 ± 1.12). The same sheets wrote n = 24/25: one coherent population layer, not another visit.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "MD 0.54 ± 1.12 0.28 ± 0.67",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -8598,15 +8651,16 @@
    "model_value": "1.18",
    "source_value": "1.12",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "1.18 is the SD of the 3rd-month change; the pooled cell's SD is 1.12 (study end). Other timepoint, consistent with the same sheets' −0.63.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "1.18 is the SD of the LCD completers-layer change (Table 4, n = 24), the untouched twin of the sealed ITT SD (1.12 → 0.94 in the perturbed text); consistent with the same sheets' 0.63 and n = 24 — one coherent layer.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.54 ± 1.12",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -8636,15 +8690,16 @@
    "model_value": "-0.31",
    "source_value": "-0.28",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "−0.31 is the control 3rd-month change; the pooled cell is the study-end 0.28. Other timepoint.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70 […] (−0.63% vs. −0.31%, p < 0.05)",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "−0.31 is the LFD arm's completers-layer change (Table 4, n = 25; abstract '−0.31%') at the trial's only follow-up; the key holds the ITT layer (0.28 ± 0.67, n = 28). Same sheets wrote n = 24/25.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -8655,15 +8710,16 @@
    "model_value": "0.7",
    "source_value": "0.67",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "0.70 is the SD of the control 3rd-month change (the same sheets wrote 1.18 for the LCD arm); the pooled cell's SD is 0.67 (study end). Read as the other timepoint rather than as a rounding of 0.67.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.70 is the SD of the LFD completers-layer change (Table 4, n = 25), consistent with the same sheets' 1.18, 0.31 and n = 25; the key's 0.67 is the ITT SD. (It is also 0.67 at one decimal, the mechanical rounding reading — faithful either way; the layer reading is kept because the whole triple is the completers row.)",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -8777,7 +8833,8 @@
    "key_on_trial": true,
    "key_rule": "",
    "key_quote": "LC diet group ( n =40)",
-   "model_own_n": 44.0
+   "model_own_n": 44.0,
+   "note": "Reviewed 2026-09-11: the key's 40 is the header of Table 3, the same table that supplies the key's baseline and final means (6.8 → 6.4), so the key's n and means share one layer; 44 (abstract, Table 1) is the randomized layer and is also a coherent choice for an 'arm n' field. Listed for the author; recommendation: keep the key's layer."
   },
   {
    "anchor": "a2",
@@ -8883,11 +8940,11 @@
    "model_value": "41.0",
    "source_value": "45",
    "key_provenance": "derivada",
-   "class": "layer-choice",
-   "verdict": "faithful-different-encoding",
-   "evidence": "41 is printed in a participant-flow context (completers/analysed) where the key holds the randomized 45",
-   "quote": "…the completers analysis; weight decreased by 19.90 (SE, 1.63) lb (n = 41) in the VLC group and by 11.80 (1.66) lb (n = 41) in the DASH group…",
-   "decided_by": "mechanical rule",
+   "class": "row-slip",
+   "verdict": "reading-slip",
+   "evidence": "41 is the VLC arm's completers n for the WEIGHT outcome (the DASH arm's too); the HbA1c completers n for VLC is 39, printed in the same paragraph, and the same sheets wrote 42 for DASH — the HbA1c completers n. The pair (41, 42) belongs to no single analysis set: the arm's count was taken from another outcome's row. Corrected on 2026-09-11 after the independent review (earlier verdict: layer-choice; the mechanical flow-context rule had accepted the value because it sits in a 'completers analysis' sentence — overridden).",
+   "quote": "HbA1c decreased by 0.34 (SE, 0.08) % (n = 39) in the VLC group and by 0.14 (0.07) % (n = 42) in the DASH group […] weight decreased by 19.90 (SE, 1.63) lb (n = 41) in the VLC group and by 11.80 (1.66) lb (n = 41) in the DASH group",
+   "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "soma das células fatoriais VLC no fluxograma/tabela 1 (margem de dieta); não aparece literal como 'n=45'",
    "key_quote": "",
@@ -8960,8 +9017,8 @@
    "key_provenance": "literal",
    "class": "layer-choice",
    "verdict": "faithful-different-encoding",
-   "evidence": "73 is the low-carbohydrate arm's analysed n at follow-up (table header); the key holds the randomized 75.",
-   "quote": "Low-carbohydrate (n = 75) Usual diet (n = 75) Low-carbohydrate (n = 73) Usual diet (n = 69)",
+   "evidence": "73 is the low-carbohydrate arm's n in the 3- and 6-month headers of Table 2 (dietary composition), the layer of participants with follow-up dietary records (73 + 69 = 142, the '142 participants (95%) completed 6-month data collection'); the key holds the randomized 75, which is also the header of the outcomes table (Table 3). A printed population layer of the same arm. Evidence reworded on 2026-09-11 (earlier: 'analysed n at follow-up').",
+   "quote": "A total of 142 participants (95%) completed 6-month data collection […] Table 2. Daily Dietary Composition […] Baseline 3 mo 6 mo Low-carbohydrate (n = 75) Usual diet (n = 75) Low-carbohydrate (n = 73) Usual diet (n = 69) Low-carbohydrate (n = 73) Usual diet (n = 69) […] Table 3. Change in Metabolic Risk Factors From Baseline […] Low-carbohydrate diet (n = 75) Usual diet (n = 75)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
@@ -8997,8 +9054,8 @@
    "key_provenance": "literal",
    "class": "layer-choice",
    "verdict": "faithful-different-encoding",
-   "evidence": "69 is the usual-diet arm's analysed n at follow-up; the key holds the randomized 75.",
-   "quote": "Low-carbohydrate (n = 75) Usual diet (n = 75) Low-carbohydrate (n = 73) Usual diet (n = 69)",
+   "evidence": "69 is the usual-diet arm's n in the 3- and 6-month headers of Table 2 (dietary composition; 73 + 69 = 142 completers); the key holds the randomized 75, also the header of the outcomes table (Table 3). A printed population layer of the same arm. Evidence reworded on 2026-09-11.",
+   "quote": "Low-carbohydrate (n = 73) Usual diet (n = 69) […] Table 3. Change in Metabolic Risk Factors From Baseline […] Low-carbohydrate diet (n = 75) Usual diet (n = 75)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
@@ -9090,15 +9147,16 @@
    "model_value": "-0.63",
    "source_value": "-0.54",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "−0.63 is the 3rd-month change (table: 3rd month … MD 0.63 ± 1.18); the review pooled the study-end change 0.54 ± 1.12 (the key's cell). Other timepoint, sign in the meta-analysis convention.",
-   "quote": "3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "−0.63 is the LCD arm's HbA1c change at the trial's only follow-up (3rd month) in the completers layer (Table 4, n = 24; the abstract's headline '−0.63% vs. −0.31%'), in the meta-analysis sign convention; the key holds the ITT layer the review pooled (Table 5, n = 28: 0.54 ± 1.12). The same sheets wrote n = 24/25: one coherent population layer, not another visit.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "MD 0.54 ± 1.12 0.28 ± 0.67",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -9109,15 +9167,16 @@
    "model_value": "1.18",
    "source_value": "1.12",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "1.18 is the SD of the 3rd-month change; the pooled cell's SD is 1.12 (study end). Other timepoint, consistent with the same sheets' −0.63.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "1.18 is the SD of the LCD completers-layer change (Table 4, n = 24), the untouched twin of the sealed ITT SD (1.12 → 0.94 in the perturbed text); consistent with the same sheets' 0.63 and n = 24 — one coherent layer.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.54 ± 1.12",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -9147,15 +9206,16 @@
    "model_value": "-0.31",
    "source_value": "-0.28",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "−0.31 is the control 3rd-month change; the pooled cell is the study-end 0.28. Other timepoint.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70 […] (−0.63% vs. −0.31%, p < 0.05)",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "−0.31 is the LFD arm's completers-layer change (Table 4, n = 25; abstract '−0.31%') at the trial's only follow-up; the key holds the ITT layer (0.28 ± 0.67, n = 28). Same sheets wrote n = 24/25.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -9166,15 +9226,16 @@
    "model_value": "0.7",
    "source_value": "0.67",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "0.70 is the SD of the control 3rd-month change (the same sheets wrote 1.18 for the LCD arm); the pooled cell's SD is 0.67 (study end). Read as the other timepoint rather than as a rounding of 0.67.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.70 is the SD of the LFD completers-layer change (Table 4, n = 25), consistent with the same sheets' 1.18, 0.31 and n = 25; the key's 0.67 is the ITT SD. (It is also 0.67 at one decimal, the mechanical rounding reading — faithful either way; the layer reading is kept because the whole triple is the completers row.)",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -9288,7 +9349,8 @@
    "key_on_trial": true,
    "key_rule": "",
    "key_quote": "LC diet group ( n =40)",
-   "model_own_n": 44.0
+   "model_own_n": 44.0,
+   "note": "Reviewed 2026-09-11: the key's 40 is the header of Table 3, the same table that supplies the key's baseline and final means (6.8 → 6.4), so the key's n and means share one layer; 44 (abstract, Table 1) is the randomized layer and is also a coherent choice for an 'arm n' field. Listed for the author; recommendation: keep the key's layer."
   },
   {
    "anchor": "a2",
@@ -9392,10 +9454,10 @@
    "model_value": "-1.15",
    "source_value": "0.31",
    "key_provenance": "derivada",
-   "class": "row-slip",
+   "class": "unmatched",
    "verdict": "reading-slip",
-   "evidence": "A blood-pressure table figure, not an HbA1c dispersion; a negative SD is impossible.",
-   "quote": "6 mo –1.6 (–2.6 to –0.7) 0.8 (–0.2 to 1.7) –2.4 (–3.7 to –1.1) <.001 Diastolic blood pressure",
+   "evidence": "−1.15 is printed nowhere in the original or in the text the model read; the nearest figures are the −1.1 confidence bounds of the HOMA-IR and HDL rows of Table 3, and a negative dispersion is impossible. Class corrected on 2026-09-11 after the independent review (earlier: row-slip, with the quotation mislabelled as a blood-pressure row — it is the HOMA-IR row).",
+   "quote": "Homeostasis model assessment of insulin resistance 3 mo –1.2 (–2.1 to –0.2) 0.9 (0 to 1.8) –2.0 (–3.3 to –0.7) .002 6 mo –1.6 (–2.6 to –0.7) 0.8 (–0.2 to 1.7) –2.4 (–3.7 to –1.1) <.001 Diastolic blood pressure",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
@@ -9419,7 +9481,8 @@
    "key_on_trial": false,
    "key_rule": "dp_de_ic",
    "key_quote": "",
-   "model_own_n": 43.0
+   "model_own_n": 43.0,
+   "note": "Reviewed 2026-09-11 (doctrine edge, verdict kept): the source prints ±0.3 without saying what it is; the table's CI gives an SD of 1.10 (0.66/3.92 × √43) against a baseline SD of 1.04, so ±0.3 cannot be an SD. A printed but unlabelled figure transcribed as the dispersion: dispersion-type by the definitions."
   },
   {
    "anchor": "a2",
@@ -9505,15 +9568,16 @@
    "model_value": "-0.63",
    "source_value": "-0.54",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "−0.63 is the 3rd-month change (table: 3rd month … MD 0.63 ± 1.18); the review pooled the study-end change 0.54 ± 1.12 (the key's cell). Other timepoint, sign in the meta-analysis convention.",
-   "quote": "3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "−0.63 is the LCD arm's HbA1c change at the trial's only follow-up (3rd month) in the completers layer (Table 4, n = 24; the abstract's headline '−0.63% vs. −0.31%'), in the meta-analysis sign convention; the key holds the ITT layer the review pooled (Table 5, n = 28: 0.54 ± 1.12). The same sheets wrote n = 24/25: one coherent population layer, not another visit.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "MD 0.54 ± 1.12 0.28 ± 0.67",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -9524,15 +9588,16 @@
    "model_value": "1.18",
    "source_value": "1.12",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "1.18 is the SD of the 3rd-month change; the pooled cell's SD is 1.12 (study end). Other timepoint, consistent with the same sheets' −0.63.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "1.18 is the SD of the LCD completers-layer change (Table 4, n = 24), the untouched twin of the sealed ITT SD (1.12 → 0.94 in the perturbed text); consistent with the same sheets' 0.63 and n = 24 — one coherent layer.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.54 ± 1.12",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -9562,15 +9627,16 @@
    "model_value": "-0.31",
    "source_value": "-0.28",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "−0.31 is the control 3rd-month change; the pooled cell is the study-end 0.28. Other timepoint.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70 […] (−0.63% vs. −0.31%, p < 0.05)",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "−0.31 is the LFD arm's completers-layer change (Table 4, n = 25; abstract '−0.31%') at the trial's only follow-up; the key holds the ITT layer (0.28 ± 0.67, n = 28). Same sheets wrote n = 24/25.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -9581,15 +9647,16 @@
    "model_value": "0.7",
    "source_value": "0.67",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "0.70 is the SD of the control 3rd-month change (the same sheets wrote 1.18 for the LCD arm); the pooled cell's SD is 0.67 (study end). Read as the other timepoint rather than as a rounding of 0.67.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.70 is the SD of the LFD completers-layer change (Table 4, n = 25), consistent with the same sheets' 1.18, 0.31 and n = 25; the key's 0.67 is the ITT SD. (It is also 0.67 at one decimal, the mechanical rounding reading — faithful either way; the layer reading is kept because the whole triple is the completers row.)",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -9974,15 +10041,16 @@
    "model_value": "-0.63",
    "source_value": "-0.54",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "−0.63 is the 3rd-month change (table: 3rd month … MD 0.63 ± 1.18); the review pooled the study-end change 0.54 ± 1.12 (the key's cell). Other timepoint, sign in the meta-analysis convention.",
-   "quote": "3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "−0.63 is the LCD arm's HbA1c change at the trial's only follow-up (3rd month) in the completers layer (Table 4, n = 24; the abstract's headline '−0.63% vs. −0.31%'), in the meta-analysis sign convention; the key holds the ITT layer the review pooled (Table 5, n = 28: 0.54 ± 1.12). The same sheets wrote n = 24/25: one coherent population layer, not another visit.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "MD 0.54 ± 1.12 0.28 ± 0.67",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -10030,15 +10098,16 @@
    "model_value": "-0.31",
    "source_value": "-0.28",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "−0.31 is the control 3rd-month change; the pooled cell is the study-end 0.28. Other timepoint.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70 […] (−0.63% vs. −0.31%, p < 0.05)",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "−0.31 is the LFD arm's completers-layer change (Table 4, n = 25; abstract '−0.31%') at the trial's only follow-up; the key holds the ITT layer (0.28 ± 0.67, n = 28). Same sheets wrote n = 24/25.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -10170,7 +10239,8 @@
    "key_on_trial": true,
    "key_rule": "",
    "key_quote": "LC diet group ( n =40)",
-   "model_own_n": 44.0
+   "model_own_n": 44.0,
+   "note": "Reviewed 2026-09-11: the key's 40 is the header of Table 3, the same table that supplies the key's baseline and final means (6.8 → 6.4), so the key's n and means share one layer; 44 (abstract, Table 1) is the randomized layer and is also a coherent choice for an 'arm n' field. Listed for the author; recommendation: keep the key's layer."
   },
   {
    "anchor": "a2",
@@ -10481,15 +10551,16 @@
    "model_value": "-0.63",
    "source_value": "-0.54",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "−0.63 is the 3rd-month change (table: 3rd month … MD 0.63 ± 1.18); the review pooled the study-end change 0.54 ± 1.12 (the key's cell). Other timepoint, sign in the meta-analysis convention.",
-   "quote": "3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "−0.63 is the LCD arm's HbA1c change at the trial's only follow-up (3rd month) in the completers layer (Table 4, n = 24; the abstract's headline '−0.63% vs. −0.31%'), in the meta-analysis sign convention; the key holds the ITT layer the review pooled (Table 5, n = 28: 0.54 ± 1.12). The same sheets wrote n = 24/25: one coherent population layer, not another visit.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "MD 0.54 ± 1.12 0.28 ± 0.67",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -10537,15 +10608,16 @@
    "model_value": "-0.31",
    "source_value": "-0.28",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "−0.31 is the control 3rd-month change; the pooled cell is the study-end 0.28. Other timepoint.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70 […] (−0.63% vs. −0.31%, p < 0.05)",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "−0.31 is the LFD arm's completers-layer change (Table 4, n = 25; abstract '−0.31%') at the trial's only follow-up; the key holds the ITT layer (0.28 ± 0.67, n = 28). Same sheets wrote n = 24/25.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -10947,15 +11019,16 @@
    "model_value": "-0.63",
    "source_value": "-0.54",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "−0.63 is the 3rd-month change (table: 3rd month … MD 0.63 ± 1.18); the review pooled the study-end change 0.54 ± 1.12 (the key's cell). Other timepoint, sign in the meta-analysis convention.",
-   "quote": "3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "−0.63 is the LCD arm's HbA1c change at the trial's only follow-up (3rd month) in the completers layer (Table 4, n = 24; the abstract's headline '−0.63% vs. −0.31%'), in the meta-analysis sign convention; the key holds the ITT layer the review pooled (Table 5, n = 28: 0.54 ± 1.12). The same sheets wrote n = 24/25: one coherent population layer, not another visit.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "MD 0.54 ± 1.12 0.28 ± 0.67",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -10966,15 +11039,16 @@
    "model_value": "1.18",
    "source_value": "1.12",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "1.18 is the SD of the 3rd-month change; the pooled cell's SD is 1.12 (study end). Other timepoint, consistent with the same sheets' −0.63.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "1.18 is the SD of the LCD completers-layer change (Table 4, n = 24), the untouched twin of the sealed ITT SD (1.12 → 0.94 in the perturbed text); consistent with the same sheets' 0.63 and n = 24 — one coherent layer.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.54 ± 1.12",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -11004,15 +11078,16 @@
    "model_value": "-0.31",
    "source_value": "-0.28",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "−0.31 is the control 3rd-month change; the pooled cell is the study-end 0.28. Other timepoint.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70 […] (−0.63% vs. −0.31%, p < 0.05)",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "−0.31 is the LFD arm's completers-layer change (Table 4, n = 25; abstract '−0.31%') at the trial's only follow-up; the key holds the ITT layer (0.28 ± 0.67, n = 28). Same sheets wrote n = 24/25.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -11023,15 +11098,16 @@
    "model_value": "0.7",
    "source_value": "0.67",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "0.70 is the SD of the control 3rd-month change (the same sheets wrote 1.18 for the LCD arm); the pooled cell's SD is 0.67 (study end). Read as the other timepoint rather than as a rounding of 0.67.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.70 is the SD of the LFD completers-layer change (Table 4, n = 25), consistent with the same sheets' 1.18, 0.31 and n = 25; the key's 0.67 is the ITT SD. (It is also 0.67 at one decimal, the mechanical rounding reading — faithful either way; the layer reading is kept because the whole triple is the completers row.)",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -11285,15 +11361,16 @@
    "model_value": "0.63",
    "source_value": "-0.54",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "The 3rd-month change as printed (0.63); the pooled cell is the study-end 0.54. Other timepoint.",
-   "quote": "3rd month […] MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.63 is the LCD arm's completers-layer change (Table 4, n = 24) at the trial's only follow-up, with the sign as printed (the source reports the fall as a positive MD; the key inverted it to the meta-analysis convention); the key holds the ITT layer (0.54). Same sheets wrote n = 24/25.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "MD 0.54 ± 1.12 0.28 ± 0.67",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -11304,15 +11381,16 @@
    "model_value": "1.18",
    "source_value": "1.12",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "1.18 is the SD of the 3rd-month change; the pooled cell's SD is 1.12 (study end). Other timepoint, consistent with the same sheets' −0.63.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "1.18 is the SD of the LCD completers-layer change (Table 4, n = 24), the untouched twin of the sealed ITT SD (1.12 → 0.94 in the perturbed text); consistent with the same sheets' 0.63 and n = 24 — one coherent layer.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.54 ± 1.12",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -11342,15 +11420,16 @@
    "model_value": "0.31",
    "source_value": "-0.28",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "The control 3rd-month change as printed; the pooled cell is the study-end 0.28.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.31 is the LFD arm's completers-layer change as printed (Table 4, n = 25; positive MD for a fall) at the trial's only follow-up; the key holds the ITT layer (0.28). Same sheets wrote n = 24/25.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -11361,15 +11440,16 @@
    "model_value": "0.7",
    "source_value": "0.67",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "0.70 is the SD of the control 3rd-month change (the same sheets wrote 1.18 for the LCD arm); the pooled cell's SD is 0.67 (study end). Read as the other timepoint rather than as a rounding of 0.67.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.70 is the SD of the LFD completers-layer change (Table 4, n = 25), consistent with the same sheets' 1.18, 0.31 and n = 25; the key's 0.67 is the ITT SD. (It is also 0.67 at one decimal, the mechanical rounding reading — faithful either way; the layer reading is kept because the whole triple is the completers row.)",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -11602,15 +11682,16 @@
    "model_value": "0.63",
    "source_value": "-0.54",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "The 3rd-month change as printed (0.63); the pooled cell is the study-end 0.54. Other timepoint.",
-   "quote": "3rd month […] MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.63 is the LCD arm's completers-layer change (Table 4, n = 24) at the trial's only follow-up, with the sign as printed (the source reports the fall as a positive MD; the key inverted it to the meta-analysis convention); the key holds the ITT layer (0.54). Same sheets wrote n = 24/25.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "MD 0.54 ± 1.12 0.28 ± 0.67",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -11621,15 +11702,16 @@
    "model_value": "1.18",
    "source_value": "1.12",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "1.18 is the SD of the 3rd-month change; the pooled cell's SD is 1.12 (study end). Other timepoint, consistent with the same sheets' −0.63.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "1.18 is the SD of the LCD completers-layer change (Table 4, n = 24), the untouched twin of the sealed ITT SD (1.12 → 0.94 in the perturbed text); consistent with the same sheets' 0.63 and n = 24 — one coherent layer.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.54 ± 1.12",
-   "model_own_n": 24.0
+   "model_own_n": 24.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -11659,15 +11741,16 @@
    "model_value": "0.31",
    "source_value": "-0.28",
    "key_provenance": "literal-com-sinal-invertido",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "The control 3rd-month change as printed; the pooled cell is the study-end 0.28.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.31 is the LFD arm's completers-layer change as printed (Table 4, n = 25; positive MD for a fall) at the trial's only follow-up; the key holds the ITT layer (0.28). Same sheets wrote n = 24/25.",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -11678,15 +11761,16 @@
    "model_value": "0.7",
    "source_value": "0.67",
    "key_provenance": "literal",
-   "class": "row-slip",
-   "verdict": "reading-slip",
-   "evidence": "0.70 is the SD of the control 3rd-month change (the same sheets wrote 1.18 for the LCD arm); the pooled cell's SD is 0.67 (study end). Read as the other timepoint rather than as a rounding of 0.67.",
-   "quote": "MD 0.63 ± 1.18 0.31 ± 0.70",
+   "class": "layer-choice",
+   "verdict": "faithful-different-encoding",
+   "evidence": "0.70 is the SD of the LFD completers-layer change (Table 4, n = 25), consistent with the same sheets' 1.18, 0.31 and n = 25; the key's 0.67 is the ITT SD. (It is also 0.67 at one decimal, the mechanical rounding reading — faithful either way; the layer reading is kept because the whole triple is the completers row.)",
+   "quote": "HbA1c was measured at baseline and at the end of the third month. […] Table 4 Comparison of glycated hemoglobin (%) between the two groups. Study Period LCD ( n = 24) LFD ( n = 25) […] 3rd month 6.80 ± 0.83 7.48 ± 1.15 −2.350 0.023 * MD 0.63 ± 1.18 0.31 ± 0.70 […] Table 5 Comparison of glycated hemoglobin (%) between the two groups in ITT. Study Period LCD ( n = 28) LFD ( n = 28) […] MD 0.54 ± 1.12 0.28 ± 0.67 […] there was a greater decrease in HbA1c level in the LCD group (−0.63% vs. −0.31%, p < 0.05)",
    "decided_by": "reader (the assistant), under the author's delegation of 2026-09-11; reversible",
    "key_on_trial": false,
    "key_rule": "",
    "key_quote": "0.28 ± 0.67",
-   "model_own_n": 25.0
+   "model_own_n": 25.0,
+   "note": "Reviewed 2026-09-11 (independent re-read, then the reader with the source open): the earlier verdict 'other timepoint / row-slip' was wrong — the trial measured HbA1c only at baseline and at the end of the third month, so Table 4 (completers, n = 24/25) and Table 5 (ITT, n = 28/28) report the same visit in two population layers. All twelve sheets wrote the completers triple (n = 24/25, 0.63 ± 1.18, 0.31 ± 0.70), the paper's own headline; the review pooled the ITT layer, coherent with its n = 28. Key layer not on trial: both layers are printed and the review's ITT choice is defensible."
   },
   {
    "anchor": "a2",
@@ -11724,7 +11808,8 @@
    "key_on_trial": true,
    "key_rule": "",
    "key_quote": "LC diet group ( n =40)",
-   "model_own_n": 44.0
+   "model_own_n": 44.0,
+   "note": "Reviewed 2026-09-11: the key's 40 is the header of Table 3, the same table that supplies the key's baseline and final means (6.8 → 6.4), so the key's n and means share one layer; 44 (abstract, Table 1) is the randomized layer and is also a coherent choice for an 'arm n' field. Listed for the author; recommendation: keep the key's layer."
   },
   {
    "anchor": "a3",
