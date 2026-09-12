@@ -5,6 +5,7 @@
 \usepackage{lmodern}
 \usepackage{microtype}
 \usepackage{booktabs}
+\usepackage{array}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage[hidelinks]{hyperref}
@@ -43,24 +44,25 @@ However, no evaluation to our knowledge combines the three controls --- local mo
 The protocol --- question, cast, anchors, sheets, hypotheses, instruments, tolerances and compute budget --- was registered on 2026-09-08 against a frozen repository commit, reviewed before registration by five independent lenses with a skeptic assigned to each finding (77 findings raised, 43 applied), and not amended afterwards. Corpora, sealed perturbations, answer keys, deterministic engines and graders were built and frozen before the first model call; the models ran on 9--10 September 2026. Six hypotheses were pre-registered (Table~\ref{tab:hyp}). The study analyzed only published aggregate reports of randomized trials and three published meta-analyses; no human participants were involved and no ethics approval was required. All materials are public \citep{barra2026extrai}.
 
 \subsection{Anchors, corpora and answer keys}
-Three recent meta-analyses served as anchors (Table~\ref{tab:anchors}): goal-directed fluid therapy in major surgery \citep{ashraf2026gdft}, low-carbohydrate diets and HbA1c in type~2 diabetes \citep{khraise2026lowcarb}, and methylene blue in adult shock \citep{rodriguezlima2026methylene}. Their primary trials --- 14, 7 and 8 --- formed the three corpora as plain text (anchor~3: four trials from Europe PMC XML, three from publisher PDFs, one PDF in Spanish); paywalled primaries were used under the author's subscriptions and are not redistributed.
+Three recent meta-analyses served as anchors (Table~\ref{tab:anchors}): goal-directed fluid therapy in major surgery \citep{ashraf2026gdft}, low-carbohydrate diets and HbA1c in type~2 diabetes \citep{khraise2026lowcarb}, and methylene blue in adult shock \citep{rodriguezlima2026methylene}. Their primary trials --- 14, 7 and 8 --- formed the three corpora as plain text: article body and tables serialized as text, figures not included (formats in Table~\ref{tab:anchors}).
 
 \begin{table}[!htbp]
-\centering\small
+\centering\footnotesize
 \caption{The three anchor meta-analyses and their answer keys.}
 \label{tab:anchors}
 \setlength{\tabcolsep}{3pt}
-\begin{tabular}{@{}p{3.3cm}p{3.8cm}p{3.8cm}p{3.8cm}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.9cm}>{\raggedright\arraybackslash}p{4.0cm}>{\raggedright\arraybackslash}p{4.0cm}>{\raggedright\arraybackslash}p{4.0cm}@{}}
 \toprule
  & Anchor 1 & Anchor 2 & Anchor 3 \\
 \midrule
-Topic & goal-directed fluid therapy, major surgery & low-carbohydrate diet, type~2 diabetes & methylene blue, adult shock \\
-Trials in the corpus & 14 (8 open access) & 7 & 8 (5 open access; 1 in Spanish) \\
-Estimand & risk ratio (morbidity, 4 trials; mortality, 2) & mean difference, HbA1c \% (7 trials) & odds ratio, 28--30-day mortality (8 trials) \\
-Published estimate & 0.778 [0.567; 1.068]; 1.021 [0.446; 2.337] & $-0.24$ [$-0.32$; $-0.16$] & 0.73 [0.40; 1.36] \\
-Layer-2 estimate (same engine) & 0.787 [0.580; 1.068]; 1.023 [0.446; 2.346] & $-0.24$ [$-0.32$; $-0.16$] & 0.484 [0.319; 0.735] \\
-Graded cells per sheet & 124 & 49 & 32 \\
-Review cells wrong against the sources & 11 (17-entry record) & 0 & 2 of 8 trials \\
+Topic & goal-directed fluid therapy in major surgery & low-carbohydrate diet in type~2 diabetes & methylene blue in adult shock \\
+Trials & 14 & 7 & 8 \\
+Corpus format & 8 PMC XML; 6 PDF to text & 6 XML; 1 PDF to text & 4 XML; 3 PDF to text; 1 PDF in Spanish \\
+Estimand & risk ratio: morbidity (4 trials), mortality (2) & mean difference in HbA1c, \% (7 trials) & odds ratio, 28--30-day mortality (8 trials) \\
+Published & morbidity\newline 0.778~[0.567;~1.068]\newline mortality\newline 1.021~[0.446;~2.337] & $-0.24$~[$-0.32$;~$-0.16$] & 0.73~[0.40;~1.36] \\
+Layer 2 (same engine) & morbidity\newline 0.787~[0.580;~1.068]\newline mortality\newline 1.023~[0.446;~2.346] & $-0.24$~[$-0.32$;~$-0.16$] & 0.484~[0.319;~0.735] \\
+Cells per sheet & 124 & 49 & 32 \\
+Confirmed discrepancies & 11 (17-entry record) & 0 & 2 (3 cells; 2 of 8 trials) \\
 Reading proof & 32 sealed pairs & 17 sealed pairs & denominators of 10 of 17 arms (4.5 of 8 trials) \\
 \bottomrule
 \end{tabular}
