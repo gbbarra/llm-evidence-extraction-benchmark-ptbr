@@ -1,0 +1,6 @@
+# Selos das três fichas v3 do Estudo 13 (protocolo §4). O harness confere estes selos antes da
+# primeira chamada e se recusa a começar se algum divergir. Gerado por scripts/estudo13/e13-sela-fichas.py.
+
+df71d3d8ffdd98ffbbe518a4e155845aa09677104c7b5fda8d5c8d04e91d6ef9  a1/v3  dados/estudo13/prompts/a1-extraction-v3.txt
+87ce905d054c4fdca40f6fcf42cece466efbe7da0e5fc6be3e60bce77d063649  a2/v3  dados/estudo13/prompts/a2-extraction-v3.txt
+3054cde4cc9c6e63eb2b1a548669c6426dbfc6179864d426903df5063f570ec1  a3/v3  dados/estudo13/prompts/a3-extraction-v3.txt
